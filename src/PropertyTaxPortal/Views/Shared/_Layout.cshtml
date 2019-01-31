@@ -8,6 +8,8 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link href="~/css/site.css" rel="stylesheet" />
+
+        <link href="~/css/footer.css" rel="stylesheet" />
     </environment>
 
 </head>
@@ -15,7 +17,7 @@
 
     <!------------------------------ NAVBAR ------------------------------>
     <nav>
-        NAVBAR
+        <!--NAVBAR-->
     </nav>
 
     <!----------------------------- /END NAVBAR -------------------------->
@@ -29,14 +31,61 @@
 
 
         <!------------------------------ FOOTER ------------------------------>
+        <!-- Footer -->
         <footer>
-            <p>&copy; 2019 - Poperty</p>
-
+            <div class="footer">
+                <div class="contain">
+                    <div class="col">
+                        <center>
+                            <h1><img src="~/images/LACseal.png" /></h1>
+                            <ul>
+                                <list>Enriching Lives . . . </list>
+                            </ul>
+                        </center>   
+                    </div>
+                    <div class="col">
+                        <h1>Do You Need Help?</h1>
+                        <ul>
+                            <li>211 LA County</li>
+                            <li>LA County Helps</li>
+                            <li>Public Alerts</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>About</h1>
+                        <ul>
+                            <li>Navigation</li>
+                            <li>How to Use</li>
+                            <li>Site Map</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>Site Info</h1>
+                        <ul>
+                            <li>Accessibility</li>
+                            <li>Disclaimer</li>
+                            <li>Language</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>Contact</h1>
+                        <ul>
+                            <li>Public Inquiry Form</li>
+                            <li>Assessor</li>
+                            <li>Auditor/Controller</li>
+                            <li>Treasurer & Tax Collector</li>
+                            <li>Assessment Appeals Board</li>
+                            <li>LA County Contacts</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
         </footer>
         <!------------------------------ /END FOOTER ------------------------------>
     </div>
-
-
+  
     @RenderSection("Scripts", required: false)
 
     <environment include="Development">
