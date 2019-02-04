@@ -7,6 +7,7 @@ body {
 }
 html, body {
     height: 100%;
+    background-color: transparent;
 }
 
 /* Wrapping element */
@@ -44,7 +45,10 @@ html, body {
 /* #Resets
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
-    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image: url('../images/la-background.jpg');
+    background-size: cover;
+    background-color: transparent;
 }
 
 *, *:before, *:after {
