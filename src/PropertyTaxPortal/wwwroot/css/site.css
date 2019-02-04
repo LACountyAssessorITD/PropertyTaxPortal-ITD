@@ -3,6 +3,10 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     
     padding-top: 0px !important;
+    
+}
+html, body {
+    height: 100%;
 }
 
 /* Wrapping element */
