@@ -48,18 +48,6 @@
     -moz-transition: .2s;
 }
 
-.footer .col ul list {
-    color: #999999;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 5px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-}
-
 .footer .col ul li:hover {
     color: #ffffff;
     transition: .1s;
