@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] PopertyTaxPortal</title>
- 
+
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link href="~/css/site.css" rel="stylesheet" />
@@ -14,13 +14,185 @@
     </environment>
 
 </head>
-<body>
+<body class="p-0">
 
     <!------------------------------ NAVBAR ------------------------------>
-   
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top mt-0">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                Property Tax Portal
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</button>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="dropdown menu-large nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">General Info </a>
+                        <ul class="dropdown-menu megamenu">
+                            <div class="row d-flex justify-content-end mr-2">
+                                <li class="col-md-5 dropdown-item">
+                                    <ul>
+                                        <li><a href="#">How the Property Tax System Works</a></li>
+                                        <li><a href="#">Areas of Responisbility</a></li>
+                                        <li><a href="#">New Home Owners</a></li>
+                                        <li><a href="#">New Business Owners</a></li>
+                                        <li><a href="#">Property Buisiness Search</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
 
-    
+                    <li class="dropdown menu-large nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Categories </a>
+                        <ul class="dropdown-menu megamenu">
+                            <div class="row">
+                                <li class="col-md-3 dropdown-item">
+                                    <ul>
+                                        <li class="dropdown-header">Tools & Research</li>
+                                        <li>
+                                            <a href="#">Property Tax Management System</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Mulitiple Parcel Inquiries</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Avoid Penalties by Understanding Postmarks</a>
+                                        </li>
 
+
+                                        <li>
+                                            <a href="#">Penalty Cancellation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Online Servies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Forms</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 dropdown-item">
+                                    <ul>
+                                        <li class="dropdown-header">Your Property Value</li>
+                                        <li>
+                                            <a href="#">Property Data & Maps</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contesting Your Property Value</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Supplemental Tax Estimator</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 dropdown-item">
+                                    <ul>
+                                        <li class="dropdown-header">Payment Options</li>
+                                        <li>
+                                            <a href="#">How Much Do I Owe?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pay Online</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Installment Payment Plans</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Other Payment Options</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 dropdown-item">
+                                    <ul>
+                                        <li class="dropdown-header">How to Read Your Property Tax Bill</li>
+                                        <li>
+                                            <a href="#">Annual Secured Property Tax Bill</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Annual Secured Property Tax Bill Insert</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Annual Secured Property Tax INformation Statement</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Notice of Delinquency</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Substitute Secured Property Tax Bill</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Supplemental Secured Property Tax Bill</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Unsecured Property Tax Bill</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Unsecured Prior Year Bill</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Payment Activity Notice</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Statement of Prior Year Taxes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Adjusted Annual Property Tax Bill</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Adjusted Supplemental Property Tax Bill</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Public Info</a>
+                        <ul class="dropdown-menu megamenu">
+                            <div class="row d-flex justify-content-end mr-2">
+                                <li class="col-md-5 dropdown-item">
+                                    <ul>
+                                        <li><a href="#">Board Correspondence</a></li>
+                                        <li><a href="#">County Code</a></li>
+                                        <li><a href="#">Public INformation Office</a></li>
+                                        <li><a href="#">Public Records Policy</a></li>
+                                        <li><a href="#">Board Agenda</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">FAQ</a>
+                        <ul class="dropdown-menu megamenu">
+                            <div class="row d-flex justify-content-end mr-2">
+                                <li class="col-md-5 dropdown-item">
+                                    <ul>
+                                        <li><a href="#">All Frequently Asked Questions</a></li>
+                                        <li><a href="#">Tax Bills</a></li>
+                                        <li><a href="#">Refunds/Tax Sales/Tax Liens</a></li>
+                                        <li><a href="#">Property Values</a></li>
+                                        <li><a href="#">Ownership</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
 
     <!----------------------------- /END NAVBAR -------------------------->
 
@@ -43,7 +215,7 @@
                             <ul>
                                 <list>Enriching Lives . . . </list>
                             </ul>
-                        </center>   
+                        </center>
                     </div>
                     <div class="col">
                         <h1>Do You Need Help?</h1>
@@ -87,7 +259,7 @@
         </footer>
         <!------------------------------ /END FOOTER ------------------------------>
     </div>
-  
+
     @RenderSection("Scripts", required: false)
 
     <environment include="Development">
