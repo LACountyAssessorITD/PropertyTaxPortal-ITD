@@ -4,20 +4,19 @@ body {
     padding-top: 0px !important;
     padding-bottom: 60px;
     margin: 0;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    
 }
 html, body {
     height: 100%;
     background-color: transparent;
-    
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    
 }
 
 p {
@@ -37,7 +36,7 @@ p {
 /* #Resets
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
-    margin-right: 0 !important;
+    
     background-repeat: no-repeat    ;
     background-image: url('../images/la-background.jpg');
     background-size: cover;
