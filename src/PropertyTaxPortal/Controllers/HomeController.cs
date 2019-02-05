@@ -38,6 +38,13 @@ namespace PropertyTaxPortal.Controllers
         {
             return View();
         }
+        
+        public IActionResult PublicInquiry()
+        {
+            return View();
+        }
+
+
 
         
 

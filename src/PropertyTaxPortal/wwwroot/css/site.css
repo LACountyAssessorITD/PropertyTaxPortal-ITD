@@ -1,12 +1,16 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    
     padding-top: 0px !important;
-    
+    padding-bottom: 60px;
+    margin: 0;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 html, body {
     height: 100%;
+    background-color: transparent;
+    
 }
 
 /* Wrapping element */
@@ -16,35 +20,29 @@ html, body {
     padding-right: 15px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+p {
+    line-height: 1.2 !important;
+    margin: 2px !important;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+.img-sz {
+    min-height: 70px;
+    height: 100%;
     width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
 
 
 /* #Resets
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
-    box-sizing: border-box;
+    margin-right: 0 !important;
+    background-repeat: no-repeat    ;
+    background-image: url('../images/la-background.jpg');
+    background-size: cover;
+    background-color: transparent;
+    background-attachment: fixed;
 }
 
 *, *:before, *:after {
@@ -55,6 +53,9 @@ html {
 
 /* #Universal and Default Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+    
+}
 
 
 a {
@@ -74,11 +75,6 @@ h2 {
     margin-bottom: 30px;
     margin-top: 10px;
 }
-
-.container {
-    
-}
-
 .ul-reset {
     padding-left: 0;
     margin-top: 0;
