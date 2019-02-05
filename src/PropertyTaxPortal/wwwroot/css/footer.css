@@ -1,8 +1,9 @@
 ﻿/* STYLES SPECIFIC TO FOOTER  */
 .footer {
     width: 100%;
+    margin-top: 20px;   
     position: absolute;
-    height: auto;
+    height: 200px;
     bottom: 0;
     background-color: #070617;
 }
