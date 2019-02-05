@@ -29,6 +29,11 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        public IActionResult PublicInqury()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
@@ -40,6 +45,8 @@ namespace PropertyTaxPortal.Controllers
         }
 
 
+
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

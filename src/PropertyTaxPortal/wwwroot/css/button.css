@@ -1,0 +1,28 @@
+﻿.flex-grid {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    height: 50vh;
+}
+
+.child {
+    height: 50vh;
+    width: 100%;
+    margin: 2px;
+}
+
+    .child:nth-child(1) {
+        background-color: yellowgreen ;
+    }
+
+    .child:nth-child(2) {
+        background-color: skyblue;
+    }
+
+    .child:nth-child(3) {
+        background-color: thistle;
+    }
+
+    .child:nth-child(4) {
+        background-color: hotpink;
+    }
