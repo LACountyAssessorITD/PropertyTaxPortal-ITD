@@ -25,9 +25,13 @@ p {
 }
 
 .img-sz {
-    min-height: 70px;
-    height: 100%;
+    max-height: 200px !important;
+    max-width: 150px !important;
+    min-height: 120px !important; 
+    min-width: 100px !important;
+    height: 75%;
     width: 100%;
+    
 }
 
 
@@ -40,13 +44,10 @@ html {
     background-repeat: no-repeat    ;
     background-image: url('../images/la-background.jpg');
     background-size: cover;
-    background-color: transparent;
+   
     background-attachment: fixed;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
 
 
