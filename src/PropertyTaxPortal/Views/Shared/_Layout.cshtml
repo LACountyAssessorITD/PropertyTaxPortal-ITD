@@ -25,11 +25,11 @@
     </environment>
 
 </head>
-<body class="p-0">
+<body class="">
 
     <!------------------------------ NAVBAR ------------------------------>
-    <nav class="navbar navbar-light color-3 navbar-expand-md fixed-top mt-0">
-        <div class="container-fluid">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top color-3">
+        <div class="container-fluid ">
             <a class="navbar-brand" href="/">
                 Property Tax Portal
             </a>
@@ -172,7 +172,7 @@
                                     <ul>
                                         <li><a href="#">Board Correspondence</a></li>
                                         <li><a href="#">County Code</a></li>
-                                        <li><a href="#">Public INformation Office</a></li>
+                                        <li><a href="#">Public Information Office</a></li>
                                         <li><a href="#">Public Records Policy</a></li>
                                         <li><a href="#">Board Agenda</a></li>
                                     </ul>
@@ -215,14 +215,77 @@
         <hr />
 
 
+        <!------------------------------ FOOTER ------------------------------>
+        <nav>
+            <div class="footer">
+                <div class="contain">
+                    <div class="col">
+                        <center>
+                            <h1><img src="~/images/LACseal.png" /></h1>
+                            <ul>
+                                <list>Enriching Lives . . . </list>
+                            </ul>
+                        </center>
+                    </div>
+                    <div class="col">
+                        <h1>Do You Need Help?</h1>
+                        <ul>
+                            <li>211 LA County</li>
+                            <li>LA County Helps</li>
+                            <li>Public Alerts</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>About</h1>
+                        <ul>
+                            <li>Navigation</li>
+                            <li>How to Use</li>
+                            <li>Site Map</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>Site Info</h1>
+                        <ul>
+                            <li>Accessibility</li>
+                            <li>Disclaimer</li>
+                            <li>Language</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>Contact</h1>
+                        <ul>
 
-        <!------------------------------ /END FOOTER ------------------------------>
+
+                            <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
+                            <li>Assessor</li>
+                            <li>Auditor/Controller</li>
+                            <li>Treasurer & Tax Collector</li>
+                            <li>Assessment Appeals Board</li>
+                            <li>LA County Contacts</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </nav>
+
+        <footer class="">
+            <nav class="navbar navbar-brand fixed-bottom color-3">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">&copy; @DateTime.Now.Year - Property Tax Portal</span>
+                </div>
+            </nav>
+            
+        </footer>
+
+
     </div>
-    <!------------------------------ FOOTER ------------------------------>
+
     <!-- Footer -->
 
 
-    @RenderSection("Scripts", required: false)
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -249,58 +312,8 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
+    @RenderSection("Scripts", required: false)
 </body>
-<footer class="container-fluid pl-0 pr-0 mx-0 fixed-bottom ">
-    <div class="footer">
-        <div class="contain">
-            <div class="col">
-                <center>
-                    <h1><img src="~/images/LACseal.png" /></h1>
-                    <ul>
-                        <list>Enriching Lives . . . </list>
-                    </ul>
-                </center>
-            </div>
-            <div class="col">
-                <h1>Do You Need Help?</h1>
-                <ul>
-                    <li>211 LA County</li>
-                    <li>LA County Helps</li>
-                    <li>Public Alerts</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>About</h1>
-                <ul>
-                    <li>Navigation</li>
-                    <li>How to Use</li>
-                    <li>Site Map</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Site Info</h1>
-                <ul>
-                    <li>Accessibility</li>
-                    <li>Disclaimer</li>
-                    <li>Language</li>
-                    <li>Privacy Policy</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Contact</h1>
-                <ul>
-                    
-                    
-                    <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
-                    <li>Assessor</li>
-                    <li>Auditor/Controller</li>
-                    <li>Treasurer & Tax Collector</li>
-                    <li>Assessment Appeals Board</li>
-                    <li>LA County Contacts</li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</footer>
+
+
 </html>

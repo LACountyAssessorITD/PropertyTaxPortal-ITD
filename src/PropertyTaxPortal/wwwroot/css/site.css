@@ -1,8 +1,8 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 0px !important;
-    padding-bottom: 60px;
+    padding-top: 100px !important;
+    
     margin: 0;
     
 }
@@ -11,6 +11,7 @@ html, body {
     background-color: transparent;
     padding-right: 0px;
     margin-right: 0px;
+    padding-bottom: 60px;
 }
 
 /* Wrapping element */

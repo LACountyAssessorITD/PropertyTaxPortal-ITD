@@ -1,12 +1,12 @@
 ﻿.navbar {
-    position: relative !important;
+   
 }
 
 .megamenu .menu-right {
     margin-left: auto;
-    
 }
-.dropdown-item{
+
+.dropdown-item {
     margin: 0 0 0 !important;
     padding: 0 0 0 !important;
 }
@@ -23,7 +23,6 @@
     .megamenu > div > li > ul {
         padding: 0;
         margin: 0;
-        
     }
 
         .megamenu > div > li > ul > li {
@@ -56,7 +55,6 @@
         .megamenu.disabled > a:hover,
         .megamenu.disabled > a:focus {
             text-decoration: none;
-            
             background-image: none;
             filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
             cursor: not-allowed;
