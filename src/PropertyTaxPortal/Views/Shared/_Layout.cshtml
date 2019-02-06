@@ -8,9 +8,10 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link href="~/css/site.css" rel="stylesheet" />
-        <link href="~/css/button.css" rel="stylesheet" />
+        
         <link href="~/css/footer.css" rel="stylesheet" />
         <link href="~/css/nav.css" rel="stylesheet" />
+        <link href="~/css/button.css" rel="stylesheet" />
     </environment>
     <environment exclude="Development">
         <link href="~/css/button.css" rel="stylesheet" asp-append-version="true" />
@@ -28,7 +29,7 @@
 <body class="">
 
     <!------------------------------ NAVBAR ------------------------------>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top color-3">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top color-4">
         <div class="container-fluid ">
             <a class="navbar-brand" href="/">
                 Property Tax Portal
@@ -214,73 +215,73 @@
         <!----------------------------- /END BODY ------------------------->
         <hr />
 
-
-        <!------------------------------ FOOTER ------------------------------>
-        <nav>
-            <div class="footer">
-                <div class="contain">
-                    <div class="col">
-                        <center>
-                            <h1><img src="~/images/LACseal.png" /></h1>
-                            <ul>
-                                <list>Enriching Lives . . . </list>
-                            </ul>
-                        </center>
-                    </div>
-                    <div class="col">
-                        <h1>Do You Need Help?</h1>
+    </div>
+    <!------------------------------ FOOTER ------------------------------>
+    <nav class="navbar navbar-dark  px-0">
+        <div class="footer container-fluid">
+            <div class="row  pt-5">
+                <div class="col-2">
+                    <center>
+                        <h1><img src="~/images/LACseal.png" /></h1>
                         <ul>
-                            <li>211 LA County</li>
-                            <li>LA County Helps</li>
-                            <li>Public Alerts</li>
+                            <list>Enriching Lives . . . </list>
                         </ul>
-                    </div>
-                    <div class="col">
-                        <h1>About</h1>
-                        <ul>
-                            <li>Navigation</li>
-                            <li>How to Use</li>
-                            <li>Site Map</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h1>Site Info</h1>
-                        <ul>
-                            <li>Accessibility</li>
-                            <li>Disclaimer</li>
-                            <li>Language</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h1>Contact</h1>
-                        <ul>
-
-
-                            <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
-                            <li>Assessor</li>
-                            <li>Auditor/Controller</li>
-                            <li>Treasurer & Tax Collector</li>
-                            <li>Assessment Appeals Board</li>
-                            <li>LA County Contacts</li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
+                    </center>
                 </div>
+                <div class="col-2">
+                    <h1>Do You Need Help?</h1>
+                    <ul>
+                        <li>211 LA County</li>
+                        <li>LA County Helps</li>
+                        <li>Public Alerts</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h1>About</h1>
+                    <ul>
+                        <li>Navigation</li>
+                        <li>How to Use</li>
+                        <li>Site Map</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h1>Site Info</h1>
+                    <ul>
+                        <li>Accessibility</li>
+                        <li>Disclaimer</li>
+                        <li>Language</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h1>Contact</h1>
+                    <ul>
+
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
+                        <li>Assessor</li>
+                        <li>Auditor/Controller</li>
+                        <li>Treasurer & Tax Collector</li>
+                        <li>Assessment Appeals Board</li>
+                        <li>LA County Contacts</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
             </div>
+        </div>
+    </nav>
+
+    <footer class="">
+        <nav class="navbar navbar-brand  fixed-bottom color-4 mx-0">
+
+            <span class="navbar-brand">&copy; @DateTime.Now.Year - Property Tax Portal</span>
+
         </nav>
 
-        <footer class="">
-            <nav class="navbar navbar-brand fixed-bottom color-3">
-                <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1">&copy; @DateTime.Now.Year - Property Tax Portal</span>
-                </div>
-            </nav>
-            
-        </footer>
+    </footer>
 
 
-    </div>
+
 
     <!-- Footer -->
 
