@@ -1,8 +1,82 @@
 ﻿
+@model PropertyTaxPortal.Models.PublicInquiryViewModel
+
 @{
     ViewData["Title"] = "PublicInquiry";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>PublicInquiry</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        table th, table td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <h1>Public Inquiry Form</h1>
+            <h1>Public Inquiry Form</h1>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2">In order to most effectively serve you, please fill out the following form as completely as possible.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="red">@Html.ValidationMessageFor(model => model.lastName)</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="red">@Html.ValidationMessageFor(model => model.firstName)</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px">
+                        <font color="red">*</font> Last Name:
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.lastName)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="red">*</font> First Name:
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.firstName)
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        Please explain your request for <br />
+                        assistance (be brief, but specific):
+                    </td>
+                    <td>
+                        @Html.TextAreaFor(model => model.requestForAssistance, new { rows = "3", cols = "20" })
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit Inquiry" asp-controller="Home" asp-action="PublicInquiry" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>
 
