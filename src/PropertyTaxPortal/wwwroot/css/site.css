@@ -63,8 +63,9 @@ html {
     
 }
 
+
 .h-33 {
-    height: 33% !important;
+    height: 100px !important;
 }
 
 @media only screen and (max-device-width : 500px) {
