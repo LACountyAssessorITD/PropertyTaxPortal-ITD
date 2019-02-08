@@ -1,0 +1,31 @@
+﻿@model PropertyTaxPortal.Models.PublicInquiryViewModel
+
+@{
+    ViewData["Title"] = "PublicInquiryThankYou";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="regularPage">
+    <asp:Panel id="Panel2" runat="server" Visible="False">
+        <span class="normalText">
+            Thank you for completing our Public Inquiry form. A staff member from the
+            <asp:Literal id="ResponsibleDepartment" runat="server" text=""></asp:Literal>will respond to your request shortly.
+            <br />
+            <br />
+            The Reference number for your inquiry is
+            <asp:Literal id="ReferenceNumber" runat="server" text=""></asp:Literal>.
+            <br />
+            <br />
+            <blockquote>
+                <p>
+                    <asp:Literal id="AddressPhoneWebsite" runat="server" text=""></asp:Literal>
+                </p>
+            </blockquote>
+            <br />
+            <br />
+            <br />
+            Los Angeles County
+            <br />
+            <span>Property Tax Portal</span>
+        </span>
+    </asp:Panel>
+</div>
