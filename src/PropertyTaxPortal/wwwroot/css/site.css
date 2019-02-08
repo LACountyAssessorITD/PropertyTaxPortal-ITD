@@ -1,23 +1,21 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 0px !important;
-    padding-bottom: 60px;
-    margin: 0;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-top: 100px !important;
+    
 }
 html, body {
-    height: 100%;
+    
+    width: 100% !important;
     background-color: transparent;
+    padding-bottom: 60px;
     
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    
 }
 
 p {
@@ -26,9 +24,13 @@ p {
 }
 
 .img-sz {
-    min-height: 70px;
-    height: 100%;
+    max-height: 200px !important;
+    max-width: 150px !important;
+    min-height: 120px !important; 
+    min-width: 100px !important;
+    height: 75%;
     width: 100%;
+    
 }
 
 
@@ -37,17 +39,14 @@ p {
 /* #Resets
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
-    margin-right: 0 !important;
+    
     background-repeat: no-repeat    ;
     background-image: url('../images/la-background.jpg');
     background-size: cover;
-    background-color: transparent;
+   
     background-attachment: fixed;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
 
 
@@ -57,30 +56,34 @@ html {
     
 }
 
-
-a {
-    text-decoration: none;
+.card {
+    border-radius: 20px !important;
+    border: 1px solid #000;
+    margin: 5%;
+    
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 20px;
+.h-33 {
+    height: 33% !important;
 }
 
-h2 {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    margin-top: 10px;
+@media only screen and (max-device-width : 500px) {
+    html, body {
+         
+    }
+    .display-2 {
+        font-size: 3rem !important;
+    }
+    .display-1 {
+        font-size: 1rem !important;     
+    }
+
+    
 }
-.ul-reset {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
+
+
+
+
 
 
 

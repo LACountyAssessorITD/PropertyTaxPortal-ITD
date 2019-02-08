@@ -8,19 +8,41 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link href="~/css/site.css" rel="stylesheet" />
-
+        
         <link href="~/css/footer.css" rel="stylesheet" />
         <link href="~/css/nav.css" rel="stylesheet" />
+        <link href="~/css/button.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link href="~/css/button.css" rel="stylesheet" asp-append-version="true" />
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+              integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+              crossorigin="anonymous" asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/nav.css" asp-append-version="true" />
     </environment>
 
 </head>
-<body class="p-0">
+<body class="">
 
     <!------------------------------ NAVBAR ------------------------------>
-    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top mt-0">
-        <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-md py-0 fixed-top color-4">
+        <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                Property Tax Portal
+                <div class="container  w-auto">
+                    <div class="row">
+                        <div class="col-3">
+                            <img width="100%" src="~/images/LACseal.png" />
+                        </div>
+                        <div class="col-9 pt-2">
+                            <h5 class="display-6">Los Angeles County</h5>
+                            <h2 class="display-5 mb-0 pb-0">Property Tax Portal</h2>
+                        </div>
+                    </div>
+                </div>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</button>
             <div class="navbar-collapse collapse">
@@ -119,7 +141,7 @@
                                             <a href="#">Annual Secured Property Tax Bill Insert</a>
                                         </li>
                                         <li>
-                                            <a href="#">Annual Secured Property Tax INformation Statement</a>
+                                            <a href="#">Annual Secured Property Tax Information Statement</a>
                                         </li>
                                         <li>
                                             <a href="#">Notice of Delinquency</a>
@@ -161,7 +183,7 @@
                                     <ul>
                                         <li><a href="#">Board Correspondence</a></li>
                                         <li><a href="#">County Code</a></li>
-                                        <li><a href="#">Public INformation Office</a></li>
+                                        <li><a href="#">Public Information Office</a></li>
                                         <li><a href="#">Public Records Policy</a></li>
                                         <li><a href="#">Board Agenda</a></li>
                                     </ul>
@@ -196,22 +218,79 @@
 
     <!----------------------------- /END NAVBAR -------------------------->
 
-    <div class="container-fluid bg-transparent">
+    <div class="container-fluid ">
         <!------------------------------ BODY ---------------------------->
         @RenderBody()
 
         <!----------------------------- /END BODY ------------------------->
-        <hr />
+        
 
-
-
-        <!------------------------------ /END FOOTER ------------------------------>
     </div>
     <!------------------------------ FOOTER ------------------------------>
+    <nav class="navbar navbar-dark  px-0">
+        <div class="footer container-fluid">
+            <div class="row  pt-5">
+                <div class="col-2">
+                    <center>
+                        <h1><img src="~/images/LACseal.png" /></h1>
+                        <ul>
+                            <list>Enriching Lives . . . </list>
+                        </ul>
+                    </center>
+                </div>
+                <div class="col-2">
+                    <h2 class="display-6">Do You Need Help?</h2>
+                    <ul>
+                        <li>211 LA County</li>
+                        <li>LA County Helps</li>
+                        <li>Public Alerts</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h2 class="display-6">About</h2>
+                    <ul>
+                        <li>Navigation</li>
+                        <li>How to Use</li>
+                        <li>Site Map</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h2 class="display-6">Site Info</h2>
+                    <ul>
+                        <li>Accessibility</li>
+                        <li>Disclaimer</li>
+                        <li>Language</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h2 class="display-6">Contact</h2>
+                    <ul>
+                        <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
+                        <li>Assessor</li>
+                        <li>Auditor/Controller</li>
+                        <li>Treasurer & Tax Collector</li>
+                        <li>Assessment Appeals Board</li>
+                        <li>LA County Contacts</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="">
+        <nav class="navbar navbar-brand  fixed-bottom color-4 mx-0">
+
+            <span class="navbar-brand">&copy; @DateTime.Now.Year - Property Tax Portal</span>
+
+        </nav>
+
+    </footer>
     <!-- Footer -->
 
 
-    @RenderSection("Scripts", required: false)
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -220,58 +299,26 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js"></script>
     </environment>
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+                crossorigin="anonymous">
+        </script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
 </body>
-<footer class="container-fluid pl-0 pr-0 mx-0">
-    <div class="footer">
-        <div class="contain">
-            <div class="col">
-                <center>
-                    <h1><img src="~/images/LACseal.png" /></h1>
-                    <ul>
-                        <list>Enriching Lives . . . </list>
-                    </ul>
-                </center>
-            </div>
-            <div class="col">
-                <h1>Do You Need Help?</h1>
-                <ul>
-                    <li>211 LA County</li>
-                    <li>LA County Helps</li>
-                    <li>Public Alerts</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>About</h1>
-                <ul>
-                    <li>Navigation</li>
-                    <li>How to Use</li>
-                    <li>Site Map</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Site Info</h1>
-                <ul>
-                    <li>Accessibility</li>
-                    <li>Disclaimer</li>
-                    <li>Language</li>
-                    <li>Privacy Policy</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Contact</h1>
-                <ul>
-                    
-                    
-                    <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
-                    <li>Assessor</li>
-                    <li>Auditor/Controller</li>
-                    <li>Treasurer & Tax Collector</li>
-                    <li>Assessment Appeals Board</li>
-                    <li>LA County Contacts</li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</footer>
+
+
 </html>
