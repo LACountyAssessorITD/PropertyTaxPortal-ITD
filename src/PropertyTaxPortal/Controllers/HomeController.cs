@@ -74,7 +74,6 @@ namespace PropertyTaxPortal.Controllers
                 using (StreamReader reader = new StreamReader(wwwRoot + "/Templates/EmailTemplate/PublicInquiry.html"))
                 {
                     mm.Body = reader.ReadToEnd();
-                    //Replace UserName and Other variables available in body Stream
                     mm.Body = mm.Body.Replace("{LastName}", model.lastName);
                     mm.Body = mm.Body.Replace("{FirstName}", model.firstName);
                 }
@@ -100,6 +99,19 @@ namespace PropertyTaxPortal.Controllers
         {
             return View();
         }
+
+        public ActionResult LoadDepartments()
+        {  
+             List<SelectListItem> li = new List<SelectListItem>();  
+             li.Add(new SelectListItem { Text = "Select", Value = "0" });  
+             li.Add(new SelectListItem { Text = "Assessment Appeals Board", Value = "1" });  
+             li.Add(new SelectListItem { Text = "Assessor", Value = "2" });  
+             li.Add(new SelectListItem { Text = "Auditor-Controller", Value = "3" });  
+             li.Add(new SelectListItem { Text = "Treasurer & Tax Collector", Value = "4" });  
+ 
+             ViewData["departments"] = li;  
+             return View();  
+        }  
 
     }
 }
