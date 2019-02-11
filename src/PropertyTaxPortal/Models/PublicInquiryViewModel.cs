@@ -8,13 +8,18 @@ namespace PropertyTaxPortal.Models
 {
     public class PublicInquiryViewModel
     {
+        [Required(ErrorMessage = "Subject is required.")]
+        public string selectedSubject { get; set; }
+    
+        public string selectedEmail { get; set; }
+
         [Required (ErrorMessage = "Last Name is required.")]
         public string lastName { get; set; }
 
         [Required(ErrorMessage = "First Name is required.")]
         public string firstName { get; set; }
 
-        public string requestForAssistance { get; set; }
+        public string comment { get; set; }
 
     }
 }

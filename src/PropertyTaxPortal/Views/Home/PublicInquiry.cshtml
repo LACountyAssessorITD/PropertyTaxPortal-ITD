@@ -6,76 +6,129 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <style type="text/css">
-        body {
-            font-family: Arial;
-            font-size: 10pt;
-        }
+<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Dropdownlist Selectedchange event  
+        $("#Department").change(function () {
+            $("#Subject").empty();
+            $.ajax
+                ({
+                    type: 'POST',
+                    url: '@Url.Action("GetSubjects", "Home")', // we are calling json method  
+                    dataType: 'json',
+                    data: { id: $("#Department").val() },
+                    // here we are get value of selected country and passing same value as input to json method GetStates.  
 
-        table th, table td {
-            padding: 5px;
-        }
-    </style>
-</head>
+                    success: function (subjects) {
+                        // sunbjects contains the JSON formatted list  
+                        // of subjects passed from the controller 
+                        $.each(subjects, function (index, text) {
+                            $("#Subject").append('<option value="' + text.value + '">' + text.text + '</option>');
 
-<body>
-    <div>
-        @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
-        {
-            <h5>Public Inquiry Form</h5>
-            <table border="0" cellpadding="0" cellspacing="0" style="width: 600px">
-                <tr>
-                    <td colspan="2">In order to most effectively serve you, please fill out the following form as completely as possible.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <font color="red">@Html.ValidationMessageFor(model => model.lastName)</font>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <font color="red">@Html.ValidationMessageFor(model => model.firstName)</font>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 200px">
-                        <font color="red">*</font> Last Name:
-                    </td>
-                    <td style="width: 400px">
-                        @Html.TextBoxFor(model => model.lastName)
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <font color="red">*</font> First Name:
-                    </td>
-                    <td>
-                        @Html.TextBoxFor(model => model.firstName)
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">
-                        Please explain your request for <br />
-                        assistance (be brief, but specific):
-                    </td>
-                    <td>
-                        @Html.TextAreaFor(model => model.requestForAssistance, new { rows = "3", cols = "20" })
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Submit Inquiry" asp-controller="Home" asp-action="PublicInquiry" />
-                    </td>
-                </tr>
-            </table>
-        }
-    </div>
-</body>
-</html>
+                            // here we are adding option for Subjects
+                        });
+                    },
+                    error: function (ex) {
+                        alert('Failed to retrieve subjects.' + ex);
+                    }
+                });
+            return false;
+        })
+
+        $("#SubmitInquiry").button().click(function () {
+
+            var subjectVal = $("#Subject option:selected").text();
+            $('#selectedSubject').val(subjectVal);
+
+            var emailVal = $("#Subject option:selected").val();
+            $('#selectedEmail').val(emailVal);
+        })
+       
+    });
+</script>
+
+<div>
+    @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <h5>Public Inquiry Form</h5>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 600px">
+            <tr>
+                <td colspan="2">In order to most effectively serve you, please fill out the following form as completely as possible.</td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">@Html.ValidationMessageFor(model => model.selectedSubject)</font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">@Html.ValidationMessageFor(model => model.lastName)</font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">@Html.ValidationMessageFor(model => model.firstName)</font>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px">
+                    <font color="red">*</font> Department:
+                </td>
+                <td style="width: 400px">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.DropDownList("Department", ViewData["departments"] as List<SelectListItem>, new { style = "width:250px", @class = "dropdown1" })
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px">
+                    <font color="red">*</font> Subject:
+                </td>
+                <td style="width: 400px">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.DropDownList("Subject", new SelectList(string.Empty, "Value", "Text"), "Select a subject", new { style = "width:250px", @class = "dropdown1" })
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px">
+                    <font color="red">*</font> Last Name:
+                </td>
+                <td style="width: 400px">
+                    @Html.TextBoxFor(model => model.lastName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">*</font> First Name:
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.firstName)
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    Please explain your request for <br />
+                    assistance (be brief, but specific):
+                </td>
+                <td>
+                    @Html.TextAreaFor(model => model.comment, new { rows = "3", cols = "20" })
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" id="SubmitInquiry" value="Submit Inquiry" asp-controller="Home" asp-action="PublicInquiry" />
+                </td>
+            </tr>
+        </table>
+        @Html.HiddenFor(model => model.selectedSubject)
+        @Html.HiddenFor(model => model.selectedEmail)
+    }
+</div>
+
 
