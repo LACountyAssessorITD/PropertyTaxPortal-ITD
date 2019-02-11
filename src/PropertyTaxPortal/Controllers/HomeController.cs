@@ -17,6 +17,7 @@ namespace PropertyTaxPortal.Controllers
 {
     public class HomeController : Controller
     {
+        
         private readonly Email _email;
         private readonly IHostingEnvironment _host;
 
