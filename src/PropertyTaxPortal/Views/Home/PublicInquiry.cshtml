@@ -19,7 +19,7 @@
                     url: '@Url.Action("GetSubjects", "Home")', // we are calling json method  
                     dataType: 'json',
                     data: { id: $("#Department").val() },
-                    // here we are get value of selected country and passing same value as input to json method GetStates.  
+                    // here we are get value of selected department and passing same value as input to json method GetSubjects.  
 
                     success: function (subjects) {
                         // sunbjects contains the JSON formatted list  
@@ -44,8 +44,53 @@
 
             var emailVal = $("#Subject option:selected").val();
             $('#selectedEmail').val(emailVal);
+
+            //Validation
+            var valid = true;
+            deleteRows();
+
+            if (subjectVal == "") {
+                //alert("no Subject");
+                insertError("Subject");
+                valid = false;
+            }
+
+            if (document.getElementById('txtLastName').value.trim() == "") {
+                //alert("no Last Name");
+                insertError("Last Name");
+                valid = false;
+            }
+
+            if (document.getElementById('txtFirstName').value.trim() == "") {
+                //alert("no First Name");
+                insertError("First Name");
+                valid = false;
+            }
+
+            if (!valid) {
+                document.getElementById('m_table').style.visibility = "visible";
+                return false;
+            }
+
+            //Write out the error messages
+            function insertError(parm) {
+                //alert(parm);
+                var table = document.getElementById('m_table');
+                var rowCount = table.rows.length;
+                var row = table.insertRow(rowCount);
+                var cell1 = row.insertCell(0);
+                cell1.innerHTML = "<font style='font-family: Arial; font-size: 14px; color:#ff0000;'>" + " - " + parm + "</font>";
+            }
+
+            function deleteRows() {
+                var table = document.getElementById('m_table');
+                var rowCount = table.rows.length;
+                for (var i = rowCount - 1; i > 0; i--) {
+                    table.deleteRow(i);
+                }
+            }
         })
-       
+
     });
 </script>
 
@@ -58,11 +103,17 @@
                 <td colspan="2">In order to most effectively serve you, please fill out the following form as completely as possible.</td>
             </tr>
             <tr>
-                <td>
-                    <font color="red">@Html.ValidationMessageFor(model => model.selectedSubject)</font>
+                <td colspan="2">
+                    <table id="m_table" style="visibility:hidden">
+                        <tr>
+                            <td class="normalText"><span style="color:#ff0000">These following fields are required:</span></td>
+                        </tr>
+
+                    </table>
                 </td>
             </tr>
-            <tr>
+
+            <!--<tr>
                 <td>
                     <font color="red">@Html.ValidationMessageFor(model => model.lastName)</font>
                 </td>
@@ -71,9 +122,9 @@
                 <td>
                     <font color="red">@Html.ValidationMessageFor(model => model.firstName)</font>
                 </td>
-            </tr>
+            </tr>-->
             <tr>
-                <td style="width: 200px">
+                <td style="width: 300px">
                     <font color="red">*</font> Department:
                 </td>
                 <td style="width: 400px">
@@ -84,38 +135,38 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 200px">
+                <td style="width: 300px">
                     <font color="red">*</font> Subject:
                 </td>
                 <td style="width: 400px">
                     @using (Html.BeginForm())
                     {
-                        @Html.DropDownList("Subject", new SelectList(string.Empty, "Value", "Text"), "Select a subject", new { style = "width:250px", @class = "dropdown1" })
+                        @Html.DropDownList("Subject", new SelectList(string.Empty, "Value", "Text"), new { style = "width:250px", @class = "dropdown1" })
                     }
                 </td>
             </tr>
             <tr>
-                <td style="width: 200px">
+                <td style="width: 300px">
                     <font color="red">*</font> Last Name:
                 </td>
                 <td style="width: 400px">
-                    @Html.TextBoxFor(model => model.lastName)
+                    @Html.TextBoxFor(model => model.lastName, new { @id = "txtLastName", @name = "txtLastName" })
                 </td>
             </tr>
             <tr>
-                <td>
+                <td style="width: 300px">
                     <font color="red">*</font> First Name:
                 </td>
-                <td>
-                    @Html.TextBoxFor(model => model.firstName)
+                <td style="width: 400px">
+                    @Html.TextBoxFor(model => model.firstName, new { @id = "txtFirstName", @name = "txtFirstName" })
                 </td>
             </tr>
             <tr>
-                <td valign="top">
+                <td valign="top" style="width: 300px">
                     Please explain your request for <br />
                     assistance (be brief, but specific):
                 </td>
-                <td>
+                <td style="width: 400px">
                     @Html.TextAreaFor(model => model.comment, new { rows = "3", cols = "20" })
                 </td>
             </tr>
