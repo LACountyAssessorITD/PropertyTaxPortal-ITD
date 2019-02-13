@@ -1,0 +1,57 @@
+﻿@model ReflectionIT.Mvc.Paging.PagingList<PropertyTaxPortal.Models.FAQ>
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *, ReflectionIT.Mvc.Paging
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<nav aria-label="Suppliers navigation example">
+    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+</nav>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.featuredCode)
+            </th>
+            <th>
+                <a asp-action="CreateorEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i>Create FAQs</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.question)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.featuredCode)
+                </td>
+                <td>
+                    <a asp-action="down" asp-route-id="@item.FAQID"><i class="fa fa-caret-down" style="font-size:32px"></i></a>
+                    <a asp-action="down" asp-route-id="@item.FAQID"><i class="fa fa-caret-up" style="font-size:32px"></i></a> |
+                    <a asp-action="CreateorEdit" asp-route-id="@item.FAQID"><i class="fa fa-marker fa-lg"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.FAQID" class="text-danger ml-1"><i class="fa fa-trash-alt fa-lg"></i></a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+<nav aria-label="Suppliers navigation example">
+    <vc:pager paging-list="@Model" />
+</nav>

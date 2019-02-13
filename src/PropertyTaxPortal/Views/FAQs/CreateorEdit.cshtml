@@ -1,0 +1,61 @@
+﻿@model PropertyTaxPortal.Models.FAQ
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>FAQ</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateorEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+            <label asp-for="webSectionID" class="control-label"></label>
+            <input asp-for="webSectionID" class="form-control" />
+            <span asp-validation-for="webSectionID" class="text-danger"></span>
+        </div>*@
+            <input type="hidden" asp-for="FAQID" />
+            <div class="form-group">
+                <label asp-for="CategoryID" class="control-label"></label>
+                <input asp-for="CategoryID" class="form-control" />
+                <span asp-validation-for="CategoryID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="question" class="control-label"></label>
+                <input asp-for="question" class="form-control" />
+                <span asp-validation-for="question" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="answer" class="control-label"></label>
+                <input asp-for="answer" class="form-control" />
+                <span asp-validation-for="answer" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+            <label asp-for="sOrder" class="control-label"></label>
+            <input asp-for="sOrder" class="form-control" />
+            <span asp-validation-for="sOrder" class="text-danger"></span>
+        </div>*@
+            <div class="form-group">
+                <label asp-for="updatedOn" class="control-label"></label>
+                <input asp-for="updatedOn" class="form-control" />
+                <span asp-validation-for="updatedOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label title="Show as" class="control-label"></label>
+                <input asp-for="featuredCode" class="form-control" />
+                <span asp-validation-for="featuredCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

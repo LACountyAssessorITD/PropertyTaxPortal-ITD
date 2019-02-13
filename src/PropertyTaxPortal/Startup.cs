@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PropertyTaxPortal.Models;
+using Microsoft.EntityFrameworkCore;
+using ReflectionIT.Mvc.Paging;
 
 namespace PropertyTaxPortal
 {
@@ -35,9 +37,8 @@ namespace PropertyTaxPortal
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
-            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<PTPContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("Devconnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
