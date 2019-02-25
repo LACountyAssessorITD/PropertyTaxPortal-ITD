@@ -1,15 +1,99 @@
-﻿@model ReflectionIT.Mvc.Paging.PagingList<PropertyTaxPortal.Models.FAQ>
-@using ReflectionIT.Mvc.Paging
-@addTagHelper *, ReflectionIT.Mvc.Paging
+﻿@model IEnumerable<PropertyTaxPortal.Models.FAQ>
+
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "FAQ";
 }
 
-<h1>Index</h1>
-<nav aria-label="Suppliers navigation example">
-    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
-</nav>
+<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#dArrow").onclick(function (event) {
+            alert('hi');
+            alert(("#dArrow").id);
+            var id = ("#dArrow").id;
+            alert(id);
+             $.ajax(
+            {
+                type: "POST",
+                 url: '@Url.Action("DownArrow", "FAQs")',
+                data: {id: id},
+                success: function (result) {
+                    if (result == true) {
+                        alert('hi');
+                        var baseUrl="/Index";
+                        window.location.reload(baseUrl);
+                    }
+                    else {
+                        alert("There is a problem, Try Later!");
+                    }
+                }
+            });
+        })
+    });
+    function UpArrow(id) {
+        $.ajax(
+        {
+            type: "POST",
+             url: '@Url.Action("UpArrow", "FAQs")',
+            data: {id: id},
+            success: function (result) {
+                if (result == true) {
+                    var baseUrl="/Index";
+                    window.location.reload(baseUrl);
+                }
+                else {
+                    alert("There is a problem, Try Later!");
+                }
+            }
+        });
+    }
 
+    function DownArrow(id) {
+        $.ajax(
+        {
+                type: "POST",
+             url: '@Url.Action("DownArrow", "FAQs")',
+            data: { id: id},
+                success: function (result) {
+                if (result == true) {
+                    window.location.reload();
+                }
+                else {
+                    alert("There is a problem, Try Later!");
+                }
+            }
+        });
+    }
+
+     function Delete(id){
+         var txt;
+         var del = confirm('Are you sure you want to delete?');
+         if(del == true)
+         {
+             $.ajax(
+                 {
+                     type: "POST",
+                     url: '@Url.Action("Delete", "FAQs")',
+                     data: {
+                         id: id
+                     },
+                     error: function (result) {
+                         alert("error");
+                     },
+                     success: function (result) {
+                         if (result == true) {
+                             var baseUrl = "/Index";
+                             window.location.reload();
+                         }
+                         else {
+                             alert("There is a problem, Try Later!");
+                         }
+                     }
+                 });
+         }
+    }
+</script>
 
 <table class="table">
     <thead>
@@ -20,12 +104,11 @@
             <th>
                 @Html.DisplayNameFor(model => model.CategoryID)
             </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.featuredCode)
             </th>
-            <th>
-                <a asp-action="CreateorEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i>Create FAQs</a>
-            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -42,16 +125,13 @@
                     @Html.DisplayFor(modelItem => item.featuredCode)
                 </td>
                 <td>
-                    <a asp-action="down" asp-route-id="@item.FAQID"><i class="fa fa-caret-down" style="font-size:32px"></i></a>
-                    <a asp-action="down" asp-route-id="@item.FAQID"><i class="fa fa-caret-up" style="font-size:32px"></i></a> |
-                    <a asp-action="CreateorEdit" asp-route-id="@item.FAQID"><i class="fa fa-marker fa-lg"></i></a> |
-                    <a asp-action="Delete" asp-route-id="@item.FAQID" class="text-danger ml-1"><i class="fa fa-trash-alt fa-lg"></i></a>
+                        
+                    <a href=""  onclick="DownArrow('@item.FAQID')">down</a>
+                    <a href="" onclick="UpArrow('@item.FAQID')">up</a> | 
+                    <a asp-action="Edit" asp-route-id="@item.FAQID">Edit</a> |
+                    <a href="" onclick="Delete('@item.FAQID')">Delete</a>
                 </td>
             </tr>
         }
-
     </tbody>
 </table>
-<nav aria-label="Suppliers navigation example">
-    <vc:pager paging-list="@Model" />
-</nav>
