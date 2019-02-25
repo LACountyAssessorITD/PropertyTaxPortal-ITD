@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PropertyTaxPortal.Models
 {
-    public class PTPContext: DbContext
+    public class PTPContext : DbContext
     {
-        public PTPContext(DbContextOptions<PTPContext> options):base(options)
+        public PTPContext(DbContextOptions<PTPContext> options) : base(options)
         { }
 
         public DbSet<FAQ> faq { get; set; }

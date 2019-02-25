@@ -25,40 +25,26 @@ namespace PropertyTaxPortal.Controllers
         // GET: FAQs
         public async Task<IActionResult> Index(int page=1)
         {
-            try
-            {
-                var query = _context.faq.AsNoTracking().OrderBy(f => f.FAQID);
-                var model = await PagingList.CreateAsync(query, 2, page);
-                return View(model);
-
-            }
-            catch (Exception ex)
-            {
-                fileLogger.Error(ex, "Error occured in connecting to the database");
-                return View("~/Views/Shared/_ErrorMessage.cshtml");
-            }
+            var query = _context.faq.AsNoTracking().OrderBy(f => f.FAQID);
+            var model = await PagingList.CreateAsync(query,2,page);
+            return View(model);
         }
 
-        //// GET: FAQs/Details/5
-        //public async Task<IActionResult> Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
+       
+        // GET: FAQs
+        [HttpGet]
+        public IActionResult View()
+        {
+            
+            //var query = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
+            //var model =  PagingList.CreateAsync(query, 3, page);
+            var model = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
+            return PartialView("View", model);
+        }
 
-        //    var fAQ = await _context.faq
-        //        .FirstOrDefaultAsync(m => m.FAQID == id);
-        //    if (fAQ == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(fAQ);
-        //}
 
         // GET: FAQs/Create
-        public IActionResult CreateorEdit(int id=0)
+        public IActionResult CreateorEdit(int id = 0)
         {
             if (id == 0)
             {
@@ -70,18 +56,13 @@ namespace PropertyTaxPortal.Controllers
             }
         }
 
-        // POST: FAQs/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateorEdit([Bind("FAQID,webSectionID,CategoryID,question,answer,sOrder,updatedOn,featuredCode")] FAQ fAQ)
         {
             if (ModelState.IsValid)
             {
-                //_context.Add(fAQ);
-                //await _context.SaveChangesAsync();
-                //return RedirectToAction(nameof(Index));
                 if (fAQ.FAQID == 0)
                 {
                     int faqResults = _context.Database.ExecuteSqlCommand("PTP_createFAQ @p0,@p1,@p2,@p3,@p4,@p5,@p6", fAQ.webSectionID, fAQ.CategoryID, fAQ.question, fAQ.answer, fAQ.sOrder, fAQ.updatedOn, fAQ.featuredCode);
@@ -90,7 +71,7 @@ namespace PropertyTaxPortal.Controllers
                 {
                     int faqResults = _context.Database.ExecuteSqlCommand("PTP_updateFAQ @p0,@p1,@p2,@p3,@p4,@p5,@p6,@p7", fAQ.FAQID, fAQ.webSectionID, fAQ.CategoryID, fAQ.question, fAQ.answer, fAQ.sOrder, fAQ.updatedOn, fAQ.featuredCode);
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction();
             }
             return View(fAQ);
         }
@@ -111,69 +92,49 @@ namespace PropertyTaxPortal.Controllers
             return View(fAQ);
         }
 
-        // POST: FAQs/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("FAQID,webSectionID,CategoryID,question,answer,sOrder,updatedOn,featuredCode")] FAQ fAQ)
+        
+       [HttpPost]
+        public ActionResult UpArrow(int? id)
         {
-            if (id != fAQ.FAQID)
+            if (id > 0)
             {
-                return NotFound();
+                int faqResults = _context.Database.ExecuteSqlCommand("PTP_upArrowSwapping @p0", id);
             }
+            return RedirectToAction(nameof(Index));
+        }
 
-            if (ModelState.IsValid)
+        [HttpPost]
+        public ActionResult DownArrow(int? id)
+        {
+            if (id > 0)
             {
-                try
-                {
-                    _context.Update(fAQ);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FAQExists(fAQ.FAQID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                int faqResults = _context.Database.ExecuteSqlCommand("PTP_downArrowSwapping @p0", id);
             }
-            return View(fAQ);
+            //int pageNumber = Convert.ToInt16(HttpContext.Request.Query["page"]);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: FAQs/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
-            var fAQ = await _context.faq
-                .FirstOrDefaultAsync(m => m.FAQID == id);
-            if (fAQ == null)
-            {
-                return NotFound();
-            }
-
-            return View(fAQ);
-        }
-
-        // POST: FAQs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var fAQ = await _context.faq.FindAsync(id);
-            _context.faq.Remove(fAQ);
-            await _context.SaveChangesAsync();
+            int faqResults = _context.Database.ExecuteSqlCommand("PTP_deleteFAQ @p0", id);
             return RedirectToAction(nameof(Index));
         }
+
+        //// POST: FAQs/Delete/5
+        //[HttpPost, ActionName("Delete")]  
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> DeleteConfirmed(int id)
+        //{
+        //    var fAQ = await _context.faq.FindAsync(id);
+        //    _context.faq.Remove(fAQ);
+        //    await _context.SaveChangesAsync();
+        //    return RedirectToAction(nameof(Index));
+        //}
 
         private bool FAQExists(int id)
         {
