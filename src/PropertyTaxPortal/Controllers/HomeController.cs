@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
+using NLog;
 
 namespace PropertyTaxPortal.Controllers
 {
@@ -20,6 +21,8 @@ namespace PropertyTaxPortal.Controllers
         
         private readonly Email _email;
         private readonly IHostingEnvironment _host;
+        private static Logger fileLogger = LogManager.GetLogger("fileLogger");
+        private static Logger databaseLogger = LogManager.GetLogger("databaseLogger");
 
         public HomeController(IOptions<Email> email, IHostingEnvironment host)
         {
@@ -85,14 +88,16 @@ namespace PropertyTaxPortal.Controllers
                 try
                 {
                     SmtpClient smtp = new SmtpClient();
-                    smtp.Host = _email.host;
+                    //smtp.Host = _email.host;
                     smtp.Port = _email.port;
                     smtp.EnableSsl = _email.enableSsl;
                     smtp.Send(mm);
                 }
-                catch (Exception e)
+                catch (Exception ex)
                 {
-                    Console.WriteLine(e.Message);
+                    fileLogger.Error("Error saved in file");
+                    databaseLogger.Error(ex, "Error occured in sending the email");
+                    return View("~/Views/Shared/_ErrorMessage.cshtml");
                 }
 
                 return View("PublicInquiryThankYou");

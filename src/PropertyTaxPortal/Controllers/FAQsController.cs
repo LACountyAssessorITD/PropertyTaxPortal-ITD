@@ -7,12 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PropertyTaxPortal.Models;
 using ReflectionIT.Mvc.Paging;
+using NLog;
 
 namespace PropertyTaxPortal.Controllers
 {
     public class FAQsController : Controller
     {
         private readonly PTPContext _context;
+        private static Logger fileLogger = LogManager.GetLogger("fileLogger");
+        private static Logger databaseLogger = LogManager.GetLogger("databaseLogger");
 
         public FAQsController(PTPContext context)
         {
@@ -22,9 +25,18 @@ namespace PropertyTaxPortal.Controllers
         // GET: FAQs
         public async Task<IActionResult> Index(int page=1)
         {
-            var query = _context.faq.AsNoTracking().OrderBy(f => f.FAQID);
-            var model = await PagingList.CreateAsync(query,2,page);
-            return View(model);
+            try
+            {
+                var query = _context.faq.AsNoTracking().OrderBy(f => f.FAQID);
+                var model = await PagingList.CreateAsync(query, 2, page);
+                return View(model);
+
+            }
+            catch (Exception ex)
+            {
+                fileLogger.Error(ex, "Error occured in connecting to the database");
+                return View("~/Views/Shared/_ErrorMessage.cshtml");
+            }
         }
 
         //// GET: FAQs/Details/5
