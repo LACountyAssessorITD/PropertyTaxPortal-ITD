@@ -2,14 +2,16 @@
 for details on configuring this project to bundle and minify static web assets. */
 body {
     padding-top: 100px !important;
-    
+    position: relative !important;
+    font-family: Sans-Serif !important;
+    line-height: 140% !important;
 }
 html, body {
     
     width: 100% !important;
     background-color: transparent;
     padding-bottom: 60px;
-    
+     
 }
 
 /* Wrapping element */
@@ -43,7 +45,7 @@ html {
     background-repeat: no-repeat    ;
     background-image: url('../images/la-background.jpg');
     background-size: cover;
-   
+    background-position: center;
     background-attachment: fixed;
 }
 
