@@ -1,2 +1,2 @@
 # PropertyTaxPortal-ITD
-Initial Template - testing openshift
+Initial Template -  openshift testing
