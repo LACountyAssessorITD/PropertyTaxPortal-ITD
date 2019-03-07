@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background-image: url(root/imgs/luca-micheli-659762-unsplash.jpg);
+    background-image: url('../images/luca-micheli-659762-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

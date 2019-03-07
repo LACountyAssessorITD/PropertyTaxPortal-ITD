@@ -1,4 +1,28 @@
-﻿@media only screen and (max-width: 1700px) {
+﻿
+@media only screen and (min-width: 991px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown > .dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+    .dropdown-left:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-left > .dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+    .navbar-collapse {
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1700px) {
     .section-head {
         height: 300px;
     }
@@ -111,27 +135,6 @@
     }
 }
 
-@media only screen and (min-width: 991px) {
-    .dropdown:hover > .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown > .dropdown-toggle:active {
-        pointer-events: none;
-    }
-
-    .dropdown-left:hover > .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-left > .dropdown-toggle:active {
-        pointer-events: none;
-    }
-
-    .navbar-collapse {
-        height: 100%;
-    }
-}
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
