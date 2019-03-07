@@ -1,0 +1,98 @@
+﻿/* Big tablet to 1200px (widths smaller than the 1040 px row) */
+@media only screen and (max-width: 1100px) {
+    .navbar-nav li a {
+        font-size: 85%;
+    }
+
+    .navbar-nav li {
+        padding-top: 18px;
+    }
+
+    .nav-icon-bar p {
+        font-size: 90%;
+    }
+
+    .nav-icon-bar h5 {
+        font-size: 105%;
+    }
+
+    .dropdown-menu {
+        font-size: 0.6rem;
+    }
+}
+
+
+
+/* Sall phones to small tablets */
+@media only screen and (max-width: 991px) {
+    .navbar-nav li {
+        margin-left: 30px !important;
+    }
+
+        .navbar-nav li ion-icon {
+            margin-left: 5px !important;
+        }
+
+    .mega-menu .row div:nth-child(-n+3) {
+        border-right: none !important;
+    }
+
+    .mega-menu .row div:nth-child(-n+2) {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #b1b1b1;
+    }
+
+    .dropdown-menu {
+        border: none;
+        border-left: 1px solid #b1b1b1;
+    }
+
+    .navbar-collapse .navbar-nav {
+        width: 100%;
+        top: 86px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown > .dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+    .dropdown-left:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-left > .dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+    .navbar-collapse {
+        height: 100%;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .nav-icon-bar p {
+        font-size: 70%;
+    }
+
+    .nav-icon-bar h5 {
+        font-size: 75%;
+    }
+
+    .nav-icon-bar {
+        position: absolute;
+        left: 100px;
+        width: 150px;
+    }
+
+    nav a img {
+        height: 60px !important;
+    }
+}
