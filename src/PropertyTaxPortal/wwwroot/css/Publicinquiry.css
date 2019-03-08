@@ -7,3 +7,14 @@
     padding: 0 225px;
 }
 
+.section-header-pi {
+    background-image: url('../images/michael-jasmund-653794-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200px;
+    text-align: center;
+    padding-top: 40px;
+    color: #fff;
+    font-weight: 400;
+}
