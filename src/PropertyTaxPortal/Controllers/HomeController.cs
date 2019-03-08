@@ -62,47 +62,78 @@ namespace PropertyTaxPortal.Controllers
 
         public IActionResult PublicInquiry()
         {
-            LoadDepartments();
-            return View();
+            var model = new PublicInquiryViewModel();
+            model.Subjects = GetAllSubjects();
+            model.States = GetAllStates();
+            model.propertyAddrState = "CA";
+
+            return View(model);
         }
 
         [HttpPost]
         public IActionResult PublicInquiry(PublicInquiryViewModel model)
         {
-            using (MailMessage mm = new MailMessage(_email.from, "wlam@assessor.lacounty.gov"))
+            model.Subjects = GetAllSubjects();
+            model.States = GetAllStates();
+
+            if ((ModelState.IsValid) && (model.subject != null))
             {
-                mm.Subject = model.selectedSubject + " - " + _email.subject + " - Reference # 85566";
-                mm.Body = mm.Body + "Last Name: " + model.lastName + "<br>" + "First Name: " + model.firstName + "<br>";
-                mm.IsBodyHtml = _email.isBodyHtml;
-
-                var wwwRoot = _host.WebRootPath;
-                using (StreamReader reader = new StreamReader(wwwRoot + "/Templates/EmailTemplate/PublicInquiry.html"))
+                using (MailMessage mm = new MailMessage(_email.from, "wlam@assessor.lacounty.gov"))
                 {
-                    mm.Body = reader.ReadToEnd();
-                    mm.Body = mm.Body.Replace("{SentTo}", model.selectedEmail);
-                    mm.Body = mm.Body.Replace("{LastName}", model.lastName);
-                    mm.Body = mm.Body.Replace("{FirstName}", model.firstName);
-                    mm.Body = mm.Body.Replace("{comment}", model.comment);
-                }
+                    string strSubjectValue = Request.Form["ddSubjects"].ToString();
 
-                try
-                {
-                    SmtpClient smtp = new SmtpClient();
-                    //smtp.Host = _email.host;
-                    smtp.Port = _email.port;
-                    smtp.EnableSsl = _email.enableSsl;
-                    smtp.Send(mm);
-                }
-                catch (Exception ex)
-                {
-                    fileLogger.Error("Error saved in file");
-                    databaseLogger.Error(ex, "Error occured in sending the email");
-                    return View("~/Views/Shared/_ErrorMessage.cshtml");
-                }
+                    mm.Subject = model.subject + " - " + _email.subject + " - Reference # 85566";
+                    mm.Body = mm.Body + "Last Name: " + model.lastName + "<br>" + "First Name: " + model.firstName + "<br>";
+                    mm.IsBodyHtml = _email.isBodyHtml;
 
-                return View("PublicInquiryThankYou");
+                    var wwwRoot = _host.WebRootPath;
+                    using (StreamReader reader = new StreamReader(wwwRoot + "/Templates/EmailTemplate/PublicInquiry.html"))
+                    {
+                        mm.Body = reader.ReadToEnd();
+
+                        mm.Body = mm.Body.Replace("{SentTo}", "aemail");
+                        mm.Body = mm.Body.Replace("{LastName}", model.lastName);
+                        mm.Body = mm.Body.Replace("{FirstName}", model.firstName);
+                        mm.Body = mm.Body.Replace("{BusinessName}", model.businessName);
+                        mm.Body = mm.Body.Replace("{MailingAddr}", model.mailingAddr);
+                        mm.Body = mm.Body.Replace("{MailAddrCity}", model.mailAddrCity);
+                        mm.Body = mm.Body.Replace("{MailAddrState}", model.mailAddrState);
+                        mm.Body = mm.Body.Replace("{MailAddrZip}", model.mailAddrZip);
+                        mm.Body = mm.Body.Replace("{EmailAddr}", model.emailAddr);
+                        mm.Body = mm.Body.Replace("{DayTimeTelNumber}", model.dayTimeTelNumber);
+                        mm.Body = mm.Body.Replace("{FaxNumber}", model.faxNumber);
+                        mm.Body = mm.Body.Replace("{PropertyAddr}", model.propertyAddr);
+                        mm.Body = mm.Body.Replace("{PropertyAddrCity}", model.propertyAddrCity);
+                        mm.Body = mm.Body.Replace("{PropertyState}", model.propertyAddrState);
+                        mm.Body = mm.Body.Replace("{PropertyZip}", model.propertyAddrZip);
+                        mm.Body = mm.Body.Replace("{AIN}", model.AIN);
+                        mm.Body = mm.Body.Replace("{CompanyNumber}", model.companyNumber);
+                        mm.Body = mm.Body.Replace("{RoutingIndex}", model.routingIndex);
+                        mm.Body = mm.Body.Replace("{comment}", model.comment);
+                    }
+
+                    try
+                    {
+                        SmtpClient smtp = new SmtpClient();
+                        smtp.Host = _email.host;
+                        smtp.Port = _email.port;
+                        smtp.EnableSsl = _email.enableSsl;
+                        smtp.Send(mm);
+                    }
+                    catch (Exception ex)
+                    {
+                        fileLogger.Error("Error saved in file");
+                        databaseLogger.Error(ex, "Error occured in sending the email");
+                        return View("~/Views/Shared/_ErrorMessage.cshtml");
+                    }
+
+                    return View("PublicInquiryThankYou");
+                }
             }
-           
+            else
+            {
+                return View(model);
+            }
         }
 
         public IActionResult PublicInquiryThankYou()
@@ -110,62 +141,99 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        public ActionResult LoadDepartments()
+        private IEnumerable<SelectListItem> GetAllSubjects()
         {
-            List<SelectListItem> li = new List<SelectListItem>();
-            li.Add(new SelectListItem { Text = "Select", Value = "0" });
-            li.Add(new SelectListItem { Text = "Assessment Appeals Board", Value = "1" });
-            li.Add(new SelectListItem { Text = "Assessor", Value = "2" });
-            li.Add(new SelectListItem { Text = "Auditor-Controller", Value = "3" });
-            li.Add(new SelectListItem { Text = "Treasurer & Tax Collector", Value = "4" });
-
-            ViewData["departments"] = li;
-            return View();
-        }
-
-        [HttpPost]
-        public JsonResult GetSubjects(string id)
-        {
-            List<SelectListItem> subjects = new List<SelectListItem>();
-
-            switch (id)
+            List<SelectListItem> li = new List<SelectListItem>
             {
-                case "1":
-                    //subjects.Add(new SelectListItem { Text = "Select", Value = "0" });
-                    subjects.Add(new SelectListItem { Text = "Assessment Appeals", Value = "01-aaboffice@bos.lacounty.gov" });
-                    break;
-                case "2":
-                    subjects.Add(new SelectListItem { Text = "Change Mailing Address", Value = "02-helpdesk@assessor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Exemptions", Value = "04-helpdesk@assessor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Incorrect Property Information", Value = "05-helpdesk@assessor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Ownership", Value = "09-helpdesk@assessor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Reassessment Exclusions", Value = "15-helpdesk@assessor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Values / Decline in Value", Value = "23-helpdesk@assessor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Website Related Inquiries", Value = "24-webmaster@assessor.lacounty.gov" });
-                    break;
-                case "3":
-                    subjects.Add(new SelectListItem { Text = "Direct Assessments", Value = "03-propertytax@auditor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Property Tax Claim for Refunds", Value = "14-propertytax@auditor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Refunds(value reductions)", Value = "16-propertytax@auditor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Tax Adjustment", Value = "17-propertytax@auditor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Tax Rates", Value = "20-propertytax@auditor.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Transfer Taxes to the Prior Owner", Value = "21-propertytax@auditor.lacounty.gov" });
-                    break;
-                case "4":
-                    subjects.Add(new SelectListItem { Text = "Liens", Value = "06-unsecured@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Lost Tax Bill / Tax Bill Request", Value = "07-info@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Overpayment / Refund", Value = "08-info@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Payment (all others)", Value = "10-info@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Payment (online credit card)", Value = "11-ccard@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Payments (online eCheck)", Value = "12-echeck@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "PIN Request", Value = "13-echeck@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Tax Auction", Value = "18-auction@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Tax Penalty Issue", Value = "19-info@ttc.lacounty.gov" });
-                    subjects.Add(new SelectListItem { Text = "Unsecured Bills", Value = "22-unsecured@ttc.lacounty.gov" });
-                    break;
-            }
-
-            return this.Json(new SelectList(subjects, "Value", "Text"));
+                new SelectListItem() {Text="Assessment Appeals", Value="01-aaboffice@bos.lacounty.gov"},
+                new SelectListItem() {Text="Change Mailing Address", Value="02-helpdesk@assessor.lacounty.gov"},
+                new SelectListItem() {Text="Direct Assessments", Value="03-propertytax@auditor.lacounty.gov"},
+                new SelectListItem() {Text="Exemptions", Value="04-helpdesk@assessor.lacounty.gov"},
+                new SelectListItem() {Text="Incorrect Property Information", Value="05-helpdesk@assessor.lacounty.gov"},
+                new SelectListItem() {Text="Liens", Value="06-unsecured@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Lost Tax Bill / Tax Bill Request", Value="07-info@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Overpayment / Refund", Value="08-info@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Ownership", Value="09-helpdesk@assessor.lacounty.gov"},
+                new SelectListItem() {Text="Payment (all others)", Value="10-info@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Payment (online credit card)", Value="11-ccard@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Payments (online eCheck)", Value="12-echeck@ttc.lacounty.gov"},
+                new SelectListItem() {Text="PIN Request", Value="13-echeck@ttc.lacounty.gov",},
+                new SelectListItem() {Text="Property Tax Claim for Refunds", Value="14-propertytax@auditor.lacounty.gov"},
+                new SelectListItem() {Text="Reassessment Exclusions", Value="15-helpdesk@assessor.lacounty.gov"},
+                new SelectListItem() {Text="Refunds(value reductions)", Value="16-propertytax@auditor.lacounty.gov"},
+                new SelectListItem() {Text="Tax Adjustment", Value="17-propertytax@auditor.lacounty.gov"},
+                new SelectListItem() {Text="Tax Auction", Value="18-auction@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Tax Penalty Issue", Value="19-info@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Tax Rates", Value="20-propertytax@auditor.lacounty.gov"},
+                new SelectListItem() {Text="Transfer Taxes to the Prior Owner", Value="21-propertytax@auditor.lacounty.gov"},
+                new SelectListItem() {Text="Unsecured Bills", Value="22-unsecured@ttc.lacounty.gov"},
+                new SelectListItem() {Text="Values / Decline in Value", Value="23-helpdesk@assessor.lacounty.gov"},
+                new SelectListItem() {Text="Website Related Inquiries", Value="24-webmaster@assessor.lacounty.gov"}
+            };
+            IEnumerable<SelectListItem> item = li.AsEnumerable();
+            return item;
         }
+
+        private IEnumerable<SelectListItem> GetAllStates()
+        {
+            List<SelectListItem> li = new List<SelectListItem>
+            {
+                new SelectListItem() { Text="AL", Value="AL"},
+                new SelectListItem() { Text="AK", Value="AK"},
+                new SelectListItem() { Text="AZ", Value="AZ"},
+                new SelectListItem() { Text="AR", Value="AR"},
+                new SelectListItem() { Text="CA", Value="CA", Selected=true},
+                new SelectListItem() { Text="CO", Value="CO"},
+                new SelectListItem() { Text="CT", Value="CT"},
+                new SelectListItem() { Text="DC", Value="DC"},
+                new SelectListItem() { Text="DE", Value="DE"},
+                new SelectListItem() { Text="FL", Value="FL"},
+                new SelectListItem() { Text="GA", Value="GA"},
+                new SelectListItem() { Text="HI", Value="HI"},
+                new SelectListItem() { Text="ID", Value="ID"},
+                new SelectListItem() { Text="IL", Value="IL"},
+                new SelectListItem() { Text="IN", Value="IN"},
+                new SelectListItem() { Text="IA", Value="IA"},
+                new SelectListItem() { Text="KS", Value="KS"},
+                new SelectListItem() { Text="KY", Value="KY"},
+                new SelectListItem() { Text="LA", Value="LA"},
+                new SelectListItem() { Text="ME", Value="ME"},
+                new SelectListItem() { Text="MD", Value="MD"},
+                new SelectListItem() { Text="MA", Value="MA"},
+                new SelectListItem() { Text="MI", Value="MI"},
+                new SelectListItem() { Text="MN", Value="MN"},
+                new SelectListItem() { Text="MS", Value="MS"},
+                new SelectListItem() { Text="MO", Value="MO"},
+                new SelectListItem() { Text="MT", Value="MT"},
+                new SelectListItem() { Text="NE", Value="NE"},
+                new SelectListItem() { Text="NV", Value="NV"},
+                new SelectListItem() { Text="NH", Value="NH"},
+                new SelectListItem() { Text="NJ", Value="NJ"},
+                new SelectListItem() { Text="NM", Value="NM"},
+                new SelectListItem() { Text="NY", Value="NY"},
+                new SelectListItem() { Text="NC", Value="NC"},
+                new SelectListItem() { Text="ND", Value="ND"},
+                new SelectListItem() { Text="OH", Value="OH"},
+                new SelectListItem() { Text="OK", Value="OK"},
+                new SelectListItem() { Text="OR", Value="OR"},
+                new SelectListItem() { Text="PA", Value="PA"},
+                new SelectListItem() { Text="PR", Value="PR"},
+                new SelectListItem() { Text="RI", Value="RI"},
+                new SelectListItem() { Text="SC", Value="SC"},
+                new SelectListItem() { Text="SD", Value="SD"},
+                new SelectListItem() { Text="TN", Value="TN"},
+                new SelectListItem() { Text="TX", Value="TX"},
+                new SelectListItem() { Text="UT", Value="UT"},
+                new SelectListItem() { Text="VT", Value="VT"},
+                new SelectListItem() { Text="VA", Value="VA"},
+                new SelectListItem() { Text="WA", Value="WA"},
+                new SelectListItem() { Text="WV", Value="WV"},
+                new SelectListItem() { Text="WI", Value="WI"},
+                new SelectListItem() { Text="WY", Value="WY"}
+            };
+            IEnumerable<SelectListItem> item = li.AsEnumerable();
+            return item;
+        }
+
     }
 }
