@@ -5,245 +5,167 @@
     ViewData["Title"] = "PublicInquiry";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<head>
-    <style>
-        html {
-            background-image: none;
-        }
-    </style>
-</head>
 
 <script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
 <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script src="../lib/bootstrap/dis/css/bootstrap.css" type="text/javascript"></script>
 
-<div>
+<div class="container section-form-head">
+    <div>
+        <b>
+            In order to most effectively serve you, please fill out the following form as completely as possible.
+            If you are unsure which department to select, please refer to the <a href="http://www.google.com" target="_blank">Areas of Responsibility</a> help page.
+        </b>
+    </div>
+</div>
+<div class="container section-form">
     @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
-        <h5>Public Inquiry Form</h5>
-        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%" align="center">
-            <tr>
-                <td width="10%">&nbsp;</td>
-                <td width="80%">
-                    <table>
-                        <tr>
-                            <td width="15%"></td>
-                            <td width="20%"></td>
-                            <td width="20%"></td>
-                            <td width="45%"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4" style="font-size:20px">
-                                <b>
-                                    In order to most effectively serve you, please fill out the following form as completely as possible.
-                                    If you are unsure which department to select, please refer to the <a href="http://www.google.com" target="_blank">Areas of Responsibility</a> help page.
-                                </b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td width="20%"></td>
-                            <td colspan="2">
-                                <div class="form-group">
-                                    <label for="Subjects" style="font-size:10px; height:10px">SUBJECT <font color="red">*</font></label>
-                                    @using (Html.BeginForm())
-                                    {
-                                        @Html.DropDownListFor(model => model.subject, Model.Subjects, "Please select", new { style = "width:300px; font-size:13px; background-color:#F5F5F5; height:30px", @id = "ddSubjects", @name = "ddSubjects", @class = "form-control" })
-                                        @Html.ValidationMessageFor(model => model.subject, "", new { @class = "text-danger", style = "font-size:11px" })
-                                    }
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Contact Information -->
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3" style="font-size:20px"><b>Contact Information</b></td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="2">
-                                <div class="form-group">
-                                    <label for="txtLastName" style="font-size:10px; height:10px">Last NAME <font color="red">*</font></label>
-                                    @Html.TextBoxFor(model => model.lastName, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtLastName", @name = "txtLastName", @class = "form-control", @required = "required" })
-                                    @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                            <td width="45%">
-                                <div class="form-group">
-                                    <label for="txtFirstName" style="font-size:10px; height:10px">FIRST NAME <font color="red">*</font></label>
-                                    @Html.TextBoxFor(model => model.firstName, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtFirstName", @name = "txtFirstName", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtBusinessName" style="font-size:10px; height:10px">BUSINESS NAME</label>
-                                    @Html.TextBoxFor(model => model.businessName, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtBusinessName", @name = "txtBusinessName", @class = "form-control" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtMailingAddr" style="font-size:10px; height:10px">MAILING ADDRESS</label>
-                                    @Html.TextBoxFor(model => model.mailingAddr, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtMailingAddr", @name = "txtMailingAddr", @class = "form-control" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtMailAddrCity" style="font-size:10px; height:10px">CITY</label>
-                                    @Html.TextBoxFor(model => model.mailAddrCity, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtMailAddrCity", @name = "txtMailAddrCity", @class = "form-control" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td width="20%">
-                                <div class="form-group">
-                                    <label for="txtMailAddrState" style="font-size:10px; height:10px">STATE</label>
-                                    @Html.DropDownListFor(model => model.mailAddrState, Model.States, new { style = "width:100px; font-size:13px; background-color:#F5F5F5; height:30px", @class = "form-control" })
-                                </div>
-                            </td>
-                            <td colspan="2">
-                                <div class="form-group">
-                                    <label for="txtMailAddrZip" style="font-size:10px; height:10px">ZIP CODE</label>
-                                    @Html.TextBoxFor(model => model.mailAddrZip, new { style = "width:160px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "10", @id = "txtMailAddrZip", @name = "txtMailAddrZip", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.mailAddrZip, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtEmailAddr" style="font-size:10px; height:10px">EMAIL <font color="red">*</font></label>
-                                    @Html.TextBoxFor(model => model.emailAddr, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "50", @id = "txtEmailAddr", @name = "txtEmailAddr", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.emailAddr, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="2">
-                                <div class="form-group">
-                                    <label for="txtDayTimeTelNumber" style="font-size:10px; height:10px">DAYTIME PHONE NUMBER <font color="red">*</font></label>
-                                    @Html.TextBoxFor(model => model.dayTimeTelNumber, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtDayTimeTelNumber", @name = "txtDayTimeTelNumber", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.dayTimeTelNumber, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                            <td width="45%">
-                                <div class="form-group">
-                                    <label for="txtFaxNumber" style="font-size:10px; height:10px">FAX NUMBER</label>
-                                    @Html.TextBoxFor(model => model.faxNumber, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtFaxNumber", @name = "txtFaxNumber", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.faxNumber, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Required for assessment questions about a specific bill or property... -->
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3" style="font-size:20px"><b>Required for assessment questions about a specific bill or property...</b></td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtPropertyAddr" style="font-size:10px; height:10px">PROPERTY ADDRESS</label>
-                                    @Html.TextBoxFor(model => model.propertyAddr, new { style = "width:750px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtPropertyAddr", @name = "txtPropertyAddr", @class = "form-control" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtPropertyAddrCity" style="font-size:10px; height:10px">CITY</label>
-                                    @Html.TextBoxFor(model => model.propertyAddrCity, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtPropertyAddrCity", @name = "txtPropertyAddrCity", @class = "form-control" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td width="20%">
-
-                                <div class="form-group">
-                                    <label for="txtPropertyState" style="font-size:10px; height:10px">STATE</label>
-                                    @Html.TextBoxFor(model => model.propertyAddrState, new { style = "width:100px; font-size:13px; background-color:#F5F5F5; height:30px; font-weight:bold", maxlength = "2", @id = "txtPropertyState", @name = "txtPropertyState", @class = "form-control", readOnly = "true" })
-                                </div>
-                            </td>
-                            <td colspan="2">
-                                <div class="form-group">
-                                    <label for="txtPropertyZip" style="font-size:10px; height:10px">ZIP CODE</label>
-                                    @Html.TextBoxFor(model => model.propertyAddrZip, new { style = "width:160px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "10", @id = "txtPropertyZip", @name = "txtPropertyZip", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.propertyAddrZip, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtAIN" style="font-size:10px; height:10px">ASSESSOR IDENTIFICATION NUMBER</label>
-                                    @Html.TextBoxFor(model => model.AIN, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "12", @id = "txtAIN", @name = "txtAIN", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.AIN, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Required for questions regarding personal perperty... -->
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3" style="font-size:20px"><b>Required for questions regarding personal perperty...</b></td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtCompanyNumber" style="font-size:10px; height:10px">COMPANY NUMBER</label>
-                                    @Html.TextBoxFor(model => model.companyNumber, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "10", @id = "txtCompanyNumber", @name = "txtCompanyNumber", @class = "form-control" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtRoutingIndex" style="font-size:10px; height:10px">ROUTING INDEX</label>
-                                    @Html.TextBoxFor(model => model.routingIndex, new { style = "width:350px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "4", @id = "txtRoutingIndex", @name = "txtRoutingIndex", @class = "form-control" })
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Please explain your request for assistance. -->
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3" style="font-size:20px"><b>Please explain your request for assistance</b></td>
-                        </tr>
-                        <tr>
-                            <td width="15%"></td>
-                            <td colspan="3">
-                                <div class="form-group">
-                                    <label for="txtRequest" style="font-size:10px; height:10px">BE BRIEF, BUT SPECIFIC <font color="red">*</font></label>
-                                    @Html.TextAreaFor(model => model.comment, new { style = "width:650px; font-size:13px; background-color:#F5F5F5x", rows = "8", cols = "45", @id = "txtRequest", @name = "txtRequest", @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.comment, "", new { @class = "text-danger", style = "font-size:11px" })
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4" align="center">
-                                <input type="submit" id="SubmitInquiry1" value="SUBMIT INQUIRY" asp-controller="Home" asp-action="PublicInquiry" style="background-color:deepskyblue; color:white" />
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td width="10%">&nbsp;</td>
-            </tr>
-        </table>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="Subjects" style="font-size:10px; height:10px">SUBJECT <font color="red">*</font></label>
+                @Html.DropDownListFor(model => model.subject, Model.Subjects, "Please select", new { style = "font-size:13px; background-color:#F5F5F5; height:32px", @id = "ddSubjects", @name = "ddSubjects", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.subject, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <!-- Contact Information -->
+        <div class="row">
+            <div class="form-group col-sm-12">
+                <b>Contact Information</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtLastName" style="font-size:10px; height:10px">Last NAME <font color="red">*</font></label>
+                @Html.TextBoxFor(model => model.lastName, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtLastName", @name = "txtLastName", @class = "form-control", @required = "required" })
+                @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="txtFirstName" style="font-size:10px; height:10px">FIRST NAME <font color="red">*</font></label>
+                @Html.TextBoxFor(model => model.firstName, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtFirstName", @name = "txtFirstName", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtBusinessName" style="font-size:10px; height:10px">BUSINESS NAME</label>
+                @Html.TextBoxFor(model => model.businessName, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtBusinessName", @name = "txtBusinessName", @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtMailingAddr" style="font-size:10px; height:10px">MAILING ADDRESS</label>
+                @Html.TextBoxFor(model => model.mailingAddr, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtMailingAddr", @name = "txtMailingAddr", @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtMailAddrCity" style="font-size:10px; height:10px">CITY</label>
+                @Html.TextBoxFor(model => model.mailAddrCity, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtMailAddrCity", @name = "txtMailAddrCity", @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label for="txtMailAddrState" style="font-size:10px; height:10px">STATE</label>
+                @Html.DropDownListFor(model => model.mailAddrState, Model.States, new { style = "width:100px; font-size:13px; background-color:#F5F5F5; height:32px", @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="txtMailAddrZip" style="font-size:10px; height:10px">ZIP CODE</label>
+                @Html.TextBoxFor(model => model.mailAddrZip, new { style = "width:145px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "10", @id = "txtMailAddrZip", @name = "txtMailAddrZip", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.mailAddrZip, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtEmailAddr" style="font-size:10px; height:10px">EMAIL <font color="red">*</font></label>
+                @Html.TextBoxFor(model => model.emailAddr, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "50", @id = "txtEmailAddr", @name = "txtEmailAddr", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.emailAddr, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtDayTimeTelNumber" style="font-size:10px; height:10px">DAYTIME PHONE NUMBER <font color="red">*</font></label>
+                @Html.TextBoxFor(model => model.dayTimeTelNumber, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtDayTimeTelNumber", @name = "txtDayTimeTelNumber", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.dayTimeTelNumber, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="txtFaxNumber" style="font-size:10px; height:10px">FAX NUMBER</label>
+                @Html.TextBoxFor(model => model.faxNumber, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtFaxNumber", @name = "txtFaxNumber", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.faxNumber, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <!-- Required for assessment questions about a specific bill or property... -->
+        <div class="row">
+            <div class="form-group col-sm-12">
+                <b>Required for assessment questions about a specific bill or property...</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-12">
+                <label for="txtPropertyAddr" style="font-size:10px; height:10px">PROPERTY ADDRESS</label>
+                @Html.TextBoxFor(model => model.propertyAddr, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "80", @id = "txtPropertyAddr", @name = "txtPropertyAddr", @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtPropertyAddrCity" style="font-size:10px; height:10px">CITY</label>
+                @Html.TextBoxFor(model => model.propertyAddrCity, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "30", @id = "txtPropertyAddrCity", @name = "txtPropertyAddrCity", @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label for="txtPropertyState" style="font-size:10px; height:10px">STATE</label>
+                @Html.TextBoxFor(model => model.propertyAddrState, new { style = "width:100px; font-size:13px; background-color:#F5F5F5; height:30px; font-weight:bold", maxlength = "2", @id = "txtPropertyState", @name = "txtPropertyState", @class = "form-control", readOnly = "true" })
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="txtPropertyZip" style="font-size:10px; height:10px">ZIP CODE</label>
+                @Html.TextBoxFor(model => model.propertyAddrZip, new { style = "width:145px; font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "10", @id = "txtPropertyZip", @name = "txtPropertyZip", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.propertyAddrZip, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtAIN" style="font-size:10px; height:10px">ASSESSOR IDENTIFICATION NUMBER</label>
+                @Html.TextBoxFor(model => model.AIN, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "12", @id = "txtAIN", @name = "txtAIN", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.AIN, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <!-- Required for questions regarding personal perperty... -->
+        <div class="row">
+            <div class="form-group col-sm-12">
+                <b>Required for questions regarding personal perperty...</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtCompanyNumber" style="font-size:10px; height:10px">COMPANY NUMBER</label>
+                @Html.TextBoxFor(model => model.companyNumber, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "10", @id = "txtCompanyNumber", @name = "txtCompanyNumber", @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtRoutingIndex" style="font-size:10px; height:10px">ROUTING INDEX</label>
+                @Html.TextBoxFor(model => model.routingIndex, new { style = "font-size:13px; background-color:#F5F5F5; height:30px", maxlength = "4", @id = "txtRoutingIndex", @name = "txtRoutingIndex", @class = "form-control" })
+            </div>
+        </div>
+        <!-- Please explain your request for assistance. -->
+        <div class="row">
+            <div class="form-group col-sm-12">
+                <b>Please explain your request for assistance</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="txtRequest" style="font-size:10px; height:10px">BE BRIEF, BUT SPECIFIC <font color="red">*</font></label>
+                @Html.TextAreaFor(model => model.comment, new { style = "width:650px; font-size:13px; background-color:#F5F5F5x", rows = "8", cols = "45", @id = "txtRequest", @name = "txtRequest", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.comment, "", new { @class = "text-danger", style = "font-size:11px" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-12 text-center">
+                <input type="submit" id="SubmitInquiry" value="SUBMIT INQUIRY" asp-controller="Home" asp-action="PublicInquiry" style="background-color:deepskyblue; color:white;" />
+            </div>
+        </div>
     }
 </div>
 
