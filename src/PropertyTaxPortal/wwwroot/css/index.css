@@ -5,6 +5,7 @@
 .section-news {
     height: 150px;
     max-width: 900px;
+    
 }
 
 .news-feed {
@@ -16,72 +17,72 @@
 
 .latest-news {
     background-color: rgba(55, 97, 163, 0.7);
-    padding-top: 25px;
+    padding-top: 25px; 
     color: #57BDF6;
 }
 
 .news-car {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-    .news-car .carousel-item {
-        padding-top: 25px;
-        font-weight: 400;
-        color: #fff;
-        line-height: 1rem;
-    }
+.news-car .carousel-item {
+    padding-top: 25px; 
+    font-weight: 400;
+    color: #fff;
+    line-height: 1rem;
+    
+}
 
 /* --------------------------- */
 /* --------Carousel----------- */
 /* --------------------------- */
 
 .section-head {
-    height: 350px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.section-columns {
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding-left: 100px;
+    height: 300px;
 }
 
-.welcome-header {
-    padding-right: 20px !important;
+
+
+/* --------------------------- */
+/* --------Section-cards------ */
+/* --------------------------- */
+
+.bg-1 {background-color: #000063 !important;}
+.bg-2 {background-color: #311B92 !important;}
+.bg-3{background-color: #3761A3 !important;}
+.bg-4{background-color: #438AA0 !important;}
+
+.section-cards {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+.section-cards ion-icon {
+    color: #fff;
+    font-size: 250%;
+    margin-top: 10px;
+}
+.text-card {
+    width: 100%;
+    min-height: 250px;
+    margin: auto;
+    box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
+    max-width: 250px;
+    background: #fff;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
 }
 
-.carousel-header .carousel-item {
-    height: 350px;
-    padding-left: 100px;
-    line-height: 1rem !important;
-}
-
-.carousel-item h4, p {
-    padding-left: 10px;
-}
-
-.carousel-item h4 {
-    padding-top: 100px;
-    font-size: 120%;
-}
-
-.carousel-img {
+.card-img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+    border-radius: 45%;
     overflow: hidden;
-}
-
-    .carousel-img img {
-        position: absolute;
-    }
-
-.emblem {
-    height: 500px;
-    top: 55px;
-    right: 10%;
-}
-
-
-.emblem-person {
-    height: 325px;
-    bottom: 0;
-    right: 20%;
-    z-index: 100;
+    position: relative;
+    z-index: 4;
 }

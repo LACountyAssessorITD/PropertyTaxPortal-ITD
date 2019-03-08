@@ -1,8 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
+﻿
 
 $(document).ready(function () {
 
@@ -21,6 +17,34 @@ $(document).ready(function () {
     $('.js--wp-3').waypoint(function (direction) {
         $('.js--wp32').addClass('animated bounceInLeft');
     }, {
+            offset: '50%'
+        });
+    $('.js--wp-4').hover(function () {
+        $('.js--wp-4').toggleClass('animated pulse');
+        $('.c-1').toggleClass('animated flip')
+    },
+        {
+            offset: '50%'
+        });
+    $('.js--wp-5').hover(function () {
+        $('.js--wp-5').toggleClass('animated pulse');
+        $('.c-2').toggleClass('animated flip')
+    },
+        {
+            offset: '50%'
+        });
+    $('.js--wp-6').hover(function () {
+        $('.js--wp-6').toggleClass('animated pulse');
+        $('.c-3').toggleClass('animated flip')
+    },
+        {
+            offset: '50%'
+        });
+    $('.js--wp-7').hover(function () {
+        $('.js--wp-7').toggleClass('animated pulse');
+        $('.c-4').toggleClass('animated flip')
+    },
+        {
             offset: '50%'
         });
 });

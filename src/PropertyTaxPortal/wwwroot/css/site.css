@@ -16,10 +16,15 @@ body {
     overflow-x: hidden;
 }
 
-body {
+.index-wrap {
+    background-image: url(root/imgs/luca-micheli-659762-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 100vh;
+}
+
+body {
     height: 100vh;
 }
 
@@ -27,6 +32,18 @@ body {
     font-size: 3rem;
     margin: 20px 0;
 }
+
+header, footer {
+    height: 30px;
+    background: #0D47A1;
+    font-size: 80%;
+    font-weight: 400;
+    padding-top: 3px;
+}
+
+    header div div:last-child {
+        text-align: right;
+    }
 
 
 /* ----------------------- */
@@ -89,7 +106,7 @@ nav a img {
 
 .navbar-nav {
     background-color: #fff;
-    z-index: 999;
+    z-index: 5000;
     width: 100%;
     height: 100%;
 }
@@ -159,3 +176,32 @@ nav a img {
     .mega-menu .row div:nth-child(-n+3) {
         border-right: 2px solid #000;
     }
+
+/* --------------------------- */
+/* --------Section-Footer------ */
+/* --------------------------- */
+
+.section-footer {
+    background: #2A2929;
+    color: #BEB9B9;
+    padding: 20px 20%;
+    font-size: 80%;
+}
+
+    .section-footer ul {
+        list-style: none;
+    }
+
+        .section-footer ul li:first-child {
+            color: #fff;
+            font-weight: 400;
+        }
+
+    .section-footer img {
+        height: 110px;
+    }
+
+footer div {
+    padding-left: 15%;
+    color: #fff;
+}

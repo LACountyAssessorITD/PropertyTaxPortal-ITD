@@ -30,7 +30,17 @@
 
 </head>
 <body class="">
-
+    <header class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-4">
+                Lacounty.gov
+            </div>
+            <div class="col-4">
+                Select Language
+                <ion-icon name="arrow-dropdown"></ion-icon>
+            </div>
+        </div>
+    </header>
     <!------------------------------ NAVBAR ------------------------------>
     <nav class="navbar navbar-expand-lg bg-light">
         <a class="navbar-brand" href="#"><img src="~/images/LACseal76.png" alt=""></a>
@@ -187,69 +197,53 @@
 
     </div>
     <!------------------------------ FOOTER ------------------------------>
-    
-    <nav class="navbar navbar-dark  px-0">
-        <div class="footer container-fluid">
-            <div class="row  pt-5">
-                <div class="col-2">
-                    <center>
-                        <h1><img src="~/images/LACseal.png" /></h1>
-                        <ul>
-                            <list>Enriching Lives . . . </list>
-                        </ul>
-                    </center>
-                </div>
-                <div class="col-2">
-                    <h2 class="display-6">Do You Need Help?</h2>
-                    <ul>
-                        <li>211 LA County</li>
-                        <li>LA County Helps</li>
-                        <li>Public Alerts</li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <h2 class="display-6">About</h2>
-                    <ul>
-                        <li>Navigation</li>
-                        <li>How to Use</li>
-                        <li>Site Map</li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <h2 class="display-6">Site Info</h2>
-                    <ul>
-                        <li>Accessibility</li>
-                        <li>Disclaimer</li>
-                        <li>Language</li>
-                        <li>Privacy Policy</li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <h2 class="display-6">Contact</h2>
-                    <ul>
-                        <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
-                        <li>Assessor</li>
-                        <li>Auditor/Controller</li>
-                        <li>Treasurer & Tax Collector</li>
-                        <li>Assessment Appeals Board</li>
-                        <li>LA County Contacts</li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
+    <section class="container-fluid section-footer ">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <img src="root/imgs/LACSEAL152.png" alt="">
+                <p>Enriching Lives...</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul>
+                    <li>Do You Need Help?</li>
+                    <li>211 LA County</li>
+                    <li>Public Alerts</li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul>
+                    <li>Site Info</li>
+                    <li>Accessibility</li>
+                    <li>Disclaimer</li>
+                    <li>Language</li>
+                    <li>Private Policy</li>
+                    <li>Browser Cmompatibility</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul>
+                    <li>Public Info</li>
+                    <li>Board Correspondence</li>
+                    <li>County Code</li>
+                    <li>Public Information Office</li>
+                    <li>Public Records Policy</li>
+                    <li>Board Ageneda</li>
+                    <li>Online Services</li>
+                </ul>
             </div>
         </div>
-    </nav>
 
-    <footer class="">
-        <nav class="navbar navbar-brand  fixed-bottom color-4 mx-0">
+    </section>
 
-            <span class="navbar-brand">&copy; @DateTime.Now.Year - Property Tax Portal</span>
-
-        </nav>
-
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                &copy; @DateTime.Now.Year 2019 COUNTY OF LOS ANGELES
+            </div>
+        </div>
     </footer>
-    <!-- Footer -->
-    
+
 
 
 
