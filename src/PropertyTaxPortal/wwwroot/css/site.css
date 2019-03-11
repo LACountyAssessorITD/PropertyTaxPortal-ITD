@@ -17,20 +17,23 @@ body {
 }
 
 .index-wrap {
-    background-image: url('../images/luca-micheli-659762-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
 }
 
 body {
-    height: 100vh;
+    background-image: url('../images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: vh;
+}
+
+.display-3 {
+    font-size: 2rem;
+    margin: 20px 0;
 }
 
 .display-4 {
-    font-size: 3rem;
-    margin: 20px 0;
+    font-size: 1.5rem;
 }
 
 header, footer {
@@ -52,13 +55,17 @@ header, footer {
 
 .js--wp-1,
 .js--wp-2,
-.js--wp-3 {
+.js--wp-3,
+.js--wp-8,
+.js--wp-9 {
     opacity: 0;
 }
 
     .js--wp-1.animated,
     .js--wp-2.animated,
-    .js--wp-3.animated {
+    .js--wp-3.animated,
+    .js--wp-8.animated,
+    .js--wp-9.animated {
         opacity: 1;
     }
 
