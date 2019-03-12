@@ -1,0 +1,76 @@
+﻿@model PropertyTaxPortal.Models.NEWS
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>News</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NewsID" />
+            <div class="form-group">
+                <label asp-for="WebSectionID" class="control-label"></label>
+                <input asp-for="WebSectionID" class="form-control" />
+                <span asp-validation-for="WebSectionID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UploadID" class="control-label"></label>
+                <input asp-for="UploadID" class="form-control" />
+                <span asp-validation-for="UploadID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Body" class="control-label"></label>
+                <input asp-for="Body" class="form-control" />
+                <span asp-validation-for="Body" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Caption" class="control-label"></label>
+                <input asp-for="Caption" class="form-control" />
+                <span asp-validation-for="Caption" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeaturedCode" class="control-label"></label>
+                <input asp-for="FeaturedCode" class="form-control" />
+                <span asp-validation-for="FeaturedCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewsDate" class="control-label"></label>
+                <input asp-for="NewsDate" class="form-control" />
+                <span asp-validation-for="NewsDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Starton" class="control-label"></label>
+                <input asp-for="Starton" class="form-control" />
+                <span asp-validation-for="Starton" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndOn" class="control-label"></label>
+                <input asp-for="EndOn" class="form-control" />
+                <span asp-validation-for="EndOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="isGlobal" class="control-label"></label>
+                <input asp-for="isGlobal" class="form-control" />
+                <span asp-validation-for="isGlobal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
