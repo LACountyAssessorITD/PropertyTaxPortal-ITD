@@ -33,249 +33,257 @@
 
 </head>
 <body class="">
-    <header class="container-fluid">
-        <div class="row justify-content-between">
-            <div class="col-4">
-                Lacounty.gov
+    <div class="index-wrap">
+        <header class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    Lacounty.gov
+                </div>
+                <div class="col-4">
+                    Select Language
+                    <ion-icon name="arrow-dropdown"></ion-icon>
+                </div>
             </div>
-            <div class="col-4">
-                Select Language
-                <ion-icon name="arrow-dropdown"></ion-icon>
+        </header>
+        <!------------------------------ NAVBAR ------------------------------>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <a class="navbar-brand" href="#"><img src="~/images/LACseal76.png" alt=""></a>
+            <div class="nav-icon-bar">
+                <a href="#">
+                    <p>Los Angeles County</p>
+                </a>
+                <a href="#">
+                    <h5>Property Tax Portal</h5>
+                </a>
             </div>
-        </div>
-    </header>
-    <!------------------------------ NAVBAR ------------------------------>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <a class="navbar-brand" href="#"><img src="~/images/LACseal76.png" alt=""></a>
-        <div class="nav-icon-bar">
-            <a href="">
-                <p>Los Angeles County</p>
-            </a>
-            <a href="">
-                <h5>Property Tax Portal</h5>
-            </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <ion-icon class="icon" name="menu"></ion-icon>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon class="icon" name="menu"></ion-icon>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
-                <li class="nav-item ml-auto">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Overview
-                    </a>
-                    <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
-                        <ul>
-                            <li>Property Tax Overview</li>
-                            <li>How the Property Tax System Works</li>
-                            <li>Areas of Responsibliity</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Tax Tools
-                    </a>
-                    <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
-                        <ul>
-                            <li>Property Tax Managment System</li>
-                            <li>Multiple Parcel Inquires</li>
-                            <li>Avoid Penalties by Understanding Postmarks</li>
-                            <li>Penalty Cancellations</li>
-                            <li>Property Address Search</li>
-                            <li>New Home Owners</li>
-                            <li>New Business Owners</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item dropdown-left">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Quick Links
-                    </a>
-                    <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <p>Forms</p>
-                                <ul>
-                                    <li>Assessor</li>
-                                    <li>Assessment Appeals Board</li>
-                                    <li>Auditor-Controller</li>
-                                    <li>Treasurer & Tax Collector</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <p>Property Valuation</p>
-                                <ul>
-                                    <li>Contesting Your Property Value</li>
-                                    <li>Property Address Search</li>
-                                    <li>Property Data & Maps</li>
-                                    <li>Supplemental Tax Estimator</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <p>Payment Options</p>
-                                <ul>
-                                    <li>How Much Do I Owe?</li>
-                                    <li>Pay Online</li>
-                                    <li>Other Payment Options</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <p>Annual Secured Property Tax Bill</p>
-                                <ul>
-                                    <li>Annual Secured Property Tax Bill Insert</li>
-                                    <li>Annual Secured Property Tax Information Statement</li>
-                                    <li>Notice of Delinquency</li>
-                                    <li>Substitute Secured Property Tax Bill</li>
-                                    <li>Supplemental Secured Property Tax Bill</li>
-                                    <li>Unsecured Property Tax Bill</li>
-                                    <li>Unsecured Prior Year Bill</li>
-                                    <li>Payment Activity Notice</li>
-                                    <li>Payment Activity Notice</li>
-                                    <li>Statement of Prior Year Taxes</li>
-                                    <li>Adjusted Annual Property Tax Bill</li>
-                                    <li>Adjusted Supplemental Property Tax Bill</li>
-                                </ul>
-                            </div>
+            <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Overview
+                        </a>
+                        <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li> <a href="#">Property Tax Overview</a> </li>
+                                <li> <a href="">How the Property Tax System Works</a> </li>
+                                <li><a href="">Areas of Responsibliity</a></li>
+                            </ul>
                         </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Tax Tools
+                        </a>
+                        <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li><a href="https://vcheck.ttc.lacounty.gov/">Property Tax Managment System</a></li>
+                                <li>
+                                    <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/">
+                                        Multiple Parcel Inquires
+                                    </a>
+                                </li>
+                                <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/">Avoid Penalties by Understanding Postmarks</a></li>
+                                <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/">Penalty Cancellations</a></li>
+                                <li><a href="https://portal.assessor.lacounty.gov/">Property Address Search</a></li>
+                                <li><a href="">New Home Owners</a></li>
+                                <li><a href="">New Business Owners</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown-left">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Quick Links
+                        </a>
+                        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <p>Forms</p>
+                                    <ul>
+                                        <li><a href="https://assessor.lacounty.gov/">Assessor</a></li>
+                                        <li><a href="https://lacaab.lacounty.gov/Home.aspx">Assessment Appeals Board</a></li>
+                                        <li><a href="http://auditor.lacounty.gov/">Auditor-Controller</a></li>
+                                        <li><a href="https://ttc.lacounty.gov/">Treasurer & Tax Collector</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <p>Property Valuation</p>
+                                    <ul>
+                                        <li><a href="">Contesting Your Property Value</a></li>
+                                        <li><a href="https://portal.assessor.lacounty.gov/">Property Address Search</a></li>
+                                        <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default">Property Data & Maps</a></li>
+                                        <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/">Supplemental Tax Estimator</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <p>Payment Options</p>
+                                    <ul>
+                                        <li><a href="">How Much Do I Owe?</a></li>
+                                        <li><a href="">Pay Online</a></li>
+                                        <li><a href="">Other Payment Options</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <p>Annual Secured Property Tax Bill</p>
+                                    <ul>
+                                        <li><a href="">Annual Secured Property Tax Bill Insert</a></li>
+                                        <li><a href="">Annual Secured Property Tax Information Statement</a></li>
+                                        <li><a href="">Notice of Delinquency</a></li>
+                                        <li><a href="">Substitute Secured Property Tax Bill</a></li>
+                                        <li><a href="">Supplemental Secured Property Tax Bill</a></li>
+                                        <li><a href="">Unsecured Property Tax Bill</a></li>
+                                        <li><a href="">Unsecured Prior Year Bill</a></li>
+                                        <li><a href="">Payment Activity Notice</a></li>
+                                        <li><a href="">Statement of Prior Year Taxes</a></li>
+                                        <li><a href="">Adjusted Annual Property Tax Bill</a></li>
+                                        <li><a href="">Adjusted Supplemental Property Tax Bill</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        FAQ
-                    </a>
-                    <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
-                        <ul>
-                            <li>All FAQs</li>
-                            <li>Tax Bills</li>
-                            <li>Refunds/Tax Sales/Tax Liens</li>
-                            <li>Property Values</li>
-                            <li>Ownership</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Contact Us
-                    </a>
-                    <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
-                        <ul>
-                            <li>Assessor</li>
-                            <li>Auditor/Controller</li>
-                            <li>Treasurer & Tax Collector</li>
-                            <li>Assessment Appeals Board</li>
-                            <li>LA County Contacts</li>
-                            <li>Public Inquiry</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <ion-icon class="search-font" name="search"></ion-icon>
-                </li>
-            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            FAQ
+                        </a>
+                        <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li><a href="">All FAQs</a></li>
+                                <li><a href="">Tax Bills</a></li>
+                                <li><a href="">Refunds/Tax Sales/Tax Liens</a></li>
+                                <li><a href="">Property Values</a></li>
+                                <li><a href="">Ownership</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li><a href="">Assessor</a></li>
+                                <li><a href="">Auditor/Controlle</a>r</li>
+                                <li><a href="">Treasurer & Tax Collector</a></li>
+                                <li><a href="">Assessment Appeals Board</a></li>
+                                <li><a href="">LA County Contacts</a></li>
+                                <li><a href="">Public Inquiry</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon class="search-font" name="search"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!----------------------------- /END NAVBAR -------------------------->
+
+        <div class="">
+            <!------------------------------ BODY ---------------------------->
+            @RenderBody()
+
+            <!----------------------------- /END BODY ------------------------->
+
+
         </div>
+        <!------------------------------ FOOTER ------------------------------>
+        <footer class="">
+            <section class="container-fluid section-footer ">
+                <div class="row">
+                    <div class="col-xs-6 col-md-2 ">
+                        <img src="~/images/LACSEAL152.png" alt="">
+                        <p>Enriching Lives...</p>
+                    </div>
+                    <div class="col-xs-6 col-md-2 ">
+                        <ul>
+                            <li>Do You Need Help?</li>
+                            <li>211 LA County</li>
+                            <li>LA County Helps</li>
+                            <li>Public Alerts</li>
+                            <li>Public Information</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2 ">
+                        <ul>
+                            <li>About</li>
+                            <li>Disclaimer</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2 ">
+                        <ul>
+                            <li>Site Info</li>
+                            <li>Accessibility</li>
+                            <li>Language</li>
+                            <li>Browser Cmompatibility</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2 ">
+                        <ul>
+                            <li>Public Info</li>
+                            <li>Board Correspondence</li>
+                            <li>Board Ageneda</li>
+                            <li>County Code</li>
+                            <li>Online Services</li>
+                        </ul>
+                    </div>
 
-    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        &copy; @DateTime.Now.Year COUNTY OF LOS ANGELES
+                    </div>
+                </div>
 
+            </section>
 
-    <!----------------------------- /END NAVBAR -------------------------->
-
-    <div class="">
-        <!------------------------------ BODY ---------------------------->
-        @RenderBody()
-
-        <!----------------------------- /END BODY ------------------------->
-
-
+        </footer>
     </div>
-    <!------------------------------ FOOTER ------------------------------>
-    <section class="container-fluid section-footer ">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <img src="~/images/LACSEAL152.png" />
-                <p>Enriching Lives...</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <ul>
-                    <li>Do You Need Help?</li>
-                    <li>211 LA County</li>
-                    <li>Public Alerts</li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="PublicInquiry">Public Inquiry Form</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <ul>
-                    <li>Site Info</li>
-                    <li>Accessibility</li>
-                    <li>Disclaimer</li>
-                    <li>Language</li>
-                    <li>Private Policy</li>
-                    <li>Browser Cmompatibility</li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <ul>
-                    <li>Public Info</li>
-                    <li>Board Correspondence</li>
-                    <li>County Code</li>
-                    <li>Public Information Office</li>
-                    <li>Public Records Policy</li>
-                    <li>Board Ageneda</li>
-                    <li>Online Services</li>
-                </ul>
-            </div>
-        </div>
-
-    </section>
-
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-4">
-                &copy; @DateTime.Now.Year COUNTY OF LOS ANGELES
-            </div>
-        </div>
-    </footer>
 
 
 
 
+        <environment include="Development">
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+            <script src="~/js/jquery.waypoints.min.js"></script>
 
-    <environment include="Development">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
-        <script src="~/js/jquery.waypoints.min.js"></script>
+            <script src="~/js/site.js"></script>
 
-        <script src="~/js/site.js"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 
-    </environment>
-    <environment exclude="Development">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
-     
-        <script src="~/js/jquery.waypoints.min.js"></script>
-        <script src="~/js/site.js"></script>
+            <script src="~/js/jquery.waypoints.min.js"></script>
+            <script src="~/js/site.js"></script>
 
-    </environment>
-    
+        </environment>
+
 </body>
 
 

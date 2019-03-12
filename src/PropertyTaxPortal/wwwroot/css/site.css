@@ -5,9 +5,27 @@
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+.index-wrap {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 180px; /* height of your footer */
+}
+
 html,
 body {
     height: 100%;
+    position: relative;
     background-color: transparent;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
@@ -16,15 +34,12 @@ body {
     overflow-x: hidden;
 }
 
-.index-wrap {
-}
-
 body {
-    background-image: url('../images/bg3.jpg');
+    /* background-image: url(root/imgs/GettyImages-916386228.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/gettyimages-916386228.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: vh;
 }
 
 .display-3 {
@@ -36,7 +51,7 @@ body {
     font-size: 1.5rem;
 }
 
-header, footer {
+header {
     height: 30px;
     background: #0D47A1;
     font-size: 80%;
@@ -82,6 +97,14 @@ h5 {
     width: 213px;
 }
 
+.nav-icon-bar p {
+    font-size: 85%;
+}
+
+.nav-icon-bar h5 {
+    font-size: 110%;
+}
+
 nav a img {
     height: 70px;
     width: auto;
@@ -89,12 +112,13 @@ nav a img {
 
 .navbar {
     font-weight: 400;
+    font-size: 80%;
     padding: 0px 20px;
     height: 85px;
 }
 
 .navbar-nav li {
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 
@@ -112,14 +136,13 @@ nav a img {
     }
 
 .navbar-nav {
-    background-color: #fff;
     z-index: 5000;
     width: 100%;
     height: 100%;
 }
 
 .bg-light {
-    background-color: #fff !important;
+    background-color: rgba(255, 255, 255) !important;
 }
 
 
@@ -147,6 +170,7 @@ nav a img {
 }
 
 .dropdown-menu {
+    background-color: rgba(255, 255, 255);
     font-size: 0.8rem;
     line-height: 1.3rem;
     padding: 30px;
@@ -191,9 +215,13 @@ nav a img {
 .section-footer {
     background: #2A2929;
     color: #BEB9B9;
-    padding: 20px 20%;
-    font-size: 80%;
+    padding: 10px 15%;
+    font-size: 70%;
 }
+
+    .section-footer div div:first-child {
+        margin-left: 10%;
+    }
 
     .section-footer ul {
         list-style: none;
@@ -205,10 +233,12 @@ nav a img {
         }
 
     .section-footer img {
-        height: 110px;
+        height: 70px;
     }
 
-footer div {
-    padding-left: 15%;
-    color: #fff;
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

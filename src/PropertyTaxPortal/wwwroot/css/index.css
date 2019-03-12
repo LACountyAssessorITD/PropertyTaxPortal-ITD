@@ -3,32 +3,27 @@
 /* --------------------------- */
 
 .section-news {
-    height: 150px;
-    max-width: 900px;
+    height: 100px;
+    max-width: 1200px;
+    font-size: 80%;
 }
 
-.news-feed {
-    height: 85px;
-    text-align: center;
-    font-weight: 400;
-    overflow-y: hidden;
+.news-feed p {
+    transform: translateY(35%);
 }
 
 .latest-news {
-    background-color: rgba(55, 97, 163, 0.7);
-    padding-top: 25px;
-    color: #57BDF6;
+    background-color: rgba(0, 0, 99, 0.7);
+    color: #fff;
+    text-align: center;
 }
 
 .news-car {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
     .news-car .carousel-item {
-        padding-top: 25px;
-        font-weight: 400;
         color: #fff;
-        line-height: 1rem;
     }
 
 /* --------------------------- */
@@ -53,7 +48,7 @@
 }
 
 .section-head {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
 }
 
@@ -65,7 +60,6 @@
 
 .img-carousel {
     height: 250px !important;
-    height: auto;
 }
 
 .img-person {
@@ -104,8 +98,7 @@
 }
 
 .section-cards {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 90px;
     padding: 0 50px;
 }
 
@@ -131,18 +124,20 @@
 
 .text-card {
     width: 100%;
-    min-height: 225px;
+    min-height: 180px;
     margin: auto;
     box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
-    max-width: 250px;
+    max-width: 200px;
     background: #fff;
     text-align: center;
     color: #fff;
     font-weight: 400;
+    margin-bottom: 80px;
 }
 
     .text-card p {
         transform: translateY(-50%);
+        font-size: 80%;
     }
 
 .card-img {
