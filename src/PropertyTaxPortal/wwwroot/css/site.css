@@ -36,7 +36,8 @@ body {
 
 body {
     /* -----------background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url(../images/GettyImages-896245220.jpg);------------ */
-    background-image: url('../images/gettyimages-896245220.jpg');
+    
+    background-image: url('../images/gettyimages-623354844.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
