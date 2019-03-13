@@ -35,7 +35,6 @@ body {
 }
 
 body {
-    /* background-image: url(root/imgs/GettyImages-916386228.jpg); */
     background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url('../images/gettyimages-896245220.jpg');
     background-size: cover;
     background-position: center;
