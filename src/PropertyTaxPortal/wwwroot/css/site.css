@@ -36,7 +36,7 @@ body {
 
 body {
     /* background-image: url(root/imgs/GettyImages-916386228.jpg); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/gettyimages-916386228.jpg');
+    background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url('../images/gettyimages-896245220.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -106,7 +106,7 @@ h5 {
 }
 
 nav a img {
-    height: 70px;
+    height: 50px;
     width: auto;
 }
 
@@ -114,11 +114,11 @@ nav a img {
     font-weight: 400;
     font-size: 80%;
     padding: 0px 20px;
-    height: 85px;
+    height: 70px;
 }
 
 .navbar-nav li {
-    padding-top: 20px;
+    padding-top: 13px;
 }
 
 
@@ -142,7 +142,10 @@ nav a img {
 }
 
 .bg-light {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgba(255, 255, 255) !important;
+}
+
+.navbar-collapse {
 }
 
 
@@ -215,13 +218,20 @@ nav a img {
 .section-footer {
     background: #2A2929;
     color: #BEB9B9;
-    padding: 10px 15%;
     font-size: 70%;
 }
 
-    .section-footer div div:first-child {
-        margin-left: 10%;
+    .section-footer .row:first-child {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
     }
+
+
+    /* .section-footer div div:first-child {
+    margin-left: 10%;
+} */
 
     .section-footer ul {
         list-style: none;
@@ -241,4 +251,10 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+#footer-section {
+    background: #0D47A1;
+    color: #000;
+    padding-left: 15%;
 }

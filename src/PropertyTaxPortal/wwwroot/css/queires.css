@@ -1,4 +1,11 @@
-﻿@media only screen and (min-width: 991px) {
+﻿@media only screen and (min-width: 644px) {
+    .section-footer .row:first-child .col-md-2 {
+        flex: 0 0 19.9%;
+        max-width: 19.9%;
+    }
+}
+
+@media only screen and (min-width: 991px) {
     .dropdown:hover > .dropdown-menu {
         display: block;
     }
@@ -121,7 +128,7 @@
         border-right: none !important;
     }
 
-    .mega-menu .row div:nth-child(-n+2) {
+    .mega-menu .row div:nth-child(-n+3) {
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 1px solid #b1b1b1;
@@ -149,8 +156,17 @@
         height: 200px !important;
     }
 
+    .carousel-header .carousel {
+        max-width: 100%;
+    }
+
     .img-person {
         height: 175px;
+        right: 34%;
+    }
+
+    .i-2 {
+        right: 40%;
     }
 
     .carousel-header .row {
@@ -166,8 +182,8 @@
         margin-right: auto;
     }
 
-    .index-wrap {
-        padding-bottom: 475px; /* height of your footer */
+    .section-footer div div:first-child {
+        margin-left: 0;
     }
 }
 
@@ -182,13 +198,37 @@
     .img-person {
         height: 125px;
     }
+
+    .index-wrap {
+        padding-bottom: 300px; /* height of your footer */
+    }
 }
+
+@media only screen and (max-width: 634px) {
+    .index-wrap {
+        padding-bottom: 438px; /* height of your footer */
+    }
+}
+
 
 @media only screen and (max-width: 523px) {
     .name-text {
         padding-top: 25px;
     }
+
+    .img-carousel {
+        padding-right: 20px;
+    }
+
+    .img-person {
+        right: 30%;
+    }
+
+    .i-2 {
+        right: 35%;
+    }
 }
+
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {

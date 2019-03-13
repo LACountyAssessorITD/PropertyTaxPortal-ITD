@@ -35,7 +35,7 @@
 }
 
 .name-text {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .carousel-header .row {
@@ -48,7 +48,7 @@
 }
 
 .section-head {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 
@@ -60,6 +60,11 @@
 
 .img-carousel {
     height: 250px !important;
+    padding-right: 60px;
+}
+
+.img-seal {
+    opacity: 0.8;
 }
 
 .img-person {
@@ -71,7 +76,7 @@
 }
 
 .i-2 {
-    right: 28%;
+    right: 32%;
 }
 
 
