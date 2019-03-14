@@ -14,9 +14,8 @@ namespace PropertyTaxPortal.Models
         public int FAQID { get; set; }
 
         [Column(TypeName = "char(3)")]
-        public string webSectionID { get; set; }
-
-        [DisplayName("Category")]
+        public string webSectionID { get; set; }        
+        
         public int CategoryID { get; set; }
 
         [StringLength(1000)]
@@ -28,13 +27,19 @@ namespace PropertyTaxPortal.Models
 
         public int sOrder { get; set; }
 
-        [Column(TypeName = "Datetime")]
+        
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd HH:mm}")]
         [DisplayName("Update Date")]
         public DateTime updatedOn { get; set; }
 
         [Column(TypeName = "char(3)")]
         [DisplayName("Featured")]
         public string featuredCode { get; set; }
+
+        //[NotMapped]
+        [DisplayName("Category")]
+        public string CategoryName { get; set; }
 
         public FAQ()
         {

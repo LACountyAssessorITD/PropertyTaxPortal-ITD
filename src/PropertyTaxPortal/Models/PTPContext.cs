@@ -12,5 +12,11 @@ namespace PropertyTaxPortal.Models
         { }
 
         public DbSet<FAQ> faq { get; set; }
+
+        public DbSet<NEWS> News { get; set; }
+
+        public DbSet<Category> category { get; set; }
+
+        public DbSet<RefCode> refcode { get; set; }
     }
 }

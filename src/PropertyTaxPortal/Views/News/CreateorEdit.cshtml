@@ -1,0 +1,119 @@
+﻿@model PropertyTaxPortal.Models.NEWS
+
+@{
+    ViewData["Title"] = "";
+}
+
+<h1>NEWS Change</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateorEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NewsID" />
+            <table style="border:1px;width:750px">
+                <tr>
+                    <td>
+                        <label asp-for="Title" class="control-label"></label>
+                    </td>
+                    <td width="550">
+                        <div class="form-group">
+                            <textarea asp-for="Title" class="form-control" text-wrap:normal" type="text"></textarea>
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="Caption" class="control-label"></label>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <textarea asp-for="Caption" class="form-control" text-wrap:normal" type="text"></textarea>
+                            <span asp-validation-for="Caption" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="Body" class="control-label"></label>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <textarea asp-for="Body" class="form-control" text-wrap:normal" type="text"></textarea>
+                            <span asp-validation-for="Body" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="NewsDate" class="control-label"></label>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <input asp-for="NewsDate" class="form-control" />
+                            <span asp-validation-for="NewsDate" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="Starton" class="control-label"></label>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <input asp-for="Starton" class="form-control" />
+                            <span asp-validation-for="Starton" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="EndOn" class="control-label"></label>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <input asp-for="EndOn" class="form-control" />
+                            <span asp-validation-for="EndOn" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="FeaturedCode" class="control-label"></label>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            @Html.DropDownList("FeaturedCode", new List<SelectListItem>
+                            {
+                            new SelectListItem{ Text="Featured", Value = "NFE" },
+                            new SelectListItem{ Text="Current", Value = "NCE" },
+                            new SelectListItem{ Text="Archieved", Value = "NAE" }
+                            })
+                            <span asp-validation-for="FeaturedCode" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="Image" class="control-label"></label>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <input asp-for="Image" type="file" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

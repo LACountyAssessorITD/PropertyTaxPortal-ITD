@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="index-wrap">
+
     <!---------------------------------------------------------------------->
     <!----------------------------------INDEX------------------------------->
     <!---------------------------------------------------------------------->
@@ -36,8 +36,8 @@
     <!---------------------------------------------------------------------->
     <section class="container-fluid section-head">
         <div class="row section-columns">
-            <div class="col-lg-5 welcome-header">
-                <h1 class="display-4">Welcome</h1>
+            <div class="col-lg-5 welcome-header js--wp-8">
+                <h1 class="display-3">Welcome</h1>
                 <p>
                     Assessor, Auditor-Controller, Treasurer & Tax Collector, and Assessment
                     Appeals Board have prepared this property tax information site to provide
@@ -46,30 +46,78 @@
                 </p>
             </div>
             <div class="col-lg-7 carousel-header">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide container h-100 " data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="d-inline-block">
-                                <h4>
-                                    Jeffrey Prang</h3>
+                            <div class="row">
+                                <div class="col-3 align-items-center">
+                                    <p class="name-text"><span>Jeffery Prang</span></p>
                                     <p>Assessor</p>
-                            </div>
-                            <div class="carousel-img d-inline-block">
-                                
+                                </div>
+                                <div class="col-9 img-carousel h-100">
+                                    <div class="img-seal">
+                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
+                                    </div>
+
+                                    <img class="js--wp-9 img-person" src="~/images/jprang_slider.png" alt="">
+                                </div>
                             </div>
                         </div>
-                   
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="name-text">John Naimo</p>
+                                    <p>Auditor-Controller</p>
+                                </div>
+                                <div class="col-9 img-carousel">
+                                    <div class="img-seal">
+                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
+                                    </div>
+                                    <img class="js--wp-9 img-person" src="~/images/Jnaimo_slider.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="name-text">Joseph Kelly</p>
+                                    <p>Treasurer & Tax Collector</p>
+                                </div>
+                                <div class="col-9 img-carousel">
+                                    <div class="img-seal">
+                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
+                                    </div>
+                                    <img class="js--wp-9 img-person i-2" src="~/images/jkelly_slider.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="name-text">Celia Zavala</p>
+                                    <p>Assessment Appeals Board</p>
+                                </div>
+                                <div class="col-9 img-carousel">
+                                    <div class="img-seal">
+                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
+                                    </div>
+                                    <img class="js--wp-9 img-person i-2" src="~/images/cZavala_slider.png" alt="">
+                                </div>
+                            </div>
+                        </div>
 
+
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -109,4 +157,3 @@
         </div>
     </section>
 
-</div>

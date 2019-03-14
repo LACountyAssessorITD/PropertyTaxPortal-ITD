@@ -1,151 +1,279 @@
-﻿
-@media only screen and (max-width: 1500px) {
-    
+﻿@media only screen and (min-width: 644px) {
+    .section-footer .row:first-child .col-md-2 {
+        flex: 0 0 19.9%;
+        max-width: 19.9%;
+    }
 }
 
+@media only screen and (min-width: 991px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
 
+    .dropdown > .dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+    .dropdown-left:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-left > .dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+    .navbar-collapse {
+        height: 100%;
+    }
+}
 
 /* Big tablet to 1200px (widths smaller than the 1040 px row) */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
+
     html,
     body {
         font-size: 18px;
     }
+
     .navbar-nav li a {
         font-size: 85%;
     }
+
     .navbar-nav li {
         padding-top: 18px;
     }
+
     .nav-icon-bar p {
         font-size: 90%;
     }
+
     .nav-icon-bar h5 {
         font-size: 105%;
     }
+
     .dropdown-menu {
         font-size: 0.6rem;
     }
+
     .text-card {
         min-height: 260px;
         max-width: 225px;
     }
-    
+
+    /* CAROUSEL */
+    .img-carousel {
+        height: 225px !important;
+    }
+
+    .img-person {
+        height: 200px;
+    }
+
+    .welcome-header p {
+        font-size: 80%;
+    }
+
+    .welcome-header h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Cards */
+    .text-card {
+        min-height: 170px;
+        max-width: 180px;
+    }
+
+        .text-card p {
+            transform: translateY(-75%);
+        }
+}
+
+@media only screen and (max-width: 1091px) {
+
+    /* Cards */
+    .text-card {
+        min-height: 170px;
+        max-width: 180px;
+    }
+
+        .text-card p {
+            transform: translateY(-75%);
+        }
+
+    /* Coursel */
+    .carousel-header .container {
+        margin: 0;
+    }
 }
 
 
 
 /* Sall phones to small tablets */
 @media only screen and (max-width: 991px) {
+
     html,
     body {
         font-size: 15px;
     }
+
     .navbar-nav li {
-        margin-left: 30px !important; 
+        margin-left: 30px !important;
     }
-    .navbar-nav li ion-icon{
-        margin-left: 5px !important; 
-    }
+
+        .navbar-nav li ion-icon {
+            margin-left: 5px !important;
+        }
+
     .mega-menu .row div:nth-child(-n+3) {
         border-right: none !important;
-        
     }
-    .mega-menu .row div:nth-child(-n+2) {
+
+    .mega-menu .row div:nth-child(-n+3) {
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 1px solid #b1b1b1;
     }
+
     .dropdown-menu {
         border: none;
         border-left: 1px solid #b1b1b1;
     }
+
     .navbar-collapse {
         z-index: 9999;
     }
-    .navbar-collapse .navbar-nav {
-        width: 100%;
-        top: 86px;
-       
-    }
 
-    .section-head {
-        height: 513px;
-    }
-    .section-columns {
-        padding-left: 20px;
-    }
-    .text-card {
-        min-height: 250px;
-        max-width: 200px;
-    }
-    
-}
-@media only screen and (min-width: 991px) {
-    .dropdown:hover>.dropdown-menu {
-        display: block;
-    }
-    
-     .dropdown>.dropdown-toggle:active {
-        
-        pointer-events: none;
-    }
-    
-    .dropdown-left:hover>.dropdown-menu {
-        display: block;
-    }
-    
-    .dropdown-left>.dropdown-toggle:active {
-        
-        pointer-events: none;
-    } 
-    .navbar-collapse {
-        height: 100%;
-    }
-    
+        .navbar-collapse .navbar-nav {
+            width: 100%;
+            top: 86px;
+        }
 }
 
-@media only screen and (max-width: 575px) {
-    .news-feed {
-        height: 150px;
+@media only screen and (max-width: 845px) {
+
+    /* CAROUSEL */
+    .img-carousel {
+        height: 200px !important;
     }
-    .news-car .carousel-item {
-        padding-top: 15px;
+
+    .carousel-header .carousel {
+        max-width: 100%;
     }
-    .latest-news {
-        padding-top: 0;
+
+    .img-person {
+        height: 175px;
+        right: 34%;
     }
-    .latest-news p {
-        padding: 20px;
-        margin-bottom: 0;
+
+    .i-2 {
+        right: 40%;
+    }
+
+    .carousel-header .row {
+        padding-left: 0;
+    }
+
+    /* Cards */
+    .section-cards .row .text-card:first-child {
+        margin-left: auto;
+    }
+
+    .section-cards .row .text-card:last-child {
+        margin-right: auto;
+    }
+
+    .section-footer div div:first-child {
+        margin-left: 0;
     }
 }
+
+
+@media only screen and (max-width: 644px) {
+
+    /* CAROUSEL */
+    .img-carousel {
+        height: 150px !important;
+    }
+
+    .img-person {
+        height: 125px;
+    }
+
+    .index-wrap {
+        padding-bottom: 300px; /* height of your footer */
+    }
+}
+
+@media only screen and (max-width: 634px) {
+    .index-wrap {
+        padding-bottom: 438px; /* height of your footer */
+    }
+}
+
+
+@media only screen and (max-width: 523px) {
+    .name-text {
+        padding-top: 25px;
+    }
+
+    .img-carousel {
+        padding-right: 20px;
+    }
+
+    .img-person {
+        right: 30%;
+    }
+
+    .i-2 {
+        right: 35%;
+    }
+}
+
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+    /* CAROUSEL */
+    .img-carousel {
+        height: 120px !important;
+    }
+
+    .img-person {
+        height: 100px;
+    }
+
+    .section-head p {
+        font-size: 70%;
+    }
+
+    /* NAVBAR */
+
     .nav-icon-bar p {
         font-size: 70%;
     }
+
     .nav-icon-bar h5 {
-        
         font-size: 75%;
     }
+
     .nav-icon-bar {
         position: absolute;
         left: 100px;
         width: 150px;
     }
+
     nav a img {
-        height: 60px !important;
+        height: 50px;
     }
 
-    .news-feed {
-        height: 160px;
+    .navbar {
+        height: 70px;
     }
-    .news-car .carousel-item {
-        padding-top: 15px;
-        font-size: 80%;
-        overflow: hidden;
+
+    .section-news {
+        font-size: 60%;
     }
-    
+
+    .index-wrap {
+        padding-bottom: 505px; /* height of your footer */
+    }
 }

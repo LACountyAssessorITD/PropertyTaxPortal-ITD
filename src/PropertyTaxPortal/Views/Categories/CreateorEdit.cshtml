@@ -1,0 +1,67 @@
+﻿@model PropertyTaxPortal.Models.Category
+
+@{
+    ViewData["Title"] = "Create";
+}
+<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function Delete(id){
+         var txt;
+         var del = confirm('Are you sure you want to delete?');
+         if(del == true)
+         {
+             $.ajax(
+                 {
+                     type: "POST",
+                     url: '@Url.Action("Delete", "Category")',
+                     data: {
+                         id: id
+                     },
+                     error: function (result) {
+                         alert("error");
+                     },
+                     success: function (result) {
+                         if (result == true) {
+                             var baseUrl = "/Index";
+                             window.location.reload();
+                         }
+                         else {
+                             alert("There is a problem, Try Later!");
+                         }
+                     }
+                 });
+         }
+    }
+</script>
+<h1>Create</h1>
+
+<h4>Category</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateorEdit">
+            <input type="hidden" asp-for="CategoryID" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Descr" class="control-label"></label>
+                <input asp-for="Descr" class="form-control" />
+                <span asp-validation-for="Descr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoryType" class="control-label"></label>
+                @Html.DropDownList("categoryType", null, htmlAttributes: new { @class = "form-control" })
+                <span asp-validation-for="categoryType" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
