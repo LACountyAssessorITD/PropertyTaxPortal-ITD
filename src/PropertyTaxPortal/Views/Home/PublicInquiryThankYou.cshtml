@@ -5,28 +5,39 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="regularPage">
-    <asp:Panel id="Panel2" runat="server" Visible="False">
-        <span class="normalText">
-            Thank you for completing our Public Inquiry form. A staff member from the
-            <asp:Literal id="ResponsibleDepartment" runat="server" text=""></asp:Literal>will respond to your request shortly.
-            <br />
-            <br />
+<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="../lib/bootstrap/dis/css/bootstrap.css" type="text/javascript"></script>
+
+<section class="container-fluid section-header-pi">
+    <h2 class="display-4"> PUBLIC INQUIRY FORM</h2>
+</section>
+
+<div class="container section-form text-left">
+    <br />
+    <div class="row">
+        <div class="form-group col-sm-12 thankyou-text">
+            Thank you for completing our Public Inquiry form. A staff member from the @Html.DisplayFor(model => model.responsibleDepartment) respond to your request shortly.
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-12 thankyou-text">
             The Reference number for your inquiry is 85566.
-            <asp:Literal id="ReferenceNumber" runat="server" text=""></asp:Literal>.
-            <br />
-            <br />
-            <blockquote>
-                <p>
-                    <asp:Literal id="AddressPhoneWebsite" runat="server" text=""></asp:Literal>
-                </p>
-            </blockquote>
-            <br />
-            <br />
-            <br />
-            Los Angeles County
-            <br />
-            <span>Property Tax Portal</span>
-        </span>
-    </asp:Panel>
+        </div>
+    </div>
+    <br />
+    <div class="form-group col-sm-12 thankyou-text">
+        <blockquote>
+            <p>
+                @Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.addressPhoneWebsite))
+            </p>
+        </blockquote>
+        <br />
+        <br />
+        LA County
+        <br />
+        Property Tax Portal
+    </div>
+    <br />
+    <br />
 </div>
