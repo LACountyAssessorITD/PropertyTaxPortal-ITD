@@ -16,10 +16,44 @@
     text-align: center;
     padding-top: 40px;
     color: #fff;
-    
 }
 
-    .section-header-pi .display-4 {
-        font-weight: 400 !important;
-    }
+.section-header-pi .display-4 {
+    font-weight: 400 !important;
+}
+
+.category-text {
+    font-weight: 600;
+}
+
+.dropdown-text {
+    font-size: 13px;
+    background-color: #F5F5F5;
+    height: 32px;
+}
+
+.label-text {
+    font-size: 11px;
+    height: 11px;
+    font-weight: 600;
+}
+
+.input-text {
+    font-size: 15px;
+    background-color: #F5F5F5;
+    height: 30px;
+}
+
+.error-message {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.thankyou-text {
+    font-family: Arial;
+    font-size: 15px;
+    color: #000000;
+}
+
+
 

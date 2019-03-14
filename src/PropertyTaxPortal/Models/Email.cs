@@ -13,6 +13,7 @@ namespace PropertyTaxPortal.Models
         public string from { get; set; }
         public string subject { get; set; }
         public bool isBodyHtml { get; set; }
-
+        public string bcc { get; set; }
+        public int dev { get; set; }
     }
 }

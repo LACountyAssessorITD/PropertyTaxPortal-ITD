@@ -60,6 +60,10 @@ namespace PropertyTaxPortal.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        /// <summary>
+        /// Public Inquiry form
+        /// </summary>
+        /// <returns></returns>
         public IActionResult PublicInquiry()
         {
             var model = new PublicInquiryViewModel();
@@ -70,65 +74,124 @@ namespace PropertyTaxPortal.Controllers
             return View(model);
         }
 
+        private const string EmailAssessmentAppeals = "@bos.lacounty.gov";
+        private const string EmailAssessor = "@assessor.lacounty.gov";
+        private const string EmailAuditorController = "@auditor.lacounty.gov";
+        private const string EmailTreasurer = "@ttc.lacounty.gov";
+
+        /// <summary>
+        /// Public Inquiry form with model
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult PublicInquiry(PublicInquiryViewModel model)
         {
             model.Subjects = GetAllSubjects();
             model.States = GetAllStates();
 
-            if ((ModelState.IsValid) && (model.subject != null))
+            if (ModelState.IsValid)
             {
-                using (MailMessage mm = new MailMessage(_email.from, "wlam@assessor.lacounty.gov"))
+                //Find the responsible department and address
+                string sEmailDept = "";
+                sEmailDept = model.subjectValue.Substring(model.subjectValue.IndexOf("@"), model.subjectValue.Length - model.subjectValue.IndexOf("@"));
+                switch (sEmailDept)
                 {
-                    string strSubjectValue = Request.Form["ddSubjects"].ToString();
+                    case EmailAssessmentAppeals:
+                        model.responsibleDepartment = "Assessment Appeals Board";
+                        model.addressPhoneWebsite = "Los Angeles County Assessment Appeals Board<br>" +
+                            "500 West Temple Street, Room B50<br>" +
+                            "Los Angeles, CA 90012<br><br>" +
+                            "Phone:&nbsp;&nbsp;&nbsp;1(888)807-2111 (Toll Free) and press number 4<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-1471<br><br>" +
+                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://bos.lacounty.gov/Services/AssessmentAppeals.aspx' target='newwin'>http://bos.lacounty.gov/Services/AssessmentAppeals.aspx</a><br>";
+                        break;
 
-                    mm.Subject = model.subject + " - " + _email.subject + " - Reference # 85566";
-                    mm.Body = mm.Body + "Last Name: " + model.lastName + "<br>" + "First Name: " + model.firstName + "<br>";
-                    mm.IsBodyHtml = _email.isBodyHtml;
+                    case EmailTreasurer:
+                        model.responsibleDepartment = "Treasurer & Tax Collector's department";
+                        model.addressPhoneWebsite = "Los Angeles County Treasurer and Tax Collector<br>" +
+                            "225 N. Hill Street<br>" +
+                            "Los Angeles, CA 90012-2798<br><br>" +
+                            "Phone:&nbsp;&nbsp;&nbsp;1(888)807-2111 (Toll Free)<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-3211<br><br>" +
+                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://ttc.lacounty.gov' target='newwin'>http://ttc.lacounty.gov</a><br>";
+                        break;
 
-                    var wwwRoot = _host.WebRootPath;
-                    using (StreamReader reader = new StreamReader(wwwRoot + "/Templates/EmailTemplate/PublicInquiry.html"))
-                    {
-                        mm.Body = reader.ReadToEnd();
+                    case EmailAuditorController:
+                        model.responsibleDepartment = "Auditor-Controller's department";
+                        model.addressPhoneWebsite = "Los Angeles County Auditor-Controller Public Service Section<br>" +
+                            "500 West Temple Steet, Room 153<br>" +
+                            "Los Angeles, CA 90012-2713<br><br>" +
+                            "Phone:&nbsp;&nbsp;&nbsp;1(888)807-2111 (Toll Free)<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-3211<br><br>" +
+                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://auditor.lacounty.gov' target='newwin'>http://auditor.lacounty.gov</a><br>";
+                        break;
 
-                        mm.Body = mm.Body.Replace("{SentTo}", "aemail");
-                        mm.Body = mm.Body.Replace("{LastName}", model.lastName);
-                        mm.Body = mm.Body.Replace("{FirstName}", model.firstName);
-                        mm.Body = mm.Body.Replace("{BusinessName}", model.businessName);
-                        mm.Body = mm.Body.Replace("{MailingAddr}", model.mailingAddr);
-                        mm.Body = mm.Body.Replace("{MailAddrCity}", model.mailAddrCity);
-                        mm.Body = mm.Body.Replace("{MailAddrState}", model.mailAddrState);
-                        mm.Body = mm.Body.Replace("{MailAddrZip}", model.mailAddrZip);
-                        mm.Body = mm.Body.Replace("{EmailAddr}", model.emailAddr);
-                        mm.Body = mm.Body.Replace("{DayTimeTelNumber}", model.dayTimeTelNumber);
-                        mm.Body = mm.Body.Replace("{FaxNumber}", model.faxNumber);
-                        mm.Body = mm.Body.Replace("{PropertyAddr}", model.propertyAddr);
-                        mm.Body = mm.Body.Replace("{PropertyAddrCity}", model.propertyAddrCity);
-                        mm.Body = mm.Body.Replace("{PropertyState}", model.propertyAddrState);
-                        mm.Body = mm.Body.Replace("{PropertyZip}", model.propertyAddrZip);
-                        mm.Body = mm.Body.Replace("{AIN}", model.AIN);
-                        mm.Body = mm.Body.Replace("{CompanyNumber}", model.companyNumber);
-                        mm.Body = mm.Body.Replace("{RoutingIndex}", model.routingIndex);
-                        mm.Body = mm.Body.Replace("{comment}", model.comment);
-                    }
+                    case EmailAssessor:
+                        model.responsibleDepartment = "Assessor's department";
+                        model.addressPhoneWebsite = "Los Angeles County Assessor Public Service Section<br>" +
+                            "500 West Temple Steet, Room 225<br>" +
+                            "Los Angeles, CA 90012-2713<br><br>" +
+                            "Phone:&nbsp;&nbsp;&nbsp;1(888) 807-2111 (Toll Free)<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +
+                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://assessor.lacounty.gov' target='newwin'>http://assessor.lacounty.gov</a><br>";
+                        break;
 
-                    try
-                    {
-                        SmtpClient smtp = new SmtpClient();
-                        smtp.Host = _email.host;
-                        smtp.Port = _email.port;
-                        smtp.EnableSsl = _email.enableSsl;
-                        smtp.Send(mm);
-                    }
-                    catch (Exception ex)
-                    {
-                        fileLogger.Error("Error saved in file");
-                        databaseLogger.Error(ex, "Error occured in sending the email");
-                        return View("~/Views/Shared/_ErrorMessage.cshtml");
-                    }
-
-                    return View("PublicInquiryThankYou");
+                    default:
+                        model.responsibleDepartment = "";
+                        model.addressPhoneWebsite = "";
+                        break;
                 }
+
+                string mFrom = (model.emailAddr.Trim() == "") ? _email.from : model.emailAddr.Trim();
+
+                MailAddress from = new MailAddress(mFrom);
+                MailAddress to;
+                if (_email.dev == 1) //dev
+                    to = new MailAddress("wlam@assessor.lacounty.gov"); 
+                else
+                    to = new MailAddress(model.subjectValue.Substring(3, model.subjectValue.Length - 3));
+                MailMessage mail = new MailMessage(from, to);
+                string strSubjectText = model.subjectText;
+                string sSubject = strSubjectText + " - " + _email.subject + " - Reference # 85566";
+
+                mail.Subject = sSubject;
+                mail.IsBodyHtml = _email.isBodyHtml;
+                mail.Priority = MailPriority.Normal;
+                if (_email.dev == 1) //dev
+                    _email.bcc = "iamwillie51@yahoo.com"; 
+                MailAddress bcc = new MailAddress(_email.bcc);
+                mail.Bcc.Add(bcc);
+
+                mail.Body = BuildMailBody("/Templates/EmailTemplate/PublicInquiry.html", model);
+                try
+                {
+                    SmtpClient smtp = new SmtpClient();
+                    smtp.Host = _email.host;
+                    smtp.Port = _email.port;
+                    smtp.EnableSsl = _email.enableSsl;
+                    smtp.Send(mail); //email to responsible department and bcc emailsbk@assessor.lacounty.gov
+                    if (model.emailAddr.Trim() != "")
+                    {   
+                        from = new MailAddress(_email.from);
+                        to = new MailAddress(model.emailAddr.Trim());
+                        mail = new MailMessage(from, to);
+                        mail.Subject = sSubject;
+                        mail.IsBodyHtml = _email.isBodyHtml;
+                        mail.Priority = MailPriority.Normal;
+                        mail.Body = BuildMailBody("/Templates/EmailTemplate/PublicInquiryUser.html", model);
+
+                        smtp.Send(mail); //email to user
+                    }
+                }
+                catch (Exception ex)
+                {
+                    fileLogger.Error("Error saved in file");
+                    databaseLogger.Error(ex, "Error occured in sending the email");
+                    return View("~/Views/Shared/_ErrorMessage.cshtml");
+                }
+
+                return View("PublicInquiryThankYou", model);
             }
             else
             {
@@ -136,11 +199,60 @@ namespace PropertyTaxPortal.Controllers
             }
         }
 
+        /// <summary>
+        /// Build the body of mail
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public string BuildMailBody (string path, PublicInquiryViewModel model)
+        {
+            var wwwRoot = _host.WebRootPath;
+            string sOriginalBody = "";
+
+            using (StreamReader reader = new StreamReader(wwwRoot + path))
+            {
+                sOriginalBody = reader.ReadToEnd();
+
+                sOriginalBody = sOriginalBody.Replace("{Subject}", model.subjectText);
+                sOriginalBody = sOriginalBody.Replace("{ResponsibleDepartment}", string.IsNullOrEmpty(model.responsibleDepartment) ? "" : model.responsibleDepartment);
+                sOriginalBody = sOriginalBody.Replace("{LastName}", model.lastName);
+                sOriginalBody = sOriginalBody.Replace("{FirstName}", model.firstName);
+                sOriginalBody = sOriginalBody.Replace("{BusinessName}", string.IsNullOrEmpty(model.businessName) ? "" : model.businessName);
+                sOriginalBody = sOriginalBody.Replace("{MailingAddr}", string.IsNullOrEmpty(model.mailingAddr) ? "" : model.mailingAddr);
+                sOriginalBody = sOriginalBody.Replace("{MailAddrCity}", string.IsNullOrEmpty(model.mailAddrCity) ? "" : model.mailAddrCity);
+                sOriginalBody = sOriginalBody.Replace("{MailAddrState}", string.IsNullOrEmpty(model.mailAddrState) ? "" : model.mailAddrState);
+                sOriginalBody = sOriginalBody.Replace("{MailAddrZip}", string.IsNullOrEmpty(model.mailAddrZip) ? "" : model.mailAddrZip);
+                sOriginalBody = sOriginalBody.Replace("{EmailAddr}", model.emailAddr);
+                sOriginalBody = sOriginalBody.Replace("{DayTimeTelNumber}", model.dayTimeTelNumber);
+                sOriginalBody = sOriginalBody.Replace("{FaxNumber}", string.IsNullOrEmpty(model.faxNumber) ? "" : model.faxNumber);
+                sOriginalBody = sOriginalBody.Replace("{PropertyAddr}", string.IsNullOrEmpty(model.propertyAddr) ? "" : model.propertyAddr);
+                sOriginalBody = sOriginalBody.Replace("{PropertyAddrCity}", string.IsNullOrEmpty(model.propertyAddrCity) ? "" : model.propertyAddrCity);
+                sOriginalBody = sOriginalBody.Replace("{PropertyAddrState}", string.IsNullOrEmpty(model.propertyAddrState) ? "" : model.propertyAddrState);
+                sOriginalBody = sOriginalBody.Replace("{PropertyAddrZip}", string.IsNullOrEmpty(model.propertyAddrZip) ? "" : model.propertyAddrZip);
+                sOriginalBody = sOriginalBody.Replace("{AIN}", string.IsNullOrEmpty(model.AIN) ? "" : model.AIN);
+                sOriginalBody = sOriginalBody.Replace("{CompanyNumber}", string.IsNullOrEmpty(model.companyNumber) ? "" : model.companyNumber);
+                sOriginalBody = sOriginalBody.Replace("{RoutingIndex}", string.IsNullOrEmpty(model.routingIndex) ? "" : model.routingIndex);
+                string sComment = model.comment.Replace("\r\n", "<br>");
+                sOriginalBody = sOriginalBody.Replace("{Comments}", string.IsNullOrEmpty(model.comment) ? "" : sComment);
+            }
+
+            return sOriginalBody;
+        }
+
+        /// <summary>
+        /// Public Inquiry Thank You page
+        /// </summary>
+        /// <returns></returns>
         public IActionResult PublicInquiryThankYou()
         {
             return View();
         }
 
+        /// <summary>
+        /// Pull the subject data for the public inquiry form subject dropdown
+        /// </summary>
+        /// <returns></returns>
         private IEnumerable<SelectListItem> GetAllSubjects()
         {
             List<SelectListItem> li = new List<SelectListItem>
@@ -173,6 +285,11 @@ namespace PropertyTaxPortal.Controllers
             IEnumerable<SelectListItem> item = li.AsEnumerable();
             return item;
         }
+
+        /// <summary>
+        /// Pull the States data for the public inquiry form States dropdown
+        /// </summary>
+        /// <returns></returns>
 
         private IEnumerable<SelectListItem> GetAllStates()
         {
@@ -234,6 +351,5 @@ namespace PropertyTaxPortal.Controllers
             IEnumerable<SelectListItem> item = li.AsEnumerable();
             return item;
         }
-
     }
 }
