@@ -23,10 +23,12 @@ namespace PropertyTaxPortal
         }
 
         public IConfiguration Configuration { get; }
+        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             var email = Configuration.GetSection("Email");
             services.Configure<Email>(email);
 
@@ -39,13 +41,13 @@ namespace PropertyTaxPortal
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //services.AddDbContext<PTPContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("Devconnection")));
-            services.AddDbContext<PTPContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("ConnectionStringPTPDEV") ));
-
+            services.AddDbContext<PTPContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("dev_connect")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
