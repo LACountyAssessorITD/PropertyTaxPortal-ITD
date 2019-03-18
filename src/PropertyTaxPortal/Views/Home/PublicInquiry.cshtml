@@ -8,7 +8,7 @@
 <section class="container-fluid section-header-pi">
     <h2 class="display-4"> PUBLIC INQUIRY FORM</h2>
 </section>
-
+<div class="faq-wrapper">
 <div class="container section-form-head category-text visible">
     <br />
     <div>
@@ -31,8 +31,8 @@
     });
 
 </script>
-
-<div class="container section-form">
+<div class="faq-wrapper">
+    <div class="container section-form">
     @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         <div class="row">
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="form-group col-sm-6">
+            <div class="form-group col-sm-6">   
                 <label for="txtLastName" class="label-text">LAST NAME <font color="red">*</font></label>
                 @Html.TextBoxFor(model => model.lastName, new { @type = "search", maxlength = "80", @id = "txtLastName", @name = "txtLastName", @class = "form-control input-text" })
                 @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger error-message" })
@@ -170,9 +170,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="form-group col-sm-6">
+            <div class="form-group col-sm-12">
                 <label for="txtRequest" class="label-text">BE BRIEF, BUT SPECIFIC <font color="red">*</font></label>
-                @Html.TextAreaFor(model => model.comment, new { style = "width:650px; font-size:15px; background-color:#F5F5F5x", rows = "8", cols = "45", @id = "txtRequest", @name = "txtRequest", @class = "form-control input-text" })
+                @Html.TextAreaFor(model => model.comment, new { style = "font-size:15px; background-color:#F5F5F5x", rows = "8", cols = "45", @id = "txtRequest", @name = "txtRequest", @class = "form-control input-text" })
                 @Html.ValidationMessageFor(model => model.comment, "", new { @class = "text-danger error-message" })
             </div>
         </div>
@@ -182,5 +182,6 @@
             </div>
         </div>
     }
+    </div>
 </div>
 

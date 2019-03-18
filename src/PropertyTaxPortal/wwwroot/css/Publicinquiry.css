@@ -1,10 +1,16 @@
 ﻿.section-form-head {
-    padding: 0 125px;
+    max-width: 900px;
+    
     
 }
 
 .section-form {
-    padding: 0 225px;
+    max-width: 900px;
+    
+}
+.faq-wrapper {
+    height: 100%;
+    background-color: #fff;
 }
 
 .section-header-pi {
@@ -14,11 +20,12 @@
     background-attachment: fixed;
     height: 200px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 80px;
     color: #fff;
 }
 
 .section-header-pi .display-4 {
+    font-size: 200%;
     font-weight: 400 !important;
 }
 
