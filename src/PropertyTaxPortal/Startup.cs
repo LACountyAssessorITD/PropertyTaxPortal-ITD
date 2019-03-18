@@ -39,7 +39,7 @@ namespace PropertyTaxPortal
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //services.AddDbContext<PTPContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("Devconnection")));
-            services.AddDbContext<PTPContext>(options => options.UseSqlServer(Configuration.GetConnectionString(Environment.GetEnvironmentVariable("dev_connect") )));
+            services.AddDbContext<PTPContext>(options => options.UseSqlServer(Configuration.GetConnectionString(Environment.GetEnvironmentVariable("dev_connect"))));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
