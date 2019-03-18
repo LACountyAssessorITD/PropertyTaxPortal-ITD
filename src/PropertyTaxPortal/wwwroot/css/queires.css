@@ -104,6 +104,9 @@
     .carousel-header .container {
         margin: 0;
     }
+    .index-wrap {
+        padding-bottom: 144px;
+    }
 }
 
 
@@ -184,6 +187,9 @@
 
     .section-footer div div:first-child {
         margin-left: 0;
+    }
+    .index-wrap {
+        padding-bottom: 130px;
     }
 }
 
@@ -274,6 +280,6 @@
     }
 
     .index-wrap {
-        padding-bottom: 505px; /* height of your footer */
+        padding-bottom: 450px; /* height of your footer */
     }
 }
