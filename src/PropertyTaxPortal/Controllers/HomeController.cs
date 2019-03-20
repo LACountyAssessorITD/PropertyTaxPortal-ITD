@@ -13,21 +13,23 @@ using System.IO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using NLog;
+using Microsoft.EntityFrameworkCore;
 
 namespace PropertyTaxPortal.Controllers
 {
     public class HomeController : Controller
-    {
-        
+    {     
         private readonly Email _email;
         private readonly IHostingEnvironment _host;
         private static Logger fileLogger = LogManager.GetLogger("fileLogger");
         private static Logger databaseLogger = LogManager.GetLogger("databaseLogger");
+        private readonly PTPContext _context;
 
-        public HomeController(IOptions<Email> email, IHostingEnvironment host)
+        public HomeController(IOptions<Email> email, IHostingEnvironment host, PTPContext context)
         {
             _email = email.Value;
             _host = host;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -94,6 +96,12 @@ namespace PropertyTaxPortal.Controllers
             {
                 //Find the responsible department and address
                 string sEmailDept = "";
+                List<EmailTrackingCount> lEmailTracking = new List<EmailTrackingCount>();
+                string sEmailTrackingCount = "";
+
+                lEmailTracking = _context.emailTrackingCount.FromSql("PTP_emailTrackingIncrement").ToList();
+                sEmailTrackingCount = lEmailTracking.First().emailTrackingCount.ToString();
+                model.emailTrackingCount = sEmailTrackingCount;
                 sEmailDept = model.subjectValue.Substring(model.subjectValue.IndexOf("@"), model.subjectValue.Length - model.subjectValue.IndexOf("@"));
                 switch (sEmailDept)
                 {
@@ -150,10 +158,10 @@ namespace PropertyTaxPortal.Controllers
                 if (_email.dev == 1) //dev
                     to = new MailAddress("wlam@assessor.lacounty.gov"); 
                 else
-                    to = new MailAddress(model.subjectValue.Substring(3, model.subjectValue.Length - 3));
+                    to = new MailAddress(model.subjectValue);
                 MailMessage mail = new MailMessage(from, to);
                 string strSubjectText = model.subjectText;
-                string sSubject = strSubjectText + " - " + _email.subject + " - Reference # 85566";
+                string sSubject = strSubjectText + " - " + _email.subject + " - Reference # " + sEmailTrackingCount;
 
                 mail.Subject = sSubject;
                 mail.IsBodyHtml = _email.isBodyHtml;
@@ -235,6 +243,7 @@ namespace PropertyTaxPortal.Controllers
                 sOriginalBody = sOriginalBody.Replace("{RoutingIndex}", string.IsNullOrEmpty(model.routingIndex) ? "" : model.routingIndex);
                 string sComment = model.comment.Replace("\r\n", "<br>");
                 sOriginalBody = sOriginalBody.Replace("{Comments}", string.IsNullOrEmpty(model.comment) ? "" : sComment);
+                sOriginalBody = sOriginalBody.Replace("{EmailTrackingCount}", string.IsNullOrEmpty(model.emailTrackingCount) ? "" : model.emailTrackingCount);
             }
 
             return sOriginalBody;
@@ -255,33 +264,13 @@ namespace PropertyTaxPortal.Controllers
         /// <returns></returns>
         private IEnumerable<SelectListItem> GetAllSubjects()
         {
-            List<SelectListItem> li = new List<SelectListItem>
+            List<Subjects> lSubjects = new List<Subjects>();
+            lSubjects = _context.subjects.FromSql("PTP_getAllSubjects").ToList();
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var oneSubject in lSubjects)
             {
-                new SelectListItem() {Text="Assessment Appeals", Value="01-aaboffice@bos.lacounty.gov"},
-                new SelectListItem() {Text="Change Mailing Address", Value="02-helpdesk@assessor.lacounty.gov"},
-                new SelectListItem() {Text="Direct Assessments", Value="03-propertytax@auditor.lacounty.gov"},
-                new SelectListItem() {Text="Exemptions", Value="04-helpdesk@assessor.lacounty.gov"},
-                new SelectListItem() {Text="Incorrect Property Information", Value="05-helpdesk@assessor.lacounty.gov"},
-                new SelectListItem() {Text="Liens", Value="06-unsecured@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Lost Tax Bill / Tax Bill Request", Value="07-info@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Overpayment / Refund", Value="08-info@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Ownership", Value="09-helpdesk@assessor.lacounty.gov"},
-                new SelectListItem() {Text="Payment (all others)", Value="10-info@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Payment (online credit card)", Value="11-ccard@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Payments (online eCheck)", Value="12-echeck@ttc.lacounty.gov"},
-                new SelectListItem() {Text="PIN Request", Value="13-echeck@ttc.lacounty.gov",},
-                new SelectListItem() {Text="Property Tax Claim for Refunds", Value="14-propertytax@auditor.lacounty.gov"},
-                new SelectListItem() {Text="Reassessment Exclusions", Value="15-helpdesk@assessor.lacounty.gov"},
-                new SelectListItem() {Text="Refunds(value reductions)", Value="16-propertytax@auditor.lacounty.gov"},
-                new SelectListItem() {Text="Tax Adjustment", Value="17-propertytax@auditor.lacounty.gov"},
-                new SelectListItem() {Text="Tax Auction", Value="18-auction@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Tax Penalty Issue", Value="19-info@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Tax Rates", Value="20-propertytax@auditor.lacounty.gov"},
-                new SelectListItem() {Text="Transfer Taxes to the Prior Owner", Value="21-propertytax@auditor.lacounty.gov"},
-                new SelectListItem() {Text="Unsecured Bills", Value="22-unsecured@ttc.lacounty.gov"},
-                new SelectListItem() {Text="Values / Decline in Value", Value="23-helpdesk@assessor.lacounty.gov"},
-                new SelectListItem() {Text="Website Related Inquiries", Value="24-webmaster@assessor.lacounty.gov"}
-            };
+                li.Add(new SelectListItem { Text = oneSubject.Description, Value = oneSubject.Email });
+            }
             IEnumerable<SelectListItem> item = li.AsEnumerable();
             return item;
         }
@@ -290,64 +279,18 @@ namespace PropertyTaxPortal.Controllers
         /// Pull the States data for the public inquiry form States dropdown
         /// </summary>
         /// <returns></returns>
-
         private IEnumerable<SelectListItem> GetAllStates()
         {
-            List<SelectListItem> li = new List<SelectListItem>
+            List<States> lStates = new List<States>();
+            lStates = _context.states.FromSql("PTP_getAllStates").ToList();
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var oneState in lStates)
             {
-                new SelectListItem() { Text="AL", Value="AL"},
-                new SelectListItem() { Text="AK", Value="AK"},
-                new SelectListItem() { Text="AZ", Value="AZ"},
-                new SelectListItem() { Text="AR", Value="AR"},
-                new SelectListItem() { Text="CA", Value="CA", Selected=true},
-                new SelectListItem() { Text="CO", Value="CO"},
-                new SelectListItem() { Text="CT", Value="CT"},
-                new SelectListItem() { Text="DC", Value="DC"},
-                new SelectListItem() { Text="DE", Value="DE"},
-                new SelectListItem() { Text="FL", Value="FL"},
-                new SelectListItem() { Text="GA", Value="GA"},
-                new SelectListItem() { Text="HI", Value="HI"},
-                new SelectListItem() { Text="ID", Value="ID"},
-                new SelectListItem() { Text="IL", Value="IL"},
-                new SelectListItem() { Text="IN", Value="IN"},
-                new SelectListItem() { Text="IA", Value="IA"},
-                new SelectListItem() { Text="KS", Value="KS"},
-                new SelectListItem() { Text="KY", Value="KY"},
-                new SelectListItem() { Text="LA", Value="LA"},
-                new SelectListItem() { Text="ME", Value="ME"},
-                new SelectListItem() { Text="MD", Value="MD"},
-                new SelectListItem() { Text="MA", Value="MA"},
-                new SelectListItem() { Text="MI", Value="MI"},
-                new SelectListItem() { Text="MN", Value="MN"},
-                new SelectListItem() { Text="MS", Value="MS"},
-                new SelectListItem() { Text="MO", Value="MO"},
-                new SelectListItem() { Text="MT", Value="MT"},
-                new SelectListItem() { Text="NE", Value="NE"},
-                new SelectListItem() { Text="NV", Value="NV"},
-                new SelectListItem() { Text="NH", Value="NH"},
-                new SelectListItem() { Text="NJ", Value="NJ"},
-                new SelectListItem() { Text="NM", Value="NM"},
-                new SelectListItem() { Text="NY", Value="NY"},
-                new SelectListItem() { Text="NC", Value="NC"},
-                new SelectListItem() { Text="ND", Value="ND"},
-                new SelectListItem() { Text="OH", Value="OH"},
-                new SelectListItem() { Text="OK", Value="OK"},
-                new SelectListItem() { Text="OR", Value="OR"},
-                new SelectListItem() { Text="PA", Value="PA"},
-                new SelectListItem() { Text="PR", Value="PR"},
-                new SelectListItem() { Text="RI", Value="RI"},
-                new SelectListItem() { Text="SC", Value="SC"},
-                new SelectListItem() { Text="SD", Value="SD"},
-                new SelectListItem() { Text="TN", Value="TN"},
-                new SelectListItem() { Text="TX", Value="TX"},
-                new SelectListItem() { Text="UT", Value="UT"},
-                new SelectListItem() { Text="VT", Value="VT"},
-                new SelectListItem() { Text="VA", Value="VA"},
-                new SelectListItem() { Text="WA", Value="WA"},
-                new SelectListItem() { Text="WV", Value="WV"},
-                new SelectListItem() { Text="WI", Value="WI"},
-                new SelectListItem() { Text="WY", Value="WY"}
-            };
+                if (oneState.State == "CA")
+                    li.Add(new SelectListItem { Text = oneState.State, Value = oneState.State, Selected = true });
+                else
+                    li.Add(new SelectListItem { Text = oneState.State, Value = oneState.State });
+            }
             IEnumerable<SelectListItem> item = li.AsEnumerable();
             return item;
         }

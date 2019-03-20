@@ -18,5 +18,11 @@ namespace PropertyTaxPortal.Models
         public DbSet<Category> category { get; set; }
 
         public DbSet<RefCode> refcode { get; set; }
+  
+        public DbSet<EmailTrackingCount> emailTrackingCount { get; set; }
+
+        public DbSet<Subjects> subjects { get; set; }
+
+        public DbSet<States> states { get; set; }
     }
 }

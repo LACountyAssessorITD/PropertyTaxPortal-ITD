@@ -13,31 +13,33 @@
     <h2 class="display-4"> PUBLIC INQUIRY FORM</h2>
 </section>
 
-<div class="container section-form text-left">
-    <br />
-    <div class="row">
-        <div class="form-group col-sm-12 thankyou-text">
-            Thank you for completing our Public Inquiry form. A staff member from the @Html.DisplayFor(model => model.responsibleDepartment) respond to your request shortly.
+<div class="form-wrapper">
+    <div class="container section-form text-left">
+        <br />
+        <div class="row">
+            <div class="form-group col-sm-12 thankyou-text">
+                Thank you for completing our Public Inquiry form. A staff member from the @Html.DisplayFor(model => model.responsibleDepartment) respond to your request shortly.
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="form-group col-sm-12 thankyou-text">
-            The Reference number for your inquiry is 85566.
+        <div class="row">
+            <div class="form-group col-sm-12 thankyou-text">
+                The Reference number for your inquiry is @Html.DisplayFor(model => model.emailTrackingCount).
+            </div>
         </div>
+        <br />
+        <div class="form-group col-sm-12 thankyou-text">
+            <blockquote>
+                <p>
+                    @Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.addressPhoneWebsite))
+                </p>
+            </blockquote>
+            <br />
+            <br />
+            LA County
+            <br />
+            Property Tax Portal
+        </div>
+        <br />
+        <br />
     </div>
-    <br />
-    <div class="form-group col-sm-12 thankyou-text">
-        <blockquote>
-            <p>
-                @Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.addressPhoneWebsite))
-            </p>
-        </blockquote>
-        <br />
-        <br />
-        LA County
-        <br />
-        Property Tax Portal
-    </div>
-    <br />
-    <br />
 </div>
