@@ -44,9 +44,9 @@
             </div>
         </div>
         <!-- Contact Information -->
-        <div class="row">
+        <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b>Contact Information</b>
+                <b class="">Contact Information</b>
             </div>
         </div>
         <div class="row">
@@ -110,9 +110,9 @@
             </div>
         </div>
         <!-- Required for assessment questions about a specific bill or property... -->
-        <div class="row">
+        <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b>Required for assessment questions about a specific bill or property...</b>
+                <b class="">Required for assessment questions about a specific bill or property...</b>
             </div>
         </div>
         <div class="row">
@@ -146,9 +146,9 @@
             </div>
         </div>
         <!-- Required for questions regarding personal perperty... -->
-        <div class="row">
+        <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b>Required for questions regarding personal perperty...</b>
+                <b class="" >Required for questions regarding personal perperty...</b>
             </div>
         </div>
         <div class="row">
@@ -164,9 +164,9 @@
             </div>
         </div>
         <!-- Please explain your request for assistance. -->
-        <div class="row">
+        <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b>Please explain your request for assistance</b>
+                <b  >Please explain your request for assistance</b>
             </div>
         </div>
         <div class="row">
@@ -176,7 +176,7 @@
                 @Html.ValidationMessageFor(model => model.comment, "", new { @class = "text-danger error-message" })
             </div>
         </div>
-        <div class="row">
+        <div class="row my-2">
             <div class="form-group col-sm-12 text-center">
                 <input type="submit" class="btn btn-primary bg-3" id="SubmitInquiry" value="SUBMIT INQUIRY" asp-controller="Home" asp-action="PublicInquiry"/>
             </div>
