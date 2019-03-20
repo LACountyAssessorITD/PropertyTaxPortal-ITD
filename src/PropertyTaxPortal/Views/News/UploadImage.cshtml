@@ -1,0 +1,28 @@
+﻿@model PropertyTaxPortal.Models.Images;
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "Image", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Image</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImagePath)
+        </div>
+        <div class="editor-field">
+            <input id="ImagePath" title="Upload a product image"
+                   type="file" name="file" />
+        </div>
+        <p><input type="submit" value="Create" /></p>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section Scripts {
+
+    }

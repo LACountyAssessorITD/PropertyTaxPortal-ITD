@@ -8,30 +8,30 @@
 <section class="container-fluid section-header-pi">
     <h2 class="display-4"> PUBLIC INQUIRY FORM</h2>
 </section>
-<div class="faq-wrapper">
-<div class="container section-form-head category-text visible">
-    <br />
-    <div>
-        <b>
-            In order to most effectively serve you, please fill out the following form as completely as possible.
-            If you are unsure which department to select, please refer to the <a href="http://www.google.com" target="_blank">Areas of Responsibility</a> help page.
-        </b>
+<div class="form-wrapper">
+    <div class="container section-form-head category-text visible">
+        <br />
+        <div>
+            <b>
+                In order to most effectively serve you, please fill out the following form as completely as possible.
+                If you are unsure which department to select, please refer to the <a href="http://www.google.com" target="_blank">Areas of Responsibility</a> help page.
+            </b>
+        </div>
     </div>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#ddSubjects").change(function () {
-            //var subVal = document.getElementById("ddSubjects").value;
-            var subText = $("#ddSubjects option:selected").text();
-            //alert(subText);
-            $("#subjectText").val(subText);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ddSubjects").change(function () {
+                //var subVal = document.getElementById("ddSubjects").value;
+                var subText = $("#ddSubjects option:selected").text();
+                //alert(subText);
+                $("#subjectText").val(subText);
+            });
         });
-    });
 
-</script>
-<div class="faq-wrapper">
+    </script>
+
     <div class="container section-form">
     @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {

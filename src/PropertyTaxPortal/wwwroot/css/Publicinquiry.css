@@ -8,13 +8,13 @@
     max-width: 900px;
     
 }
-.faq-wrapper {
+.form-wrapper {
     height: 100%;
     background-color: #fff;
 }
 
 .section-header-pi {
-    background-image: url('../images/michael-jasmund-653794-unsplash.jpg');
+    background-image: url('../images/publicinquiry.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

@@ -75,5 +75,8 @@ namespace PropertyTaxPortal.Models
         public string responsibleDepartment { get; set; }
 
         public string addressPhoneWebsite { get; set; }
+
+        //////////////////////////////////////////////////////////////////////////
+        public string emailTrackingCount { get; set; }
     }
 }
