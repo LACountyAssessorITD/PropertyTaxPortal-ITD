@@ -2,6 +2,12 @@
 
 # Created by https://www.gitignore.io/api/visualstudiocode,windows,visualstudio
 # Edit at https://www.gitignore.io/?templates=visualstudiocode,windows,visualstudio
+### VisualStudioCode ###
+.vscode
+!.vscodesettings.json
+!.vscodetasks.json
+!.vscodelaunch.json
+!.vscodeextensions.json
 
 ### VisualStudioCode ###
 .vscode/*
