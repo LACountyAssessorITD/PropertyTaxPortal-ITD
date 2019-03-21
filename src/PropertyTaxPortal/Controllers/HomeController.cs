@@ -155,10 +155,11 @@ namespace PropertyTaxPortal.Controllers
 
                 MailAddress from = new MailAddress(mFrom);
                 MailAddress to;
-                if (_email.dev == 1) //dev
-                    to = new MailAddress("wlam@assessor.lacounty.gov"); 
-                else
+                if (_host.IsProduction())
                     to = new MailAddress(model.subjectValue);
+                else
+                    to = new MailAddress(_email.mailTo);
+
                 MailMessage mail = new MailMessage(from, to);
                 string strSubjectText = model.subjectText;
                 string sSubject = strSubjectText + " - " + _email.subject + " - Reference # " + sEmailTrackingCount;
@@ -166,8 +167,6 @@ namespace PropertyTaxPortal.Controllers
                 mail.Subject = sSubject;
                 mail.IsBodyHtml = _email.isBodyHtml;
                 mail.Priority = MailPriority.Normal;
-                if (_email.dev == 1) //dev
-                    _email.bcc = "iamwillie51@yahoo.com"; 
                 MailAddress bcc = new MailAddress(_email.bcc);
                 mail.Bcc.Add(bcc);
 
