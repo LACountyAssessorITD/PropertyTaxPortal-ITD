@@ -3,15 +3,6 @@
 # Created by https://www.gitignore.io/api/visualstudiocode,windows,visualstudio
 # Edit at https://www.gitignore.io/?templates=visualstudiocode,windows,visualstudio
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!src/PropertyTaxPortal/.vscode/launch.json
-!src/PropertyTaxPortal/.vscode/tasks.json
-
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
