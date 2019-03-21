@@ -5,12 +5,11 @@
 
 ### VisualStudioCode ###
 .vscode/*
+.vscode/launch.json
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-!src/PropertyTaxPortal/.vscode/launch.json
-!src/PropertyTaxPortal/.vscode/tasks.json
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
