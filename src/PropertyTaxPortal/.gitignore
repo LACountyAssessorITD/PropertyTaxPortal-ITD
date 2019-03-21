@@ -3,12 +3,20 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+### VisualStudioCode ###
+.vscode/*	
+.vscode/launch.json
+!.vscode/settings.json	
+!.vscode/tasks.json	
+!.vscode/launch.json	
+
 # User-specific files
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+**/Properties/launchSettings.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
