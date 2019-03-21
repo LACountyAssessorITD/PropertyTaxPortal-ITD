@@ -12,6 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
+        "ptp_connect": "Initial Catalog=PTPDEV;server=Assessorpropdb\\assessorqadb;user id=ptpuser;password=.PTP@123user;MultipleActiveResultSets=True;",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
