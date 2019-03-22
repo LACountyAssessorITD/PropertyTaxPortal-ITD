@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using PropertyTaxPortal.Models;
 using Microsoft.EntityFrameworkCore;
 using ReflectionIT.Mvc.Paging;
+using System.Collections;
 
 namespace PropertyTaxPortal
 {
