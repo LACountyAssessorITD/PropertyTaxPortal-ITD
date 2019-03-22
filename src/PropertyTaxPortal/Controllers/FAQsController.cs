@@ -120,10 +120,16 @@ namespace PropertyTaxPortal.Controllers
             dynamic FaqFinalModel = new ExpandoObject();
             var modelTaxBillFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 1).OrderBy(f => f.sOrder);
             var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
+            var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
+            var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
             FaqFinalModel.TaxBill = modelTaxBillFAQs;
             FaqFinalModel.Refund = modelRefundFAQs;
+            FaqFinalModel.Property = modelPropertyFAQs;
+            FaqFinalModel.Ownership = modelOwnershipFAQs;
             return View(FaqFinalModel);
         }
+
+        
 
         [HttpPost]
         [ValidateAntiForgeryToken]
