@@ -1,159 +1,166 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
     ViewData["Title"] = "";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-    <!---------------------------------------------------------------------->
-    <!----------------------------------INDEX------------------------------->
-    <!---------------------------------------------------------------------->
-    <section class="container section-news">
-        <div class="row news-feed">
-            <div class="col-sm-3 latest-news">
-                <p>Latest News</p>
-            </div>
-            <div class="col-sm-9 news-car">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p>Subscribe to the Treasurer and Tax Collector's Email Notification Service</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Los Angeles County Tax Collector Introduces an Online Property Tax Management System</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Subscribe to the Treasurer and Tax Collector's Email Notification Service </p>
-                        </div>
+<!---------------------------------------------------------------------->
+<!----------------------------------INDEX------------------------------->
+<!---------------------------------------------------------------------->
+<section class="container section-news">
+    <div class="row news-feed">
+        <div class="col-sm-3 latest-news">
+            <p>@Localizer["Latest News"]</p>
+        </div>
+        <div class="col-sm-9 news-car">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>Subscribe to the Treasurer and Tax Collector's Email Notification Service</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Los Angeles County Tax Collector Introduces an Online Property Tax Management System</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Subscribe to the Treasurer and Tax Collector's Email Notification Service </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <!---------------------------------------------------------------------->
-    <!----------------------------------Carousel---------------------------->
-    <!---------------------------------------------------------------------->
-    <section class="container-fluid section-head">
-        <div class="row section-columns">
-            <div class="col-lg-5 welcome-header js--wp-8">
-                <h1 class="display-3">Welcome</h1>
-                <p>
-                    Assessor, Auditor-Controller, Treasurer & Tax Collector, and Assessment
-                    Appeals Board have prepared this property tax information site to provide
-                    taxpayers with an overview and some specific detail about the property
-                    tax process in Los Angeles County
-                </p>
-            </div>
-            <div class="col-lg-7 carousel-header">
-                <div id="carouselExampleControls" class="carousel slide container h-100 " data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-3 align-items-center">
-                                    <p class="name-text"><span>Jeffery Prang</span></p>
-                                    <p>Assessor</p>
+<!---------------------------------------------------------------------->
+<!----------------------------------Carousel---------------------------->
+<!---------------------------------------------------------------------->
+<section class="container-fluid section-head">
+    <div class="row section-columns">
+        <div class="col-lg-5 welcome-header js--wp-8">
+            <h1 class="display-3">@Localizer["Welcome"]</h1>
+            <p>
+                @Localizer["Assessor, Auditor-Controller, Treasurer & Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County"]
+            </p>
+        </div>
+        <div class="col-lg-7 carousel-header">
+            <div id="carouselExampleControls" class="carousel slide container h-100 " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3 align-items-center">
+                                <p class="name-text"><span>Jeffery Prang</span></p>
+                                <p>Assessor</p>
+                            </div>
+                            <div class="col-9 img-carousel h-100">
+                                <div class="img-seal">
+                                    <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
                                 </div>
-                                <div class="col-9 img-carousel h-100">
-                                    <div class="img-seal">
-                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
-                                    </div>
 
-                                    <img class="js--wp-9 img-person" src="~/images/jprang_slider.png" alt="">
-                                </div>
+                                <img class="js--wp-9 img-person" src="~/images/jprang_slider.png" alt="">
                             </div>
                         </div>
-                        <div class="carousel-item ">
-                            <div class="row">
-                                <div class="col-3">
-                                    <p class="name-text">John Naimo</p>
-                                    <p>Auditor-Controller</p>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="name-text">John Naimo</p>
+                                <p>Auditor-Controller</p>
+                            </div>
+                            <div class="col-9 img-carousel">
+                                <div class="img-seal">
+                                    <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
                                 </div>
-                                <div class="col-9 img-carousel">
-                                    <div class="img-seal">
-                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
-                                    </div>
-                                    <img class="js--wp-9 img-person" src="~/images/Jnaimo_slider.png" alt="">
-                                </div>
+                                <img class="js--wp-9 img-person" src="~/images/Jnaimo_slider.png" alt="">
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-3">
-                                    <p class="name-text">Joseph Kelly</p>
-                                    <p>Treasurer & Tax Collector</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="name-text">Joseph Kelly</p>
+                                <p>Treasurer & Tax Collector</p>
+                            </div>
+                            <div class="col-9 img-carousel">
+                                <div class="img-seal">
+                                    <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
                                 </div>
-                                <div class="col-9 img-carousel">
-                                    <div class="img-seal">
-                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
-                                    </div>
-                                    <img class="js--wp-9 img-person i-2" src="~/images/jkelly_slider.png" alt="">
-                                </div>
+                                <img class="js--wp-9 img-person i-2" src="~/images/jkelly_slider.png" alt="">
                             </div>
                         </div>
-                        <div class="carousel-item ">
-                            <div class="row">
-                                <div class="col-3">
-                                    <p class="name-text">Celia Zavala</p>
-                                    <p>Assessment Appeals Board</p>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="name-text">Celia Zavala</p>
+                                <p>Assessment Appeals Board</p>
+                            </div>
+                            <div class="col-9 img-carousel">
+                                <div class="img-seal">
+                                    <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
                                 </div>
-                                <div class="col-9 img-carousel">
-                                    <div class="img-seal">
-                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
-                                    </div>
-                                    <img class="js--wp-9 img-person i-2" src="~/images/cZavala_slider.png" alt="">
-                                </div>
+                                <img class="js--wp-9 img-person i-2" src="~/images/cZavala_slider.png" alt="">
                             </div>
                         </div>
-
-
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
 
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!---------------------------------------------------------------------->
-    <!----------------------------------Cards------------------------------->
-    <!---------------------------------------------------------------------->
+<!---------------------------------------------------------------------->
+<!----------------------------------Cards------------------------------->
+<!---------------------------------------------------------------------->
 
-    <section class="container-fluid section-cards">
-        <div class="row">
-            <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-4">
-                <div class="card-img bg-1">
-                    <ion-icon class="c-1" name="people"></ion-icon>
-                </div>
-                <p>AREAS OF RESPONSIBILITY</p>
+<section class="container-fluid section-cards">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-4">
+            <div class="card-img bg-1">
+                <ion-icon class="c-1" name="people"></ion-icon>
             </div>
-
-            <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-5">
-                <div class="card-img bg-2">
-                    <ion-icon class="c-2" name="logo-usd"></ion-icon>
-                </div>
-                <p>PAYMENT OPTIONS</p>
-            </div>
-            <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-6">
-                <div class="card-img bg-3">
-                    <ion-icon class="c-3" name="filing"></ion-icon>
-                </div>
-                <p>PROPERTY TAX MANAGMENT SYSTEM</p>
-            </div>
-            <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-7">
-                <div class="card-img bg-4">
-                    <ion-icon class="c-4" name="business"></ion-icon>
-                </div>
-                <p>PROPERTY ADDRESS SEARCH</p>
-            </div>
-
+            <p>@Localizer["AREAS OF RESPONSIBILITY"]</p>
         </div>
-    </section>
+
+        <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-5">
+            <div class="card-img bg-2">
+                <ion-icon class="c-2" name="logo-usd"></ion-icon>
+            </div>
+            <p>PAYMENT OPTIONS</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-6">
+            <div class="card-img bg-3">
+                <ion-icon class="c-3" name="filing"></ion-icon>
+            </div>
+            <p>PROPERTY TAX MANAGMENT SYSTEM</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-7">
+            <div class="card-img bg-4">
+                <ion-icon class="c-4" name="business"></ion-icon>
+            </div>
+            <p>PROPERTY ADDRESS SEARCH</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    body {
+        background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url('../images/bg-8.jpg');
+    }
+</style>
 

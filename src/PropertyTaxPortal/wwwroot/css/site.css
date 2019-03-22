@@ -35,9 +35,7 @@ body {
 }
 
 body {
-    /* ----------------------- */
-
-    background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url('../images/bg-8.jpg');
+    /* ----------background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url('../images/bg-8.jpg');------------- */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
