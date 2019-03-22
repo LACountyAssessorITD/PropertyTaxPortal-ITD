@@ -51,14 +51,14 @@
         <!------------------------------ NAVBAR ------------------------------>
         <nav class="navbar navbar-expand-lg bg-light">
             <a class="navbar-brand" href="#"><img src="~/images/LACseal76.png" alt=""></a>
-            <div class="nav-icon-bar">
-                <a href="#">
+
+            <a asp-controller="Home" asp-action="Index">
+                <div class="nav-icon-bar">
                     <p>Los Angeles County</p>
-                </a>
-                <a href="#">
-                    <h5>Property Tax Portal</h5>
-                </a>
-            </div>
+                    <h5>Property Tax Portal</h5>   
+                </div>
+            </a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <ion-icon class="icon" name="menu"></ion-icon>
@@ -163,8 +163,8 @@
                         </a>
                         <div class="dropdown-menu small-drop" aria-labelledby="navbarDropdown">
                             <ul>
-                                <li><a href="">All FAQs</a></li>
-                       
+                                
+                                <li><a asp-controller="FAQs" asp-action="FAQTabs">All FAQs</a></li>
                                 <li><a href="">Tax Bills</a></li>
                                 <li><a href="">Refunds/Tax Sales/Tax Liens</a></li>
                                 <li><a href="">Property Values</a></li>
@@ -185,8 +185,8 @@
                                 <li><a href="">Assessment Appeals Board</a></li>
                                 <li><a href="">LA County Contacts</a></li>
                                 <li><a asp-controller="Home" asp-action="PublicInquiry">Public Inquiry</a></li>
-                                
-                               
+
+
                             </ul>
                         </div>
                     </li>
