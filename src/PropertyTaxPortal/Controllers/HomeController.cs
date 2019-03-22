@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using NLog;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Localization;
 
 namespace PropertyTaxPortal.Controllers
 {
@@ -24,37 +26,26 @@ namespace PropertyTaxPortal.Controllers
         private static Logger fileLogger = LogManager.GetLogger("fileLogger");
         private static Logger databaseLogger = LogManager.GetLogger("databaseLogger");
         private readonly PTPContext _context;
+        private readonly IStringLocalizer<HomeController> _localizer;
 
-        public HomeController(IOptions<Email> email, IHostingEnvironment host, PTPContext context)
+        public HomeController(IOptions<Email> email, IHostingEnvironment host, PTPContext context, IStringLocalizer<HomeController> localizer)
         {
             _email = email.Value;
             _host = host;
             _context = context;
+            _localizer = localizer;
         }
+
 
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+       
+ 
 
-            return View();
-        }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -292,6 +283,18 @@ namespace PropertyTaxPortal.Controllers
             }
             IEnumerable<SelectListItem> item = li.AsEnumerable();
             return item;
+        }
+
+        [HttpPost]
+        public IActionResult SetLanguage(string culture, string returnUrl)
+        {
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+            );
+
+            return LocalRedirect(returnUrl);
         }
     }
 }
