@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PropertyTaxPortal.Models;
 using ReflectionIT.Mvc.Paging;
+using System.Web;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace PropertyTaxPortal.Controllers
 {
@@ -22,8 +24,8 @@ namespace PropertyTaxPortal.Controllers
 
         // GET: News
         public async Task<IActionResult> Index(int page = 1)
-        {            
-            var query = _context.News.FromSql("PTP_getAllNews").OrderBy(n=>n.sOrder);
+        {
+            var query = _context.News.FromSql("PTP_getAllNews").OrderBy(n => n.sOrder);
             var model = await PagingList.CreateAsync(query, 2, page);
             return View(model);
         }
@@ -33,8 +35,8 @@ namespace PropertyTaxPortal.Controllers
         {
             return View();
         }
-        
-        public ActionResult DownArrow(int? id,int? pagenum)
+
+        public ActionResult DownArrow(int? id, int? pagenum)
         {
             if (id > 0)
             {
@@ -43,7 +45,7 @@ namespace PropertyTaxPortal.Controllers
             return RedirectToAction("Index", new { page = pagenum });
         }
 
-        public ActionResult UpArrow(int? id,int? pagenum)
+        public ActionResult UpArrow(int? id, int? pagenum)
         {
             if (id > 0)
             {
@@ -53,7 +55,7 @@ namespace PropertyTaxPortal.Controllers
         }
 
 
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateorEdit([Bind("NewsID,WebSectionID,UploadID,Title,Body,Caption,FeaturedCode,NewsDate,Starton,EndOn,isGlobal,Image")] NEWS news)
@@ -62,11 +64,11 @@ namespace PropertyTaxPortal.Controllers
             {
                 if (news.NewsID == 0)
                 {
-                    int newsResults = _context.Database.ExecuteSqlCommand("PTP_createNews @p0,@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10", news.WebSectionID, news.UploadID, news.Title, news.Body, news.Caption, news.sOrder, news.FeaturedCode, news.NewsDate, news.Starton, news.EndOn, news.isGlobal);                   
-                } 
+                    int newsResults = _context.Database.ExecuteSqlCommand("PTP_createNews @p0,@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10", news.WebSectionID, news.UploadID, news.Title, news.Body, news.Caption, news.sOrder, news.FeaturedCode, news.NewsDate, news.Starton, news.EndOn, news.isGlobal);
+                }
                 else
                 {
-                    int newsResults = _context.Database.ExecuteSqlCommand("PTP_updateNews @p0,@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9", news.NewsID,1824,news.Title, news.Body, news.Caption,news.FeaturedCode, news.NewsDate, news.Starton, news.EndOn,1);
+                    int newsResults = _context.Database.ExecuteSqlCommand("PTP_updateNews @p0,@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9", news.NewsID, 1824, news.Title, news.Body, news.Caption, news.FeaturedCode, news.NewsDate, news.Starton, news.EndOn, 1);
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -177,5 +179,12 @@ namespace PropertyTaxPortal.Controllers
             ViewData["FeaturedCodes"] = li;
             return View();
         }
+
+        public ActionResult UploadImage()
+        {
+
+            return View();
+        }
+ 
     }
 }

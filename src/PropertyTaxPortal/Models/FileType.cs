@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace PropertyTaxPortal.Models
 {
-    public class Images
+    public enum FileType
     {
-        public int ID { get; set; }
-        public string ImagePath { get; set; }
+        Avatar = 1, Photo
     }
 }

@@ -25,6 +25,13 @@
     <div class="container section-form">
     @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
+        <br />
+        <div class="row pof-title">
+            <div class="form-group col-sm-12 category-text">
+                <b >In order to most effectively serve you, please fill out the following form as completely as possible.</b>
+            </div>
+        </div>
+        <br />
         <div class="row">
             <div class="form-group col-sm-6">
                 <label for="Subjects" class="label-text">SUBJECT <font color="red">*</font></label>
@@ -36,7 +43,7 @@
         <!-- Contact Information -->
         <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b class="">Contact Information</b>
+                <b>Contact Information</b>
             </div>
         </div>
         <div class="row">
@@ -102,7 +109,7 @@
         <!-- Required for assessment questions about a specific bill or property... -->
         <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b class="">Required for assessment questions about a specific bill or property...</b>
+                <b>Required for assessment questions about a specific bill or property...</b>
             </div>
         </div>
         <div class="row">
@@ -138,7 +145,7 @@
         <!-- Required for questions regarding personal perperty... -->
         <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b class="" >Required for questions regarding personal perperty...</b>
+                <b>Required for questions regarding personal perperty...</b>
             </div>
         </div>
         <div class="row">
@@ -156,7 +163,7 @@
         <!-- Please explain your request for assistance. -->
         <div class="row pof-title">
             <div class="form-group col-sm-12 category-text">
-                <b  >Please explain your request for assistance</b>
+                <b>Please explain your request for assistance</b>
             </div>
         </div>
         <div class="row">
