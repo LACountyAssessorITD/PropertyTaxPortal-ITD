@@ -1,0 +1,254 @@
+﻿
+@{
+    ViewData["Title"] = "FAQTabs";
+}
+
+<section class="FAQ-Section">
+    <link href="~/css/FAQTAB.css" rel="stylesheet" />
+    <script src="~/js/tabs.js"></script>
+
+    <div class="bgimg">
+        <br />
+        <br />
+        <div class="faq-header" style="width:42%;text-align:left; height:90px; font-size:300%; color:white;background-color:rgba(0,0,0,0.5); font-weight:bold">&nbsp;&nbsp;&nbsp;Frequently Asked Questions </div>
+        <br />
+        <div style="width:40%;text-align:left; height:43px; padding-top:5px; color:white;background-color:rgba(0,0,0,0.5); ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you have any questions, please contact us. We will respond to you as soon as possible.</div>
+    </div>
+    <ul class="tab" style="object-position:center">
+
+        <li>
+            <div style="width:250px"><a style="width:250px; background-color:#373737"></a></div>
+        </li>
+
+        <li>
+            <div class="vertical-line" style="height: 112px;"></div><a class="tablinks" style="width:220px;" href="#" onclick="openTab(event, 'TaxBill')">Tax Bills</a>
+        </li>
+        <li>
+            <div class="vertical-line" style="height: 112px;"></div><a class="tablinks" style="width:350px;" href="#" onclick="openTab(event, 'Refund')">Refunds Tax Sales/Liens</a>
+        </li>
+        <li>
+            <div class="vertical-line" style="height: 112px;"></div><a class="tablinks" style="width:300px;" href="#" onclick="openTab(event, 'Property')">Property Values</a>
+        </li>
+        <li>
+            <div class="vertical-line" style="height: 112px;"></div><a class="tablinks" style="width:250px;" href="#" onclick="openTab(event, 'Ownership')">Ownership</a>
+        </li>
+        <li>
+            <div class="vertical-line" style="height: 112px;"></div><a class="tablinks active" style="width:250px;" href="#" onclick="openTab(event, 'All')">All FAQs</a>
+        </li>
+        <li>
+            <div class="vertical-line" style="height: 112px;"></div>
+        </li>
+    </ul>
+    <br />
+    <div id="All" class="tabcontent">
+        <div style="width:1500px; text-align:center"><h1> All FAQs </h1></div>
+        <div style="background-color:black; width:2500px;height:1px;"></div>
+        <br />
+        <div>
+            <div class="container">
+                <div><h4>Tax Bills</h4></div>
+                @foreach (FAQ taxfaq in Model.TaxBill)
+                {
+                    if (@taxfaq.question.Contains("<a"))
+                    {
+                        <div>
+                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                                @Html.Raw(@taxfaq.question)
+                            </button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle faq-button" style="width:1000px; text-align:left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Html.Raw(@taxfaq.question)
+                            </button>
+                            <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                                @Html.Raw(@taxfaq.answer)
+                            </div>
+                        </div>
+                    }
+                    <div style="height:5px;"></div>
+                }
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <div><h4>Refunds Tax Sales/Liens</h4></div>
+            @foreach (FAQ refundfaq in Model.Refund)
+            {
+                if (@refundfaq.question.Contains("<a"))
+                {
+                    <div>
+                        <button type="button" id="dropdownMenuButton" class="faq-button" style="width:1000px; text-align:left;padding: 7px;border-radius: 5px;">
+                            @Html.Raw(@refundfaq.question)
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle faq-button" style="width:1000px; text-align:left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @Html.Raw(@refundfaq.question)
+                        </button>
+                        <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                            @Html.Raw(@refundfaq.answer)
+                        </div>
+                    </div>
+                    <div style="height:5px;"></div>
+                }
+            }
+        </div>
+        <br />
+        <div class="container">
+            <div><h4>Property Values</h4></div>
+            @foreach (FAQ propfaq in Model.Property)
+            {
+                if (@propfaq.question.Contains("<a"))
+                {
+                    <div>
+                        <button type="button" id="dropdownMenuButton" class="faq-button" style="width:1000px; text-align:left;padding: 7px;border-radius: 5px;">
+                            @Html.Raw(@propfaq.question)
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle faq-button" style="width:1000px; text-align:left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @Html.Raw(@propfaq.question)
+                        </button>
+                        <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                            @Html.Raw(@propfaq.answer)
+                        </div>
+                    </div>
+                    <div style="height:5px;"></div>
+                }
+            }
+        </div>
+        <br />
+        <div class="container">
+            <div><h4>Owenership</h4></div>
+            @foreach (FAQ ownerfaq in Model.Ownership)
+            {
+                if (@ownerfaq.question.Contains("<a"))
+                {
+                    <div>
+                        <button type="button" id="dropdownMenuButton" class="faq-button" style="width:1000px; text-align:left;padding: 7px;border-radius: 5px;">
+                            @Html.Raw(@ownerfaq.question)
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle faq-button" style="width:1000px; text-align:left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @Html.Raw(@ownerfaq.question)
+                        </button>
+                        <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                            @Html.Raw(@ownerfaq.answer)
+                        </div>
+                    </div>
+                    <div style="height:5px;"></div>
+                }
+            }
+        </div>
+    </div>
+    <div id="TaxBill" class="tabcontent" style="display:none">
+        <div style="width:1500px; text-align:center"><h1>Tax Bill </h1></div>
+        <div style="background-color:black; width:2500px;height:1px;"></div>
+        <br />
+        <div>
+            <div class="container">
+                <div><h4>Tax Bills</h4></div>
+                @foreach (FAQ taxfaq in Model.TaxBill)
+                {
+                    if (@taxfaq.question.Contains("<a"))
+                    {
+                        <div>
+                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                                @Html.Raw(@taxfaq.question)
+                            </button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle faq-button" style="width:1000px; text-align:left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Html.Raw(@taxfaq.question)
+                            </button>
+                            <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                                @Html.Raw(@taxfaq.answer)
+                            </div>
+                        </div>
+                    }
+                    <div style="height:5px;"></div>
+                }
+            </div>
+        </div>
+    </div>
+    <div id="Refund" class="tabcontent" style="display:none">
+        <div style="width:1500px; text-align:center"><h1> All Refunds Tax Sales/Liens </h1></div>
+        <div style="background-color:black; width:2500px;height:1px;"></div>
+        <br />
+        <div class="container">
+            <div><h4>Refunds Tax Sales/Liens</h4></div>
+            @foreach (FAQ refundfaq in Model.Refund)
+            {
+                if (@refundfaq.question.Contains("<a"))
+                {
+                    <div>
+                        <button type="button" id="dropdownMenuButton" class="faq-button" style="width:1000px; text-align:left;padding: 7px;border-radius: 5px;">
+                            @Html.Raw(@refundfaq.question)
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle faq-button" style="width:1000px; text-align:left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @Html.Raw(@refundfaq.question)
+                        </button>
+                        <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                            @Html.Raw(@refundfaq.answer)
+                        </div>
+                    </div>
+                    <div style="height:5px;"></div>
+                }
+            }
+        </div>
+    </div>
+    <div id="Property" class="tabcontent" style="display:none">
+        <div style="width:1500px; text-align:center"><h1> Property </h1></div>
+        <div style="background-color:black; width:2500px;height:1px;"></div>
+        <div class="container">
+            <div><h4>Property Values</h4></div>
+            @foreach (FAQ propfaq in Model.Property)
+            {
+                if (@propfaq.question.Contains("<a"))
+                {
+                    <div>
+                        <button type="button" id="dropdownMenuButton" class="faq-button" style="width:1000px; text-align:left;padding: 7px;border-radius: 5px;">
+                            @Html.Raw(@propfaq.question)
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle faq-button" style="width:1000px; text-align:left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @Html.Raw(@propfaq.question)
+                        </button>
+                        <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                            @Html.Raw(@propfaq.answer)
+                        </div>
+                    </div>
+                    <div style="height:5px;"></div>
+                }
+            }
+        </div>
+    </div>
+    <div id="Ownership" class="tabcontent" style="display:none">
+        <h1>Ownership content</h1>
+    </div>
+</section>

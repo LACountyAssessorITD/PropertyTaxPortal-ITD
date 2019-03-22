@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PropertyTaxPortal.Models;
 using ReflectionIT.Mvc.Paging;
+using System.Dynamic;
+
 
 namespace PropertyTaxPortal.Controllers
 {
@@ -27,16 +29,16 @@ namespace PropertyTaxPortal.Controllers
             return View(model);
         }
 
-        // GET: FAQs
-        [HttpGet]
-        public IActionResult View()
-        {
+        //// GET: FAQs
+        //[HttpGet]
+        //public IActionResult View()
+        //{
             
-            //var query = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
-            //var model =  PagingList.CreateAsync(query, 3, page);
-            var model = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
-            return PartialView("View", model);
-        }
+        //    //var query = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
+        //    //var model =  PagingList.CreateAsync(query, 3, page);
+        //    var model = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
+        //    return PartialView("View", model);
+        //}
 
 
         // GET: FAQs/Create
@@ -100,6 +102,34 @@ namespace PropertyTaxPortal.Controllers
         //    ViewBag.CategoryID = li;
         //    return View();
         //}
+
+        //public IActionResult AllFAQs()
+        //{
+        //    dynamic FaqFinalModel = new ExpandoObject();
+        //    var modelTaxBillFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f=>f.CategoryID==1).OrderBy(f => f.sOrder);
+        //    var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
+        //    FaqFinalModel.TaxBill = modelTaxBillFAQs;
+        //    FaqFinalModel.Refund = modelRefundFAQs;
+        //    return View(FaqFinalModel);
+        //}
+
+        
+
+        public IActionResult FAQTabs()
+        {
+            dynamic FaqFinalModel = new ExpandoObject();
+            var modelTaxBillFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 1).OrderBy(f => f.sOrder);
+            var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
+            var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
+            var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
+            FaqFinalModel.TaxBill = modelTaxBillFAQs;
+            FaqFinalModel.Refund = modelRefundFAQs;
+            FaqFinalModel.Property = modelPropertyFAQs;
+            FaqFinalModel.Ownership = modelOwnershipFAQs;
+            return View(FaqFinalModel);
+        }
+
+        
 
         [HttpPost]
         [ValidateAntiForgeryToken]
