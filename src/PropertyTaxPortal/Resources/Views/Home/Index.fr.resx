@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Latest News" xml:space="preserve">
-    <value>Últimas noticias</value>
+    <value>Dernières nouvelles</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Bienvenido</value>
+    <value>Bienvenue</value>
   </data>
   <data name="Assessor, Auditor-Controller, Treasurer &amp; Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
-    <value>El Asesor, Auditor-Controlador, Tesorero y Recaudador de Impuestos, y la Junta de Apelaciones de Evaluación han preparado este sitio de información de impuestos a la propiedad para proporcionar a los contribuyentes una visión general y algunos detalles específicos sobre el proceso de impuestos a la propiedad en el Condado de Los Angeles</value>
+    <value>L’évaluateur, le contrôleur des comptes, le trésorier et percepteur des impôts et la Commission d’appel de l’évaluation ont préparé ce site d’informations sur les taxes foncières afin de fournir aux contribuables un aperçu et des précisions sur le processus de taxation des biens du comté de Los Angeles</value>
   </data>
   <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
-    <value>AREAS DE RESPONSABILIDAD</value>
+    <value>LES DOMAINES DE RESPONSABILITÉ</value>
   </data>
   <data name="PAYMENT OPTIONS" xml:space="preserve">
-    <value>OPCIONES DE PAGO</value>
+    <value>OPTIONS DE PAIEMENT</value>
   </data>
   <data name="PROPERTY TAX MANAGMENT SYSTEM" xml:space="preserve">
-    <value>SISTEMA DE GESTIÓN DEL IMPUESTO A LA PROPIEDAD</value>
+    <value>SYSTÈME DE GESTION DES IMPÔTS FONCIERS</value>
   </data>
   <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
-    <value>BÚSQUEDA DE LA DIRECCIÓN DE LA PROPIEDAD</value>
+    <value>RECHERCHE D'ADRESSE DE PROPRIÉTÉ</value>
   </data>
 </root>
