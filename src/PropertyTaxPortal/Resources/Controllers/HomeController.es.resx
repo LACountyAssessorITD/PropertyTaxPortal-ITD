@@ -241,4 +241,8 @@
     <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal del departamento de Tesorero y Recaudador de impuestos responderá a su solicitud en breve.</value>
     <comment>Thank You page</comment>
   </data>
+  <data name="Please select" xml:space="preserve">
+    <value>Por favor seleccione</value>
+    <comment>dropdown</comment>
+  </data>
 </root>

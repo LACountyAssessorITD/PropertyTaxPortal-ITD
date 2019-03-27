@@ -80,6 +80,8 @@ namespace PropertyTaxPortal.Controllers
             if (ModelState.IsValid)
             {
                 //Find the responsible department and address
+                string sSubjectEnghlish = "";
+                string sEmail = "";
                 string sEmailDept = "";
                 List<EmailTrackingCount> lEmailTracking = new List<EmailTrackingCount>();
                 string sEmailTrackingCount = "";
@@ -90,12 +92,17 @@ namespace PropertyTaxPortal.Controllers
                 lEmailTracking = _context.emailTrackingCount.FromSql("PTP_emailTrackingIncrement").ToList();
                 sEmailTrackingCount = lEmailTracking.First().emailTrackingCount.ToString();
                 model.emailTrackingCount = sEmailTrackingCount;
-                sEmailDept = model.subjectValue.Substring(model.subjectValue.IndexOf("@"), model.subjectValue.Length - model.subjectValue.IndexOf("@"));
+                //sEmailDept = model.subjectValue.Substring(model.subjectValue.IndexOf("@"), model.subjectValue.Length - model.subjectValue.IndexOf("@"));
+                sSubjectEnghlish = model.subjectValue.Substring(0, model.subjectValue.IndexOf("|")); // Assessment Appeals
+                model.subjectEnglish = sSubjectEnghlish; // Assessment Appeals
+                sEmail = model.subjectValue.Substring(model.subjectValue.IndexOf("|")+1, model.subjectValue.Length - model.subjectValue.IndexOf("|")-1); // aaboffice@bos.lacounty.gov
+                sEmailDept = model.subjectValue.Substring(model.subjectValue.IndexOf("@"), model.subjectValue.Length - model.subjectValue.IndexOf("@")); // "@bos.lacounty.gov
                 switch (sEmailDept)
                 {
                     case EmailAssessmentAppeals:
                         sThankYouWhole = sThankYouFront + "Assessment Appeals Board" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
+                        model.Department = "Assessment Appeals Board";
                         model.addressPhoneWebsite = "Los Angeles County Assessment Appeals Board<br>" +
                             "500 West Temple Street, Room B50<br>" +
                             "Los Angeles, CA 90012<br><br>" +
@@ -107,6 +114,7 @@ namespace PropertyTaxPortal.Controllers
                     case EmailTreasurer:
                         sThankYouWhole = sThankYouFront + "Treasurer & Tax Collector's department" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
+                        model.Department = "Treasurer & Tax Collector's department";
                         model.addressPhoneWebsite = "Los Angeles County Treasurer and Tax Collector<br>" +
                             "225 N. Hill Street<br>" +
                             "Los Angeles, CA 90012-2798<br><br>" +
@@ -118,6 +126,7 @@ namespace PropertyTaxPortal.Controllers
                     case EmailAuditorController:
                         sThankYouWhole = sThankYouFront + "Auditor-Controller's department" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
+                        model.Department = "Auditor-Controller's department";
                         model.addressPhoneWebsite = "Los Angeles County Auditor-Controller Public Service Section<br>" +
                             "500 West Temple Steet, Room 153<br>" +
                             "Los Angeles, CA 90012-2713<br><br>" +
@@ -129,6 +138,7 @@ namespace PropertyTaxPortal.Controllers
                     case EmailAssessor:
                         sThankYouWhole = sThankYouFront + "Assessor's department" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
+                        model.Department = "Assessor's department";
                         model.addressPhoneWebsite = "Los Angeles County Assessor Public Service Section<br>" +
                             "500 West Temple Steet, Room 225<br>" +
                             "Los Angeles, CA 90012-2713<br><br>" +
@@ -148,13 +158,19 @@ namespace PropertyTaxPortal.Controllers
                 MailAddress from = new MailAddress(mFrom);
                 MailAddress to;
                 if (_host.IsProduction())
-                    to = new MailAddress(model.subjectValue);
+                {
+                    //to = new MailAddress(model.subjectValue);
+                    to = new MailAddress(sEmail);
+                }
                 else
+                {
                     to = new MailAddress(_email.mailTo);
+                }
 
                 MailMessage mail = new MailMessage(from, to);
-                string strSubjectText = model.subjectText;
-                string sSubject = strSubjectText + " - " + _email.subject + " - Reference # " + sEmailTrackingCount;
+                //string strSubjectText = model.subjectText;
+                //string strSubjectText = sSubjectEnghlish;
+                string sSubject = sSubjectEnghlish + " - " + _email.subject + " - Reference # " + sEmailTrackingCount;
 
                 mail.Subject = sSubject;
                 mail.IsBodyHtml = _email.isBodyHtml;
@@ -213,8 +229,8 @@ namespace PropertyTaxPortal.Controllers
             {
                 sOriginalBody = reader.ReadToEnd();
 
-                sOriginalBody = sOriginalBody.Replace("{Subject}", model.subjectText);
-                sOriginalBody = sOriginalBody.Replace("{ResponsibleDepartment}", string.IsNullOrEmpty(model.responsibleDepartment) ? "" : model.responsibleDepartment);
+                sOriginalBody = sOriginalBody.Replace("{Subject}", model.subjectEnglish);
+                sOriginalBody = sOriginalBody.Replace("{Department}", string.IsNullOrEmpty(model.Department) ? "" : model.Department);
                 sOriginalBody = sOriginalBody.Replace("{LastName}", model.lastName);
                 sOriginalBody = sOriginalBody.Replace("{FirstName}", model.firstName);
                 sOriginalBody = sOriginalBody.Replace("{BusinessName}", string.IsNullOrEmpty(model.businessName) ? "" : model.businessName);
@@ -258,10 +274,11 @@ namespace PropertyTaxPortal.Controllers
             List<Subjects> lSubjects = new List<Subjects>();
             lSubjects = _context.subjects.FromSql("PTP_getAllSubjects").ToList();
             List<SelectListItem> li = new List<SelectListItem>();
+            li.Add(new SelectListItem { Text = _localizer["Please select"], Value = "" });
             foreach (var oneSubject in lSubjects)
             {
                 //li.Add(new SelectListItem { Text = oneSubject.Description, Value = oneSubject.Email });
-                li.Add(new SelectListItem { Text = _localizer[oneSubject.Description], Value = oneSubject.Email });
+                li.Add(new SelectListItem { Text = _localizer[oneSubject.Description], Value = oneSubject.Description + "|" + oneSubject.Email });
             }
             IEnumerable<SelectListItem> item = li.AsEnumerable();
             return item;

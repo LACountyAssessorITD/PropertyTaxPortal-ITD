@@ -9,7 +9,9 @@ namespace PropertyTaxPortal.Models
 {
     public class PublicInquiryViewModel
     {
-        public string subjectText { get; set; }
+        public string subjectText { get; set; } // Display on dropdown, in different languages
+
+        public string subjectEnglish { get; set; } // In English only
 
         public IEnumerable<SelectListItem> Subjects { get; set; }
 
@@ -83,7 +85,9 @@ namespace PropertyTaxPortal.Models
         public string comment { get; set; }
 
         //////////////////////////////////////////////////////////////////////////
-        public string responsibleDepartment { get; set; }
+        public string responsibleDepartment { get; set; } // Whole sentense
+
+        public string Department { get; set; }
 
         public string addressPhoneWebsite { get; set; }
 
