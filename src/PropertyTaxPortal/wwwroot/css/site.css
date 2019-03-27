@@ -15,6 +15,7 @@
     }
 
 .index-wrap {
+    padding-top: 100px;
     min-height: 100vh; /* will cover the 100% of viewport */
     overflow: hidden;
     display: block;
@@ -35,6 +36,7 @@ body {
 }
 
 body {
+    
     /* ----------background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url('../images/bg-8.jpg');------------- */
     background-size: cover;
     background-position: center;
@@ -49,7 +51,9 @@ body {
 .display-4 {
     font-size: 1.5rem;
 }
-
+header, footer {
+    color: #fff;
+}
 header {
     height: 30px;
     background: #0D47A1;
@@ -61,6 +65,44 @@ header {
     header div div:last-child {
         text-align: right;
     }
+    header a {
+        text-decoration:none;
+        color:#fff;
+        transition: font-size 0.4s;
+        
+    }
+    header a:hover{
+        text-decoration:none;
+        color:#fff;
+        font-size:105%;
+    }
+
+
+/* ----------------------- */
+/* ------COLORS------------ */
+/* ----------------------- */
+
+.bg-1 {
+    background-color: #000063 !important;
+}
+
+.bg-2 {
+    background-color: #311B92 !important;
+}
+
+.bg-3 {
+    background-color: #3761A3 !important;
+}
+
+.bg-4 {
+    background-color: #438AA0 !important;
+}
+.bg-5 {
+    background-color: #fff !important;
+}
+.bg-6 {
+    background-color: #fff !important;
+}
 
 
 /* ----------------------- */
@@ -91,17 +133,22 @@ header {
 .nav-icon-bar p,
 h5 {
     margin-bottom: 0;
-    text-decoration: none;
+    
     color: #000;
     width: 213px;
+}
+.nav-icon-bar a:hover {
+    text-decoration: none;
 }
 
 .nav-icon-bar p {
     font-size: 85%;
+
 }
 
 .nav-icon-bar h5 {
     font-size: 110%;
+    font-weight: 500;
 }
 
 nav a img {
@@ -110,15 +157,14 @@ nav a img {
 }
 
 .navbar {
-    font-weight: 400;
+    
+    text-transform: uppercase;
+    font-weight: 500;
     font-size: 80%;
     padding: 0px 20px;
     height: 70px;
 }
 
-.navbar-nav li {
-    padding-top: 13px;
-}
 
 
 
@@ -145,7 +191,9 @@ nav a img {
 }
 
 .navbar-collapse {
+    
 }
+
 
 
 
@@ -157,6 +205,7 @@ nav a img {
 .small-drop ul {
     list-style: none;
     line-height: 1.5rem;
+    text-transform: none;
 }
 
     .small-drop ul li {
@@ -165,7 +214,7 @@ nav a img {
     }
 
 .search-font {
-    font-size: 50px;
+    font-size: 30px;
     border-left: 1px solid #000;
     padding-left: 10px;
     margin-left: 100px;
@@ -204,6 +253,7 @@ nav a img {
 
     .mega-menu ul {
         list-style: none;
+        text-transform: none;
     }
 
     .mega-menu .row div:nth-child(-n+3) {
@@ -216,7 +266,7 @@ nav a img {
 
 .section-footer {
     background: #2A2929;
-    color: #BEB9B9;
+    
     font-size: 70%;
 }
 
@@ -254,6 +304,6 @@ footer {
 
 #footer-section {
     background: #0D47A1;
-    color: #000;
+    
     padding-left: 15%;
 }
