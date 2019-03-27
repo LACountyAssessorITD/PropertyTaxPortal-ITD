@@ -16,6 +16,7 @@ using System.Collections;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Localization;
 
 namespace PropertyTaxPortal
 {
@@ -63,7 +64,7 @@ namespace PropertyTaxPortal
 
             services.AddMvc()
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-                .AddDataAnnotationsLocalization();
+            .AddDataAnnotationsLocalization();          
             services.Configure<RequestLocalizationOptions>(options =>
             {
                 var supportedCultures = new List<CultureInfo>
@@ -80,6 +81,14 @@ namespace PropertyTaxPortal
 
             //---------------------------END CONFIGURE LOCALIZATION-----------------------------//
         }
+
+        //public class MvcDataAnnotationsLocalizationOptions
+        //{
+        //    /// <summary>
+        //    /// The delegate to invoke for creating <see cref="IStringLocalizer"/>.
+        //    /// </summary>
+        //    public Func<Type, IStringLocalizerFactory, IStringLocalizer> DataAnnotationLocalizerProvider;
+        //}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
