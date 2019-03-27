@@ -69,7 +69,8 @@ namespace PropertyTaxPortal
                 var supportedCultures = new List<CultureInfo>
                     {
                         new CultureInfo("en-US"),
-                        new CultureInfo("es")
+                        new CultureInfo("es"),
+                        new CultureInfo("fr")
                     };
 
                 options.DefaultRequestCulture = new RequestCulture("en-US");
@@ -99,6 +100,7 @@ namespace PropertyTaxPortal
             {
                 new CultureInfo("en-US"),
                 new CultureInfo("es"),
+                new CultureInfo("fr")
             };
 
             app.UseRequestLocalization(new RequestLocalizationOptions
