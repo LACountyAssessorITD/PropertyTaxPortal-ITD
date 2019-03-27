@@ -1,4 +1,6 @@
 ﻿@model PropertyTaxPortal.Models.PublicInquiryViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
 @{
     ViewData["Title"] = "PublicInquiryThankYou";
@@ -10,7 +12,7 @@
 <script src="../lib/bootstrap/dis/css/bootstrap.css" type="text/javascript"></script>
 
 <section class="container-fluid section-header-pi">
-    <h2 class="display-4"> PUBLIC INQUIRY FORM</h2>
+    <h2 class="display-4">@Localizer["PUBLIC INQUIRY FORM"]</h2>
 </section>
 
 <div style="height: 100vh; background-color: #fff">
@@ -18,12 +20,12 @@
         <br />
         <div class="row">
             <div class="form-group col-sm-12 thankyou-text">
-                Thank you for completing our Public Inquiry form. A staff member from the @Html.DisplayFor(model => model.responsibleDepartment) respond to your request shortly.
+                @Html.DisplayFor(model => model.responsibleDepartment)
             </div>
         </div>
         <div class="row">
             <div class="form-group col-sm-12 thankyou-text">
-                The Reference number for your inquiry is @Html.DisplayFor(model => model.emailTrackingCount).
+                @Localizer["The Reference number for your inquiry is"] @Html.DisplayFor(model => model.emailTrackingCount).
             </div>
         </div>
         <br />
@@ -35,9 +37,9 @@
             </blockquote>
             <br />
             <br />
-            LA County
+            @Localizer["LA County"]
             <br />
-            Property Tax Portal
+            @Localizer["Property Tax Portal"]
         </div>
         <br />
         <br />

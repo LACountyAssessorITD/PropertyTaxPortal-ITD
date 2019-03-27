@@ -36,16 +36,10 @@ namespace PropertyTaxPortal.Controllers
             _localizer = localizer;
         }
 
-
         public IActionResult Index()
         {
             return View();
         }
-
-       
- 
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -89,6 +83,9 @@ namespace PropertyTaxPortal.Controllers
                 string sEmailDept = "";
                 List<EmailTrackingCount> lEmailTracking = new List<EmailTrackingCount>();
                 string sEmailTrackingCount = "";
+                string sThankYouFront = "Thank you for completing our Public Inquiry form. A staff member from the ";
+                string sThankYouEnd = " respond to your request shortly.";
+                string sThankYouWhole = "";
 
                 lEmailTracking = _context.emailTrackingCount.FromSql("PTP_emailTrackingIncrement").ToList();
                 sEmailTrackingCount = lEmailTracking.First().emailTrackingCount.ToString();
@@ -97,43 +94,47 @@ namespace PropertyTaxPortal.Controllers
                 switch (sEmailDept)
                 {
                     case EmailAssessmentAppeals:
-                        model.responsibleDepartment = "Assessment Appeals Board";
+                        sThankYouWhole = sThankYouFront + "Assessment Appeals Board" + sThankYouEnd;
+                        model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.addressPhoneWebsite = "Los Angeles County Assessment Appeals Board<br>" +
                             "500 West Temple Street, Room B50<br>" +
                             "Los Angeles, CA 90012<br><br>" +
-                            "Phone:&nbsp;&nbsp;&nbsp;1(888)807-2111 (Toll Free) and press number 4<br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ") and press number 4<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-1471<br><br>" +
-                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://bos.lacounty.gov/Services/AssessmentAppeals.aspx' target='newwin'>http://bos.lacounty.gov/Services/AssessmentAppeals.aspx</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://bos.lacounty.gov/Services/AssessmentAppeals.aspx' target='newwin'>http://bos.lacounty.gov/Services/AssessmentAppeals.aspx</a><br>";
                         break;
 
                     case EmailTreasurer:
-                        model.responsibleDepartment = "Treasurer & Tax Collector's department";
+                        sThankYouWhole = sThankYouFront + "Treasurer & Tax Collector's department" + sThankYouEnd;
+                        model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.addressPhoneWebsite = "Los Angeles County Treasurer and Tax Collector<br>" +
                             "225 N. Hill Street<br>" +
                             "Los Angeles, CA 90012-2798<br><br>" +
-                            "Phone:&nbsp;&nbsp;&nbsp;1(888)807-2111 (Toll Free)<br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ")<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-3211<br><br>" +
-                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://ttc.lacounty.gov' target='newwin'>http://ttc.lacounty.gov</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://ttc.lacounty.gov' target='newwin'>http://ttc.lacounty.gov</a><br>";
                         break;
 
                     case EmailAuditorController:
-                        model.responsibleDepartment = "Auditor-Controller's department";
+                        sThankYouWhole = sThankYouFront + "Auditor-Controller's department" + sThankYouEnd;
+                        model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.addressPhoneWebsite = "Los Angeles County Auditor-Controller Public Service Section<br>" +
                             "500 West Temple Steet, Room 153<br>" +
                             "Los Angeles, CA 90012-2713<br><br>" +
-                            "Phone:&nbsp;&nbsp;&nbsp;1(888)807-2111 (Toll Free)<br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ")<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-3211<br><br>" +
-                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://auditor.lacounty.gov' target='newwin'>http://auditor.lacounty.gov</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://auditor.lacounty.gov' target='newwin'>http://auditor.lacounty.gov</a><br>";
                         break;
 
                     case EmailAssessor:
-                        model.responsibleDepartment = "Assessor's department";
+                        sThankYouWhole = sThankYouFront + "Assessor's department" + sThankYouEnd;
+                        model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.addressPhoneWebsite = "Los Angeles County Assessor Public Service Section<br>" +
                             "500 West Temple Steet, Room 225<br>" +
                             "Los Angeles, CA 90012-2713<br><br>" +
-                            "Phone:&nbsp;&nbsp;&nbsp;1(888) 807-2111 (Toll Free)<br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +
-                            "Website:&nbsp;&nbsp;&nbsp;<a href='http://assessor.lacounty.gov' target='newwin'>http://assessor.lacounty.gov</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://assessor.lacounty.gov' target='newwin'>http://assessor.lacounty.gov</a><br>";
                         break;
 
                     default:
@@ -259,7 +260,8 @@ namespace PropertyTaxPortal.Controllers
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var oneSubject in lSubjects)
             {
-                li.Add(new SelectListItem { Text = oneSubject.Description, Value = oneSubject.Email });
+                //li.Add(new SelectListItem { Text = oneSubject.Description, Value = oneSubject.Email });
+                li.Add(new SelectListItem { Text = _localizer[oneSubject.Description], Value = oneSubject.Email });
             }
             IEnumerable<SelectListItem> item = li.AsEnumerable();
             return item;
