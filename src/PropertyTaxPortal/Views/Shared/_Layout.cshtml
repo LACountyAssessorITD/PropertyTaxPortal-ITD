@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using System.Globalization
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,8 +24,12 @@
         <link href="~/css/FAQTAB.css" rel="stylesheet" />
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,500,600" rel="stylesheet">
-        <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
     </environment>
 
@@ -31,8 +42,9 @@
         <link href="~/css/queires.css" rel="stylesheet" />
         <link href="~/css/FAQTAB.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-        <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
+        <link href="~/lib/FontAwesome/Fontawsome.css" rel="stylesheet" />
     </environment>
 
 </head>
@@ -52,13 +64,14 @@
             <nav class="navbar navbar-expand-lg bg-5 ">
                 <a class="navbar-brand" href="#"><img src="~/images/LACseal76.png" alt=""></a>
 
-                
-                    <div class="nav-icon-bar">
-                        <a asp-controller="Home" asp-action="Index">
-                            <p>Los Angeles County</p></a>
-                        <a asp-controller="Home" asp-action="Index"><h5>Property Tax Portal</h5></a>
-                    </div>
-                
+
+                <div class="nav-icon-bar">
+                    <a asp-controller="Home" asp-action="Index">
+                        <p>Los Angeles County</p>
+                    </a>
+                    <a asp-controller="Home" asp-action="Index"><h5>Property Tax Portal</h5></a>
+                </div>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
@@ -67,89 +80,89 @@
                 <div class="collapse navbar-collapse  bg-5" id="navbarSupportedContent">
                     <ul class="navbar-nav ">
                         <li class="nav-item ml-auto">
-                            <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+                            <a asp-controller="Home" asp-action="Index" class="nav-link">@Localizer["Home"]</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                Overview
+                                @Localizer["Overview"]
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown">
                                 <ul>
-                                    <li> <a href="#">Property Tax Overview</a> </li>
-                                    <li> <a href="">How the Property Tax System Works</a> </li>
-                                    <li><a href="">Areas of Responsibliity</a></li>
+                                    <li> <a href="#">@Localizer["Property Tax Overview"]</a> </li>
+                                    <li> <a href="">@Localizer["How the Property Tax System Works"]</a> </li>
+                                    <li><a href="">@Localizer["Areas of Responsibliity"]</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                Tax Tools
+                                @Localizer["Tax Tools"]
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown">
                                 <ul>
-                                    <li><a href="https://vcheck.ttc.lacounty.gov/">Property Tax Managment System</a></li>
+                                    <li><a href="https://vcheck.ttc.lacounty.gov/">@Localizer["Property Tax Managment System"]</a></li>
                                     <li>
                                         <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/">
-                                            Multiple Parcel Inquires
+                                            @Localizer["Multiple Parcel Inquires"]
                                         </a>
                                     </li>
-                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/">Avoid Penalties by Understanding Postmarks</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/">Penalty Cancellations</a></li>
-                                    <li><a href="https://portal.assessor.lacounty.gov/">Property Address Search</a></li>
-                                    <li><a href="">New Home Owners</a></li>
-                                    <li><a href="">New Business Owners</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/">@Localizer["Penalty Cancellations"]</a></li>
+                                    <li><a href="https://portal.assessor.lacounty.gov/">@Localizer["Property Address Search"]</a></li>
+                                    <li><a href="">@Localizer["New Home Owners"]</a></li>
+                                    <li><a href="">@Localizer["New Business Owners"]</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item dropdown-left">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                Quick Links
+                                @Localizer["Quick Links"]
                             </a>
                             <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6">
-                                        <p>Forms</p>
+                                        <p>@Localizer["Forms"]</p>
                                         <ul>
-                                            <li><a href="https://assessor.lacounty.gov/">Assessor</a></li>
-                                            <li><a href="https://lacaab.lacounty.gov/Home.aspx">Assessment Appeals Board</a></li>
-                                            <li><a href="http://auditor.lacounty.gov/">Auditor-Controller</a></li>
-                                            <li><a href="https://ttc.lacounty.gov/">Treasurer & Tax Collector</a></li>
+                                            <li><a href="https://assessor.lacounty.gov/">@Localizer["Assessor"]</a></li>
+                                            <li><a href="https://lacaab.lacounty.gov/Home.aspx">@Localizer["Assessment Appeals Board"]</a></li>
+                                            <li><a href="http://auditor.lacounty.gov/">@Localizer["Auditor-Controller"]</a></li>
+                                            <li><a href="https://ttc.lacounty.gov/">@Localizer["Treasurer & Tax Collector"]</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
-                                        <p>Property Valuation</p>
+                                        <p>@Localizer["Property Valuation"]</p>
                                         <ul>
-                                            <li><a href="">Contesting Your Property Value</a></li>
-                                            <li><a href="https://portal.assessor.lacounty.gov/">Property Address Search</a></li>
-                                            <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default">Property Data & Maps</a></li>
-                                            <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/">Supplemental Tax Estimator</a></li>
+                                            <li><a href="">@Localizer["Contesting Your Property Value"]</a></li>
+                                            <li><a href="https://portal.assessor.lacounty.gov/">@Localizer["Property Address Search"]</a></li>
+                                            <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default">@Localizer["Property Data & Maps"]</a></li>
+                                            <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/">@Localizer["Supplemental Tax Estimator"]</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
-                                        <p>Payment Options</p>
+                                        <p>@Localizer["Payment Options"]</p>
                                         <ul>
-                                            <li><a href="">How Much Do I Owe?</a></li>
-                                            <li><a href="">Pay Online</a></li>
-                                            <li><a href="">Other Payment Options</a></li>
+                                            <li><a href="">@Localizer["How Much Do I Owe?"]</a></li>
+                                            <li><a href="">@Localizer["Pay Online"]</a></li>
+                                            <li><a href="">@Localizer["Other Payment Options"]</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
-                                        <p>Annual Secured Property Tax Bill</p>
+                                        <p>@Localizer["Annual Secured Property Tax Bill"]</p>
                                         <ul>
-                                            <li><a href="">Annual Secured Property Tax Bill Insert</a></li>
-                                            <li><a href="">Annual Secured Property Tax Information Statement</a></li>
-                                            <li><a href="">Notice of Delinquency</a></li>
-                                            <li><a href="">Substitute Secured Property Tax Bill</a></li>
-                                            <li><a href="">Supplemental Secured Property Tax Bill</a></li>
-                                            <li><a href="">Unsecured Property Tax Bill</a></li>
-                                            <li><a href="">Unsecured Prior Year Bill</a></li>
-                                            <li><a href="">Payment Activity Notice</a></li>
-                                            <li><a href="">Statement of Prior Year Taxes</a></li>
-                                            <li><a href="">Adjusted Annual Property Tax Bill</a></li>
-                                            <li><a href="">Adjusted Supplemental Property Tax Bill</a></li>
+                                            <li><a href="">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
+                                            <li><a href="">@Localizer["Annual Secured Property Tax Information Statement"]</a></li>
+                                            <li><a href="">@Localizer["Notice of Delinquency"]</a></li>
+                                            <li><a href="">@Localizer["Substitute Secured Property Tax Bill"]</a></li>
+                                            <li><a href="">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
+                                            <li><a href="">@Localizer["Unsecured Property Tax Bill"]</a></li>
+                                            <li><a href="">@Localizer["Unsecured Prior Year Bill"]</a></li>
+                                            <li><a href="">@Localizer["Payment Activity Notice"]</a></li>
+                                            <li><a href="">@Localizer["Statement of Prior Year Taxes"]</a></li>
+                                            <li><a href="">@Localizer["Adjusted Annual Property Tax Bill"]</a></li>
+                                            <li><a href="">@Localizer["Adjusted Supplemental Property Tax Bill"]</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -159,35 +172,35 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                FAQ
+                                @Localizer["FAQ"]
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown">
                                 <ul>
 
-                                    <li><a asp-controller="FAQs" asp-action="FAQTabs">All FAQs</a></li>
-                                    <li><a href="">Tax Bills</a></li>
-                                    <li><a href="">Refunds/Tax Sales/Tax Liens</a></li>
-                                    <li><a href="">Property Values</a></li>
-                                    <li><a href="">Ownership</a></li>
+                                    <li><a asp-controller="FAQs" asp-action="FAQTabs">@Localizer["All FAQs"]</a></li>
+                                    <li><a href="">@Localizer["Tax Bills"]</a></li>
+                                    <li><a href="">@Localizer["Refunds/Tax Sales/Tax Liens"]</a></li>
+                                    <li><a href="">@Localizer["Property Values"]</a></li>
+                                    <li><a href="">@Localizer["Ownership"]</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="#">@Localizer["News"]</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                Contact Us
+                                @Localizer["Contact Us"]
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown">
                                 <ul>
-                                    <li><a href="">Assessor</a></li>
-                                    <li><a href="">Auditor/Controlle</a>r</li>
-                                    <li><a href="">Treasurer & Tax Collector</a></li>
-                                    <li><a href="">Assessment Appeals Board</a></li>
-                                    <li><a href="">LA County Contacts</a></li>
-                                    <li><a asp-controller="Home" asp-action="PublicInquiry">Public Inquiry</a></li>
+                                    <li><a href="">@Localizer["Assessor"]</a></li>
+                                    <li><a href="">@Localizer["Auditor/Controller"]</a></li>
+                                    <li><a href="">@Localizer["Treasurer & Tax Collector"]</a></li>
+                                    <li><a href="">@Localizer["Assessment Appeals Board"]</a></li>
+                                    <li><a href="">@Localizer["LA County Contacts"]</a></li>
+                                    <li><a asp-controller="Home" asp-action="PublicInquiry">@Localizer["Public Inquiry"]</a></li>
 
 
                                 </ul>
@@ -221,39 +234,39 @@
                 <div class="row">
                     <div class="col-md-2 col-sm-6 ">
                         <img src="~/images/LACSEAL152.png" alt="">
-                        <p>Enriching Lives...</p>
+                        <p>@Localizer["Enriching Lives"]...</p>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
                         <ul>
-                            <li>Do You Need Help?</li>
-                            <li>211 LA County</li>
-                            <li>LA County Helps</li>
-                            <li>Public Alerts</li>
-                            <li>Public Information</li>
+                            <li>@Localizer["Do You Need Help?"]</li>
+                            <li>@Localizer["211 LA County"]</li>
+                            <li>@Localizer["LA County Helps"]</li>
+                            <li>@Localizer["Public Alerts"]</li>
+                            <li>@Localizer["Public Information"]</li>
                         </ul>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
                         <ul>
-                            <li>About</li>
-                            <li>Disclaimer</li>
-                            <li>Privacy Policy</li>
+                            <li>@Localizer["About"]</li>
+                            <li>@Localizer["Disclaimer"]</li>
+                            <li>@Localizer["Privacy Policy"]</li>
                         </ul>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
                         <ul>
-                            <li>Site Info</li>
-                            <li>Accessibility</li>
-                            <li>Language</li>
-                            <li>Browser Cmompatibility</li>
+                            <li>@Localizer["Site Info"]</li>
+                            <li>@Localizer["Accessibility"]</li>
+                            <li>@Localizer["Language"]</li>
+                            <li>@Localizer["Browser Cmompatibility"]</li>
                         </ul>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
                         <ul>
-                            <li>Public Info</li>
-                            <li>Board Correspondence</li>
-                            <li>Board Ageneda</li>
-                            <li>County Code</li>
-                            <li>Online Services</li>
+                            <li>@Localizer["Public Info"]</li>
+                            <li>@Localizer["Board Correspondence"]</li>
+                            <li>@Localizer["Board Ageneda"]</li>
+                            <li>@Localizer["County Code"]</li>
+                            <li>@Localizer["Online Services"]</li>
                         </ul>
                     </div>
 
@@ -291,7 +304,7 @@
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/jquery/dist/min.popper.js"></script>
         <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"> </script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 
