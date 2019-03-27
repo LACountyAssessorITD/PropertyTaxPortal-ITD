@@ -123,6 +123,9 @@
   <data name="Property Tax Portal" xml:space="preserve">
     <value>Portal de impuestos a la propiedad</value>
   </data>
+  <data name="PUBLIC INQUIRY FORM" xml:space="preserve">
+    <value>FORMULARIO DE CONSULTA PÚBLICA</value>
+  </data>
   <data name="The Reference number for your inquiry is" xml:space="preserve">
     <value>El número de referencia para su consulta es</value>
   </data>
