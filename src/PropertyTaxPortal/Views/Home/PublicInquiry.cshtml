@@ -1,5 +1,6 @@
 ﻿@model PropertyTaxPortal.Models.PublicInquiryViewModel
 @using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
 @{
     ViewData["Title"] = "PublicInquiry";
@@ -8,7 +9,7 @@
 @inject IViewLocalizer Localizer
 
 <section class="container-fluid section-header-pi">
-    <h2 class="display-4"> PUBLIC INQUIRY FORM</h2>
+    <h2 class="display-4">@Localizer["PUBLIC INQUIRY FORM"]</h2>
 </section>
 <div class="form-wrapper">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,9 +28,16 @@
     <div class="container section-form">
         @using (Html.BeginForm("PublicInquiry", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
+            <br />
+            <div class="row pof-title">
+                <div class="form-group col-sm-12 category-text">
+                    <b class="">@Localizer["In order to most effectively serve you, please fill out the following form as completely as possible."]</b>
+        </div>
+            </div>
+            <br />
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="Subjects" class="label-text">SUBJECT <font color="red">*</font></label>
+                    <label for="Subjects" class="label-text">@Localizer["SUBJECT"] <font color="red">*</font></label>
                     @Html.DropDownListFor(model => model.subjectValue, Model.Subjects, "Please select", new { @id = "ddSubjects", @name = "ddSubjects", @class = "form-control dropdown-text" })
                     @Html.ValidationMessageFor(model => model.subjectValue, "", new { @class = "text-danger error-message" })
                     @Html.HiddenFor(model => model.subjectText)
@@ -38,65 +46,65 @@
             <!-- Contact Information -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b class="">Contact Information</b>
-                </div>
+                    <b>@Localizer["Contact Information"]</b>
+                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtLastName" class="label-text">LAST NAME <font color="red">*</font></label>
+                    <label for="txtLastName" class="label-text">@Localizer["LAST NAME"] <font color="red">*</font></label>
                     @Html.TextBoxFor(model => model.lastName, new { @type = "search", maxlength = "80", @id = "txtLastName", @name = "txtLastName", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger error-message" })
                 </div>
                 <div class="form-group col-sm-6">
-                    <label for="txtFirstName" class="label-text">FIRST NAME <font color="red">*</font></label>
+                    <label for="txtFirstName" class="label-text">@Localizer["FIRST NAME"] <font color="red">*</font></label>
                     @Html.TextBoxFor(model => model.firstName, new { @type = "search", maxlength = "80", @id = "txtFirstName", @name = "txtFirstName", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger error-message" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtBusinessName" class="label-text">BUSINESS NAME</label>
+                    <label for="txtBusinessName" class="label-text">@Localizer["BUSINESS NAME"]</label>
                     @Html.TextBoxFor(model => model.businessName, new { @type = "search", maxlength = "80", @id = "txtBusinessName", @name = "txtBusinessName", @class = "form-control input-text" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtMailingAddr" class="label-text">MAILING ADDRESS</label>
+                    <label for="txtMailingAddr" class="label-text">@Localizer["MAILING ADDRESS"]</label>
                     @Html.TextBoxFor(model => model.mailingAddr, new { @type = "search", maxlength = "80", @id = "txtMailingAddr", @name = "txtMailingAddr", @class = "form-control input-text" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtMailAddrCity" class="label-text">CITY</label>
+                    <label for="txtMailAddrCity" class="label-text">@Localizer["CITY"]</label>
                     @Html.TextBoxFor(model => model.mailAddrCity, new { @type = "search", maxlength = "30", @id = "txtMailAddrCity", @name = "txtMailAddrCity", @class = "form-control input-text" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-3">
-                    <label for="txtMailAddrState" class="label-text">STATE</label>
+                    <label for="txtMailAddrState" class="label-text">@Localizer["STATE"]</label>
                     @Html.DropDownListFor(model => model.mailAddrState, Model.States, new { style = "width:100px;", @class = "form-control dropdown-text" })
                 </div>
                 <div class="form-group col-sm-3">
-                    <label for="txtMailAddrZip" class="label-text">ZIP CODE</label>
+                    <label for="txtMailAddrZip" class="label-text">@Localizer["ZIP CODE"]</label>
                     @Html.TextBoxFor(model => model.mailAddrZip, new { @type = "search", maxlength = "10", @id = "txtMailAddrZip", @name = "txtMailAddrZip", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.mailAddrZip, "", new { @class = "text-danger error-message" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtEmailAddr" class="label-text">EMAIL <font color="red">*</font></label>
+                    <label for="txtEmailAddr" class="label-text">@Localizer["EMAIL"] <font color="red">*</font></label>
                     @Html.TextBoxFor(model => model.emailAddr, new { @type = "search", maxlength = "50", @id = "txtEmailAddr", @name = "txtEmailAddr", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.emailAddr, "", new { @class = "text-danger error-message" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtDayTimeTelNumber" class="label-text">DAYTIME PHONE NUMBER <font color="red">*</font></label>
+                    <label for="txtDayTimeTelNumber" class="label-text">@Localizer["DAYTIME PHONE NUMBER"] <font color="red">*</font></label>
                     @Html.TextBoxFor(model => model.dayTimeTelNumber, new { @type = "search", maxlength = "30", @id = "txtDayTimeTelNumber", @name = "txtDayTimeTelNumber", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.dayTimeTelNumber, "", new { @class = "text-danger error-message" })
                 </div>
                 <div class="form-group col-sm-6">
-                    <label for="txtFaxNumber" class="label-text">FAX NUMBER</label>
+                    <label for="txtFaxNumber" class="label-text">@Localizer["FAX NUMBER"]</label>
                     @Html.TextBoxFor(model => model.faxNumber, new { @type = "search", maxlength = "30", @id = "txtFaxNumber", @name = "txtFaxNumber", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.faxNumber, "", new { @class = "text-danger error-message" })
                 </div>
@@ -104,35 +112,35 @@
             <!-- Required for assessment questions about a specific bill or property... -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b class="">Required for assessment questions about a specific bill or property...</b>
+                    <b>@Localizer["Required for assessment questions about a specific bill or property"]...</b>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label for="txtPropertyAddr" class="label-text">PROPERTY ADDRESS</label>
+                    <label for="txtPropertyAddr" class="label-text">@Localizer["PROPERTY ADDRESS"]</label>
                     @Html.TextBoxFor(model => model.propertyAddr, new { @type = "search", maxlength = "80", @id = "txtPropertyAddr", @name = "txtPropertyAddr", @class = "form-control input-text" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtPropertyAddrCity" class="label-text">CITY</label>
+                    <label for="txtPropertyAddrCity" class="label-text">@Localizer["CITY"]</label>
                     @Html.TextBoxFor(model => model.propertyAddrCity, new { @type = "search", maxlength = "30", @id = "txtPropertyAddrCity", @name = "txtPropertyAddrCity", @class = "form-control input-text" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-3">
-                    <label for="txtPropertyState" class="label-text">STATE</label>
+                    <label for="txtPropertyState" class="label-text">@Localizer["STATE"]</label>
                     @Html.TextBoxFor(model => model.propertyAddrState, new { style = "font-weight:bold;", maxlength = "2", @id = "txtPropertyState", @name = "txtPropertyState", @class = "form-control input-text", readOnly = "true" })
                 </div>
                 <div class="form-group col-sm-3">
-                    <label for="txtPropertyZip" class="label-text">ZIP CODE</label>
+                    <label for="txtPropertyZip" class="label-text">@Localizer["ZIP CODE"]</label>
                     @Html.TextBoxFor(model => model.propertyAddrZip, new { @type = "search", maxlength = "10", @id = "txtPropertyZip", @name = "txtPropertyZip", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.propertyAddrZip, "", new { @class = "text-danger error-message" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtAIN" class="label-text">ASSESSOR IDENTIFICATION NUMBER</label>
+                    <label for="txtAIN" class="label-text">@Localizer["ASSESSOR IDENTIFICATION NUMBER"]</label>
                     @Html.TextBoxFor(model => model.AIN, new { @type = "search", maxlength = "10", @id = "txtAIN", @name = "txtAIN", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.AIN, "", new { @class = "text-danger error-message" })
                 </div>
@@ -140,37 +148,37 @@
             <!-- Required for questions regarding personal perperty... -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b class="">Required for questions regarding personal perperty...</b>
+                    <b>@Localizer["Required for questions regarding personal perperty"]...</b>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtCompanyNumber" class="label-text">COMPANY NUMBER</label>
+                    <label for="txtCompanyNumber" class="label-text">@Localizer["COMPANY NUMBER"]</label>
                     @Html.TextBoxFor(model => model.companyNumber, new { @type = "search", maxlength = "10", @id = "txtCompanyNumber", @name = "txtCompanyNumber", @class = "form-control input-text" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtRoutingIndex" class="label-text">ROUTING INDEX</label>
+                    <label for="txtRoutingIndex" class="label-text">@Localizer["ROUTING INDEX"]</label>
                     @Html.TextBoxFor(model => model.routingIndex, new { @type = "search", maxlength = "4", @id = "txtRoutingIndex", @name = "txtRoutingIndex", @class = "form-control input-text" })
                 </div>
             </div>
             <!-- Please explain your request for assistance. -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b>Please explain your request for assistance</b>
+                    <b>@Localizer["Please explain your request for assistance"]</b>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label for="txtRequest" class="label-text">BE BRIEF, BUT SPECIFIC <font color="red">*</font></label>
+                    <label for="txtRequest" class="label-text">@Localizer["BE BRIEF, BUT SPECIFIC"] <font color="red">*</font></label>
                     @Html.TextAreaFor(model => model.comment, new { style = "font-size:15px; background-color:#F5F5F5x", rows = "8", cols = "45", @id = "txtRequest", @name = "txtRequest", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.comment, "", new { @class = "text-danger error-message" })
                 </div>
             </div>
             <div class="row my-2">
                 <div class="form-group col-sm-12 text-center">
-                    <input type="submit" class="btn btn-primary bg-3" id="SubmitInquiry" value="SUBMIT INQUIRY" asp-controller="Home" asp-action="PublicInquiry" />
+                    <input type="submit" class="btn btn-primary bg-3" id="SubmitInquiry" value="@Localizer["SUBMIT INQUIRY"]" asp-controller="Home" asp-action="PublicInquiry" />
                 </div>
             </div>
         }
