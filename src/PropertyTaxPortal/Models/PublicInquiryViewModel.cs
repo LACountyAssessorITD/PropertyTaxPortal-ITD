@@ -9,18 +9,20 @@ namespace PropertyTaxPortal.Models
 {
     public class PublicInquiryViewModel
     {
-        
         public string subjectText { get; set; }
 
         public IEnumerable<SelectListItem> Subjects { get; set; }
 
-        [Required(ErrorMessage = "Subject is required.")]
+        [Required(ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "SubjectRequired")]
+        //[Required(ErrorMessage = "Subject is required.")]
         public string subjectValue { get; set; }
 
-        [Required(ErrorMessage = "Last name is required.")]
+        [Required(ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "LastNameRequired")]
+        //[Required(ErrorMessage = "Last name is required.")]
         public string lastName { get; set; }
 
-        [Required(ErrorMessage = "First name is required.")]
+        [Required(ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "FirstNameRequired")]
+        //[Required(ErrorMessage = "First name is required.")]
         public string firstName { get; set; }
 
         public string businessName { get; set; }
@@ -33,20 +35,26 @@ namespace PropertyTaxPortal.Models
 
         public IEnumerable<SelectListItem> States { get; set; }
 
-        [RegularExpression(@"^[\d-]+$", ErrorMessage = "Invalid zip code.")]
+        [RegularExpression(@"^[\d-]+$", ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "InvalidZipCode")]
+        //[RegularExpression(@"^[\d-]+$", ErrorMessage = "Invalid zip code.")]
         public string mailAddrZip { get; set; }
 
-        [Required(ErrorMessage = "Email is required.")]
-        [RegularExpression(@"^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$", ErrorMessage = "Invalid EMAIL.")]
+        [Required(ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "EmailRequired")]
+        //[Required(ErrorMessage = "Email is required.")]
+        [RegularExpression(@"^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$", ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "InvalidEmail")]
+        //[RegularExpression(@"^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$", ErrorMessage = "Invalid email.")]
         public string emailAddr { get; set; }
 
-        [Required(ErrorMessage = "Daytime phone number is required.")]  
-        [DataType(DataType.PhoneNumber)]  
-        [RegularExpression(@"^[\d- ()]+$", ErrorMessage = "Invalid daytime phone number.")]
+        [Required(ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "DaytimePhoneNumberRequired")]
+        //[Required(ErrorMessage = "Daytime phone number is required.")]  
+        [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^[\d- ()]+$", ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "InvalidDaytimePhoneNumber")]
+        //[RegularExpression(@"^[\d- ()]+$", ErrorMessage = "Invalid daytime phone number.")]
         public string dayTimeTelNumber { get; set; }
 
         [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^[\d- ()]+$", ErrorMessage = "Invalid FAX NUMBER.")]
+        [RegularExpression(@"^[\d- ()]+$", ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "InvalidFaxNumber")]
+        //[RegularExpression(@"^[\d- ()]+$", ErrorMessage = "Invalid fax number.")]
         public string faxNumber { get; set; }
        
         //////////////////////////////////////////////////////////////////////////
@@ -56,10 +64,12 @@ namespace PropertyTaxPortal.Models
 
         public string propertyAddrState { get; set; }
 
-        [RegularExpression(@"^[\d-]+$", ErrorMessage = "Invalid zip code.")]
+        [RegularExpression(@"^[\d-]+$", ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "InvalidZipCode")]
+        //[RegularExpression(@"^[\d-]+$", ErrorMessage = "Invalid zip code.")]
         public string propertyAddrZip { get; set; }
 
-        [RegularExpression(@"^[0-9]{10,}$", ErrorMessage = "Invalid AIN.")]
+        [RegularExpression(@"^[0-9]{10,}$", ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "InvalidAIN")]
+        //[RegularExpression(@"^[0-9]{10,}$", ErrorMessage = "Invalid AIN.")]
         public string AIN { get; set; }
 
         //////////////////////////////////////////////////////////////////////////
@@ -68,7 +78,8 @@ namespace PropertyTaxPortal.Models
         public string routingIndex { get; set; }
 
         //////////////////////////////////////////////////////////////////////////
-        [Required(ErrorMessage = "Comments is required.")]
+        [Required(ErrorMessageResourceType = (typeof(Resources.PublicInquiryViewModel)), ErrorMessageResourceName = "CommentRequired")]
+        //[Required(ErrorMessage = "Comments is required.")]
         public string comment { get; set; }
 
         //////////////////////////////////////////////////////////////////////////
