@@ -99,6 +99,7 @@ header {
 }
 .bg-5 {
     background-color: #fff !important;
+    
 }
 .bg-6 {
     background-color: #fff !important;
@@ -157,12 +158,12 @@ nav a img {
 }
 
 .navbar {
-    
     text-transform: uppercase;
     font-weight: 500;
     font-size: 80%;
     padding: 0px 20px;
     height: 70px;
+    border-bottom: 1px solid #000000;
 }
 
 

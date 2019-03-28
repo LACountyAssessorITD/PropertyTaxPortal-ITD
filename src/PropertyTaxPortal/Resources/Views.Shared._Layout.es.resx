@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property Tax Portal" xml:space="preserve">
+    <value>Portal de impuestos a la propiedad</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Visión general</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>Resumen de impuestos a la propiedad</value>
+  </data>
+  <data name="How the Property Tax System Works" xml:space="preserve">
+    <value>Cómo funciona el sistema de impuestos a la propiedad</value>
+  </data>
+  <data name="Areas of Responsibliity" xml:space="preserve">
+    <value>Áreas de Responsabilidad</value>
+  </data>
+  <data name="Tax Tools" xml:space="preserve">
+    <value>Herramientas de impuestos</value>
+  </data>
+  <data name="Property Tax Managment System" xml:space="preserve">
+    <value>Sistema de gestión de impuestos a la propiedad</value>
+  </data>
+  <data name="Multiple Parcel Inquires" xml:space="preserve">
+    <value>Consultas de paquetes múltiples</value>
+  </data>
+  <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
+    <value>Evitar las sanciones por la comprensión de los matasellos</value>
+  </data>
+  <data name="Penalty Cancellations" xml:space="preserve">
+    <value>Cancelaciones de pena</value>
+  </data>
+  <data name="Property Address Search" xml:space="preserve">
+    <value>Búsqueda de la dirección de la propiedad</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Propietarios de casas nuevas</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Nuevos dueños de negocios</value>
+  </data>
+  <data name="Quick Links" xml:space="preserve">
+    <value>enlaces rápidos</value>
+  </data>
+  <data name="Forms" xml:space="preserve">
+    <value>Formas</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Evaluar</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Junta de Apelaciones de Evaluación</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Auditor-Controlle</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>Tesorero y recaudador de impuestos</value>
+  </data>
+  <data name="Property Valuation" xml:space="preserve">
+    <value>Valoración de la propiedad</value>
+  </data>
+  <data name="Contesting Your Property Value" xml:space="preserve">
+    <value>Impugnando el valor de su propiedad</value>
+  </data>
+  <data name="Property Data &amp; Maps" xml:space="preserve">
+    <value>Datos de propiedad y mapas</value>
+  </data>
+  <data name="Supplemental Tax Estimator" xml:space="preserve">
+    <value>Estimato de Impuestos Suplementario</value>
+  </data>
+  <data name="Payment Options" xml:space="preserve">
+    <value>Opciones de pago</value>
+  </data>
+  <data name="How Much Do I Owe?" xml:space="preserve">
+    <value>¿Cuánto debo?</value>
+  </data>
+  <data name="Pay Online" xml:space="preserve">
+    <value>Paga en linea</value>
+  </data>
+  <data name="Other Payment Options" xml:space="preserve">
+    <value>Otras opciones de pago</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto anual de propiedad garantizada</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill Insert" xml:space="preserve">
+    <value>Impuesto anual a la propiedad asegurada</value>
+  </data>
+  <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
+    <value>Declaración anual de información sobre el impuesto a la propiedad garantizada</value>
+  </data>
+  <data name="Notice of Delinquency" xml:space="preserve">
+    <value>Aviso de Delincuencia</value>
+  </data>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto sobre la propiedad asegurada sustituto</value>
+  </data>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto suplementario sobre la propiedad asegurada</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto sobre la propiedad no garantizada</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Factura del año anterior sin garantía</value>
+  </data>
+  <data name="Payment Activity Notice" xml:space="preserve">
+    <value>Aviso de actividad de pago</value>
+  </data>
+  <data name="Statement of Prior Year Taxes" xml:space="preserve">
+    <value>Declaración de impuestos del año anterior</value>
+  </data>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Impuesto anual ajustado a la propiedad</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Impuesto de propiedad suplementario ajustado</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Preguntas más frecuentes</value>
+  </data>
+  <data name="All FAQs" xml:space="preserve">
+    <value>Todas las preguntas frecuentes</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Facturas de impuestos</value>
+  </data>
+  <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
+    <value>Reembolsos / ventas de impuestos / gravámenes fiscales</value>
+  </data>
+  <data name="Property Values" xml:space="preserve">
+    <value>Valores de propiedad</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Propiedad</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Noticias</value>
+  </data>
+  <data name="Contact Us" xml:space="preserve">
+    <value>Contáctenos</value>
+  </data>
+  <data name="Auditor/Controller" xml:space="preserve">
+    <value>Auditor / Controlle</value>
+  </data>
+  <data name="LA County Contacts" xml:space="preserve">
+    <value>Contactos del Condado de Los Angeles</value>
+  </data>
+  <data name="Public Inquiry" xml:space="preserve">
+    <value>Consulta pública</value>
+  </data>
+  <data name="Enriching Lives" xml:space="preserve">
+    <value>Enriqueciendo Vidas</value>
+  </data>
+  <data name="Do You Need Help?" xml:space="preserve">
+    <value>¿Necesitas ayuda?</value>
+  </data>
+  <data name="211 LA County" xml:space="preserve">
+    <value>211 LA County</value>
+  </data>
+  <data name="LA County Helps" xml:space="preserve">
+    <value>Ayuda del Condado de Los Angeles</value>
+  </data>
+  <data name="Public Alerts" xml:space="preserve">
+    <value>Alertas publicas</value>
+  </data>
+  <data name="Public Information" xml:space="preserve">
+    <value>Información pública</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="Disclaime" xml:space="preserve">
+    <value>Disclaime</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Política de privacidad</value>
+  </data>
+  <data name="Site Info" xml:space="preserve">
+    <value>Información del sitio</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Accesibilidad</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="Browser Cmompatibility" xml:space="preserve">
+    <value>Compatibilidad del navegador</value>
+  </data>
+  <data name="Public Info" xml:space="preserve">
+    <value>Información pública</value>
+  </data>
+  <data name="Board Correspondence" xml:space="preserve">
+    <value>Correspondencia de la Junta</value>
+  </data>
+  <data name="Board Ageneda" xml:space="preserve">
+    <value>Ageneda Junta</value>
+  </data>
+  <data name="County Code" xml:space="preserve">
+    <value>Código del Condado</value>
+  </data>
+  <data name="Online Services" xml:space="preserve">
+    <value>Servicios en línea</value>
+  </data>
+</root>
