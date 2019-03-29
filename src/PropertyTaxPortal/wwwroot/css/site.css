@@ -289,7 +289,10 @@ nav a img {
 
         .section-footer ul li:first-child {
             color: #fff;
-            font-weight: 400;
+            font-weight: 500;
+            font-size: 110%;
+            padding-bottom: 5px;
+            
         }
 
     .section-footer img {

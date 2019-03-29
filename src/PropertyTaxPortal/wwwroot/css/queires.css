@@ -182,11 +182,12 @@
         border-bottom: 1px solid #b1b1b1;
     }
 
-    .dropdown-menu {
+    nav .dropdown-menu {
         border: none;
-        border-left: 1px solid #b1b1b1;
+        
         padding: 0;
     }
+   
 
     .navbar-collapse {
         z-index: 9999;
