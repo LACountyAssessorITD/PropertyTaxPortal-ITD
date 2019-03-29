@@ -4,5 +4,86 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Overview</h1>
+<section class="container-fluid section-header-overview">
+    <h2 class="display-4">@Localize['OVERVIEW']</h2>
+</section>
+
+<!-- Tabbed Navigation --> 
+
+<section class="page-tabs">
+    <br />
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#overview" class="nav-link" role="tab" data-toggle="tab">@Localize['Property Tax Overview']</a>   
+        </li>
+        <li class="nav-item">
+            <a href="#howitworks" class="nav-link" role="tab" data-toggle="tab">@Localize['How The Property Tax System Works']</a>   
+        </li>
+        <li class="nav-item">
+            <a href="#areasresp" class="nav-link" role="tab" data-toggle="tab">@Localize['Areas of Responsibility']</a>   
+        </li>
+    </ul>
+</section>
+
+<!-- Main Page Container -->
+
+<section class="overview-container">
+    <div role="tabPanel" class="tab-pane active fade in" id="overview">
+
+        <section class="pto-header">
+            <img/>
+            <div>
+                <h3>@Localize['Property Tax Overview']</h3>
+                <p>
+                    @Localize['It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, 
+                    and Treasuer & Tax Collector to produce and account for your property tax bill and payment.']
+                </p>
+            </div>
+        </section>
+
+        <section class="pto-pills">
+            <br />
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a href="#assessor" class="nav-link active" role="tab" data-toggle="tab">@Localize['Assessor']</a>   
+                </li>
+                <li class="nav-item">
+                    <a href="#aab" class="nav-link" role="tab" data-toggle="tab">@Localize['Assessment & Appeals Board']</a>   
+                </li>
+                <li class="nav-item">
+                    <a href="#auditor" class="nav-link" role="tab" data-toggle="tab">@Localize['Auditor-Controller']</a>   
+                </li>
+                <li class="nav-item">
+                    <a href="#ttc" class="nav-link" role="tab" data-toggle="tab">@Localize['Treasurer & Tax Collector']</a>   
+                </li>
+            </ul>
+            <section class="pto-dept-container">
+                <div role="tabPanel" class="tab-pane active fade" id="assessor">
+                    @Localize['INFORMATION ABOUT ASSESSOR HERE']
+                </div>
+
+                <div role="tabPanel" class="tab-pane active fade" id="aab">
+                    @Localize['INFORMATION ABOUT ASSESSMENT APPEALS BOARD HERE']
+                </div>
+
+                <div role="tabPanel" class="tab-pane active fade" id="auditor">
+                    @Localize['INFORMATION ABOUT AUDITOR CONTROLLER HERE']
+                </div>
+
+                <div role="tabPanel" class="tab-pane active fade" id="ttc">
+                    @Localize['INFORMATION ABOUT TREASURER HERE']
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div role="tabPanel" class="tab-pane active fade" id="howitworks">
+        How it works section 
+    </div>
+
+    <div role="tabPanel" class="tab-pane active fade" id="areasresp">
+        Areas of Responsibility
+    </div>
+</section>
+
 
