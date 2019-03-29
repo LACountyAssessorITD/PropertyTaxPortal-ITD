@@ -36,6 +36,7 @@ namespace PropertyTaxPortal.Controllers
             _localizer = localizer;
         }
 
+
         public IActionResult Index()
         {
             return View();
@@ -44,6 +45,51 @@ namespace PropertyTaxPortal.Controllers
         public IActionResult Overview()
         {
             return View();
+        }
+
+        
+        public IActionResult GeneralFAQ(int?id)
+        {           
+            dynamic FaqFinalModel = new System.Dynamic.ExpandoObject();
+            var modelTaxBillFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 1).OrderBy(f => f.sOrder);
+            var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
+            var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
+            var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
+            FaqFinalModel.TaxBill = modelTaxBillFAQs;
+            FaqFinalModel.Refund = modelRefundFAQs;
+            FaqFinalModel.Property = modelPropertyFAQs;
+            FaqFinalModel.Ownership = modelOwnershipFAQs;
+            FaqFinalModel.tabid = id;            
+            return View(FaqFinalModel);
+        }
+        public IActionResult TaxBillFAQ(int?id)
+        {
+            dynamic FaqTaxBillModel = new System.Dynamic.ExpandoObject();
+            var modelTaxBillFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 1).OrderBy(f => f.sOrder);
+            FaqTaxBillModel.TaxBill = modelTaxBillFAQs;
+            return View(FaqTaxBillModel);
+        }
+        public IActionResult RefundFAQ()
+        {
+            dynamic FaqRefundModel = new System.Dynamic.ExpandoObject();
+            var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
+            FaqRefundModel.Refund = modelRefundFAQs;
+            return View(FaqRefundModel);
+        }
+        public IActionResult PropertyFAQ()
+        {
+            dynamic FaqPropertylModel = new System.Dynamic.ExpandoObject();
+            var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
+            FaqPropertylModel.Property = modelPropertyFAQs;
+            return View(FaqPropertylModel);
+        }
+
+        public IActionResult OwnershipFAQ()
+        {
+            dynamic FaqOwnershipModel = new System.Dynamic.ExpandoObject();
+            var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
+            FaqOwnershipModel.Ownership = modelOwnershipFAQs;
+            return View(FaqOwnershipModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
