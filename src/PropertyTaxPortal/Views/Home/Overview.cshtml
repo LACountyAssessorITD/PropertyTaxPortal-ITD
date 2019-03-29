@@ -1,11 +1,14 @@
-﻿
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
 @{
     ViewData["Title"] = "Overview";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <section class="container-fluid section-header-overview">
-    <h2 class="display-4">@Localize['OVERVIEW']</h2>
+    <h2 class="display-4">@Localizer["OVERVIEW"]</h2>
 </section>
 
 <!-- Tabbed Navigation --> 
@@ -14,13 +17,13 @@
     <br />
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a href="#overview" class="nav-link" role="tab" data-toggle="tab">@Localize['Property Tax Overview']</a>   
+            <a href="#overview" class="nav-link" role="tab" data-toggle="tab">@Localizer["Property Tax Overview"]</a>   
         </li>
         <li class="nav-item">
-            <a href="#howitworks" class="nav-link" role="tab" data-toggle="tab">@Localize['How The Property Tax System Works']</a>   
+            <a href="#howitworks" class="nav-link" role="tab" data-toggle="tab">@Localizer["How The Property Tax System Works"]</a>   
         </li>
         <li class="nav-item">
-            <a href="#areasresp" class="nav-link" role="tab" data-toggle="tab">@Localize['Areas of Responsibility']</a>   
+            <a href="#areasresp" class="nav-link" role="tab" data-toggle="tab">@Localizer["Areas of Responsibility"]</a>   
         </li>
     </ul>
 </section>
@@ -33,10 +36,9 @@
         <section class="pto-header">
             <img/>
             <div>
-                <h3>@Localize['Property Tax Overview']</h3>
+                <h3>@Localizer["Property Tax Overview"]</h3>
                 <p>
-                    @Localize['It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, 
-                    and Treasuer & Tax Collector to produce and account for your property tax bill and payment.']
+                    @Localizer["It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, and Treasuer & Tax Collector to produce and account for your property tax bill and payment."]
                 </p>
             </div>
         </section>
@@ -45,33 +47,33 @@
             <br />
             <ul class="nav nav-pills nav-justified">
                 <li class="nav-item">
-                    <a href="#assessor" class="nav-link active" role="tab" data-toggle="tab">@Localize['Assessor']</a>   
+                    <a href="#assessor" class="nav-link active" role="tab" data-toggle="tab">@Localizer["Assessor"]</a>   
                 </li>
                 <li class="nav-item">
-                    <a href="#aab" class="nav-link" role="tab" data-toggle="tab">@Localize['Assessment & Appeals Board']</a>   
+                    <a href="#aab" class="nav-link" role="tab" data-toggle="tab">@Localizer["Assessment & Appeals Board"]</a>   
                 </li>
                 <li class="nav-item">
-                    <a href="#auditor" class="nav-link" role="tab" data-toggle="tab">@Localize['Auditor-Controller']</a>   
+                    <a href="#auditor" class="nav-link" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>   
                 </li>
                 <li class="nav-item">
-                    <a href="#ttc" class="nav-link" role="tab" data-toggle="tab">@Localize['Treasurer & Tax Collector']</a>   
+                    <a href="#ttc" class="nav-link" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
                 </li>
             </ul>
             <section class="pto-dept-container">
                 <div role="tabPanel" class="tab-pane active fade" id="assessor">
-                    @Localize['INFORMATION ABOUT ASSESSOR HERE']
+                    @Localizer["INFORMATION ABOUT ASSESSOR HERE"]
                 </div>
 
                 <div role="tabPanel" class="tab-pane active fade" id="aab">
-                    @Localize['INFORMATION ABOUT ASSESSMENT APPEALS BOARD HERE']
+                    @Localizer["INFORMATION ABOUT ASSESSMENT APPEALS BOARD HERE"]
                 </div>
 
                 <div role="tabPanel" class="tab-pane active fade" id="auditor">
-                    @Localize['INFORMATION ABOUT AUDITOR CONTROLLER HERE']
+                    @Localizer["INFORMATION ABOUT AUDITOR CONTROLLER HERE"]
                 </div>
 
                 <div role="tabPanel" class="tab-pane active fade" id="ttc">
-                    @Localize['INFORMATION ABOUT TREASURER HERE']
+                    @Localizer["INFORMATION ABOUT TREASURER HERE"]
                 </div>
             </section>
         </section>
