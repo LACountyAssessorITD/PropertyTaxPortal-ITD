@@ -26,12 +26,18 @@
         pointer-events: none;
     }
 
+
     
+    .navbar-nav li a {
+        transform: translateY(30%);
+    }
 
-
-    /*.navbar-collapse {
+    .navbar-collapse {
         height: 100%;
-    }*/
+    }
+    .search-font {
+        transform: translateY(50%);
+    }
 }
 
 /* Big tablet to 1200px (widths smaller than the 1040 px row) */
