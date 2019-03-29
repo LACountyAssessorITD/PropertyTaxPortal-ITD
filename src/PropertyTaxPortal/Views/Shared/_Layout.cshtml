@@ -177,11 +177,12 @@
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown">
                                 <ul>
 
-                                    <li><a asp-controller="FAQs" asp-action="FAQTabs">@Localizer["All FAQs"]</a></li>
-                                    <li><a href="">@Localizer["Tax Bills"]</a></li>
-                                    <li><a href="">@Localizer["Refunds/Tax Sales/Tax Liens"]</a></li>
-                                    <li><a href="">@Localizer["Property Values"]</a></li>
-                                    <li><a href="">@Localizer["Ownership"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="0" asp-action="GeneralFAQ">@Localizer["Tax Bills"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="1" asp-action="GeneralFAQ">@Localizer["Refunds/Tax Sales/Tax Liens"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="GeneralFAQ">@Localizer["Property Values"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="3" asp-action="GeneralFAQ">@Localizer["Ownership"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="4" asp-action="GeneralFAQ">@Localizer["All FAQs"]</a></li>
+                              
                                 </ul>
                             </div>
                         </li>
