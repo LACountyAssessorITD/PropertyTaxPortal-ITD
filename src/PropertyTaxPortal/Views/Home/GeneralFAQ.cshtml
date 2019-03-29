@@ -95,7 +95,7 @@
                 @if (Model.tabid == 0)
                 {
                     <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds Tax Sales/Liens</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
@@ -103,7 +103,7 @@
                 else if (Model.tabid == 1)
                 {
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Refund')">Refunds Tax Sales/Liens</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
@@ -112,7 +112,7 @@
                 else if (Model.tabid == 2)
                 {
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds Tax Sales/Liens</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/TaxLiens</button>
                     <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Property')">Property Values</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
@@ -121,7 +121,7 @@
                 else if (Model.tabid == 3)
                 {
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds Tax Sales/Liens</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
                     <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Ownership')">Ownership</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
@@ -129,7 +129,7 @@
                 else
                 {
                     <button class="col-md-2  tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2  tablinks" onclick="openCity(event, 'Refund')">Refunds Tax Sales/Liens</button>
+                    <button class="col-md-2  tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
                     <button class="col-md-2  tablinks" onclick="openCity(event, 'Property')">Property Values</button>
                     <button class="col-md-2 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
                     <button class="col-md-2 tablinks" id="defaultOpen" onclick="openCity(event, 'All')">All FAQs</button>
@@ -144,7 +144,7 @@
         </div>
         <hr style="background-color:#343a40"/>
         <br />
-        <div>
+        <div class="FAQ-Section-2">
             <section class="container section-tabs">
                 <div><h4>Tax Bills</h4></div>
                 @foreach (FAQ taxfaq in Model.TaxBill)
@@ -173,7 +173,7 @@
             </section>
             <br />
             <section class="container section-tabs">
-                <div><h4>Refunds Tax Sales/Liens</h4></div>
+                <div><h4>Refunds/Tax Sales/Tax Liens</h4></div>
                 @foreach (FAQ refundfaq in Model.Refund)
                 {
                     if (@refundfaq.question.Contains("<a"))
@@ -227,7 +227,7 @@
             </section>
             <br />
             <section class="container section-tabs">
-                <div><h4>Owenership</h4></div>
+                <div><h4>Ownership</h4></div>
                 @foreach (FAQ ownerfaq in Model.Ownership)
                 {
                     if (@ownerfaq.question.Contains("<a"))
@@ -258,7 +258,7 @@
         <div><h1 class="section-center">Tax Bills </h1></div>
         <hr style="background-color:#343a40" />
         <br />
-        <div>
+        <div  class="FAQ-Section-2">
             <section class="container section-tabs">
                 @foreach (FAQ taxfaq in Model.TaxBill)
                 {
@@ -287,10 +287,10 @@
         </div>
     </div>
     <div id="Refund" class="tabcontent" style="display:none">
-        <div><h1 class="section-center"> Refunds Tax Sales/Liens </h1></div>
+        <div><h1 class="section-center"> Refunds/Tax Sales/Tax Liens </h1></div>
         <hr style="background-color:#343a40" />
         <br />
-        <div>
+        <div class="FAQ-Section-2">
             <section class="container section-tabs">
                 @foreach (FAQ refundfaq in Model.Refund)
                 {
@@ -322,7 +322,7 @@
         <div><h1 class="section-center"> Property Values </h1></div>
         <hr style="background-color:#343a40" />
         <br />
-        <div>
+        <div class="FAQ-Section-2">
             <section class="container section-tabs">
                 @foreach (FAQ propfaq in Model.Property)
                 {
@@ -355,7 +355,7 @@
         <div><h1 class="section-center"> Ownership </h1></div>
         <hr style="background-color:#343a40" />
         <br />
-        <div>
+        <div class="FAQ-Section-2">
             <section class="container section-tabs">
                 @foreach (FAQ ownerfaq in Model.Ownership)
                 {
