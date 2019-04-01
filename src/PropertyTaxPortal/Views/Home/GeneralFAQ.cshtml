@@ -1,25 +1,28 @@
-﻿<section class="FAQ-Section">
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<section class="FAQ-Section">
     <style>
         body {
             font-family: Arial;
         }
 
-        
+
 
         .tablinks {
             border: 1px solid #000;
+            position: relative;
         }
         /* Style the buttons inside the tab */
 
         .tab.container {
             max-width: 1400px;
-            
         }
+
         .tab button {
             background-color: #343a40;
             float: left;
             outline: 1px;
-            border-right-color:white;
+            border-right-color: white;
             border-top-color: #343a40;
             cursor: pointer;
             padding: 16px 18px;
@@ -27,6 +30,7 @@
             font-size: 17px;
             border-left: 1px;
             color: white;
+            position: relative;
         }
 
             /* Change background color of buttons on hover */
@@ -40,7 +44,7 @@
             }
 
         /* Style the tab content */
-        
+
         .section-tabs button {
             width: 100%;
         }
@@ -61,23 +65,24 @@
             /*background-color: rgba(0,0,0,0.5);*/
             font-weight: bold;
         }
+
         .faq-subheading {
-            width:100%;
-            text-align:center; 
-            height:43%; 
-            padding-top:5px; 
-            color:white;
+            width: 100%;
+            text-align: center;
+            height: 43%;
+            padding-top: 5px;
+            color: white;
             /*background-color:rgba(0,0,0,0.5);*/
         }
+
         .button-size {
-            width:20%;
+            width: 20%;
         }
+
         .tab-background {
             background-color: #343a40;
             /*border: 1px solid #fff;*/
-           
         }
-        
     </style>
 
 
@@ -128,11 +133,11 @@
                 }
                 else
                 {
-                    <button class="col-md-2  tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2  tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
-                    <button class="col-md-2  tablinks" onclick="openCity(event, 'Property')">Property Values</button>
-                    <button class="col-md-2 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
-                    <button class="col-md-2 tablinks" id="defaultOpen" onclick="openCity(event, 'All')">All FAQs</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'All')">All FAQs</button>
                 }
             </div>
         </div>
@@ -142,7 +147,7 @@
         <div>
             <h1 class="section-center"> All FAQs </h1>
         </div>
-        <hr style="background-color:#343a40"/>
+        <hr style="background-color:#343a40" />
         <br />
         <div class="FAQ-Section-2">
             <section class="container section-tabs">
@@ -153,7 +158,7 @@
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Html.Raw(@taxfaq.question)
+                                &nbsp;&nbsp; @Html.Raw(@taxfaq.question)
                             </button>
                         </div>
                     }
@@ -258,7 +263,7 @@
         <div><h1 class="section-center">Tax Bills </h1></div>
         <hr style="background-color:#343a40" />
         <br />
-        <div  class="FAQ-Section-2">
+        <div class="FAQ-Section-2">
             <section class="container section-tabs">
                 @foreach (FAQ taxfaq in Model.TaxBill)
                 {
@@ -330,7 +335,7 @@
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Html.Raw(@propfaq.question)
+                                @Localizer[@Html.Raw(@propfaq.question).ToString()]
                             </button>
                         </div>
                     }
