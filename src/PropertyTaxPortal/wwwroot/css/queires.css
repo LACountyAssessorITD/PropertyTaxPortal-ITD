@@ -34,6 +34,7 @@
 
     .navbar-collapse {
         height: 100%;
+        
     }
     .search-font {
         transform: translateY(50%);
@@ -147,6 +148,7 @@
     .navbar-collapse {
         max-height: 300px;
         overflow-y: auto;
+        background-color: #fff;
     }
 
 
@@ -186,15 +188,29 @@
         border-right: none !important;
     }
 
-    .mega-menu .row div:nth-child(-n+3) {
+    .mega-menu .row div:nth-child(-n+4) {
         padding-bottom: 30px;
         margin-bottom: 30px;
-        border-bottom: 1px solid #b1b1b1;
+        border-bottom: 8px solid #b1b1b1;
+    }
+    .mega-menu .row div:last-child{
+        margin-bottom: 0px;
+    }
+
+
+    .mega-menu ul li {
+        padding-left: 20px;
+    }
+
+    .mega-menu ul li:last-child {
+        border-bottom: 1px solid #000;
+    }
+    .mega-menu p {
+        padding-left: 15px;
     }
 
     nav .dropdown-menu {
         border: none;
-        
         padding: 0;
     }
    
