@@ -148,7 +148,7 @@ h5 {
 }
 
 .nav-icon-bar h5 {
-    font-size: 110%;
+    font-size: 120%;
     font-weight: 600;
 }
 
@@ -301,6 +301,7 @@ nav a img {
             font-weight: 500;
             font-size: 110%;
             padding-bottom: 5px;
+            text-transform: uppercase;
             
         }
 

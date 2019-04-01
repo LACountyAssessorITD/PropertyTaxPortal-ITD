@@ -338,7 +338,12 @@
             text-decoration: none;
             color: #000;
             width: 100%;
+            font-size: 80%;
         }
+        .nav-icon-bar h5 {
+            font-size: 90%;
+        }
+
 
     nav a img {
         height: 50px;
