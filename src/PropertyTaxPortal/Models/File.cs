@@ -7,15 +7,14 @@ using System.ComponentModel.DataAnnotations;
 namespace PropertyTaxPortal.Models
 {
     
-    public class FilePath
+    public class File
     {
-        public int FilePathId { get; set; }
+        public int FileId { get; set; }
         [StringLength(255)]
         public string FileName { get; set; }
+        [StringLength(100)]
+        public string ContentType { get; set; }
+        public byte[] Content { get; set; }
         public FileType FileType { get; set; }
-        //public int PersonID { get; set; }
-        //public virtual Person Person { get; set; }
-        //[Required]
-        //public HttpPostedFileBase File { get; set; }
     }
 }

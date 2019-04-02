@@ -11,6 +11,7 @@ using System.Web;
 using System.IO;
 using System.Runtime.CompilerServices;
 
+
 namespace PropertyTaxPortal.Controllers
 {
     public class NewsController : Controller
@@ -187,11 +188,24 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult UploadImage(ImageModel model)
-        {
-            return View();
-        }
+        //[HttpPost]
+        //public IActionResult UploadImage(HttpPostedFileBase postedFile)
+        //{
+        //    if (postedFile != null && postedFile.ContentLength > 0)
+        //    {
+        //        var avatar = new FilePath
+        //        {
+        //            FileName = System.IO.Path.GetFileName(postedFile.FileName),
+        //            FileType = postedFile.ContentType
+        //        };
+        //        using (var reader = new System.IO.BinaryReader(postedFile.InputStream))
+        //        {
+        //            avatar.Content = reader.ReadBytes(postedFile.ContentLength);
+        //        }
+        //    }
+        //    db.SaveChanges();
+        //    return RedirectToAction("UploadImage");
+        //}
 
         public IActionResult DisplayImage()
         {

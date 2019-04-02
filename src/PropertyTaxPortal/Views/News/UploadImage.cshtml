@@ -1,4 +1,4 @@
-﻿@model PropertyTaxPortal.Models.FilePath;
+﻿@model PropertyTaxPortal.Models.File;
 @{
     ViewBag.Title = "UploadImage";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -21,7 +21,7 @@
                 <div class="form-group">
                     @Html.Label("Avatar", "", new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
-                        <b>File:</b>&nbsp;<input type="file" id="Avatar" name="upload" />
+                        <b>File:</b>&nbsp;<input type="file" id="Avatar" name="postedFile" />
                     </div>
                 </div>
 
