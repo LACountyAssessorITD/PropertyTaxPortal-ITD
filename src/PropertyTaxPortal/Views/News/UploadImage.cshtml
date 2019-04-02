@@ -1,8 +1,9 @@
 ﻿@model PropertyTaxPortal.Models.FilePath;
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "UploadImage";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <section class="container-fluid section-header-pi">
     <h2 class="display-4"> PUBLIC INQUIRY FORM</h2>
 </section>
@@ -26,7 +27,7 @@
 
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Create" class="btn btn-primary bg-3" />
+                        <input type="submit" value="Upload" class="btn btn-primary bg-3" asp-controller="News" asp-action="UploadImage" />
                     </div>
                 </div>
             </div>
