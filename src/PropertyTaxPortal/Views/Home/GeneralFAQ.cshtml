@@ -82,6 +82,7 @@
         .tab-background {
             background-color: #343a40;
             /*border: 1px solid #fff;*/
+            top: 1200px;
         }
     </style>
 
@@ -89,55 +90,54 @@
     <div class="bgimg">
         <br />
         <br />
-        <div class="faq-header">&nbsp;&nbsp;&nbsp;FREQUENTLY ASKED QUESTIONS </div>
+        <div class="faq-header">&nbsp;&nbsp;&nbsp;@Localizer["FREQUENTLY ASKED QUESTIONS"] </div>
         <br />
-        <div class="faq-subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you have any questions, please contact us. We will respond to you as soon as possible.</div>
+        <div class="faq-subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Localizer["If you have any questions, please contact us. We will respond to you as soon as possible."]</div>
     </div>
     <section class="tab-background">
         <div class="tab container">
             <div class="row">
-
                 @if (Model.tabid == 0)
                 {
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
                 }
                 else if (Model.tabid == 1)
                 {
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
 
                 }
                 else if (Model.tabid == 2)
                 {
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/TaxLiens</button>
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Property')">Property Values</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
 
                 }
                 else if (Model.tabid == 3)
                 {
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Ownership')">Ownership</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">All FAQs</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
                 }
                 else
                 {
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">Tax Bills</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">Refunds/Tax Sales/Tax Liens</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">Property Values</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">Ownership</button>
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'All')">All FAQs</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
                 }
             </div>
         </div>
@@ -145,20 +145,20 @@
     <br />
     <div id="All" class="tabcontent active active-tab">
         <div>
-            <h1 class="section-center"> All FAQs </h1>
+            <h1 class="section-center"> @Localizer["All FAQs"] </h1>
         </div>
         <hr style="background-color:#343a40" />
         <br />
         <div class="FAQ-Section-2">
             <section class="container section-tabs">
-                <div><h4>Tax Bills</h4></div>
+                <div><h4>@Localizer["Tax Bills"]</h4></div>
                 @foreach (FAQ taxfaq in Model.TaxBill)
                 {
                     if (@taxfaq.question.Contains("<a"))
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                &nbsp;&nbsp; @Html.Raw(@taxfaq.question)
+                                &nbsp;&nbsp; @Localizer[@Html.Raw(@taxfaq.question).ToString()]
                             </button>
                         </div>
                     }
@@ -166,10 +166,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@taxfaq.question)
+                                @Localizer[@Html.Raw(@taxfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@taxfaq.answer)
+                                @Localizer[@Html.Raw(@taxfaq.answer).ToString()]
                             </div>
                         </div>
                     }
@@ -178,14 +178,14 @@
             </section>
             <br />
             <section class="container section-tabs">
-                <div><h4>Refunds/Tax Sales/Tax Liens</h4></div>
+                <div><h4>@Localizer["Refunds/Tax Sales/Tax Liens"]</h4></div>
                 @foreach (FAQ refundfaq in Model.Refund)
                 {
                     if (@refundfaq.question.Contains("<a"))
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-button">
-                                @Html.Raw(@refundfaq.question)
+                                @Localizer[@Html.Raw(@refundfaq.question).ToString()]
                             </button>
                         </div>
                     }
@@ -193,10 +193,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@refundfaq.question)
+                                @Localizer[@Html.Raw(@refundfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@refundfaq.answer)
+                                @Localizer[@Html.Raw(@refundfaq.answer).ToString()]
                             </div>
                         </div>
                         <div style="height:5px;"></div>
@@ -205,14 +205,14 @@
             </section>
             <br />
             <section class="container section-tabs">
-                <div><h4>Property Values</h4></div>
+                <div><h4>@Localizer["Property Values"]</h4></div>
                 @foreach (FAQ propfaq in Model.Property)
                 {
                     if (@propfaq.question.Contains("<a"))
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Html.Raw(@propfaq.question)
+                                @Localizer[@Html.Raw(@propfaq.question).ToString()]
                             </button>
                         </div>
                     }
@@ -220,10 +220,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@propfaq.question)
+                                @Localizer[@Html.Raw(@propfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@propfaq.answer)
+                                @Localizer[@Html.Raw(@propfaq.answer).ToString()]
                             </div>
                         </div>
                         <div style="height:5px;"></div>
@@ -232,14 +232,14 @@
             </section>
             <br />
             <section class="container section-tabs">
-                <div><h4>Ownership</h4></div>
+                <div><h4>@Localizer["Ownership"]</h4></div>
                 @foreach (FAQ ownerfaq in Model.Ownership)
                 {
                     if (@ownerfaq.question.Contains("<a"))
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Html.Raw(@ownerfaq.question)
+                                @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
                             </button>
                         </div>
                     }
@@ -247,10 +247,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@ownerfaq.question)
+                                @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@ownerfaq.answer)
+                                @Localizer[@Html.Raw(@ownerfaq.answer).ToString()]
                             </div>
                         </div>
                         <div style="height:5px;"></div>
@@ -260,7 +260,7 @@
         </div>
     </div>
     <div id="TaxBill" class="tabcontent" style="display:none">
-        <div><h1 class="section-center">Tax Bills </h1></div>
+        <div><h1 class="section-center">@Localizer["Tax Bills"] </h1></div>
         <hr style="background-color:#343a40" />
         <br />
         <div class="FAQ-Section-2">
@@ -271,7 +271,7 @@
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Html.Raw(@taxfaq.question)
+                                @Localizer[@Html.Raw(@taxfaq.question).ToString()]
                             </button>
                         </div>
                     }
@@ -279,10 +279,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@taxfaq.question)
+                                @Localizer[@Html.Raw(@taxfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@taxfaq.answer)
+                                @Localizer[@Html.Raw(@taxfaq.answer).ToString()]
                             </div>
                         </div>
                     }
@@ -303,7 +303,7 @@
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Html.Raw(@refundfaq.question)
+                                @Localizer[@Html.Raw(@refundfaq.question).ToString()]
                             </button>
                         </div>
                     }
@@ -311,10 +311,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@refundfaq.question)
+                                @Localizer[@Html.Raw(@refundfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@refundfaq.answer)
+                                @Localizer[@Html.Raw(@refundfaq.answer).ToString()]
                             </div>
                         </div>
                         <div style="height:5px;"></div>
@@ -324,7 +324,7 @@
         </div>
     </div>
     <div id="Property" class="tabcontent" style="display:none">
-        <div><h1 class="section-center"> Property Values </h1></div>
+        <div><h1 class="section-center">  @Localizer["Property Values"] </h1></div>
         <hr style="background-color:#343a40" />
         <br />
         <div class="FAQ-Section-2">
@@ -343,10 +343,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@propfaq.question)
+                                @Localizer[@Html.Raw(@propfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@propfaq.answer)
+                                @Localizer[@Html.Raw(@propfaq.answer).ToString()]
                             </div>
                         </div>
                         <div style="height:5px;"></div>
@@ -357,7 +357,7 @@
 
     </div>
     <div id="Ownership" class="tabcontent" style="display:none">
-        <div><h1 class="section-center"> Ownership </h1></div>
+        <div><h1 class="section-center"> @Localizer["Ownership"] </h1></div>
         <hr style="background-color:#343a40" />
         <br />
         <div class="FAQ-Section-2">
@@ -368,7 +368,7 @@
                     {
                         <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Html.Raw(@ownerfaq.question)
+                                @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
                             </button>
                         </div>
                     }
@@ -376,10 +376,10 @@
                     {
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Html.Raw(@ownerfaq.question)
+                                @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Html.Raw(@ownerfaq.answer)
+                                @Localizer[@Html.Raw(@ownerfaq.answer).ToString()]
                             </div>
                         </div>
                         <div style="height:5px;"></div>
@@ -407,4 +407,14 @@
         }
         document.getElementById("defaultOpen").click();
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60050118-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-60050118-10');
+    </script>
+
 </section>
