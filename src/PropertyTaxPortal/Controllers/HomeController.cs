@@ -70,6 +70,10 @@ namespace PropertyTaxPortal.Controllers
             return View(FaqFinalModel);
         }
        
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5af19c5a571f2b9acf8ea890eba08de7c808f8fc
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
