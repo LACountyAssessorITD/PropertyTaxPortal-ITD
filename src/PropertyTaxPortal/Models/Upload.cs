@@ -15,7 +15,7 @@ namespace PropertyTaxPortal.Models
         [StringLength(200)]
         public string FileName { get; set; }
 
-        public byte ImageData { get; set; }
+        public byte[] ImageData { get; set; }
 
         [StringLength(30)]
         public string ContentType { get; set; }

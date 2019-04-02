@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&lt;a href=&quot;https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/&quot; target=_blank&gt;How to avoid penalties by understanding postmarks?&lt;/a&gt;" xml:space="preserve">
+    <value>&lt;a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target=_blank&gt; ¿Cómo evitar sanciones al entender los matasellos? &lt;/a&gt;</value>
+  </data>
+  <data name="&lt;a href=&quot;https://ttc.lacounty.gov/penalty-cancellation-due-to-a-lost-payment-affidavit/&quot;&gt;What can I do if the Tax Collector never received my payment?&lt;/a&gt;" xml:space="preserve">
+    <value>&lt;a href="https://ttc.lacounty.gov/penalty-cancellation-due-to-a-lost-payment-affidavit/"&gt; ¿Qué puedo hacer si el Recaudador de impuestos nunca recibió mi pago? &lt;/a&gt;</value>
+  </data>
+  <data name="&lt;a href=&quot;https://ttc.lacounty.gov/penalty-cancellation-request-2/&quot;&gt;How do I request to cancel penalties?&lt;/a&gt;" xml:space="preserve">
+    <value>&lt;a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/"&gt; ¿Cómo solicito cancelar las sanciones? &lt;/a&gt;</value>
+  </data>
+  <data name="&lt;a href=&quot;https://ttc.lacounty.gov/property-tax-installment-plans/&quot;&gt;Are there any Installment Plans?&lt;/a&gt;" xml:space="preserve">
+    <value>&lt;a href="https://ttc.lacounty.gov/property-tax-installment-plans/"&gt; ¿Hay algún plan de cuotas? &lt;/a&gt;</value>
+  </data>
+  <data name="&lt;a href=&quot;https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/&quot;&gt;How can I obtain information on Multiple Parcels?&lt;/a&gt;" xml:space="preserve">
+    <value>&lt;a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/"&gt; ¿Cómo puedo obtener información sobre varias parcelas? &lt;/a&gt;</value>
+  </data>
+  <data name="&lt;span style=&quot;font-weight: bold&quot;&gt;SECURED PROPERTY TAXES&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Annual property tax bills are mailed in early October of each year.  The bill is payable in two installments.&lt;br/&gt;&lt;br/&gt;The 1st installment is due on November 1 and is delinquent if the payment is not received by 5:00 p.m. or postmarked by December 10.  A 10% penalty is assessed for delinquent payments.&lt;br/&gt;&lt;br/&gt;The 2nd installment is due on February 1 and is delinquent if the payment is not received by 5:00 p.m. or postmarked by April 10, a 10% penalty and $10.00 cost are assessed.&lt;br/&gt;&lt;br/&gt;If December 10 or April 10 falls on a Saturday, Sunday, or a legal holiday, the delinquency date is the next business day.&lt;br/&gt;&lt;br/&gt;Both installments can be paid at the same time.  If you choose to pay both installments in one payment, please include the first and second installment stubs with your payment.&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;Payment Deadline Summary&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;text-decoration: underline&quot;&gt;Installment&lt;/span&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;text-decoration: underline&quot;&gt;Due Date&lt;/span&gt; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;text-decoration: underline&quot;&gt;Delinquency Date*&lt;/span&gt; &amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;text-decoration: underline&quot;&gt;Penalty, if delinquent&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 1st &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; November 1  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; December 10  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; 10% of amount due&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2nd &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp &amp;nbsp; &amp;nbsp; &amp;nbsp;   February 1  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; April 10  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 10 % of amount due + $10.00 Cost&lt;br/&gt;&lt;br/&gt;*If December 10th or April 10th falls on a Saturday, Sunday, or a Los Angeles County holiday, the delinquency date is moved to the next business day.  To assist taxpayers in understanding how to avoid penalties that could result from postmark issues, the Tax Collector has compiled important related information on how to &lt;a href=&quot;https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/&quot; target=_blank&gt;&lt;span style=&quot;text-decoration: underline&quot;&gt;Avoid Penalties By Understanding Postmarks&lt;/span&gt;.&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;UNSECURED PROPERTY TAXES&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Unsecured tax bills are delinquent if the payment is not received by 5:00 p.m. or postmarked by August 31 of the tax year.  If August 31 falls on a Saturday, Sunday or a legal holiday, the deadline is the next business day." xml:space="preserve">
+    <value />
+  </data>
+  <data name="&lt;span style=&quot;font-weight: bold&quot;&gt;Secured&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;If you want a substitute secured tax bill, please call our 24-hour PROPTAX Information System at (213)974-2111 or toll free at (888)807-2111. You must have your 10-digit Assessor's Identification Number.  You may also email a request for a substitute bill to the Treasurer and Tax Collector at &lt;a href=&quot;mailto:ttcmail@ttc.lacounty.gov&quot;&gt;ttcmail@ttc.lacounty.gov&lt;/a&gt;. Substitute bills may also be obtained by contacting the Assessor's office via email at &lt;a href=&quot;mailto:helpdesk@assessor.lacounty.gov&quot;&gt;helpdesk@assessor.lacounty.gov&lt;/a&gt;, or by going in person to any of the &lt;a href=&quot;https://assessor.lacounty.gov/office-locations/&quot;&gt;Assessor's office locations&lt;/a&gt;. Please provide the property address and, if available, the Assessor's Identification Number (AIN).  This information is required to provide you with the correct tax bill.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-style: italic&quot;&gt;Current Year Secured Taxes Online&lt;/span&gt;: The Treasurer and Tax Collector's website provides current year tax information. Click the following link: &lt;a href=&quot;https://vcheck.ttc.lacounty.gov/&quot; target=&quot;_blank&quot;&gt;How much are my secured property taxes?&lt;/a&gt; and enter your Assessor's Identification Number to view the amount of secured taxes due for the current year. This website provides current year tax information and is available between October 1 and June 30 only.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;Unsecured&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;If you would like a substitute tax bill, please call the Unsecured Property Tax Section at (213)893-7935. You may also email a request for a substitute bill to the Treasurer and Tax Collector at &lt;a href=&quot;mailto:ttcmail@ttc.lacounty.gov&quot;&gt;ttcmail@ttc.lacounty.gov&lt;/a&gt;.  Please provide the year and bill number, if available; however, if you do not have that information please provide your name, the type of bill you receive (e.g., boat, business property), the property address, and the billing address.  When making a payment, be sure to always write the year and bill number on your check.  BE CAREFUL, BILL NUMBERS CHANGE EVERY YEAR.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-style: italic&quot;&gt;Current Year Unsecured Taxes Online&lt;/span&gt;: The Treasurer and Tax Collector's website provides current year unsecured tax amounts.  Click the following link: &lt;a href=&quot;javascript:newWindow('https://ttc.lacounty.gov/property-tax-balance-due-unsecured/')&quot;&gt;How much are my Unsecured taxes?&lt;/a&gt; and enter the year and bill number to view the amount of unsecured taxes due for the current year.  This website provides current year unsecured tax information and is available between March 1 and June 30 only." xml:space="preserve">
+    <value>&lt;span style = "font-weight: bold"&gt; Asegurado &lt;/span&gt; &lt;br /&gt; &lt;br /&gt; Si desea un recibo de impuestos asegurado sustituto, llame a nuestro Sistema de información PROPTAX las 24 horas al (213)974-2111 o gratis al (888) 807-2111. Debe tener su número de identificación de asesor de 10 dígitos. También puede enviar por correo electrónico una solicitud de factura sustituta al Tesorero y al Recaudador de impuestos en &lt;a href="mailto:ttcmail@ttc.lacounty.gov"&gt; ttcmail@ttc.lacounty.gov &lt;/a&gt;. Las facturas sustitutas también se pueden obtener comunicándose con la oficina del Asesor por correo electrónico a &lt;a href="mailto:helpdesk@assessor.lacounty.gov"&gt; helpdesk@assessor.lacounty.gov &lt;/a&gt;, o visitando personalmente a cualquiera de las &lt;a href="https://assessor.lacounty.gov/office-locations/"&gt; ubicaciones de las oficinas del Asesor &lt;/a&gt;. Proporcione la dirección de la propiedad y, si está disponible, el Número de Identificación del Evaluador (AIN). Esta información es necesaria para proporcionarle la factura fiscal correcta. &lt;br /&gt; &lt;br /&gt; &lt;span style = "font-style: italic"&gt; Impuestos garantizados del año actual en línea &lt;/span&gt;: el sitio web del Tesorero y del Recaudador de impuestos proporciona Información fiscal del año en curso. Haga clic en el siguiente enlace: &lt;a href="https://vcheck.ttc.lacounty.gov/" target="_blank"&gt; ¿A cuánto ascienden mis impuestos a la propiedad? &lt;/a&gt; e ingrese el Número de identificación de su Asesor para ver el Importe de los impuestos garantizados del año en curso. Este sitio web proporciona información sobre impuestos del año en curso y está disponible entre el 1 de octubre y el 30 de junio solamente. &lt;br /&gt; &lt;br /&gt; &lt;span style = "font-weight: bold"&gt; Sin garantía &lt;/span&gt; &lt;br /&gt; &lt;br / &gt; Si desea una factura de impuestos sustitutos, llame a la Sección de Impuestos de Propiedad No Garantizada al (213) 893-7935. También puede enviar por correo electrónico una solicitud de factura sustituta al Tesorero y al Recaudador de impuestos en &lt;a href="mailto:ttcmail@ttc.lacounty.gov"&gt; ttcmail@ttc.lacounty.gov &lt;/a&gt;. Indique el año y el número de factura, si están disponibles; sin embargo, si no tiene esa información, proporcione su nombre, el tipo de factura que recibe (por ejemplo, barco, propiedad comercial), la dirección de la propiedad y la dirección de facturación. Al realizar un pago, asegúrese de escribir siempre el año y el número de factura en su cheque. TENGA CUIDADO, LOS NÚMEROS DE FACTURAS CAMBIAN TODOS LOS AÑOS. &lt;br /&gt; &lt;br /&gt; &lt;span style = "font-style: italic"&gt; Impuestos en línea del año actual en línea &lt;/span&gt;: El sitio web del Tesorero y del recaudador de impuestos proporciona el impuesto sin garantía del año en curso cantidades Haga clic en el siguiente enlace: &lt;a href="javascript:newWindow('https://ttc.lacounty.gov/property-tax-balance-due-unsecured/')"&gt; ¿Cuánto cuestan mis impuestos no garantizados? &lt;/a&gt; e ingrese el año y el número de factura para ver el monto de los impuestos no garantizados adeudados para el año en curso. Este sitio web proporciona información sobre impuestos no garantizados del año en curso y está disponible solo entre el 1 de marzo y el 30 de junio.</value>
+  </data>
+  <data name="All FAQs" xml:space="preserve">
+    <value>Todas las preguntas frecuentes</value>
+  </data>
+  <data name="Can I make partial payments?" xml:space="preserve">
+    <value>¿Puedo hacer pagos parciales?</value>
+  </data>
+  <data name="Can I view my secured property tax payment history online?" xml:space="preserve">
+    <value>¿Puedo ver mi historial de pago de impuestos a la propiedad asegurado en línea?</value>
+  </data>
+  <data name="FREQUENTLY ASKED QUESTIONS" xml:space="preserve">
+    <value>PREGUNTAS FRECUENTES</value>
+  </data>
+  <data name="How can I get a copy of my current tax bill?" xml:space="preserve">
+    <value>¿Cómo puedo obtener una copia de mi factura de impuestos actual?</value>
+  </data>
+  <data name="How do I locate my Assessor's identification number (AIN)?" xml:space="preserve">
+    <value>¿Cómo localizo el número de identificación de mi Asesor (AIN)?</value>
+  </data>
+  <data name="How much do I owe?" xml:space="preserve">
+    <value>¿Cuánto debo?</value>
+  </data>
+  <data name="If you have any questions, please contact us. We will respond to you as soon as possible." xml:space="preserve">
+    <value>Si tiene alguna pregunta, por favor contáctenos. Nosotros responderemos a la mayor brevedad posible.</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Propiedad</value>
+  </data>
+  <data name="Property Values" xml:space="preserve">
+    <value>Valores de propiedad</value>
+  </data>
+  <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
+    <value>Reembolsos / ventas de impuestos / gravámenes fiscales</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Facturas de impuestos</value>
+  </data>
+  <data name="What causes a supplemental bill?" xml:space="preserve">
+    <value>¿Qué causa una factura suplementaria?</value>
+  </data>
+  <data name="What is a supplemental tax bill?" xml:space="preserve">
+    <value>¿Qué es una factura fiscal complementaria?</value>
+  </data>
+  <data name="When are the taxes due?" xml:space="preserve">
+    <value>¿Cuándo se deben los impuestos?</value>
+  </data>
+  <data name="Why did I get an informational tax bill only?" xml:space="preserve">
+    <value>¿Por qué recibí solo una factura fiscal informativa?</value>
+  </data>
+  <data name="Why did I receive a tax bill when I sold the property?" xml:space="preserve">
+    <value>¿Por qué recibí una factura de impuestos cuando vendí la propiedad?</value>
+  </data>
+  <data name="Why did I receive an unsecured tax bill?" xml:space="preserve">
+    <value>¿Por qué recibí una factura de impuestos sin garantía?</value>
+  </data>
+</root>

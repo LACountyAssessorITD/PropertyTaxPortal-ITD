@@ -148,8 +148,8 @@ h5 {
 }
 
 .nav-icon-bar h5 {
-    font-size: 110%;
-    font-weight: 500;
+    font-size: 120%;
+    font-weight: 600;
 }
 
 nav a img {
@@ -159,11 +159,15 @@ nav a img {
 
 .navbar {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 80%;
     padding: 0px 20px;
     height: 70px;
     border-bottom: 1px solid #000000;
+}
+
+.small-drop {
+    font-weight: 500;
 }
 
 
@@ -248,13 +252,15 @@ nav a img {
 
     .mega-menu p {
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 500;
         color: #57BDF6;
     }
 
     .mega-menu ul {
         list-style: none;
         text-transform: none;
+        font-weight: 500;
+        
     }
 
     .mega-menu .row div:nth-child(-n+3) {
@@ -286,12 +292,16 @@ nav a img {
     .section-footer ul {
         list-style: none;
     }
+        .section-footer ul li {
+            color: #808080;
+        }
 
         .section-footer ul li:first-child {
             color: #fff;
             font-weight: 500;
             font-size: 110%;
             padding-bottom: 5px;
+            text-transform: uppercase;
             
         }
 
