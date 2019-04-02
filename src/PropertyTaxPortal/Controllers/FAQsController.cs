@@ -8,10 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using PropertyTaxPortal.Models;
 using ReflectionIT.Mvc.Paging;
 using System.Dynamic;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace PropertyTaxPortal.Controllers
 {
+    [Authorize]
     public class FAQsController : Controller
     {
         private readonly PTPContext _context;
@@ -22,6 +23,7 @@ namespace PropertyTaxPortal.Controllers
         }
 
         // GET: FAQs
+        
         public async Task<IActionResult> Index(int page = 1)
         {
             var query = _context.faq.FromSql("PTP_getAllFAQs").OrderBy(f => f.sOrder);
@@ -33,7 +35,7 @@ namespace PropertyTaxPortal.Controllers
         //[HttpGet]
         //public IActionResult View()
         //{
-            
+
         //    //var query = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
         //    //var model =  PagingList.CreateAsync(query, 3, page);
         //    var model = _context.faq.AsNoTracking().OrderBy(f => f.sOrder);
@@ -42,6 +44,7 @@ namespace PropertyTaxPortal.Controllers
 
 
         // GET: FAQs/Create
+       
         public IActionResult CreateorEdit(int id = 0)
         {
             if (id == 0)
@@ -72,7 +75,7 @@ namespace PropertyTaxPortal.Controllers
                 return View(_context.faq.Find(id));
             }
         }
-
+        
         public IActionResult LoadFAQCategoryTypes()
         {
             List<Category> listCatcodes = new List<Category>();
@@ -129,7 +132,6 @@ namespace PropertyTaxPortal.Controllers
             return View(FaqFinalModel);
         }
 
-        
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -151,6 +153,7 @@ namespace PropertyTaxPortal.Controllers
         }
 
         // GET: FAQs/Edit/5
+       
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -167,7 +170,7 @@ namespace PropertyTaxPortal.Controllers
         }
 
         
-       [HttpPost]
+        [HttpPost]
         public ActionResult UpArrow(int? id)
         {
             if (id > 0)

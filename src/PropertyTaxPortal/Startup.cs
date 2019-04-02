@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Localization;
+using PropertyTaxPortal.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace PropertyTaxPortal
 {
@@ -78,6 +80,19 @@ namespace PropertyTaxPortal
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
             });
+            var users = new Dictionary<string, string> { { "Daniel", "password" }, {"admin", "password" }, { "willie", "willie" } };
+            services.AddSingleton<IUserService>(new AdminUserService(users));
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/auth/signin";
+                });
 
             //---------------------------END CONFIGURE LOCALIZATION-----------------------------//
         }

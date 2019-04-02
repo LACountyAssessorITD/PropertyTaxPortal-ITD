@@ -10,9 +10,11 @@ using ReflectionIT.Mvc.Paging;
 using System.Web;
 using System.IO;
 using System.Runtime.CompilerServices;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PropertyTaxPortal.Controllers
 {
+    [Authorize]
     public class NewsController : Controller
     {
         private readonly PTPContext _context;
