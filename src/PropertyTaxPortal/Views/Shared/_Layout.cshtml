@@ -182,7 +182,7 @@
                                     <li><a asp-controller="Home" asp-route-id="2" asp-action="GeneralFAQ">@Localizer["Property Values"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="3" asp-action="GeneralFAQ">@Localizer["Ownership"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="4" asp-action="GeneralFAQ">@Localizer["All FAQs"]</a></li>
-                              
+
                                 </ul>
                             </div>
                         </li>
@@ -313,7 +313,15 @@
         <script src="~/js/site.js"></script>
 
     </environment>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60050118-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-60050118-10');
+    </script>
 </body>
 
 
