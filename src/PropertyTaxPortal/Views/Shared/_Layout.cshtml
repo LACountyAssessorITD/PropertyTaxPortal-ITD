@@ -91,9 +91,9 @@
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown">
                                 <ul>
-                                    <li>  <a asp-controller="Home" asp-action="Overview" class="">@Localizer["Property Tax Overview"]</a>  </li>
-                                    <li> <a href="">@Localizer["How the Property Tax System Works"]</a> </li>
-                                    <li><a href="">@Localizer["Areas of Responsibliity"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="0" asp-action="Overview">@Localizer["Property Tax Overview"]</a>  </li>
+                                    <li><a asp-controller="Home" asp-route-id="1" asp-action="Overview">@Localizer["How the Property Tax System Works"]</a> </li>
+                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="Overview">@Localizer["Areas of Responsibliity"]</a></li>
                                 </ul>
                             </div>
                         </li>

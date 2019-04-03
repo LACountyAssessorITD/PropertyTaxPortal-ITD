@@ -36,11 +36,8 @@
     background-color: #f1f1f1;
 }
 
-.tablinks {
-    border: 1px solid #000;
-}
 /* Style the buttons inside the tab */
-.tab button {
+/* .tab button {
     background-color: inherit;
     float: left;
     outline: 1px;
@@ -49,7 +46,7 @@
     transition: 0.3s;
     font-size: 17px;
     border-left: 1px;
-}
+} */
 
     /* Change background color of buttons on hover */
     .tab button:hover {
@@ -99,5 +96,80 @@
 /*.section-tabs element.style {
     transform: none;
 }*/
+.tablinks {
+    border: 1px solid #000;
+    position: relative;
+}
+/* Style the buttons inside the tab */
 
+.tab.container {
+    max-width: 1400px;
+}
+
+.tab button {
+    background-color: #343a40;
+    float: left;
+    outline: 1px;
+    border-right-color: white;
+    border-top-color: #343a40;
+    cursor: pointer;
+    padding: 16px 18px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-left: 1px;
+    color: white;
+    position: relative;
+}
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+/* Style the tab content */
+
+.section-tabs button {
+    width: 100%;
+}
+
+.section-tabs .btn {
+    text-align: left;
+}
+
+.section-center {
+    text-align: center;
+}
+
+.faq-header {
+    width: 100%;
+    text-align: center;
+    font-size: 270%;
+    color: white;
+    /*background-color: rgba(0,0,0,0.5);*/
+    font-weight: bold;
+}
+
+.faq-subheading {
+    width: 100%;
+    text-align: center;
+    height: 43%;
+    padding-top: 5px;
+    color: white;
+    /*background-color:rgba(0,0,0,0.5);*/
+}
+
+.button-size {
+    width: 20%;
+}
+
+.tab-background {
+    background-color: #343a40;
+    /*border: 1px solid #fff;*/
+    top: 1200px;
+}
 

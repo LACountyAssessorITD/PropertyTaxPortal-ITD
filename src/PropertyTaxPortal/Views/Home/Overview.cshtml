@@ -6,18 +6,71 @@
     ViewData["Title"] = "Overview";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style>
+    <!-- .tab button {
+    background-color: #343a40;
+    float: none;
+    outline: 1px;
+    border-right-color: white;
+    border-top-color: #343a40;
+    cursor: pointer;
+    padding: 16px 18px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-left: 1px;
+    color: white;
+    position: relative; -->
+}
+</style>
 <section class="container-fluid section-header-overview">
     <h2 class="display-4"> @Localizer["OVERVIEW"] </h2>
 </section>
+<section class="tab-background">
+    <div class="tab container">
+        <div class="row">
+            @if (ViewBag.id == 0)
+            {
+                <button class="col-md-4 col-sm-12 tablinks" id="defaultOpen" onclick="openContent(event, 'Overview')">@Localizer["Property Tax Overview"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" onclick="openContent(event, 'HowItWorks')">@Localizer["How The Property Tax System Works"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" onclick="openContent(event, 'AreasRespons')">@Localizer["Areas of Responsibility"]</button>
+            }
+
+            else if (ViewBag.id == 1)
+            {
+                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'Overview')">@Localizer["Property Tax Overview"]</button>
+                <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openContent(event, 'HowItWorks')">@Localizer["How The Property Tax System Works"]</button>
+                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'AreasRespons')">@Localizer["Areas of Responsibility"]</button>
+            }
+
+            else if (ViewBag.id == 2)
+            {
+                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'Overview')">@Localizer["Property Tax Overview"]</button>
+                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'HowItWorks')">@Localizer["How The Property Tax System Works"]</button>
+                <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openContent(event, 'AreasRespons')">@Localizer["Areas of Responsibility"]</button>
+            }
+
+        </div>
+    </div>
+</section>
+
+<div id="Overview" class="tabcontent active active-tab">
+    overview content
+</div>
+<div id="HowItWorks" class="tabcontent" style="display:none">
+    how it works content
+</div>
+<div id="AreasRespons" class="tabcontent" style="display:none">
+    responsibility content
+</div>
 
 <!-- Overview Tabbed Navigation --> 
 
 <section class="page-tabs">
     <br />
+    <br />
     <ul class="nav nav-tabs nav-justified">
         
-        <li class="nav-item">
+        <li class="nav-item active">
             <a href="#overview" class="nav-link" role="tab" data-toggle="tab">@Localizer["Property Tax Overview"]</a>   
         </li>
         
@@ -34,17 +87,26 @@
 
     <!-- Main Page Container -->
 
-    <section class="overview-container">
-        <div role="tabpanel" class="tab-pane active fade in" id="overview">
-
+    <section class="overview container-fluid tab-content">
+        <br />
+        <div role="tabpanel" class="col tab-pane active fade in" id="overview">
             <section class="pto-header">
-                <div class="pto-image"></div>
-                <div class="pto-title">
-                    <h3>@Localizer["Property Tax Overview"]</h3>
-                    <p>
-                        @Localizer["It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, and Treasuer & Tax Collector to produce and account for your property tax bill and payment."]
-                    </p>
+                <div class="row">
+                    <div class="col pto-image img-fluid"></div>
+                    <div class="col pto-title" align="center">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <h3>@Localizer["Property Tax Overview"]</h3>
+                        <br />                        
+                        <p>
+                            @Localizer["It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, and Treasuer & Tax Collector to produce and account for your property tax bill and payment."]
+                        </p>
+                    </div>
                 </div>
+                
             </section>
 
             <!-- PTO department buttons -->
@@ -64,23 +126,68 @@
                         <a href="#ttc" class="nav-link" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
                     </li>
                 </ul>
-
+                <br />
                 <!-- Department Information Container --> 
-                <section class="pto-dept-container">
-                    <div role="tabpanel" class="tab-pane active fade" id="assessor">
-                        @Localizer["INFORMATION ABOUT ASSESSOR HERE"]
+                <section class="pto-dept-container tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="assessor">
+                        <div class="row">
+                           <div class="col">
+                                <br />
+                                <h4>@Localizer["Assessor"]</h4>
+                                <br />
+                                <p>@Localizer["The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the \"Assessment Roll.\" The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing."]</p>
+                            </div>
+                            <div class="col" align="center">
+                                <br />
+                                <img src="../images/assessor.png" class="img-responsive" alt="screen"/>
+                            </div> 
+                        </div>
+                                                
                     </div>
 
-                    <div role="tabpanel" class="tab-pane active fade" id="aab">
-                        @Localizer["INFORMATION ABOUT ASSESSMENT APPEALS BOARD HERE"]
+                    <div role="tabpanel" class="tab-pane " id="aab">
+                        <div class="row">
+                            <div class="col">
+                                <br />
+                                <h4>@Localizer["Assessment Appeals Board"]</h4>
+                                <br />
+                                <p>@Localizer["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."]</p>
+                            </div>
+                            <div class="col" align="center">
+                                <br />
+                                <img src="../images/aapb.png" class="img-responsive" alt="screen"/>
+                            </div>
+                        </div>
                     </div>
 
-                    <div role="tabpanel" class="tab-pane active fade" id="auditor">
-                        @Localizer["INFORMATION ABOUT AUDITOR CONTROLLER HERE"]
+                    <div role="tabpanel" class="tab-pane " id="auditor">
+                        <div class="row">
+                            <div class="col">
+                                <br />
+                                <h4>@Localizer["Auditor-Controller"]</h4>
+                                <br />
+                                <p>@Localizer["The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter & bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection."]</p>
+                            </div>
+                            <div class="col" align="center">
+                                <br />
+                                <img src="../images/audcont-icon.png" class="img-responsive" alt="screen"/>
+                            </div>
+                        </div>
                     </div>
 
-                    <div role="tabpanel" class="tab-pane active fade" id="ttc">
-                        @Localizer["INFORMATION ABOUT TREASURER HERE"]
+                    <div role="tabpanel" class="tab-pane " id="ttc">
+                        <div class="row">
+                            <div class="col">
+                                <br />
+                                <h4>@Localizer["Treasurer & Tax Collector"]</h4>
+                                <br />
+                                <p>@Localizer["The Los Angeles County Treasurer and Tax Collector receives the Extended Roll, prints and mails the property tax bills to the name and address on the Extended Roll. The Treasurer and Tax Collector collects secured and unsecured taxes. Secured taxes are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc. Unsecured taxes are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property."]</p>
+                            </div>
+                            <div class="col" align="center">
+                                <br />
+                                <img src="../images/ttc-icon.png" class="img-responsive" alt="screen"/>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </section>
@@ -95,6 +202,23 @@
         </div>
     </section>
 </section>
+
+<script>
+    function openContent(evt, TabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tabcontent.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(TabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
 
 
 
