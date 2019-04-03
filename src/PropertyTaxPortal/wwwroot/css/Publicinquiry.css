@@ -18,11 +18,10 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/publicinquiry.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     /*height: 200px;*/
     height: 270px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 95px;
     color: #fff;
 }
 
