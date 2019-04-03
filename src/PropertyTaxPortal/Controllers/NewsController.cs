@@ -12,9 +12,11 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Http;
 using System.Drawing;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PropertyTaxPortal.Controllers
 {
+    [Authorize]
     public class NewsController : Controller
     {
         private readonly PTPContext _context;

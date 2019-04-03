@@ -3,86 +3,107 @@
     ViewData["Title"] = "Property Tax Portal Site Administration";
 }
 
-<table style="width:1620px">
-    <tr>
-        <td style="height:33px;background-color:black; width:1620px; text-align:center;">
-            <h8 style="color:white;"><b>Property Tax Portal Site Administration</b></h8>
-        </td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-    <tr>       
-        <td>
-            <table border="1" style="width:1620px">
-                <tr>
-                    <td align="center">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="~/images/faq.gif" />
-                                        </td>
-                                        <td>
-                                            <a asp-area="" asp-controller="FAQs" asp-action="Index" style="color:goldenrod;">FAQs Administration</a>
-                                        </td>
-                                        <td>
-                                            - Add, Modify, and Delete Frequently Asked Questions
-                                        </td>
-                                    </tr>
-                                </table>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="~/images/news.jpg" />
-                                        </td>
-                                        <td>
-                                            <a asp-area="" asp-controller="News" asp-action="Index" style="color:goldenrod;">News Administration</a>
-                                        </td>
-                                        <td>
-                                            - Add, Modify, and Delete News
-                                        </td>
-                                    </tr>
-                                </table>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="~/images/categories.jpg" />
-                                        </td>
-                                        <td>
-                                            <a asp-area="" asp-controller="Categories" asp-action="Index" style="color:goldenrod;">Categories Administration</a>
-                                        </td>
-                                        <td>
-                                            - Add, Modify, and Delete Categories
-                                        </td>
-                                    </tr>
-                                </table>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<nav>
+    <nav>
+        <ul class="nav nav-pills pull-right ml-auto">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li role="presentation"><h4>Welcome @User.Identity.Name</h4></li>
+                <li role="presentation" class="active">
+                    <form method="post" asp-controller="Auth" asp-action="SignOut">
+                        <button type="submit" class="btn btn-primary">Sign Out</button>
+                    </form>
+                </li>
+                <table style="width:1620px">
+                    <tr>
+                        <td style="height:33px;background-color:black; width:1620px; text-align:center;">
+                            <h8 style="color:white;"><b>Property Tax Portal Site Administration</b></h8>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="1" style="width:1620px">
+                                <tr>
+                                    <td align="center">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="~/images/faq.gif" />
+                                                        </td>
+                                                        <td>
+                                                            <a asp-area="" asp-controller="FAQs" asp-action="Index" style="color:goldenrod;">FAQs Administration</a>
+                                                        </td>
+                                                        <td>
+                                                            - Add, Modify, and Delete Frequently Asked Questions
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="~/images/news.jpg" />
+                                                        </td>
+                                                        <td>
+                                                            <a asp-area="" asp-controller="News" asp-action="Index" style="color:goldenrod;">News Administration</a>
+                                                        </td>
+                                                        <td>
+                                                            - Add, Modify, and Delete News
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="~/images/categories.jpg" />
+                                                        </td>
+                                                        <td>
+                                                            <a asp-area="" asp-controller="Categories" asp-action="Index" style="color:goldenrod;">Categories Administration</a>
+                                                        </td>
+                                                        <td>
+                                                            - Add, Modify, and Delete Categories
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
 
+
+
+            }
+            else
+            {
+                <li role="presentation" class="active"><a asp-controller="Auth" asp-action="SignIn">Sign In</a></li>
+            }
+        </ul>
+    </nav>
+</nav>
 
 
 

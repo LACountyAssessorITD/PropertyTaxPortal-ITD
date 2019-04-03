@@ -8,84 +8,94 @@
 }
 
 <section class="container-fluid section-header-overview">
-    <h2 class="display-4">@Localizer["OVERVIEW"]</h2>
+    <h2 class="display-4"> @Localizer["OVERVIEW"] </h2>
 </section>
 
-<!-- Tabbed Navigation --> 
+<!-- Overview Tabbed Navigation --> 
 
 <section class="page-tabs">
     <br />
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs nav-justified">
+        
         <li class="nav-item">
             <a href="#overview" class="nav-link" role="tab" data-toggle="tab">@Localizer["Property Tax Overview"]</a>   
         </li>
+        
         <li class="nav-item">
             <a href="#howitworks" class="nav-link" role="tab" data-toggle="tab">@Localizer["How The Property Tax System Works"]</a>   
         </li>
+        
         <li class="nav-item">
             <a href="#areasresp" class="nav-link" role="tab" data-toggle="tab">@Localizer["Areas of Responsibility"]</a>   
         </li>
+        
+        
     </ul>
-</section>
 
-<!-- Main Page Container -->
+    <!-- Main Page Container -->
 
-<section class="overview-container">
-    <div role="tabPanel" class="tab-pane active fade in" id="overview">
+    <section class="overview-container">
+        <div role="tabpanel" class="tab-pane active fade in" id="overview">
 
-        <section class="pto-header">
-            <img/>
-            <div>
-                <h3>@Localizer["Property Tax Overview"]</h3>
-                <p>
-                    @Localizer["It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, and Treasuer & Tax Collector to produce and account for your property tax bill and payment."]
-                </p>
-            </div>
-        </section>
-
-        <section class="pto-pills">
-            <br />
-            <ul class="nav nav-pills nav-justified">
-                <li class="nav-item">
-                    <a href="#assessor" class="nav-link active" role="tab" data-toggle="tab">@Localizer["Assessor"]</a>   
-                </li>
-                <li class="nav-item">
-                    <a href="#aab" class="nav-link" role="tab" data-toggle="tab">@Localizer["Assessment & Appeals Board"]</a>   
-                </li>
-                <li class="nav-item">
-                    <a href="#auditor" class="nav-link" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>   
-                </li>
-                <li class="nav-item">
-                    <a href="#ttc" class="nav-link" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
-                </li>
-            </ul>
-            <section class="pto-dept-container">
-                <div role="tabPanel" class="tab-pane active fade" id="assessor">
-                    @Localizer["INFORMATION ABOUT ASSESSOR HERE"]
-                </div>
-
-                <div role="tabPanel" class="tab-pane active fade" id="aab">
-                    @Localizer["INFORMATION ABOUT ASSESSMENT APPEALS BOARD HERE"]
-                </div>
-
-                <div role="tabPanel" class="tab-pane active fade" id="auditor">
-                    @Localizer["INFORMATION ABOUT AUDITOR CONTROLLER HERE"]
-                </div>
-
-                <div role="tabPanel" class="tab-pane active fade" id="ttc">
-                    @Localizer["INFORMATION ABOUT TREASURER HERE"]
+            <section class="pto-header">
+                <div class="pto-image"></div>
+                <div class="pto-title">
+                    <h3>@Localizer["Property Tax Overview"]</h3>
+                    <p>
+                        @Localizer["It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, and Treasuer & Tax Collector to produce and account for your property tax bill and payment."]
+                    </p>
                 </div>
             </section>
-        </section>
-    </div>
 
-    <div role="tabPanel" class="tab-pane active fade" id="howitworks">
-        How it works section 
-    </div>
+            <!-- PTO department buttons -->
+            <section class="pto-pills">
+                <br />
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a href="#assessor" class="nav-link active" role="tab" data-toggle="tab">@Localizer["Assessor"]</a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aab" class="nav-link" role="tab" data-toggle="tab">@Localizer["Assessment & Appeals Board"]</a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="#auditor" class="nav-link" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>   
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ttc" class="nav-link" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
+                    </li>
+                </ul>
 
-    <div role="tabPanel" class="tab-pane active fade" id="areasresp">
-        Areas of Responsibility
-    </div>
+                <!-- Department Information Container --> 
+                <section class="pto-dept-container">
+                    <div role="tabpanel" class="tab-pane active fade" id="assessor">
+                        @Localizer["INFORMATION ABOUT ASSESSOR HERE"]
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane active fade" id="aab">
+                        @Localizer["INFORMATION ABOUT ASSESSMENT APPEALS BOARD HERE"]
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane active fade" id="auditor">
+                        @Localizer["INFORMATION ABOUT AUDITOR CONTROLLER HERE"]
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane active fade" id="ttc">
+                        @Localizer["INFORMATION ABOUT TREASURER HERE"]
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <div role="tabpanel" class="tab-pane active fade" id="howitworks">
+            How it works section 
+        </div>
+
+        <div role="tabpanel" class="tab-pane active fade" id="areasresp">
+            Areas of Responsibility
+        </div>
+    </section>
 </section>
+
+
 
 

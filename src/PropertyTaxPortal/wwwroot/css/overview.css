@@ -1,0 +1,33 @@
+.pto-header{
+    display: inline-block;
+}
+
+.pto-image {
+    background-image: url('../images/lacountyparcelsize.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 600px;
+    color: #fff;
+    float: left;
+}
+
+.pto-title {
+    float: right;
+}
+
+.section-header-overview {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/overview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 250px;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.section-header-overview .display-4 {
+    font-size: 350%;
+    font-weight: 500 !important;
+}
