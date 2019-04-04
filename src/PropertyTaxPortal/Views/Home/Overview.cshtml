@@ -37,16 +37,16 @@
 
             else if (ViewBag.id == 1)
             {
-                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'Overview')">@Localizer["Property Tax Overview"]</button>
-                <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openContent(event, 'HowItWorks')">@Localizer["How The Property Tax System Works"]</button>
-                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'AreasRespons')">@Localizer["Areas of Responsibility"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" onclick="openContent(event, 'Overview')">@Localizer["Property Tax Overview"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" id="defaultOpen" onclick="openContent(event, 'HowItWorks')">@Localizer["How The Property Tax System Works"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" onclick="openContent(event, 'AreasRespons')">@Localizer["Areas of Responsibility"]</button>
             }
 
             else if (ViewBag.id == 2)
             {
-                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'Overview')">@Localizer["Property Tax Overview"]</button>
-                <button class="col-md-2 col-sm-12 tablinks" onclick="openContent(event, 'HowItWorks')">@Localizer["How The Property Tax System Works"]</button>
-                <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openContent(event, 'AreasRespons')">@Localizer["Areas of Responsibility"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" onclick="openContent(event, 'Overview')">@Localizer["Property Tax Overview"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" onclick="openContent(event, 'HowItWorks')">@Localizer["How The Property Tax System Works"]</button>
+                <button class="col-md-4 col-sm-12 tablinks" id="defaultOpen" onclick="openContent(event, 'AreasRespons')">@Localizer["Areas of Responsibility"]</button>
             }
 
         </div>
@@ -54,76 +54,42 @@
 </section>
 
 <div id="Overview" class="tabcontent active active-tab">
-    overview content
-</div>
-<div id="HowItWorks" class="tabcontent" style="display:none">
-    how it works content
-</div>
-<div id="AreasRespons" class="tabcontent" style="display:none">
-    responsibility content
-</div>
-
-<!-- Overview Tabbed Navigation --> 
-
-<section class="page-tabs">
-    <br />
-    <br />
-    <ul class="nav nav-tabs nav-justified">
-        
-        <li class="nav-item active">
-            <a href="#overview" class="nav-link" role="tab" data-toggle="tab">@Localizer["Property Tax Overview"]</a>   
-        </li>
-        
-        <li class="nav-item">
-            <a href="#howitworks" class="nav-link" role="tab" data-toggle="tab">@Localizer["How The Property Tax System Works"]</a>   
-        </li>
-        
-        <li class="nav-item">
-            <a href="#areasresp" class="nav-link" role="tab" data-toggle="tab">@Localizer["Areas of Responsibility"]</a>   
-        </li>
-        
-        
-    </ul>
-
-    <!-- Main Page Container -->
-
-    <section class="overview container-fluid tab-content">
-        <br />
-        <div role="tabpanel" class="col tab-pane active fade in" id="overview">
-            <section class="pto-header">
-                <div class="row">
-                    <div class="col pto-image img-fluid"></div>
-                    <div class="col pto-title" align="center">
+    <section class="pto-header">
+                <div class="row text-center">
+                    <div class="col-md-6" >
+                        <img src="~/images/lacountymap.jpg" class="image-fluid center-block"/>
+                    </div>
+                    <div class="col-md-6 pto-title" >
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <h3>@Localizer["Property Tax Overview"]</h3>
+                        <h3 style="color:white">@Localizer["Property Tax Overview"]</h3>
                         <br />                        
-                        <p>
+                        <p style="color:white; padding-left: 80px; padding-right:80px;">
                             @Localizer["It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, and Treasuer & Tax Collector to produce and account for your property tax bill and payment."]
                         </p>
                     </div>
                 </div>
                 
-            </section>
+            
 
             <!-- PTO department buttons -->
             <section class="pto-pills">
                 <br />
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
-                        <a href="#assessor" class="nav-link active" role="tab" data-toggle="tab">@Localizer["Assessor"]</a>   
+                        <a href="#assessor" class="btn btn-lg active depbtn" role="tab" data-toggle="tab">@Localizer["Assessor"]</a>   
                     </li>
                     <li class="nav-item">
-                        <a href="#aab" class="nav-link" role="tab" data-toggle="tab">@Localizer["Assessment & Appeals Board"]</a>   
+                        <a href="#aab" class="btn btn-lg depbtn" role="tab" data-toggle="tab">@Localizer["Assessment & Appeals Board"]</a>   
                     </li>
                     <li class="nav-item">
-                        <a href="#auditor" class="nav-link" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>   
+                        <a href="#auditor" class="btn btn-lg depbtn" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>   
                     </li>
                     <li class="nav-item">
-                        <a href="#ttc" class="nav-link" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
+                        <a href="#ttc" class="btn btn-lg depbtn" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
                     </li>
                 </ul>
                 <br />
@@ -131,7 +97,7 @@
                 <section class="pto-dept-container tab-content">
                     <div role="tabpanel" class="tab-pane active" id="assessor">
                         <div class="row">
-                           <div class="col">
+                           <div class="col" >
                                 <br />
                                 <h4>@Localizer["Assessor"]</h4>
                                 <br />
@@ -139,10 +105,12 @@
                             </div>
                             <div class="col" align="center">
                                 <br />
-                                <img src="../images/assessor.png" class="img-responsive" alt="screen"/>
-                            </div> 
+                                <img src="~/images/assessor.png" class="img-responsive" alt="screen"/>
+                            </div>
+                            
                         </div>
-                                                
+                        <br />
+                        <br />                     
                     </div>
 
                     <div role="tabpanel" class="tab-pane " id="aab">
@@ -155,9 +123,11 @@
                             </div>
                             <div class="col" align="center">
                                 <br />
-                                <img src="../images/aapb.png" class="img-responsive" alt="screen"/>
+                                <img src="~/images/aapb.png" class="img-responsive" alt="screen"/>
                             </div>
                         </div>
+                        <br />
+                        <br />
                     </div>
 
                     <div role="tabpanel" class="tab-pane " id="auditor">
@@ -170,9 +140,11 @@
                             </div>
                             <div class="col" align="center">
                                 <br />
-                                <img src="../images/audcont-icon.png" class="img-responsive" alt="screen"/>
+                                <img src="~/images/audcont-icon.png" class="img-responsive" alt="screen"/>
                             </div>
                         </div>
+                        <br />
+                        <br />
                     </div>
 
                     <div role="tabpanel" class="tab-pane " id="ttc">
@@ -185,23 +157,21 @@
                             </div>
                             <div class="col" align="center">
                                 <br />
-                                <img src="../images/ttc-icon.png" class="img-responsive" alt="screen"/>
+                                <img src="~/images/ttc-icon.png" class="img-responsive" alt="screen"/>
                             </div>
                         </div>
+                        <br />
+                        <br />
                     </div>
                 </section>
-            </section>
-        </div>
-
-        <div role="tabpanel" class="tab-pane active fade" id="howitworks">
-            How it works section 
-        </div>
-
-        <div role="tabpanel" class="tab-pane active fade" id="areasresp">
-            Areas of Responsibility
-        </div>
     </section>
-</section>
+</div>
+<div id="HowItWorks" class="tabcontent" style="display:none">
+    how it works content
+</div>
+<div id="AreasRespons" class="tabcontent" style="display:none">
+    responsibility content
+</div>
 
 <script>
     function openContent(evt, TabName) {

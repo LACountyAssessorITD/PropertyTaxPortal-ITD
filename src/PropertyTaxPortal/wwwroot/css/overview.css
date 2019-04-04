@@ -1,5 +1,6 @@
 .pto-header{
-    display: inline-block;
+    
+    width: auto;
 }
 
 .assessor-image {
@@ -7,17 +8,25 @@
     color: #fff;
 }
 
+.depbtn {
+    background-color: #454E57;
+    color: white;
+} 
+
 .pto-image {
-    background-image: url('../images/lacparcelsize.jpg');
+    background-image: url('../images/LA_County_Map.jpg');
     background-size: cover;
     background-position: center;
-    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
     
     color: #fff;
 }
 
 .pto-title {
-    background-color: #1C2834;
+    background-color: #454E57;
 }
 
 
@@ -92,3 +101,4 @@
 /* .tab.container {
     max-width: 1400px;
 } */
+
