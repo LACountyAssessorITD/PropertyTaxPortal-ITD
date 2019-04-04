@@ -226,13 +226,14 @@ nav a img {
 }
 
 .dropdown-menu {
-    background-color: rgba(255, 255, 255);
-    font-size: 0.8rem;
+    background-color:white;
+    font-size: 0.9rem;
     line-height: 1.3rem;
     padding: 30px;
     margin-top: 0;
     overflow: hidden;
     border-radius: 0;
+    color:#000;
 }
 
 
