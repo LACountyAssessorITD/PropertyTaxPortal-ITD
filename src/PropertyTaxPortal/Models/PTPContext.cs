@@ -46,9 +46,7 @@ namespace PropertyTaxPortal.Models
             modelBuilder.HasAnnotation("ProductVersion", "2.2.3-servicing-35854");
             modelBuilder.Entity<News>(entity =>
             {
-                entity.Property(e => e.NewsId)
-                    .HasColumnName("newsID")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.NewsId).HasColumnName("newsID");
 
                 entity.Property(e => e.Active).HasColumnName("active");
 
@@ -58,7 +56,6 @@ namespace PropertyTaxPortal.Models
 
                 entity.Property(e => e.Caption)
                     .HasColumnName("caption")
-                    .HasMaxLength(300)
                     .IsUnicode(false);
 
                 entity.Property(e => e.EndOn)
@@ -77,7 +74,6 @@ namespace PropertyTaxPortal.Models
 
                 entity.Property(e => e.Title)
                     .HasColumnName("title")
-                    .HasMaxLength(300)
                     .IsUnicode(false);
 
                 entity.Property(e => e.UploadId).HasColumnName("uploadId");

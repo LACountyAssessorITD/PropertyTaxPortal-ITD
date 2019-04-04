@@ -23,12 +23,13 @@
         <link href="~/css/queires.css" rel="stylesheet" />
         <link href="~/css/Publicinquiry.css" rel="stylesheet" />
         <link href="~/css/FAQTAB.css" rel="stylesheet" />
+        <link href="~/css/contact.css" rel="stylesheet" />
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,500,600" rel="stylesheet">
 
         <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
 
@@ -43,6 +44,7 @@
         <link href="~/css/Publicinquiry.css" rel="stylesheet" />
         <link href="~/css/queires.css" rel="stylesheet" />
         <link href="~/css/FAQTAB.css" rel="stylesheet" />
+        <link href="~/css/contact.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
         <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
@@ -198,11 +200,11 @@
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown">
                                 <ul>
-                                    <li><a href="">@Localizer["Assessor"]</a></li>
-                                    <li><a href="">@Localizer["Auditor/Controller"]</a></li>
-                                    <li><a href="">@Localizer["Treasurer & Tax Collector"]</a></li>
-                                    <li><a href="">@Localizer["Assessment Appeals Board"]</a></li>
-                                    <li><a href="">@Localizer["LA County Contacts"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="0" asp-action="ContactUs">@Localizer["Assessor"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="1" asp-action="ContactUs">@Localizer["Auditor/Controller"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">@Localizer["Treasurer & Tax Collector"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">@Localizer["Assessment Appeals Board"]</a></li>
+                                    <li>@Localizer["LA County Contacts"]</li>
                                     <li><a asp-controller="Home" asp-action="PublicInquiry">@Localizer["Public Inquiry"]</a></li>
 
 

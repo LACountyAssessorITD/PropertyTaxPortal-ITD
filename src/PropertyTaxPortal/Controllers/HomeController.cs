@@ -39,7 +39,8 @@ namespace PropertyTaxPortal.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var context = _context.News.Where(b => b.Active == 1).OrderBy(b => b.SOrder).ToList();
+            return View(context);
         }
 
         public IActionResult Overview(int?id)
@@ -69,8 +70,19 @@ namespace PropertyTaxPortal.Controllers
             FaqFinalModel.tabid = id;            
             return View(FaqFinalModel);
         }
-       
 
+        /// <summary>
+        /// Contact Us
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult ContactUs(int?id)
+        {
+            dynamic ContactUsModel = new System.Dynamic.ExpandoObject();
+            ContactUsModel.tabid = id;
+            return View(ContactUsModel);
+
+        }
+       
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
+@model IEnumerable<PropertyTaxPortal.Models.News>
 
 @inject IViewLocalizer Localizer
 
@@ -11,6 +12,9 @@
 <!---------------------------------------------------------------------->
 <!----------------------------------INDEX------------------------------->
 <!---------------------------------------------------------------------->
+
+
+
 <section class="container section-news">
     <div class="row news-feed">
         <div class="col-sm-3 latest-news">
@@ -19,15 +23,24 @@
         <div class="col-sm-9 news-car">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p>Subscribe to the Treasurer and Tax Collector's Email Notification Service</p>
-                    </div>
-                    <div class="carousel-item">
-                        <p>Los Angeles County Tax Collector Introduces an Online Property Tax Management System</p>
-                    </div>
-                    <div class="carousel-item">
-                        <p>Subscribe to the Treasurer and Tax Collector's Email Notification Service </p>
-                    </div>
+                    @{int counter = 0;}
+                    @foreach (var item in Model)
+                    {
+                        @if (counter == 0)
+                        {
+                            <div class="carousel-item active">
+                                <p>@Html.DisplayFor(modelItem => item.Title)</p>
+                                @{counter++;}
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="carousel-item">
+                                <p>@Html.DisplayFor(modelItem => item.Title)</p>
+
+                            </div>
+                        }
+                    }
                 </div>
             </div>
         </div>
