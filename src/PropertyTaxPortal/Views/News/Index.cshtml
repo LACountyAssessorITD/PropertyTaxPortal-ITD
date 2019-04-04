@@ -1,62 +1,84 @@
-﻿@model ReflectionIT.Mvc.Paging.PagingList<PropertyTaxPortal.Models.NEWS>
-@using ReflectionIT.Mvc.Paging
-@addTagHelper *, ReflectionIT.Mvc.Paging
+﻿@model IEnumerable<PropertyTaxPortal.Models.News>
 
-@*@model IEnumerable<PropertyTaxPortal.Models.NEWS>
 @{
     ViewData["Title"] = "Index";
-}*@
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<div style="text-align: center; font-size:35px;font-weight:bold; border:1px; width:1000px">
-    News Administration
-</div>
+<h1>Index</h1>
 
-<nav aria-label="Suppliers navigation example">
-    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
-</nav>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
 <table class="table">
     <thead>
         <tr>
-
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOrder)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FeaturedCode)
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.Displayed)
+                @Html.DisplayNameFor(model => model.Body)
             </th>
             <th>
-                <a asp-action="CreateorEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i>Create News</a>
+                @Html.DisplayNameFor(model => model.Caption)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UploadId)
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Title)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FeaturedCode)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Displayed)
-                  
-                </td>
-                <td>
-                    <a asp-action="DownArrow" asp-route-pagenum="@Model.PageIndex" asp-route-id="@item.NewsID"><img src="~/images/downArrow.gif" /></a>
-                    <a asp-action="UpArrow" asp-route-id="@item.NewsID" asp-route-pagenum="@Model.PageIndex"><img src="~/images/upArrow.gif" sizes="30px" /> </a> |
-                    <a asp-action="CreateorEdit" asp-route-id="@item.NewsID">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.NewsID">Delete</a>
-                </td>
-            </tr>
-        }
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Body)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Caption)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewsDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UploadId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.NewsId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.NewsId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.NewsId">Delete</a>
+            </td>
+        </tr>
+}
     </tbody>
 </table>
-<nav aria-label="Suppliers navigation example">
-    <vc:pager paging-list="@Model" />
-</nav>
