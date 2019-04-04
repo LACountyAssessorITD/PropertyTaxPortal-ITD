@@ -46,9 +46,7 @@ namespace PropertyTaxPortal.Models
             modelBuilder.HasAnnotation("ProductVersion", "2.2.3-servicing-35854");
             modelBuilder.Entity<News>(entity =>
             {
-                entity.Property(e => e.NewsId)
-                    .HasColumnName("newsID")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.NewsId).HasColumnName("newsID");
 
                 entity.Property(e => e.Active).HasColumnName("active");
 
