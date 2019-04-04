@@ -57,7 +57,7 @@ namespace PropertyTaxPortal
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            //services.AddDbContext<PTPContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("Devconnection")));
+            //services.AddDbContext<PTPContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("ptp_connect")));
             services.AddDbContext<PTPContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("ptp_connect")));
 
             //---------------------------CONFIGURE LOCALIZATION-----------------------------//
@@ -80,7 +80,7 @@ namespace PropertyTaxPortal
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
             });
-            var users = new Dictionary<string, string> { { "Daniel", "password" }, {"admin", "password" }, { "willie", "willie" } };
+            var users = new Dictionary<string, string> { { "Daniel", "password" }, { "willie", "willie" } };
             services.AddSingleton<IUserService>(new AdminUserService(users));
 
             services.AddAuthentication(options =>

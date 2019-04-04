@@ -11,6 +11,9 @@ namespace PropertyTaxPortal.Models
         public PTPContext(DbContextOptions<PTPContext> options) : base(options)
         { }
 
+        public PTPContext() { 
+}
+
         public DbSet<FAQ> faq { get; set; }
 
         public DbSet<NEWS> News { get; set; }
@@ -26,5 +29,7 @@ namespace PropertyTaxPortal.Models
         public DbSet<States> states { get; set; }
 
         public DbSet<ImageModel> imageModel { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }

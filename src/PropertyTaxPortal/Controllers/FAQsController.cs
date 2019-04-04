@@ -27,7 +27,7 @@ namespace PropertyTaxPortal.Controllers
         public async Task<IActionResult> Index(int page = 1)
         {
             var query = _context.faq.FromSql("PTP_getAllFAQs").OrderBy(f => f.sOrder);
-            var model = await PagingList.CreateAsync(query, 2, page);
+            var model = await PagingList.CreateAsync(query, 10, page);
             return View(model);
         }
 

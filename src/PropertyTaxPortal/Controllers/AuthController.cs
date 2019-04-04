@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authentication;
 using PropertyTaxPortal.Services;
 using PropertyTaxPortal.Models;
 
-namespace Pluralsight.AspNetCore.Auth.Web.Controllers
+namespace PropertyTaxPortal.Controllers
 {
     [Route("auth")]
     public class AuthController : Controller
@@ -42,7 +42,7 @@ namespace Pluralsight.AspNetCore.Auth.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user;
+                Services.User user;
                 if (await _userService.ValidateCredentials(model.Username, model.Password, out user))
                 {
                     await SignInUser(user.Username);
