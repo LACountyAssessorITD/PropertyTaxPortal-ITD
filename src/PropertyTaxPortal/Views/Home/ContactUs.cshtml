@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<section class="Contact-Section">
+    <div class="bgimg">
+        <br />
+        <br />
+        <div class="contact-header">&nbsp;&nbsp;&nbsp;@Localizer["CONTACT INFORMATION"] </div>
+    </div>
+    <section class="tab-background">
+        <div class="tab container">
+            <div class="row">
+                @if (Model.tabid == 0)
+                {
+                    <button class="col-md-3 col-sm-16 tablinks" id="defaultOpen" onclick="openCity(event, 'Assessor')">@Localizer["Assessor"]</button>
+                    <button class="col-md-3 col-sm-16 tablinks" onclick="openCity(event, 'Auditor')">@Localizer["Auditor/Controller"]</button>
+                    <button class="col-md-3 col-sm-16 tablinks" onclick="openCity(event, 'Treasurer')">@Localizer["Treasurer & Tax Collector"]</button>
+                    <button class="col-md-3 col-sm-16 tablinks" onclick="openCity(event, 'Assessment')">@Localizer["Assessment Appeals Board"]</button>
+
+                }
+                else if (Model.tabid == 1)
+                {
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Assessor')">@Localizer["Assessor"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Auditor')">@Localizer["Auditor/Controller"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Treasurer')">@Localizer["Treasurer & Tax Collector"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Assessment')">@Localizer["Assessment Appeals Board"]</button>
+                }
+                else if (Model.tabid == 2)
+                {
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Assessor')">@Localizer["Assessor"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Auditor')">@Localizer["Auditor/Controller"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Treasurer')">@Localizer["Treasurer & Tax Collector"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Assessment')">@Localizer["Assessment Appeals Board"]</button>
+                }
+                else
+                {
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Assessor')">@Localizer["Assessor"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Auditor')">@Localizer["Auditor/Controller"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" onclick="openCity(event, 'Treasurer')">@Localizer["Treasurer & Tax Collector"]</button>
+                    <button class="col-md-3 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Assessment')">@Localizer["Assessment Appeals Board"]</button>
+                }
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="column">
+            <img src="~/images/contact-phone.png" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+           
+        </div>
+    </div>
+
+
+
+
+</section>

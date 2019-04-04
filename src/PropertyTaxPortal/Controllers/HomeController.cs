@@ -69,8 +69,19 @@ namespace PropertyTaxPortal.Controllers
             FaqFinalModel.tabid = id;            
             return View(FaqFinalModel);
         }
-       
 
+        /// <summary>
+        /// Contact Us
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult ContactUs(int?id)
+        {
+            dynamic ContactUsModel = new System.Dynamic.ExpandoObject();
+            ContactUsModel.tabid = id;
+            return View(ContactUsModel);
+
+        }
+       
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
