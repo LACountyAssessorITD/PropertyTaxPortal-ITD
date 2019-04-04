@@ -56,7 +56,6 @@ namespace PropertyTaxPortal.Models
 
                 entity.Property(e => e.Caption)
                     .HasColumnName("caption")
-                    .HasMaxLength(300)
                     .IsUnicode(false);
 
                 entity.Property(e => e.EndOn)
@@ -75,7 +74,6 @@ namespace PropertyTaxPortal.Models
 
                 entity.Property(e => e.Title)
                     .HasColumnName("title")
-                    .HasMaxLength(300)
                     .IsUnicode(false);
 
                 entity.Property(e => e.UploadId).HasColumnName("uploadId");

@@ -39,7 +39,8 @@ namespace PropertyTaxPortal.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var context = _context.News.Where(b => b.Active == 1).OrderBy(b => b.SOrder).ToList();
+            return View(context);
         }
 
         public IActionResult Overview(int?id)
