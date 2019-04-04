@@ -20,27 +20,28 @@ using Microsoft.Extensions.Localization;
 using PropertyTaxPortal.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
+
 namespace PropertyTaxPortal
 {
     public class Startup
     {
-        //public Startup(IConfiguration configuration)
-        //{
-        //    Configuration = configuration;
-        //}
-
-        public Startup(IHostingEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
 
+        //public Startup(IHostingEnvironment env)
+        //{
+        //    var builder = new ConfigurationBuilder()
+        //        .SetBasePath(env.ContentRootPath)
+        //        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        //        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+        //        .AddEnvironmentVariables();
+        //    Configuration = builder.Build();
+        //}
+
         public IConfiguration Configuration { get; }
-        
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -57,8 +58,9 @@ namespace PropertyTaxPortal
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            //services.AddDbContext<PTPContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("Devconnection")));
+            //services.AddDbContext<PTPContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ptp_connect")));
             services.AddDbContext<PTPContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("ptp_connect")));
+
 
             //---------------------------CONFIGURE LOCALIZATION-----------------------------//
 
@@ -66,7 +68,7 @@ namespace PropertyTaxPortal
 
             services.AddMvc()
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-            .AddDataAnnotationsLocalization();          
+            .AddDataAnnotationsLocalization();
             services.Configure<RequestLocalizationOptions>(options =>
             {
                 var supportedCultures = new List<CultureInfo>
@@ -80,7 +82,7 @@ namespace PropertyTaxPortal
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
             });
-            var users = new Dictionary<string, string> { { "Daniel", "password" }, {"admin", "password" }, { "willie", "willie" } };
+            var users = new Dictionary<string, string> { { "Daniel", "password" }, { "willie", "willie" } };
             services.AddSingleton<IUserService>(new AdminUserService(users));
 
             services.AddAuthentication(options =>
@@ -108,7 +110,7 @@ namespace PropertyTaxPortal
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

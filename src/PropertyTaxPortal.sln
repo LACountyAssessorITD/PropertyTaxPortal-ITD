@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyTaxPortal", "PropertyTaxPortal\PropertyTaxPortal.csproj", "{64C62CC8-5F1D-4C60-82E2-7CF0CE7A3DC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyTaxPortal", "PropertyTaxPortal\PropertyTaxPortal.csproj", "{64C62CC8-5F1D-4C60-82E2-7CF0CE7A3DC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

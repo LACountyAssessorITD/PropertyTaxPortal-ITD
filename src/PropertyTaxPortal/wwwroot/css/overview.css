@@ -14,7 +14,11 @@
 } 
 
 .pto-image {
+<<<<<<< HEAD
     background-image: url('../images/LA_County_Map.jpg');
+=======
+    background-image: url('../images/ladropdown-menucparcelsize.jpg');
+>>>>>>> 3a30e64f8625946caeaa1140d5a6d14e64d5f875
     background-size: cover;
     background-position: center;
     max-height: 100%;

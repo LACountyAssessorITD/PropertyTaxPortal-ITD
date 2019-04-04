@@ -5,19 +5,21 @@
     /* Style the list */
 }
 
-.faq-button{
+.faq-button {
     background-color: #fff;
-    border: solid 1px #000;
+    border: solid 0.5px #ddd;
     color: #000;
+    outline: 1px;
+    transition: 0.3s;
 }
 .faq-Anchor-button {
     max-width: 800px;
     background-color: #fff;
-    border: solid 1px #000;
+    border: solid 0.5px #ddd;
     color: #000;
     width: 1000px;
     text-align: left;
-    /*padding: 7px;*/
+    padding: 7px;
     border-radius: 5px;
 }
 .bgimg {
@@ -36,17 +38,7 @@
     background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
-/* .tab button {
-    background-color: inherit;
-    float: left;
-    outline: 1px;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    border-left: 1px;
-} */
+
 
     /* Change background color of buttons on hover */
     .tab button:hover {
@@ -143,16 +135,18 @@
 
 .section-center {
     text-align: center;
+    color:white;
 }
 
 .faq-header {
     width: 100%;
     text-align: center;
-    font-size: 270%;
-    color: white;
-    /*background-color: rgba(0,0,0,0.5);*/
+    font-size:270%;
     font-weight: bold;
+    color: white;
+
 }
+
 
 .faq-subheading {
     width: 100%;
@@ -160,7 +154,6 @@
     height: 43%;
     padding-top: 5px;
     color: white;
-    /*background-color:rgba(0,0,0,0.5);*/
 }
 
 .button-size {
@@ -171,5 +164,10 @@
     background-color: #343a40;
     /*border: 1px solid #fff;*/
     top: 1200px;
+}
+.sub-sub-heading {
+    font-size:20px;
+    font-weight:bold;
+    padding-bottom:4px;
 }
 
