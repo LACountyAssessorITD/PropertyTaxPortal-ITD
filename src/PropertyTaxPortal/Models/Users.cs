@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace PropertyTaxPortal.Models
 {
-    public class User
+    public partial class Users
     {
-        [Key]
         public string Username { get; set; }
         public string Password { get; set; }
-
     }
 }
