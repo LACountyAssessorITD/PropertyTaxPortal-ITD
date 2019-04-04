@@ -28,7 +28,7 @@ namespace PropertyTaxPortal.Models
 
         public DbSet<States> states { get; set; }
 
-        public DbSet<ImageModel> imageModel { get; set; }
+       
 
         public DbSet<User> Users { get; set; }
     }
