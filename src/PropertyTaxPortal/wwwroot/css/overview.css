@@ -1,0 +1,94 @@
+.pto-header{
+    display: inline-block;
+}
+
+.assessor-image {
+    background-image: url('../images/assessor.png');
+    color: #fff;
+}
+
+.pto-image {
+    background-image: url('../images/lacparcelsize.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    
+    color: #fff;
+}
+
+.pto-title {
+    background-color: #1C2834;
+}
+
+
+.section-header-overview {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/overview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 250px;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.section-header-overview .display-4 {
+    font-size: 350%;
+    font-weight: 500 !important;
+}
+
+.tab-background {
+    background-color: #343a40;
+    /*border: 1px solid #fff;*/
+    top: 1200px;
+}
+
+/* .tab button {
+    background-color: #343a40;
+    float: none;
+    outline: 1px;
+    border-right-color: white;
+    border-top-color: #343a40;
+    cursor: pointer;
+    padding: 16px 18px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-left: 1px;
+    color: white;
+    position: relative;
+} */
+
+/* .tablinks {
+    border: 1px solid #000;
+    position: relative;
+} */
+
+.button-size {
+    width: 30%;
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+    background-color: #ddd;
+} */
+
+/* Create an active/current tablink class */
+/* .tab button.active {
+    background-color: #ccc;
+} */
+
+/* .section-tabs button {
+    width: 100%;
+}
+
+.section-tabs .btn {
+    text-align: left;
+} */
+
+.section-center {
+    text-align: center;
+}
+
+/* .tab.container {
+    max-width: 1400px;
+} */

@@ -42,9 +42,16 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        public IActionResult Overview()
+        public IActionResult Overview(int?id)
         {
-            return View();
+            if (id == null) {
+                return View();
+            } else {
+                ViewBag.id = id;
+                
+                return View();
+            }
+            
         }
 
         
