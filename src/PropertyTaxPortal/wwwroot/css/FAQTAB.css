@@ -81,6 +81,12 @@
     margin-bottom: 10px;
     border-radius: 5px 5px;
 }
+.section-tabs .btn:focus{
+    box-shadow:none !important;
+}
+.section-tabs .dropdown div{
+    font-size: 100%;
+}
 
 .FAQ-Section-2 {
     padding-bottom:40px;
@@ -115,12 +121,12 @@
 
     /* Change background color of buttons on hover */
     .tab button:hover {
-        background-color: #ddd;
+        background-color: grey;
     }
 
     /* Create an active/current tablink class */
     .tab button.active {
-        background-color: #ccc;
+        background-color: grey;
     }
 
 /* Style the tab content */
