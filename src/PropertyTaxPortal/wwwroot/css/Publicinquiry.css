@@ -1,13 +1,11 @@
 ﻿.section-form-head {
-    max-width: 900px;
-    
-    
+    max-width: 900px; 
 }
 
 .section-form {
-    max-width: 900px;
-    
+    max-width: 900px;   
 }
+
 .form-wrapper {
     height: 100%;
     background-color: #fff;

@@ -5,6 +5,11 @@
     /* Style the list */
 }
 
+.Section-Contact-Content p {
+    font-size: 100% !important;
+    padding-top: 50px;
+}
+
 .faq-button {
     background-color: #fff;
     border: solid 1px #000;
@@ -50,15 +55,15 @@
     border-left: 1px;
 } */
 
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-        background-color: #ddd;
-    }
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
 
-    /* Create an active/current tablink class */
-    .tab button.active {
-        background-color: #ccc;
-    }
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
 
 /* Style the tab content */
 .tabcontent {
@@ -72,15 +77,13 @@
     max-width: 800px;
 }
 
-    .section-tabs button {
-        width: 100%;
-    }
+.section-tabs button {
+    width: 100%;
+}
 
-
-
-    .section-tabs .btn {
-        text-align: left;
-    }
+.section-tabs .btn {
+    text-align: left;
+}
 
 .section-center {
     text-align: center;
@@ -95,9 +98,11 @@
 .FAQ-Section-2 {
     padding-bottom: 40px;
 }
+
 /*.section-tabs element.style {
     transform: none;
 }*/
+
 .tablinks {
     border: 1px solid #000;
     position: relative;
@@ -123,18 +128,17 @@
     position: relative;
 }
 
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-        background-color: #ddd;
-    }
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
 
-    /* Create an active/current tablink class */
-    .tab button.active {
-        background-color: #ccc;
-    }
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
 
 /* Style the tab content */
-
 .section-tabs button {
     width: 100%;
 }
@@ -173,4 +177,23 @@
     background-color: #343a40;
     /*border: 1px solid #fff;*/
     top: 1200px;
+}
+
+.contact-pto-header {
+    width: auto;
+}
+
+.contact-pto-title {
+    background-color: #454E57;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.area-text-border {
+    border-right: 1px solid #000;
+}
+
+.content-bottom {
+    position:absolute;
+    bottom: 5px;
 }
