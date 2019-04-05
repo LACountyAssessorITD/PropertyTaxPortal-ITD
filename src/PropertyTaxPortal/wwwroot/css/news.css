@@ -35,6 +35,10 @@
 .news-landing{
     max-width: 1400px;
 }
+.news-title .feat {
+    font-size: 130%;
+    margin-bottom: 0;
+}
 
 .news-landing .head {
     font-weight: 600;
