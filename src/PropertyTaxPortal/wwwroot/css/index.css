@@ -22,7 +22,7 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-    .news-car .carousel-item {
+    .news-feed a {
         color: #fff;
     }
 
@@ -124,6 +124,10 @@
     font-weight: 400;
     margin-bottom: 80px;
 }
+    .text-card a {
+        color: #fff;
+        text-decoration: none !important;
+    }
 
     .text-card p {
         transform: translateY(-50%);

@@ -18,7 +18,7 @@
 <section class="container section-news">
     <div class="row news-feed">
         <div class="col-sm-3 latest-news">
-            <p>@Localizer["Latest News"]</p>
+            <p><a asp-controller="Home" asp-action="News">@Localizer["Latest News"] </a></p>
         </div>
         <div class="col-sm-9 news-car">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -30,7 +30,7 @@
                         {
                             <div class="carousel-item active">
                                 @{ int test = item.NewsId;}
-                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="News"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
+                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
                                 
                                 @{counter++;}
                             </div>
@@ -39,7 +39,7 @@
                         {
                             <div class="carousel-item">
                                 @{ int test = item.NewsId;}
-                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="News"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
+                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
                                
                             </div>
                         }
@@ -102,9 +102,9 @@
                             </div>
                             <div class="col-9 img-carousel">
                                 <div class="img-seal">
-                                    <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
+                                    <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="la county seal">
                                 </div>
-                                <img class="js--wp-9 img-person i-2" src="~/images/jkelly_slider.png" alt="">
+                                <img class="js--wp-9 img-person i-2" src="~/images/jkelly_slider.png" alt="Jkelly slider">
                             </div>
                         </div>
                     </div>
@@ -145,30 +145,41 @@
 
 <section class="container-fluid section-cards">
     <div class="row">
+       
         <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-4">
-            <div class="card-img bg-1">
-                <ion-icon class="c-1" name="people"></ion-icon>
-            </div>
-            <p>@Localizer["AREAS OF RESPONSIBILITY"]</p>
+            <a asp-controller="Home" asp-route-id="2" asp-action="Overview">
+                <div class="card-img bg-1">
+                    <ion-icon class="c-1" name="people"></ion-icon>
+                </div>
+                <p>@Localizer["AREAS OF RESPONSIBILITY"]</p>
+
+            </a>
+            
         </div>
 
         <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-5">
-            <div class="card-img bg-2">
-                <ion-icon class="c-2" name="logo-usd"></ion-icon>
-            </div>
-            <p>@Localizer["PAYMENT OPTIONS"]</p>
+            <a href="https://vcheck.ttc.lacounty.gov/">
+                <div class="card-img bg-2">
+                    <ion-icon class="c-2" name="logo-usd"></ion-icon>
+                </div>
+                <p>@Localizer["PAYMENT OPTIONS"]</p>
+                </a>
         </div>
         <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-6">
-            <div class="card-img bg-3">
-                <ion-icon class="c-3" name="filing"></ion-icon>
-            </div>
-            <p>@Localizer["PROPERTY TAX MANAGMENT SYSTEM"]</p>
+            <a href="https://vcheck.ttc.lacounty.gov/">
+                <div class="card-img bg-3">
+                    <ion-icon class="c-3" name="filing"></ion-icon>
+                </div>
+                <p>@Localizer["PROPERTY TAX MANAGMENT SYSTEM"]</p>
+            </a>
         </div>
         <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-7">
-            <div class="card-img bg-4">
-                <ion-icon class="c-4" name="business"></ion-icon>
-            </div>
-            <p>@Localizer["PROPERTY ADDRESS SEARCH"]</p>
+            <a asp-controller="Home" asp-route-id="2" asp-action="Overview">
+                <div class="card-img bg-4">
+                    <ion-icon class="c-4" name="business"></ion-icon>
+                </div>
+                <p>@Localizer["PROPERTY ADDRESS SEARCH"]</p>
+                </a>
         </div>
 
     </div>

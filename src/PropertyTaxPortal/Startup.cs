@@ -83,7 +83,7 @@ namespace PropertyTaxPortal
                 options.SupportedUICultures = supportedCultures;
             });
             var users = new Dictionary<string, string> { { "Daniel", "password" }, { "willie", "willie" } };
-            services.AddSingleton<IUserService>(new AdminUserService(users));
+            services.AddSingleton<IUserService>(new AdminUserService());
 
             services.AddAuthentication(options =>
             {
