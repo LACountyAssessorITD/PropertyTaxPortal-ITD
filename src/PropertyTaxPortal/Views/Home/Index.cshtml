@@ -29,15 +29,18 @@
                         @if (counter == 0)
                         {
                             <div class="carousel-item active">
-                                <p>@Html.DisplayFor(modelItem => item.Title)</p>
+                                @{ int test = item.NewsId;}
+                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="News"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
+                                
                                 @{counter++;}
                             </div>
                         }
                         else
                         {
                             <div class="carousel-item">
-                                <p>@Html.DisplayFor(modelItem => item.Title)</p>
-
+                                @{ int test = item.NewsId;}
+                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="News"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
+                               
                             </div>
                         }
                     }

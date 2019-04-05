@@ -43,6 +43,36 @@ namespace PropertyTaxPortal.Controllers
             return View(context);
         }
 
+        //public IActionResult News(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return View();
+        //    }
+        //    else
+        //    {
+        //        var context = _context.News.Where(b => b.NewsId == id);
+        //        return View(context);
+        //    }
+        //}
+        public async Task<IActionResult> News(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var news = await _context.News
+                .FirstOrDefaultAsync(m => m.NewsId == id);
+            if (news == null)
+            {
+                return NotFound();
+            }
+
+            return View(news);
+        }
+
+
         public IActionResult Overview(int?id)
         {
             if (id == null) {

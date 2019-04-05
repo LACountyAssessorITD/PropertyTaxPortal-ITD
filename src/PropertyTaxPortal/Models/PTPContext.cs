@@ -89,9 +89,9 @@ namespace PropertyTaxPortal.Models
                     .ValueGeneratedNever();
 
                 entity.Property(e => e.Password)
-                            .IsRequired()
                             .HasMaxLength(15)
                             .IsUnicode(false);
+                entity.Property(e => e.Active).HasColumnName("active");
             });
         }
     }

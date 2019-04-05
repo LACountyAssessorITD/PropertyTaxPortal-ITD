@@ -19,7 +19,7 @@ namespace PropertyTaxPortal.Services
                 try
                 {
                     IDictionary<string, string> user_account = new Dictionary<string, string>();
-                    user_account = context.Users.ToList().ToDictionary(x => x.Username, x => x.Password);
+                    user_account = context.Users.Where(b => b.Active == 1).ToList().ToDictionary(x => x.Username, x => x.Password);
                     foreach (var user in user_account)
                     {
                         _users.Add(user.Key.ToLower(), (BCrypt.Net.BCrypt.HashPassword(user.Value), new User(user.Key)));
