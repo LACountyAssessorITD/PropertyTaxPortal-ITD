@@ -59,16 +59,19 @@ namespace PropertyTaxPortal.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.EndOn)
+                    .IsRequired()
                     .HasColumnName("endOn")
                     .HasColumnType("datetime");
 
                 entity.Property(e => e.NewsDate)
+                    .IsRequired()
                     .HasColumnName("newsDate")
                     .HasColumnType("datetime");
 
                 entity.Property(e => e.SOrder).HasColumnName("sOrder");
 
                 entity.Property(e => e.StartOn)
+                    .IsRequired()
                     .HasColumnName("startOn")
                     .HasColumnType("datetime");
 

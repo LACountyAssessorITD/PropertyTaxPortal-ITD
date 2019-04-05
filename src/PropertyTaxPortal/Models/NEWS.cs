@@ -12,9 +12,9 @@ namespace PropertyTaxPortal.Models
         public string Title { get; set; }
         public string Body { get; set; }
         public string Caption { get; set; }
-        public DateTime? NewsDate { get; set; }
-        public DateTime? StartOn { get; set; }
-        public DateTime? EndOn { get; set; }
+        public DateTime NewsDate { get; set; }
+        public DateTime StartOn { get; set; }
+        public DateTime EndOn { get; set; }
         public int? UploadId { get; set; }
 
 

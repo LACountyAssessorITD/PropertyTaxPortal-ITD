@@ -45,7 +45,11 @@ namespace PropertyTaxPortal.Controllers
         // GET: News/Create
         public IActionResult Create()
         {
-            return View();
+            var news = new News();
+            news.NewsDate = DateTime.Now;
+            news.StartOn = DateTime.Now;
+           
+            return View(news);
         }
 
         // POST: News/Create
