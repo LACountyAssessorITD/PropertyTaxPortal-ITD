@@ -1,11 +1,25 @@
 ﻿@model PropertyTaxPortal.Models.News
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 @{
-    ViewData["Title"] = "News";
+    ViewData["Title"] = "PublicInquiry";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@inject IViewLocalizer Localizer
 
-<h1>
-    @Html.DisplayFor(model => model.Body)
-        
-</h1>
+<section class="container-fluid section-header-pi bg-news">
+    <h2 class="display-4">@Localizer["NEWS & ANNOUNCEMENTS"]</h2>
+</section>
+<section class="news-title p-3">
+    <h4 class="">@Localizer[@Html.Raw(@Model.Title).ToString()]</h4>
+</section>
+
+<section class="news">
+    <div class="container news-area mt-4">
+        <p>@Localizer[@Html.Raw(@Model.Body).ToString()]</p>
+    </div>
+</section>
+
+
 

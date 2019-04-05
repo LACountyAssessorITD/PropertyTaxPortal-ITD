@@ -160,7 +160,7 @@ nav a img {
 .navbar {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 80%;
+    font-size: 65%;
     padding: 0px 20px;
     height: 70px;
     border-bottom: 1px solid #000000;
@@ -321,4 +321,30 @@ footer {
     background: #0D47A1;
     
     padding-left: 15%;
+}
+
+/* --------------------------- */
+/* --------Section-Header------ */
+/* --------------------------- */
+
+
+.section-header-pi {
+     background-size: cover;
+    background-position: center;
+    /*height: 200px;*/
+    height: 270px;
+    text-align: center;
+    padding-top: 95px;
+    color: #fff;
+}
+
+.section-header-pi .display-4 {
+    /*font-size: 200%;
+    font-weight: 400 !important;*/
+    width: 100%;
+    text-align: center;
+    font-size: 270%;
+    color: white;
+    /*background-color: rgba(0,0,0,0.5);*/
+    font-weight: bold;
 }
