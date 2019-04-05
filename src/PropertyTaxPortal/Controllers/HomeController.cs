@@ -39,7 +39,7 @@ namespace PropertyTaxPortal.Controllers
 
         public IActionResult Index()
         {
-            var context = _context.News.Where(b => b.Active == 1).OrderBy(b => b.SOrder).ToList();
+            var context = _context.News.Where(b => (b.Active == 1 && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToList();
             return View(context);
         }
 
@@ -62,7 +62,7 @@ namespace PropertyTaxPortal.Controllers
         }
         public IActionResult News()
         {
-            var context = _context.News.Where(b => b.Active == 1).OrderBy(b => b.SOrder).ToList();
+            var context = _context.News.Where(b => (b.Active == 1 && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToList();
             return View(context);
         }
 
