@@ -48,6 +48,7 @@ namespace PropertyTaxPortal.Controllers
             var news = new News();
             news.NewsDate = DateTime.Now;
             news.StartOn = DateTime.Now;
+            news.EndOn = news.StartOn.AddDays(365);
            
             return View(news);
         }
