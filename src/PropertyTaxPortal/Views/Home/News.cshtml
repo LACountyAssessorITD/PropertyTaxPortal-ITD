@@ -1,25 +1,33 @@
-﻿@model PropertyTaxPortal.Models.News
-@using Microsoft.AspNetCore.Mvc.Localization
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@model IEnumerable<PropertyTaxPortal.Models.News>
+
 @inject IViewLocalizer Localizer
 
 @{
-    ViewData["Title"] = "PublicInquiry";
+    ViewData["Title"] = "News";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@inject IViewLocalizer Localizer
+
 
 <section class="container-fluid section-header-pi bg-news">
     <h2 class="display-4">@Localizer["NEWS & ANNOUNCEMENTS"]</h2>
 </section>
 <section class="news-title p-3">
-    <h4 class="">@Localizer[@Html.Raw(@Model.Title).ToString()]</h4>
+    <h4 class="">Featured Articles</h4>
 </section>
 
-<section class="news">
-    <div class="container news-area mt-4">
-        <p>@Localizer[@Html.Raw(@Model.Body).ToString()]</p>
+<section class="news-landing container-fluid ">
+    <div class="row">
+        
+        @foreach (var item in Model)
+        {
+        <div class="col-md-4 ">
+            <div class="p-2 newsbox mx-auto">
+                <strong class="head">@Html.DisplayFor(modelItem => item.Title)</strong>
+                <p>@Html.DisplayFor(modelItem => item.Caption)</p>
+                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding">Read More..</a>
+            </div>
+        </div>
+        }
     </div>
-</section>
-
-
-
+</section>s

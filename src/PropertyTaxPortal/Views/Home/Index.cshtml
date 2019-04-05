@@ -18,7 +18,7 @@
 <section class="container section-news">
     <div class="row news-feed">
         <div class="col-sm-3 latest-news">
-            <p>@Localizer["Latest News"]</p>
+            <p><a asp-controller="Home" asp-action="News">@Localizer["Latest News"] </a></p>
         </div>
         <div class="col-sm-9 news-car">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -30,7 +30,7 @@
                         {
                             <div class="carousel-item active">
                                 @{ int test = item.NewsId;}
-                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="News"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
+                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
                                 
                                 @{counter++;}
                             </div>
@@ -39,7 +39,7 @@
                         {
                             <div class="carousel-item">
                                 @{ int test = item.NewsId;}
-                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="News"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
+                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
                                
                             </div>
                         }

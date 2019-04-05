@@ -43,19 +43,8 @@ namespace PropertyTaxPortal.Controllers
             return View(context);
         }
 
-        //public IActionResult News(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return View();
-        //    }
-        //    else
-        //    {
-        //        var context = _context.News.Where(b => b.NewsId == id);
-        //        return View(context);
-        //    }
-        //}
-        public async Task<IActionResult> News(int? id)
+   
+        public async Task<IActionResult> NewsLanding(int? id)
         {
             if (id == null)
             {
@@ -70,6 +59,11 @@ namespace PropertyTaxPortal.Controllers
             }
 
             return View(news);
+        }
+        public IActionResult News()
+        {
+            var context = _context.News.Where(b => b.Active == 1).OrderBy(b => b.SOrder).ToList();
+            return View(context);
         }
 
 
