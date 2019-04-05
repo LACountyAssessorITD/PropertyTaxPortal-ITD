@@ -124,6 +124,10 @@
     font-weight: 400;
     margin-bottom: 80px;
 }
+    .text-card a {
+        color: #fff;
+        text-decoration: none !important;
+    }
 
     .text-card p {
         transform: translateY(-50%);
