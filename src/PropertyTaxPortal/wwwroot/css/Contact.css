@@ -12,7 +12,7 @@
 
 .faq-button {
     background-color: #fff;
-    border: solid 1px #000;
+    border: solid 1px #ddd;
     color: #000;
 }
 
@@ -61,9 +61,9 @@
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
+    .tab button.active {
+        background-color: #ccc;
+    }
 
 /* Style the tab content */
 .tabcontent {
@@ -130,12 +130,12 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: grey;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: grey;
 }
 
 /* Style the tab content */
