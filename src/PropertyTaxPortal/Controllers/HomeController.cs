@@ -101,10 +101,19 @@ namespace PropertyTaxPortal.Controllers
         /// <returns></returns>
         public IActionResult ContactUs(int?id)
         {
-            dynamic ContactUsModel = new System.Dynamic.ExpandoObject();
-            ContactUsModel.tabid = id;
-            return View(ContactUsModel);
+            //dynamic ContactUsModel = new System.Dynamic.ExpandoObject();
+            //ContactUsModel.tabid = id;
+            //return View(ContactUsModel);
 
+            if (id == null)
+            {
+                return View();
+            }
+            else
+            {
+                ViewBag.id = id;
+                return View();
+            }
         }
        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
