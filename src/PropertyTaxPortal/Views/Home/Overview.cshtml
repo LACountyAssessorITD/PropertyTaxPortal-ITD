@@ -65,7 +65,8 @@
                 <br />
                 <br />
                 <br />
-                <h3 style="color:white; font-weight:bold;">@Localizer["PROPERTY TAX OVERVIEW"]</h3>
+                <br />
+                <h1 style="color:white;">@Localizer["PROPERTY TAX OVERVIEW"]</h1>
                 <br />                        
                 <p style="color:white; padding-left: 80px; padding-right:80px;">
                     @Localizer["It takes four separate Los Angeles County offices, Assessor, Assessment & Appeals Board, Auditor-Controller, and Treasuer & Tax Collector to produce and account for your property tax bill and payment."]
@@ -80,17 +81,19 @@
         <section class="pto-pills">
             <br />
             <ul class="nav nav-pills nav-justified">
-                <li class="nav-item">
-                    <a href="#assessor" class="btn btn-lg active depbtn" role="tab" data-toggle="tab">@Localizer["Assessor"]</a>   
+                <!-- need media rules for mobile/tablet size -->
+                
+                <li class="nav-item" style="padding-left:25px; padding-right:20px">
+                    <a href="#assessor" class="btn btn-lg active depbtn btn-block" role="tab" data-toggle="tab" >@Localizer["Assessor"]</a>   
                 </li>
-                <li class="nav-item">
-                    <a href="#aab" class="btn btn-lg depbtn" role="tab" data-toggle="tab">@Localizer["Assessment & Appeals Board"]</a>   
+                <li class="nav-item" style="padding-left:20px; padding-right:20px">
+                    <a href="#aab" class="btn btn-lg depbtn btn-block" role="tab" data-toggle="tab">@Localizer["Assessment & Appeals Board"]</a>   
                 </li>
-                <li class="nav-item">
-                    <a href="#auditor" class="btn btn-lg depbtn" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>   
+                <li class="nav-item" style="padding-left:20px; padding-right:20px">
+                    <a href="#auditor" class="btn btn-lg depbtn btn-block" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>   
                 </li>
-                <li class="nav-item">
-                    <a href="#ttc" class="btn btn-lg depbtn" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
+                <li class="nav-item" style="padding-left:20px; padding-right:25px">
+                    <a href="#ttc" class="btn btn-lg depbtn btn-block" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>   
                 </li>
             </ul>
             <br />
@@ -169,21 +172,33 @@
     </section>
 </div>
 <div id="HowItWorks" class="tabcontent" style="display:none">
-    how it works content
+    <div class="pto-title text-center" style="color:white; padding-top:1em; padding-bottom:1em;">
+        <h3 style="margin-bottom:0">@Localizer["How the Property Tax System Works"]</h3>
+    </div>
     <div style="height:25px; background-color:#343a40"></div>
+    <br />
+    <div class="center">
+        <img src="~/images/flowchart-placeholder.png" class="image-fluid mx-auto d-block"/>
+    </div>
+    <br /> 
 </div>
 <div id="AreasRespons" class="tabcontent" style="display:none">
     <div class="row text-center">
-            <div class="col-md-6" >
-                <img src="~/images/areas_respons.jpg" class="container-fluid center-block w-100 p-0"/>
+            <div class="col-md-6" style="padding-right:0">
+                <img src="~/images/areas_respons.jpg" class="container-fluid center-block w-100 p-0" />
             </div>
-            <div class="col-md-6 pto-title" >
+            <div class="col-md-6 pto-title" >                
                 <br />
                 <br />
                 <br />
                 <br />
                 <br />
-                <h3 style="color:white; font-weight:bold;">@Localizer["AREAS OF RESPONSIBILITY"]</h3>
+                <br />
+                <h1 style="color:white; ">@Localizer["AREAS OF RESPONSIBILITY"]</h1>
+                <br />
+                <p style="color:white; padding-left: 80px; padding-right:80px;">
+                    @Localizer["The following lists may help you to determine which department can assist in answering your inquiry."]
+                </p>
             </div>
         </div>
     <div style="height:25px; background-color:#343a40"></div>
@@ -195,7 +210,7 @@
         <!-- Assessor Card (213)974-3211 -->
         <div class="card w-100 max-auto">
             <h5 class="card-header w-100 text-center" role="tab" id="headingOne">
-                 Assessor
+                 @Localizer["Assessor"]
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed d-block" style="float:right">
                     <i class="fa fa-chevron-down pull-right"></i>
                 </a>
@@ -217,7 +232,7 @@
         <!-- Auditor-Controller (213)974-8368 Card -->
         <div class="card w-100 max-auto">
             <h5 class="card-header w-100 text-center" role="tab" id="headingTwo">
-                Auditor-Controller
+                @Localizer["Auditor-Controller"]
                 <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="float:right">
                     <i class="fa fa-chevron-down pull-right"></i>
                 </a>
@@ -238,7 +253,7 @@
         <!-- Assessment Appeals Board (213)974-1471 Card -->
         <div class="card w-100 max-auto">
             <h5 class="card-header w-100 text-center" role="tab" id="headingThree">
-                Assessment Appeals Board
+                @Localizer["Assessment Appeals Board"]
                 <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="float:right">
                     <i class="fa fa-chevron-down pull-right"></i>
                 </a>
@@ -259,7 +274,7 @@
         <!-- Treasurer & Tax Collector - Secured Taxes  (213)974-2111 Card -->
         <div class="card w-100 max-auto">
             <h5 class="card-header w-100 text-center" role="tab" id="headingFour">
-                Treasurer & Tax Collector - Secured Taxes
+                @Localizer["Treasurer & Tax Collector - Secured Taxes"]
                 <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="float:right">
                     <i class="fa fa-chevron-down pull-right"></i>
                 </a>
@@ -280,7 +295,7 @@
         <!-- Treasurer & Tax Collector - Unsecured Taxes  (213)893-7935 Card -->
         <div class="card w-100 max-auto">
             <h5 class="card-header w-100 text-center" role="tab" id="headingFive">
-                Treasurer & Tax Collector - Unsecured Taxes
+                @Localizer["Treasurer & Tax Collector - Unsecured Taxes"]
                 <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="float:right">
                     <i class="fa fa-chevron-down pull-right"></i>
                 </a>
