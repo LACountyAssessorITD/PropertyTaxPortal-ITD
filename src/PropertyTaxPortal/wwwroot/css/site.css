@@ -180,17 +180,18 @@ nav a img {
 
 
 
-    .navbar-nav li a:link,
-    .navbar-nav li a:visited {
-        color: #000;
-        /* transition: color 0.2s; */
-    }
+.navbar-nav li a:link,
+.navbar-nav li a:visited {
+    color: #000;
+    /* transition: color 0.2s; */
+}
 
-    .navbar-nav li a:hover,
-    .navbar-nav li a:active {
-        color: #0D47A1;
-        transition: display 0.4s;
-    }
+.navbar-nav li a:hover,
+.navbar-nav li a:active {
+    color: #0D47A1;
+    transition: display 0.4s;
+}
+
 
 .navbar-nav {
     z-index: 5000;
@@ -234,7 +235,7 @@ nav a img {
 
 .dropdown-menu {
     background-color:white;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.3rem;
     padding: 30px;
     margin-top: 0;
@@ -259,7 +260,7 @@ nav a img {
 }
 
     .mega-menu p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
         color: #57BDF6;
     }

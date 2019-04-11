@@ -6,13 +6,14 @@
 }
 
 .Section-Contact-Content p {
+    /*font-size: 100% !important;*/
     font-size: 100% !important;
     padding-top: 50px;
 }
 
 .faq-button {
     background-color: #fff;
-    border: solid 1px #000;
+    border: solid 1px #ddd;
     color: #000;
 }
 
@@ -61,9 +62,9 @@
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
+    .tab button.active {
+        background-color: #ccc;
+    }
 
 /* Style the tab content */
 .tabcontent {
@@ -122,7 +123,7 @@
     cursor: pointer;
     padding: 16px 18px;
     transition: 0.3s;
-    font-size: 25px;
+    font-size: 17px;
     border-left: 1px;
     color: white;
     position: relative;
@@ -130,12 +131,12 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: grey;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: grey;
 }
 
 /* Style the tab content */

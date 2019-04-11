@@ -261,8 +261,8 @@
   <data name="Contact Us" xml:space="preserve">
     <value>Contactez nous</value>
   </data>
-  <data name="Auditor/Controller" xml:space="preserve">
-    <value>Auditeur / Contrôleur</value>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Auditeur-Contrôleur</value>
   </data>
   <data name="LA County Contacts" xml:space="preserve">
     <value>Contacts du comté de LA</value>
