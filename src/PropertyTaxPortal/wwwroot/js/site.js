@@ -1,4 +1,6 @@
 ﻿$(document).ready(function () {
+    //  FOr the sticky nav 
+    
 
     $('.section-news .carousel').carousel({
         interval: 4000
@@ -67,3 +69,4 @@
         });
 
 });
+
