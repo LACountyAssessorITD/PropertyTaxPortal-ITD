@@ -161,7 +161,7 @@ namespace PropertyTaxPortal.Controllers
                 List<EmailTrackingCount> lEmailTracking = new List<EmailTrackingCount>();
                 string sEmailTrackingCount = "";
                 string sThankYouFront = "Thank you for completing our Public Inquiry form. A staff member from the ";
-                string sThankYouEnd = " respond to your request shortly.";
+                string sThankYouEnd = " will respond to your request shortly.";
                 string sThankYouWhole = "";
 
                 lEmailTracking = _context.emailTrackingCount.FromSql("PTP_emailTrackingIncrement").ToList();
