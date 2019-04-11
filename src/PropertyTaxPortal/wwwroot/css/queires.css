@@ -126,7 +126,7 @@
         margin: 0;
     }
     .index-wrap {
-        padding-bottom: 144px;
+        padding-bottom: 166px;
     }
 }
 
@@ -262,7 +262,7 @@
         margin-left: 0;
     }
     .index-wrap {
-        padding-bottom: 130px;
+        padding-bottom: 172px;
     }
 }
 
@@ -285,7 +285,7 @@
 
 @media only screen and (max-width: 634px) {
     .index-wrap {
-        padding-bottom: 438px; /* height of your footer */
+        padding-bottom: 503px; /* height of your footer */
     }
 }
 
@@ -356,7 +356,7 @@
     
 
     .index-wrap {
-        padding-bottom: 450px; /* height of your footer */
+        padding-bottom: 503px; /* height of your footer */
     }
 
     .section-header-pi .display-4 {

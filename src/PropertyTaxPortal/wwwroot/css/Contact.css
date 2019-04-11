@@ -4,9 +4,7 @@
     background-color: #fff;
     /* Style the list */
 }
-.contact-content p:last-child {
-    padding-bottom: 100px;
-}
+
 .contact-top {
     height: 500px;
 }
@@ -15,6 +13,10 @@
     position: absolute;
     bottom: 30px;
     text-align: center;
+    width: 100%;
+    
+}
+.contact-content {
     padding-bottom: 100px;
 }
 
