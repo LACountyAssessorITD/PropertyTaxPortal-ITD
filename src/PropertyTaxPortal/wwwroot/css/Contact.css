@@ -5,6 +5,21 @@
     /* Style the list */
 }
 
+.contact-top {
+    height: 500px;
+}
+
+.button-content {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    
+}
+.contact-content {
+    padding-bottom: 100px;
+}
+
 .Section-Contact-Content p {
     /*font-size: 100% !important;*/
     font-size: 100% !important;
@@ -174,11 +189,7 @@
     width: 20%;
 }
 
-.tab-background {
-    background-color: #343a40;
-    /*border: 1px solid #fff;*/
-    top: 1200px;
-}
+
 
 .contact-pto-header {
     width: auto;
@@ -197,4 +208,8 @@
 .content-bottom {
     position:absolute;
     bottom: 5px;
+}
+
+.test div div:first-child {
+    padding-bottom: 100px;
 }
