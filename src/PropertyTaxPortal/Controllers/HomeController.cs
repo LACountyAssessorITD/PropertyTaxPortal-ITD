@@ -45,21 +45,23 @@ namespace PropertyTaxPortal.Controllers
 
         public IActionResult Accessibility(string id)
         {
-            HashSet<string> titles = new HashSet<string>();
-            titles.Add("disclaimer");
-            titles.Add("privacy-policy");
-            titles.Add("accessibility");
-            titles.Add("language");
-            titles.Add("browser-compatibility");
+            Dictionary<string, string> titles = new Dictionary<string, string>();
+            titles.Add("disclaimer","Disclaimer");
+            titles.Add("privacy-policy","Privacy Policy");
+            titles.Add("accessibility", "Accessiblity");
+            titles.Add("language", "Language");
+            titles.Add("browser-compatibility", "browser Compatiblity");
 
 
-            if (!titles.Contains(id.ToLower()))
+            if (!titles.ContainsKey(id.ToLower()))
             {
                 return View();
             }
             else
             {
-                ViewBag.Title = id;
+                
+                ViewBag.Title = titles[id.ToLower()];
+                
                 return View();
             }
         }

@@ -3,7 +3,10 @@
 @inject IViewLocalizer Localizer
 
 @{
-    ViewData["Title"] = "Accessibility";
+    ViewData["Title"] = ViewBag.Title;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<section class="container-fluid section-header-footerLinks">
+    <h2 class="display-4"> @Localizer[@ViewBag.Title] </h2>
+</section>
