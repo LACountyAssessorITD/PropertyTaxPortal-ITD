@@ -5,13 +5,19 @@
     <div asp-validation-summary="All" class="form-validation"></div>
 }
 
-<form class="form-signin" asp-action="SignIn">
-    <h2>Please sign in</h2>
-    <label class="sr-only">Username</label>
-    <input type="text" class="form-control" placeholder="Username"
-           asp-for="Username" />
-    <label class="sr-only">Password</label>
-    <input type="password" class="form-control" placeholder="Password"
-           asp-for="Password" />
-    <button class="btn btn-lg btn btn-primary btn-block">Sign In</button>
-</form>
+    <form class="form-signin" asp-action="SignIn">
+        <div style="width:100%;text-align:center">
+            <h2>Please sign in</h2>
+        </div>
+        <div style="padding-bottom:15px;">
+            <label class="sr-only">Username</label>
+            <input type="text" class="form-control" placeholder="Username"
+                   asp-for="Username" />
+        </div>
+        <div style="padding-bottom:15px;">
+            <label class="sr-only">Password</label>
+            <input type="password" class="form-control" placeholder="Password"
+                   asp-for="Password" />
+        </div>
+            <button class="btn btn-lg btn btn-primary btn-block">Sign In</button>
+    </form>
