@@ -151,9 +151,9 @@
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Payment Options"]</p>
                                         <ul>
-                                            <li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary" style="float:right;">LINK</span></li>
-                                            <li><a href="">@Localizer["Pay Online"]</a><span class="badge badge-success" style="float:right;">PAY NOW</span></li>
-                                            <li><a href="">@Localizer["Other Payment Options"]</a><span class="badge badge-secondary" style="float:right;">LINK</span></li>
+                                            <li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary" >LINK</span></li>
+                                            <li><a href="">@Localizer["Pay Online"]</a><span class="badge badge-success" >PAY NOW</span></li>
+                                            <li><a href="">@Localizer["Other Payment Options"]</a><span class="badge badge-secondary" >LINK</span></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
@@ -203,13 +203,13 @@
                                 @Localizer["Contact Us"]
                             </a>
                             <!-- added navigation badge: 'FORM' -->
-                            <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown5">
+                            <div class="dropdown-menu small-drop bg-6" id="contact-drop" aria-labelledby="navbarDropdown5">
                                 <ul>
                                     <li><a asp-controller="Home" asp-route-id="0" asp-action="ContactUs">@Localizer["Assessor"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="1" asp-action="ContactUs">@Localizer["Auditor-Controller"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">@Localizer["Treasurer & Tax Collector"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">@Localizer["Assessment Appeals Board"]</a></li>
-                                    <li>@Localizer["LA County Contacts"]</li>
+                                    
                                     <li><a asp-controller="Home" asp-action="PublicInquiry">@Localizer["Public Inquiry"]</a><span class="badge badge-primary" style="float:right;">FORM</span></li>
 
 
