@@ -161,7 +161,7 @@ namespace PropertyTaxPortal.Controllers
                 List<EmailTrackingCount> lEmailTracking = new List<EmailTrackingCount>();
                 string sEmailTrackingCount = "";
                 string sThankYouFront = "Thank you for completing our Public Inquiry form. A staff member from the ";
-                string sThankYouEnd = " respond to your request shortly.";
+                string sThankYouEnd = " will respond to your request shortly.";
                 string sThankYouWhole = "";
 
                 lEmailTracking = _context.emailTrackingCount.FromSql("PTP_emailTrackingIncrement").ToList();
@@ -178,9 +178,9 @@ namespace PropertyTaxPortal.Controllers
                         model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.Department = "Assessment Appeals Board";
                         model.addressPhoneWebsite = "Los Angeles County Assessment Appeals Board<br>" +
-                            "500 West Temple Street, Room B50<br>" +
+                            "500 West Temple Street, Room B4<br>" +
                             "Los Angeles, CA 90012<br><br>" +
-                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ") and press number 4<br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ") and press number 5<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-1471<br><br>" +
                             _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://bos.lacounty.gov/Services/AssessmentAppeals.aspx' target='newwin'>http://bos.lacounty.gov/Services/AssessmentAppeals.aspx</a><br>";
                         break;

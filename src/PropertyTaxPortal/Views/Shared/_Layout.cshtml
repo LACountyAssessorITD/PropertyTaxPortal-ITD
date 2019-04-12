@@ -23,7 +23,7 @@
         <link href="~/css/news.css" rel="stylesheet" />
         <link href="~/css/Publicinquiry.css" rel="stylesheet" />
         <link href="~/css/FAQTAB.css" rel="stylesheet" />
-        <link href="~/css/contact.css" rel="stylesheet" />
+        <link href="~/css/Contact.css" rel="stylesheet" />
         <link href="~/css/queires.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,500,600" rel="stylesheet">
 
@@ -43,7 +43,7 @@
         <link href="~/css/Publicinquiry.css" rel="stylesheet" />
         <link href="~/css/news.css" rel="stylesheet" />
         <link href="~/css/FAQTAB.css" rel="stylesheet" />
-        <link href="~/css/contact.css" rel="stylesheet" />
+        <link href="~/css/Contact.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <link href="~/css/queires.css" rel="stylesheet" />
         <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
@@ -214,8 +214,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <ion-icon class="search-font" name="search"></ion-icon>
+                        <li class="border-left pl-4 ml-4 pr-2 my-2">
+                            
+                            <form id="demo-2">
+                                <input type="search" placeholder="Search">
+                            </form>
                         </li>
                     </ul>
                 </div>
@@ -297,7 +300,7 @@
 
 
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
+        
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
         <script src="~/lib/jquery/dist/min.popper.js"></script>
@@ -306,8 +309,9 @@
 
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
-        <script src="~/js/jquery.waypoints.min.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
+        
         <script src="~/js/site.js"></script>
 
     </environment>
@@ -318,6 +322,7 @@
         <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+        
 
         <script src="~/js/jquery.waypoints.min.js"></script>
         <script src="~/js/site.js"></script>

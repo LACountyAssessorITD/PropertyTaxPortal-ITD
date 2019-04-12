@@ -10,6 +10,7 @@
 }
 
 @media only screen and (min-width: 991px) {
+    
     .dropdown:hover > .dropdown-menu {
         display: block;
     }
@@ -29,7 +30,7 @@
 
     
     .navbar-nav li a {
-        transform: translateY(30%);
+        transform: translateY(35%);
     }
 
     .navbar-collapse {
@@ -126,7 +127,7 @@
         margin: 0;
     }
     .index-wrap {
-        padding-bottom: 144px;
+        padding-bottom: 166px;
     }
 }
 
@@ -134,7 +135,10 @@
 
 /* Sall phones to small tablets */
 @media only screen and (max-width: 991px) {
-
+    #demo-2 input[type=search]:focus {
+        width: 250px;
+        
+    }
     html,
     body {
         font-size: 15px;
@@ -262,7 +266,7 @@
         margin-left: 0;
     }
     .index-wrap {
-        padding-bottom: 130px;
+        padding-bottom: 172px;
     }
 }
 
@@ -285,7 +289,7 @@
 
 @media only screen and (max-width: 634px) {
     .index-wrap {
-        padding-bottom: 438px; /* height of your footer */
+        padding-bottom: 503px; /* height of your footer */
     }
 }
 
@@ -356,7 +360,7 @@
     
 
     .index-wrap {
-        padding-bottom: 450px; /* height of your footer */
+        padding-bottom: 503px; /* height of your footer */
     }
 
     .section-header-pi .display-4 {
