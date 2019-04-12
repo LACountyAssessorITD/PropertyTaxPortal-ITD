@@ -142,6 +142,12 @@ header {
 #contact-drop {
     left: -130px;
 }
+.navbar span {
+    
+    margin-left: 5px;
+}
+    
+
 .badge {
     margin-top: 6px;
 }
