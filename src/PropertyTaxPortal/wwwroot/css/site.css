@@ -136,7 +136,9 @@ header {
 /* ----------------------- */
 /* ------ NAVBAR --- */
 /* ----------------------- */
-
+.badge {
+    margin-top: 6px;
+}
 
 .nav-icon-bar p,
 h5 {
@@ -358,7 +360,7 @@ footer {
 }
 
 
-input[type=search] {
+.navbar input[type=search] {
     outline: none;
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
@@ -372,7 +374,7 @@ input[type=search] {
 }
 
 
-input[type=search] {
+.navbar input[type=search] {
     background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
     border: solid 1px #ccc;
     padding: 9px 10px 9px 32px;
@@ -385,14 +387,14 @@ input[type=search] {
     transition: all .5s;
 }
 
-    input[type=search]:focus {
-        width: 130px;
-        background-color: #fff;
-        border-color: #66CC75;
-        -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-        -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-        box-shadow: 0 0 5px rgba(109,207,246,.5);
-    }
+.navbar input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #1c49b4;
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
 
 
 .navbar input:-moz-placeholder {
@@ -420,7 +422,7 @@ input[type=search] {
     }
 
     #demo-2 input[type=search]:focus {
-        width: 130px;
+        width: 150px;
         padding-left: 32px;
         color: #000;
         background-color: #fff;
