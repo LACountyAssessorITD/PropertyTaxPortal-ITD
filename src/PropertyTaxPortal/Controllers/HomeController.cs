@@ -43,9 +43,25 @@ namespace PropertyTaxPortal.Controllers
             return View(context);
         }
 
-        public IActionResult Accessibility()
+        public IActionResult Accessibility(string id)
         {
-            return View();
+            HashSet<string> titles = new HashSet<string>();
+            titles.Add("disclaimer");
+            titles.Add("privacy-policy");
+            titles.Add("accessibility");
+            titles.Add("language");
+            titles.Add("browser-compatibility");
+
+
+            if (!titles.Contains(id.ToLower()))
+            {
+                return View();
+            }
+            else
+            {
+                ViewBag.Title = id;
+                return View();
+            }
         }
    
         public async Task<IActionResult> NewsLanding(int? id)
