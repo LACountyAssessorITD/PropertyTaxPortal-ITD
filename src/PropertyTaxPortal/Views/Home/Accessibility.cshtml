@@ -6,6 +6,23 @@
     ViewData["Title"] = ViewBag.Title;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    .section-header-footerLinks  {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/overview.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 250px;
+        text-align: center;
+        padding-top: 80px;
+        color: #fff;
+    }
+
+    .section-header-footerLinks .display-4 {
+        font-size: 350%;
+        font-weight: 500 !important;
+    }
+</style>
 
 <section class="container-fluid section-header-footerLinks">
     <h2 class="display-4"> @Localizer[@ViewBag.Title] </h2>
