@@ -404,8 +404,11 @@ input[type=search] {
 }
 
 /* Demo 2 */
+#demo-2 {
+    margin: 5px;
+}
 #demo-2 input[type=search] {
-    margin-top: 12px;
+    margin-top: 8px;
     width: 15px;
     padding-left: 10px;
     color: transparent;

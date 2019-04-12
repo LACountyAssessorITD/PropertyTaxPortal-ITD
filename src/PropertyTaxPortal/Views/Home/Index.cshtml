@@ -28,18 +28,18 @@
                     {
                         @if (counter == 0)
                         {
-                            <div class="carousel-item active">
-                                @{ int test = item.NewsId;}
-                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
-                                
-                                @{counter++;}
-                            </div>
+                    <div class="carousel-item active">
+                        @{ int test = item.NewsId;}
+                        <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Localizer[@Html.Raw(item.Title).ToString()]</p></a>
+                        
+                        @{counter++;}
+                    </div>
                         }
                         else
                         {
                             <div class="carousel-item">
                                 @{ int test = item.NewsId;}
-                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Html.DisplayFor(modelItem => item.Title)</p></a>
+                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Localizer[@Html.Raw(item.Title).ToString()]</p></a>
                                
                             </div>
                         }
