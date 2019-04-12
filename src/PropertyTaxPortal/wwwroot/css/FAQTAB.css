@@ -10,6 +10,7 @@
     border: solid 0.5px #ddd;
     color: #000;
     outline: 1px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .faq-Anchor-button {
@@ -28,6 +29,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url('../images/faq.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/faq.jpg');
 }
 
@@ -77,12 +79,14 @@
 }
 
 .section-tabs .dropdown-menu {
-    transform: none !important;
+    -webkit-transform: none !important;
+            transform: none !important;
     margin-bottom: 10px;
     border-radius: 5px 5px;
 }
 .section-tabs .btn:focus{
-    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+            box-shadow:none !important;
 }
 .section-tabs .dropdown div{
     font-size: 100%;
@@ -112,6 +116,7 @@
     border-top-color: #343a40;
     cursor: pointer;
     padding: 16px 18px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     font-size: 17px;
     border-left: 1px;

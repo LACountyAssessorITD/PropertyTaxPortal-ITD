@@ -13,21 +13,7 @@
     color: white;
 } 
 
-.pto-image {
-<<<<<<< HEAD
-    background-image: url('../images/LA_County_Map.jpg');
-=======
-    background-image: url('../images/ladropdown-menucparcelsize.jpg');
->>>>>>> 3a30e64f8625946caeaa1140d5a6d14e64d5f875
-    background-size: cover;
-    background-position: center;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    vertical-align: middle;
-    
-    color: #fff;
-}
+
 
 .pto-title {
     background-color: #454E57;
@@ -35,6 +21,7 @@
 
 
 .section-header-overview {
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url('../images/overview.jpg');
     background-image:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/overview.jpg');
     background-size: cover;
     background-position: center;

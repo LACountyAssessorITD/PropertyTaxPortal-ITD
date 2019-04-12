@@ -1,10 +1,14 @@
 ﻿@media only screen and (min-width: 644px) {
     .section-footer .row:first-child .col-md-2 {
-        flex: 0 0 19.9%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 19.9%;
+                flex: 0 0 19.9%;
         max-width: 19.9%;
     }
     .tab .col-md-2 {
-        flex: 0 0 20%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 20%;
+                flex: 0 0 20%;
         max-width: 20%;
     }
 }
@@ -30,7 +34,8 @@
 
     
     .navbar-nav li a {
-        transform: translateY(35%);
+        -webkit-transform: translateY(35%);
+                transform: translateY(35%);
     }
 
     .navbar-collapse {
@@ -38,7 +43,8 @@
         
     }
     .search-font {
-        transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
     }
 }
 
@@ -99,7 +105,8 @@
     }
 
         .text-card p {
-            transform: translateY(-75%);
+            -webkit-transform: translateY(-75%);
+                    transform: translateY(-75%);
         }
 
     /*---------------FAQTSB-------------*/
@@ -119,7 +126,8 @@
     }
 
         .text-card p {
-            transform: translateY(-75%);
+            -webkit-transform: translateY(-75%);
+                    transform: translateY(-75%);
         }
 
     /* Coursel */
