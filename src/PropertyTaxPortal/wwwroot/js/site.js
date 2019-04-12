@@ -1,35 +1,46 @@
 ﻿$(document).ready(function () {
-    //  FOr the sticky nav 
     
+    //$('#js--tab').waypoint(function (direction) {
+    //    if (direction == "down") {
+    //        $('.tab.background').addClass('sticky');
+    //    }
+    //    else {
+    //        $('.tab.background').addClass('sticky');
+    //    }
+
+        
+    }, {
+            offset: 50
+        });
 
     $('.section-news .carousel').carousel({
         interval: 4000
     })
 
-    $('.js--wp-1').waypoint(function (direction) {
+    $('.js--wp-1').waypoint(function () {
         $('.js--wp-1').addClass('animated fadeIn');
     }, {
             offset: '50%'
         });
 
-    $('.js--wp-2').waypoint(function (direction) {
+    $('.js--wp-2').waypoint(function () {
         $('.js--wp-2').addClass('animated fadeInUp');
     }, {
             offset: '50%'
         });
 
-    $('.js--wp-3').waypoint(function (direction) {
+    $('.js--wp-3').waypoint(function () {
         $('.js--wp-3').addClass('animated bounceInLeft');
     }, {
             offset: '50%'
         });
 
-    $('.js--wp-8').waypoint(function (direction) {
+    $('.js--wp-8').waypoint(function () {
         $('.js--wp-8').addClass('animated fadeInLeft');
     }, {
             offset: '50%'
         });
-    $('.js--wp-9').waypoint(function (direction) {
+    $('.js--wp-9').waypoint(function () {
         $('.js--wp-9').addClass('animated fadeInRight');
     }, {
             offset: '50%'

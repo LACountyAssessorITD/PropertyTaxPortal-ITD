@@ -43,6 +43,10 @@ namespace PropertyTaxPortal.Controllers
             return View(context);
         }
 
+        public IActionResult Accessibility()
+        {
+            return View();
+        }
    
         public async Task<IActionResult> NewsLanding(int? id)
         {
