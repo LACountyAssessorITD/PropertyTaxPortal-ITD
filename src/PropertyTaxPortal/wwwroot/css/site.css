@@ -407,10 +407,10 @@ footer {
 
 /* Demo 2 */
 #demo-2 {
-    margin: 5px;
+    
 }
 #demo-2 input[type=search] {
-    margin-top: 8px;
+   margin-top: 5px;
     width: 15px;
     padding-left: 10px;
     color: transparent;
