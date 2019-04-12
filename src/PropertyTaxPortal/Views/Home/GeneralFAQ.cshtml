@@ -4,10 +4,11 @@
     <div class="bgimg">
         <br />
         <br />
+        <br />
         <section class="container-fluid faq-header">
-            <h1>@Localizer["FREQUENTLY ASKED QUESTIONS"] </h1>
+            <h1>&nbsp;&nbsp;&nbsp;@Localizer["FREQUENTLY ASKED QUESTIONS"] </h1>
         </section>
-        <div class="faq-subheading">@Localizer["If you have any questions, please contact us. We will respond to you as soon as possible."]</div>
+        <div class="faq-subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Localizer["If you have any questions, please contact us. We will respond to you as soon as possible."]</div>
     </div>
     <section class="tab-background">
         <div class="tab container">
@@ -58,10 +59,21 @@
         </div>
     </section>
     <div id="All" class="tabcontent active active-tab">
-        <div style="background-color:grey; padding-top:7px">
-            <h3 class="section-center"> @Localizer["All FAQs"] </h3>
-            <div style="height:25px; background-color:#343a40"></div>
+        <div class="row text-center">
+            <div class="col-md-6" style="padding-right:0">
+                <img src="~/images/faq.jpg" class="container-fluid center-block w-100 p-0" />
+            </div>
+            <div class="col-md-6 pto-title" >                
+                <br />                
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 style="color:white; ">@Localizer["ALL FAQs"]</h1>
+                <br />
+            </div>
         </div>
+        <div style="height:25px; background-color:#343a40"></div>
         <br />
         <div class="FAQ-Section-2">
             <section class="container section-tabs">
@@ -174,10 +186,21 @@
         </div>
     </div>
     <div id="TaxBill" class="tabcontent" style="display:none">
-        <div style="background-color:grey; padding-top:7px">
-            <div><h3 class="section-center">@Localizer["Tax Bills"] </h3></div>
-            <div style="height:25px; background-color:#343a40"></div>
+        <div class="row text-center">
+            <div class="col-md-6" style="padding-right:0">
+                <img src="~/images/faq.jpg" class="container-fluid center-block w-100 p-0" />
+            </div>
+            <div class="col-md-6 pto-title" >                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 style="color:white; ">@Localizer["TAX BILLS"]</h1>
+                <br />
+            </div>
         </div>
+        <div style="height:25px; background-color:#343a40"></div>
         <br />
         <div class="FAQ-Section-2">
             <section class="container section-tabs">
@@ -208,10 +231,21 @@
         </div>
     </div>
     <div id="Refund" class="tabcontent" style="display:none">
-        <div style="background-color:grey; padding-top:7px">
-            <h3 class="section-center"> @Localizer["Refunds/Tax Sales/Tax Liens"] </h3>
-            <div style="height:25px; background-color:#343a40"></div>
+        <div class="row text-center">
+            <div class="col-md-6" style="padding-right:0">
+                <img src="~/images/faq.jpg" class="container-fluid center-block w-100 p-0" />
+            </div>
+            <div class="col-md-6 pto-title" >                                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 style="color:white; ">@Localizer["REFUNDS / TAX SALES / TAX LIENS"]</h1>
+                <br />
+            </div>
         </div>
+        <div style="height:25px; background-color:#343a40"></div>
         <br />
         <div class="FAQ-Section-2">
             <section class="container section-tabs">
@@ -241,94 +275,116 @@
             </section>
         </div>
     </div>
-        <div id="Property" class="tabcontent" style="display:none">
-            <div style="background-color:grey; padding-top:7px">
-                <h3 class="section-center"> @Localizer["Property Values"] </h3>
-                <div style="height:25px; background-color:#343a40"></div>
+    <div id="Property" class="tabcontent" style="display:none">
+        <div class="row text-center">
+            <div class="col-md-6" style="padding-right:0">
+                <img src="~/images/faq.jpg" class="container-fluid center-block w-100 p-0" />
             </div>
-            <br />
-            <div class="FAQ-Section-2">
-                <section class="container section-tabs">
-                    @foreach (FAQ propfaq in Model.Property)
-                    {
-                        if (@propfaq.question.Contains("<a"))
-                        {
-                            <div>
-                                <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                    @Localizer[@Html.Raw(@propfaq.question).ToString()]
-                                </button>
-                            </div>
-                        }
-                        else
-                        {
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    @Localizer[@Html.Raw(@propfaq.question).ToString()]
-                                </button>
-                                <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                    @Localizer[@Html.Raw(@propfaq.answer).ToString()]
-                                </div>
-                            </div>
-                            <div style="height:5px;"></div>
-                        }
-                    }
-                </section>
+            <div class="col-md-6 pto-title" >                                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 style="color:white; ">@Localizer["PROPERTY VALUES"]</h1>
+                <br />
             </div>
-
         </div>
-        <div id="Ownership" class="tabcontent" style="display:none">
-            <div style="background-color:grey; padding-top:7px">
-                <h3 class="section-center"> @Localizer["Ownership"] </h3>
-                <div style="height:25px; background-color:#343a40"></div>
-            </div>
-            <br />
-            <div class="FAQ-Section-2">
-                <section class="container section-tabs">
-                    @foreach (FAQ ownerfaq in Model.Ownership)
+        <div style="height:25px; background-color:#343a40"></div>
+        <br />
+        <div class="FAQ-Section-2">
+            <section class="container section-tabs">
+                @foreach (FAQ propfaq in Model.Property)
+                {
+                    if (@propfaq.question.Contains("<a"))
                     {
-                        if (@ownerfaq.question.Contains("<a"))
-                        {
-                            <div>
-                                <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                    @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
-                                </button>
-                            </div>
-                        }
-                        else
-                        {
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
-                                </button>
-                                <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                    @Localizer[@Html.Raw(@ownerfaq.answer).ToString()]
-                                </div>
-                            </div>
-                            <div style="height:5px;"></div>
-                        }
+                        <div>
+                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                                @Localizer[@Html.Raw(@propfaq.question).ToString()]
+                            </button>
+                        </div>
                     }
-                </section>
-            </div>
-
+                    else
+                    {
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Localizer[@Html.Raw(@propfaq.question).ToString()]
+                            </button>
+                            <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                                @Localizer[@Html.Raw(@propfaq.answer).ToString()]
+                            </div>
+                        </div>
+                        <div style="height:5px;"></div>
+                    }
+                }
+            </section>
         </div>
 
+    </div>
+    <div id="Ownership" class="tabcontent" style="display:none">
+        <div class="row text-center">
+            <div class="col-md-6" style="padding-right:0">
+                <img src="~/images/faq.jpg" class="container-fluid center-block w-100 p-0" />
+            </div>
+            <div class="col-md-6 pto-title" >                                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1 style="color:white; ">@Localizer["OWNERSHIP"]</h1>
+                <br />
+            </div>
+        </div>
+        <div style="height:25px; background-color:#343a40"></div>
+        <br />
+        <div class="FAQ-Section-2">
+            <section class="container section-tabs">
+                @foreach (FAQ ownerfaq in Model.Ownership)
+                {
+                    if (@ownerfaq.question.Contains("<a"))
+                    {
+                        <div>
+                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                                @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
+                            </button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
+                            </button>
+                            <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                                @Localizer[@Html.Raw(@ownerfaq.answer).ToString()]
+                            </div>
+                        </div>
+                        <div style="height:5px;"></div>
+                    }
+                }
+            </section>
+        </div>
 
-        <script>
-            function openCity(evt, TabName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(TabName).style.display = "block";
-                evt.currentTarget.className += " active";
+    </div>
+
+
+    <script>
+        function openCity(evt, TabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
-            document.getElementById("defaultOpen").click();
-        </script>
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tabcontent.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(TabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
 
 
 </section>
