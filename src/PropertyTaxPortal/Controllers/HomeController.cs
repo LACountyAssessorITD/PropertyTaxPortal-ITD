@@ -46,11 +46,11 @@ namespace PropertyTaxPortal.Controllers
         public IActionResult Accessibility(string id)
         {
             Dictionary<string, string> titles = new Dictionary<string, string>();
-            titles.Add("disclaimer","Disclaimer");
-            titles.Add("privacy-policy","Privacy Policy");
-            titles.Add("accessibility", "Accessiblity");
-            titles.Add("language", "Language");
-            titles.Add("browser-compatibility", "browser Compatiblity");
+            titles.Add("disclaimer","DISCLAIMER");
+            titles.Add("privacy-policy","PRIVACY POLICY");
+            titles.Add("accessibility", "ACCESSIBILITY");
+            titles.Add("language", "LANGUAGE");
+            titles.Add("browser-compatibility", "BROWSER COMPATIBILITY");
 
 
             if (!titles.ContainsKey(id.ToLower()))
