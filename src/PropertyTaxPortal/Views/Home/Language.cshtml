@@ -1,0 +1,19 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = ViewBag.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container-fluid section-header-footerLinks">
+    <h2 class="display-4"> @Localizer[@ViewBag.Title] </h2>
+</section>
+<br />
+<br />
+<section class="container">
+    <p>This website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of the website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version.</p>
+    <br />
+    <br />
+</section>

@@ -1,0 +1,99 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = ViewBag.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container-fluid section-header-footerLinks">
+    <h2 class="display-4"> @Localizer[@ViewBag.Title] </h2>
+</section>
+<br />
+<br />
+
+<section class="container">
+    <div class="row">
+        <div class="col">
+
+            <h6 style="font-weight:600">COUNTY WEBSITE ADVERTISING AND HOTLINK POLICY</h6>
+            <p>Los Angeles County is a chartered County and a subdivision of the State of California whose mission is to provide governmental and other public services to and for the benefit of the residents of the County. In accordance with this mission, the general policy of the Board of Supervisors is to exclude from the County Internet website and the website of each County Department, all commercial advertising and promotional material, including links which provide exclusive private or financial benefit to commercial, non-public enterprises and which do not promote or enhance a public benefit to the County, its departments, or the residents served by the County. As a governmental agency, the County neither endorses nor supports individual private commercial enterprises through display of their advertising on the County’s website or through providing links to the sites of such commercial enterprises.
+            Notwithstanding the foregoing, the Board of Supervisors recognizes that, in consideration of the nature and function of the Internet, display of commercial or promotional material or links to commercial sites may, under certain circumstances, be appropriate for inclusion in the County’s website or in departmental websites where a public purpose is served. The following guidelines are hereby adopted for the guidance of County Department Directors in determining when such materials are appropriate for inclusion in County websites.</p>
+            <br />
+
+            <h6 style="font-weight:600">1. Advertising/Promotional Materials Where County Has Public/Financial lnterest</h6>
+            <p>A. Public Benefit Facilities and Venues. The County has established and maintains certain facilities and venues which promote the arts, science, cultural studies, and other public purposes. Advertising and promotion of events, programs, and exhibits at such facilities and venues may be placed on the County Internet website and on departmental websites. This includes links to commercial enterprises who market tickets or other means of access to these facilities and venues or foster participation in their programs. (Examples: Ford Theater link to online ticket agency. Programs/Exhibits at Music Center, Hollywood Bowl, Art Museum, Natural History Museum)</p>
+            <p>B. Commercial Enterprises in which the county has a financial interest. The County possesses leasehold and other financial interests in certain commercial enterprises, and derives a financial benefit from their activities. This financial benefit to the County serves a public purpose. Accordingly, commercial advertising and other promotional materials concerning these enterprises may appear on County websites. Links to the websites of these enterprises may also be included on the County Internet website and on departmental websites at the discretion of Department Directors. Appropriate notice should be provided of the County’s financial interest in these enterprises. (Examples: Gladstone’s Restaurant, Marina Del Rey)</p>
+            <p>C. Where a link is provided in the County’s website and the user exits the County website and enters a commercial website, notice and a disclaimer must be displayed in accordance with Section 8 below.</p>
+            <br />
+
+            <h6 style="font-weight:600">2. Web-Based All-lnclusive Information about Private Enterprises which Provide a Service or Benefit to the Public where the Service or Benefit is Directly Related to a County Department’s Mission or Services</h6>
+            <p>Certain commercial and public agencies maintain information about private persons, enterprises, and organizations which provide services to the public.</p>
+            <p>A. Public Agency. Where such information is directly maintained by public agencies, such as lists of licensed child care providers or lists of restaurants that are graded by the Department of Health Services. County websites may display such information or provide links to the public agency or directly to that information.</p>
+            <p>B. Private Agency. Where information is maintained by private commercial agencies but the persons or organizations listed provide services directly related to the mission of a County Department or to the services it provides to the public. A Department may display such information on its website or provide a link to the information or the commercial agency which maintains such information whether or not the site linked to also contains commercial advertising. In such cases, the Department Director must make a good faith determination that:</p>
+            <p>i. The Department’s clients, service recipients, or interested County residents would benefit from the information;</p>
+            <p>ii. It would be duplicative for the Department to independently create or maintain such information; and.</p>
+            <p>iii. The commercial agency which maintains the information has represented that it includes all legitimate or licensed service providers within the County or within the geographical area served by the Department.</p>
+            <p>No link may be provided directly on a County departmental website to any enterprise or organization included in that information.</p>
+            <p>Where a link is provided in the County website to the agency which maintains the information or to the information, and the user exits the County website and enters a commercial site which may contain advertising or other promotional material, notice and a disclaimer must be displayed in accordance with Section 8 below.</p>
+            <p>(Examples: A list maintained by a California State agency of licensed child care centers located in the County could be displayed on the website of a Department that serves the needs of children and families. A link to the State agency or to the list could be included even if the list maintained by the State agency contained centers both in the County and throughout the State.</p>
+            <p>A commercially maintained list of newspapers in a particular category or geographic area could be displayed or linked to the Public Information Office website since its mission is directly related to fostering media relations. If displayed, however, no link to an individual newspaper is permitted. If a link is provided to a commercial agency maintaining the list or to the list, the site linked to may contain advertising, but a disclaimer must be displayed on the County’s website as the user exits in accordance with Section 8 below.</p>
+            <p>The Department of Health Services could display a list of public health ratings of all restaurants in the County since public dissemination of such information is directly related to its mission. However, display or linking to a commercial list of popular ratings of restaurants or to an individual restaurant would not be permitted under these guidelines.</p>
+            <p>Public Works could display a list of names and locations of licensed recyclers since its mission includes fostering recycling of waste, but could not link to those businesses).</p>
+            <br />
+        </div>
+        <div class="col">
+
+            <h6 style="font-weight:600">3. Links to Commercial Sites with Information Critical to or Vitally Enhancing a County Department’s Mission or Services where Replication of Information by Department is Not Feasible</h6>
+            <p>Certain private commercial sites maintain and display information which provides a public or community service or other ancillary static or interactive information to aid the public which is not generally available through a governmental agency due to the cost of compiling, maintaining, and/or displaying such information. In order to support the cost of compilation and maintenance of this information, these private commercial sites may include advertising or promotional material in the information display.</p>
+            <p>Although the County neither supports nor endorses entities advertised or promoted on such sites, it recognizes that a public benefit is served by providing the underlying information to assist County residents. Accordingly, links to such sites which contain this information but also display commercial advertising or promotional material may be included on departmental websites when the Department Director has made a good faith determination that:</p>
+            <p>A. The department’s independent replication of the information targeted for linkage is infeasible due to financial or other considerations; and,</p>
+            <p>B. No, non-commercial site provides the information targeted to linkage; and,</p>
+            <p>C. The information targeted for linkage is critical to a service provided by the Department, or</p>
+            <p>D. The information targeted for linkage is a vital enhancement to the Department’s mission. (Examples: The Chief Executive Office and Board offices could link to a private website that provides information about community activities in unincorporated areas. The Department of Parks and Recreation could link to a site that provides sports league management services.)</p>
+            <p>A disclaimer must be displayed on the County’s website as the user exits in accordance with Section 8 below.</p>
+            <br />
+
+            <h6 style="font-weight:600">4. County Program Sponsors and Donors</h6>
+            <p>County program sponsors and cash or services donors may be acknowledged through a display of their names, logos, or other information, but no link is permitted to their websites. The listing of such sponsors or donors is limited to secondary pages of websites, but may be accessed from the primary page. Departments are responsible for informing the Board of such donations through the current established process for donations.</p>
+            <p>(Examples: Public Works could list sponsors of environmental programs, but could not link to their sites. Beaches and Harbors and Parks and Recreation could name their official sponsors. Private designers of websites who have donated their services may be acknowledged, but no link is permitted to their websites).</p>
+            <br />
+
+            <h6 style="font-weight:600">5. Government Agencies; Academic Institutions; Public-Private Partnerships; Professional, Cultural, Community-Based and Non-Profit Organizations</h6>
+            <p></p>
+            <br />
+
+            <h6 style="font-weight:600">6. Links to Search Engines</h6>
+            <p>Links to search engines are permitted where a Department’s core mission would be advanced by presenting information from a variety of sources external to the Department.</p>
+            <br />
+
+            <h6 style="font-weight:600">7. No Links to Sites Containing Inappropriate Material</h6>
+            <p>Links to sites containing inappropriate material are expressly prohibited.</p>
+            <br />
+
+            <h6 style="font-weight:600">8. Notice of Leaving County Website and a Disclaimer</h6>
+            <p>When providing links to non-County sites, Departments must include a disclaimer on their home page disavowing endorsement or responsibility for the material on sites being linked. Departments must also use a standardized alert or redirect script page that warns users they are leaving the County site and allows them to proceed or cancel. This alert would read: “You are now leaving the Los Angeles County website and linking to a website that may contain commercial advertising. Los Angeles County does not endorse or support any of the advertising that may be contained on this site.</p>
+            <br />
+
+            <h6 style="font-weight:600">9. Contractors that Create Websites for County Departments</h6>
+            <p>Departments shall provide website contractors with a copy of this policy and website design guidelines, which contractors shall observe in creating webpages for Departments. The requirement to follow these guidelines shall be set forth in the contract for website design. The Internal Services Department, in creating webpages for Departments. shall enforce the adopted guidelines.</p>
+            <br />
+
+            <h6 style="font-weight:600">10. Authority of Chief Executive Officer</h6>
+            <p>The CEO is authorized to order removal of material from Department websites which is noncompliant with these adopted guidelines.</p>
+            <br />
+
+            <h6 style="font-weight:600">11. Link Maintenance</h6>
+            <p>Departments shall routinely check links on their websites to ensure they are functional and contain no material which violates this policy.</p>
+            <br />
+
+            <h6 style="font-weight:600">12. Language Translation</h6>
+            <p>The website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of this website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version.</p>
+            <br />
+       </div>
+    </div>
+    <br />
+    <br />
+    
+</section>

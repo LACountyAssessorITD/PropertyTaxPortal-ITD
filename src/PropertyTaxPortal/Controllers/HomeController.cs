@@ -65,6 +65,30 @@ namespace PropertyTaxPortal.Controllers
                 return View();
             }
         }
+
+        public IActionResult PrivacyPolicy()
+        {
+            ViewBag.Title = "PRIVACY POLICY";
+            return View();
+        }
+
+        public IActionResult Language()
+        {
+            ViewBag.Title = "LANGUAGE TRANSLATION";
+            return View();
+        }
+
+        public IActionResult Disclaimer()
+        {
+            ViewBag.Title = "DISCLAIMER";
+            return View();
+        }
+
+        public IActionResult BrowserCompatibility()
+        {
+            ViewBag.Title = "BROWSER COMPATIBILITY";
+            return View();
+        }
    
         public async Task<IActionResult> NewsLanding(int? id)
         {
