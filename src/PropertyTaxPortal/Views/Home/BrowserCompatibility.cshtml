@@ -1,0 +1,40 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = ViewBag.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container-fluid section-header-footerLinks">
+    <h2 class="display-4"> @Localizer[@ViewBag.Title] </h2>
+</section>
+<br />
+<br />
+<section class="container">
+    <p style="font-style: italic;">In order to experience the enhanced features and services of this website, we recommend using the latest version of your Internet browser.</p>
+    <p>Using an older version may cause some of the site’s features to display incorrectly. If you are having difficulty viewing the site, you can download and install the latest version of your browser using one of the links below:</p>
+    <br />
+
+    <div class="row">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p style="font-weight:600">Firefox:</p> &nbsp; &nbsp; &nbsp; <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">https://www.mozilla.org/en-US/firefox/new/</a>
+    </div>
+    <div class="row">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p style="font-weight:600">Internet Explorer (PC only):</p> &nbsp; &nbsp; &nbsp; <a href="windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">windows.microsoft.com/en-us/internet-explorer/download-ie</a>
+    </div>
+    <div class="row">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p style="font-weight:600">Google Chrome:</p> &nbsp; &nbsp; &nbsp; <a href="https://www.google.com/chrome/browser/" target="_blank">https://www.google.com/chrome/browser/</a>
+    </div>
+    <div class="row">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p style="font-weight:600">Safari:</p> &nbsp; &nbsp; &nbsp; <a href="support.apple.com/downloads/#safari" target="_blank">support.apple.com/downloads/#safari</a>
+    </div>
+    <br />
+
+    <h6 style="font-weight:600">Please note:</h6>
+    <p>Clicking the above links will take you to an outside site not supported or promoted by the Los Angeles County Office of the Assessor.</p>
+    <p>The above links are provided for informational purposes only. Los Angeles County Office of the Assessor does not support or promote any advertising, sales or other commercial information or products supplied or included on outside websites.</p>
+    <br />
+    <br />
+    
+</section>
