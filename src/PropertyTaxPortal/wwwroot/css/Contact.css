@@ -125,24 +125,8 @@
 }
 /* Style the buttons inside the tab */
 
-.tab.container {
-    max-width: 1400px;
-}
 
-.tab button {
-    background-color: #343a40;
-    float: left;
-    outline: 1px;
-    border-right-color: white;
-    border-top-color: #343a40;
-    cursor: pointer;
-    padding: 16px 18px;
-    transition: 0.3s;
-    font-size: 17px;
-    border-left: 1px;
-    color: white;
-    position: relative;
-}
+
 
 /* Change background color of buttons on hover */
 .tab button:hover {

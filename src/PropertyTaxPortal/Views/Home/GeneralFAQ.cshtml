@@ -15,10 +15,11 @@
             <div class="row">
                 @if (Model.tabid == 0)
                 {
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
-                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-sm-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" style="width:500px;" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxAgent')">@Localizer["Tax Agent Registration"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
                 }
                 else if (Model.tabid == 1)
@@ -27,6 +28,7 @@
                     <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxAgent')">@Localizer["Tax Agent Registration"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
 
                 }
@@ -36,6 +38,7 @@
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxAgent')">@Localizer["Tax Agent Registration"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
 
                 }
@@ -45,15 +48,26 @@
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxAgent')">@Localizer["Tax Agent Registration"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
                 }
-                else
+                else if (Model.tabid == 4)
                 {
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
-                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'TaxAgent')">@Localizer["Tax Agent Registration"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
+                }
+                else
+                {
+                    <button class="col-sm-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
+                    <button class="col-sm-2 col-sm-12 tablinks" style="width:500px;" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-sm-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
+                    <button class="col-sm-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
+                    <button class="col-sm-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxAgent')">@Localizer["Tax Agent Registration"]</button>
+                    <button class="col-sm-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'All')">@Localizer["All FAQs"]</button>
                 }
             </div>
         </div>
