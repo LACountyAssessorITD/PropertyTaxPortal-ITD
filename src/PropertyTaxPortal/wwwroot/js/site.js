@@ -78,6 +78,23 @@
             $('.js--wp-7').removeClass('animated pulse')
             $('.c-4').removeClass('animated flip')
         });
-
+    $('.floatbox').click(function () {
+        $('.floatbox').removeClass('display-block')
+    });
 });
 
+function displayDescription(i) {
+    //JH = document.body.clientHeight;
+    //JW = document.body.clientWidth;
+    //JX = document.body.scrollLeft;
+    //JY = document.body.scrollTop;
+    //var w = null;
+    
+    $('#div' + i).addClass('display-block')
+    //w.style.right = 0;
+    //w.style.top = document.body.scrollTop;
+    //w.style.display = '';
+}
+function killDescription(i) {
+    //document.getElementById("div" + i).style.display = 'none';
+}

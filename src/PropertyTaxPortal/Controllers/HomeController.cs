@@ -43,6 +43,16 @@ namespace PropertyTaxPortal.Controllers
             return View(context);
         }
 
+        public IActionResult AnnualSecuredProperty()
+        {
+            return View();
+        }
+
+        public IActionResult AnnualSecuredPropertyTaxInformationStatement()
+        {
+            return View();
+        }
+
         public IActionResult Accessibility(string id)
         {
             Dictionary<string, string> titles = new Dictionary<string, string>();

@@ -5,7 +5,10 @@
     
     z-index: 9999;
 }
-
+.bg-bills {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/taxbill_img.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/taxbill_img.png');
+}
 * {
     margin: 0;
     padding: 0;
@@ -445,4 +448,81 @@ footer {
 
 #demo-2 input::-webkit-input-placeholder {
     color: transparent;
+}
+/* --------------------------- */
+/* --------TAX BILLS------ */
+/* --------------------------- */
+.tax-content{
+    max-width: 880px;
+}
+.bill-step {
+    margin-top: 40px;
+    font-size: 80%;
+}
+.bill-step div {
+    color: #fff;
+    border: 2px solid #753747;
+    background-color: #753747;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 125%;
+    margin-right: 25px;
+}
+
+/*.floatbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    max-width: 500px;
+    background: #000;
+    opacity: 0.9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px;
+}*/
+
+.floatbox {
+    /** Default lightbox to hidden */
+    display: none;
+    
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.float-content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    max-width: 500px;
+    background: #000;
+    opacity: 0.9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px;
+}
+.floatbox:target {
+    /** Remove default browser outline */
+    outline: none;
+    /** Unhide lightbox **/
+    display: block;
+}
+
+.display-block {
+    display: block;
 }
