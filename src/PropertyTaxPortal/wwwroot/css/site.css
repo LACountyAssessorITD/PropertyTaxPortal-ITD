@@ -1,8 +1,9 @@
 ﻿.sticky {
     position: fixed;
-    top: 91px !important;
+    top: 100px;
     left: 0;
-    right: 0;
+    
+    z-index: 9999;
 }
 
 * {
