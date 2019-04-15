@@ -2,11 +2,10 @@
 @using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
 
-@*@{
-        ViewData["Title"] = "Index";
-    }*@
 
-<h1>Index</h1>
+<div style="text-align: center; font-size:35px;font-weight:bold; border:1px; width:100%;padding-top:15px;padding-bottom:15px;">
+    Category Administration
+</div>
 <script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
 <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -41,7 +40,6 @@
          }
     }
 </script>
-
 <nav aria-label="Suppliers navigation example">
     @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
 </nav>
@@ -71,13 +69,16 @@
                     <a asp-action="DownArrow" asp-route-pagenum="@Model.PageIndex" asp-route-id="@item.CategoryID"><img src="~/images/downArrow.gif" /></a>
                     <a asp-action="UpArrow" asp-route-id="@item.CategoryID" asp-route-pagenum="@Model.PageIndex"><img src="~/images/upArrow.gif" sizes="30px" /> </a> |
                     <a asp-action="CreateorEdit" asp-route-id="@item.CategoryID">Edit</a> |
-                    @*<a asp-action="Delete" onclick="Delete('@item.CategoryID')">Delete</a>*@
                     <a href="" onclick="Delete('@item.CategoryID')">Delete</a>
                 </td>
             </tr>
         }
+
     </tbody>
+    <tr>
+        <td>
+            <a asp-controller="Admin"><b>  << Back to Admin</b></a>
+        </td>
+    </tr>
 </table>
-<nav aria-label="Suppliers navigation example">
-    <vc:pager paging-list="@Model" />
-</nav>
+

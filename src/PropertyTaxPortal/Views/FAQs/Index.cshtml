@@ -1,15 +1,7 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<PropertyTaxPortal.Models.FAQ>
 @using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
-@*@{
-    ViewData["Title"] = "FAQ";
-}*@
-<div style="text-align: center; font-size:35px;font-weight:bold; border:1px; width:1000px">
-    FAQ Administration
-</div>
-<nav aria-label="Suppliers navigation example">
-    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
-</nav>
+
 <script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
 <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -41,7 +33,14 @@
          }
     }
 </script>
+<div style="text-align: center; font-size:35px;font-weight:bold; border:1px; width:100%;padding-top:15px;padding-bottom:15px;">
+    FAQ Administration
+</div>
 
+<nav aria-label="Suppliers navigation example">
+    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+  
+</nav>
 <table class="table">
     <thead>
         <tr>
@@ -51,7 +50,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.CategoryName)
             </th>
-
             <th>
                 @Html.DisplayNameFor(model => model.featuredCode)
             </th>
@@ -72,7 +70,6 @@
                     @Html.DisplayFor(modelItem => item.featuredCode)
                 </td>
                 <td>
-
                     <a asp-action="DownArrow" asp-route-pagenum="@Model.PageIndex" asp-route-id="@item.FAQID"><img src="~/images/downArrow.gif" /></a>
                     <a asp-action="UpArrow" asp-route-id="@item.FAQID" asp-route-pagenum="@Model.PageIndex"><img src="~/images/upArrow.gif" sizes="30px" /> </a> |
                     <a asp-action="CreateorEdit" asp-route-id="@item.FAQID">Edit</a> |
@@ -81,4 +78,9 @@
             </tr>
         }
     </tbody>
+    <tr>
+        <td>
+            <a asp-controller="Admin"><b>  << Back to Admin</b></a>
+        </td>
+    </tr>
 </table>

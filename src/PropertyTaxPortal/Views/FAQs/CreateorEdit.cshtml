@@ -1,12 +1,11 @@
 ﻿@model PropertyTaxPortal.Models.FAQ
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = @ViewBag.Caption;
 }
-
-<h1>Create</h1>
-
-<h4>FAQ</h4>
+<div style="width:50%;text-align:center">
+    <h1>@ViewBag.Caption</h1>
+</div>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -15,55 +14,55 @@
             <input type="hidden" asp-for="FAQID" />
             <table style="border:1px;width:750px">
                 <tr>
-                    <td>
+                    <td style="text-align:right;padding-right:10px;">
                         <label asp-for="CategoryID" class="control-label"></label>
                     </td>
                     <td>
-                        <div class="form-group">
+                        <div class="form-group" style="padding-bottom:10px;">
                             @Html.DropDownList("categoryID", null, htmlAttributes: new { @class = "form-control" })
                             <span asp-validation-for="CategoryID" class="text-danger"></span>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="text-align:right;padding-right:10px;">
                         <label asp-for="question" class="control-label"></label>
                     </td>
                     <td>
-                        <div class="form-group">
+                        <div class="form-group" style="padding-bottom:10px;">
                             <input asp-for="question" class="form-control" />
                             <span asp-validation-for="question" class="text-danger"></span>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="text-align:right;padding-right:10px;">
                         <label asp-for="answer" class="control-label"></label>
                     </td>
                     <td>
-                        <div class="form-group">
-                            <input asp-for="answer" class="form-control" />
+                        <div class="form-group" style="padding-bottom:10px;">
+                            <textarea asp-for="answer" class="form-control" ></textarea>
                             <span asp-validation-for="answer" class="text-danger"></span>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="text-align:right;padding-right:10px;">
                         <label asp-for="updatedOn" class="control-label"></label>
                     </td>
                     <td>
-                        <div class="form-group">
-                            <input asp-for="updatedOn" class="form-control" />
+                        <div class="form-group" style="padding-bottom:10px;">
+                            <input asp-for="updatedOn"  class="form-control" />
                             <span asp-validation-for="updatedOn" class="text-danger"></span>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="text-align:right;padding-right:10px;">
                         Show as
                     </td>
                     <td>
-                        <div class="form-group">
+                        <div class="form-group" >
                             @Html.DropDownList("featuredCode", new List<SelectListItem>
                             {
                             new SelectListItem{ Text="Featured", Value = "NFE" },
@@ -75,15 +74,12 @@
                     </td>
                 </tr>
                 </table>
-                
-                <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
+                <br />
+                <div class="form-group" style="width:50%;text-align:center">
+                    <a asp-action="Index" style="padding-right:45px"><b>  << Back to List</b></a><input type="submit" style="width:100px;" value="@ViewBag.ButtonValue" class="btn btn-primary"/>
                 </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
