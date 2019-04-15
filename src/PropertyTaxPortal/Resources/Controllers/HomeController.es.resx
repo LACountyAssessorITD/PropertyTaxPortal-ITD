@@ -313,4 +313,8 @@
     <value>Referencia</value>
     <comment>User email</comment>
   </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Registro de agente de impuestos</value>
+    <comment>Subject dropdown in public inquiry page</comment>
+  </data>
 </root>
