@@ -190,13 +190,15 @@
 }
 
 .contact-pto-header {
-    width: auto;
+    /*width: auto;*/
+    height:250px;
+    overflow:hidden;
 }
 
 .contact-pto-title {
     background-color: #454E57;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 75px;
 }
 
 .area-text-border {
