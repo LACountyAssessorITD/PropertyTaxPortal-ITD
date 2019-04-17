@@ -53,6 +53,11 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        public IActionResult NoticeofDelinquency()
+        {
+            return View();
+        }
+
         public IActionResult Accessibility(string id)
         {
             Dictionary<string, string> titles = new Dictionary<string, string>();
@@ -143,10 +148,12 @@ namespace PropertyTaxPortal.Controllers
             var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
             var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
             var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
+            var modelTaxAgentFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 5).OrderBy(f => f.sOrder);
             FaqFinalModel.TaxBill = modelTaxBillFAQs;
             FaqFinalModel.Refund = modelRefundFAQs;
             FaqFinalModel.Property = modelPropertyFAQs;
             FaqFinalModel.Ownership = modelOwnershipFAQs;
+            FaqFinalModel.TaxAgent = modelTaxAgentFAQs;
             FaqFinalModel.tabid = id;            
             return View(FaqFinalModel);
         }
