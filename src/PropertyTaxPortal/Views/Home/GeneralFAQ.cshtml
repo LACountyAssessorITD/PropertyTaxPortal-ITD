@@ -184,32 +184,36 @@
             </section>
         </div>
     </div>
+    <!-- edited css to match design of 'areas of respons' -->
     <div id="TaxBill" class="tabcontent" style="display:none">
         <br />
         <div class="FAQ-Section-2">
-            <section class="container section-tabs">
+            <section class="container justify-content-center" id="accordion" role="tablist" aria-multiselectable="true">
                 @foreach (FAQ taxfaq in Model.TaxBill)
                 {
                     if (@taxfaq.question.Contains("<a"))
                     {
-                        <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                        <div class="card">
+                            <button type="button" id="dropdownMenuButton" class=" card-header">
                                 @Localizer[@Html.Raw(@taxfaq.question).ToString()]
                             </button>
                         </div>
+                        <br />
                     }
                     else
                     {
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle faq-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="card dropdown">
+                            <h6 class=" card-header"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @Localizer[@Html.Raw(@taxfaq.question).ToString()]
-                            </button>
+                            </h6>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
                                 @Localizer[@Html.Raw(@taxfaq.answer).ToString()]
                             </div>
                         </div>
+                        <br />
+                        
                     }
-                    <div style="height:5px;"></div>
+                    
                 }
             </section>
         </div>

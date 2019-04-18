@@ -6,14 +6,14 @@
 }
 
 .faq-button {
-    background-color: #fff;
+    /* background-color: #fff;
     border: solid 0.5px #ddd;
     color: #000;
-    outline: 1px;
+    outline: 1px; */
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
-.faq-Anchor-button {
+/* .faq-Anchor-button {
     max-width: 800px;
     background-color: #fff;
     border: solid 0.5px #ddd;
@@ -22,7 +22,7 @@
     text-align: left;
     padding: 7px;
     border-radius: 5px;
-}
+} */
 .bgimg {
     /*background-image: url('../images/faq.jpg');*/
     height: 270px;
@@ -81,8 +81,8 @@
 .section-tabs .dropdown-menu {
     -webkit-transform: none !important;
             transform: none !important;
-    margin-bottom: 10px;
-    border-radius: 5px 5px;
+    /* margin-bottom: 10px;
+    border-radius: 5px 5px; */
 }
 .section-tabs .btn:focus{
     -webkit-box-shadow:none !important;
