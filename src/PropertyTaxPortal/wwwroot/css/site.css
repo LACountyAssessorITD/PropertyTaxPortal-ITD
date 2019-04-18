@@ -156,7 +156,7 @@ header {
     margin-top: 6px;
 }
 
-.nav-icon-bar p,
+.navbar .nav-icon-bar p,
 h5 {
     margin-bottom: 0;
     
@@ -172,7 +172,7 @@ h5 {
 
 }
 
-.nav-icon-bar h5 {
+.navbar .nav-icon-bar h5 {
     font-size: 120%;
     font-weight: 600;
 }
