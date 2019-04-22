@@ -300,7 +300,17 @@
         padding-bottom: 172px;
     }
 }
-
+@media only screen and (max-width: 767px){
+    .contact-top{
+        height: auto;
+    }
+    .contact-bottom {
+        padding-top: 30px;
+    }
+    .Section-Contact-Content .border-right {
+        border-right: none !important;
+    }
+}
 
 @media only screen and (max-width: 644px) {
     
