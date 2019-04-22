@@ -225,20 +225,20 @@
     <value>Sitio web</value>
     <comment>Thank you page</comment>
   </data>
-  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessment Appeals Board will respond to your request shortly." xml:space="preserve">
-    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal de la Junta de Apelaciones de Evaluación responderá a su solicitud en breve.</value>
+  <data name="A staff member from the Assessment Appeals Board will respond to your request shortly." xml:space="preserve">
+    <value>Un miembro del personal de la Junta de Apelaciones de Evaluación responderá a su solicitud en breve.</value>
     <comment>Thank you page / User email</comment>
   </data>
-  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessor's department will respond to your request shortly." xml:space="preserve">
-    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal del departamento del Asesor responderá a su solicitud en breve.</value>
+  <data name="A staff member from the Assessor's department will respond to your request shortly." xml:space="preserve">
+    <value>Un miembro del personal del departamento del Asesor responderá a su solicitud en breve.</value>
     <comment>Thank you page / User email</comment>
   </data>
-  <data name="Thank you for completing our Public Inquiry form. A staff member from the Auditor-Controller's department will respond to your request shortly." xml:space="preserve">
-    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal del departamento de Auditor-Controlador responderá a su solicitud en breve.</value>
+  <data name="A staff member from the Auditor-Controller's department will respond to your request shortly." xml:space="preserve">
+    <value>Un miembro del personal del departamento de Auditor-Controlador responderá a su solicitud en breve.</value>
     <comment>Thank you page / User email</comment>
   </data>
-  <data name="Thank you for completing our Public Inquiry form. A staff member from the Treasurer &amp; Tax Collector's department will respond to your request shortly." xml:space="preserve">
-    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal del Departamento de Tesorero y Recaudador de impuestos responderá a su solicitud en breve.</value>
+  <data name="A staff member from the Treasurer &amp; Tax Collector's department will respond to your request shortly." xml:space="preserve">
+    <value>Un miembro del personal del Departamento de Tesorero y Recaudador de impuestos responderá a su solicitud en breve.</value>
     <comment>Thank you page</comment>
   </data>
   <data name="Please select" xml:space="preserve">
@@ -297,8 +297,8 @@
     <value>El número de referencia para su consulta es</value>
     <comment>User email</comment>
   </data>
-  <data name="To submit your inquiries, please use our Inquiry Form at" xml:space="preserve">
-    <value>Para enviar sus consultas, utilice nuestro Formulario de consulta en</value>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>Para enviar sus consultas, utilice nuestro Formulario de consulta pública en</value>
     <comment>User email</comment>
   </data>
   <data name="Assessor Identification Number" xml:space="preserve">
@@ -316,5 +316,9 @@
   <data name="Tax Agent Registration" xml:space="preserve">
     <value>Registro de agente de impuestos</value>
     <comment>Subject dropdown in public inquiry page</comment>
+  </data>
+  <data name="Thank you for completing our Public Inquiry Form." xml:space="preserve">
+    <value>Gracias por completar nuestro formulario de consulta pública.</value>
+    <comment>Thank you page / User email</comment>
   </data>
 </root>
