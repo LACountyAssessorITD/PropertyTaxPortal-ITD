@@ -9,8 +9,15 @@
 }
 
 .news-feed p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-height: 1.5; /* fallback */
+    max-height: 22px;; /* fallback */
     -webkit-transform: translateY(35%);
-            transform: translateY(35%);
+    transform: translateY(35%);
 }
 
 .latest-news {

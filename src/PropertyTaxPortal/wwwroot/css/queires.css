@@ -161,7 +161,10 @@
     .nav-icon-bar {
         display: block;
     }
-    
+    .section-news {
+        
+        font-size: 90%;
+    }
     html,
     body {
         font-size: 15px;
@@ -250,6 +253,7 @@
             width: 100%;
             top: 86px;
         }
+    
 }
 
 @media only screen and (max-width: 845px) {
