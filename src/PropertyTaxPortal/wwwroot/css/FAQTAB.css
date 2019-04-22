@@ -5,6 +5,11 @@
     /* Style the list */
 }
 
+.faq-subheading a{
+    color: #fff;
+    text-decoration: underline;
+}
+
 .faq-button {
     /* background-color: #fff;
     border: solid 0.5px #ddd;

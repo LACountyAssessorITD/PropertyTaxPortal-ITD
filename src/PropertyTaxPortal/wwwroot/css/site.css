@@ -254,13 +254,15 @@ nav a img {
 
 .dropdown-menu {
     background-color:white;
-    font-size: 0.7rem;
+    font-size: 110%;
     line-height: 1.3rem;
-    padding: 30px;
+    padding: 15px;
     margin-top: 0;
     overflow: hidden;
     border-radius: 0;
     color:#000;
+    border-radius: 2px 2px;
+    box-shadow: 0.5px 0.5px #808080;
 }
 
 
