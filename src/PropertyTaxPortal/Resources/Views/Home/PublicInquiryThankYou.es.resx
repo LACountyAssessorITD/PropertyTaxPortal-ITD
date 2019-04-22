@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LA County" xml:space="preserve">
-    <value>Condado de Los Ángeles</value>
+  <data name="Los Angeles County" xml:space="preserve">
+    <value>Condado de los angeles</value>
   </data>
   <data name="Property Tax Portal" xml:space="preserve">
     <value>Portal de impuestos a la propiedad</value>
