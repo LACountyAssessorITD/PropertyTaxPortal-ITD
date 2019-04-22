@@ -13,6 +13,7 @@
     }*/
 }
 
+
 @media only screen and (min-width: 991px) {
     .navbar span {
         float: right;
@@ -52,6 +53,12 @@
     }
 }
 
+@media only screen and (max-width: 1364px) {
+    .nav-icon-bar {
+        display: none;
+    }
+}
+
 /* Big tablet to 1200px (widths smaller than the 1040 px row) */
 @media only screen and (max-width: 1200px) {
 
@@ -61,7 +68,7 @@
     }
 
     .navbar-nav li a {
-        font-size: 100%;
+        font-size: 90%;
     }
 
     .navbar-nav li {
@@ -151,7 +158,9 @@
         width: 250px;
         
     }
-
+    .nav-icon-bar {
+        display: block;
+    }
     
     html,
     body {
