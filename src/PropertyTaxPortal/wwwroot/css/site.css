@@ -67,6 +67,11 @@ body {
 header, footer {
     color: #fff;
 }
+
+a:hover {
+    text-decoration: none;
+    
+}
 header {
     height: 30px;
     background: #0D47A1;
@@ -144,7 +149,7 @@ header {
 /* ------ NAVBAR --- */
 /* ----------------------- */
 #contact-drop {
-    left: -130px;
+    left: -210px;
 }
 .navbar span {
     
@@ -242,7 +247,7 @@ nav a img {
 
     .small-drop ul li {
         padding-top: 0px;
-        width: 200px;
+        
     }
 
 .search-font {
@@ -253,7 +258,8 @@ nav a img {
 }
 
 .dropdown-menu {
-    background-color:white;
+    min-width: 340px;
+    background-color: white;
     font-size: 110%;
     line-height: 1.3rem;
     padding: 15px;
@@ -261,8 +267,7 @@ nav a img {
     overflow: hidden;
     border-radius: 0;
     color:#000;
-    border-radius: 2px 2px;
-    box-shadow: 0.5px 0.5px #808080;
+    
 }
 
 
@@ -306,6 +311,10 @@ nav a img {
     
     font-size: 70%;
 }
+    .section-footer a {
+        color: #808080;
+        
+    }
 
     .section-footer .row:first-child {
         max-width: 1200px;
