@@ -10,6 +10,18 @@
     //}, {
     //        offset: '60px;'
     //    });
+    var navBar = $(".tab-background");
+    
+
+    
+    $(window).scroll(function () {
+        //window.alert(hdrHeight);
+        if ($(this).scrollTop() > 250) {
+            navBar.addClass("navScrolled");
+        } else {
+            navBar.removeClass("navScrolled");
+        }
+    });
 
     $('.section-news .carousel').carousel({
         interval: 4000

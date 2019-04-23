@@ -5,6 +5,9 @@
     /* Style the list */
 }
 
+.head {
+    height: 100px;
+}
 .contact-top {
     height: 500px;
 }

@@ -177,9 +177,10 @@
 }
 
 .tab-background {
+    position:relative;
     background-color: #343a40;
     /*border: 1px solid #fff;*/
-    top: 1200px;
+    /*top: 1200px;*/
 }
 .sub-sub-heading {
     font-size:20px;

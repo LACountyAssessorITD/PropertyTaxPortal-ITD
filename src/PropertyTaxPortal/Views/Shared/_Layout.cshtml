@@ -52,6 +52,18 @@
         <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
         <link href="~/lib/FontAwesome/Fontawsome.css" rel="stylesheet" />
     </environment>
+    <script>
+        (function () {
+            var cx = '014547291270743762548:ep5pe46s0ny';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    
 
 </head>
 <body class="">
@@ -221,10 +233,11 @@
                             </div>
                         </li>
                         <li class="border-left pl-4 ml-4 pr-2 my-2">
-                            
+
                             <form id="demo-2">
-                                <input type="search" placeholder="Search">
-                            </form>
+            <input type="search" placeholder="Search">
+        </form>
+                            @*<gcse:search ></gcse:search>*@
                         </li>
                     </ul>
                 </div>
@@ -316,9 +329,10 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
-        
+
+        <script src="~/js/way.js"></script>
         <script src="~/js/site.js"></script>
-        
+
 
     </environment>
     <environment exclude="Development">
@@ -330,10 +344,11 @@
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
 
-        
-        
+
+        <script src="~/js/way.js"></script>
+
         <script src="~/js/site.js"></script>
-       
+
 
     </environment>
     <!-- Global site tag (gtag.js) - Google Analytics -->
