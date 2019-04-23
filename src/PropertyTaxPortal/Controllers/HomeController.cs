@@ -186,7 +186,7 @@ namespace PropertyTaxPortal.Controllers
         }
 
         /// <summary>
-        /// Public Inquiry form
+        /// Public Inquiry Form
         /// </summary>
         /// <returns></returns>
         public IActionResult PublicInquiry()
@@ -205,7 +205,7 @@ namespace PropertyTaxPortal.Controllers
         private const string EmailTreasurer = "@ttc.lacounty.gov";
 
         /// <summary>
-        /// Public Inquiry form with model
+        /// Public Inquiry Form with model
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
@@ -223,7 +223,7 @@ namespace PropertyTaxPortal.Controllers
                 string sEmailDept = "";
                 List<EmailTrackingCount> lEmailTracking = new List<EmailTrackingCount>();
                 string sEmailTrackingCount = "";
-                string sThankYouFront = "Thank you for completing our Public Inquiry form. A staff member from the ";
+                string sThankYouFront = "A staff member from the ";
                 string sThankYouEnd = " will respond to your request shortly.";
                 string sThankYouWhole = "";
 
@@ -243,8 +243,8 @@ namespace PropertyTaxPortal.Controllers
                         model.addressPhoneWebsite = "Los Angeles County Assessment Appeals Board<br>" +
                             "500 West Temple Street, Room B4<br>" +
                             "Los Angeles, CA 90012<br><br>" +
-                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ") and press number 5<br>" +
-                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-1471<br><br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ") and press number 5<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-1471<br><br>" +
                             _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://bos.lacounty.gov/Services/AssessmentAppeals.aspx' target='newwin'>http://bos.lacounty.gov/Services/AssessmentAppeals.aspx</a><br>";
                         break;
 
@@ -254,9 +254,9 @@ namespace PropertyTaxPortal.Controllers
                         model.Department = "Treasurer & Tax Collector's department";
                         model.addressPhoneWebsite = "Los Angeles County Treasurer and Tax Collector<br>" +
                             "225 N. Hill Street<br>" +
-                            "Los Angeles, CA 90012-2798<br><br>" +
-                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ")<br>" +
-                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-3211<br><br>" +
+                            "Los Angeles, CA 90012<br><br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +
                             _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://ttc.lacounty.gov' target='newwin'>http://ttc.lacounty.gov</a><br>";
                         break;
 
@@ -264,11 +264,12 @@ namespace PropertyTaxPortal.Controllers
                         sThankYouWhole = sThankYouFront + "Auditor-Controller's department" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.Department = "Auditor-Controller's department";
-                        model.addressPhoneWebsite = "Los Angeles County Auditor-Controller Public Service Section<br>" +
-                            "500 West Temple Steet, Room 153<br>" +
-                            "Los Angeles, CA 90012-2713<br><br>" +
-                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888)807-2111 (" + _localizer["Toll Free"] + ")<br>" +
-                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213)974-3211<br><br>" +
+                        model.addressPhoneWebsite = "Los Angeles County Auditor-Controller<br>" +
+                            "Property Tax Services Division<br>" +
+                            "500 West Temple Street, Room 153<br>" +
+                            "Los Angeles, CA 90012<br><br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-8368<br><br>" +
                             _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://auditor.lacounty.gov' target='newwin'>http://auditor.lacounty.gov</a><br>";
                         break;
 
@@ -276,11 +277,11 @@ namespace PropertyTaxPortal.Controllers
                         sThankYouWhole = sThankYouFront + "Assessor's department" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.Department = "Assessor's department";
-                        model.addressPhoneWebsite = "Los Angeles County Assessor Public Service Section<br>" +
-                            "500 West Temple Steet, Room 225<br>" +
-                            "Los Angeles, CA 90012-2713<br><br>" +
-                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;1(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
-                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +
+                        model.addressPhoneWebsite = "Los Angeles County Assessor's Public Service Section<br>" +
+                            "500 West Temple Street, Room 225<br>" +
+                            "Los Angeles, CA 90012<br><br>" +
+                            _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
+                            "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +
                             _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://assessor.lacounty.gov' target='newwin'>http://assessor.lacounty.gov</a><br>";
                         break;
 
@@ -382,7 +383,7 @@ namespace PropertyTaxPortal.Controllers
                     sOriginalBody = sOriginalBody.Replace("{CompanyNumberLabel}", _localizer["Company Number"]);
                     sOriginalBody = sOriginalBody.Replace("{RoutingIndexLabel}", _localizer["Routing Index"]);
                     sOriginalBody = sOriginalBody.Replace("{CommentsLabel}", _localizer["Comments"]);
-                    sOriginalBody = sOriginalBody.Replace("{SubmitLabel}", _localizer["To submit your inquiries, please use our Inquiry Form at"]);
+                    sOriginalBody = sOriginalBody.Replace("{SubmitLabel}", _localizer["To submit your inquiries, please use our Public Inquiry Form at"]);
                 }
                 else
                 {

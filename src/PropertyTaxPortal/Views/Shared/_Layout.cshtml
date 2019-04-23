@@ -52,6 +52,18 @@
         <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
         <link href="~/lib/FontAwesome/Fontawsome.css" rel="stylesheet" />
     </environment>
+    <script>
+        (function () {
+            var cx = '014547291270743762548:ep5pe46s0ny';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    
 
 </head>
 <body class="">
@@ -221,10 +233,11 @@
                             </div>
                         </li>
                         <li class="border-left pl-4 ml-4 pr-2 my-2">
-                            
+
                             <form id="demo-2">
-                                <input type="search" placeholder="Search">
-                            </form>
+            <input type="search" placeholder="Search">
+        </form>
+                            @*<gcse:search ></gcse:search>*@
                         </li>
                     </ul>
                 </div>
@@ -256,12 +269,12 @@
                     <div class="col-md-2 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Do You Need Help?"]</li>
-                            <li>@Localizer["211 LA County"]</li>
-                            <li>@Localizer["LA County Helps"]</li>
-                            <li>@Localizer["Online Services"]</li>
-                            <li>@Localizer["Public Alerts"]</li>
-                            <li>@Localizer["Public Information"]</li>
-                            
+                            <li><a href="https://www.211la.org/" target="_blank"> @Localizer["211 LA County"]</a></li>
+                            <li><a href="http://www.lacountyhelps.org/" target="_blank">@Localizer["LA County Helps"]</a></li>
+                            <li><a href="https://www.lacounty.gov/government/county-services/online-services/" target="_blank">@Localizer["Online Services"]</a></li>
+                            <li><a href="http://www.lacounty.gov/publicalerts/" target="_blank"> @Localizer["Public Alerts"]</a></li>
+                            <li><a href="https://www.lacounty.gov/government/public-information-records/" target="_blank">@Localizer["Public Information"]</a></li>
+
                         </ul>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
@@ -276,16 +289,16 @@
                             <li>@Localizer["Site Info"]</li>
                             <li><a asp-controller='Home' asp-route-id="accessibility" asp-action="accessibility">@Localizer["Accessibility"]</a></li>
                             <li><a asp-controller='Home' asp-action="Language">@Localizer["Language"]</a></li>
-                            <li><a asp-controller='Home' asp-action="BrowserCompatibility">@Localizer["Browser Compatibility"]</a></li>
+                            
                         </ul>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Public Info"]</li>
-                            <li>@Localizer["Board Correspondence"]</li>
-                            <li>@Localizer["Board Ageneda"]</li>
-                            <li>@Localizer["County Code"]</li>
-                            <li>@Localizer["LA County Contacts"]</li>
+                            <li><a href="http://portal.lacounty.gov/wps/portal/omd" target="_blank">@Localizer["Board Correspondence"]</a></li>
+                            <li><a href="http://bos.lacounty.gov/Board-Meeting/Board-Agendas" target="_blank">@Localizer["Board Ageneda"]</a></li>
+                            <li><a href="https://library.municode.com/ca/los_angeles_county/codes/code_of_ordinances" target="_blank">@Localizer["County Code"]</a></li>
+                            <li><a href="https://www.lacounty.gov/contact/" target="_blank">@Localizer["LA County Contacts"]</a></li>
                             <li>@Localizer["Other Government Sites"]</li>      
                         </ul>
                     </div>
@@ -293,7 +306,7 @@
                 </div>
                 <div class="row" id="footer-section">
                     <div class="">
-                        &copy; 2019 COUNTY OF LOS ANGELES
+                        &copy; @DateTime.Now.Year COUNTY OF LOS ANGELES
                     </div>
                 </div>
 
@@ -316,9 +329,10 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
-        
+
+        <script src="~/js/way.js"></script>
         <script src="~/js/site.js"></script>
-        
+
 
     </environment>
     <environment exclude="Development">
@@ -330,10 +344,11 @@
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
 
-        
-        
+
+        <script src="~/js/way.js"></script>
+
         <script src="~/js/site.js"></script>
-       
+
 
     </environment>
     <!-- Global site tag (gtag.js) - Google Analytics -->

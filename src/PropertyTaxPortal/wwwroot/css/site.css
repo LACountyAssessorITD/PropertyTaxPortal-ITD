@@ -5,10 +5,19 @@
     
     z-index: 9999;
 }
+
 .bg-bills {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/taxbill_img.png');
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/taxbill_img.png');
 }
+
+.navScrolled {
+    position: fixed !important;
+    top: 100px;
+    z-index: 9999;
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +47,7 @@
 
 html,
 body {
-    height: 100%;
+    /*height: 100%;*/
     position: relative;
     background-color: transparent;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -47,6 +56,8 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
+
+
 
 body {
     
@@ -66,6 +77,11 @@ body {
 }
 header, footer {
     color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    
 }
 header {
     height: 30px;
@@ -144,7 +160,7 @@ header {
 /* ------ NAVBAR --- */
 /* ----------------------- */
 #contact-drop {
-    left: -130px;
+    left: -210px;
 }
 .navbar span {
     
@@ -242,7 +258,7 @@ nav a img {
 
     .small-drop ul li {
         padding-top: 0px;
-        width: 200px;
+        
     }
 
 .search-font {
@@ -253,14 +269,16 @@ nav a img {
 }
 
 .dropdown-menu {
-    background-color:white;
-    font-size: 0.7rem;
+    min-width: 340px;
+    background-color: white;
+    font-size: 110%;
     line-height: 1.3rem;
-    padding: 30px;
+    padding: 15px;
     margin-top: 0;
     overflow: hidden;
     border-radius: 0;
     color:#000;
+    
 }
 
 
@@ -304,6 +322,10 @@ nav a img {
     
     font-size: 70%;
 }
+    .section-footer a {
+        color: #808080;
+        
+    }
 
     .section-footer .row:first-child {
         max-width: 1200px;
@@ -508,7 +530,7 @@ footer {
 .float-content {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25%;
+    margin-top: 380px;
     max-width: 500px;
     background: #000;
     opacity: 0.9;

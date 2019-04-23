@@ -5,8 +5,14 @@
     /* Style the list */
 }
 
+.head {
+    height: 100px;
+}
 .contact-top {
     height: 500px;
+}
+.contact-bottom {
+    padding-bottom: 100px;
 }
 
 .button-content {
@@ -23,7 +29,7 @@
 .Section-Contact-Content p {
     /*font-size: 100% !important;*/
     font-size: 100% !important;
-    padding-top: 50px;
+    margin-bottom: 0;
 }
 
 /*.faq-button {
