@@ -14,7 +14,7 @@
 .navScrolled {
     position: fixed !important;
     top: 100px;
-    z-index: 9999;
+    z-index: 500;
     width: 100%;
 }
 
