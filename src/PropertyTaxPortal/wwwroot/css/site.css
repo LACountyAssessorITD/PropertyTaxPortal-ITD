@@ -268,7 +268,7 @@ nav a img {
     margin-left: 100px;
 }
 
-.dropdown-menu {
+nav .dropdown-menu {
     min-width: 340px;
     background-color: white;
     font-size: 110%;
