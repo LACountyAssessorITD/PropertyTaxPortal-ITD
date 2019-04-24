@@ -34,19 +34,19 @@
         box-shadow: 0.5px 0.5px #808080;
     }
     
-    .dropdown:hover > .dropdown-menu {
+    nav .dropdown:hover > .dropdown-menu {
         display: block;
     }
 
-    .dropdown > .dropdown-toggle:active {
+    nav .dropdown > .dropdown-toggle:active {
         pointer-events: none;
     }
 
-    .dropdown-left:hover > .dropdown-menu {
+    nav .dropdown-left:hover > .dropdown-menu {
         display: block;
     }
 
-    .dropdown-left > .dropdown-toggle:active {
+    nav .dropdown-left > .dropdown-toggle:active {
         pointer-events: none;
     }
 

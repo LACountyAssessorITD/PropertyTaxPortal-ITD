@@ -1,18 +1,6 @@
 ﻿$(document).ready(function () {
-    //  FOr the sticky nav 
-    //$('.tabcontent').waypoint(function (direction) {
-        
-    //    if (direction == "down") {
-    //        $('nav').addClass('sticky');
-    //    } else {
-    //        $('nav').removeClass('sticky');
-    //    }
-    //}, {
-    //        offset: '60px;'
-    //    });
-    var navBar = $(".tab-background");
     
-
+    var navBar = $(".tab-background");
     
     $(window).scroll(function () {
         //window.alert(hdrHeight);

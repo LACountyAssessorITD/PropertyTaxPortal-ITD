@@ -95,17 +95,13 @@
     margin-right: auto;
 }
 
-.section-tabs {
-    max-width: 800px;
-}
+
 
 .section-tabs button {
     width: 100%;
 }
 
-.section-tabs .btn {
-    text-align: left;
-}
+
 
 .section-center {
     text-align: center;

@@ -253,7 +253,7 @@ namespace PropertyTaxPortal.Controllers
                         model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.Department = "Treasurer & Tax Collector's department";
                         model.addressPhoneWebsite = "Los Angeles County Treasurer and Tax Collector<br>" +
-                            "225 N. Hill Street<br>" +
+                            "225 N. Hill Street, First Floor Lobby<br>" +
                             "Los Angeles, CA 90012<br><br>" +
                             _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +

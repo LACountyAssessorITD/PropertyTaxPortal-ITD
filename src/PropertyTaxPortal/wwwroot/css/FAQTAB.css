@@ -66,7 +66,7 @@
 }
 
 .section-tabs {
-    max-width:800px;
+    max-width:1000px;
 }
 
 .section-tabs button {
@@ -75,9 +75,17 @@
 
 
 
-.section-tabs .btn {
-    text-align: left;
+    .section-tabs .btn {
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.03);
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    }
+.section-tabs .dropdown {
+    margin-top: 12px;
 }
+
 
 .section-center {
     text-align: center;
