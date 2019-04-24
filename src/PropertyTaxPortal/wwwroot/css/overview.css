@@ -1,3 +1,15 @@
+@media (min-width: 768px)
+.pto-nav {
+    flex: 25%;
+    max-width: 25%;
+}
+
+@media (min-width: 7576px)
+.pto-nav {
+    flex: 100%;
+    max-width: 100%;
+}
+
 .pto-header{
     
     width: auto;
