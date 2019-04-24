@@ -66,24 +66,29 @@
                 transform: translateY(50%);
     }
 }
+@media only screen and (max-width: 1500px){
+    .navbar-nav li a {
+        font-size: 80%;
+    }
+}
 
-@media only screen and (max-width: 1364px) {
+@media only screen and (max-width: 1219px) {
+
     .nav-icon-bar {
         display: none;
     }
+    
 }
 
 /* Big tablet to 1200px (widths smaller than the 1040 px row) */
 @media only screen and (max-width: 1200px) {
+    
 
     html,
     body {
         font-size: 18px;
     }
-
-    .navbar-nav li a {
-        font-size: 90%;
-    }
+    
 
     .navbar-nav li {
         padding-top: 5px;
