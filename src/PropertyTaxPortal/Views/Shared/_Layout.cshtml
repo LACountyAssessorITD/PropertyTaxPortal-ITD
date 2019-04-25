@@ -82,7 +82,7 @@
             </header>
             <!------------------------------ NAVBAR ------------------------------>
             <nav class="navbar navbar-expand-lg bg-5 ">
-                <a class="navbar-brand" href="#"><img src="~/images/LACseal76.png" alt=""></a>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="~/images/LACseal76.png" alt=""></a>
 
 
                 <div class="nav-icon-bar">
@@ -122,17 +122,17 @@
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown2">
                                 <ul>
-                                    <li><a href="https://vcheck.ttc.lacounty.gov/">@Localizer["Property Tax Managment System"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">@Localizer["Property Tax Managment System"]</a></li>
                                     <li>
-                                        <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/">
+                                        <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/" target="_blank">
                                             @Localizer["Multiple Parcel Inquires"]
                                         </a>
                                     </li>
-                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/">@Localizer["Penalty Cancellations"]</a></li>
-                                    <li><a href="https://portal.assessor.lacounty.gov/">@Localizer["Property Address Search"]</a></li>
-                                    <li><a href="">@Localizer["New Home Owners"]</a></li>
-                                    <li><a href="">@Localizer["New Business Owners"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank">@Localizer["Penalty Cancellations"]</a></li>
+                                    <li><a href="https://portal.assessor.lacounty.gov/ target="_blank"">@Localizer["Property Address Search"]</a></li>
+                                    <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank">@Localizer["New Home Owners"]</a></li>
+                                    <li><a href="https://assessor.lacounty.gov/personal-property-assessments-2/" target="_blank">@Localizer["New Business Owners"]</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -146,29 +146,29 @@
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Forms"]</p>
                                         <ul>
-                                            <li><a href="https://assessor.lacounty.gov/">@Localizer["Assessor"]</a></li>
-                                            <li><a href="https://lacaab.lacounty.gov/Home.aspx">@Localizer["Assessment Appeals Board"]</a></li>
-                                            <li><a href="http://auditor.lacounty.gov/">@Localizer["Auditor-Controller"]</a></li>
-                                            <li><a href="https://ttc.lacounty.gov/">@Localizer["Treasurer & Tax Collector"]</a></li>
+                                            <li><a href="https://assessor.lacounty.gov/forms-2/" target="_blank">@Localizer["Assessor"]</a></li>
+                                            <li><a href="http://bos.lacounty.gov/Forms#269933-assessment-appeals-board" target="_blank">@Localizer["Assessment Appeals Board"]</a></li>
+                                            <li><a href="http://auditor.lacounty.gov/forms-important-dates-glossary/" target="_blank">@Localizer["Auditor-Controller"]</a></li>
+                                          
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Property Valuation"]</p>
                                         <ul>
                                             <li><a href="">@Localizer["Contesting Your Property Value"]</a></li>
-                                            <li><a href="https://portal.assessor.lacounty.gov/">@Localizer["Property Address Search"]</a></li>
-                                            <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default">@Localizer["Property Data & Maps"]</a></li>
-                                            <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/">@Localizer["Supplemental Tax Estimator"]</a></li>
+                                            <li><a href="https://portal.assessor.lacounty.gov/" target="_blank">@Localizer["Property Address Search"]</a></li>
+                                            <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default" target="_blank">@Localizer["Property Data & Maps"]</a></li>
+                                            <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/" target="_blank">@Localizer["Supplemental Tax Estimator"]</a></li>
                                         </ul>
                                     </div>
 
                                     <!-- added navigation badges: 'pay now', and 'link' but elements not staying inline-->
                                     <div class="col-lg-3 col-md-6">
-                                        <p>@Localizer["Payment Options"]</p>
+                                        <p>@Localizer["Payment Information"]</p>
                                         <ul>
-                                            <li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary" >LINK</span></li>
-                                            <li><a href="">@Localizer["Pay Online"]</a><span class="badge badge-success" >PAY NOW</span></li>
-                                            <li><a href="">@Localizer["Other Payment Options"]</a><span class="badge badge-secondary" >LINK</span></li>
+                                            <li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary">LINK</span></li>
+                                            <li><a href="">@Localizer["Pay Online"]</a><span class="badge badge-success">PAY NOW</span></li>
+                                            <li><a href="">@Localizer["Other Payment Options"]</a><span class="badge badge-secondary">LINK</span></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
@@ -198,7 +198,7 @@
                                aria-haspopup="true" aria-expanded="false">
                                 @Localizer["FAQ"]
                             </a>
-                            <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown4">
+                            <div class="dropdown-menu small-drop bg-6" id="faq-drop" aria-labelledby="navbarDropdown4">
                                 <ul>
 
                                     <li><a asp-controller="Home" asp-route-id="0" asp-action="GeneralFAQ">@Localizer["Tax Bills"]</a></li>
@@ -212,8 +212,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                           
-                            <a class="nav-link"asp-controller="Home" asp-action="News">@Localizer["News"]</a>
+
+                            <a class="nav-link" asp-controller="Home" asp-action="News">@Localizer["News"]</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown"
@@ -227,7 +227,7 @@
                                     <li><a asp-controller="Home" asp-route-id="1" asp-action="ContactUs">@Localizer["Auditor-Controller"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">@Localizer["Treasurer & Tax Collector"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">@Localizer["Assessment Appeals Board"]</a></li>
-                                    
+
                                     <li><a asp-controller="Home" asp-action="PublicInquiry">@Localizer["Public Inquiry"]</a><span class="badge badge-primary">FORM</span></li>
 
 
@@ -237,21 +237,25 @@
                         <li class="border-left pl-4 ml-4 pr-2 my-2">
 
                             <form id="demo-2">
-            <input type="search" placeholder="Search">
-        </form>
+                                <input type="search" placeholder="Search">
+                            </form>
                             @*<gcse:search ></gcse:search>*@
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-
-
+        
         <!----------------------------- /END NAVBAR -------------------------->
 
         <div class="">
             <!------------------------------ BODY ---------------------------->
-            @RenderBody()
+            @*<partial name="_CookieConsentPartial" />*@
+            
+
+            <main role="main" class="">
+                @RenderBody()
+            </main>
 
             <!----------------------------- /END BODY ------------------------->
 
@@ -265,7 +269,7 @@
             <section class="container-fluid section-footer ">
                 <div class="row">
                     <div class="col-md-2 col-sm-6 ">
-                        <img src="~/images/LACSEAL152.png" alt="">
+                        <a href="http://www.lacounty.gov/" target="_blank"><img src="~/images/LACSEAL152.png" alt=""></a>
                         <p>@Localizer["Enriching Lives"]...</p>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
@@ -282,8 +286,8 @@
                     <div class="col-md-2 col-sm-6 ">
                         <ul>
                             <li>@Localizer["About"]</li>
-                            <li><a asp-controller='Home'  asp-action="Disclaimer">@Localizer["Disclaimer"]</a></li>
-                            <li><a asp-controller='Home'  asp-action="PrivacyPolicy">@Localizer["Privacy Policy"]</a></li>
+                            <li><a asp-controller='Home' asp-action="Disclaimer">@Localizer["Disclaimer"]</a></li>
+                            <li><a asp-controller='Home' asp-action="PrivacyPolicy">@Localizer["Privacy Policy"]</a></li>
                         </ul>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
@@ -291,7 +295,7 @@
                             <li>@Localizer["Site Info"]</li>
                             <li><a asp-controller='Home' asp-route-id="accessibility" asp-action="accessibility">@Localizer["Accessibility"]</a></li>
                             <li><a asp-controller='Home' asp-action="Language">@Localizer["Language"]</a></li>
-                            
+
                         </ul>
                     </div>
                     <div class="col-md-2 col-sm-6 ">
@@ -301,7 +305,11 @@
                             <li><a href="http://bos.lacounty.gov/Board-Meeting/Board-Agendas" target="_blank">@Localizer["Board Ageneda"]</a></li>
                             <li><a href="https://library.municode.com/ca/los_angeles_county/codes/code_of_ordinances" target="_blank">@Localizer["County Code"]</a></li>
                             <li><a href="https://www.lacounty.gov/contact/" target="_blank">@Localizer["LA County Contacts"]</a></li>
+<<<<<<< HEAD
                             <li><a asp-controller='Home' asp-action="GovernmentSites">@Localizer["Other Government Sites"]</a></li>    
+=======
+                            <li>@Localizer["Other Government Sites"]</li>
+>>>>>>> 280fcbaccabd63d3b525d8a39b980b8a970bfe23
                         </ul>
                     </div>
 

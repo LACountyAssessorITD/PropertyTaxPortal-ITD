@@ -146,7 +146,7 @@ namespace PropertyTaxPortal
             //-----------------END LOCALIZATION MIDDLEWARE-----------------//
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>

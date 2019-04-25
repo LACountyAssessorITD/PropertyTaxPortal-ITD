@@ -96,6 +96,7 @@
         transform: none !important;
         margin-bottom: 10px;
         border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+        z-index: 5;
     }
 .section-tabs .dropdown {
     margin-top: 12px;

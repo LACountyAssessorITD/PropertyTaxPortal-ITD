@@ -14,7 +14,7 @@
 .navScrolled {
     position: fixed !important;
     top: 100px;
-    z-index: 9999;
+    z-index: 500;
     width: 100%;
 }
 
@@ -80,6 +80,7 @@ header, footer {
 }
 
 a:hover {
+    
     text-decoration: none;
     
 }
@@ -113,26 +114,26 @@ header {
 /* ----------------------- */
 
 .bg-1 {
-    background-color: #000063 !important;
+    background-color: #000063;
 }
 
 .bg-2 {
-    background-color: #311B92 !important;
+    background-color: #311B92;
 }
 
 .bg-3 {
-    background-color: #3761A3 !important;
+    background-color: #3761A3;
 }
 
 .bg-4 {
-    background-color: #438AA0 !important;
+    background-color: #438AA0;
 }
 .bg-5 {
-    background-color: #fff !important;
+    background-color: #fff;
     
 }
 .bg-6 {
-    background-color: #fff !important;
+    background-color: #fff;
 }
 
 
@@ -161,6 +162,9 @@ header {
 /* ----------------------- */
 #contact-drop {
     left: -210px;
+}
+#faq-drop {
+    left: -265px;
 }
 .navbar span {
     
@@ -325,6 +329,9 @@ nav .dropdown-menu {
     .section-footer a {
         color: #808080;
         
+    }
+    .section-footer a:hover {
+        color: #3761a3 !important;
     }
 
     .section-footer .row:first-child {
