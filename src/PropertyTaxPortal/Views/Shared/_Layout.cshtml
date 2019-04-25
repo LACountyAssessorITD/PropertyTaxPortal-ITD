@@ -61,6 +61,8 @@
             gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
+
+            
         })();
     </script>
     
@@ -234,10 +236,15 @@
                         </li>
                         <li class="border-left pl-4 ml-4 pr-2 my-2">
 
-                            <form id="demo-2">
-                                <input type="search" placeholder="Search">
-                            </form>
-                            @*<gcse:search ></gcse:search>*@
+                            @*<form id="demo-2">
+                                <input type="search" placeholder="Search" id="gsc-i-id1">
+                            </form>*@
+                            <div class="expand-test" id="demo-1"><gcse:search></gcse:search></div>
+                            <script>
+                           
+                          
+                                
+                            </script>
                         </li>
                     </ul>
                 </div>

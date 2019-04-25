@@ -1,5 +1,12 @@
 ﻿$(document).ready(function () {
-    
+
+   
+    //$("#demo-1").delegate("*", "focus blur", function () {
+        
+    //    setTimeout(function () {
+    //        $('.expand-test').toggleClass("focused", elem.is(":focus"));
+    //    }, 0);
+    //});
     var navBar = $(".tab-background");
     
     $(window).scroll(function () {
@@ -80,6 +87,12 @@
         });
     $('.floatbox').click(function () {
         $('.floatbox').removeClass('display-block')
+    });
+
+    $("input[type=text]").focus(function () {
+        $('.expand-test').addClass('textwidth');
+
+
     });
 });
 
