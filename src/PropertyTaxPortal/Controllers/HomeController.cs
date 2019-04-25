@@ -104,6 +104,12 @@ namespace PropertyTaxPortal.Controllers
             ViewBag.Title = "BROWSER COMPATIBILITY";
             return View();
         }
+
+        public IActionResult GovernmentSites()
+        {
+            ViewBag.Title = "OTHER GOVERNMENT SITES";
+            return View();
+        }
    
         public async Task<IActionResult> NewsLanding(int? id)
         {
