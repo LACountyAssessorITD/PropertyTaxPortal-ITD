@@ -437,7 +437,7 @@ footer {
 }
 
 .navbar input[type=text]:focus {
-    /*width: 130px;*/
+    width: 130px !important;
     background-color: #fff;
     border-color: #1c49b4;
     -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
