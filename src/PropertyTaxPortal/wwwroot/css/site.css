@@ -424,7 +424,7 @@ footer {
 }
 
 .textwidth {
-    width: 150px !important;
+    width: 200px !important;
 }
 .navbar input[type=text] {
     background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
@@ -580,3 +580,5 @@ footer {
 .display-block {
     display: block;
 }
+
+/*-------------------------------------GCE------------------------------------*/
