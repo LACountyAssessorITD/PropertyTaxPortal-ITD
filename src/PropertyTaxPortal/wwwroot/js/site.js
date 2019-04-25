@@ -89,8 +89,13 @@
         $('.floatbox').removeClass('display-block')
     });
 
-    $("input[type=text]").focus(function () {
+    $("input[type=text]").focusin(function () {
         $('.expand-test').addClass('textwidth');
+
+
+    });
+    $("input[type=text]").focusout(function () {
+        $('.expand-test').removeClass('textwidth');
 
 
     });
