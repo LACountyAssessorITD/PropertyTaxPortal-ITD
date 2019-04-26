@@ -43,9 +43,9 @@
 }
 
 .bg-contact {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/contact-2.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact-2.png');
     
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/contact-2.png);
 }
 
 .bg-faq {
@@ -74,10 +74,54 @@
         font-size: 300%;
         font-weight: 500 !important;
     }
+.response-area{
 
+}
+.bg-subheader .row {
+    height: 350px;
+}
+.bg-subheader .sub-area:first-child{
+    background-image: url('../images/contact-phone.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+.property-area {
+    background-image: url('../images/lacountymap-1.jpg') !important;
+}
+.response-area {
+    background-image: url('../images/areas_respons.jpg') !important;
+}
+.bg-subheader .sub-area:last-child {
+    background-color: #454e57;
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+}
 
+    .sub-area .display-4 {
+        text-transform: uppercase;
+        font-size: 220% !important;
+        font-weight: 500 !important;
 
+    }
 
+    @media only screen and (max-width: 768px) {
+        .bg-subheader .row {
+        height: 700px;
+        }
+        .bg-subheader .sub-area:first-child {
+            height: 350px;
+        }
+
+        .bg-subheader .sub-area:last-child {
+            background-color: #454e57;
+            text-align: center;
+            padding-top: 80px;
+            color: #fff;
+            height: 350px;
+        }
+    }
 
 
 
