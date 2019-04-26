@@ -100,8 +100,17 @@
                 </button>
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item ml-auto">
+                    
+
+                        @*<form id="demo-2">
+                <input type="search" placeholder="Search" id="gsc-i-id1">
+            </form>*@
+                        <gcse:search></gcse:search>
+
+                    
+                    <ul class="navbar-nav  ml-auto">
+
+                        <li class="nav-item">
                             <a asp-controller="Home" asp-action="Index" class="nav-link">@Localizer["Home"]</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -132,7 +141,7 @@
                                     </li>
                                     <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
                                     <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank">@Localizer["Penalty Cancellations"]</a></li>
-                                    <li><a href="https://portal.assessor.lacounty.gov/ target="_blank"">@Localizer["Property Address Search"]</a></li>
+                                    <li><a href="https://portal.assessor.lacounty.gov/ target=" _blank"">@Localizer["Property Address Search"]</a></li>
                                     <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank">@Localizer["New Home Owners"]</a></li>
                                     <li><a href="https://assessor.lacounty.gov/personal-property-assessments-2/" target="_blank">@Localizer["New Business Owners"]</a></li>
                                 </ul>
@@ -151,7 +160,7 @@
                                             <li><a href="https://assessor.lacounty.gov/forms-2/" target="_blank">@Localizer["Assessor"]</a></li>
                                             <li><a href="http://bos.lacounty.gov/Forms#269933-assessment-appeals-board" target="_blank">@Localizer["Assessment Appeals Board"]</a></li>
                                             <li><a href="http://auditor.lacounty.gov/forms-important-dates-glossary/" target="_blank">@Localizer["Auditor-Controller"]</a></li>
-                                          
+
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
@@ -236,18 +245,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="expand-test border-left pl-4 ml-4 pr-2 my-2">
 
-                            @*<form id="demo-2">
-                                <input type="search" placeholder="Search" id="gsc-i-id1">
-                            </form>*@
-                            <div class="expand-test" id="demo-1"><gcse:search></gcse:search></div>
-                            <script>
-                           
-                          
-                                
-                            </script>
-                        </li>
+
                     </ul>
                 </div>
             </nav>

@@ -1,24 +1,19 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 <section class="FAQ-Section">
-    <div class="bgimg">
-        <br />
-        <br />
-        <br />
-        <section class="container-fluid faq-header">
-            <h1>&nbsp;&nbsp;&nbsp;@Localizer["FREQUENTLY ASKED QUESTIONS"] </h1>
-        </section>
-        <div class="faq-subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Localizer["If you have any questions, please"] <a asp-controller='Home' asp-action="ContactUs">@Localizer["contact us."]</a> @Localizer["We will respond to you as soon as possible."]
-        
-        </div>
-    </div>
+    
+
+    <section class="container-fluid bg-header bg-faq">
+        <h2 class="display-4"> @Localizer["FREQUENTLY ASKED QUESTIONS"] </h2>
+    </section>
+
     <section class="tab-background">
         <div class="tab container">
             <div class="row">
                 @if (Model.tabid == 0)
                 {
                     <button class="col-md-2 col-sm-12 tablinks" id="defaultOpen" onclick="openCity(event, 'TaxBill')">@Localizer["Tax Bills"]</button>
-                    <button class="col-md-2 col-sm-12 tablinks"  onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
+                    <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Refund')">@Localizer["Refunds/Tax Sales/Tax Liens"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Property')">@Localizer["Property Values"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'Ownership')">@Localizer["Ownership"]</button>
                     <button class="col-md-2 col-sm-12 tablinks" onclick="openCity(event, 'TaxAgent')">@Localizer["Tax Agent Registration"]</button>
@@ -99,7 +94,7 @@
                             </button>
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
                                 @Localizer[@Html.Raw(@taxfaq.answer).ToString()]
-                                
+
                             </div>
                         </div>
                     }
@@ -229,7 +224,7 @@
                 {
                     if (@taxfaq.question.Contains("<a"))
                     {
-                        <div >
+                        <div>
                             <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@taxfaq.question).ToString()]
                             </button>
@@ -246,12 +241,12 @@
                             <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
                                 @Localizer[@Html.Raw(@taxfaq.answer).ToString()]
                             </div>
-                            
+
                         </div>
-                        
-                        
+
+
                     }
-                    
+
                 }
             </section>
         </div>
@@ -281,7 +276,7 @@
                                 @Localizer[@Html.Raw(@refundfaq.answer).ToString()]
                             </div>
                         </div>
-                        
+
                     }
                 }
             </section>
@@ -312,7 +307,7 @@
                                 @Localizer[@Html.Raw(@propfaq.answer).ToString()]
                             </div>
                         </div>
-                        
+
                     }
                 }
             </section>
@@ -344,7 +339,7 @@
                                 @Localizer[@Html.Raw(@ownerfaq.answer).ToString()]
                             </div>
                         </div>
-                        
+
                     }
                 }
             </section>
@@ -375,7 +370,7 @@
                                 @Localizer[@Html.Raw(@taxagentfaq.answer).ToString()]
                             </div>
                         </div>
-                        
+
                     }
                 }
             </section>

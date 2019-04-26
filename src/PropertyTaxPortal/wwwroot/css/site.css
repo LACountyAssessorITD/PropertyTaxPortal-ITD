@@ -7,9 +7,79 @@
 }
 
 .bg-bills {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/taxbill_img.png');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/taxbill_img.png');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/taxbill-img3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/taxbill-img3.jpg');
+    background-size: cover !important;
+    /*background-repeat: no-repeat;*/
+
+    
+    font-size: 75% !important;
 }
+
+@media only screen and (max-width: 580px) {
+
+    .bg-bills {
+        font-size: 60% !important;
+    }
+}
+.bg-govsites {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/takahiro-sakamoto-103091-unsplash.jpg);
+    
+}
+.bg-overview {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url('../images/overview.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/overview.jpg');
+}
+
+.bg-public {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/publicinquiry.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/publicinquiry.jpg);
+}
+
+
+.bg-disclaimer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/zuza-galczynska-679287-unsplash.jpg);
+   
+}
+
+.bg-contact {
+    
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/contact-2.png);
+}
+
+.bg-faq {
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/faq.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/faq.jpg);
+}
+
+.bg-news {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/henry-co-231984-unsplash.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/henry-co-231984-unsplash.png');
+}
+
+.bg-header {
+    
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    height: 250px;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+    .bg-header .display-4 {
+        text-transform: uppercase;
+        font-size: 300%;
+        font-weight: 500 !important;
+    }
+
+
+
+
+
+
 
 .navScrolled {
     position: fixed !important;
@@ -234,7 +304,7 @@ nav a img {
 
 .navbar-nav {
     z-index: 5000;
-    width: 100%;
+    
     height: 100%;
 }
 
@@ -406,103 +476,7 @@ footer {
 }
 
 
-.navbar input[type=text] {
-    outline: none;
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
-    font-family: inherit;
-    font-size: 100%;
-    /*width: 20px !important;*/
-}
 
-.navbar input::-webkit-search-decoration,
-.navbar input::-webkit-search-cancel-button {
-    display: none;
-}
-#___gcse_0 {
-    /*width: 50px;*/
-}
-
-.textwidth {
-    width: 200px !important;
-}
-.navbar input[type=text] {
-    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-    border: solid 1px #ccc;
-    padding: 9px 10px 9px 32px !important;
-    width: 10px !important;
-    border-radius: 1em;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-}
-
-.navbar input[type=text]:focus {
-    width: 130px !important;
-    background-color: #fff;
-    border-color: #1c49b4;
-    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-    box-shadow: 0 0 5px rgba(109,207,246,.5);
-    /*width: 150px !important;*/
-}
-
-.gsc-input-box {
-    border: none !important;
-}
-
-
-.navbar input:-moz-placeholder {
-    color: #999;
-}
-
-.navbar input::-webkit-input-placeholder {
-    color: #999;
-}
-
-/* Demo 2 */
-.gsc-search-button {
-    display: none;
-}
-.gsc-control-cse {
-    padding: 0 !important;
-}
-.gsc-input {
-    padding-right: 0;
-}
-    .gsc-input input {
-        background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center !important;
-    }
-#demo-1 {
-    width: 50px;
-}
-
-
-#demo-2 input[type=search] {
-   margin-top: 5px;
-    /*width: 15px;*/
-    padding-left: 10px;
-    color: transparent;
-    cursor: pointer;
-}
-
-    #demo-2 input[type=search]:hover {
-        background-color: #fff;
-    }
-
-    #demo-2 input[type=search]:focus {
-        /*width: 150px;*/
-        padding-left: 32px;
-        color: #000;
-        background-color: #fff;
-        cursor: auto;
-    }
-
-#demo-2 input:-moz-placeholder {
-    color: transparent;
-}
-
-#demo-2 input::-webkit-input-placeholder {
-    color: transparent;
-}
 /* --------------------------- */
 /* --------TAX BILLS------ */
 /* --------------------------- */
@@ -562,7 +536,7 @@ footer {
 .float-content {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 380px;
+    margin-top: 200px;
     max-width: 500px;
     background: #000;
     opacity: 0.9;
@@ -582,3 +556,127 @@ footer {
 }
 
 /*-------------------------------------GCE------------------------------------*/
+/** CUSTOM GOOGLE SEARCH STYLE **/
+
+/*Removes default x in search fields (webkit only)*/
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+/*Changes the color of the placeholder*/
+::-webkit-input-placeholder {
+    color: #0d2840;
+    opacity: .5;
+}
+
+:-moz-placeholder {
+    color: #0d2840;
+    opacity: .5;
+}
+
+::-moz-placeholder {
+    color: #0d2840;
+    opacity: .5;
+}
+
+:-ms-input-placeholder {
+    color: #0d2840;
+    opacity: .5;
+}
+
+
+div.gsc-control-cse.gsc-control-cse-en {
+    width: 40%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#gs_tti50 input {
+    /*border: 2px solid #777 !important;*/
+    outline: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    margin: -3px 0 auto !important;
+    cursor: pointer;
+    font-size: 1em;
+    color: #0d2840 !important;
+    padding: 14px 40px 14px 14px !important;
+    -moz-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
+    -webkit-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
+    -o-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
+    -ms-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
+    transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
+    background: #fff url(http://cdn.johnroberts.com/hubfs/images/search.png?t=1435173000345) no-repeat center center !important;
+    background-size: 22px !important;
+}
+
+/*expands when search icon is clicked*/
+input#gsc-i-id1:focus {
+    width: 225px !important;
+    -webkit-background-position: 190px center !important;
+    -moz-background-position: 190px center !important;
+    -o-background-position: 190px center !important;
+    -ms-background-position: 190px center !important;
+    background-position: 190px center !important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,.1) !important;
+    color: #000000;
+}
+
+table.gsc-search-box td {
+    vertical-align: top !important;
+}
+
+/** Google Original Style **/
+/*googles input text box*/
+.gsc-input div.gsc-input-box {
+    width: 0;
+    height: 25px;
+    margin: 2% 0 0 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.gsc-input-box-focus, .gsc-search-box .gsc-input > input:hover, .gsc-input-box-hover {
+    /*
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    */
+    box-shadow: none !important;
+    outline: none;
+}
+
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-color: none !important;
+}
+/*Hide Googles search button*/
+.gsib_a {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+td.gsc-search-button, .gsc-search-box-tools .gsc-clear-button {
+    display: none;
+}
+/*Hide googles delete font box*/
+td.gsib_b {
+    display: none;
+}
+/*Hide Googles search content style*/
+.cse .gsc-control-cse, .gsc-control-cse {
+    width: 0 !important;
+    padding: 0 !important;
+    background-color: none;
+}
+
+.gcsc-find-more-on-google-branding {
+    display: none !important;
+}
