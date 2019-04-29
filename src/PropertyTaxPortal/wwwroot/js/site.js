@@ -7,6 +7,14 @@
     //        $('.expand-test').toggleClass("focused", elem.is(":focus"));
     //    }, 0);
     //});
+
+    $('.search').click(function () {
+        //$(this).toggleClass('icon-cross');
+        $('.search-feature').addClass('icon-menu');
+        $('.search-feature').removeClass('icon-cross');
+        $('.search-feature').toggleClass('down');
+        $('.navbar-collapse').removeClass('show');
+    });
     var navBar = $(".tab-background");
     
     $(window).scroll(function () {
