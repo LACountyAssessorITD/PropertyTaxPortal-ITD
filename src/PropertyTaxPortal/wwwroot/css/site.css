@@ -98,7 +98,8 @@ body {
 }
 
 .bg-govsites {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/takahiro-sakamoto-103091-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/zuza-galczynska-679287-unsplash.jpg);
+    
 }
 
 .bg-overview {
@@ -122,8 +123,9 @@ body {
 }
 
 .bg-faq {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/faq.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/faq.jpg);
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/ian-baldwin-98703-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ian-baldwin-98703-unsplash.jpg);
 }
 
 .bg-news {
