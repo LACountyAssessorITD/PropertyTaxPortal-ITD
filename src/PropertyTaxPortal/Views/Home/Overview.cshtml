@@ -6,22 +6,6 @@
     ViewData["Title"] = "Overview";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
-    <!-- .tab button {
-    background-color: #343a40;
-    float: none;
-    outline: 1px;
-    border-right-color: white;
-    border-top-color: #343a40;
-    cursor: pointer;
-    padding: 16px 18px;
-    transition: 0.3s;
-    font-size: 17px;
-    border-left: 1px;
-    color: white;
-    position: relative; -->
-}
-</style>
 
 
 <section class="container-fluid bg-header bg-overview">
@@ -95,29 +79,20 @@
 
 
         <!-- PTO department buttons -->
-        <section class="container-fluid">
-            <br />
-            <ul class=" row nav nav-pills nav-justified">
-                <!-- need media rules for mobile/tablet size -->
+        <section class="tab-overview my-5">
 
-                <li class="nav-item col-md-4 col-sm-12 pto-nav" style="padding-left:25px; padding-right:20px">
-                    <a href="#assessor" class="btn btn-lg active depbtn btn-block" role="tab" data-toggle="tab">@Localizer["Assessor"]</a>
-                </li>
-                <li class="nav-item  col-md-4 col-sm-12 pto-nav" style="padding-left:20px; padding-right:20px">
-                    <a href="#auditor" class="btn btn-lg depbtn btn-block" role="tab" data-toggle="tab">@Localizer["Auditor-Controller"]</a>
-                </li>
-                <li class="nav-item  col-md-4 col-sm-12 pto-nav" style="padding-left:20px; padding-right:25px">
-                    <a href="#ttc" class="btn btn-lg depbtn btn-block" role="tab" data-toggle="tab">@Localizer["Treasurer & Tax Collector"]</a>
-                </li>
-                <li class="nav-item col-md-4 col-sm-12 pto-nav" style="padding-left:20px; padding-right:20px">
-                    <a href="#aab" class="btn btn-lg depbtn btn-block" role="tab" data-toggle="tab">@Localizer["Assessment Appeals Board"]</a>
-                </li>
-            </ul>
-            <br />
 
-            <!-- Department Information Container -->
-            <section class="pto-dept-container tab-content">
-                <div role="tabpanel" class="tab-pane active" id="assessor">
+            <nav class="container-fluid">
+                <div class="nav row nav-tabs" id="nav-tab" role="tablist">
+                    
+                    <a class="nav-item col-md-3 col-12 nav-link active" id="nav-assessor-tab" data-toggle="tab" href="#nav-assessor" role="tab" aria-controls="nav-assessor" aria-selected="true">@Localizer["Assessor"]</a>
+                    <a class="nav-item col-md-3 col-12 nav-link" id="nav-auditor-tab" data-toggle="tab" href="#nav-auditor" role="tab" aria-controls="nav-auditor" aria-selected="false">@Localizer["Auditor-Controller"]</a>
+                    <a class="nav-item col-md-3 col-12 nav-link" id="nav-ttc-tab" data-toggle="tab" href="#nav-ttc" role="tab" aria-controls="nav-ttc" aria-selected="false">@Localizer["Treasurer & Tax Collector"]</a>
+                    <a class="nav-item col-md-3 col-12 nav-link" id="nav-aab-tab" data-toggle="tab" href="#nav-aab" role="tab" aria-controls="nav-aab" aria-selected="false">@Localizer["Assessment Appeals Board"]</a>
+                </div>
+            </nav>
+            <div class="tab-content container-fluid" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-assessor" role="tabpanel" aria-labelledby="nav-assessor-tab">
                     <div class="row">
                         <div class="col">
                             <br />
@@ -131,28 +106,8 @@
                         </div>
 
                     </div>
-                    <br />
-                    <br />
                 </div>
-
-                <div role="tabpanel" class="tab-pane " id="aab">
-                    <div class="row">
-                        <div class="col">
-                            <br />
-                            <h4 style="padding-left: 70px">@Localizer["Assessment Appeals Board"]</h4>
-                            <br />
-                            <p style="padding-left: 70px">@Localizer["The Assessor, Auditor-Controller, and Treasurer & Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process."]</p>
-                        </div>
-                        <div class="col" align="center">
-                            <br />
-                            <img src="~/images/aapb.png" class="img-responsive" alt="screen" />
-                        </div>
-                    </div>
-                    <br />
-                    <br />
-                </div>
-
-                <div role="tabpanel" class="tab-pane " id="auditor">
+                <div class="tab-pane fade" id="nav-auditor" role="tabpanel" aria-labelledby="nav-auditor-tab">
                     <div class="row">
                         <div class="col">
                             <br />
@@ -168,8 +123,7 @@
                     <br />
                     <br />
                 </div>
-
-                <div role="tabpanel" class="tab-pane " id="ttc">
+                <div class="tab-pane fade" id="nav-ttc" role="tabpanel" aria-labelledby="nav-ttc-tab">
                     <div class="row">
                         <div class="col">
                             <br />
@@ -182,11 +136,28 @@
                             <img src="~/images/ttc-icon.png" class="img-responsive" alt="screen" />
                         </div>
                     </div>
-                    <br />
-                    <br />
                 </div>
-            </section>
-        </section>
+                <div class="tab-pane fade" id="nav-aab" role="tabpanel" aria-labelledby="nav-aab-tab">
+                    <div class="row">
+                        <div class="col">
+                            <br />
+                            <h4 style="padding-left: 70px">@Localizer["Assessment Appeals Board"]</h4>
+                            <br />
+                            <p style="padding-left: 70px">@Localizer["The Assessor, Auditor-Controller, and Treasurer & Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process."]</p>
+                        </div>
+                        <div class="col" align="center">
+                            <br />
+                            <img src="~/images/aapb.png" class="img-responsive" alt="screen" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+         </section>
+            
+    </section>
 </div>
 <div id="HowItWorks" class="tabcontent" style="display:none; background: #F5F5F5;">
     
@@ -302,7 +273,7 @@
                 <div class="card-body">
                     <div class="list-group">
                         <a href="http://bos.lacounty.gov/LinkClick.aspx?fileticket=mMxNSn6isUw=&portalid=1" target="_blank" class="list-group-item list-group-item-action">@Localizer["Assessment Appeals Rules"]</a>
-                        <a href="http://bos.lacounty.gov/Services/Assessment-Appeals/Public-Education-Program" target="_blank" class="list-group-item list-group-item-action">@Localizer["Current Seminer Schedule"]</a>
+                        <a href="http://bos.lacounty.gov/Services/Assessment-Appeals/Public-Education-Program" target="_blank" class="list-group-item list-group-item-action">@Localizer["Current Seminar Schedule"]</a>
                         <a href="http://bos.lacounty.gov/LinkClick.aspx?fileticket=sv2U25DHUaI%3d&portalid=1" target="_blank" class="list-group-item list-group-item-action">@Localizer["How to Prepare For Your Hearing"]</a>
                         <a href="http://bos.lacounty.gov/Services/Assessment-Appeals/Tax-Agent-Registration" target="_blank" class="list-group-item list-group-item-action">@Localizer["Tax Agent Registration"]</a>
                         <a href="https://lacaab.lacounty.gov/Home.aspx" target="_blank" class="list-group-item list-group-item-action">@Localizer["File an Appeal Online"]</a>

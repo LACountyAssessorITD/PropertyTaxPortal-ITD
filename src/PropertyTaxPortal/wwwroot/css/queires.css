@@ -331,9 +331,18 @@
         z-index: 500;
         width: 100%;
     }
+    .bg-header .display-4 {
+        text-transform: uppercase;
+        font-size: 250%;
+        font-weight: 500 !important;
+    }
 }
 
 @media only screen and (max-width: 644px) {
+
+    .bg-display {
+        display:none;
+    }
     
     /* CAROUSEL */
     .img-carousel {

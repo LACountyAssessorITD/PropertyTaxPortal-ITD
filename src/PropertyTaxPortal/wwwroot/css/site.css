@@ -140,8 +140,8 @@ body {
 }
 
 .bg-contact {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/contact-2.png');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact-2.png');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/oliur-115919-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/oliur-115919-unsplash.jpg');
 }
 
 .bg-faq {
@@ -326,11 +326,13 @@ header {
 /* ----------------------- */
 /* ------ NAVBAR --- */
 /* ----------------------- */
+
+
 #contact-drop {
-    left: -210px;
+    left: -120px;
 }
 #faq-drop {
-    left: -265px;
+    left: -180px;
 }
 .navbar span {
     
@@ -440,7 +442,7 @@ nav a img {
 }
 
 nav .dropdown-menu {
-    min-width: 340px;
+    min-width: 320px;
     background-color: white;
     font-size: 110%;
     line-height: 1.3rem;
@@ -452,6 +454,10 @@ nav .dropdown-menu {
     
 }
 
+
+.secondary-width {
+    min-width: 240px !important;
+}
 
 
 .icon {
@@ -599,21 +605,7 @@ footer {
     margin-right: 25px;
 }
 
-/*.floatbox {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    margin: auto;
-    max-width: 500px;
-    background: #000;
-    opacity: 0.9;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px 10px;
-}*/
+
 
 .floatbox {
     /** Default lightbox to hidden */
