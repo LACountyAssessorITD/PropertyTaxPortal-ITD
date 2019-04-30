@@ -17,18 +17,19 @@
     border: 1px solid #000;
     border-radius: 10px 10px;
     padding: 5%;
+    box-shadow: rgba(73, 73, 73, 0.4) 5px 5px 5px 5px;
 }
 
 .newsbox {
     border: 1px solid #000;
     border-radius: 10px 10px;
-    margin:auto;
+    margin: auto;
     margin-top: 70px;
     margin-bottom: 10px;
     max-width: 400px;
     min-width: 250px;
     height: 225px;
-    
+    box-shadow: rgba(73, 73, 73, 0.4) 5px 5px 5px 5px;
 }
 .news-landing{
     max-width: 1400px;

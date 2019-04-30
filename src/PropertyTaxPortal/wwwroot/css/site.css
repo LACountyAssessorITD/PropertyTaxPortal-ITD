@@ -326,6 +326,8 @@ header {
 /* ----------------------- */
 /* ------ NAVBAR --- */
 /* ----------------------- */
+
+
 #contact-drop {
     left: -210px;
 }
@@ -440,7 +442,7 @@ nav a img {
 }
 
 nav .dropdown-menu {
-    min-width: 340px;
+    min-width: 320px;
     background-color: white;
     font-size: 110%;
     line-height: 1.3rem;
@@ -452,6 +454,10 @@ nav .dropdown-menu {
     
 }
 
+
+.secondary-width {
+    min-width: 240px !important;
+}
 
 
 .icon {
