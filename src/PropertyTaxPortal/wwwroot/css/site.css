@@ -599,21 +599,7 @@ footer {
     margin-right: 25px;
 }
 
-/*.floatbox {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    margin: auto;
-    max-width: 500px;
-    background: #000;
-    opacity: 0.9;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px 10px;
-}*/
+
 
 .floatbox {
     /** Default lightbox to hidden */
