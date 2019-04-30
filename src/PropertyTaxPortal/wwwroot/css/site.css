@@ -1,142 +1,10 @@
-﻿.sticky {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    
-    z-index: 9999;
-}
-
-.bg-bills {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/taxbill-img3.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/taxbill-img3.jpg');
-    background-size: cover !important;
-    /*background-repeat: no-repeat;*/
-
-    
-    font-size: 75% !important;
-}
-
-@media only screen and (max-width: 580px) {
-
-    .bg-bills {
-        font-size: 60% !important;
-    }
-}
-.bg-govsites {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/zuza-galczynska-679287-unsplash.jpg);
-    
-}
-.bg-overview {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url('../images/overview.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/overview.jpg');
-}
-
-.bg-public {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/publicinquiry.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/publicinquiry.jpg);
-}
-
-
-.bg-disclaimer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/zuza-galczynska-679287-unsplash.jpg);
-   
-}
-
-.bg-contact {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/contact-2.png');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact-2.png');
-    
-}
-
-.bg-faq {
-    
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/ian-baldwin-98703-unsplash.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ian-baldwin-98703-unsplash.jpg);
-}
-
-.bg-news {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/henry-co-231984-unsplash.png');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/henry-co-231984-unsplash.png');
-}
-
-.bg-header {
-    
-    background-size: cover;
-    background-position: center;
-    /*background-attachment: fixed;*/
-    height: 250px;
-    text-align: center;
-    padding-top: 80px;
-    color: #fff;
-}
-    .bg-header .display-4 {
-        text-transform: uppercase;
-        font-size: 300%;
-        font-weight: 500 !important;
-    }
-.response-area{
-
-}
-.bg-subheader .row {
-    height: 350px;
-}
-.bg-subheader .sub-area:first-child{
-    background-image: url('../images/contact-phone.png');
-    background-size: cover;
-    background-position: center;
-    
-}
-.property-area {
-    background-image: url('../images/lacountymap-1.jpg') !important;
-}
-.response-area {
-    background-image: url('../images/areas_respons.jpg') !important;
-}
-.bg-subheader .sub-area:last-child {
-    background-color: #454e57;
-    text-align: center;
-    padding-top: 120px;
-    color: #fff;
-}
-
-    .sub-area .display-4 {
-        text-transform: uppercase;
-        font-size: 220% !important;
-        font-weight: 500 !important;
-
-    }
-
-    @media only screen and (max-width: 768px) {
-        .bg-subheader .row {
-        height: 700px;
-        }
-        .bg-subheader .sub-area:first-child {
-            height: 350px;
-        }
-
-        .bg-subheader .sub-area:last-child {
-            background-color: #454e57;
-            text-align: center;
-            padding-top: 80px;
-            color: #fff;
-            height: 350px;
-        }
-    }
-
-
-
-.navScrolled {
-    position: fixed !important;
-    top: 100px;
-    z-index: 500;
-    width: 100%;
-}
-
+﻿
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 
 * {
@@ -151,6 +19,7 @@
     }
 
 .index-wrap {
+    transition: padding-top 1s;
     padding-top: 100px;
     min-height: 100vh; /* will cover the 100% of viewport */
     overflow: hidden;
@@ -180,6 +49,189 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 300;
+    color: #484848;
+    font-size: 200%;
+
+}
+
+.search {
+    font-size: 250%;
+    
+    height: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-left:1px solid #484848;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+    .search ion-icon {
+        transform: translateY(20%);
+    }
+
+.search-feature {
+    position: absolute;
+    top: -100px;
+    height: 100px;
+    background: #fff;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 1s;
+    box-shadow: 0 0 10px #000;
+    padding: 15px;
+    /*line-height: 75px;*/
+}
+
+.down {
+    
+    top: 100px;
+}
+.padding-down {
+    padding-top: 200px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 9999;
+}
+
+.bg-bills {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/taxbill-img3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/taxbill-img3.jpg');
+    background-size: cover !important;
+    /*background-repeat: no-repeat;*/
+    font-size: 75% !important;
+}
+
+@media only screen and (max-width: 580px) {
+
+    .bg-bills {
+        font-size: 60% !important;
+    }
+}
+
+.bg-govsites {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/zuza-galczynska-679287-unsplash.jpg);
+    
+}
+
+.bg-overview {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url('../images/overview.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/overview.jpg');
+}
+
+.bg-public {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/publicinquiry.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/publicinquiry.jpg);
+}
+
+
+.bg-disclaimer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/zuza-galczynska-679287-unsplash.jpg);
+}
+
+.bg-contact {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/contact-2.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact-2.png');
+}
+
+.bg-faq {
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/ian-baldwin-98703-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ian-baldwin-98703-unsplash.jpg);
+}
+
+.bg-news {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/henry-co-231984-unsplash.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/henry-co-231984-unsplash.png');
+}
+
+.bg-header {
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    height: 250px;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+
+    .bg-header .display-4 {
+        text-transform: uppercase;
+        font-size: 300%;
+        font-weight: 500 !important;
+    }
+
+.response-area {
+}
+
+.bg-subheader .row {
+    height: 350px;
+}
+
+.bg-subheader .sub-area:first-child {
+    background-image: url('../images/contact-phone.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.property-area {
+    background-image: url('../images/lacountymap-1.jpg') !important;
+}
+
+.response-area {
+    background-image: url('../images/areas_respons.jpg') !important;
+}
+
+.bg-subheader .sub-area:last-child {
+    background-color: #454e57;
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.sub-area .display-4 {
+    text-transform: uppercase;
+    font-size: 220% !important;
+    font-weight: 500 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .bg-subheader .row {
+        height: 700px;
+    }
+
+    .bg-subheader .sub-area:first-child {
+        height: 350px;
+    }
+
+    .bg-subheader .sub-area:last-child {
+        background-color: #454e57;
+        text-align: center;
+        padding-top: 80px;
+        color: #fff;
+        height: 350px;
+    }
+}
+
+
+
+.navScrolled {
+    position: fixed !important;
+    top: 100px;
+    z-index: 500;
+    width: 100%;
+}
+
 
 .display-3 {
     font-size: 2rem;
@@ -317,6 +369,7 @@ nav a img {
 }
 
 .navbar {
+    
     text-transform: uppercase;
     font-weight: 600;
     font-size: 65%;
@@ -608,23 +661,23 @@ input[type=search]::-webkit-search-cancel-button {
 }
 /*Changes the color of the placeholder*/
 ::-webkit-input-placeholder {
-    color: #0d2840;
-    opacity: .5;
+    color: #fff;
+    opacity: .1;
 }
 
 :-moz-placeholder {
-    color: #0d2840;
-    opacity: .5;
+    color: #fff;
+    opacity: .1;
 }
 
 ::-moz-placeholder {
-    color: #0d2840;
-    opacity: .5;
+    color: #fff;
+    opacity: .1;
 }
 
 :-ms-input-placeholder {
-    color: #0d2840;
-    opacity: .5;
+    color: #fff;
+    opacity: .1;
 }
 
 
@@ -637,34 +690,37 @@ div.gsc-control-cse.gsc-control-cse-en {
 
 #gs_tti50 input {
     /*border: 2px solid #777 !important;*/
+    
     outline: none !important;
     width: 100% !important;
-    height: 100% !important;
+    height: 70px !important;
     border-radius: 0 !important;
     margin: -3px 0 auto !important;
     cursor: pointer;
     font-size: 1em;
-    color: #0d2840 !important;
+    color: #000 !important;
     padding: 14px 40px 14px 14px !important;
+    font-size: 150% !important;
+    color: #000 !important;
     -moz-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
     -webkit-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
     -o-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
     -ms-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
     transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
-    background: #fff url(http://cdn.johnroberts.com/hubfs/images/search.png?t=1435173000345) no-repeat center center !important;
-    background-size: 22px !important;
+    background: #fff url(http://cdn.johnroberts.com/hubfs/images/search.png?t=1435173000345) no-repeat center left !important;
+    background-size: 30px !important;
+    background-position-x: 20px;
+    border-radius: 20px 20px !important;
 }
-
+input#gsc-i-id1 {
+    width: 2400px !important;
+    padding-left: 35px !important;
+}
 /*expands when search icon is clicked*/
 input#gsc-i-id1:focus {
-    width: 225px !important;
-    -webkit-background-position: 190px center !important;
-    -moz-background-position: 190px center !important;
-    -o-background-position: 190px center !important;
-    -ms-background-position: 190px center !important;
-    background-position: 190px center !important;
+    width: 2400px !important;
+    padding-left: 50px !important;
     box-shadow: 0 3px 10px -2px rgba(0,0,0,.1) !important;
-    color: #000000;
 }
 
 table.gsc-search-box td {
@@ -723,4 +779,12 @@ td.gsib_b {
 
 .gcsc-find-more-on-google-branding {
     display: none !important;
+}
+
+.gsc-results-wrapper-overlay {
+    top: 10% !important;
+}
+
+.gcsc-find-more-on-google {
+    display: none!important;
 }

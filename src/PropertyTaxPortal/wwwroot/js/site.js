@@ -7,6 +7,23 @@
     //        $('.expand-test').toggleClass("focused", elem.is(":focus"));
     //    }, 0);
     //});
+
+    $('.search').click(function () {
+        //$(this).toggleClass('icon-cross');
+        
+
+        $('.search-feature').toggleClass('down');
+        $('.navbar-collapse').removeClass('show');
+        $('.index-wrap').toggleClass('padding-down')
+    });
+    $('.close').click(function () {
+        //$(this).toggleClass('icon-cross');
+       
+        
+        $('.search-feature').removeClass('down');
+        //$('.navbar-collapse').removeClass('show');
+        $('.index-wrap').removeClass('padding-down')
+    });
     var navBar = $(".tab-background");
     
     $(window).scroll(function () {
