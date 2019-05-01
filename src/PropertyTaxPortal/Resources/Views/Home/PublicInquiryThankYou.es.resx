@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PUBLIC INQUIRY FORM" xml:space="preserve">
+    <value>FORMULARIO DE CONSULTA PÚBLICA</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry Form." xml:space="preserve">
+    <value>Gracias por completar nuestro formulario de consulta pública.</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>El número de referencia para su consulta es</value>
+  </data>
   <data name="Los Angeles County" xml:space="preserve">
     <value>Condado de los angeles</value>
   </data>
   <data name="Property Tax Portal" xml:space="preserve">
     <value>Portal de impuestos a la propiedad</value>
-  </data>
-  <data name="PUBLIC INQUIRY FORM" xml:space="preserve">
-    <value>FORMULARIO DE CONSULTA PÚBLICA</value>
-  </data>
-  <data name="The Reference number for your inquiry is" xml:space="preserve">
-    <value>El número de referencia para su consulta es</value>
   </data>
 </root>
