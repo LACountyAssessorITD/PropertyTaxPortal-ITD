@@ -40,6 +40,7 @@
 .tab-overview .nav-item.active {
     border: 1px solid #343a40;
     background-color: #808080;
+    color: #fff;
 }
 
 @media only screen and (max-width: 748px) {
