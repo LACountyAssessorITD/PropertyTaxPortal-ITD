@@ -83,7 +83,8 @@
         border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
     }
     .section-tabs .dropdown-menu {
-        min-width: 340px;
+        
+       
         background-color: white;
         font-size: 110%;
         line-height: 1.3rem;
