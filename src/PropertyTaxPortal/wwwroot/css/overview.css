@@ -16,10 +16,12 @@
        
     }
 }*/
+.tab-content {
+    max-width: 1300px;
+}
 
 .pto-header {
     width: auto;
-    
 }
 .nav-tabs {
     border-bottom: none;
