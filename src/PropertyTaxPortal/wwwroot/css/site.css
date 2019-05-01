@@ -179,13 +179,13 @@ body {
 }
 
 .bg-subheader .sub-area:first-child {
-    background-image: url('../images/contact-phone.png');
+    background-image: url('../images/GettyImages-992782254-contact-us.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .property-area {
-    background-image: url('../images/lacountymap-1.jpg') !important;
+    background-image: url('../images/lac-map-ptp.jpg') !important;
 }
 
 .response-area {
