@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PropertyTaxPortal.Controllers
 {
-   
+    [Authorize]
     public class AdminController : Controller
     {
         

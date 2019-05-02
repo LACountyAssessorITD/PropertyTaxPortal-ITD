@@ -56,6 +56,35 @@ namespace PropertyTaxPortal
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.ConfigureApplicationCookie(options => {
+
+                options.Events = new Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents
+                {
+                    OnRedirectToLogin = ctx =>
+                    {
+                        var requestPath = ctx.Request.Path;
+                        if (requestPath.Value == "/admin")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
+                        else if (requestPath.Value == "/FAQs")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
+                        else if (requestPath.Value == "/News")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
+                        else if (requestPath.Value == "/Categories")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
+
+                        return Task.CompletedTask;
+                    }
+                };
+
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //services.AddDbContext<PTPContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ptp_connect")));
@@ -121,6 +150,7 @@ namespace PropertyTaxPortal
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+            app.UseCookiePolicy();
             //-----------------LOCALIZATION MIDDLEWARE-----------------//
             var supportedCultures = new[]
             {
@@ -147,7 +177,7 @@ namespace PropertyTaxPortal
 
             app.UseHttpsRedirection();
             
-            app.UseCookiePolicy();
+           
 
             app.UseMvc(routes =>
             {
