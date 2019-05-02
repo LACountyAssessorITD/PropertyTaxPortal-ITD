@@ -1,0 +1,488 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Adjusted Annual Property Tax Bill";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="container-fluid bg-header bg-bills">
+    <h2 class="display-4">@Localizer[ViewBag.Title]</h2>
+</section>
+
+<section class="tax-content container my-4">
+
+    <center><img src="~/images/Tax-Bills/adjbill2016.gif" usemap="#AdjustedBill_Map"></center>
+    <map name="AdjustedBill_Map">
+        <area shape="circle" coords="696,1333,12" href="javascript:void(0)" onclick="displayDescription(24)">
+        <area shape="circle" coords="325,1292,12" href="javascript:void(0)" onclick="displayDescription(23)">
+        <area shape="circle" coords="647,1253,12" href="javascript:void(0)" onclick="displayDescription(22)">
+        <area shape="circle" coords="434,1243,12" href="javascript:void(0)" onclick="displayDescription(21)">
+        <area shape="circle" coords="694,1020,12" href="javascript:void(0)" onclick="displayDescription(20)">
+        <area shape="circle" coords="324,982,12" href="javascript:void(0)" onclick="displayDescription(19)">
+        <area shape="circle" coords="647,947,12" href="javascript:void(0)" onclick="displayDescription(18)">
+        <area shape="circle" coords="433,929,12" href="javascript:void(0)" onclick="displayDescription(17)">
+        <area shape="circle" coords="282,812,12" href="javascript:void(0)" onclick="displayDescription(16)">
+        <area shape="circle" coords="398,775,12" href="javascript:void(0)" onclick="displayDescription(15)">
+        <area shape="circle" coords="397,729,12" href="javascript:void(0)" onclick="displayDescription(14)">
+        <area shape="circle" coords="224,665,12" href="javascript:void(0)" onclick="displayDescription(13)">
+        <area shape="circle" coords="783,649,12" href="javascript:void(0)" onclick="displayDescription(12)">
+        <area shape="circle" coords="627,651,12" href="javascript:void(0)" onclick="displayDescription(11)">
+        <area shape="circle" coords="336,601,12" href="javascript:void(0)" onclick="displayDescription(10)">
+        <area shape="circle" coords="559,495,12" href="javascript:void(0)" onclick="displayDescription(9)">
+        <area shape="circle" coords="299,423,12" href="javascript:void(0)" onclick="displayDescription(8)">
+        <area shape="circle" coords="532,298,12" href="javascript:void(0)" onclick="displayDescription(7)">
+        <area shape="circle" coords="304,320,12" href="javascript:void(0)" onclick="displayDescription(6)">
+        <area shape="circle" coords="515,216,12" href="javascript:void(0)" onclick="displayDescription(5)">
+        <area shape="circle" coords="252,267,12" href="javascript:void(0)" onclick="displayDescription(4)">
+        <area shape="circle" coords="506,170,12" href="javascript:void(0)" onclick="displayDescription(3)">
+        <area shape="circle" coords="325,165,12" href="javascript:void(0)" onclick="displayDescription(2)">
+        <area shape="circle" coords="218,27,12" href="javascript:void(0)" onclick="displayDescription(1)">
+    </map>
+
+    <div class=" text-left">
+        <div class="bill-step">
+            <div>1</div>
+            <p>
+                <strong>@Localizer["Adjusted Secured Property Tax Bill"]</strong> - @Localizer["The Adjusted Secured Property"]
+                @Localizer["Tax Bill replaces the Annual Secured Property Tax Bill.  Annual property taxes may be adjusted"]
+                @Localizer["during the fiscal year, July 1 through June 30.  Reasons may include one or more of the following:"]
+                @Localizer["1) a change or correction to the assessed value of the property, 2) the allowance of an exemption"]
+                @Localizer["that was previously omitted, 3) the correction of a direct assessment placed on the property from"]
+                @Localizer["a municipality or special district, or 4) the inclusion of a penalty for failure to comply with"]
+                @Localizer["certain requirements of the Office of the Assessor, prescribed by law (this excludes a penalty"]
+                @Localizer["resulting from a delinquent payment).  In addition, changes may occur to the Voted Indebtedness"]
+                @Localizer["Tax Rate.  Voted Indebtedness is the result of voter approval of a bond measure initiative."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>2</div>
+            <p>
+                <strong>@Localizer["Assessor's Identification Number"]</strong> - @Localizer["This area identifies the Assessor’s"]
+                @Localizer["Identification Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit"]
+                @Localizer["number assigned by the Office of the Assessor to each piece of real property in Los Angeles County."]
+                @Localizer["This ten-digit AIN is made up of a four-digit Map Book Number (1234), a three-digit Page Number (567),"]
+                @Localizer["and a three-digit Parcel Number (890)."]
+            </p>
+            <p>
+                <strong>@Localizer["Year and Sequence"]</strong> - @Localizer["This area identifies the Year and Sequence – (16 000).  This five digit"]
+                @Localizer["number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a"]
+                @Localizer["2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>3</div>
+            <p>
+                <strong>@Localizer["General Tax Levy"]</strong> - @Localizer["This tax amount is the general one"]
+                @Localizer["percent (1%) tax rate levied against every property in the County. The"]
+                @Localizer["calculation is 1 percent times the \"Net Taxable Value\"."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>4</div>
+            <p>
+                <strong>@Localizer["Assessee"]</strong> - @Localizer["The owner of record and the mailing address on"]
+                @Localizer["file with the Office of the Assessor."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>5</div>
+            <p>
+                <strong>@Localizer["Voted Indebtedness"]</strong> - @Localizer["Voter-approved taxes levied"]
+                @Localizer["against property."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>6</div>
+            <p>
+                <strong>@Localizer["Electronic Fund Transfer (EFT) Number"]</strong> - @Localizer["The EFT number is used to make credit"]
+                @Localizer["card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit"]
+                @Localizer["card payment, please call 1(888) 473-0835.  However, there are processing fees when paying"]
+                @Localizer["by credit card/Visa Debit card.  Each transaction is limited to $99,999.99.  The PIN number"]
+                @Localizer["is used to make electronic check payment to protect your security and privacy and is used"]
+                @Localizer["to pay your current year and defaulted taxes online.  Effective with tax bills issued after"]
+                @Localizer["August 2013, the PIN may contain all alpha, all numeric, or alpha/numeric characters.  The"]
+                @Localizer["alpha letter 'O' is not used in the PIN.  The '0' is always a number zero."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>7</div>
+            <p>
+                <strong>@Localizer["Direct Assessments"]</strong> – @Localizer["These are additional charges placed on the"]
+                @Localizer["property tax bills.  These charges are not based on Assessor’s valuations.  Examples of"]
+                @Localizer["direct assessments are charges for sewer maintenance, water, or fire districts.  For questions"]
+                @Localizer["regarding these assessments, please contact the agency.  The telephone number for each agency"]
+                @Localizer["is listed on the bill, or please visit the Department of Auditor-Controller’s website for a"]
+                @Localizer["Direct Assessment Listing."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>8</div>
+            <p>
+                <strong>@Localizer["Special Information"]</strong> - @Localizer["This section provides important information"]
+                @Localizer["about the bill and states whether there are any delinquent taxes owed."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>9</div>
+            <p>
+                <strong>@Localizer["Total Taxes Due"]</strong> - @Localizer["This is the total amount due for the bill. The Annual"]
+                @Localizer["Secured Property Tax Bill has two payment stubs. The first installment is due <br>November 1 and is"]
+                @Localizer["delinquent December 10.  If the first installment is not received or"]
+                @Localizer["United States Postal Service (USPS) postmarked by December 10, a 10 percent penalty will be imposed."]
+                @Localizer["The second installment is due February 1 and is delinquent April 10.  If the second installment"]
+                @Localizer["is not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost"]
+                @Localizer["will be imposed.  Taxpayers must be sure to include the payment stub with any type of payment"]
+                @Localizer["and write their Assessor's Identification Number with the Year/Sequence Number on their check."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>10</div>
+            <p>
+                <strong>@Localizer["Property Location and / or Property Description"]</strong> - @Localizer["The"]
+                @Localizer["property address and/or legal description on record with the Assessor's office."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>11</div>
+            <p>
+                <strong>@Localizer["Prior Assessed Value"]</strong> - @Localizer["This is the Assessor’s valuation of"]
+                @Localizer["the property prior to the recent transfer/new construction date."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>12</div>
+            <p>
+                <strong>@Localizer["Current Assessed Value"]</strong> - @Localizer["The Assessor’s valuation of"]
+                @Localizer["the property after the adjustment."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>13</div>
+            <p>
+                <strong>@Localizer["Assessor’s Regional Office"]</strong> - @Localizer["This is the address and"]
+                @Localizer["telephone number to contact for questions regarding the assessed value of the"]
+                @Localizer["property."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>14</div>
+            <p><strong>@Localizer["Less Exemption"]</strong> - @Localizer["Exemptions, if any, are deducted from the assessed value."]</p>
+        </div>
+        <div class="bill-step">
+            <div>15</div>
+            <p>
+                <strong>@Localizer["Net Taxable Value"]</strong> - @Localizer["The difference between the current"]
+                @Localizer["value and exemptions."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>16</div>
+            <p>
+                <strong>@Localizer["Returned Check Charge"]</strong> - @Localizer["There is a $50.00 charge for"]
+                @Localizer["any checks returned by the bank."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>17</div>
+            <p>
+                <strong>@Localizer["2nd Installment Delinquency  Date"]</strong> - @Localizer["If paying the"]
+                @Localizer["bill in installments, the second installment must be received or United States Postal Service"]
+                @Localizer["postmarked by this date, or a 10 percent penalty and a $10.00 cost will be imposed."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>18</div>
+            <p>
+                <strong>@Localizer["2nd Installment Due"]</strong> - @Localizer["Amount of taxes due for the second installment."]
+                @Localizer["Amount of taxes due for the second installment."]
+                @Localizer["Identification Number with the Year/Sequence Number on their check."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>19</div>
+            <p>
+                <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the amount"]
+                @Localizer["stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number"]
+                @Localizer["and the Year/Sequence Number on the check."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>20</div>
+            <p>
+                <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector"]
+                @Localizer["and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification"]
+                @Localizer["Number and the Year/Sequence Number on the check."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>21</div>
+            <p>
+                <strong>@Localizer["1st Installment Delinquency  Date"]</strong> - @Localizer["If paying the bill in full, payment"]
+                @Localizer["must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments,"]
+                @Localizer["the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>22</div>
+            <p>
+                <strong>@Localizer["1st Installment Due"]</strong> - @Localizer["Amount of taxes due for the first installment.  Taxpayers must"]
+                @Localizer["be sure to include the payment stub with any type of payment and write their Assessor’s Identification Number with the"]
+                @Localizer["Year/Sequence Number on their check."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>23</div>
+            <p>
+                <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the"]
+                @Localizer["amount stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification"]
+                @Localizer["Number and the Year/Sequence Number on the check."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>24</div>
+            <p>
+                <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector"]
+                @Localizer["and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification"]
+                @Localizer["Number and the Year/Sequence Number on the check."]
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="floatbox" id="div1">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Adjusted Secured Property Tax Bill"]</strong> - @Localizer["The Adjusted Secured Property"]
+            @Localizer["Tax Bill replaces the Annual Secured Property Tax Bill.  Annual property taxes may be adjusted"]
+            @Localizer["during the fiscal year, July 1 through June 30.  Reasons may include one or more of the following:"]
+            @Localizer["1) a change or correction to the assessed value of the property, 2) the allowance of an exemption"]
+            @Localizer["that was previously omitted, 3) the correction of a direct assessment placed on the property from"]
+            @Localizer["a municipality or special district, or 4) the inclusion of a penalty for failure to comply with"]
+            @Localizer["certain requirements of the Office of the Assessor, prescribed by law (this excludes a penalty"]
+            @Localizer["resulting from a delinquent payment).  In addition, changes may occur to the Voted Indebtedness"]
+            @Localizer["Tax Rate.  Voted Indebtedness is the result of voter approval of a bond measure initiative."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div2">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Assessor's Identification Number"]</strong> - @Localizer["This area identifies the Assessor’s"]
+            @Localizer["Identification Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit"]
+            @Localizer["number assigned by the Office of the Assessor to each piece of real property in Los Angeles County."]
+            @Localizer["This ten-digit AIN is made up of a four-digit Map Book Number (1234), a three-digit Page Number (567),"]
+            @Localizer["and a three-digit Parcel Number (890)."]
+        </p>
+        <p>
+            <strong>@Localizer["Year and Sequence"]</strong> - @Localizer["This area identifies the Year and Sequence – (16 000).  This five digit"]
+            @Localizer["number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a"]
+            @Localizer["2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div3">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["General Tax Levy"]</strong> - @Localizer["This tax amount is the general one"]
+            @Localizer["percent (1%) tax rate levied against every property in the County. The"]
+            @Localizer["calculation is 1 percent times the \"Net Taxable Value\"."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div4">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Assessee"]</strong> - @Localizer["The owner of record and the mailing address on"]
+            @Localizer["file with the Office of the Assessor."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div5">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Voted Indebtedness"]</strong> - @Localizer["Voter-approved taxes levied"]
+            @Localizer["against property."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div6">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Electronic Fund Transfer (EFT) Number"]</strong> - @Localizer["The EFT number is used to make credit"]
+            @Localizer["card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit"]
+            @Localizer["card payment, please call 1(888) 473-0835.  However, there are processing fees when paying"]
+            @Localizer["by credit card/Visa Debit card.  Each transaction is limited to $99,999.99.  The PIN number"]
+            @Localizer["is used to make electronic check payment to protect your security and privacy and is used"]
+            @Localizer["to pay your current year and defaulted taxes online.  Effective with tax bills issued after"]
+            @Localizer["August 2013, the PIN may contain all alpha, all numeric, or alpha/numeric characters.  The"]
+            @Localizer["alpha letter 'O' is not used in the PIN.  The '0' is always a number zero."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div7">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Direct Assessments"]</strong> – @Localizer["These are additional charges placed on the"]
+            @Localizer["property tax bills.  These charges are not based on Assessor’s valuations.  Examples of"]
+            @Localizer["direct assessments are charges for sewer maintenance, water, or fire districts.  For questions"]
+            @Localizer["regarding these assessments, please contact the agency.  The telephone number for each agency"]
+            @Localizer["is listed on the bill, or please visit the Department of Auditor-Controller’s website for a"]
+            @Localizer["Direct Assessment Listing."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div8">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Special Information"]</strong> - @Localizer["This section provides important information"]
+            @Localizer["about the bill and states whether there are any delinquent taxes owed."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div9">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Total Taxes Due"]</strong> - @Localizer["This is the total amount due for the bill. The Annual"]
+            @Localizer["Secured Property Tax Bill has two payment stubs. The first installment is due <br>November 1 and is"]
+            @Localizer["delinquent December 10.  If the first installment is not received or"]
+            @Localizer["United States Postal Service (USPS) postmarked by December 10, a 10 percent penalty will be imposed."]
+            @Localizer["The second installment is due February 1 and is delinquent April 10.  If the second installment"]
+            @Localizer["is not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost"]
+            @Localizer["will be imposed.  Taxpayers must be sure to include the payment stub with any type of payment"]
+            @Localizer["and write their Assessor's Identification Number with the Year/Sequence Number on their check."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div10">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Property Location and / or Property Description"]</strong> - @Localizer["The"]
+            @Localizer["property address and/or legal description on record with the Assessor's office."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div11">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Prior Assessed Value"]</strong> - @Localizer["This is the Assessor’s valuation of"]
+            @Localizer["the property prior to the recent transfer/new construction date."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div12">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Current Assessed Value"]</strong> - @Localizer["The Assessor’s valuation of"]
+            @Localizer["the property after the adjustment."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div13">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Assessor’s Regional Office"]</strong> - @Localizer["This is the address and"]
+            @Localizer["telephone number to contact for questions regarding the assessed value of the"]
+            @Localizer["property."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div14">
+    <div class="float-content">
+        <p><strong>@Localizer["Less Exemption"]</strong> - @Localizer["Exemptions, if any, are deducted from the assessed value."]</p>
+    </div>
+</div>
+<div class="floatbox" id="div15">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Net Taxable Value"]</strong> - @Localizer["The difference between the current"]
+            @Localizer["value and exemptions."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div16">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Returned Check Charge"]</strong> - @Localizer["There is a $50.00 charge for"]
+            @Localizer["any checks returned by the bank."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div17">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["2nd Installment Delinquency  Date"]</strong> - @Localizer["If paying the"]
+            @Localizer["bill in installments, the second installment must be received or United States Postal Service"]
+            @Localizer["postmarked by this date, or a 10 percent penalty and a $10.00 cost will be imposed."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div18">
+    <div class="float-content">        
+        <p>
+            <strong>@Localizer["2nd Installment Due"]</strong> - @Localizer["Amount of taxes due for the second installment."]
+            @Localizer["Amount of taxes due for the second installment."]
+            @Localizer["Identification Number with the Year/Sequence Number on their check."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div19">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the amount"]
+            @Localizer["stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number"]
+            @Localizer["and the Year/Sequence Number on the check."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div20">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector"]
+            @Localizer["and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification"]
+            @Localizer["Number and the Year/Sequence Number on the check."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div21">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["1st Installment Delinquency  Date"]</strong> - @Localizer["If paying the bill in full, payment"]
+            @Localizer["must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments,"]
+            @Localizer["the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div22">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["1st Installment Due"]</strong> - @Localizer["Amount of taxes due for the first installment.  Taxpayers must"]
+            @Localizer["be sure to include the payment stub with any type of payment and write their Assessor’s Identification Number with the"]
+            @Localizer["Year/Sequence Number on their check."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div23">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the"]
+            @Localizer["amount stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification"]
+            @Localizer["Number and the Year/Sequence Number on the check."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div24">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector"]
+            @Localizer["and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification"]
+            @Localizer["Number and the Year/Sequence Number on the check."]
+        </p>
+    </div>
+</div>
+
+
+

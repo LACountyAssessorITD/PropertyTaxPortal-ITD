@@ -43,22 +43,44 @@ namespace PropertyTaxPortal.Controllers
             return View(context);
         }
 
+        //Annual Secured Property Tax Bill
         public IActionResult AnnualSecuredProperty()
         {
             return View();
         }
 
+        //Annual Secured Property Tax Information Statement
         public IActionResult AnnualSecuredPropertyTaxInformationStatement()
         {
             return View();
         }
 
+        //Notice of Delinquency
         public IActionResult NoticeofDelinquency()
         {
             return View();
         }
 
+        //Substitute Secured Property Tax Bill
         public IActionResult SubstitueSecuredProperty()
+        {
+            return View();
+        }
+
+        //Statementof Prior Year Taxes
+        public IActionResult StatementOfPriorYear()
+        {
+            return View();
+        }
+
+        //Adjusted Annual Property Tax Bill
+        public IActionResult AdjAnnual()
+        {
+            return View();
+        }
+
+        //Adjusted Supplemental Property Tax Bill
+        public IActionResult AdjSupplemental()
         {
             return View();
         }
