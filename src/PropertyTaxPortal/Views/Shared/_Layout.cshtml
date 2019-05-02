@@ -133,7 +133,7 @@
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="navbarDropdown2">
                                 <ul>
-                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">@Localizer["Property Tax Managment System"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">@Localizer["Property Tax Management System"]</a></li>
                                     <li>
                                         <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/" target="_blank">
                                             @Localizer["Multiple Parcel Inquires"]
@@ -189,7 +189,7 @@
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredProperty">@Localizer["Annual Secured Property Tax Bill"]</a>  </li>
                                             <li><a href="http://lacountypropertytax.com/portal/images/AnnualSecPropInsert.pdf">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
-                                            <li><a href="">@Localizer["Notice of Delinquency"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="NoticeofDelinquency">@Localizer["Notice of Delinquency"]</a></li>
                                             <li><a href="">@Localizer["Substitute Secured Property Tax Bill"]</a></li>
                                             <li><a href="">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
                                             <li><a href="">@Localizer["Unsecured Property Tax Bill"]</a></li>
@@ -281,11 +281,11 @@
         <footer class="">
             <section class="container-fluid section-footer ">
                 <div class="row">
-                    <div class="col-md-2 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6 ">
                         <a href="http://www.lacounty.gov/" target="_blank"><img src="~/images/LACSEAL152.png" alt=""></a>
                         <p>@Localizer["Enriching Lives"]...</p>
                     </div>
-                    <div class="col-md-2 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Do You Need Help?"]</li>
                             <li><a href="https://www.211la.org/" target="_blank"> @Localizer["211 LA County"]</a></li>
@@ -296,22 +296,18 @@
 
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-6 ">
-                        <ul>
-                            <li>@Localizer["About"]</li>
-                            <li><a asp-controller='Home' asp-action="Disclaimer">@Localizer["Disclaimer"]</a></li>
-                            <li><a asp-controller='Home' asp-action="PrivacyPolicy">@Localizer["Privacy Policy"]</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-sm-6 ">
+                    
+                    <div class="col-md-3 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Site Info"]</li>
+                            <li><a asp-controller='Home' asp-action="Disclaimer">@Localizer["Disclaimer"]</a></li>
+                            <li><a asp-controller='Home' asp-action="PrivacyPolicy">@Localizer["Privacy Policy"]</a></li>
                             <li><a asp-controller='Home' asp-route-id="accessibility" asp-action="accessibility">@Localizer["Accessibility"]</a></li>
                             <li><a asp-controller='Home' asp-action="Language">@Localizer["Language"]</a></li>
 
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Public Info"]</li>
                             <li><a href="http://portal.lacounty.gov/wps/portal/omd" target="_blank">@Localizer["Board Correspondence"]</a></li>

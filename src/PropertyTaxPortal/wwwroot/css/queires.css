@@ -319,6 +319,11 @@
     .contact-top{
         height: auto;
     }
+    .contact-top img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
     .contact-bottom {
         padding-top: 30px;
     }

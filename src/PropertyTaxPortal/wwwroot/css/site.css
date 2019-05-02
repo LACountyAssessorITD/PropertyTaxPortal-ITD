@@ -179,13 +179,13 @@ body {
 }
 
 .bg-subheader .sub-area:first-child {
-    background-image: url('../images/contact-phone.png');
+    background-image: url('../images/GettyImages-992782254-contact-us.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .property-area {
-    background-image: url('../images/lacountymap-1.jpg') !important;
+    background-image: url('../images/lac-map-ptp.jpg') !important;
 }
 
 .response-area {
@@ -619,7 +619,7 @@ footer {
     text-align: center;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(51, 51, 51, 0.8);
 }
 
 .float-content {
@@ -627,8 +627,8 @@ footer {
     margin-right: auto;
     margin-top: 200px;
     max-width: 500px;
-    background: #000;
-    opacity: 0.9;
+    background: #343a40;
+    
     color: #fff;
     padding: 20px;
     border-radius: 10px 10px;
