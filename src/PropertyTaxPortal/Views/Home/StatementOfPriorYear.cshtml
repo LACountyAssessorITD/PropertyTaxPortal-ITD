@@ -1,0 +1,238 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Statement of Prior Year Taxes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="container-fluid bg-header bg-bills">
+    <h2 class="display-4">@Localizer[ViewBag.Title]</h2>
+</section>
+
+<section class="tax-content container my-4">
+
+    <center><img src="~/images/Tax-Bills/stmtprior2016.gif" usemap="#StmtPriorYrTax_Map"></center>
+    <map name="StmtPriorYrTax_Map">
+        <area shape="circle" coords="417,1017,18" href="javascript:void(0)" onclick="displayDescription(16)">
+        <area shape="circle" coords="424,945,18" href="javascript:void(0)" onclick="displayDescription(15)">
+        <area shape="circle" coords="219,810,18" href="javascript:void(0)" onclick="displayDescription(14)">
+        <area shape="circle" coords="759,584,18" href="javascript:void(0)" onclick="displayDescription(13)">
+        <area shape="circle" coords="469,583,18" href="javascript:void(0)" onclick="displayDescription(12)">
+        <area shape="circle" coords="469,522,18" href="javascript:void(0)" onclick="displayDescription(11)">
+        <area shape="circle" coords="756,493,18" href="javascript:void(0)" onclick="displayDescription(10)">
+        <area shape="circle" coords="775,458,18" href="javascript:void(0)" onclick="displayDescription(9)">
+        <area shape="circle" coords="839,441,18" href="javascript:void(0)" onclick="displayDescription(8)">
+        <area shape="circle" coords="342,451,18" href="javascript:void(0)" onclick="displayDescription(7)">
+        <area shape="circle" coords="19,270,18" href="javascript:void(0)" onclick="displayDescription(6)">
+        <area shape="circle" coords="271,186,18" href="javascript:void(0)" onclick="displayDescription(5)">
+        <area shape="circle" coords="548,98,18" href="javascript:void(0)" onclick="displayDescription(4)">
+        <area shape="circle" coords="277,97,18" href="javascript:void(0)" onclick="displayDescription(3)">
+        <area shape="circle" coords="90,109,18" href="javascript:void(0)" onclick="displayDescription(2)">
+        <area shape="circle" coords="301,61,18" href="javascript:void(0)" onclick="displayDescription(1)">
+    </map>
+
+    <div class=" text-left">
+        <div class="bill-step">
+            <div>1</div>
+            <p>
+                <strong>@Localizer["Statement of Prior Year Taxes"]</strong> - @Localizer["The Adjusted Supplemental Property"]
+                @Localizer["Tax Bill replaces the Supplemental Property Tax Bill received for the same fiscal year."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>2</div>
+            <p>
+                <strong>@Localizer["Assessor's Identification Number"]</strong> - @Localizer["This area identifies the Assessor’s Identification Number"]
+                @Localizer["– (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the Office of the"]
+                @Localizer["Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a"]
+                @Localizer["four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)."]
+            </p>
+            <p>
+                <strong>@Localizer["Year and Sequence"]</strong> - @Localizer["This area identifies the Year and Sequence – (16 000).  This five digit"]
+                @Localizer["number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a"]
+                @Localizer["2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>3</div>
+            <p>
+                <strong>@Localizer["Transfer/New Construction Date"]</strong> - @Localizer["This date is used as the basis for the change in assessed"]
+                @Localizer["value.  The term “Transfer Date” refers to the recording date of an ownership change.  \"New Construction Date\" refers"]
+                @Localizer["to the date the new construction was completed."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>4</div>
+            <p>
+                <strong>@Localizer["General Tax Levy"]</strong> - @Localizer["This tax amount is the general one percent (1%) tax rate levied against"]
+                @Localizer["every property in the County.  The calculation is 1 percent multiplied by the \"Net Taxable Value.\""]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>5</div>
+            <p><strong>@Localizer["Voted Indebtedness"]</strong> - @Localizer["Voter-approved taxes levied against property."]</p>
+        </div>
+        <div class="bill-step">
+            <div>6</div>
+            <p><strong>@Localizer["Assessee"]</strong> - @Localizer["The owner of record and the mailing address on file with the Office of the Assessor."]</p>
+        </div>
+        <div class="bill-step">
+            <div>7</div>
+            <p>
+                <strong>@Localizer["Electronic Fund Transfer (EFT) Number"]</strong> - @Localizer["The EFT number is used to make credit"]
+                @Localizer["card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit card payment,"]
+                @Localizer["please call 1(888) 473-0835.  However, there are processing fees when paying by credit card/Visa Debit card."]
+                @Localizer["Each transaction is limited to $99,999.99.  The PIN number is used to make electronic check payment to"]
+                @Localizer["protect your security and privacy and is used to pay your current year and defaulted taxes online."]
+                @Localizer["Effective with tax bills issued after August 2013, the PIN may contain all alpha, all numeric, or"]
+                @Localizer["alpha/numeric characters.  The alpha letter 'O' is not used in the PIN.  The '0' is always a number zero."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>8</div>
+            <p>
+                <strong>@Localizer["Direct Assessments"]</strong> – @Localizer["These are additional charges placed on the property tax bills."]
+                @Localizer["These charges are not based on Assessor’s valuations.  Examples of direct assessments are charges for sewer"]
+                @Localizer["maintenance, water, or fire districts.  For questions regarding these assessments, please contact the agency."]
+                @Localizer["The telephone number for each agency is listed on the bill, or please visit the Department of Auditor-Controller’s"]
+                @Localizer["website for a Direct Assessment Listing."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>9</div>
+            <p>
+                <strong>@Localizer["Special Information"]</strong> - @Localizer["This section provides important information about the bill "]
+                @Localizer["and states whether there are any delinquent taxes owed."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>10</div>
+            <p><strong>@Localizer["Total Prorated Taxes Due"]</strong></p>
+        </div>
+        <div class="bill-step">
+            <div>11</div>
+            <p>
+                <strong>@Localizer["Property Location and/or Property Description"]</strong> - @Localizer["The property address"]
+                @Localizer["and/or legal description on record with the Office of the Assessor."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>12</div>
+            <p>
+                <strong>@Localizer["Current Assessed Value"]</strong> - @Localizer["The Assessor’s valuation of"]
+                @Localizer["the property after the adjustment."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>13</div>
+            <p>
+                <strong>@Localizer["Prior Assessed Value"]</strong> - @Localizer["This is the Assessor’s valuation"]
+                @Localizer["of the property prior to the recent transfer/new construction date."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>14</div>
+            <p><strong>@Localizer["Net Assessed Value"]</strong> - @Localizer["The current assessed value less the prior assessed value."]</p>
+        </div>
+        <div class="bill-step">
+            <div>15</div>
+            <p>
+                <strong>@Localizer["Assessor’s Regional Office"]</strong> - @Localizer["This is the address and telephone"]
+                @Localizer["number to contact for questions regarding the assessed value of the property."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>16</div>
+            <p><strong>@Localizer["Less Exemptions"]</strong> - @Localizer["Exemptions, if any, are deducted from the assessed value."]</p>
+        </div>
+    </div>
+</section>
+
+<div class="floatbox" id="div1">
+    <div class="float-content">
+
+    </div>
+</div>
+<div class="floatbox" id="div2">
+    <div class="float-content">
+   
+    </div>
+</div>
+<div class="floatbox" id="div3">
+    <div class="float-content">
+   
+    </div>
+</div>
+<div class="floatbox" id="div4">
+    <div class="float-content">
+
+    </div>
+</div>
+<div class="floatbox" id="div5">
+    <div class="float-content">
+   
+    </div>
+</div>
+<div class="floatbox" id="div6">
+    <div class="float-content">
+ 
+    </div>
+</div>
+<div class="floatbox" id="div7">
+    <div class="float-content">
+
+    </div>
+</div>
+<div class="floatbox" id="div8">
+    <div class="float-content">
+
+    </div>
+</div>
+<div class="floatbox" id="div9">
+    <div class="float-content">
+
+    </div>
+</div>
+<div class="floatbox" id="div10">
+    <div class="float-content">
+ 
+    </div>
+</div>
+<div class="floatbox" id="div11">
+    <div class="float-content">
+
+    </div>
+</div>
+<div class="floatbox" id="div12">
+    <div class="float-content">
+       
+    </div>
+</div>
+<div class="floatbox" id="div13">
+    <div class="float-content">
+
+    </div>
+</div>
+<div class="floatbox" id="div14">
+    <div class="float-content">
+       
+    </div>
+</div>
+<div class="floatbox" id="div15">
+    <div class="float-content">
+       
+    </div>
+</div>
+<div class="floatbox" id="div16">
+    <div class="float-content">
+        
+    </div>
+</div>
+
+
+
+
