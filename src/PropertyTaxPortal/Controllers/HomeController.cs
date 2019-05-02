@@ -58,6 +58,11 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        public IActionResult AdjAnnual()
+        {
+            return View();
+        }
+
         public IActionResult AdjSupplemental()
         {
             return View();

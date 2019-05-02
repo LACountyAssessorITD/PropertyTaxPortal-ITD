@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Adjusted Annual Property Tax Bill";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="container-fluid bg-header bg-bills">
+    <h2 class="display-4">@Localizer[ViewBag.Title]</h2>
+</section>
+
+<section class="tax-content container my-4">
+
+    <center><img src="~/images/Tax-Bills/adjbill2016.gif" usemap="#AdjSuppBill_Map"></center>
+
+</section>
