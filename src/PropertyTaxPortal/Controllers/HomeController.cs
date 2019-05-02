@@ -67,6 +67,12 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        //Statementof Prior Year Taxes
+        public IActionResult StatementOfPriorYear()
+        {
+            return View();
+        }
+
         //Adjusted Annual Property Tax Bill
         public IActionResult AdjAnnual()
         {
