@@ -1,0 +1,35 @@
+﻿
+.analyitics-img {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.analyitics-img img {
+    height: 100%;
+
+}
+.bg-grey {
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(43,98,169,0.5);
+    
+    
+}
+
+.section-analytics .text-card {
+    box-shadow: 0px 5px 4px rgba(43,98,169,0.5) !important;
+    background-color: #fff;
+    
+    
+}
+
+.section-analytics .text-card p {
+    color: #000 !important;
+}
+
+    .section-analytics .text-card i {
+        color: #000;
+        font-size: 200%;
+        margin-top: 22px;
+       
+    }
