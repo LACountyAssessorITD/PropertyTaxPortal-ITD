@@ -58,6 +58,11 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        public IActionResult AdjSupplemental()
+        {
+            return View();
+        }
+
         public IActionResult Accessibility(string id)
         {
             Dictionary<string, string> titles = new Dictionary<string, string>();
