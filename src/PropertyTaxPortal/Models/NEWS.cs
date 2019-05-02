@@ -7,7 +7,7 @@ namespace PropertyTaxPortal.Models
     {
   
         public int NewsId { get; set; }
-        public int Active { get; set; }
+        public string Active { get; set; }
         public int SOrder { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
