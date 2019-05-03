@@ -1,6 +1,4 @@
-﻿
-
-@using Microsoft.AspNetCore.Mvc.Localization
+﻿@using Microsoft.AspNetCore.Mvc.Localization
 
 
 @inject IViewLocalizer Localizer
@@ -14,8 +12,6 @@
 <section class="container-fluid bg-header bg-bills">
     <h2 class="display-4">@Localizer["NOTICE OF DELINQUENCY"]</h2>
 </section>
-
-
 
 <section class="tax-content container my-4">
 
@@ -38,9 +34,7 @@
         <area shape="circle" coords="45,224,15" href="javascript:void(0)" onclick="displayDescription(3)">
         <area shape="circle" coords="28,153,15" href="javascript:void(0)" onclick="displayDescription(2)">
         <area shape="circle" coords="221,112,15" href="javascript:void(0)" onclick="displayDescription(1)">
-
     </map>
-
 
     <div class=" text-left">
         <div class="bill-step">
@@ -164,10 +158,8 @@
                 @Localizer["Service postmarked by this date, or a 10 percent penalty and a $10.00 cost will be imposed."]
             </p>
         </div>
-
     </div>
 </section>
-
 
 <div class="floatbox" id="div1">
     <div class="float-content">
@@ -179,9 +171,7 @@
             @Localizer["on July 1, a $15 redemption fee will be imposed and defaulted taxes will be subject to additional penalties of 1.5 percent per month."]
         </p>
     </div>
-
 </div>
-
 <div class="floatbox" id="div2">
     <div class="float-content">
         <p>
@@ -250,7 +240,7 @@
         <p>
             <strong>
                 @Localizer["Special Information"]
-            </strong>– @Localizer["This section provides important information about the bill and states whether there are any delinquent taxes"]
+            </strong> – @Localizer["This section provides important information about the bill and states whether there are any delinquent taxes"]
             @Localizer["owed."]
         </p>
     </div>
@@ -260,7 +250,7 @@
         <p>
             <strong>
                 @Localizer["Total Taxes Due"]
-            </strong>- @Localizer["This is the total amount due for the bill. The Annual Secured Property Tax Bill has two payment stubs. The first"]
+            </strong> - @Localizer["This is the total amount due for the bill. The Annual Secured Property Tax Bill has two payment stubs. The first"]
             @Localizer["installment is due November 1 and is delinquent December 10. If the first installment is not received or United States Postal Service (USPS)"]
             @Localizer["postmarked by December 10, a 10 percent penalty will be imposed. The second installment is due February 1 and is delinquent April 10. If the second"]
             @Localizer["installment is not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost will be imposed. Taxpayers must be sure"]
