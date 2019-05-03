@@ -48,7 +48,9 @@ namespace PropertyTaxPortal.Models
             {
                 entity.Property(e => e.NewsId).HasColumnName("newsID");
 
-                entity.Property(e => e.Active).HasColumnName("active");
+                entity.Property(e => e.Active)
+                    .HasColumnName("active")
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Body)
                     .HasColumnName("body")
