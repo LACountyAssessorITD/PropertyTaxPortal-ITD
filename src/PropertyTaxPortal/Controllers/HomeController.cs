@@ -67,6 +67,12 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        //Payment Activity Notice
+        public IActionResult PaymentActivityNotice()
+        {
+            return View();
+        }
+
         //Statementof Prior Year Taxes
         public IActionResult StatementOfPriorYear()
         {
