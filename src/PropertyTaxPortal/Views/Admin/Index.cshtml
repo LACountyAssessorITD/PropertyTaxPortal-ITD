@@ -16,58 +16,135 @@
     </div>
 </section>
 
-    <section class="container-fluid section-analytics my-5">
-        <div class="row">
-            <div class="col-md-6 analyitics-img">
-                <img src="~/images/analytics-main.png" />
-            </div>
-            <div class="col-md-6 analyitics-img">
-                <img src="~/images/analytics-pagesviewed.png" />
-            </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embed API Demo</title>
+</head>
+<body>
+
+    <!-- Step 1: Create the containing elements. -->
+
+    <section id="auth-button"></section>
+    <section id="view-selector"></section>
+    <section id="timeline"></section>
+
+    <!-- Step 2: Load the library. -->
+
+    <script>
+(function(w,d,s,g,js,fjs){
+  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
+  js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];
+  js.src='https://apis.google.com/js/platform.js';
+  fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};
+}(window,document,'script'));
+    </script>
+
+    <script>
+gapi.analytics.ready(function() {
+
+  // Step 3: Authorize the user.
+
+  var CLIENT_ID = '982875457810-v4f1vudfbnm9hk0in3kv0g4s1jggvb24.apps.googleusercontent.com';
+
+  gapi.analytics.auth.authorize({
+    container: 'auth-button',
+    clientid: CLIENT_ID,
+  });
+
+  // Step 4: Create the view selector.
+
+  var viewSelector = new gapi.analytics.ViewSelector({
+    container: 'view-selector'
+  });
+
+  // Step 5: Create the timeline chart.
+
+  var timeline = new gapi.analytics.googleCharts.DataChart({
+    reportType: 'ga',
+    query: {
+      'dimensions': 'ga:date',
+      'metrics': 'ga:sessions',
+      'start-date': '30daysAgo',
+      'end-date': 'yesterday',
+    },
+    chart: {
+      type: 'LINE',
+      container: 'timeline'
+    }
+  });
+
+  // Step 6: Hook up the components to work together.
+
+  gapi.analytics.auth.on('success', function(response) {
+    viewSelector.execute();
+  });
+
+  viewSelector.on('change', function(ids) {
+    var newIds = {
+      query: {
+        ids: ids
+      }
+    }
+    timeline.set(newIds).execute();
+  });
+});
+    </script>
+</body>
+</html>
+
+<section class="container-fluid section-analytics my-5">
+    <div class="row">
+        <div class="col-md-6 analyitics-img">
+            <img src="~/images/analytics-main.png" />
         </div>
-    </section>
-
-
-    <section class="container-fluid section-analytics section-cards">
-        <div class="row">
-
-            <div class="col-md-4  text-card  js--wp-4">
-                <a asp-controller="Categories" asp-action="Index">
-                    <div class="card-img bg-grey">
-                        <i class="fas fa-align-justify c-1"></i>
-
-                    </div>
-                    <p>Categories</p>
-
-                </a>
-            </div>
-            <div class="col-md-4  text-card  js--wp-5">
-                <a asp-controller="FAQs" asp-action="Index">
-                    <div class="card-img bg-grey">
-                        @*<ion-icon class="c-2" name="people"></ion-icon>*@
-                        <i class="fas fa-question-circle c-2"></i>
-                    </div>
-                    <p>FAQ</p>
-
-                </a>
-            </div>
-            <div class="col-md-4  text-card  js--wp-6">
-                <a asp-controller="News" asp-action="Index">
-                    <div class="card-img bg-grey">
-                        @*<ion-icon class="c-3" name="people"></ion-icon>*@
-                        <i class="fas fa-newspaper c-3"></i>
-                    </div>
-                    <p>NEWS</p>
-
-                </a>
-            </div>
+        <div class="col-md-6 analyitics-img">
+            <img src="~/images/analytics-pagesviewed.png" />
         </div>
-    </section>
+    </div>
+</section>
+
+
+<section class="container-fluid section-analytics section-cards">
+    <div class="row">
+
+        <div class="col-md-4  text-card  js--wp-4">
+            <a asp-controller="Categories" asp-action="Index">
+                <div class="card-img bg-grey">
+                    <i class="fas fa-align-justify c-1"></i>
+
+                </div>
+                <p>Categories</p>
+
+            </a>
+        </div>
+        <div class="col-md-4  text-card  js--wp-5">
+            <a asp-controller="FAQs" asp-action="Index">
+                <div class="card-img bg-grey">
+                    @*<ion-icon class="c-2" name="people"></ion-icon>*@
+                    <i class="fas fa-question-circle c-2"></i>
+                </div>
+                <p>FAQ</p>
+
+            </a>
+        </div>
+        <div class="col-md-4  text-card  js--wp-6">
+            <a asp-controller="News" asp-action="Index">
+                <div class="card-img bg-grey">
+                    @*<ion-icon class="c-3" name="people"></ion-icon>*@
+                    <i class="fas fa-newspaper c-3"></i>
+                </div>
+                <p>NEWS</p>
+
+            </a>
+        </div>
+    </div>
+</section>
 
 
 
-    <style>
-        body {
-            background-color: #f1f4f7;
-        }
-    </style>
+<style>
+    body {
+        background-color: #f1f4f7;
+    }
+</style>
