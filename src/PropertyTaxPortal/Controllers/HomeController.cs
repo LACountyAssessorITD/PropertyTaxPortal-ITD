@@ -67,6 +67,26 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        //Supplemental Secured Property Tax Bill 
+
+        //Unsecured Property Tax Bill
+        public IActionResult UnSecuredPropertyTax()
+        {
+            return View();
+        }
+
+        //Unsecured Prior Year Bill 
+        public IActionResult UnSecuredPriorYear()
+        {
+            return View();
+        }
+
+        //Payment Activity Notice
+        public IActionResult PaymentActivityNotice()
+        {
+            return View();
+        }
+
         //Statementof Prior Year Taxes
         public IActionResult StatementOfPriorYear()
         {
