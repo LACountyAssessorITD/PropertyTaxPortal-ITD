@@ -5,7 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<section class="container-fluid admin-header">
+    <div class="row ">
+        <h2>News</h2>
+        <a class="ml-auto " asp-controller="Admin" asp-action="Index">Back to Dashboard</a>
+        <div class="ml-3 plus-link text-center"><a asp-action="Create"><i class="fas fa-plus"></i></a></div>
+    </div>
+</section>
 
 <p>
     <a asp-action="Create">Create New</a>
