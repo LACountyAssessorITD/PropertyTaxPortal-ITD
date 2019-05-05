@@ -780,3 +780,24 @@ td.gsib_b {
 .gcsc-find-more-on-google {
     display: none!important;
 }
+
+/*admin loging*/
+
+.section-login {
+    height: 100%;
+    margin-top: 5%;
+    max-width: 500px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .section-login button {
+        margin-top: 30px;
+        background-color: #8282f6 !important; 
+    }
+    .section-login input[type=text], input[type=password] {
+        background-color: #e7e7e7;
+    }
+    .section-login input, button {
+        border-radius: 1px 1px !important;
+    }
