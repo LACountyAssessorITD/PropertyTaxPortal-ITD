@@ -68,6 +68,10 @@ namespace PropertyTaxPortal.Controllers
         }
 
         //Supplemental Secured Property Tax Bill 
+        public IActionResult SupplementalSecuredProperty()
+        {
+            return View();
+        }
 
         //Unsecured Property Tax Bill
         public IActionResult UnSecuredPropertyTax()
@@ -87,7 +91,7 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        //Statementof Prior Year Taxes
+        //Statement of Prior Year Taxes
         public IActionResult StatementOfPriorYear()
         {
             return View();
