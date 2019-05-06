@@ -95,5 +95,5 @@ g rect {
 }
 
 #embed-api-auth-container div:last-child {
-    display: none !important;
+    color: #f1f4f7 !important;
 }
