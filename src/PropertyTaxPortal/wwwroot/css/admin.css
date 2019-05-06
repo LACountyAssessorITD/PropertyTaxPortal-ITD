@@ -1,5 +1,5 @@
 ﻿.section-analytics{
-    max-width: 1500px;
+    max-width: 1200px;
 }
 .analyitics-img {
     max-width: 500px;
@@ -73,3 +73,27 @@
     .plus-link a:hover {
         color: #fff;
     }
+
+/*-------------admin graph---------------------*/
+
+
+
+rect {
+    fill: transparent !important;
+    
+}
+g rect {
+    fill: rgb(5, 141, 199) !important;
+}
+
+#view-selector-container {
+    display: none !important;
+}
+
+.analyitics-img {
+   height: 300px;
+}
+
+#embed-api-auth-container div:last-child {
+    display: none !important;
+}
