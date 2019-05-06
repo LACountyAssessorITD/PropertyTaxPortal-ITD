@@ -52,6 +52,7 @@
         <link href="~/css/GovernmentSites.css" rel="stylesheet" />
         <link href="~/css/admin.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    
         <link href="~/css/queires.css" rel="stylesheet" />
         <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
         <link href="~/lib/FontAwesome/Fontawsome.css" rel="stylesheet" />
@@ -69,6 +70,14 @@
             
         })();
     </script>
+    <script>
+(function(w,d,s,g,js,fs){
+  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
+  js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
+  js.src='https://apis.google.com/js/platform.js';
+  fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
+}(window,document,'script'));
+</script>
     
 
 </head>
@@ -193,10 +202,10 @@
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
                                             <li><a asp-controller="Home" asp-action="NoticeofDelinquency">@Localizer["Notice of Delinquency"]</a></li>
                                             <li><a asp-controller="Home" asp-action="SubstitueSecuredProperty">@Localizer["Substitute Secured Property Tax Bill"]</a></li>
-                                            <li><a href="">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
-                                            <li><a href="">@Localizer["Unsecured Property Tax Bill"]</a></li>
-                                            <li><a href="">@Localizer["Unsecured Prior Year Bill"]</a></li>
-                                            <li><a href="">@Localizer["Payment Activity Notice"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="SupplementalSecuredProperty">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="UnsecuredPropertyTax">@Localizer["Unsecured Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="UnsecuredPriorYear">@Localizer["Unsecured Prior Year Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="PaymentActivityNotice">@Localizer["Payment Activity Notice"]</a></li>
                                             <li><a asp-controller="Home" asp-action="StatementOfPriorYear">@Localizer["Statement of Prior Year Taxes"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AdjAnnual">@Localizer["Adjusted Annual Property Tax Bill"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AdjSupplemental">@Localizer["Adjusted Supplemental Property Tax Bill"]</a></li>
@@ -276,6 +285,8 @@
 
 
         </div>
+
+
         <!---------------------------------------------------------------------->
         <!---------------------------------FOOTER------------------------------->
         <!---------------------------------------------------------------------->
@@ -338,7 +349,7 @@
 
 
     <environment include="Development">
-
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
         <script src="~/lib/jquery/dist/min.popper.js"></script>
@@ -348,6 +359,11 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
+     
+  
+
+
+
 
         <script src="~/js/way.js"></script>
         <script src="~/js/site.js"></script>
@@ -355,6 +371,7 @@
 
     </environment>
     <environment exclude="Development">
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/jquery/dist/min.popper.js"></script>
         <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
@@ -363,6 +380,9 @@
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
 
+       
+
+        <!-- Include the CSS that styles the charts. -->
 
         <script src="~/js/way.js"></script>
 

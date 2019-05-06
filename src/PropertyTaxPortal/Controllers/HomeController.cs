@@ -67,7 +67,31 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        //Statementof Prior Year Taxes
+        //Supplemental Secured Property Tax Bill 
+        public IActionResult SupplementalSecuredProperty()
+        {
+            return View();
+        }
+
+        //Unsecured Property Tax Bill
+        public IActionResult UnSecuredPropertyTax()
+        {
+            return View();
+        }
+
+        //Unsecured Prior Year Bill 
+        public IActionResult UnSecuredPriorYear()
+        {
+            return View();
+        }
+
+        //Payment Activity Notice
+        public IActionResult PaymentActivityNotice()
+        {
+            return View();
+        }
+
+        //Statement of Prior Year Taxes
         public IActionResult StatementOfPriorYear()
         {
             return View();
@@ -278,7 +302,7 @@ namespace PropertyTaxPortal.Controllers
                             "Los Angeles, CA 90012<br><br>" +
                             _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ") and press number 5<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-1471<br><br>" +
-                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://bos.lacounty.gov/Services/AssessmentAppeals.aspx' target='newwin'>http://bos.lacounty.gov/Services/AssessmentAppeals.aspx</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a class=\"dont-break-out\" href='http://bos.lacounty.gov/Services/AssessmentAppeals.aspx' target='newwin'>http://bos.lacounty.gov/Services/AssessmentAppeals.aspx</a><br>";
                         break;
 
                     case EmailTreasurer:
@@ -290,7 +314,7 @@ namespace PropertyTaxPortal.Controllers
                             "Los Angeles, CA 90012<br><br>" +
                             _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +
-                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://ttc.lacounty.gov' target='newwin'>http://ttc.lacounty.gov</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a class=\"dont-break-out\" href='http://ttc.lacounty.gov' target='newwin'>http://ttc.lacounty.gov</a><br>";
                         break;
 
                     case EmailAuditorController:
@@ -303,7 +327,7 @@ namespace PropertyTaxPortal.Controllers
                             "Los Angeles, CA 90012<br><br>" +
                             _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-8368<br><br>" +
-                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://auditor.lacounty.gov' target='newwin'>http://auditor.lacounty.gov</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a class=\"dont-break-out\" href='http://auditor.lacounty.gov' target='newwin'>http://auditor.lacounty.gov</a><br>";
                         break;
 
                     case EmailAssessor:
@@ -315,7 +339,7 @@ namespace PropertyTaxPortal.Controllers
                             "Los Angeles, CA 90012<br><br>" +
                             _localizer["Phone"] + ":&nbsp;&nbsp;&nbsp;(888) 807-2111 (" + _localizer["Toll Free"] + ")<br>" +
                             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(213) 974-3211<br><br>" +
-                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a href='http://assessor.lacounty.gov' target='newwin'>http://assessor.lacounty.gov</a><br>";
+                            _localizer["Website"] + ":&nbsp;&nbsp;&nbsp;<a class=\"dont-break-out\" href='http://assessor.lacounty.gov' target='newwin'>http://assessor.lacounty.gov</a><br>";
                         break;
 
                     default:
