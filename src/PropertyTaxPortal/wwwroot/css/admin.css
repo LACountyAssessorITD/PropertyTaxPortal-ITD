@@ -67,6 +67,9 @@
     .plus-link .fa-plus {
         transform: translateY(5%);
     }
-    .plus-link a,a:hover {
+    .plus-link a {
+        color: #fff;
+    }
+    .plus-link a:hover {
         color: #fff;
     }
