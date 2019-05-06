@@ -129,30 +129,6 @@
   <data name="Areas of Responsibility" xml:space="preserve">
     <value>Areas de responsabilidad</value>
   </data>
-  <data name="Property Tax Overview" xml:space="preserve">
-    <value>Resumen de impuestos a la propiedad</value>
-  </data>
-  <data name="How The Property Tax System Works" xml:space="preserve">
-    <value>Cómo funciona el sistema de impuestos a la propiedad</value>
-  </data>
-  <data name="Areas of Responsibility" xml:space="preserve">
-    <value>Areas de responsabilidad</value>
-  </data>
-  <data name="Property Tax Overview" xml:space="preserve">
-    <value>Resumen de impuestos a la propiedad</value>
-  </data>
-  <data name="How The Property Tax System Works" xml:space="preserve">
-    <value>Cómo funciona el sistema de impuestos a la propiedad</value>
-  </data>
-  <data name="Areas of Responsibility" xml:space="preserve">
-    <value>Areas de responsabilidad</value>
-  </data>
-  <data name="PROPERTY TAX OVERVIEW" xml:space="preserve">
-    <value>DESCRIPCIÓN GENERAL DEL IMPUESTO A LA PROPIEDAD</value>
-  </data>
-  <data name="The Assessor, Auditor-Controller, and Treasurer &amp; Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process." xml:space="preserve">
-    <value>El Asesor, Auditor-Controlador, y Tesorero y Recaudador de impuestos trabajan juntos para producir y rendir cuentas de su factura y pago de impuestos a la propiedad. La Junta de Apelaciones de Evaluación supervisa el proceso de evaluación.</value>
-  </data>
   <data name="PROPERTY TAX OVERVIEW" xml:space="preserve">
     <value>DESCRIPCIÓN GENERAL DEL IMPUESTO A LA PROPIEDAD</value>
   </data>
@@ -170,45 +146,33 @@
   </data>
   <data name="Assessment Appeals Board" xml:space="preserve">
     <value>Junta de Apelaciones de Evaluación</value>
-  </data>
-  <data name="Assessor" xml:space="preserve">
-    <value>Asesor</value>
   </data>
   <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the &quot;Assessment Roll.&quot; The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
     <value>El Asesor del Condado de Los Ángeles establece el valor tasado de su propiedad al evaluar el valor de esa propiedad según las leyes estatales aplicables. El valor evaluado se coloca en una lista con todas las demás propiedades en el Condado de Los Ángeles y esta lista se denomina "Cuadro de evaluación". El Asesor también aprueba y aplica todas las exenciones, que se agregan a la Lista de evaluación. La lista de evaluación se presenta al auditor-controlador del condado de Los Ángeles para su posterior procesamiento.</value>
   </data>
-  <data name="Auditor-Controller" xml:space="preserve">
-    <value>Auditor-controlador</value>
-  </data>
   <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter &amp; bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
     <value>El Auditor-Controlador del Condado de Los Ángeles agrega evaluaciones directas a la Lista de evaluación y luego aplica las tasas de impuestos, que consisten en tasas de impuestos generales (1%) y de servicio de la deuda (votante y en condiciones de servidumbre) al valor para crear una Lista de evaluación ampliada. El rollo extendido se envía luego al Tesorero y Recaudador de Impuestos del Condado de Los Ángeles para la distribución de la factura de impuestos individuales y la recaudación de pagos.</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
-    <value>Tesorero y recaudador de impuestos</value>
+  <data name="The Los Angeles County Treasurer and Tax Collector receives the Extended Roll, prints and mails the property tax bills to the name and address on the Extended Roll. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
+    <value>El Tesorero y Recaudador de Impuestos del Condado de Los Ángeles recibe el rollo extendido, imprime y envía las facturas de impuestos a la propiedad con el nombre y la dirección en el rollo extendido. El Tesorero y el Recaudador de impuestos cobran impuestos garantizados y no garantizados.</value>
   </data>
-  <data name="The Los Angeles County Treasurer and Tax Collector receives the Extended Roll, prints and mails the property tax bills to the name and address on the Extended Roll. The Treasurer and Tax Collector collects secured and unsecured taxes. Secured taxes are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc. Unsecured taxes are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
-    <value>El Tesorero y Recaudador de Impuestos del Condado de Los Ángeles recibe el rollo extendido, imprime y envía las facturas de impuestos a la propiedad con el nombre y la dirección en el rollo extendido. El Tesorero y el Recaudador de impuestos cobran impuestos garantizados y no garantizados. Los impuestos garantizados son impuestos sobre bienes inmuebles, tales como terrenos baldíos, estructuras en terrenos, es decir, edificios de negocios / oficinas, viviendas, apartamentos, etc. Los impuestos no garantizados son impuestos sobre evaluaciones tales como muebles de oficina, equipos, aviones y barcos, así como también propiedades Impuestos que no son gravámenes contra los bienes inmuebles.</value>
+  <data name="Secured Taxes" xml:space="preserve">
+    <value>Impuestos garantizados</value>
   </data>
-  <data name="Assessment Appeals Board" xml:space="preserve">
-    <value>Junta de Apelaciones de Evaluación</value>
+  <data name=" are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc." xml:space="preserve">
+    <value> son impuestos sobre bienes inmuebles, tales como terrenos baldíos, estructuras en terrenos, es decir, edificios de negocios / oficinas, viviendas, apartamentos, etc.</value>
   </data>
-  <data name="The Assessor, Auditor-Controller, and Treasurer &amp; Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process." xml:space="preserve">
-    <value>El Asesor, Auditor-Controlador, y Tesorero y Recaudador de impuestos trabajan juntos para producir y rendir cuentas de su factura y pago de impuestos a la propiedad. La Junta de Apelaciones de Evaluación supervisa el proceso de evaluación.</value>
+  <data name="Unsecured Taxes" xml:space="preserve">
+    <value>Impuestos no garantizados</value>
   </data>
-  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
-    <value>AREAS DE RESPONSABILIDAD</value>
-  </data>
-  <data name="The following lists may help you to determine which department can assist in answering your inquiry." xml:space="preserve">
-    <value>Las siguientes listas pueden ayudarlo a determinar qué departamento puede ayudarlo a responder su consulta.</value>
+  <data name=" are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
+    <value> son impuestos sobre tasaciones tales como mobiliario de oficina, equipo, aviones y barcos, así como impuestos a la propiedad que no son gravámenes sobre la propiedad real.</value>
   </data>
   <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
     <value>AREAS DE RESPONSABILIDAD</value>
   </data>
   <data name="The following lists may help you to determine which department can assist in answering your inquiry." xml:space="preserve">
     <value>Las siguientes listas pueden ayudarlo a determinar qué departamento puede ayudarlo a responder su consulta.</value>
-  </data>
-  <data name="Assessor" xml:space="preserve">
-    <value>Asesor</value>
   </data>
   <data name="Assessed Values" xml:space="preserve">
     <value>Valores evaluados</value>
@@ -246,9 +210,6 @@
   <data name="Supplemental Bills" xml:space="preserve">
     <value>Facturas suplementarias</value>
   </data>
-  <data name="Auditor-Controller" xml:space="preserve">
-    <value>Auditor-controlador</value>
-  </data>
   <data name="Direct Assessments" xml:space="preserve">
     <value>Evaluaciones directas</value>
   </data>
@@ -266,9 +227,6 @@
   </data>
   <data name="Voted Indebtedness" xml:space="preserve">
     <value>Endeudamiento votado</value>
-  </data>
-  <data name="Assessment Appeals Board" xml:space="preserve">
-    <value>Junta de Apelaciones de Evaluación</value>
   </data>
   <data name="Assessment Appeals Rules" xml:space="preserve">
     <value>Reglas de Apelaciones de Evaluación</value>
@@ -326,9 +284,6 @@
   </data>
   <data name="Payments" xml:space="preserve">
     <value>Pagos</value>
-  </data>
-  <data name="Refunds - Overpayment of Taxes Due (Non Value Related)" xml:space="preserve">
-    <value>Reembolsos - Sobrepago de impuestos debidos (no relacionados con el valor)</value>
   </data>
   <data name="Tax Bills (Unsecured)" xml:space="preserve">
     <value>Facturas de impuestos (sin garantía)</value>

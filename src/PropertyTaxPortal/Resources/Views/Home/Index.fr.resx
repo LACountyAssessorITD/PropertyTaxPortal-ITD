@@ -124,16 +124,16 @@
     <value>Bienvenue</value>
   </data>
   <data name="Assessor, Auditor-Controller, Treasurer &amp; Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
-    <value>L’évaluateur, le contrôleur des comptes, le trésorier et percepteur des impôts et la Commission d’appel de l’évaluation ont préparé ce site d’informations sur les taxes foncières afin de fournir aux contribuables un aperçu et des précisions sur le processus de taxation des biens du comté de Los Angeles</value>
+    <value>L’évaluateur, le contrôleur des comptes, le trésorier et percepteur des impôts et la Commission d’appel de l'évaluation ont préparé ce site d'informations sur les taxes sur la propriété afin de fournir aux contribuables un aperçu et des détails spécifiques sur le processus de taxe sur les biens à Los Angeles</value>
   </data>
   <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
     <value>LES DOMAINES DE RESPONSABILITÉ</value>
   </data>
-  <data name="PAYMENT OPTIONS" xml:space="preserve">
-    <value>OPTIONS DE PAIEMENT</value>
+  <data name="PAYMENT INFORMATION" xml:space="preserve">
+    <value>INFORMATIONS DE PAIEMENT</value>
   </data>
-  <data name="PROPERTY TAX MANAGMENT SYSTEM" xml:space="preserve">
-    <value>SYSTÈME DE GESTION DES IMPÔTS FONCIERS</value>
+  <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
+    <value>SYSTÈME DE GESTION DE L'IMPÔT FONCIER</value>
   </data>
   <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
     <value>RECHERCHE D'ADRESSE DE PROPRIÉTÉ</value>

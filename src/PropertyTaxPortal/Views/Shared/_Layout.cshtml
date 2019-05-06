@@ -112,12 +112,13 @@
                 </button>
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    
 
-                        @*<form id="demo-2">
-                <input type="search" placeholder="Search" id="gsc-i-id1">
-            </form>*@
-                        
+
+                    @*<form id="demo-2">
+            <input type="search" placeholder="Search" id="gsc-i-id1">
+        </form>*@
+
+
 
                     
                     <ul class="navbar-nav  ml-auto">
@@ -199,7 +200,7 @@
                                         <ul>
 
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredProperty">@Localizer["Annual Secured Property Tax Bill"]</a>  </li>
-                                            <li><a href="http://lacountypropertytax.com/portal/images/AnnualSecPropInsert.pdf">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
+                                            <li><a href="~/images/pdf/AnnualSecPropInsert.pdf" target="_blank">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
                                             <li><a asp-controller="Home" asp-action="NoticeofDelinquency">@Localizer["Notice of Delinquency"]</a></li>
                                             <li><a asp-controller="Home" asp-action="SubstitueSecuredProperty">@Localizer["Substitute Secured Property Tax Bill"]</a></li>

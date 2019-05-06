@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Supplemental Property Bill" xml:space="preserve">
+    <value>Ley de propiedad suplementaria</value>
+  </data>
+  <data name="to the Annual Secured Property Tax Bill and both must be paid by the date shown on the bill.  California State" xml:space="preserve">
+    <value>a la Factura Anual del Impuesto a la Propiedad Garantizada y ambos deben pagarse en la fecha que figura en la factura. Estado de california</value>
+  </data>
+  <data name="law requires the reassessment of property as of the first day of the month following an ownership change or the" xml:space="preserve">
+    <value>La ley requiere la reevaluación de la propiedad a partir del primer día del mes siguiente a un cambio de propiedad o la</value>
+  </data>
+  <data name="completion of new construction.  A change in ownership or a completion of new construction that occurs between" xml:space="preserve">
+    <value>finalización de nueva construcción. Un cambio en la propiedad o la finalización de una nueva construcción que se produce entre</value>
+  </data>
+  <data name="January 1 and May 31 results in two supplemental assessments and triggers two Supplemental Property Tax Bills." xml:space="preserve">
+    <value>El 1 de enero y el 31 de mayo dan como resultado dos evaluaciones suplementarias y activan dos Facturas de Impuesto a la Propiedad Suplementarias.</value>
+  </data>
+  <data name="The first Supplemental Bill is for the remainder of the fiscal year in which the event occurred.  The second" xml:space="preserve">
+    <value>El primer proyecto de ley complementario es para el resto del año fiscal en el que ocurrió el evento. El segundo</value>
+  </data>
+  <data name="Supplemental Bill is for the subsequent fiscal year." xml:space="preserve">
+    <value>La factura suplementaria es para el año fiscal siguiente.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Número de identificación del asesor</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification" xml:space="preserve">
+    <value>Esta área identifica la identificación del asesor</value>
+  </data>
+  <data name="Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the" xml:space="preserve">
+    <value>Número - (1234-567-890). El Número de Identificación del Evaluador (AIN) es un número de diez dígitos asignado por el</value>
+  </data>
+  <data name="Office of the Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a" xml:space="preserve">
+    <value>Oficina del Asesor de cada pieza de bienes inmuebles en el Condado de Los Angeles. Este AIN de diez dígitos se compone de un</value>
+  </data>
+  <data name="four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>Número de libro de mapas de cuatro dígitos (1234), un Número de página de tres dígitos (567) y un Número de paquete de tres dígitos (890).</value>
+  </data>
+  <data name="Year and Sequence" xml:space="preserve">
+    <value>Año y secuencia</value>
+  </data>
+  <data name="This area identifies the Year and Sequence – (16 000).  This five digit" xml:space="preserve">
+    <value>Esta área identifica el año y la secuencia - (16 000). Este cinco digito</value>
+  </data>
+  <data name="number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a" xml:space="preserve">
+    <value>el número se compone de un año fiscal de dos dígitos y una secuencia o tipo de factura de tres dígitos. Por ejemplo, un</value>
+  </data>
+  <data name="2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010." xml:space="preserve">
+    <value>La factura anual de 2016 se muestra como 16 000, sin embargo, una factura suplementaria de 2016 se puede mostrar como 16 010.</value>
+  </data>
+  <data name="Transfer/New Construction Date" xml:space="preserve">
+    <value>Fecha de traslado / nueva construcción</value>
+  </data>
+  <data name="This date is used as the basis for the change in" xml:space="preserve">
+    <value>Esta fecha se utiliza como base para el cambio en</value>
+  </data>
+  <data name="assessed value.  The term &quot;Transfer Date&quot; refers to the recording date of an ownership change.  &quot;New Construction" xml:space="preserve">
+    <value>valor de tasación. El término "Fecha de transferencia" se refiere a la fecha de registro de un cambio de propiedad. "Nueva construcción</value>
+  </data>
+  <data name="Date&quot; refers to the date the new construction was completed." xml:space="preserve">
+    <value>Fecha "se refiere a la fecha en que se completó la nueva construcción.</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Impuesto general</value>
+  </data>
+  <data name="This tax amount is the general one percent (1%) tax rate levied" xml:space="preserve">
+    <value>Esta cantidad de impuesto es la tasa impositiva general del uno por ciento (1%) aplicada</value>
+  </data>
+  <data name="against every property in the County.  The calculation is 1 percent multiplied by the &quot;Net Taxable Value." xml:space="preserve">
+    <value>en contra de cada propiedad en el Condado. El cálculo es 1 por ciento multiplicado por el "Valor gravable neto".</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Endeudamiento votado</value>
+  </data>
+  <data name="Voter-approved taxes levied against property." xml:space="preserve">
+    <value>Impuestos aprobados por los votantes impuestos a la propiedad.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>Evaluado</value>
+  </data>
+  <data name="The owner of record and the mailing address on" xml:space="preserve">
+    <value>El propietario del registro y la dirección de correo en</value>
+  </data>
+  <data name="file with the Office of the Assessor." xml:space="preserve">
+    <value>archivo con la Oficina del Asesor.</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>Número de transferencia electrónica de fondos (EFT)</value>
+  </data>
+  <data name="The EFT number is used to make" xml:space="preserve">
+    <value>El número de EFT se utiliza para hacer</value>
+  </data>
+  <data name="credit card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit card payment," xml:space="preserve">
+    <value>Tarjeta de crédito / Visa. Pago con tarjeta de débito por teléfono. Para iniciar el pago con tarjeta de crédito / tarjeta de débito Visa,</value>
+  </data>
+  <data name="please call 1(888) 473-0835.  However, there are processing fees when paying by credit card/Visa Debit card." xml:space="preserve">
+    <value>Por favor llame al 1 (888) 473-0835. Sin embargo, hay tarifas de procesamiento cuando se paga con tarjeta de crédito / tarjeta de débito Visa.</value>
+  </data>
+  <data name="Each transaction is limited to $99,999.99.  The PIN number is used to make electronic check payment to protect" xml:space="preserve">
+    <value>Cada transacción está limitada a $ 99,999.99. El número de PIN se utiliza para realizar el pago con cheque electrónico para proteger</value>
+  </data>
+  <data name="your security and privacy and is used to pay your current year and defaulted taxes online.  Effective with tax" xml:space="preserve">
+    <value>su seguridad y privacidad, y se utiliza para pagar en línea sus impuestos predeterminados y del año en curso. Efectivo con impuesto</value>
+  </data>
+  <data name="bills issued after August 2013, the PIN may contain all alpha, all numeric, or alpha/numeric characters." xml:space="preserve">
+    <value>las facturas emitidas después de agosto de 2013, el PIN puede contener todos los caracteres alfa, numéricos o alfa / numéricos.</value>
+  </data>
+  <data name="The alpha letter 'O' is not used in the PIN.  The '0' is always a number zero." xml:space="preserve">
+    <value>La letra alfa 'O' no se usa en el PIN. El '0' es siempre un número cero.</value>
+  </data>
+  <data name="Full Year Supplemental Taxes Due" xml:space="preserve">
+    <value>Impuestos suplementarios de año completo vencidos</value>
+  </data>
+  <data name="The amount of taxes calculated for the entire" xml:space="preserve">
+    <value>La cantidad de impuestos calculada para el total.</value>
+  </data>
+  <data name="fiscal year.  See Prorated Supplemental Taxes for the actual amount due." xml:space="preserve">
+    <value>año fiscal. Consulte Impuestos suplementarios prorrateados para conocer el monto real adeudado.</value>
+  </data>
+  <data name="Prorated Supplemental Taxes" xml:space="preserve">
+    <value>Impuestos suplementarios prorrateados</value>
+  </data>
+  <data name="The amount of total taxes due and payable for this" xml:space="preserve">
+    <value>El monto del total de impuestos adeudados y pagaderos por este</value>
+  </data>
+  <data name="bill.  See Field Number 12 for installment amounts and due dates." xml:space="preserve">
+    <value>cuenta. Ver el número de campo 12 para conocer los montos de las cuotas y las fechas de vencimiento</value>
+  </data>
+  <data name="Proration Factor" xml:space="preserve">
+    <value>Factor de prorrateo</value>
+  </data>
+  <data name="The mathematical factor used to prorate the amount of taxes" xml:space="preserve">
+    <value>El factor matemático utilizado para prorratear el monto de los impuestos.</value>
+  </data>
+  <data name="due.  For more information, refer to the back of the bill." xml:space="preserve">
+    <value>debido. Para obtener más información, consulte la parte posterior de la factura.</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>Informacion especial</value>
+  </data>
+  <data name="This section provides important information about the" xml:space="preserve">
+    <value>Esta sección proporciona información importante sobre el</value>
+  </data>
+  <data name="bill and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>factura y establece si hay impuestos atrasados adeudados.</value>
+  </data>
+  <data name="Total Taxes Due" xml:space="preserve">
+    <value>Total de impuestos debidos</value>
+  </data>
+  <data name="This is the total amount due for the bill.  The Annual Secured" xml:space="preserve">
+    <value>Este es el monto total adeudado por la factura. El anual asegurado</value>
+  </data>
+  <data name="Property Tax Bill has two payment stubs.  The first installment is due" xml:space="preserve">
+    <value>Cuenta de impuestos de propiedad tiene dos talones de pago. La primera cuota se debe</value>
+  </data>
+  <data name="November 1 and is delinquent December 10.  If the first installment is not received or United States Postal Service" xml:space="preserve">
+    <value>1 de noviembre y está en mora el 10 de diciembre. Si no se recibe la primera cuota o el Servicio Postal de los Estados Unidos</value>
+  </data>
+  <data name="(USPS) postmarked by December 10, a 10 percent penalty will be imposed.  The second installment is due February 1" xml:space="preserve">
+    <value>(USPS) con matasellos del 10 de diciembre, se impondrá una multa del 10 por ciento. La segunda cuota vence el 1 de febrero.</value>
+  </data>
+  <data name="and is delinquent April 10.  If the second installment is not received or USPS postmarked on or before April 10," xml:space="preserve">
+    <value>y está en mora el 10 de abril. Si la segunda cuota no se recibe o USPS tiene sello postal el 10 de abril o antes,</value>
+  </data>
+  <data name="a 10 percent penalty and a $10.00 cost will be imposed.  Taxpayers must be sure to include the payment stub with" xml:space="preserve">
+    <value>se impondrá una multa del 10 por ciento y un costo de $ 10.00. Los contribuyentes deben asegurarse de incluir el talón de pago con</value>
+  </data>
+  <data name="any type of payment and write their Assessor's Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>cualquier tipo de pago y escriba su Número de Identificación del Asesor con el Año / Número de Secuencia en su cheque.</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>Ubicación de la Propiedad y / o Descripción de la Propiedad</value>
+  </data>
+  <data name="The property address and/or" xml:space="preserve">
+    <value>La dirección de la propiedad y / o</value>
+  </data>
+  <data name="legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>Descripción legal registrada en la Oficina del Asesor.</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>Valor estimado actual</value>
+  </data>
+  <data name="The Assessor’s valuation of the property after" xml:space="preserve">
+    <value>La valoración por el Asesor de la propiedad después de</value>
+  </data>
+  <data name="the adjustment." xml:space="preserve">
+    <value>el ajuste.</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>Valor previamente evaluado</value>
+  </data>
+  <data name="This is the Assessor’s valuation of" xml:space="preserve">
+    <value>Esta es la valoración del Asesor de</value>
+  </data>
+  <data name="the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>la propiedad antes de la reciente transferencia / nueva fecha de construcción.</value>
+  </data>
+  <data name="Net Assessed Value" xml:space="preserve">
+    <value>Valor neto estimado</value>
+  </data>
+  <data name="The current assessed value less the prior assessed value." xml:space="preserve">
+    <value>El valor de tasación actual menos el valor de tasación anterior.</value>
+  </data>
+  <data name="Attention Statement" xml:space="preserve">
+    <value>Declaración de atención</value>
+  </data>
+  <data name="This statement is meant to notify taxpayers that" xml:space="preserve">
+    <value>Esta declaración tiene la intención de notificar a los contribuyentes que</value>
+  </data>
+  <data name="there may be other taxes owed." xml:space="preserve">
+    <value>Puede haber otros impuestos adeudados.</value>
+  </data>
+  <data name="Assessor's Regional Office" xml:space="preserve">
+    <value>Oficina Regional del Asesor</value>
+  </data>
+  <data name="This is the address and telephone number" xml:space="preserve">
+    <value>Esta es la dirección y número de teléfono.</value>
+  </data>
+  <data name="to contact for questions regarding the assessed value of the property." xml:space="preserve">
+    <value>Para contactar preguntas sobre el valor tasado de la propiedad.</value>
+  </data>
+  <data name="Less Exemptions" xml:space="preserve">
+    <value>Menos exenciones</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>Las exenciones, si las hubiera, se deducen del valor tasado.</value>
+  </data>
+  <data name="Net Supplemental Value" xml:space="preserve">
+    <value>Valor suplementario neto</value>
+  </data>
+  <data name="This is the difference between the current value and" xml:space="preserve">
+    <value>Esta es la diferencia entre el valor actual y</value>
+  </data>
+  <data name="the prior value less exemptions." xml:space="preserve">
+    <value>El valor anterior menos las exenciones.</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>Cargo por cheque devuelto</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>Hay un cargo de $ 50.00 por cualquier cheque devuelto por el banco.</value>
+  </data>
+  <data name="2nd Installment Delinquency Date" xml:space="preserve">
+    <value>Fecha de morosidad del segundo pago</value>
+  </data>
+  <data name="If paying the bill in installments," xml:space="preserve">
+    <value>Si paga la factura a plazos,</value>
+  </data>
+  <data name="the second installment must be received or United States Postal Service postmarked by this date, or a 10 percent" xml:space="preserve">
+    <value>la segunda cuota debe recibirse o el Servicio Postal de los Estados Unidos debe llevar el sello postal de esta fecha, o un 10 por ciento</value>
+  </data>
+  <data name="penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>Se impondrá una multa y un costo de $ 10.00.</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>2º pago debido</value>
+  </data>
+  <data name="Amount of taxes due for the second installment." xml:space="preserve">
+    <value>Importe de los impuestos adeudados por la segunda cuota.</value>
+  </data>
+  <data name="Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor’s" xml:space="preserve">
+    <value>Los contribuyentes deben asegurarse de incluir el talón de pago con cualquier tipo de pago y escribir el</value>
+  </data>
+  <data name="Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>Número de identificación con el año / número de secuencia en su cheque.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>Cantidad de remisión</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount" xml:space="preserve">
+    <value>Si el pago no se realiza antes de la fecha de vencimiento, remita la cantidad</value>
+  </data>
+  <data name="stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number" xml:space="preserve">
+    <value>indicado aquí Incluya los talones de pago con el pago y escriba el Número de Identificación del Asesor</value>
+  </data>
+  <data name="and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>y el año / número de secuencia en el cheque.</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>Hacer cheques a pagar</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector" xml:space="preserve">
+    <value>Haga los cheques a nombre del recaudador de impuestos del condado de Los Angeles</value>
+  </data>
+  <data name="and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification" xml:space="preserve">
+    <value>y correo a esta dirección. Incluya los talones de pago con el pago y escriba la identificación del asesor</value>
+  </data>
+  <data name="Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>Número y el año / número de secuencia en el cheque.</value>
+  </data>
+  <data name="1st Installment Delinquency Date" xml:space="preserve">
+    <value>Fecha de morosidad del 1er pago</value>
+  </data>
+  <data name="If paying the bill in full, payment" xml:space="preserve">
+    <value>Si paga la factura en su totalidad, pago.</value>
+  </data>
+  <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments," xml:space="preserve">
+    <value>debe ser recibido o el Servicio Postal de los Estados Unidos (USPS) con matasellos de esta fecha. Si se paga a plazos,</value>
+  </data>
+  <data name="the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>la primera cuota debe recibirse o USPS con sello postal para esta fecha, o se impondrá una multa del 10 por ciento.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>1er pago debido</value>
+  </data>
+  <data name="Amount of taxes due for the first installment." xml:space="preserve">
+    <value>Importe de los impuestos adeudados por la primera cuota.</value>
+  </data>
+</root>
