@@ -38,7 +38,11 @@ namespace PropertyTaxPortal.Controllers
                 ViewBag.Caption = "Create FAQ";
                 ViewBag.ButtonValue = "Create";
                 LoadFAQCategoryTypes();
-                return View(new FAQ());
+                FAQ faq_item = new FAQ();
+
+                faq_item.updatedOn = DateTime.Now;
+
+                return View(faq_item);
             }
             else
             {

@@ -24,7 +24,7 @@
         <link href="~/css/Publicinquiry.css" rel="stylesheet" />
         <link href="~/css/FAQTAB.css" rel="stylesheet" />
         <link href="~/css/Contact.css" rel="stylesheet" />
-        
+
         <link href="~/css/about_siteInfo.css" rel="stylesheet" />
         <link href="~/css/GovernmentSites.css" rel="stylesheet" />
         <link href="~/css/admin.css" rel="stylesheet" />
@@ -52,7 +52,7 @@
         <link href="~/css/GovernmentSites.css" rel="stylesheet" />
         <link href="~/css/admin.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-    
+
         <link href="~/css/queires.css" rel="stylesheet" />
         <link href="~/lib/IonIcons/Ionicons.css" rel="stylesheet" />
         <link href="~/lib/FontAwesome/Fontawsome.css" rel="stylesheet" />
@@ -67,18 +67,19 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
 
-            
+
         })();
     </script>
     <script>
-(function(w,d,s,g,js,fs){
-  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
-  js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
-  js.src='https://apis.google.com/js/platform.js';
-  fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
-}(window,document,'script'));
-</script>
-    
+        (function (w, d, s, g, js, fjs) {
+            g = w.gapi || (w.gapi = {}); g.analytics = { q: [], ready: function (cb) { this.q.push(cb) } };
+            js = d.createElement(s); fjs = d.getElementsByTagName(s)[0];
+            js.src = 'https://apis.google.com/js/platform.js';
+            fjs.parentNode.insertBefore(js, fjs); js.onload = function () { g.load('analytics') };
+        }(window, document, 'script'));
+    </script>
+
+
 
 </head>
 <body class="">
@@ -111,12 +112,13 @@
                 </button>
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    
 
-                        @*<form id="demo-2">
-                <input type="search" placeholder="Search" id="gsc-i-id1">
-            </form>*@
-                        
+
+                    @*<form id="demo-2">
+            <input type="search" placeholder="Search" id="gsc-i-id1">
+        </form>*@
+
+
 
                     
                     <ul class="navbar-nav  ml-auto">
@@ -198,7 +200,7 @@
                                         <ul>
 
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredProperty">@Localizer["Annual Secured Property Tax Bill"]</a>  </li>
-                                            <li><a href="http://lacountypropertytax.com/portal/images/AnnualSecPropInsert.pdf">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
+                                            <li><a href="~/images/pdf/AnnualSecPropInsert.pdf" target="_blank">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
                                             <li><a asp-controller="Home" asp-action="NoticeofDelinquency">@Localizer["Notice of Delinquency"]</a></li>
                                             <li><a asp-controller="Home" asp-action="SubstitueSecuredProperty">@Localizer["Substitute Secured Property Tax Bill"]</a></li>

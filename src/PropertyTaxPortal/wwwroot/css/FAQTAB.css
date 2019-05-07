@@ -94,7 +94,8 @@
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.125);
         color: #000;
-        transform: none !important;
+        -webkit-transform: none !important;
+                transform: none !important;
         margin-bottom: 10px;
         border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
         z-index: 5;

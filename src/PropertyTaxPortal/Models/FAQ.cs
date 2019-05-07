@@ -29,7 +29,7 @@ namespace PropertyTaxPortal.Models
 
         
         [DataType(DataType.DateTime)]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd HH:mm}")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd HH:mm}")]
         [DisplayName("Update Date")]
         public DateTime updatedOn { get; set; }
 
