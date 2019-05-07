@@ -132,6 +132,12 @@ namespace PropertyTaxPortal.Controllers
             }
         }
 
+        public IActionResult ContestingValue()
+        {
+            ViewBag.Title = "CONTESTING YOUR PROPERTY VALUE";
+            return View();
+        }
+
         public IActionResult PrivacyPolicy()
         {
             ViewBag.Title = "PRIVACY POLICY";
