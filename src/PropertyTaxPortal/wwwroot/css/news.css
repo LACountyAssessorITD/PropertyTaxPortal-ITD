@@ -15,15 +15,15 @@
 
 .news-area {
     border: 2px solid rgba(73, 73, 73, 0.4);
-    /*border-radius: 10px 10px;*/
+    border-radius: 4px 4px;
     padding: 5%;
     -webkit-box-shadow: rgba(73, 73, 73, 0.4) 0 10px 6px -6px;
-            box-shadow: rgba(73, 73, 73, 0.4) 0 10px 6px -6px;
+    box-shadow: rgba(73, 73, 73, 0.4) 0 10px 6px -6px;
     background: rgba(182, 182, 182, 0.3);
 }
 .newsbox {
     border: 2px solid rgba(73, 73, 73, 0.4);
-    /*border-radius: 10px 10px;*/
+    border-radius: 4px 4px;
     margin: auto;
     margin-top: 70px;
     margin-bottom: 10px;
@@ -31,7 +31,7 @@
     min-width: 250px;
     height: 225px;
     -webkit-box-shadow: rgba(73, 73, 73, 0.4) 0 10px 6px -6px;
-            box-shadow: rgba(73, 73, 73, 0.4) 0 10px 6px -6px;
+    box-shadow: rgba(73, 73, 73, 0.4) 0 10px 6px -6px;
     /*background: rgba(182, 182, 182, 0.3);*/
 }
 .news-landing{
