@@ -31,7 +31,8 @@
     }
     nav .dropdown-menu {
         border-radius: 2px 2px;
-        box-shadow: 0.5px 0.5px #808080;
+        -webkit-box-shadow: 0.5px 0.5px #808080;
+                box-shadow: 0.5px 0.5px #808080;
     }
     
     nav .dropdown:hover > .dropdown-menu {
