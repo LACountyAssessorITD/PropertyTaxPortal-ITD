@@ -1,13 +1,7 @@
 ﻿$(document).ready(function () {
 
    
-    //$("#demo-1").delegate("*", "focus blur", function () {
-        
-    //    setTimeout(function () {
-    //        $('.expand-test').toggleClass("focused", elem.is(":focus"));
-    //    }, 0);
-    //});
-
+ 
     $('.search').click(function () {
         //$(this).toggleClass('icon-cross');
         
