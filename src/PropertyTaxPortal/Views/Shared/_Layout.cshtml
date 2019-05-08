@@ -79,7 +79,7 @@
         }(window, document, 'script'));
     </script>
 
-
+    <script src="~/js/ios-orientationchange-fix.min.js"></script>
 
 </head>
 <body class="">
@@ -115,12 +115,12 @@
 
 
                     @*<form id="demo-2">
-            <input type="search" placeholder="Search" id="gsc-i-id1">
-        </form>*@
+                            <input type="search" placeholder="Search" id="gsc-i-id1">
+                        </form>*@
 
 
 
-                    
+
                     <ul class="navbar-nav  ml-auto">
 
                         <li class="nav-item">
@@ -277,7 +277,7 @@
         <div class="">
             <!------------------------------ BODY ---------------------------->
             <partial name="_CookieConsentPartial" />
-            
+
 
             <main role="main" class="">
                 @RenderBody()
@@ -311,7 +311,7 @@
 
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-3 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Site Info"]</li>
@@ -330,7 +330,7 @@
                             <li><a href="https://library.municode.com/ca/los_angeles_county/codes/code_of_ordinances" target="_blank">@Localizer["County Code"]</a></li>
                             <li><a href="https://www.lacounty.gov/contact/" target="_blank">@Localizer["LA County Contacts"]</a></li>
 
-                            <li><a asp-controller='Home' asp-action="GovernmentSites">@Localizer["Other Government Sites"]</a></li>    
+                            <li><a asp-controller='Home' asp-action="GovernmentSites">@Localizer["Other Government Sites"]</a></li>
 
                         </ul>
                     </div>
@@ -361,8 +361,8 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
-     
-  
+
+
 
 
 
@@ -382,7 +382,7 @@
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <script src="~/js/jquery.waypoints.min.js"></script>
 
-       
+
 
         <!-- Include the CSS that styles the charts. -->
 
@@ -392,6 +392,18 @@
 
 
     </environment>
+    <script src="~/js/jquery.rwdImageMaps.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+
+            $('area').on('click', function () {
+                alert($(this).attr('alt') + ' clicked');
+            });
+        });
+    </script>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60050118-10"></script>
     <script>
