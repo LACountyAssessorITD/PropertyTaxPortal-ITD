@@ -855,11 +855,17 @@ img[usemap] {
     color: #fff;
     font-weight:300;
 }
-.alert-dismissible .close {
-    color: #fff;
-    text-shadow: none;
-    font-weight: 500;
-}
+    .alert-info a {
+        color: #4e518b;
+    }
+        .alert-info a:hover{
+            color: #0D47A1;
+        }
+        .alert-dismissible .close {
+            color: #fff;
+            text-shadow: none;
+            font-weight: 500;
+        }
 .alert-dismissible .close:hover{
     color: #3761A3;
 }
