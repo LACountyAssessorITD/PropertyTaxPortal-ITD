@@ -839,3 +839,27 @@ img[usemap] {
     max-width: 100%;
     width: auto;
 }
+
+
+/*Cookie Partial View*/
+
+.alert-dismissible {
+    padding-right: 150px;
+    min-height: 70px;
+}
+
+.alert-info {
+    background-color: #808080;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    font-weight:300;
+}
+.alert-dismissible .close {
+    color: #fff;
+    text-shadow: none;
+    font-weight: 500;
+}
+.alert-dismissible .close:hover{
+    color: #3761A3;
+}
