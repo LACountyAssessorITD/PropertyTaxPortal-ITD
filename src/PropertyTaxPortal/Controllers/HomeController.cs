@@ -138,7 +138,7 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        public IActionResult PrivacyPolicy()
+        public IActionResult PrivacyPolicy(int? id)
         {
             ViewBag.Title = "PRIVACY POLICY";
             return View();
