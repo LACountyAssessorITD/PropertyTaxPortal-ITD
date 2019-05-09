@@ -25,20 +25,20 @@ namespace PropertyTaxPortal
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        //public Startup(IHostingEnvironment env)
+        //public Startup(IConfiguration configuration)
         //{
-        //    var builder = new ConfigurationBuilder()
-        //        .SetBasePath(env.ContentRootPath)
-        //        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-        //        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-        //        .AddEnvironmentVariables();
-        //    Configuration = builder.Build();
+        //    Configuration = configuration;
         //}
+
+        public Startup(IHostingEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
 
         public IConfiguration Configuration { get; }
 
@@ -49,7 +49,9 @@ namespace PropertyTaxPortal
 
             var email = Configuration.GetSection("Email");
             services.Configure<Email>(email);
-
+            services.AddDbContext<PTPContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("ptp_connect"));
+            });
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -88,7 +90,8 @@ namespace PropertyTaxPortal
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //services.AddDbContext<PTPContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ptp_connect")));
-            services.AddDbContext<PTPContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("ptp_connect")));
+            
+            //services.AddDbContext<PTPContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("ptp_connect")));
 
 
             //---------------------------CONFIGURE LOCALIZATION-----------------------------//

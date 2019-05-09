@@ -32,14 +32,14 @@ namespace PropertyTaxPortal.Models
 
         public virtual DbSet<News> News { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    if (!optionsBuilder.IsConfigured)
+        //    {
 
-                optionsBuilder.UseSqlServer(Environment.GetEnvironmentVariable("ptp_connect"));
-            }
-        }
+        //        optionsBuilder.UseSqlServer(Environment.GetEnvironmentVariable("ConnectionStrings__ptp_connect"));
+        //    }
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

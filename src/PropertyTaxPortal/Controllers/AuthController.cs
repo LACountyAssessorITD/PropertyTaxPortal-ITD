@@ -16,9 +16,11 @@ namespace PropertyTaxPortal.Controllers
     public class AuthController : Controller
     {
         private IUserService _userService;
+        private readonly PTPContext _context;
 
-        public AuthController(IUserService userService)
+        public AuthController(IUserService userService, PTPContext context)
         {
+            _context = context;
             _userService = userService;
         }
         [Route("signin")]
@@ -43,7 +45,7 @@ namespace PropertyTaxPortal.Controllers
             if (ModelState.IsValid)
             {
                 Services.User user;
-                if (await _userService.ValidateCredentials(model.Username, model.Password, out user))
+                if (await _userService.ValidateCredentials(model.Username, model.Password, _context, out user))
                 {
                     await SignInUser(user.Username);
                     if (returnUrl != null)
