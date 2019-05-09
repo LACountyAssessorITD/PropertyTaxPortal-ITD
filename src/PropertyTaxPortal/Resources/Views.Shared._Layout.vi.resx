@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Home" xml:space="preserve">
+    <value>Nhà</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Tổng quan</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>Tổng quan về thuế tài sản</value>
+  </data>
+  <data name="How the Property Tax System Works" xml:space="preserve">
+    <value>Hệ thống thuế tài sản hoạt động như thế nào</value>
+  </data>
+  <data name="Areas of Responsibliity" xml:space="preserve">
+    <value>Các lĩnh vực có trách nhiệm</value>
+  </data>
+  <data name="Tax Tools" xml:space="preserve">
+    <value>Công cụ thuế</value>
+  </data>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>Hệ thống quản lý thuế tài sản</value>
+  </data>
+  <data name="Multiple Parcel Inquires" xml:space="preserve">
+    <value>Thắc mắc nhiều bưu kiện</value>
+  </data>
+  <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
+    <value>Tránh hình phạt bằng cách hiểu dấu ấn</value>
+  </data>
+  <data name="Penalty Cancellations" xml:space="preserve">
+    <value>Hủy bỏ hình phạt</value>
+  </data>
+  <data name="Property Address Search" xml:space="preserve">
+    <value>Tìm kiếm địa chỉ bất động sản</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Chủ nhà mới</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Chủ doanh nghiệp mới</value>
+  </data>
+  <data name="Quick Links" xml:space="preserve">
+    <value>đường dẫn nhanh</value>
+  </data>
+  <data name="Forms" xml:space="preserve">
+    <value>Các hình thức</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Giám định</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Hội đồng thẩm định</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Kiểm toán viên</value>
+  </data>
+  <data name="Property Valuation" xml:space="preserve">
+    <value>Định giá tài sản</value>
+  </data>
+  <data name="Contesting Your Property Value" xml:space="preserve">
+    <value>Tranh chấp giá trị tài sản của bạn</value>
+  </data>
+  <data name="Property Data &amp; Maps" xml:space="preserve">
+    <value>Dữ liệu tài sản &amp; Bản đồ</value>
+  </data>
+  <data name="Supplemental Tax Estimator" xml:space="preserve">
+    <value>Dự toán thuế bổ sung</value>
+  </data>
+  <data name="Payment Information" xml:space="preserve">
+    <value>Thông tin thanh toán</value>
+  </data>
+  <data name="How Much Do I Owe?" xml:space="preserve">
+    <value>Tôi nợ bao nhiêu?</value>
+  </data>
+  <data name="Pay Online" xml:space="preserve">
+    <value>Trả tiền trực tuyến</value>
+  </data>
+  <data name="Other Payment Options" xml:space="preserve">
+    <value>Tùy chọn thanh toán khác</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Hóa đơn thuế</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bảo đảm hàng năm</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill Insert" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bảo đảm hàng năm</value>
+  </data>
+  <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
+    <value>Báo cáo thông tin thuế tài sản bảo đảm hàng năm</value>
+  </data>
+  <data name="Notice of Delinquency" xml:space="preserve">
+    <value>Thông báo nợ quá hạn</value>
+  </data>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bảo đảm thay thế</value>
+  </data>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bảo đảm bổ sung</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản không có bảo đảm</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Hóa đơn năm trước không bảo đảm</value>
+  </data>
+  <data name="Payment Activity Notice" xml:space="preserve">
+    <value>Thông báo hoạt động thanh toán</value>
+  </data>
+  <data name="Statement of Prior Year Taxes" xml:space="preserve">
+    <value>Báo cáo thuế năm trước</value>
+  </data>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế bất động sản hàng năm được điều chỉnh</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bổ sung điều chỉnh</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Câu hỏi thường gặp</value>
+  </data>
+  <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
+    <value>Hoàn tiền / Bán thuế / Tài sản thế chấp thuế</value>
+  </data>
+  <data name="Property Values" xml:space="preserve">
+    <value>Giá trị tài sản</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Quyền sở hữu</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Đăng ký đại lý thuế</value>
+  </data>
+  <data name="All FAQs" xml:space="preserve">
+    <value>Tất cả các câu hỏi thường gặp</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Tin tức</value>
+  </data>
+  <data name="Contact Us" xml:space="preserve">
+    <value>Liên hệ chúng tôi</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>Thủ quỹ và người thu thuế</value>
+  </data>
+  <data name="Public Inquiry" xml:space="preserve">
+    <value>Điều tra công khai</value>
+  </data>
+  <data name="Enriching Lives" xml:space="preserve">
+    <value>Làm giàu cuộc sống</value>
+  </data>
+  <data name="Do You Need Help?" xml:space="preserve">
+    <value>Bạn cần giúp đỡ?</value>
+  </data>
+  <data name="211 LA County" xml:space="preserve">
+    <value>Quận 211 LA</value>
+  </data>
+  <data name="LA County Helps" xml:space="preserve">
+    <value>Hạt LA giúp</value>
+  </data>
+  <data name="Online Services" xml:space="preserve">
+    <value>Dịch vụ trực tuyến</value>
+  </data>
+  <data name="Public Alerts" xml:space="preserve">
+    <value>Cảnh báo công cộng</value>
+  </data>
+  <data name="Public Information" xml:space="preserve">
+    <value>Thông tin công cộng</value>
+  </data>
+  <data name="Site Info" xml:space="preserve">
+    <value>Thông tin trang</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Khước từ</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Chính sách bảo mật</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Khả năng tiếp cận</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="Public Info" xml:space="preserve">
+    <value>Thông tin công khai</value>
+  </data>
+  <data name="Board Correspondence" xml:space="preserve">
+    <value>Ban thư tín</value>
+  </data>
+  <data name="Board Agenda" xml:space="preserve">
+    <value>Chương trình nghị sự</value>
+  </data>
+  <data name="County Code" xml:space="preserve">
+    <value>Mã quận</value>
+  </data>
+  <data name="LA County Contacts" xml:space="preserve">
+    <value>Liên hệ Quận LA</value>
+  </data>
+  <data name="Other Government Sites" xml:space="preserve">
+    <value>Các trang web chính phủ khác</value>
+  </data>
+</root>

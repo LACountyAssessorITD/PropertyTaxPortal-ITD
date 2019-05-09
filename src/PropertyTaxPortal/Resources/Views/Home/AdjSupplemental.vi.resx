@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bổ sung điều chỉnh</value>
+  </data>
+  <data name="The Adjusted Supplemental Property" xml:space="preserve">
+    <value>Tài sản bổ sung đã điều chỉnh</value>
+  </data>
+  <data name="Tax Bill replaces the Supplemental Property Tax Bill received for the same fiscal year." xml:space="preserve">
+    <value>Hóa đơn thuế thay thế cho hóa đơn thuế tài sản bổ sung nhận được cho cùng một năm tài chính.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Số nhận dạng của giám khảo</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number" xml:space="preserve">
+    <value>Khu vực này xác định Số nhận dạng từ Assigator</value>
+  </data>
+  <data name="– (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the Office of the" xml:space="preserve">
+    <value>- (1234-567-890). Số nhận dạng từ Assigator (AIN) là một số có mười chữ số được chỉ định bởi Văn phòng</value>
+  </data>
+  <data name="Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a" xml:space="preserve">
+    <value>Người giám định cho từng mảnh bất động sản ở Quận Los Angeles. AIN mười chữ số này được tạo thành từ một</value>
+  </data>
+  <data name="four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>Số Sách Bản đồ gồm bốn chữ số (1234), Số Trang ba chữ số (567) và Số Bưu kiện ba chữ số (890).</value>
+  </data>
+  <data name="Year and Sequence" xml:space="preserve">
+    <value>Năm và Trình tự</value>
+  </data>
+  <data name="This area identifies the Year and Sequence – (16 000).  This five digit" xml:space="preserve">
+    <value>Khu vực này xác định Năm và Trình tự - (16 000). Năm chữ số này</value>
+  </data>
+  <data name="number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a" xml:space="preserve">
+    <value>số được tạo thành từ một năm tính thuế hai chữ số và một chuỗi ba chữ số hoặc loại hóa đơn. Ví dụ:</value>
+  </data>
+  <data name="2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010." xml:space="preserve">
+    <value>Hóa đơn hàng năm 2016 được hiển thị là 16 000, tuy nhiên hóa đơn bổ sung 2016 có thể được hiển thị là 16 010.</value>
+  </data>
+  <data name="Transfer/New Construction Date" xml:space="preserve">
+    <value>Chuyển nhượng / Ngày xây dựng mới</value>
+  </data>
+  <data name="This date is used as the basis for the change in assessed" xml:space="preserve">
+    <value>Ngày này được sử dụng làm cơ sở cho sự thay đổi trong đánh giá</value>
+  </data>
+  <data name="value.  The term “Transfer Date” refers to the recording date of an ownership change.  &quot;New Construction Date&quot; refers" xml:space="preserve">
+    <value>giá trị. Thuật ngữ Ngày chuyển nhượng Ngày đề cập đến ngày ghi nhận thay đổi quyền sở hữu. "Ngày xây dựng mới" đề cập đến</value>
+  </data>
+  <data name="to the date the new construction was completed." xml:space="preserve">
+    <value>đến ngày xây dựng mới hoàn thành.</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Thuế chung</value>
+  </data>
+  <data name="This tax amount is the general one percent (1%) tax rate levied against" xml:space="preserve">
+    <value>Số thuế này là mức thuế chung một phần trăm (1%) đối với</value>
+  </data>
+  <data name="every property in the County.  The calculation is 1 percent multiplied by the &quot;Net Taxable Value." xml:space="preserve">
+    <value>mọi tài sản trong Quận. Tính toán là 1 phần trăm nhân với "Giá trị chịu thuế ròng.</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Bỏ phiếu nợ</value>
+  </data>
+  <data name="Voter-approved taxes levied against property." xml:space="preserve">
+    <value>Thuế được cử tri chấp nhận đánh vào tài sản.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>Người nhận</value>
+  </data>
+  <data name="The owner of record and the mailing address on file with the Office of the Assessor." xml:space="preserve">
+    <value>Chủ sở hữu của hồ sơ và địa chỉ gửi thư trong hồ sơ với Văn phòng Giám định.</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>Số chuyển khoản điện tử (EFT)</value>
+  </data>
+  <data name="The EFT number is used to make credit" xml:space="preserve">
+    <value>Số EFT được sử dụng để tạo tín dụng</value>
+  </data>
+  <data name="card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit card payment," xml:space="preserve">
+    <value>thẻ / Visa Debit thanh toán thẻ qua điện thoại. Để bắt đầu thanh toán bằng thẻ tín dụng / thẻ Visa Debit,</value>
+  </data>
+  <data name="please call 1(888) 473-0835.  However, there are processing fees when paying by credit card/Visa Debit card." xml:space="preserve">
+    <value>vui lòng gọi 1 (888) 473-0835. Tuy nhiên, có phí xử lý khi thanh toán bằng thẻ tín dụng / thẻ Visa Debit.</value>
+  </data>
+  <data name="Each transaction is limited to $99,999.99.  The PIN number is used to make electronic check payment to" xml:space="preserve">
+    <value>Mỗi giao dịch được giới hạn ở mức $ 99.999,99. Số PIN được sử dụng để thực hiện thanh toán séc điện tử cho</value>
+  </data>
+  <data name="protect your security and privacy and is used to pay your current year and defaulted taxes online." xml:space="preserve">
+    <value>bảo vệ an ninh và quyền riêng tư của bạn và được sử dụng để thanh toán năm hiện tại và các khoản thuế mặc định trực tuyến.</value>
+  </data>
+  <data name="Effective with tax bills issued after August 2013, the PIN may contain all alpha, all numeric, or" xml:space="preserve">
+    <value>Có hiệu lực với hóa đơn thuế được phát hành sau tháng 8 năm 2013, mã PIN có thể chứa tất cả alpha, tất cả số hoặc</value>
+  </data>
+  <data name="alpha/numeric characters.  The alpha letter 'O' is not used in the PIN.  The '0' is always a number zero." xml:space="preserve">
+    <value>ký tự chữ và số. Chữ alpha 'O' không được sử dụng trong mã PIN. '0' luôn là số không.</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Đánh giá trực tiếp</value>
+  </data>
+  <data name="These are additional charges placed on the property tax bills." xml:space="preserve">
+    <value>Đây là những khoản phí bổ sung được đặt trên hóa đơn thuế bất động sản.</value>
+  </data>
+  <data name="These charges are not based on Assessor’s valuations.  Examples of direct assessments are charges for sewer" xml:space="preserve">
+    <value>Những khoản phí này không dựa trên định giá của Assguard. Ví dụ về đánh giá trực tiếp là phí cho hệ thống thoát nước</value>
+  </data>
+  <data name="maintenance, water, or fire districts.  For questions regarding these assessments, please contact the agency." xml:space="preserve">
+    <value>bảo trì, nước, hoặc lửa quận. Đối với các câu hỏi liên quan đến những đánh giá này, xin vui lòng liên hệ với cơ quan.</value>
+  </data>
+  <data name="The telephone number for each agency is listed on the bill, or please visit the Department of Auditor-Controller’s" xml:space="preserve">
+    <value>Số điện thoại của mỗi đại lý được liệt kê trên hóa đơn, hoặc vui lòng truy cập Bộ kiểm toán-Kiểm soát</value>
+  </data>
+  <data name="website for a Direct Assessment Listing." xml:space="preserve">
+    <value>trang web cho một danh sách đánh giá trực tiếp.</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>Thông tin đặc biệt</value>
+  </data>
+  <data name="This section provides important information about the bill" xml:space="preserve">
+    <value>Phần này cung cấp thông tin quan trọng về hóa đơn</value>
+  </data>
+  <data name="and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>và cho biết liệu có bất kỳ khoản nợ quá hạn nào.</value>
+  </data>
+  <data name="Total Prorated Taxes Due" xml:space="preserve">
+    <value>Tổng số thuế theo tỷ lệ</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>Vị trí tài sản và / hoặc Mô tả tài sản</value>
+  </data>
+  <data name="The property address" xml:space="preserve">
+    <value>Địa chỉ tài sản</value>
+  </data>
+  <data name="and/or legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>và / hoặc mô tả pháp lý trong hồ sơ với Văn phòng Giám định.</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>Giá trị đánh giá hiện tại</value>
+  </data>
+  <data name="The Assessor’s valuation of" xml:space="preserve">
+    <value>Đánh giá của Assguard từ</value>
+  </data>
+  <data name="the property after the adjustment." xml:space="preserve">
+    <value>tài sản sau khi điều chỉnh.</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>Giá trị được đánh giá trước</value>
+  </data>
+  <data name="This is the Assessor’s valuation" xml:space="preserve">
+    <value>Đây là định giá của Assguard từ</value>
+  </data>
+  <data name="of the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>của tài sản trước khi chuyển nhượng gần đây / ngày xây dựng mới.</value>
+  </data>
+  <data name="Net Assessed Value" xml:space="preserve">
+    <value>Giá trị ròng đánh giá</value>
+  </data>
+  <data name="The current assessed value less the prior assessed value." xml:space="preserve">
+    <value>Giá trị đánh giá hiện tại ít hơn giá trị đánh giá trước.</value>
+  </data>
+  <data name="Assessor’s Regional Office" xml:space="preserve">
+    <value>Văn phòng khu vực giám sát</value>
+  </data>
+  <data name="This is the address and telephone" xml:space="preserve">
+    <value>Đây là địa chỉ và điện thoại</value>
+  </data>
+  <data name="number to contact for questions regarding the assessed value of the property." xml:space="preserve">
+    <value>số để liên hệ cho các câu hỏi liên quan đến giá trị đánh giá của tài sản.</value>
+  </data>
+  <data name="Less Exemptions" xml:space="preserve">
+    <value>Miễn giảm</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>Miễn trừ, nếu có, được khấu trừ từ giá trị đánh giá.</value>
+  </data>
+  <data name="Net Supplemental Value" xml:space="preserve">
+    <value>Giá trị bổ sung ròng</value>
+  </data>
+  <data name="This is the difference between the" xml:space="preserve">
+    <value>Đây là sự khác biệt giữa</value>
+  </data>
+  <data name="current value and the prior value less exemptions." xml:space="preserve">
+    <value>giá trị hiện tại và giá trị miễn trừ trước.</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>Trả lại phí kiểm tra</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>Có một khoản phí $ 50,00 cho bất kỳ séc nào được ngân hàng trả lại.</value>
+  </data>
+  <data name="2nd Delinquency Date" xml:space="preserve">
+    <value>Ngày trễ hạn thứ 2</value>
+  </data>
+  <data name="If paying the bill in installments, the second installment" xml:space="preserve">
+    <value>Nếu thanh toán hóa đơn thành nhiều lần, đợt thứ hai</value>
+  </data>
+  <data name="must be received or United States Postal Service postmarked by this date, or a 10 percent penalty and a $10.00 cost" xml:space="preserve">
+    <value>phải được nhận hoặc Dịch vụ Bưu chính Hoa Kỳ có dấu bưu điện vào ngày này hoặc phạt 10 phần trăm và chi phí $ 10,00</value>
+  </data>
+  <data name="will be imposed." xml:space="preserve">
+    <value>sẽ được áp đặt.</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>Đợt 2</value>
+  </data>
+  <data name="Amount of taxes due for the second installment.  Taxpayers" xml:space="preserve">
+    <value>Số tiền thuế do đợt thứ hai. Người nộp thuế</value>
+  </data>
+  <data name="must be sure to include the payment stub with any type of payment and write their Assessor’s Identification Number" xml:space="preserve">
+    <value>phải chắc chắn bao gồm cuống thanh toán với bất kỳ loại thanh toán nào và viết Số nhận dạng từ Assigator</value>
+  </data>
+  <data name="with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>với số Năm / Số thứ tự trên séc của họ.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>Số tiền chuyển</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here." xml:space="preserve">
+    <value>Nếu thanh toán không được thực hiện trước ngày quá hạn, hãy chuyển số tiền được nêu ở đây.</value>
+  </data>
+  <data name="Include the payment stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number" xml:space="preserve">
+    <value>Bao gồm các cuống thanh toán với khoản thanh toán và viết Số nhận dạng từ người giám định và số năm</value>
+  </data>
+  <data name="on the check." xml:space="preserve">
+    <value>trên séc</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>Kiểm tra phải trả</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment" xml:space="preserve">
+    <value>Làm séc thanh toán cho Người thu thuế Hạt Los Angeles và gửi thư đến địa chỉ này. Bao gồm thanh toán</value>
+  </data>
+  <data name="stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>còn sơ khai với khoản thanh toán và viết Số nhận dạng người giám sát và số năm / số thứ tự trên séc.</value>
+  </data>
+  <data name="1st Delinquency Date" xml:space="preserve">
+    <value>Ngày đáo hạn 1</value>
+  </data>
+  <data name="If paying the bill in full, payment must be received or United States Postal Service (USPS) postmarked by" xml:space="preserve">
+    <value>Nếu thanh toán hóa đơn đầy đủ, thanh toán phải được nhận hoặc Dịch vụ Bưu chính Hoa Kỳ (USPS) có dấu bưu điện</value>
+  </data>
+  <data name="this date. If paying in installments, the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>Ngày này. Nếu thanh toán theo đợt, đợt đầu tiên phải được nhận hoặc USPS có dấu bưu điện trước ngày này, hoặc phạt 10% sẽ được áp dụng.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>Đợt 1</value>
+  </data>
+  <data name="Amount of taxes due for the first installment. Taxpayers must be sure to include the payment stub with any type of payment" xml:space="preserve">
+    <value>Số tiền thuế phải trả cho lần đầu tiên. Người nộp thuế phải chắc chắn bao gồm cuống thanh toán với bất kỳ loại thanh toán nào</value>
+  </data>
+  <data name="and write their Assessor’s Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>và viết Số nhận dạng Assigator của họ với Số năm / Số thứ tự trên séc của họ.</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the payment" xml:space="preserve">
+    <value>Nếu thanh toán không được thực hiện trước ngày quá hạn, hãy chuyển số tiền được nêu ở đây. Bao gồm cuống thanh toán với thanh toán</value>
+  </data>
+  <data name="and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>và viết Số nhận dạng từ Assigator và số năm / số thứ tự trên séc.</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)" xml:space="preserve">
+    <value>Làm séc thanh toán cho Người thu thuế Hạt Los Angeles và gửi thư đến địa chỉ này. Bao gồm các cuống thanh toán</value>
+  </data>
+  <data name="with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>với khoản thanh toán và viết Số nhận dạng từ người giám định và số năm / số thứ tự trên séc.</value>
+  </data>
+</root>

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DISCLAIMER" xml:space="preserve">
+    <value>TUYÊN BỐ TỪ CHỐI</value>
+  </data>
+  <data name="COUNTY WEBSITE ADVERTISING AND HOTLINK POLICY" xml:space="preserve">
+    <value>CHÍNH SÁCH QUẢNG CÁO VÀ HOTLINK QUẬN</value>
+  </data>
+  <data name="Los Angeles County is a chartered County and a subdivision of the State of California whose mission is to provide governmental and other public services to and for the benefit of the residents of the County. In accordance with this mission, the general policy of the Board of Supervisors is to exclude from the County Internet website and the website of each County Department, all commercial advertising and promotional material, including links which provide exclusive private or financial benefit to commercial, non-public enterprises and which do not promote or enhance a public benefit to the County, its departments, or the residents served by the County. As a governmental agency, the County neither endorses nor supports individual private commercial enterprises through display of their advertising on the County’s website or through providing links to the sites of such commercial enterprises." xml:space="preserve">
+    <value>Quận Los Angeles là một Hạt điều lệ và là một phân khu của Tiểu bang California có nhiệm vụ cung cấp các dịch vụ công cộng và chính phủ khác cho và vì lợi ích của cư dân của Hạt. Theo nhiệm vụ này, chính sách chung của Ban kiểm soát là loại trừ khỏi trang web Internet của quận và trang web của mỗi Sở quận, tất cả các tài liệu quảng cáo và quảng cáo thương mại, bao gồm các liên kết cung cấp lợi ích tài chính hoặc tư nhân độc quyền cho thương mại, không - các doanh nghiệp công cộng và không thúc đẩy hoặc nâng cao lợi ích công cộng cho Quận, các bộ phận của mình hoặc cư dân do Quận phục vụ. Là một cơ quan chính phủ, Quận không ủng hộ cũng như không hỗ trợ các doanh nghiệp thương mại tư nhân thông qua việc hiển thị quảng cáo của họ trên trang web County County hoặc thông qua các liên kết đến các trang web của các doanh nghiệp thương mại đó.</value>
+  </data>
+  <data name="Notwithstanding the foregoing, the Board of Supervisors recognizes that, in consideration of the nature and function of the Internet, display of commercial or promotional material or links to commercial sites may, under certain circumstances, be appropriate for inclusion in the County’s website or in departmental websites where a public purpose is served. The following guidelines are hereby adopted for the guidance of County Department Directors in determining when such materials are appropriate for inclusion in County websites." xml:space="preserve">
+    <value>Mặc dù đã nói ở trên, Ban kiểm soát công nhận rằng, khi xem xét tính chất và chức năng của Internet, việc hiển thị các tài liệu thương mại hoặc quảng cáo hoặc liên kết đến các trang web thương mại có thể, trong một số trường hợp nhất định, có thể phù hợp để đưa vào trang web của Quận hoặc trong bộ phận các trang web nơi một mục đích công cộng được phục vụ. Các hướng dẫn sau đây được thông qua cho hướng dẫn của Giám đốc Sở Hạt trong việc xác định khi nào các tài liệu đó phù hợp để đưa vào các trang web của Quận.</value>
+  </data>
+  <data name="Advertising/Promotional Materials Where County Has Public/Financial lnterest" xml:space="preserve">
+    <value>Tài liệu quảng cáo / quảng cáo nơi quận có công</value>
+  </data>
+  <data name="Public Benefit Facilities and Venues. The County has established and maintains certain facilities and venues which promote the arts, science, cultural studies, and other public purposes. Advertising and promotion of events, programs, and exhibits at such facilities and venues may be placed on the County Internet website and on departmental websites. This includes links to commercial enterprises who market tickets or other means of access to these facilities and venues or foster participation in their programs. (Examples: Ford Theater link to online ticket agency. Programs/Exhibits at Music Center, Hollywood Bowl, Art Museum, Natural History Museum)" xml:space="preserve">
+    <value>Cơ sở và địa điểm lợi ích công cộng. Quận đã thành lập và duy trì một số cơ sở và địa điểm nhất định nhằm thúc đẩy nghệ thuật, khoa học, nghiên cứu văn hóa và các mục đích công cộng khác. Quảng cáo và quảng bá các sự kiện, chương trình và triển lãm tại các cơ sở và địa điểm như vậy có thể được đặt trên trang web của Quận Internet và trên các trang web của bộ. Điều này bao gồm các liên kết đến các doanh nghiệp thương mại bán vé hoặc phương tiện khác để truy cập vào các cơ sở và địa điểm này hoặc thúc đẩy sự tham gia vào các chương trình của họ. (Ví dụ: Nhà hát Ford liên kết với đại lý vé trực tuyến. Các chương trình / Triển lãm tại Trung tâm âm nhạc, Hollywood Bowl, Bảo tàng nghệ thuật, Bảo tàng lịch sử tự nhiên)</value>
+  </data>
+  <data name="Commercial Enterprises in which the county has a financial interest. The County possesses leasehold and other financial interests in certain commercial enterprises, and derives a financial benefit from their activities. This financial benefit to the County serves a public purpose. Accordingly, commercial advertising and other promotional materials concerning these enterprises may appear on County websites. Links to the websites of these enterprises may also be included on the County Internet website and on departmental websites at the discretion of Department Directors. Appropriate notice should be provided of the County’s financial interest in these enterprises. (Examples: Gladstone’s Restaurant, Marina Del Rey)" xml:space="preserve">
+    <value>Doanh nghiệp thương mại trong đó quận có lợi ích tài chính. Quận sở hữu hợp đồng thuê và các lợi ích tài chính khác trong một số doanh nghiệp thương mại và có được lợi ích tài chính từ các hoạt động của họ. Lợi ích tài chính này cho Quận phục vụ mục đích công cộng. Theo đó, quảng cáo thương mại và các tài liệu quảng cáo khác liên quan đến các doanh nghiệp này có thể xuất hiện trên các trang web của Quận. Liên kết đến các trang web của các doanh nghiệp này cũng có thể được đưa vào trang web Internet của Quận và trên các trang web của bộ theo quyết định của Giám đốc Sở. Thông báo phù hợp cần được cung cấp về lợi ích tài chính của County trong các doanh nghiệp này. (Ví dụ: Nhà hàng Gladstone từ, Marina Del Rey)</value>
+  </data>
+  <data name="Where a link is provided in the County’s website and the user exits the County website and enters a commercial website, notice and a disclaimer must be displayed in accordance with Section 8 below." xml:space="preserve">
+    <value>Khi một liên kết được cung cấp trong trang web County County và người dùng thoát khỏi trang web của Quận và vào một trang web thương mại, thông báo và từ chối trách nhiệm phải được hiển thị theo Mục 8 bên dưới.</value>
+  </data>
+  <data name="Web-Based All-lnclusive Information about Private Enterprises which Provide a Service or Benefit to the Public where the Service or Benefit is Directly Related to a County Department’s Mission or Services" xml:space="preserve">
+    <value>Thông tin toàn diện dựa trên web về các doanh nghiệp tư nhân cung cấp dịch vụ hoặc lợi ích cho công chúng nơi Dịch vụ hoặc lợi ích liên quan trực tiếp đến sứ mệnh hoặc dịch vụ</value>
+  </data>
+  <data name="Certain commercial and public agencies maintain information about private persons, enterprises, and organizations which provide services to the public." xml:space="preserve">
+    <value>Một số cơ quan thương mại và công cộng duy trì thông tin về cá nhân, doanh nghiệp và tổ chức cung cấp dịch vụ cho công chúng.</value>
+  </data>
+  <data name="Public Agency. Where such information is directly maintained by public agencies, such as lists of licensed child care providers or lists of restaurants that are graded by the Department of Health Services. County websites may display such information or provide links to the public agency or directly to that information." xml:space="preserve">
+    <value>Cơ quan công quyền. Trường hợp thông tin đó được duy trì trực tiếp bởi các cơ quan công cộng, chẳng hạn như danh sách các nhà cung cấp dịch vụ chăm sóc trẻ em được cấp phép hoặc danh sách các nhà hàng được Bộ Y tế xếp loại. Các trang web của quận có thể hiển thị thông tin đó hoặc cung cấp liên kết đến cơ quan công cộng hoặc trực tiếp đến thông tin đó.</value>
+  </data>
+  <data name="Private Agency. Where information is maintained by private commercial agencies but the persons or organizations listed provide services directly related to the mission of a County Department or to the services it provides to the public. A Department may display such information on its website or provide a link to the information or the commercial agency which maintains such information whether or not the site linked to also contains commercial advertising. In such cases, the Department Director must make a good faith determination that:" xml:space="preserve">
+    <value>Cơ quan tư nhân. Trường hợp thông tin được duy trì bởi các cơ quan thương mại tư nhân nhưng những người hoặc tổ chức được liệt kê cung cấp dịch vụ liên quan trực tiếp đến nhiệm vụ của Bộ Hạt hoặc với các dịch vụ mà công ty cung cấp cho công chúng. Bộ có thể hiển thị thông tin đó trên trang web của mình hoặc cung cấp liên kết đến thông tin hoặc cơ quan thương mại duy trì thông tin đó cho dù trang web được liên kết đến có chứa quảng cáo thương mại hay không. Trong những trường hợp như vậy, Giám đốc Sở phải đưa ra quyết định thiện chí rằng:</value>
+  </data>
+  <data name="The Department’s clients, service recipients, or interested County residents would benefit from the information;" xml:space="preserve">
+    <value>Các khách hàng, người nhận dịch vụ hoặc cư dân của Quận quan tâm sẽ được hưởng lợi từ thông tin;</value>
+  </data>
+  <data name="It would be duplicative for the Department to independently create or maintain such information; and." xml:space="preserve">
+    <value>Nó sẽ là trùng lặp để Bộ độc lập tạo hoặc duy trì thông tin đó; và.</value>
+  </data>
+  <data name="The commercial agency which maintains the information has represented that it includes all legitimate or licensed service providers within the County or within the geographical area served by the Department." xml:space="preserve">
+    <value>Cơ quan thương mại duy trì thông tin đã tuyên bố rằng nó bao gồm tất cả các nhà cung cấp dịch vụ hợp pháp hoặc được cấp phép trong Hạt hoặc trong khu vực địa lý do Bộ phục vụ.</value>
+  </data>
+  <data name="No link may be provided directly on a County departmental website to any enterprise or organization included in that information." xml:space="preserve">
+    <value>Không có liên kết nào có thể được cung cấp trực tiếp trên trang web của Bộ cho bất kỳ doanh nghiệp hoặc tổ chức nào có trong thông tin đó.</value>
+  </data>
+  <data name="Where a link is provided in the County website to the agency which maintains the information or to the information, and the user exits the County website and enters a commercial site which may contain advertising or other promotional material, notice and a disclaimer must be displayed in accordance with Section 8 below." xml:space="preserve">
+    <value>Trường hợp liên kết được cung cấp trong trang web của Quận cho cơ quan lưu giữ thông tin hoặc thông tin đó, và người dùng thoát khỏi trang web của Quận và vào một trang web thương mại có thể chứa quảng cáo hoặc tài liệu quảng cáo khác, phải thông báo từ chối theo Mục 8 dưới đây.</value>
+  </data>
+  <data name="(Examples: A list maintained by a California State agency of licensed child care centers located in the County could be displayed on the website of a Department that serves the needs of children and families. A link to the State agency or to the list could be included even if the list maintained by the State agency contained centers both in the County and throughout the State." xml:space="preserve">
+    <value>. bao gồm ngay cả khi danh sách được duy trì bởi cơ quan Nhà nước có các trung tâm cả trong Hạt và trên toàn Bang.</value>
+  </data>
+  <data name="A commercially maintained list of newspapers in a particular category or geographic area could be displayed or linked to the Public Information Office website since its mission is directly related to fostering media relations. If displayed, however, no link to an individual newspaper is permitted. If a link is provided to a commercial agency maintaining the list or to the list, the site linked to may contain advertising, but a disclaimer must be displayed on the County’s website as the user exits in accordance with Section 8 below." xml:space="preserve">
+    <value>Danh sách các tờ báo được duy trì thương mại trong một danh mục hoặc khu vực địa lý cụ thể có thể được hiển thị hoặc liên kết với trang web của Văn phòng Thông tin Công cộng vì nhiệm vụ của nó liên quan trực tiếp đến việc thúc đẩy quan hệ truyền thông. Tuy nhiên, nếu được hiển thị, không có liên kết đến một tờ báo riêng lẻ được cho phép. Nếu một liên kết được cung cấp cho một cơ quan thương mại duy trì danh sách hoặc danh sách, trang web được liên kết đến có thể chứa quảng cáo, nhưng từ chối trách nhiệm phải được hiển thị trên trang web County County khi người dùng thoát theo Mục 8 bên dưới.</value>
+  </data>
+  <data name="The Department of Health Services could display a list of public health ratings of all restaurants in the County since public dissemination of such information is directly related to its mission. However, display or linking to a commercial list of popular ratings of restaurants or to an individual restaurant would not be permitted under these guidelines." xml:space="preserve">
+    <value>Bộ Dịch vụ Y tế có thể hiển thị danh sách xếp hạng sức khỏe cộng đồng của tất cả các nhà hàng trong Quận do việc phổ biến công khai thông tin đó có liên quan trực tiếp đến nhiệm vụ của mình. Tuy nhiên, hiển thị hoặc liên kết đến một danh sách thương mại xếp hạng phổ biến của các nhà hàng hoặc đến một nhà hàng riêng lẻ sẽ không được phép theo các hướng dẫn này.</value>
+  </data>
+  <data name="Public Works could display a list of names and locations of licensed recyclers since its mission includes fostering recycling of waste, but could not link to those businesses)." xml:space="preserve">
+    <value>Công trình công cộng có thể hiển thị danh sách tên và địa điểm của các nhà tái chế được cấp phép vì nhiệm vụ của nó bao gồm thúc đẩy tái chế chất thải, nhưng không thể liên kết với các doanh nghiệp đó).</value>
+  </data>
+  <data name="Links to Commercial Sites with Information Critical to or Vitally Enhancing a County Department’s Mission or Services where Replication of Information by Department is Not Feasible" xml:space="preserve">
+    <value>Liên kết đến các trang web thương mại với thông tin quan trọng hoặc tăng cường mạnh mẽ một nhiệm vụ hoặc dịch vụ của Bộ phận quận trong đó việc sao chép thông tin của Bộ là không khả thi</value>
+  </data>
+  <data name="Certain private commercial sites maintain and display information which provides a public or community service or other ancillary static or interactive information to aid the public which is not generally available through a governmental agency due to the cost of compiling, maintaining, and/or displaying such information. In order to support the cost of compilation and maintenance of this information, these private commercial sites may include advertising or promotional material in the information display." xml:space="preserve">
+    <value>Một số trang thương mại tư nhân duy trì và hiển thị thông tin cung cấp dịch vụ công cộng hoặc cộng đồng hoặc thông tin tương tác hoặc tĩnh phụ trợ khác để hỗ trợ công chúng thường không có sẵn thông qua cơ quan chính phủ do chi phí biên dịch, duy trì và / hoặc hiển thị thông tin đó . Để hỗ trợ chi phí biên soạn và duy trì thông tin này, các trang web thương mại tư nhân này có thể bao gồm tài liệu quảng cáo hoặc quảng cáo trong màn hình hiển thị thông tin.</value>
+  </data>
+  <data name="Although the County neither supports nor endorses entities advertised or promoted on such sites, it recognizes that a public benefit is served by providing the underlying information to assist County residents. Accordingly, links to such sites which contain this information but also display commercial advertising or promotional material may be included on departmental websites when the Department Director has made a good faith determination that:" xml:space="preserve">
+    <value>Mặc dù Quận không hỗ trợ cũng không ủng hộ các thực thể được quảng cáo hoặc quảng bá trên các trang web đó, nhưng nó nhận ra rằng một lợi ích công cộng được phục vụ bằng cách cung cấp thông tin cơ bản để hỗ trợ cư dân Quận. Theo đó, các liên kết đến các trang web có chứa thông tin này nhưng cũng hiển thị tài liệu quảng cáo hoặc quảng cáo thương mại có thể được đưa vào các trang web của bộ phận khi Giám đốc Sở đưa ra quyết định đúng đắn rằng:</value>
+  </data>
+  <data name="The department’s independent replication of the information targeted for linkage is infeasible due to financial or other considerations; and," xml:space="preserve">
+    <value>Bộ phận sao chép độc lập của bộ phận thông tin được nhắm mục tiêu để liên kết là không khả thi do các cân nhắc tài chính hoặc khác; và,</value>
+  </data>
+  <data name="No, non-commercial site provides the information targeted to linkage; and," xml:space="preserve">
+    <value>Không, trang web phi thương mại cung cấp thông tin được nhắm mục tiêu để liên kết; và,</value>
+  </data>
+  <data name="The information targeted for linkage is critical to a service provided by the Department, or" xml:space="preserve">
+    <value>Thông tin được nhắm mục tiêu liên kết là rất quan trọng đối với dịch vụ do Bộ cung cấp hoặc</value>
+  </data>
+  <data name="The information targeted for linkage is a vital enhancement to the Department’s mission. (Examples: The Chief Executive Office and Board offices could link to a private website that provides information about community activities in unincorporated areas. The Department of Parks and Recreation could link to a site that provides sports league management services.)" xml:space="preserve">
+    <value>Thông tin được nhắm mục tiêu để liên kết là một cải tiến quan trọng cho nhiệm vụ của Bộ. (Ví dụ: Văn phòng điều hành và văn phòng Hội đồng quản trị có thể liên kết đến một trang web tư nhân cung cấp thông tin về các hoạt động cộng đồng ở các khu vực chưa hợp nhất. Bộ Công viên và Giải trí có thể liên kết đến một trang web cung cấp dịch vụ quản lý giải đấu thể thao.)</value>
+  </data>
+  <data name="A disclaimer must be displayed on the County’s website as the user exits in accordance with Section 8 below." xml:space="preserve">
+    <value>Tuyên bố từ chối trách nhiệm phải được hiển thị trên trang web County County khi người dùng thoát ra theo Mục 8 bên dưới.</value>
+  </data>
+  <data name="County Program Sponsors and Donors" xml:space="preserve">
+    <value>Nhà tài trợ và nhà tài trợ chương trình của quận</value>
+  </data>
+  <data name="County program sponsors and cash or services donors may be acknowledged through a display of their names, logos, or other information, but no link is permitted to their websites. The listing of such sponsors or donors is limited to secondary pages of websites, but may be accessed from the primary page. Departments are responsible for informing the Board of such donations through the current established process for donations." xml:space="preserve">
+    <value>Các nhà tài trợ chương trình của quận và các nhà tài trợ tiền mặt hoặc dịch vụ có thể được xác nhận thông qua việc hiển thị tên, logo hoặc thông tin khác của họ, nhưng không có liên kết nào được phép vào trang web của họ. Danh sách các nhà tài trợ hoặc nhà tài trợ như vậy được giới hạn trong các trang thứ cấp của trang web, nhưng có thể được truy cập từ trang chính. Các phòng ban có trách nhiệm thông báo cho Hội đồng về các khoản đóng góp đó thông qua quy trình thành lập hiện tại để quyên góp.</value>
+  </data>
+  <data name="(Examples: Public Works could list sponsors of environmental programs, but could not link to their sites. Beaches and Harbors and Parks and Recreation could name their official sponsors. Private designers of websites who have donated their services may be acknowledged, but no link is permitted to their websites)." xml:space="preserve">
+    <value>. được phép vào trang web của họ).</value>
+  </data>
+  <data name="Government Agencies; Academic Institutions; Public-Private Partnerships; Professional, Cultural, Community-Based and Non-Profit Organizations" xml:space="preserve">
+    <value>Cơ quan chính phủ; Học viện; Quan hệ đối tác công tư; Các tổ chức chuyên nghiệp, văn hóa, cộng đồng và phi lợi nhuận</value>
+  </data>
+  <data name="Links to Search Engines" xml:space="preserve">
+    <value>Liên kết đến công cụ tìm kiếm</value>
+  </data>
+  <data name="Links to search engines are permitted where a Department’s core mission would be advanced by presenting information from a variety of sources external to the Department." xml:space="preserve">
+    <value>Liên kết đến các công cụ tìm kiếm được cho phép trong đó nhiệm vụ cốt lõi của Bộ sẽ được nâng cao bằng cách trình bày thông tin từ nhiều nguồn khác nhau cho Bộ.</value>
+  </data>
+  <data name="No Links to Sites Containing Inappropriate Material" xml:space="preserve">
+    <value>Không có liên kết đến các trang web chứa tài liệu không phù hợp</value>
+  </data>
+  <data name="Links to sites containing inappropriate material are expressly prohibited." xml:space="preserve">
+    <value>Liên kết đến các trang web chứa tài liệu không phù hợp đều bị nghiêm cấm.</value>
+  </data>
+  <data name="Notice of Leaving County Website and a Disclaimer" xml:space="preserve">
+    <value>Thông báo về việc rời khỏi trang web của quận và từ chối trách nhiệm</value>
+  </data>
+  <data name="When providing links to non-County sites, Departments must include a disclaimer on their home page disavowing endorsement or responsibility for the material on sites being linked. Departments must also use a standardized alert or redirect script page that warns users they are leaving the County site and allows them to proceed or cancel. This alert would read: “You are now leaving the Los Angeles County website and linking to a website that may contain commercial advertising. Los Angeles County does not endorse or support any of the advertising that may be contained on this site." xml:space="preserve">
+    <value>Khi cung cấp liên kết đến các trang web không thuộc Quận, các Phòng ban phải bao gồm tuyên bố từ chối trách nhiệm trên trang chủ của họ để từ chối chứng thực hoặc trách nhiệm đối với tài liệu trên các trang web được liên kết. Các phòng ban cũng phải sử dụng trang cảnh báo tiêu chuẩn hoặc tập lệnh chuyển hướng cảnh báo người dùng rằng họ sẽ rời khỏi trang web của Quận và cho phép họ tiếp tục hoặc hủy bỏ. Thông báo này sẽ có nội dung: Bạn hiện đang rời khỏi trang web của Quận Los Angeles và liên kết đến một trang web có thể chứa quảng cáo thương mại. Quận Los Angeles không xác nhận hoặc hỗ trợ bất kỳ quảng cáo nào có thể có trên trang web này.</value>
+  </data>
+  <data name="Contractors that Create Websites for County Departments" xml:space="preserve">
+    <value>Nhà thầu tạo trang web cho các phòng ban quận</value>
+  </data>
+  <data name="Departments shall provide website contractors with a copy of this policy and website design guidelines, which contractors shall observe in creating webpages for Departments. The requirement to follow these guidelines shall be set forth in the contract for website design. The Internal Services Department, in creating webpages for Departments. shall enforce the adopted guidelines." xml:space="preserve">
+    <value>Các phòng ban sẽ cung cấp cho các nhà thầu trang web một bản sao của chính sách này và hướng dẫn thiết kế trang web, mà các nhà thầu sẽ tuân thủ trong việc tạo các trang web cho các Sở. Yêu cầu tuân theo các hướng dẫn này sẽ được quy định trong hợp đồng thiết kế trang web. Bộ phận dịch vụ nội bộ, trong việc tạo các trang web cho các phòng ban. sẽ thực thi các hướng dẫn được thông qua.</value>
+  </data>
+  <data name="Authority of Chief Executive Officer" xml:space="preserve">
+    <value>Quyền hạn của Giám đốc điều hành</value>
+  </data>
+  <data name="The CEO is authorized to order removal of material from Department websites which is noncompliant with these adopted guidelines." xml:space="preserve">
+    <value>Giám đốc điều hành được ủy quyền yêu cầu loại bỏ tài liệu khỏi các trang web của Bộ không tuân thủ các nguyên tắc được thông qua này.</value>
+  </data>
+  <data name="Link Maintenance" xml:space="preserve">
+    <value>Liên kết bảo trì</value>
+  </data>
+  <data name="Departments shall routinely check links on their websites to ensure they are functional and contain no material which violates this policy." xml:space="preserve">
+    <value>Các phòng ban sẽ thường xuyên kiểm tra các liên kết trên trang web của họ để đảm bảo chúng hoạt động và không chứa tài liệu nào vi phạm chính sách này.</value>
+  </data>
+  <data name="Language Translation" xml:space="preserve">
+    <value>Dịch ngôn ngữ</value>
+  </data>
+  <data name="The website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of this website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version." xml:space="preserve">
+    <value>Trang web đã có những nỗ lực hợp lý để cung cấp một bản dịch chính xác. Tuy nhiên, không có bản dịch tự động hoặc máy tính nào là hoàn hảo và không nhằm thay thế phương pháp dịch thuật của con người hoặc truyền thống. Văn bản chính thức là phiên bản tiếng Anh của trang web này. Nếu có bất kỳ câu hỏi nào liên quan đến tính chính xác của thông tin được trình bày bởi phiên bản dịch của trang web, vui lòng tham khảo phiên bản tiếng Anh của trang web, đây là phiên bản chính thức.</value>
+  </data>
+</root>

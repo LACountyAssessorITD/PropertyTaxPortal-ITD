@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PRIVACY POLICY" xml:space="preserve">
+    <value>POLÍTICA DE PRIVACIDAD</value>
+  </data>
   <data name="The Board of Supervisors of Los Angeles County recognizes the public’s concern about privacy on the Internet. This privacy statement establishes how information gathered about you from your visit to our website will be used by this website’s operators. As a visitor, however, you should be aware that much information submitted to Los Angeles County is public information under the laws of the State of California. Under some circumstances, we may be required to disclose such information in accordance with the California Public Records Act or other legal requirements." xml:space="preserve">
     <value>La Junta de Supervisores del Condado de Los Ángeles reconoce la preocupación del público sobre la privacidad en Internet. Esta declaración de privacidad establece cómo los operadores de este sitio web utilizarán la información recopilada sobre usted durante su visita a nuestro sitio web. Sin embargo, como visitante, debe tener en cuenta que gran parte de la información que se envía al Condado de Los Ángeles es información pública según las leyes del Estado de California. Bajo algunas circunstancias, es posible que se nos solicite divulgar dicha información de acuerdo con la Ley de Registros Públicos de California u otros requisitos legales.</value>
   </data>
@@ -146,5 +149,65 @@
   </data>
   <data name="Our website also contains links to information located on websites maintained by other public agencies and private organizations. Once you access an individual document that links you to another website, you are subject to the privacy policy of the website containing that document." xml:space="preserve">
     <value>Nuestro sitio web también contiene enlaces a información ubicada en sitios web mantenidos por otras agencias públicas y organizaciones privadas. Una vez que accede a un documento individual que lo vincula a otro sitio web, está sujeto a la política de privacidad del sitio web que contiene ese documento.</value>
+  </data>
+  <data name="About Cookies" xml:space="preserve">
+    <value>Sobre las cookies</value>
+  </data>
+  <data name="A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server." xml:space="preserve">
+    <value>Una cookie es un archivo que contiene un identificador (una serie de letras y números) que un servidor web envía a un navegador web y que el navegador almacena. El identificador se envía al servidor cada vez que el navegador solicita una página del servidor.</value>
+  </data>
+  <data name="Cookies may be either &quot;persistent&quot; cookies or &quot;session&quot; cookies. A persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed." xml:space="preserve">
+    <value>Las cookies pueden ser cookies "persistentes" o cookies de "sesión". Una cookie persistente será almacenada por un navegador web y permanecerá válida hasta su fecha de caducidad establecida, a menos que el usuario la elimine antes de la fecha de caducidad; una cookie de sesión, por otro lado, expirará al final de la sesión del usuario, cuando se cierre el navegador web.</value>
+  </data>
+  <data name="Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies." xml:space="preserve">
+    <value>Las cookies no suelen contener ninguna información que identifique personalmente a un usuario, pero la información personal que almacenamos sobre usted puede estar vinculada a la información almacenada y obtenida de las cookies.</value>
+  </data>
+  <data name="Cookies We Use" xml:space="preserve">
+    <value>Cookies que utilizamos</value>
+  </data>
+  <data name="When your browser or device allows it, we use both session cookies and persistent cookies to better understand how you interact with our services, to monitor aggregate usage patterns, and to personalize and otherwise operate our services." xml:space="preserve">
+    <value>Cuando su navegador o dispositivo lo permite, utilizamos cookies de sesión y cookies persistentes para comprender mejor cómo interactúa con nuestros servicios, para monitorear los patrones de uso agregados y para personalizar y operar de otra manera nuestros servicios.</value>
+  </data>
+  <data name="We also use cookies for the following purposes:" xml:space="preserve">
+    <value>También utilizamos cookies para los siguientes fines:</value>
+  </data>
+  <data name="a. authentication - to identify you when you visit our website and as you navigate our website" xml:space="preserve">
+    <value>a. autenticación: para identificarlo cuando visita nuestro sitio web y mientras navega por nuestro sitio web</value>
+  </data>
+  <data name="b. status - to help us to determine if you are logged into our website" xml:space="preserve">
+    <value>segundo. estado: para ayudarnos a determinar si ha iniciado sesión en nuestro sitio web</value>
+  </data>
+  <data name="c. personalization - to store information about your preferences and to personalize our website for you" xml:space="preserve">
+    <value>do. personalización: para almacenar información sobre sus preferencias y para personalizar nuestro sitio web para usted</value>
+  </data>
+  <data name="d. security - as an element of the security measures used to protect user accounts, including preventing fraudulent use of login credentials and to protect our website and services generally" xml:space="preserve">
+    <value>re. Seguridad: como un elemento de las medidas de seguridad utilizadas para proteger las cuentas de los usuarios, incluida la prevención del uso fraudulento de las credenciales de inicio de sesión y la protección de nuestro sitio web y servicios en general</value>
+  </data>
+  <data name="e. advertising - to help us display advertisements that will be relevant to you;" xml:space="preserve">
+    <value>mi. publicidad: para ayudarnos a mostrar anuncios que sean relevantes para usted;</value>
+  </data>
+  <data name="f. analysis - to help us analyze the use and performance of our website and services." xml:space="preserve">
+    <value>F. Análisis: para ayudarnos a analizar el uso y el rendimiento de nuestro sitio web y nuestros servicios.</value>
+  </data>
+  <data name="Cookies Used by Our Third-Party Providers" xml:space="preserve">
+    <value>Cookies utilizadas por nuestros proveedores externos</value>
+  </data>
+  <data name="Our service providers use cookies and those cookies may be stored on your computer when you visit our Service." xml:space="preserve">
+    <value>Nuestros proveedores de servicios utilizan cookies y esas cookies pueden almacenarse en su computadora cuando visita nuestro Servicio.</value>
+  </data>
+  <data name="We use Google Analytics to analyze the use of our website. Google Analytics gathers information about website use by means of cookies. The information gathered relating to our website is used to create reports about the use of our website." xml:space="preserve">
+    <value>Utilizamos Google Analytics para analizar el uso de nuestro sitio web. Google Analytics recopila información sobre el uso del sitio web mediante cookies. La información recopilada relacionada con nuestro sitio web se utiliza para crear informes sobre el uso de nuestro sitio web.</value>
+  </data>
+  <data name="We, and other third parties we work with, place cookies when you visit the Services and when you open emails that we send you in order to provide you more specific content about services we or our third-party providers offer. For instance, we publish Google AdSense advertisements on our website. To determine your interests, Google will track your behavior on our website and on other websites across the web using cookies." xml:space="preserve">
+    <value>Nosotros, y otros terceros con los que trabajamos, colocamos cookies cuando visita los Servicios y cuando abre los correos electrónicos que le enviamos para brindarle contenido más específico sobre los servicios que nosotros o nuestros proveedores externos ofrecemos. Por ejemplo, publicamos anuncios de Google AdSense en nuestro sitio web. Para determinar sus intereses, Google rastreará su comportamiento en nuestro sitio web y en otros sitios web a través de cookies.</value>
+  </data>
+  <data name="Managing Cookies" xml:space="preserve">
+    <value>Gestionando Cookies</value>
+  </data>
+  <data name="Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser and from version to version. Please refer to your browser documentation on how to manage your cookies." xml:space="preserve">
+    <value>La mayoría de los navegadores le permiten rechazar las cookies y eliminarlas. Los métodos para hacerlo varían de un navegador a otro y de una versión a otra. Consulte la documentación de su navegador para saber cómo administrar sus cookies.</value>
+  </data>
+  <data name="Blocking all or some cookies may have a negative impact upon the usability of the Services." xml:space="preserve">
+    <value>El bloqueo de todas o algunas cookies puede tener un impacto negativo en la usabilidad de los Servicios.</value>
   </data>
 </root>

@@ -232,7 +232,7 @@
     <value>Valor estimado actual</value>
   </data>
   <data name="The Assessor’s valuation of the property after the adjustment." xml:space="preserve">
-    <value>La valoración de la propiedad por parte del Asesor después del ajuste.</value>
+    <value>La valoración de la propiedad por parte del Evaluador después del ajuste.</value>
   </data>
   <data name="Prior Assessed Value" xml:space="preserve">
     <value>Valor previamente evaluado</value>
@@ -322,7 +322,7 @@
     <value>Si paga la factura en su totalidad, el pago debe</value>
   </data>
   <data name="be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments, the first" xml:space="preserve">
-    <value>ser recibido o el Servicio Postal de los Estados Unidos (USPS) con matasellos de esta fecha. Si se paga a plazos, la primera</value>
+    <value>ser recibido o el Servicio Postal de los Estados Unidos (USPS) con sello postal de esta fecha. Si se paga a plazos, la primera</value>
   </data>
   <data name="installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
     <value>la cuota debe recibirse o enviarse por correo postal a las USPS para esta fecha, o se impondrá una multa del 10 por ciento.</value>

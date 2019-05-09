@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Accesibilidad</value>
+  </data>
   <data name="The County of Los Angeles (County) is committed to the universal accessibility of information contained on its website (Website). The design of the Website is optimized to ensure broad readability and usability, which include accessibility criteria and features for people with disabilities, so they may be able to see, understand, navigate, interact, and contribute to the Website effectively." xml:space="preserve">
     <value>El Condado de Los Ángeles (Condado) está comprometido con la accesibilidad universal de la información contenida en su sitio web (Sitio web). El diseño del sitio web está optimizado para garantizar una amplia legibilidad y facilidad de uso, que incluye criterios y características de accesibilidad para personas con discapacidades, para que puedan ver, comprender, navegar, interactuar y contribuir al sitio web de manera efectiva.</value>
   </data>

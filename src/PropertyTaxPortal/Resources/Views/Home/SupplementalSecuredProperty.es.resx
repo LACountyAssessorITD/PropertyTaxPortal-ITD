@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto suplementario sobre la propiedad asegurada</value>
+  </data>
   <data name="Supplemental Property Bill" xml:space="preserve">
     <value>Ley de propiedad suplementaria</value>
   </data>
@@ -241,7 +244,7 @@
     <value>El monto del total de impuestos adeudados y pagaderos por este</value>
   </data>
   <data name="bill.  See Field Number 12 for installment amounts and due dates." xml:space="preserve">
-    <value>cuenta. Ver el número de campo 12 para conocer los montos de las cuotas y las fechas de vencimiento</value>
+    <value>cuenta. Consulte el Número de campo 12 para conocer los montos de las cuotas y las fechas de vencimiento.</value>
   </data>
   <data name="Proration Factor" xml:space="preserve">
     <value>Factor de prorrateo</value>

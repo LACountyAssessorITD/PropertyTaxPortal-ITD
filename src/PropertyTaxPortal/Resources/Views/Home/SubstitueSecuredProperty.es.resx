@@ -124,7 +124,7 @@
     <value>La Factura de Impuesto a la Propiedad Garantizada de Sustituto sustituye a las Facturas Anuales de Impuestos a la Propiedad Garantizadas o Suplementarias. La factura</value>
   </data>
   <data name="can be used to remit payment or serve as a record of payment activity as of the date the bill was printed." xml:space="preserve">
-    <value>se puede utilizar para remitir el pago o servir como un registro de la actividad de pago a partir de la fecha en que se imprimió la factura.</value>
+    <value>se puede utilizar para remitir el pago o servir como un registro de la actividad de pago a partir de la fecha de impresión de la factura.</value>
   </data>
   <data name="Assessor Identification Number" xml:space="preserve">
     <value>Número de identificación del asesor</value>
@@ -133,7 +133,7 @@
     <value>Esta área identifica el Número de Identificación del Evaluador - (1234-567-890). El Número de Identificación del Evaluador (AIN) es un</value>
   </data>
   <data name="ten-digit number assigned by the Office of the Assessor to each piece of real property in Los Angeles County. This ten-digit AIN is made up of a four-digit Map " xml:space="preserve">
-    <value>Número de diez dígitos asignado por la Oficina del Asesor a cada parte de los bienes inmuebles en el Condado de Los Angeles. Este AIN de diez dígitos se compone de un mapa de cuatro dígitos</value>
+    <value>Número de diez dígitos asignado por la Oficina del Asesor a cada parte de bienes inmuebles en el Condado de Los Angeles. Este AIN de diez dígitos se compone de un mapa de cuatro dígitos</value>
   </data>
   <data name="Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
     <value>Número de libro (1234), número de página de tres dígitos (567) y número de paquete de tres dígitos (890).</value>
@@ -199,7 +199,7 @@
     <value>Valor estimado actual</value>
   </data>
   <data name="The Assessor’s valuation of the property after the adjustment." xml:space="preserve">
-    <value>La valoración de la propiedad por parte del Asesor después del ajuste.</value>
+    <value>La valoración de la propiedad por parte del Evaluador después del ajuste.</value>
   </data>
   <data name="Prior Assessed Value" xml:space="preserve">
     <value>Valor previamente evaluado</value>
@@ -256,7 +256,7 @@
     <value>Hacer cheques a pagar</value>
   </data>
   <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s) with the payment " xml:space="preserve">
-    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Angeles y envíelos por correo a esta dirección. Incluya el talonario de pago con el pago</value>
+    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Ángeles y envíelos a esta dirección. Incluya el talonario de pago con el pago</value>
   </data>
   <data name="and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
     <value>y escriba el número de identificación del asesor y el año / número de secuencia en el cheque.</value>
@@ -277,7 +277,7 @@
     <value>Importe de los impuestos adeudados por la primera cuota. Los contribuyentes deben asegurarse de incluir el talón de pago con cualquier tipo de pago y escribir</value>
   </data>
   <data name=" Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s) with the payment " xml:space="preserve">
-    <value> Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Angeles y envíelos por correo a esta dirección. Incluya el talonario de pago con el pago</value>
+    <value> Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Ángeles y envíelos a esta dirección. Incluya el talonario de pago con el pago</value>
   </data>
   <data name="The Substitute Secured Property Tax Bill is in lieu of the Annual Secured or Supplemental Property Tax Bills. The bill " xml:space="preserve">
     <value>La Factura de Impuesto a la Propiedad Garantizada de Sustituto sustituye a las Facturas Anuales de Impuestos a la Propiedad Garantizadas o Suplementarias. La factura</value>
@@ -418,7 +418,7 @@
     <value>Haga un pago y escriba el Número de Identificación del Asesor y el Año / Número de Secuencia en el cheque.</value>
   </data>
   <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment" xml:space="preserve">
-    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Angeles y envíelos por correo a esta dirección. Incluir el pago</value>
+    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Ángeles y envíelos a esta dirección. Incluir el pago</value>
   </data>
   <data name="stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
     <value>apunte el pago y escriba el Número de Identificación del Evaluador y el Número de Año / Secuencia en el cheque.</value>
@@ -439,7 +439,7 @@
     <value>Si el pago no se realiza antes de la fecha de vencimiento, remita la cantidad aquí indicada. Incluya el talonario de pago con el pago</value>
   </data>
   <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)" xml:space="preserve">
-    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Angeles y envíelos por correo a esta dirección. Incluir el talón de pago (s)</value>
+    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Ángeles y envíelos a esta dirección. Incluir el talón de pago (s)</value>
   </data>
   <data name="with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
     <value>con el pago y escriba el Número de Identificación del Evaluador y el Año / Número de Secuencia en el cheque.</value>
