@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PRIVACY POLICY" xml:space="preserve">
+    <value>CHÍNH SÁCH BẢO MẬT</value>
+  </data>
+  <data name="The Board of Supervisors of Los Angeles County recognizes the public’s concern about privacy on the Internet. This privacy statement establishes how information gathered about you from your visit to our website will be used by this website’s operators. As a visitor, however, you should be aware that much information submitted to Los Angeles County is public information under the laws of the State of California. Under some circumstances, we may be required to disclose such information in accordance with the California Public Records Act or other legal requirements." xml:space="preserve">
+    <value>Ban kiểm soát của Hạt Los Angeles nhận ra mối quan tâm của cộng đồng về quyền riêng tư trên Internet. Tuyên bố về quyền riêng tư này thiết lập cách thông tin thu thập về bạn từ chuyến thăm của bạn đến trang web của chúng tôi sẽ được sử dụng bởi trang web này. Tuy nhiên, với tư cách là khách truy cập, bạn nên biết rằng nhiều thông tin được gửi tới Hạt Los Angeles là thông tin công khai theo luật của Bang California. Trong một số trường hợp, chúng tôi có thể được yêu cầu tiết lộ thông tin đó theo Đạo luật Hồ sơ Công cộng California hoặc các yêu cầu pháp lý khác.</value>
+  </data>
+  <data name="The following describes how information may be collected depending on your activities at this website:" xml:space="preserve">
+    <value>Phần sau đây mô tả cách thu thập thông tin tùy thuộc vào hoạt động của bạn tại trang web này:</value>
+  </data>
+  <data name="If you read or download information:" xml:space="preserve">
+    <value>Nếu bạn đọc hoặc tải thông tin:</value>
+  </data>
+  <data name="We may collect and store information for statistical purposes. For example, we may count the number of visitors to the different sections of our site to help us make them more useful. The information collected may include such items as the name and domain of the host from which you access the Internet, the Internet Protocol (IP) address of the computer you are using or your browser software and operating system. This information does not identify you personally." xml:space="preserve">
+    <value>Chúng tôi có thể thu thập và lưu trữ thông tin cho mục đích thống kê. Ví dụ: chúng tôi có thể đếm số lượng khách truy cập vào các phần khác nhau trên trang web của chúng tôi để giúp chúng tôi làm cho chúng hữu ích hơn. Thông tin được thu thập có thể bao gồm các mục như tên và miền của máy chủ mà bạn truy cập Internet, địa chỉ Giao thức Internet (IP) của máy tính bạn đang sử dụng hoặc phần mềm trình duyệt và hệ điều hành. Thông tin này không xác định cá nhân bạn.</value>
+  </data>
+  <data name="If you send E-mail to this website:" xml:space="preserve">
+    <value>Nếu bạn gửi E-mail đến trang web này:</value>
+  </data>
+  <data name="By sending us an electronic mail message, you may be sending us personal information (i.e., your name, address, e-mail address, etc.). We may store the name and address of the requester in order to respond to the request or otherwise resolve the subject matter of your e-mail." xml:space="preserve">
+    <value>Bằng cách gửi cho chúng tôi một tin nhắn thư điện tử, bạn có thể gửi cho chúng tôi thông tin cá nhân (nghĩa là tên, địa chỉ, địa chỉ email, v.v.) của bạn. Chúng tôi có thể lưu trữ tên và địa chỉ của người yêu cầu để đáp ứng yêu cầu hoặc giải quyết vấn đề khác trong e-mail của bạn.</value>
+  </data>
+  <data name="If you register with a County Department or agency or request other specific information:" xml:space="preserve">
+    <value>Nếu bạn đăng ký với Sở hoặc cơ quan hoặc yêu cầu thông tin cụ thể khác:</value>
+  </data>
+  <data name="Some County department or agency websites may ask visitors who request specific information to fill out a registration form. For example, vendors requesting access to Requests for Bids, Requests for Proposals or homeowners or businesses requesting Permits, may be asked to provide their names, addresses, e-mail addresses and other pertinent information to ensure we can process and deliver the information requested. Other information may be collected at these sites through questionnaires, feedback forms, or other means, to enable us to determine a visitor’s interests, with the goal of providing better service." xml:space="preserve">
+    <value>Một số trang web của cơ quan hoặc cơ quan của Quận có thể yêu cầu khách truy cập yêu cầu thông tin cụ thể để điền vào mẫu đăng ký. Ví dụ: nhà cung cấp yêu cầu quyền truy cập vào Yêu cầu chào giá, Yêu cầu đề xuất hoặc chủ nhà hoặc doanh nghiệp yêu cầu Giấy phép, có thể được yêu cầu cung cấp tên, địa chỉ, địa chỉ email và thông tin thích hợp khác để đảm bảo chúng tôi có thể xử lý và cung cấp thông tin được yêu cầu. Các thông tin khác có thể được thu thập tại các trang web này thông qua bảng câu hỏi, biểu mẫu phản hồi hoặc phương tiện khác, để cho phép chúng tôi xác định sở thích của khách truy cập, với mục tiêu cung cấp dịch vụ tốt hơn.</value>
+  </data>
+  <data name="Links to Non-Los Angeles County (Third Party) Websites" xml:space="preserve">
+    <value>Liên kết đến các trang web không thuộc Quận Los Angeles (bên thứ ba)</value>
+  </data>
+  <data name="Our website also contains links to information located on websites maintained by other public agencies and private organizations. Once you access an individual document that links you to another website, you are subject to the privacy policy of the website containing that document." xml:space="preserve">
+    <value>Trang web của chúng tôi cũng chứa các liên kết đến thông tin trên các trang web được duy trì bởi các cơ quan công cộng và các tổ chức tư nhân khác. Khi bạn truy cập một tài liệu riêng lẻ liên kết bạn đến một trang web khác, bạn phải tuân theo chính sách quyền riêng tư của trang web có chứa tài liệu đó.</value>
+  </data>
+  <data name="About Cookies" xml:space="preserve">
+    <value>Giới thiệu về Cookies</value>
+  </data>
+  <data name="A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server." xml:space="preserve">
+    <value>Cookie là một tệp chứa mã định danh (chuỗi ký tự và số) được gửi bởi máy chủ web tới trình duyệt web và được trình duyệt lưu trữ. Mã định danh sau đó được gửi trở lại máy chủ mỗi khi trình duyệt yêu cầu một trang từ máy chủ.</value>
+  </data>
+  <data name="Cookies may be either &quot;persistent&quot; cookies or &quot;session&quot; cookies. A persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed." xml:space="preserve">
+    <value>Cookie có thể là cookie "liên tục" hoặc cookie "phiên". Một cookie liên tục sẽ được lưu trữ bởi một trình duyệt web và sẽ còn hiệu lực cho đến ngày hết hạn, trừ khi người dùng xóa trước ngày hết hạn; mặt khác, cookie phiên sẽ hết hạn vào cuối phiên người dùng khi đóng trình duyệt web.</value>
+  </data>
+  <data name="Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies." xml:space="preserve">
+    <value>Cookie thường không chứa bất kỳ thông tin nào nhận dạng cá nhân người dùng, nhưng thông tin cá nhân mà chúng tôi lưu trữ về bạn có thể được liên kết với thông tin được lưu trữ và lấy từ cookie.</value>
+  </data>
+  <data name="Cookies We Use" xml:space="preserve">
+    <value>Cookies chúng tôi sử dụng</value>
+  </data>
+  <data name="When your browser or device allows it, we use both session cookies and persistent cookies to better understand how you interact with our services, to monitor aggregate usage patterns, and to personalize and otherwise operate our services." xml:space="preserve">
+    <value>Khi trình duyệt hoặc thiết bị của bạn cho phép, chúng tôi sử dụng cả cookie phiên và cookie liên tục để hiểu rõ hơn cách bạn tương tác với các dịch vụ của chúng tôi, để theo dõi các mẫu sử dụng tổng hợp và cá nhân hóa và vận hành các dịch vụ của chúng tôi.</value>
+  </data>
+  <data name="We also use cookies for the following purposes:" xml:space="preserve">
+    <value>Chúng tôi cũng sử dụng cookie cho các mục đích sau:</value>
+  </data>
+  <data name="a. authentication - to identify you when you visit our website and as you navigate our website" xml:space="preserve">
+    <value>a. xác thực - để xác định bạn khi bạn truy cập trang web của chúng tôi và khi bạn điều hướng trang web của chúng tôi</value>
+  </data>
+  <data name="b. status - to help us to determine if you are logged into our website" xml:space="preserve">
+    <value>b. trạng thái - để giúp chúng tôi xác định xem bạn đã đăng nhập vào trang web của chúng tôi chưa</value>
+  </data>
+  <data name="c. personalization - to store information about your preferences and to personalize our website for you" xml:space="preserve">
+    <value>c. cá nhân hóa - để lưu trữ thông tin về sở thích của bạn và cá nhân hóa trang web của chúng tôi cho bạn</value>
+  </data>
+  <data name="d. security - as an element of the security measures used to protect user accounts, including preventing fraudulent use of login credentials and to protect our website and services generally" xml:space="preserve">
+    <value>d. bảo mật - là một yếu tố của các biện pháp bảo mật được sử dụng để bảo vệ tài khoản người dùng, bao gồm ngăn chặn sử dụng gian lận thông tin đăng nhập và để bảo vệ trang web và dịch vụ của chúng tôi nói chung</value>
+  </data>
+  <data name="e. advertising - to help us display advertisements that will be relevant to you;" xml:space="preserve">
+    <value>e. quảng cáo - để giúp chúng tôi hiển thị các quảng cáo sẽ phù hợp với bạn;</value>
+  </data>
+  <data name="f. analysis - to help us analyze the use and performance of our website and services." xml:space="preserve">
+    <value>f. phân tích - để giúp chúng tôi phân tích việc sử dụng và hiệu suất của trang web và dịch vụ của chúng tôi.</value>
+  </data>
+  <data name="Cookies Used by Our Third-Party Providers" xml:space="preserve">
+    <value>Cookies được sử dụng bởi các nhà cung cấp bên thứ ba của chúng tôi</value>
+  </data>
+  <data name="Our service providers use cookies and those cookies may be stored on your computer when you visit our Service." xml:space="preserve">
+    <value>Các nhà cung cấp dịch vụ của chúng tôi sử dụng cookie và những cookie đó có thể được lưu trữ trên máy tính của bạn khi bạn truy cập Dịch vụ của chúng tôi.</value>
+  </data>
+  <data name="We use Google Analytics to analyze the use of our website. Google Analytics gathers information about website use by means of cookies. The information gathered relating to our website is used to create reports about the use of our website." xml:space="preserve">
+    <value>Chúng tôi sử dụng Google Analytics để phân tích việc sử dụng trang web của chúng tôi. Google Analytics thu thập thông tin về việc sử dụng trang web bằng cookie. Thông tin được thu thập liên quan đến trang web của chúng tôi được sử dụng để tạo báo cáo về việc sử dụng trang web của chúng tôi.</value>
+  </data>
+  <data name="We, and other third parties we work with, place cookies when you visit the Services and when you open emails that we send you in order to provide you more specific content about services we or our third-party providers offer. For instance, we publish Google AdSense advertisements on our website. To determine your interests, Google will track your behavior on our website and on other websites across the web using cookies." xml:space="preserve">
+    <value>Chúng tôi và các bên thứ ba khác mà chúng tôi hợp tác, đặt cookie khi bạn truy cập Dịch vụ và khi bạn mở email mà chúng tôi gửi cho bạn để cung cấp cho bạn nội dung cụ thể hơn về các dịch vụ mà chúng tôi hoặc nhà cung cấp bên thứ ba của chúng tôi cung cấp. Ví dụ: chúng tôi xuất bản quảng cáo Google AdSense trên trang web của chúng tôi. Để xác định sở thích của bạn, Google sẽ theo dõi hành vi của bạn trên trang web của chúng tôi và trên các trang web khác trên web bằng cookie.</value>
+  </data>
+  <data name="Managing Cookies" xml:space="preserve">
+    <value>Quản lý cookie</value>
+  </data>
+  <data name="Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser and from version to version. Please refer to your browser documentation on how to manage your cookies." xml:space="preserve">
+    <value>Hầu hết các trình duyệt cho phép bạn từ chối chấp nhận cookie và xóa cookie. Các phương pháp để làm như vậy khác nhau từ trình duyệt đến trình duyệt và từ phiên bản sang phiên bản. Vui lòng tham khảo tài liệu trình duyệt của bạn về cách quản lý cookie của bạn.</value>
+  </data>
+  <data name="Blocking all or some cookies may have a negative impact upon the usability of the Services." xml:space="preserve">
+    <value>Chặn tất cả hoặc một số cookie có thể có tác động tiêu cực đến khả năng sử dụng Dịch vụ.</value>
+  </data>
+</root>

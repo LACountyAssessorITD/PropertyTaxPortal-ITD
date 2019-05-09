@@ -107,7 +107,14 @@ namespace PropertyTaxPortal
                     {
                         new CultureInfo("en-US"),
                         new CultureInfo("es"),
-                        new CultureInfo("fr")
+                        new CultureInfo("fr"),
+                        new CultureInfo("zh"),
+                        new CultureInfo("zh-TW"),
+                        new CultureInfo("hy"),
+                        new CultureInfo("ko"),
+                        new CultureInfo("fa"),
+                        new CultureInfo("ru"),
+                        new CultureInfo("vi")
                     };
 
                 options.DefaultRequestCulture = new RequestCulture("en-US");
@@ -158,8 +165,15 @@ namespace PropertyTaxPortal
             var supportedCultures = new[]
             {
                 new CultureInfo("en-US"),
-                new CultureInfo("es"),
-                new CultureInfo("fr")
+                        new CultureInfo("es"),
+                        new CultureInfo("fr"),
+                        new CultureInfo("zh"),
+                        new CultureInfo("zh-TW"),
+                        new CultureInfo("hy"),
+                        new CultureInfo("ko"),
+                        new CultureInfo("fa"),
+                        new CultureInfo("ru"),
+                        new CultureInfo("vi")
             };
 
             app.UseRequestLocalization(new RequestLocalizationOptions

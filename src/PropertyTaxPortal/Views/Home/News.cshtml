@@ -15,7 +15,7 @@
     <h2 class="display-4">@Localizer["NEWS & ANNOUNCEMENTS"]</h2>
 </section>
 <section class="news-title p-3">
-    <h4 class="feat">Featured Articles</h4>
+    <h4 class="feat">@Localizer["Featured Articles"]</h4>
 </section>
 
 <section class="news-landing container-fluid mb-5">
@@ -25,8 +25,8 @@
         {
         <div class="col-md-4 ">
             <div class="p-2 newsbox mx-auto">
-                <strong class="head">@Html.DisplayFor(modelItem => item.Title)</strong>
-                <p>@Html.DisplayFor(modelItem => item.Caption)</p>
+                <strong class="head">@Localizer[@Html.Raw(item.Title).ToString()]</strong>
+                <p>@Localizer[@Html.Raw(item.Caption).ToString()]</p>
                 <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding">Read More..</a>
             </div>
         </div>

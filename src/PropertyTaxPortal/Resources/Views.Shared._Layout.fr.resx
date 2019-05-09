@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Property Tax Portal" xml:space="preserve">
-    <value>Portail de l'impôt foncier</value>
-  </data>
   <data name="Home" xml:space="preserve">
     <value>Accueil</value>
   </data>
@@ -138,7 +135,7 @@
   <data name="Tax Tools" xml:space="preserve">
     <value>Outils fiscaux</value>
   </data>
-  <data name="Property Tax Managment System" xml:space="preserve">
+  <data name="Property Tax Management System" xml:space="preserve">
     <value>Système de gestion des taxes foncières</value>
   </data>
   <data name="Multiple Parcel Inquires" xml:space="preserve">
@@ -166,16 +163,13 @@
     <value>Formes</value>
   </data>
   <data name="Assessor" xml:space="preserve">
-    <value>Assesso</value>
+    <value>Assesseur</value>
   </data>
   <data name="Assessment Appeals Board" xml:space="preserve">
     <value>Commission d'appel en matière d'évaluation</value>
   </data>
   <data name="Auditor-Controller" xml:space="preserve">
-    <value>Auditeur Contrôlé</value>
-  </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
-    <value>Trésorier et Collecto Fiscal</value>
+    <value>Auditeur Contrôleur</value>
   </data>
   <data name="Property Valuation" xml:space="preserve">
     <value>Évaluation des biens</value>
@@ -184,13 +178,13 @@
     <value>Contester la valeur de votre propriété</value>
   </data>
   <data name="Property Data &amp; Maps" xml:space="preserve">
-    <value>Données de la propriété et cartes</value>
+    <value>Données de propriété et cartes</value>
   </data>
-  <data name="Supplemental Tax Estimato" xml:space="preserve">
-    <value>Estimation de taxe supplémentaire</value>
+  <data name="Supplemental Tax Estimator" xml:space="preserve">
+    <value>Estimateur de taxes supplémentaire</value>
   </data>
-  <data name="Payment Options" xml:space="preserve">
-    <value>Options de paiement</value>
+  <data name="Payment Information" xml:space="preserve">
+    <value>Informations de paiement</value>
   </data>
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>Combien dois-je?</value>
@@ -200,6 +194,9 @@
   </data>
   <data name="Other Payment Options" xml:space="preserve">
     <value>Autres options de paiement</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Factures d'impôts</value>
   </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Facture annuelle d'impôt foncier garanti</value>
@@ -240,12 +237,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>FAQ</value>
   </data>
-  <data name="All FAQs" xml:space="preserve">
-    <value>Toutes les FAQ</value>
-  </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>Factures d'impôts</value>
-  </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>Remboursements / vente de taxe / privilèges de taxe</value>
   </data>
@@ -255,17 +246,20 @@
   <data name="Ownership" xml:space="preserve">
     <value>La possession</value>
   </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Enregistrement d'agent fiscal</value>
+  </data>
+  <data name="All FAQs" xml:space="preserve">
+    <value>Toutes les FAQ</value>
+  </data>
   <data name="News" xml:space="preserve">
     <value>Nouvelles</value>
   </data>
   <data name="Contact Us" xml:space="preserve">
     <value>Contactez nous</value>
   </data>
-  <data name="Auditor-Controller" xml:space="preserve">
-    <value>Auditeur-Contrôleur</value>
-  </data>
-  <data name="LA County Contacts" xml:space="preserve">
-    <value>Contacts du comté de LA</value>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>Trésorier et percepteur des impôts</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">
     <value>Enquête publique</value>
@@ -282,23 +276,23 @@
   <data name="LA County Helps" xml:space="preserve">
     <value>Aide du comté de LA</value>
   </data>
+  <data name="Online Services" xml:space="preserve">
+    <value>Services en ligne</value>
+  </data>
   <data name="Public Alerts" xml:space="preserve">
     <value>Alertes Publiques</value>
   </data>
   <data name="Public Information" xml:space="preserve">
     <value>Information publique</value>
   </data>
-  <data name="About" xml:space="preserve">
-    <value>Sur</value>
+  <data name="Site Info" xml:space="preserve">
+    <value>Informations sur le site</value>
   </data>
-  <data name="Disclaime" xml:space="preserve">
-    <value>Disclaime</value>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Avertissement</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>Politique de confidentialité</value>
-  </data>
-  <data name="Site Info" xml:space="preserve">
-    <value>Informations sur le site</value>
   </data>
   <data name="Accessibility" xml:space="preserve">
     <value>Accessibilité</value>
@@ -306,22 +300,22 @@
   <data name="Language" xml:space="preserve">
     <value>La langue</value>
   </data>
-  <data name="Browser Cmompatibility" xml:space="preserve">
-    <value>Compatibilité du navigateur</value>
-  </data>
   <data name="Public Info" xml:space="preserve">
     <value>Information publique</value>
   </data>
   <data name="Board Correspondence" xml:space="preserve">
     <value>Correspondance du conseil</value>
   </data>
-  <data name="Board Ageneda" xml:space="preserve">
-    <value>Conseil Ageneda</value>
+  <data name="Board Agenda" xml:space="preserve">
+    <value>Ordre du jour du conseil</value>
   </data>
   <data name="County Code" xml:space="preserve">
     <value>Code du comté</value>
   </data>
-  <data name="Online Services" xml:space="preserve">
-    <value>Services en ligne</value>
+  <data name="LA County Contacts" xml:space="preserve">
+    <value>Contacts du comté de LA</value>
+  </data>
+  <data name="Other Government Sites" xml:space="preserve">
+    <value>Autres sites gouvernementaux</value>
   </data>
 </root>

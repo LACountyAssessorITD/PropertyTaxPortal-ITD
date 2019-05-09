@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Home" xml:space="preserve">
+    <value>տուն</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>Գույքի հարկային ակնարկ</value>
+  </data>
+  <data name="How the Property Tax System Works" xml:space="preserve">
+    <value>Ինչպես է գույքի հարկի համակարգը գործում</value>
+  </data>
+  <data name="Areas of Responsibliity" xml:space="preserve">
+    <value>Պատասխանատվության ոլորտները</value>
+  </data>
+  <data name="Tax Tools" xml:space="preserve">
+    <value>Հարկային գործիքներ</value>
+  </data>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>Գույքահարկի կառավարման համակարգ</value>
+  </data>
+  <data name="Multiple Parcel Inquires" xml:space="preserve">
+    <value>Բազմակի ծանրոցների հարցումներ</value>
+  </data>
+  <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
+    <value>Խուսափեք տուգանքներից `փոխըմբռնման նշանաբանների միջոցով</value>
+  </data>
+  <data name="Penalty Cancellations" xml:space="preserve">
+    <value>Տուգանքների չեղարկում</value>
+  </data>
+  <data name="Property Address Search" xml:space="preserve">
+    <value>Գույքի հասցեի որոնում</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Նոր տան սեփականատերեր</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Նոր բիզնեսի սեփականատերեր</value>
+  </data>
+  <data name="Quick Links" xml:space="preserve">
+    <value>Արագ հղումներ</value>
+  </data>
+  <data name="Forms" xml:space="preserve">
+    <value>Ձեւերը</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Գնահատող</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Գնահատման բողոքարկման խորհուրդ</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Աուդիտոր-վերահսկիչ</value>
+  </data>
+  <data name="Property Valuation" xml:space="preserve">
+    <value>Գույքի գնահատում</value>
+  </data>
+  <data name="Contesting Your Property Value" xml:space="preserve">
+    <value>Մրցում ձեր գույքի արժեքը</value>
+  </data>
+  <data name="Property Data &amp; Maps" xml:space="preserve">
+    <value>Property Data &amp; Maps- ը</value>
+  </data>
+  <data name="Supplemental Tax Estimator" xml:space="preserve">
+    <value>Հավելյալ հարկային հաշվարկ</value>
+  </data>
+  <data name="Payment Information" xml:space="preserve">
+    <value>Վճարային տեղեկություններ</value>
+  </data>
+  <data name="How Much Do I Owe?" xml:space="preserve">
+    <value>Որքան ես պարտական եմ:</value>
+  </data>
+  <data name="Pay Online" xml:space="preserve">
+    <value>Վճարեք առցանց</value>
+  </data>
+  <data name="Other Payment Options" xml:space="preserve">
+    <value>Այլ վճարման տարբերակներ</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Հարկային օրինագծերը</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill" xml:space="preserve">
+    <value>Տարեկան ապահովված գույքի հարկի մասին օրինագիծ</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill Insert" xml:space="preserve">
+    <value>Տարեկան ապահովագրված գույքի հարկային բլոկի ներդիրը</value>
+  </data>
+  <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
+    <value>Տարեկան ապահովված գույքի հարկային տեղեկատվության հայտարարագիր</value>
+  </data>
+  <data name="Notice of Delinquency" xml:space="preserve">
+    <value>Պարտավորության ծանուցում</value>
+  </data>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Ապահովված գույքի հարկի մասին օրենքի փոխարինում</value>
+  </data>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Լրացուցիչ ապահովված գույքահարկի մասին օրինագիծ</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Անշարժ գույքի հարկի մասին օրենքը</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Ապահովված չլինելու նախորդ տարվա օրինագիծը</value>
+  </data>
+  <data name="Payment Activity Notice" xml:space="preserve">
+    <value>Վճարման գործողությունների ծանուցում</value>
+  </data>
+  <data name="Statement of Prior Year Taxes" xml:space="preserve">
+    <value>Նախորդ հարկերի հայտարարագիր</value>
+  </data>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Փոփոխված տարեկան գույքի հարկի մասին օրինագիծը</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Կատարված լրացուցիչ գույքի հարկի մասին օրինագիծ</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>ՀՏՀ</value>
+  </data>
+  <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
+    <value>Փոխհատուցում / հարկերի վաճառք / հարկային պարտավորություններ</value>
+  </data>
+  <data name="Property Values" xml:space="preserve">
+    <value>Գույքի արժեքները</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Սեփականություն</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Հարկային գործակալի գրանցում</value>
+  </data>
+  <data name="All FAQs" xml:space="preserve">
+    <value>Բոլոր հարցերը</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Նորություններ</value>
+  </data>
+  <data name="Contact Us" xml:space="preserve">
+    <value>Կապ մեզ հետ</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>Գանձապահ եւ հարկային հավաքիչ</value>
+  </data>
+  <data name="Public Inquiry" xml:space="preserve">
+    <value>Հանրային քննարկում</value>
+  </data>
+  <data name="Enriching Lives" xml:space="preserve">
+    <value>Հարստացնելով կյանքը</value>
+  </data>
+  <data name="Do You Need Help?" xml:space="preserve">
+    <value>Ձեզ օգնություն պետք է?</value>
+  </data>
+  <data name="211 LA County" xml:space="preserve">
+    <value>211 LA վարչաշրջան</value>
+  </data>
+  <data name="LA County Helps" xml:space="preserve">
+    <value>Լոս Անջելեսը օգնում է</value>
+  </data>
+  <data name="Online Services" xml:space="preserve">
+    <value>Առցանց ծառայություններ</value>
+  </data>
+  <data name="Public Alerts" xml:space="preserve">
+    <value>Հանրային ծանուցումներ</value>
+  </data>
+  <data name="Public Information" xml:space="preserve">
+    <value>Հանրային տեղեկատվություն</value>
+  </data>
+  <data name="Site Info" xml:space="preserve">
+    <value>Կայքի տեղեկություններ</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Գաղտնիության քաղաքականություն</value>
+  </data>
+  <data name="Accessibility" xml:space="preserve">
+    <value>Մատչելիություն</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Լեզու</value>
+  </data>
+  <data name="Public Info" xml:space="preserve">
+    <value>Հանրային տեղեկատվություն</value>
+  </data>
+  <data name="Board Correspondence" xml:space="preserve">
+    <value>Խորհրդի նամակագրությունը</value>
+  </data>
+  <data name="Board Agenda" xml:space="preserve">
+    <value>Խորհրդի օրակարգ</value>
+  </data>
+  <data name="County Code" xml:space="preserve">
+    <value>Վարչաշրջանի օրենսգրքում</value>
+  </data>
+  <data name="LA County Contacts" xml:space="preserve">
+    <value>Լոս Անջելեսի Կոնտակտներ</value>
+  </data>
+  <data name="Other Government Sites" xml:space="preserve">
+    <value>Այլ Կառավարության կայքեր</value>
+  </data>
+</root>

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Impuesto anual ajustado a la propiedad</value>
+  </data>
   <data name="Adjusted Secured Property Tax Bill" xml:space="preserve">
     <value>Impuesto ajustado a la propiedad asegurada</value>
   </data>
@@ -271,7 +274,7 @@
     <value>Este es el monto total adeudado por la factura. El anual</value>
   </data>
   <data name="Secured Property Tax Bill has two payment stubs. The first installment is due &lt;br&gt;November 1 and is" xml:space="preserve">
-    <value>Cuenta de impuestos de propiedad asegurada tiene dos talones de pago. La primera cuota vence el 1 de noviembre y es</value>
+    <value>Cuenta de impuestos de propiedad asegurada tiene dos talonarios de pago. La primera cuota vence el 1 de noviembre y es</value>
   </data>
   <data name="delinquent December 10.  If the first installment is not received or" xml:space="preserve">
     <value>delincuente el 10 de diciembre. Si no se recibe la primera cuota o</value>
@@ -364,7 +367,7 @@
     <value>factura a plazos, el segundo pago debe ser recibido o el Servicio Postal de los Estados Unidos</value>
   </data>
   <data name="postmarked by this date, or a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
-    <value>matasellos para esta fecha, o se impondrá una multa del 10 por ciento y un costo de $ 10.00.</value>
+    <value>matasellos para esta fecha, o se impondrá una multa del 10% y un costo de $ 10.00.</value>
   </data>
   <data name="2nd Installment Due" xml:space="preserve">
     <value>2º pago debido</value>

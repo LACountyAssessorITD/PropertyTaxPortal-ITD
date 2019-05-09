@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Property Tax Portal" xml:space="preserve">
-    <value>Portal de impuestos a la propiedad</value>
-  </data>
   <data name="Home" xml:space="preserve">
     <value>Casa</value>
   </data>
@@ -138,7 +135,7 @@
   <data name="Tax Tools" xml:space="preserve">
     <value>Herramientas de impuestos</value>
   </data>
-  <data name="Property Tax Managment System" xml:space="preserve">
+  <data name="Property Tax Management System" xml:space="preserve">
     <value>Sistema de gestión de impuestos a la propiedad</value>
   </data>
   <data name="Multiple Parcel Inquires" xml:space="preserve">
@@ -166,16 +163,13 @@
     <value>Formas</value>
   </data>
   <data name="Assessor" xml:space="preserve">
-    <value>Evaluar</value>
+    <value>Asesor</value>
   </data>
   <data name="Assessment Appeals Board" xml:space="preserve">
     <value>Junta de Apelaciones de Evaluación</value>
   </data>
   <data name="Auditor-Controller" xml:space="preserve">
-    <value>Auditor-Controlle</value>
-  </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
-    <value>Tesorero y recaudador de impuestos</value>
+    <value>Auditor-controlador</value>
   </data>
   <data name="Property Valuation" xml:space="preserve">
     <value>Valoración de la propiedad</value>
@@ -187,10 +181,10 @@
     <value>Datos de propiedad y mapas</value>
   </data>
   <data name="Supplemental Tax Estimator" xml:space="preserve">
-    <value>Estimato de Impuestos Suplementario</value>
+    <value>Estimador de impuestos suplementario</value>
   </data>
-  <data name="Payment Options" xml:space="preserve">
-    <value>Opciones de pago</value>
+  <data name="Payment Information" xml:space="preserve">
+    <value>Información del pago</value>
   </data>
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>¿Cuánto debo?</value>
@@ -201,6 +195,9 @@
   <data name="Other Payment Options" xml:space="preserve">
     <value>Otras opciones de pago</value>
   </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Facturas de impuestos</value>
+  </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Impuesto anual de propiedad garantizada</value>
   </data>
@@ -208,7 +205,7 @@
     <value>Impuesto anual a la propiedad asegurada</value>
   </data>
   <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
-    <value>Declaración anual de información sobre el impuesto a la propiedad garantizada</value>
+    <value>Declaración anual de información de impuestos garantizados</value>
   </data>
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Aviso de Delincuencia</value>
@@ -240,12 +237,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>Preguntas más frecuentes</value>
   </data>
-  <data name="All FAQs" xml:space="preserve">
-    <value>Todas las preguntas frecuentes</value>
-  </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>Facturas de impuestos</value>
-  </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>Reembolsos / ventas de impuestos / gravámenes fiscales</value>
   </data>
@@ -255,17 +246,20 @@
   <data name="Ownership" xml:space="preserve">
     <value>Propiedad</value>
   </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Registro de agente de impuestos</value>
+  </data>
+  <data name="All FAQs" xml:space="preserve">
+    <value>Todas las preguntas frecuentes</value>
+  </data>
   <data name="News" xml:space="preserve">
     <value>Noticias</value>
   </data>
   <data name="Contact Us" xml:space="preserve">
     <value>Contáctenos</value>
   </data>
-  <data name="Auditor-Controller" xml:space="preserve">
-    <value>Auditor-Controlle</value>
-  </data>
-  <data name="LA County Contacts" xml:space="preserve">
-    <value>Contactos del Condado de Los Angeles</value>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>Tesorero y recaudador de impuestos</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">
     <value>Consulta pública</value>
@@ -282,23 +276,23 @@
   <data name="LA County Helps" xml:space="preserve">
     <value>Ayuda del Condado de Los Angeles</value>
   </data>
+  <data name="Online Services" xml:space="preserve">
+    <value>Servicios en línea</value>
+  </data>
   <data name="Public Alerts" xml:space="preserve">
     <value>Alertas publicas</value>
   </data>
   <data name="Public Information" xml:space="preserve">
     <value>Información pública</value>
   </data>
-  <data name="About" xml:space="preserve">
-    <value>Acerca de</value>
+  <data name="Site Info" xml:space="preserve">
+    <value>Información del sitio</value>
   </data>
-  <data name="Disclaime" xml:space="preserve">
-    <value>Disclaime</value>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Renuncia</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>Política de privacidad</value>
-  </data>
-  <data name="Site Info" xml:space="preserve">
-    <value>Información del sitio</value>
   </data>
   <data name="Accessibility" xml:space="preserve">
     <value>Accesibilidad</value>
@@ -306,22 +300,22 @@
   <data name="Language" xml:space="preserve">
     <value>Idioma</value>
   </data>
-  <data name="Browser Cmompatibility" xml:space="preserve">
-    <value>Compatibilidad del navegador</value>
-  </data>
   <data name="Public Info" xml:space="preserve">
     <value>Información pública</value>
   </data>
   <data name="Board Correspondence" xml:space="preserve">
     <value>Correspondencia de la Junta</value>
   </data>
-  <data name="Board Ageneda" xml:space="preserve">
-    <value>Ageneda Junta</value>
+  <data name="Board Agenda" xml:space="preserve">
+    <value>Agenda de la Junta</value>
   </data>
   <data name="County Code" xml:space="preserve">
     <value>Código del Condado</value>
   </data>
-  <data name="Online Services" xml:space="preserve">
-    <value>Servicios en línea</value>
+  <data name="LA County Contacts" xml:space="preserve">
+    <value>Contactos del Condado de Los Angeles</value>
+  </data>
+  <data name="Other Government Sites" xml:space="preserve">
+    <value>Otros sitios del gobierno</value>
   </data>
 </root>
