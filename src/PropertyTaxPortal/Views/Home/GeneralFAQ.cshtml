@@ -76,17 +76,7 @@
                 <div class="sub-sub-heading">@Localizer["Tax Bills"]</div>
                 @foreach (FAQ taxfaq in Model.TaxBill)
                 {
-                    if (@taxfaq.question.Contains("<a"))
-                    {
-                        <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                <p>@Localizer[@Html.Raw(@taxfaq.question).ToString()]</p>
-                                <i class="fa fa-chevron-down pull-right"></i>
-                            </button>
-                        </div>
-                    }
-                    else
-                    {
+                   
                         <div class="dropdown">
                             <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@taxfaq.question).ToString()]</div>
@@ -97,7 +87,7 @@
 
                             </div>
                         </div>
-                    }
+                    
                     <div style="height:5px;"></div>
                 }
             </section>
@@ -222,17 +212,7 @@
             <section class="container section-tabs">
                 @foreach (FAQ taxfaq in Model.TaxBill)
                 {
-                    if (@taxfaq.question.Contains("<a"))
-                    {
-                        <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
-                                @Localizer[@Html.Raw(@taxfaq.question).ToString()]
-                            </button>
-                        </div>
-                        <br />
-                    }
-                    else
-                    {
+                   
                         <div class="dropdown">
                             <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@taxfaq.question).ToString()]</div>
@@ -245,7 +225,7 @@
                         </div>
 
 
-                    }
+                    
 
                 }
             </section>
