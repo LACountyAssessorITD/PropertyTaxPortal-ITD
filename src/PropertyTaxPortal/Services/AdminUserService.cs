@@ -13,13 +13,12 @@ namespace PropertyTaxPortal.Services
 
       
 
-        public Task<bool> ValidateCredentials(string username, string password, out User user)
+        public Task<bool> ValidateCredentials(string username, string password,PTPContext context, out User user)
         {
             user = null;
             var key = username.ToLower();
             IDictionary<string, (string PasswordHash, User User)> _users_1 = new Dictionary<string, (string PasswordHash, User User)>();
-            using (var context = new PTPContext())
-            {
+            
                
                 
                     IDictionary<string, string> user_account = new Dictionary<string, string>();
@@ -29,7 +28,7 @@ namespace PropertyTaxPortal.Services
                     _users_1.Add(user_1.Key.ToLower(), (BCrypt.Net.BCrypt.HashPassword(user_1.Value), new User(user_1.Key)));
                     }
                
-             }
+             
 
             if (_users_1.ContainsKey(key))
             {
