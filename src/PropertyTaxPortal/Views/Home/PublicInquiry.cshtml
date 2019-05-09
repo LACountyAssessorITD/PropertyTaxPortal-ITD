@@ -32,13 +32,13 @@
             <br />
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b class="">@Localizer["In order to most effectively serve you, please fill out the following form as completely as possible."]</b>
+                    @Localizer["In order to most effectively serve you, please fill out the following form as completely as possible."]
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="Subjects" class="label-text">@Localizer["SUBJECT"] <font color="red">*</font></label>
+                    <label for="Subjects" class="label-text">@Localizer["SUBJECT"]</label><label class="label-red"> *</label>
                     @Html.DropDownListFor(model => model.subjectValue, Model.Subjects, new { @id = "ddSubjects", @name = "ddSubjects", @class = "form-control dropdown-text" })
                     @Html.ValidationMessageFor(model => model.subjectValue, "", new { @class = "text-danger error-message" })
                     @Html.HiddenFor(model => model.subjectText)
@@ -47,17 +47,17 @@
             <!-- Contact Information -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b>@Localizer["Contact Information"]</b>
+                    @Localizer["Contact Information"]
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtLastName" class="label-text">@Localizer["LAST NAME"] <font color="red">*</font></label>
+                    <label for="txtLastName" class="label-text">@Localizer["LAST NAME"]</label><label class="label-red"> *</label>
                     @Html.TextBoxFor(model => model.lastName, new { @type = "search", maxlength = "80", @id = "txtLastName", @name = "txtLastName", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger error-message" })
                 </div>
                 <div class="form-group col-sm-6">
-                    <label for="txtFirstName" class="label-text">@Localizer["FIRST NAME"] <font color="red">*</font></label>
+                    <label for="txtFirstName" class="label-text">@Localizer["FIRST NAME"]</label><label class="label-red"> *</label>
                     @Html.TextBoxFor(model => model.firstName, new { @type = "search", maxlength = "80", @id = "txtFirstName", @name = "txtFirstName", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger error-message" })
                 </div>
@@ -93,14 +93,14 @@
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtEmailAddr" class="label-text">@Localizer["EMAIL"] <font color="red">*</font></label>
+                    <label for="txtEmailAddr" class="label-text">@Localizer["EMAIL"]</label><label class="label-red"> *</label>
                     @Html.TextBoxFor(model => model.emailAddr, new { @type = "search", maxlength = "50", @id = "txtEmailAddr", @name = "txtEmailAddr", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.emailAddr, "", new { @class = "text-danger error-message" })
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label for="txtDayTimeTelNumber" class="label-text">@Localizer["DAYTIME PHONE NUMBER"] <font color="red">*</font></label>
+                    <label for="txtDayTimeTelNumber" class="label-text">@Localizer["DAYTIME PHONE NUMBER"]</label><label class="label-red"> *</label>
                     @Html.TextBoxFor(model => model.dayTimeTelNumber, new { @type = "search", maxlength = "30", @id = "txtDayTimeTelNumber", @name = "txtDayTimeTelNumber", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.dayTimeTelNumber, "", new { @class = "text-danger error-message" })
                 </div>
@@ -113,7 +113,7 @@
             <!-- Required for assessment questions about a specific bill or property... -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b>@Localizer["Required for assessment questions about a specific bill or property"]...</b>
+                    @Localizer["Required for assessment questions about a specific bill or property"]...
                 </div>
             </div>
             <div class="row">
@@ -149,7 +149,7 @@
             <!-- Required for questions regarding personal perperty... -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b>@Localizer["Required for questions regarding personal perperty"]...</b>
+                    @Localizer["Required for questions regarding personal perperty"]...
                 </div>
             </div>
             <div class="row">
@@ -167,12 +167,12 @@
             <!-- Please explain your request for assistance. -->
             <div class="row pof-title">
                 <div class="form-group col-sm-12 category-text">
-                    <b>@Localizer["Please explain your request for assistance"]</b>
+                    @Localizer["Please explain your request for assistance"]
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label for="txtRequest" class="label-text">@Localizer["BE BRIEF, BUT SPECIFIC"] <font color="red">*</font></label>
+                    <label for="txtRequest" class="label-text">@Localizer["BE BRIEF, BUT SPECIFIC"]</label><label class="label-red"> *</label>
                     @Html.TextAreaFor(model => model.comment, new { style = "font-size:15px; background-color:#F5F5F5x", rows = "8", cols = "45", @id = "txtRequest", @name = "txtRequest", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.comment, "", new { @class = "text-danger error-message" })
                 </div>
