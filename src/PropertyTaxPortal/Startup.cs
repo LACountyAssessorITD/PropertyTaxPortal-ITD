@@ -161,6 +161,12 @@ namespace PropertyTaxPortal
                 app.UseHsts();
             }
             app.UseCookiePolicy();
+            app.UseStaticFiles();
+            // To configure external authentication, 
+            // see: http://go.microsoft.com/fwlink/?LinkID=532715
+            app.UseAuthentication();
+            app.UseMvcWithDefaultRoute();
+            app.UseHttpsRedirection();
             //-----------------LOCALIZATION MIDDLEWARE-----------------//
             var supportedCultures = new[]
             {
@@ -185,14 +191,9 @@ namespace PropertyTaxPortal
                 SupportedUICultures = supportedCultures
             });
 
-            app.UseStaticFiles();
-            // To configure external authentication, 
-            // see: http://go.microsoft.com/fwlink/?LinkID=532715
-            app.UseAuthentication();
-            app.UseMvcWithDefaultRoute();
-            //-----------------END LOCALIZATION MIDDLEWARE-----------------//
 
-            app.UseHttpsRedirection();
+            //-----------------END LOCALIZATION MIDDLEWARE-----------------//
+            
             
            
 
