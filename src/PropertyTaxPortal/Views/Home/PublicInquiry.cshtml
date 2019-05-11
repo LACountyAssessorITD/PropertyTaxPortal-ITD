@@ -24,6 +24,7 @@
                 $("#subjectText").val(subText);
             });
         });
+
     </script>
 
     <div class="container section-form">
@@ -39,7 +40,7 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label id="subject" for="Subjects" class="label-text">@Localizer["SUBJECT"]</label><label class="label-red"> *</label>
-                    @Html.DropDownListFor(model => model.subjectValue, Model.Subjects, new { @id = "ddSubjects", @name = "ddSubjects", @class = "form-control dropdown-text", @title = "Subject" })
+                    @Html.DropDownListFor(model => model.subjectValue, Model.Subjects, new { @id = "ddSubjects", @name = "ddSubjects", @class = "form-control dropdown-text", @title = "Subject", @autofocus = "true" })
                     @Html.ValidationMessageFor(model => model.subjectValue, "", new { @class = "text-danger error-message" })
                     @Html.HiddenFor(model => model.subjectText)
                 </div>
