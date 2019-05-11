@@ -76,18 +76,18 @@
                 <div class="sub-sub-heading">@Localizer["Tax Bills"]</div>
                 @foreach (FAQ taxfaq in Model.TaxBill)
                 {
-                   
-                        <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div>@Localizer[@Html.Raw(@taxfaq.question).ToString()]</div>
-                                <div><i class="fa fa-chevron-down "></i></div>
-                            </button>
-                            <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
-                                @Localizer[@Html.Raw(@taxfaq.answer).ToString()]
 
-                            </div>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="@("dropdownMenuButton"+taxfaq.FAQID)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div>@Localizer[@Html.Raw(@taxfaq.question).ToString()]</div>
+                            <div><i class="fa fa-chevron-down "></i></div>
+                        </button>
+                        <div class="dropdown-menu position-relative" aria-labelledby="dropdownMenuButton">
+                            @Localizer[@Html.Raw(@taxfaq.answer).ToString()]
+
                         </div>
-                    
+                    </div>
+
                     <div style="height:5px;"></div>
                 }
             </section>
@@ -99,7 +99,7 @@
                     if (@refundfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-button">
+                            <button type="button" id=@("dropdownMenuButton"+refundfaq.FAQID) class="faq-button">
                                 @Localizer[@Html.Raw(@refundfaq.question).ToString()]
                             </button>
                         </div>
@@ -107,7 +107,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@refundfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@refundfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -127,7 +127,7 @@
                     if (@propfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                            <button type="button" id=@("dropdownMenuButton"+@propfaq.FAQID) class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@propfaq.question).ToString()]
                             </button>
                         </div>
@@ -135,7 +135,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@propfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@propfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -155,7 +155,7 @@
                     if (@ownerfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                            <button type="button" id=@("dropdownMenuButton"+@ownerfaq.FAQID) class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
                             </button>
                         </div>
@@ -163,7 +163,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@ownerfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@ownerfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -183,7 +183,7 @@
                     if (@taxagentfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                            <button type="button" id=@("dropdownMenuButton"+@taxagentfaq.FAQID) class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@taxagentfaq.question).ToString()]
                             </button>
                         </div>
@@ -191,7 +191,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@taxagentfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@taxagentfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -214,7 +214,7 @@
                 {
                    
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@taxfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@taxfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -240,7 +240,7 @@
                     if (@refundfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                            <button type="button" id=@("dropdownMenuButton"+@refundfaq.FAQID) class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@refundfaq.question).ToString()]
                             </button>
                         </div>
@@ -248,7 +248,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@refundfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@refundfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -271,7 +271,7 @@
                     if (@propfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                            <button type="button" id=@("dropdownMenuButton"+@propfaq.FAQID) class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@propfaq.question).ToString()]
                             </button>
                         </div>
@@ -279,7 +279,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@propfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@propfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -303,7 +303,7 @@
                     if (@ownerfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                            <button type="button" id=@("dropdownMenuButton"+@ownerfaq.FAQID) class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@ownerfaq.question).ToString()]
                             </button>
                         </div>
@@ -311,7 +311,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@ownerfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@ownerfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>
@@ -334,7 +334,7 @@
                     if (@taxagentfaq.question.Contains("<a"))
                     {
                         <div>
-                            <button type="button" id="dropdownMenuButton" class="faq-Anchor-button">
+                            <button type="button" id=@("dropdownMenuButton"+@taxagentfaq.FAQID) class="faq-Anchor-button">
                                 @Localizer[@Html.Raw(@taxagentfaq.question).ToString()]
                             </button>
                         </div>
@@ -342,7 +342,7 @@
                     else
                     {
                         <div class="dropdown">
-                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle faq-button d-flex justify-content-between " type="button" id=@("dropdownMenuButton"+@taxagentfaq.FAQID) data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div>@Localizer[@Html.Raw(@taxagentfaq.question).ToString()]</div>
                                 <div><i class="fa fa-chevron-down "></i></div>
                             </button>

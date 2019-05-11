@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label id="subject" for="Subjects" class="label-text">@Localizer["SUBJECT"]</label><label class="label-red"> *</label>
-                    @Html.DropDownListFor(model => model.subjectValue, Model.Subjects, new { @id = "ddSubjects", @name = "ddSubjects", @class = "form-control dropdown-text" })
+                    @Html.DropDownListFor(model => model.subjectValue, Model.Subjects, new { @id = "ddSubjects", @name = "ddSubjects", @class = "form-control dropdown-text", @title = "Subject" })
                     @Html.ValidationMessageFor(model => model.subjectValue, "", new { @class = "text-danger error-message" })
                     @Html.HiddenFor(model => model.subjectText)
                 </div>
