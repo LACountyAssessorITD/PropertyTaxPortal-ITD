@@ -83,7 +83,7 @@
             <div class="row">
                 <div class="form-group col-sm-3">
                     <label id="state" for="txtMailAddrState" class="label-text">@Localizer["STATE"]</label>
-                    @Html.DropDownListFor(model => model.mailAddrState, Model.States, new { style = "width:100px;", @class = "form-control dropdown-text" })
+                    @Html.DropDownListFor(model => model.mailAddrState, Model.States, new { style = "width:100px;", @class = "form-control dropdown-text", @title = "State" })
                 </div>
                 <div class="form-group col-sm-3">
                     <label id="zipcode" for="txtMailAddrZip" class="label-text">@Localizer["ZIP CODE"]</label>
