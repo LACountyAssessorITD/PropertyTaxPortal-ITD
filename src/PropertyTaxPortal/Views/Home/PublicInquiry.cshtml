@@ -134,7 +134,7 @@
                     @Html.TextBoxFor(model => model.propertyAddrState, new { style = "font-weight:bold;", maxlength = "2", @id = "txtPropertyState", @name = "txtPropertyState", @class = "form-control input-text", readOnly = "true" })
                 </div>
                 <div class="form-group col-sm-3">
-                    <label id="zipcode" for="txtPropertyZip" class="label-text">@Localizer["ZIP CODE"]</label>
+                    <label id="propertyzipcode" for="txtPropertyZip" class="label-text">@Localizer["ZIP CODE"]</label>
                     @Html.TextBoxFor(model => model.propertyAddrZip, new { @type = "search", maxlength = "10", @id = "txtPropertyZip", @name = "txtPropertyZip", @class = "form-control input-text" })
                     @Html.ValidationMessageFor(model => model.propertyAddrZip, "", new { @class = "text-danger error-message" })
                 </div>
