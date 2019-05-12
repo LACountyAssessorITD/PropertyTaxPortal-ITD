@@ -9,7 +9,7 @@
 @inject IViewLocalizer Localizer
 
 <section class="container-fluid bg-header bg-news">
-    <h2 class="display-4">@Localizer["NEWS & ANNOUNCEMENTS"]</h2>
+    <h2 class="display-4" role="heading" aria-level="2">@Localizer["NEWS & ANNOUNCEMENTS"]</h2>
 </section>
 <section class="news-title p-3">
     <h4 class="">@Localizer[@Html.Raw(@Model.Title).ToString()]</h4>
