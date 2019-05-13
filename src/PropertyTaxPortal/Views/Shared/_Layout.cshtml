@@ -133,30 +133,30 @@
                             </a>
                             <div class="dropdown-menu small-drop bg-6 " style="min-width:290px" aria-labelledby="overview-drop" id="overview-drop">
                                 <ul>
-                                    <li><a asp-controller="Home" asp-route-id="0" asp-action="Overview">@Localizer["Property Tax Overview"]</a>  </li>
-                                    <li><a asp-controller="Home" asp-route-id="1" asp-action="Overview">@Localizer["How the Property Tax System Works"]</a> </li>
                                     <li><a asp-controller="Home" asp-route-id="2" asp-action="Overview">@Localizer["Areas of Responsibliity"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="1" asp-action="Overview">@Localizer["How the Property Tax System Works"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="0" asp-action="Overview">@Localizer["Property Tax Overview"]</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                @Localizer["Tax Tools"]
+                                @Localizer["Self-Service"]
                             </a>
                             <div class="dropdown-menu small-drop bg-6" aria-labelledby="tax-drop" id="tax-drop">
                                 <ul>
-                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">@Localizer["Property Tax Management System"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
                                     <li>
                                         <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/" target="_blank">
                                             @Localizer["Multiple Parcel Inquires"]
                                         </a>
                                     </li>
-                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank">@Localizer["Penalty Cancellations"]</a></li>
-                                    <li><a href="https://portal.assessor.lacounty.gov/ target=" _blank"">@Localizer["Property Address Search"]</a></li>
-                                    <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank">@Localizer["New Home Owners"]</a></li>
                                     <li><a href="https://assessor.lacounty.gov/personal-property-assessments-2/" target="_blank">@Localizer["New Business Owners"]</a></li>
+                                    <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank">@Localizer["New Home Owners"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank">@Localizer["Penalty Cancellations"]</a></li>
+                                    <li><a href="https://portal.assessor.lacounty.gov/" target="_blank">@Localizer["Property Address Search"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">@Localizer["Property Tax Management System"]</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -170,10 +170,9 @@
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Forms"]</p>
                                         <ul>
-                                            <li><a href="https://assessor.lacounty.gov/forms-2/" target="_blank">@Localizer["Assessor"]</a></li>
                                             <li><a href="http://bos.lacounty.gov/Forms#269933-assessment-appeals-board" target="_blank">@Localizer["Assessment Appeals Board"]</a></li>
+                                            <li><a href="https://assessor.lacounty.gov/forms-2/" target="_blank">@Localizer["Assessor"]</a></li>
                                             <li><a href="http://auditor.lacounty.gov/forms-important-dates-glossary/" target="_blank">@Localizer["Auditor-Controller"]</a></li>
-
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
@@ -191,30 +190,28 @@
                                         <p>@Localizer["Payment Information"]</p>
                                         <ul>
                                             <li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary">LINK</span></li>
-                                            <li><a href="">@Localizer["Pay Online"]</a><span class="badge badge-success">PAY NOW</span></li>
                                             <li><a href="">@Localizer["Other Payment Options"]</a><span class="badge badge-secondary">LINK</span></li>
+                                            <li><a href="">@Localizer["Pay Online"]</a><span class="badge badge-success">PAY NOW</span></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Tax Bills"]</p>
                                         <ul>
-
+                                            <li><a asp-controller="Home" asp-action="AdjAnnual">@Localizer["Adjusted Annual Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="AdjSupplemental">@Localizer["Adjusted Supplemental Property Tax Bill"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredProperty">@Localizer["Annual Secured Property Tax Bill"]</a>  </li>
                                             <li><a href="~/images/pdf/AnnualSecPropInsert.pdf" target="_blank">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
                                             <li><a asp-controller="Home" asp-action="NoticeofDelinquency">@Localizer["Notice of Delinquency"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="SubstitueSecuredProperty">@Localizer["Substitute Secured Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="SupplementalSecuredProperty">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="UnsecuredPropertyTax">@Localizer["Unsecured Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="UnsecuredPriorYear">@Localizer["Unsecured Prior Year Bill"]</a></li>
                                             <li><a asp-controller="Home" asp-action="PaymentActivityNotice">@Localizer["Payment Activity Notice"]</a></li>
                                             <li><a asp-controller="Home" asp-action="StatementOfPriorYear">@Localizer["Statement of Prior Year Taxes"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="AdjAnnual">@Localizer["Adjusted Annual Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="AdjSupplemental">@Localizer["Adjusted Supplemental Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="SubstitueSecuredProperty">@Localizer["Substitute Secured Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="SupplementalSecuredProperty">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="UnsecuredPriorYear">@Localizer["Unsecured Prior Year Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="UnsecuredPropertyTax">@Localizer["Unsecured Property Tax Bill"]</a></li>
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -224,14 +221,12 @@
                             </a>
                             <div class="dropdown-menu secondary-width small-drop bg-6" id="faq-drop" aria-labelledby="faq-drop">
                                 <ul>
-
-                                    <li><a asp-controller="Home" asp-route-id="0" asp-action="GeneralFAQ">@Localizer["Tax Bills"]</a></li>
-                                    <li><a asp-controller="Home" asp-route-id="1" asp-action="GeneralFAQ">@Localizer["Refunds/Tax Sales/Tax Liens"]</a></li>
-                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="GeneralFAQ">@Localizer["Property Values"]</a></li>
-                                    <li><a asp-controller="Home" asp-route-id="3" asp-action="GeneralFAQ">@Localizer["Ownership"]</a></li>
-                                    <li><a asp-controller="Home" asp-route-id="4" asp-action="GeneralFAQ">@Localizer["Tax Agent Registration"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="5" asp-action="GeneralFAQ">@Localizer["All FAQs"]</a></li>
-
+                                    <li><a asp-controller="Home" asp-route-id="3" asp-action="GeneralFAQ">@Localizer["Ownership"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="GeneralFAQ">@Localizer["Property Values"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="1" asp-action="GeneralFAQ">@Localizer["Refunds/Tax Sales/Tax Liens"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="4" asp-action="GeneralFAQ">@Localizer["Tax Agent Registration"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="0" asp-action="GeneralFAQ">@Localizer["Tax Bills"]</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -247,14 +242,11 @@
                             <!-- added navigation badge: 'FORM' -->
                             <div class="dropdown-menu secondary-width small-drop bg-6" id="contact-drop" aria-labelledby="contact-drop">
                                 <ul>
+                                    <li><a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">@Localizer["Assessment Appeals Board"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="0" asp-action="ContactUs">@Localizer["Assessor"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="1" asp-action="ContactUs">@Localizer["Auditor-Controller"]</a></li>
-                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">@Localizer["Treasurer & Tax Collector"]</a></li>
-                                    <li><a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">@Localizer["Assessment Appeals Board"]</a></li>
-
                                     <li><a asp-controller="Home" asp-action="PublicInquiry">@Localizer["Public Inquiry"]</a><span class="badge badge-primary">FORM</span></li>
-
-
+                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">@Localizer["Treasurer & Tax Collector"]</a></li>
                                 </ul>
                             </div>
                         </li>
