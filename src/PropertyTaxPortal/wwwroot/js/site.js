@@ -1,6 +1,8 @@
 ﻿$(document).ready(function () {
 
-   
+    //$('#gsc-i-id1').click(function () {
+    //    $('.search-icon').toggleClass('search-hide');
+    //});
  
     $('.search').click(function () {
         //$(this).toggleClass('icon-cross');
@@ -95,6 +97,14 @@
         function () {
             $('.js--wp-7').removeClass('animated pulse')
             $('.c-4').removeClass('animated flip')
+        });
+    $('.js--wp-10').hover(function () {
+        $('.js--wp-10').addClass('animated pulse')
+        $('.c-5').addClass('animated flip')
+    },
+        function () {
+            $('.js--wp-10').removeClass('animated pulse')
+            $('.c-5').removeClass('animated flip')
         });
     $('.floatbox').click(function () {
         $('.floatbox').removeClass('display-block')

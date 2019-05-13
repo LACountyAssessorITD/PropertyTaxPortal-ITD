@@ -55,19 +55,19 @@ body {
     position: absolute;
     right: 20px;
     top: 30px;
-    z-index: 300;
+    z-index: 0;
     color: #484848;
     font-size: 200%;
 
 }
 
+
 .search {
     font-size: 250%;
-    
     height: 50px;
     cursor: pointer;
     margin-left: 10px;
-    border-left:1px solid #484848;
+    border-left: 1px solid #484848;
     padding-left: 20px;
     margin-top: 10px;
 }
@@ -289,6 +289,10 @@ header {
 
 .bg-1 {
     background-color: #000063;
+}
+
+.bg-temp {
+    background-color: #6a99a8;
 }
 
 .bg-2 {
@@ -704,7 +708,7 @@ div.gsc-control-cse.gsc-control-cse-en {
     color: #000 !important;
     -webkit-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
     transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
-    background: #fff url('search.webp') no-repeat center left !important;
+    background: #fff url('') no-repeat center left !important;
    
     background-size: 30px !important;
     background-position-x: 20px;
@@ -868,4 +872,21 @@ img[usemap] {
         }
 .alert-dismissible .close:hover{
     color: #3761A3;
+}
+
+.search-icon {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    z-index: 200;
+    color: #000;
+    font-size: 175%;
+    pointer-events: none;
+}
+
+.gsc-input-box table {
+    z-index: 9999 !important;
+}
+.search-hide {
+    display: none;
 }
