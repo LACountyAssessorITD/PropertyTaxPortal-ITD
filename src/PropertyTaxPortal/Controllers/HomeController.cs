@@ -138,6 +138,12 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        public IActionResult HowMuchDoIOwe()
+        {
+            ViewBag.Title = "PAYMENT INFORMATION";
+            return View();
+        }
+
         public IActionResult PrivacyPolicy(int? id)
         {
             ViewBag.Title = "PRIVACY POLICY";

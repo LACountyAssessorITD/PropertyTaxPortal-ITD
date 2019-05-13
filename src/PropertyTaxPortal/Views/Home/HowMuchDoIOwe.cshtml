@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = ViewBag.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container-fluid bg-header bg-contesting-value">
+    <h2 class="display-4"> @Localizer["PAYMENT INFORMATION"] </h2>
+</section>
+
+<section class="container">
+    Loading content ...
+
+</section>

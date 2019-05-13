@@ -192,7 +192,8 @@
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Payment Information"]</p>
                                         <ul>
-                                            <li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary">LINK</span></li>
+                                            <!--<li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary">LINK</span></li>-->
+                                            <li><a asp-controller='Home' asp-action="HowMuchDoIOwe">@Localizer["How Much Do I Owe?"]</a></li>
                                             <li><a href="https://ttc.lacounty.gov/pay-your-property-taxes/" target="_blank">@Localizer["Pay Property Taxes"]</a><span class="badge badge-success">PAY NOW</span></li>
                                         </ul>
                                     </div>
