@@ -154,43 +154,59 @@
 
 <section class="container-fluid section-cards">
     <div class="row">
-       
-        <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-4">
-            <a asp-controller="Home" asp-route-id="2" asp-action="Overview">
-                <div class="card-img bg-1">
-                    <ion-icon class="c-1" name="people"></ion-icon>
-                </div>
-                <p>@Localizer["AREAS OF RESPONSIBILITY"]</p>
 
-            </a>
-            
-        </div>
 
-        <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-5">
+
+        <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-5">
             <a href=" https://ttc.lacounty.gov/pay-your-property-taxes/" target="_blank">
-                <div class="card-img bg-2">
-                    <ion-icon class="c-2" name="logo-usd"></ion-icon>
+                <div class="card-img bg-1">
+                    @*<ion-icon class="c-2" name="logo-usd"></ion-icon>*@
+                    <i class="fas fa-dollar-sign c-2"></i>
                 </div>
-                <p>@Localizer["PAYMENT INFORMATION"]</p>
-                </a>
+                <p>@Localizer["Pay Property Taxes"]</p>
+            </a>
         </div>
-        <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-6">
+        <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-6">
             <a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">
-                <div class="card-img bg-3">
-                    <ion-icon class="c-3" name="filing"></ion-icon>
+                <div class="card-img bg-2">
+                    @*<ion-icon class="c-3" name="filing"></ion-icon>*@
+                    <i class="fas fa-tasks c-3"></i>
                 </div>
                 <p>@Localizer["PROPERTY TAX MANAGEMENT SYSTEM"]</p>
             </a>
         </div>
-        <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-7">
+        <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-7">
+            <a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank">
+                <div class="card-img bg-3">
+                    @*<ion-icon class="c-4" name="business"></ion-icon>*@
+                    
+                    <i class="far fa-envelope-open c-4"></i>
+                </div>
+                <p>@Localizer["Change Mailing Address"]</p>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-10">
             <a href="https://portal.assessor.lacounty.gov/" target="_blank">
                 <div class="card-img bg-4">
-                    <ion-icon class="c-4" name="business"></ion-icon>
+                    @*<ion-icon class="c-4" name="business"></ion-icon>*@
+                    <i class="fas fa-city c-5"></i>
                 </div>
                 <p>@Localizer["PROPERTY ADDRESS SEARCH"]</p>
-                </a>
+            </a>
         </div>
 
+
+        <div class="col-md-3 col-sm-6 text-card bg-temp js--wp-4">
+            <a asp-controller="Home" asp-route-id="2" asp-action="Overview">
+                <div class="card-img bg-temp">
+                    @*<ion-icon class="c-1" name="people"></ion-icon>*@
+                    <i class="fas fa-user-friends c-1"></i>
+                </div>
+                <p>@Localizer["AREAS OF RESPONSIBILITY"]</p>
+
+            </a>
+
+        </div>
     </div>
 </section>
 

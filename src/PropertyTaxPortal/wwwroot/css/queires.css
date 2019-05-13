@@ -169,7 +169,12 @@
 
 }
 
+@media only screen and (max-width: 1000px){
+    .section-cards .col-md-3 {
+        flex: 0 0 50%;
+    }
 
+}
 
 /* Sall phones to small tablets */
 @media only screen and (max-width: 991px) {
@@ -444,7 +449,9 @@
         height: 70px;
     }
 
-    
+    .section-cards .col-md-3 {
+        flex: 0 0 100%;
+    }
 
    
 
