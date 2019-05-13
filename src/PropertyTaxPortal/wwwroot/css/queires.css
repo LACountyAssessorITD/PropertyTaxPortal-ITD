@@ -173,7 +173,13 @@
     .section-cards .col-md-3 {
         flex: 0 0 50%;
     }
+    .section-cards .row .text-card:first-child {
+        margin-left: auto;
+    }
 
+    .section-cards .row .text-card:last-child {
+        margin-right: auto;
+    }
 }
 
 /* Sall phones to small tablets */

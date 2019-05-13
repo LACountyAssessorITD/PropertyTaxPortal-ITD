@@ -118,13 +118,13 @@
         margin-right: auto;
     }
 
-        /*.section-cards .row .text-card:first-child {
+        .section-cards .row .text-card:first-child {
             margin-left: 0;
         }
 
         .section-cards .row .text-card:last-child {
             margin-right: 0;
-        }*/
+        }
     .section-cards .col-md-3 {
         flex: 0 0 20%;
     }
