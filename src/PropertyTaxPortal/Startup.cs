@@ -1,22 +1,21 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
+
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PropertyTaxPortal.Models;
 using Microsoft.EntityFrameworkCore;
-using ReflectionIT.Mvc.Paging;
-using System.Collections;
+
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
-using Microsoft.Extensions.Localization;
+
 using PropertyTaxPortal.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -165,7 +164,7 @@ namespace PropertyTaxPortal
             // To configure external authentication, 
             // see: http://go.microsoft.com/fwlink/?LinkID=532715
             app.UseAuthentication();
-            app.UseMvcWithDefaultRoute();
+            
             app.UseHttpsRedirection();
             //-----------------LOCALIZATION MIDDLEWARE-----------------//
             var supportedCultures = new[]
