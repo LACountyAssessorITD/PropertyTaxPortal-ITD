@@ -691,7 +691,6 @@ div.gsc-control-cse.gsc-control-cse-en {
 
 #gs_tti50 input {
     /*border: 2px solid #777 !important;*/
-    
     outline: none !important;
     width: 100% !important;
     height: 70px !important;
@@ -705,7 +704,8 @@ div.gsc-control-cse.gsc-control-cse-en {
     color: #000 !important;
     -webkit-transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
     transition: all .3s cubic-bezier(0,0,.5,1.5) !important;
-    background: #fff url(http://cdn.johnroberts.com/hubfs/images/search.png?t=1435173000345) no-repeat center left !important;
+    background: #fff url('search.webp') no-repeat center left !important;
+   
     background-size: 30px !important;
     background-position-x: 20px;
     border-radius: 20px 20px !important;
