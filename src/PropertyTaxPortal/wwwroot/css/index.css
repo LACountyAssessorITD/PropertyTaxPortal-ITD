@@ -46,6 +46,14 @@
     padding-top: 100px;
 }
 
+.carousel-item a {
+    color: #fff;
+
+}
+.carousel-item a:hover {
+    color:#fff;
+    font-size: 102%;
+}
 .carousel-header .row {
     padding-left: 80px;
 }
