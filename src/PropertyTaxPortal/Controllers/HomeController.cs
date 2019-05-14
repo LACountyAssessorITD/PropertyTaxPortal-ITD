@@ -320,7 +320,7 @@ namespace PropertyTaxPortal.Controllers
                     case EmailTreasurer:
                         sThankYouWhole = sThankYouFront + "Treasurer & Tax Collector's department" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
-                        model.Department = "Treasurer & Tax Collector's department";
+                        model.Department = "Treasurer & Tax Collector's office";
                         model.addressPhoneWebsite = "Los Angeles County Treasurer and Tax Collector<br>" +
                             "225 N. Hill Street, First Floor Lobby<br>" +
                             "Los Angeles, CA 90012<br><br>" +
@@ -330,7 +330,7 @@ namespace PropertyTaxPortal.Controllers
                         break;
 
                     case EmailAuditorController:
-                        sThankYouWhole = sThankYouFront + "Auditor-Controller's department" + sThankYouEnd;
+                        sThankYouWhole = sThankYouFront + "Auditor-Controller's office" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.Department = "Auditor-Controller's department";
                         model.addressPhoneWebsite = "Los Angeles County Auditor-Controller<br>" +
@@ -343,7 +343,7 @@ namespace PropertyTaxPortal.Controllers
                         break;
 
                     case EmailAssessor:
-                        sThankYouWhole = sThankYouFront + "Assessor's department" + sThankYouEnd;
+                        sThankYouWhole = sThankYouFront + "Assessor's office" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
                         model.Department = "Assessor's department";
                         model.addressPhoneWebsite = "Los Angeles County Assessor's Public Service Section<br>" +

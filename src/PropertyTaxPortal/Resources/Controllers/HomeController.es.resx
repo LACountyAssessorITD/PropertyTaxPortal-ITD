@@ -229,16 +229,16 @@
     <value>Un miembro del personal de la Junta de Apelaciones de Evaluación responderá a su solicitud en breve.</value>
     <comment>Thank you page / User email</comment>
   </data>
-  <data name="A staff member from the Assessor's department will respond to your request shortly." xml:space="preserve">
-    <value>Un miembro del personal del departamento del Asesor responderá a su solicitud en breve.</value>
+  <data name="A staff member from the Assessor's office will respond to your request shortly." xml:space="preserve">
+    <value>Un miembro del personal de la oficina del Asesor responderá su solicitud en breve.</value>
     <comment>Thank you page / User email</comment>
   </data>
-  <data name="A staff member from the Auditor-Controller's department will respond to your request shortly." xml:space="preserve">
-    <value>Un miembro del personal del departamento de Auditor-Controlador responderá a su solicitud en breve.</value>
+  <data name="A staff member from the Auditor-Controller's office will respond to your request shortly." xml:space="preserve">
+    <value>Un miembro del personal de la oficina del Auditor-Controlador responderá a su solicitud en breve.</value>
     <comment>Thank you page / User email</comment>
   </data>
-  <data name="A staff member from the Treasurer &amp; Tax Collector's department will respond to your request shortly." xml:space="preserve">
-    <value>Un miembro del personal del Departamento de Tesorero y Recaudador de impuestos responderá a su solicitud en breve.</value>
+  <data name="A staff member from the Treasurer &amp; Tax Collector's office will respond to your request shortly." xml:space="preserve">
+    <value>Un miembro del personal de la oficina del Tesorero y del Recaudador de impuestos responderá a su solicitud en breve.</value>
     <comment>Thank you page</comment>
   </data>
   <data name="Please select" xml:space="preserve">
