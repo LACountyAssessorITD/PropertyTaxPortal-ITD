@@ -27,7 +27,7 @@
             <div class="p-2 newsbox mx-auto">
                 <strong class="head">@Localizer[@Html.Raw(item.Title).ToString()]</strong>
                 <p>@Localizer[@Html.Raw(item.Caption).ToString()]</p>
-                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding" aria-label="Read More">Read More..</a>
+                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding" aria-label="@item.NewsId">Read More..</a>
             </div>
         </div>
         }
