@@ -32,7 +32,7 @@
     });
 
     $('.section-news .carousel').carousel({
-        interval: 4000
+        interval: 7000
     })
 
     $('.js--wp-1').waypoint(function (direction) {
