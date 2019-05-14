@@ -181,7 +181,7 @@
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Property Valuation"]</p>
                                         <ul>
-                                            <li><a asp-controller='Home' asp-action="ContestingValue">@Localizer["Contesting Your Property Value"]</a></li>
+                                            <li><a asp-controller='Home' asp-action="ContestingValue" aria-label="Contesting Your Property Value">@Localizer["Contesting Your Property Value"]</a></li>
                                             <li><a href="https://portal.assessor.lacounty.gov/" target="_blank" aria-label="Property Address Search">@Localizer["Property Address Search"]</a></li>
                                             <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default" target="_blank" aria-label="Property Data & Maps">@Localizer["Property Data & Maps"]</a></li>
                                             <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/" target="_blank" aria-label="Supplemental Tax Estimator">@Localizer["Supplemental Tax Estimator"]</a></li>
@@ -193,25 +193,25 @@
                                         <p>@Localizer["Payment Information"]</p>
                                         <ul>
                                             <!--<li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary">LINK</span></li>-->
-                                            <li><a asp-controller='Home' asp-action="HowMuchDoIOwe">@Localizer["How Much Do I Owe?"]</a></li>
+                                            <li><a asp-controller='Home' asp-action="HowMuchDoIOwe" aria-label="How Much Do I Owe">@Localizer["How Much Do I Owe?"]</a></li>
                                             <li><a href="https://ttc.lacounty.gov/pay-your-property-taxes/" target="_blank" aria-label="Pay Property Taxes">@Localizer["Pay Property Taxes"]</a><span class="badge badge-success">PAY NOW</span></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Tax Bills"]</p>
                                         <ul>
-                                            <li><a asp-controller="Home" asp-action="AdjAnnual">@Localizer["Adjusted Annual Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="AdjSupplemental">@Localizer["Adjusted Supplemental Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="AnnualSecuredProperty">@Localizer["Annual Secured Property Tax Bill"]</a>  </li>
+                                            <li><a asp-controller="Home" asp-action="AdjAnnual" aria-label="">@Localizer["Adjusted Annual Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="AdjSupplemental" aria-label="">@Localizer["Adjusted Supplemental Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="AnnualSecuredProperty" aria-label="">@Localizer["Annual Secured Property Tax Bill"]</a>  </li>
                                             <li><a href="~/images/pdf/AnnualSecPropInsert.pdf" target="_blank" aria-label="Annual Secured Property Tax Bill Insert">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
-                                            <li><a asp-controller="Home" asp-action="NoticeofDelinquency">@Localizer["Notice of Delinquency"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="PaymentActivityNotice">@Localizer["Payment Activity Notice"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="StatementOfPriorYear">@Localizer["Statement of Prior Year Taxes"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="SubstitueSecuredProperty">@Localizer["Substitute Secured Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="SupplementalSecuredProperty">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="UnsecuredPriorYear">@Localizer["Unsecured Prior Year Bill"]</a></li>
-                                            <li><a asp-controller="Home" asp-action="UnsecuredPropertyTax">@Localizer["Unsecured Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement" aria-label="Annual Secured Property Tax Information Statement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
+                                            <li><a asp-controller="Home" asp-action="NoticeofDelinquency" aria-label="Notice of Delinquency">@Localizer["Notice of Delinquency"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="PaymentActivityNotice" aria-label="Payment Activity Notice">@Localizer["Payment Activity Notice"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="StatementOfPriorYear" aria-label="Statement of Prior Year Taxes">@Localizer["Statement of Prior Year Taxes"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="SubstitueSecuredProperty" aria-label="Substitute Secured Property Tax Bill">@Localizer["Substitute Secured Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="SupplementalSecuredProperty" aria-label="Supplemental Secured Property Tax Bill">@Localizer["Supplemental Secured Property Tax Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="UnsecuredPriorYear" aria-label="Unsecured Prior Year Bill">@Localizer["Unsecured Prior Year Bill"]</a></li>
+                                            <li><a asp-controller="Home" asp-action="UnsecuredPropertyTax" aria-label="Unsecured Property Tax Bill">@Localizer["Unsecured Property Tax Bill"]</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -315,10 +315,10 @@
                     <div class="col-md-3 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Site Info"]</li>
-                            <li><a asp-controller='Home' asp-action="Disclaimer">@Localizer["Disclaimer"]</a></li>
-                            <li><a asp-controller='Home' asp-action="PrivacyPolicy">@Localizer["Privacy Policy"]</a></li>
-                            <li><a asp-controller='Home' asp-route-id="accessibility" asp-action="accessibility">@Localizer["Accessibility"]</a></li>
-                            <li><a asp-controller='Home' asp-action="Language">@Localizer["Language"]</a></li>
+                            <li><a asp-controller='Home' asp-action="Disclaimer" aria-label="Disclaimer">@Localizer["Disclaimer"]</a></li>
+                            <li><a asp-controller='Home' asp-action="PrivacyPolicy" aria-label="Privacy Policy">@Localizer["Privacy Policy"]</a></li>
+                            <li><a asp-controller='Home' asp-route-id="accessibility" asp-action="accessibility" aria-label="Accessibility">@Localizer["Accessibility"]</a></li>
+                            <li><a asp-controller='Home' asp-action="Language" aria-label="Language">@Localizer["Language"]</a></li>
 
                         </ul>
                     </div>
@@ -330,7 +330,7 @@
                             <li><a href="https://library.municode.com/ca/los_angeles_county/codes/code_of_ordinances" target="_blank" aria-label="County Code">@Localizer["County Code"]</a></li>
                             <li><a href="https://www.lacounty.gov/contact/" target="_blank" aria-label="LA County Contacts">@Localizer["LA County Contacts"]</a></li>
 
-                            <li><a asp-controller='Home' asp-action="GovernmentSites">@Localizer["Other Government Sites"]</a></li>
+                            <li><a asp-controller='Home' asp-action="GovernmentSites" aria-label="Other Government Sites">@Localizer["Other Government Sites"]</a></li>
 
                         </ul>
                     </div>
