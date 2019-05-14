@@ -87,7 +87,7 @@
         <div class="fixed-top">
             <header class="container-fluid">
                 <div class="row justify-content-between">
-                    <div class="pl-2"><a href="http://www.lacounty.gov" target="_blank">lacounty.gov</a></div>
+                    <div class="pl-2"><a href="http://www.lacounty.gov" target="_blank" aria-label="lacounty">lacounty.gov</a></div>
                     <div class="pr-2">
                         @await Html.PartialAsync("_SelectLanguagePartial")
                         <ion-icon name="arrow-dropdown"></ion-icon>
@@ -146,20 +146,20 @@
                             </a>
                             <div class="dropdown-menu small-drop bg-6" style="min-width:420px" aria-labelledby="tax-drop" id="tax-drop">
                                 <ul>
-                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank" alt="Avoid Penalties by Understanding Postmarks">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
-                                    <li><a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank" alt="Change Mailing Address">@Localizer["Change Mailing Address"]</a></li>
-                                    <li><a href="https://assessor.lacounty.gov/personal-property-assessments-2/" target="_blank" alt="New Business Owners">@Localizer["New Business Owners"]</a></li>
-                                    <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank" alt="New Home Owners">@Localizer["New Home Owners"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank" alt="Penalty Cancellations">@Localizer["Penalty Cancellations"]</a></li>
-                                    <li><a href="https://portal.assessor.lacounty.gov/" target="_blank" alt="Property Address Search">@Localizer["Property Address Search"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank" alt="Property Tax Management System">@Localizer["Property Tax Management System"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank" alt="Request a Secure Property Tax Bills">@Localizer["Request a Secure Property Tax Bills"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank" aria-label="Avoid Penalties by Understanding Postmarks">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
+                                    <li><a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank" aria-label="Change Mailing Address">@Localizer["Change Mailing Address"]</a></li>
+                                    <li><a href="https://assessor.lacounty.gov/personal-property-assessments-2/" target="_blank" aria-label="New Business Owners">@Localizer["New Business Owners"]</a></li>
+                                    <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank" aria-label="New Home Owners">@Localizer["New Home Owners"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank" aria-label="Penalty Cancellations">@Localizer["Penalty Cancellations"]</a></li>
+                                    <li><a href="https://portal.assessor.lacounty.gov/" target="_blank" aria-label="Property Address Search">@Localizer["Property Address Search"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank" aria-label="Property Tax Management System">@Localizer["Property Tax Management System"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank" aria-label="Request a Secure Property Tax Bills">@Localizer["Request a Secure Property Tax Bills"]</a></li>
                                     <li>
-                                        <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/" target="_blank" alt="Secured Property Tax Information Request (Multiple Parcels)">
+                                        <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/" target="_blank" aria-label="Secured Property Tax Information Request (Multiple Parcels)">
                                             @Localizer["Secured Property Tax Information Request (Multiple Parcels)"]
                                         </a>
                                     </li>
-                                    <li><a href="https://ttc.lacounty.gov/property-tax-payment-history/" target="_blank" alt="View Payment History">@Localizer["View Payment History"]</a></li>
+                                    <li><a href="https://ttc.lacounty.gov/property-tax-payment-history/" target="_blank" aria-label="View Payment History">@Localizer["View Payment History"]</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -173,18 +173,18 @@
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Forms"]</p>
                                         <ul>
-                                            <li><a href="https://assessor.lacounty.gov/forms-2/" target="_blank">@Localizer["Assessor"]</a></li>
-                                            <li><a href="http://bos.lacounty.gov/Forms#269933-assessment-appeals-board" target="_blank">@Localizer["Assessment Appeals Board"]</a></li>
-                                            <li><a href="http://auditor.lacounty.gov/forms-important-dates-glossary/" target="_blank">@Localizer["Auditor-Controller"]</a></li>
+                                            <li><a href="https://assessor.lacounty.gov/forms-2/" target="_blank" aria-label="Assessor">@Localizer["Assessor"]</a></li>
+                                            <li><a href="http://bos.lacounty.gov/Forms#269933-assessment-appeals-board" target="_blank" aria-label="Assessment Appeals Board">@Localizer["Assessment Appeals Board"]</a></li>
+                                            <li><a href="http://auditor.lacounty.gov/forms-important-dates-glossary/" target="_blank" aria-label="Auditor-Controller">@Localizer["Auditor-Controller"]</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <p>@Localizer["Property Valuation"]</p>
                                         <ul>
                                             <li><a asp-controller='Home' asp-action="ContestingValue">@Localizer["Contesting Your Property Value"]</a></li>
-                                            <li><a href="https://portal.assessor.lacounty.gov/" target="_blank">@Localizer["Property Address Search"]</a></li>
-                                            <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default" target="_blank">@Localizer["Property Data & Maps"]</a></li>
-                                            <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/" target="_blank">@Localizer["Supplemental Tax Estimator"]</a></li>
+                                            <li><a href="https://portal.assessor.lacounty.gov/" target="_blank" aria-label="Property Address Search">@Localizer["Property Address Search"]</a></li>
+                                            <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default" target="_blank" aria-label="Property Data & Maps">@Localizer["Property Data & Maps"]</a></li>
+                                            <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/" target="_blank" aria-label="Supplemental Tax Estimator">@Localizer["Supplemental Tax Estimator"]</a></li>
                                         </ul>
                                     </div>
 
@@ -194,7 +194,7 @@
                                         <ul>
                                             <!--<li><a href="">@Localizer["How Much Do I Owe?"]</a><span class="badge badge-secondary">LINK</span></li>-->
                                             <li><a asp-controller='Home' asp-action="HowMuchDoIOwe">@Localizer["How Much Do I Owe?"]</a></li>
-                                            <li><a href="https://ttc.lacounty.gov/pay-your-property-taxes/" target="_blank">@Localizer["Pay Property Taxes"]</a><span class="badge badge-success">PAY NOW</span></li>
+                                            <li><a href="https://ttc.lacounty.gov/pay-your-property-taxes/" target="_blank" aria-label="Pay Property Taxes">@Localizer["Pay Property Taxes"]</a><span class="badge badge-success">PAY NOW</span></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
@@ -203,7 +203,7 @@
                                             <li><a asp-controller="Home" asp-action="AdjAnnual">@Localizer["Adjusted Annual Property Tax Bill"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AdjSupplemental">@Localizer["Adjusted Supplemental Property Tax Bill"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredProperty">@Localizer["Annual Secured Property Tax Bill"]</a>  </li>
-                                            <li><a href="~/images/pdf/AnnualSecPropInsert.pdf" target="_blank">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
+                                            <li><a href="~/images/pdf/AnnualSecPropInsert.pdf" target="_blank" aria-label="Annual Secured Property Tax Bill Insert">@Localizer["Annual Secured Property Tax Bill Insert"]</a></li>
                                             <li><a asp-controller="Home" asp-action="AnnualSecuredPropertyTaxInformationStatement">@Localizer["Annual Secured Property Tax Information Statement"]</a>  </li>
                                             <li><a asp-controller="Home" asp-action="NoticeofDelinquency">@Localizer["Notice of Delinquency"]</a></li>
                                             <li><a asp-controller="Home" asp-action="PaymentActivityNotice">@Localizer["Payment Activity Notice"]</a></li>
@@ -297,17 +297,17 @@
             <section class="container-fluid section-footer ">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 ">
-                        <a href="http://www.lacounty.gov/" target="_blank"><img src="~/images/LACSEAL152.png" alt="LACseal"></a>
+                        <a href="http://www.lacounty.gov/" target="_blank" aria-label="LACseal"><img src="~/images/LACSEAL152.png" alt="LACseal"></a>
                         <p>@Localizer["Enriching Lives"]...</p>
                     </div>
                     <div class="col-md-3 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Do You Need Help?"]</li>
-                            <li><a href="https://www.211la.org/" target="_blank"> @Localizer["211 LA County"]</a></li>
-                            <li><a href="http://www.lacountyhelps.org/" target="_blank">@Localizer["LA County Helps"]</a></li>
-                            <li><a href="https://www.lacounty.gov/government/county-services/online-services/" target="_blank">@Localizer["Online Services"]</a></li>
-                            <li><a href="http://www.lacounty.gov/publicalerts/" target="_blank"> @Localizer["Public Alerts"]</a></li>
-                            <li><a href="https://www.lacounty.gov/government/public-information-records/" target="_blank">@Localizer["Public Information"]</a></li>
+                            <li><a href="https://www.211la.org/" target="_blank" aria-label="211 LA County"> @Localizer["211 LA County"]</a></li>
+                            <li><a href="http://www.lacountyhelps.org/" target="_blank" aria-label="LA County Helps">@Localizer["LA County Helps"]</a></li>
+                            <li><a href="https://www.lacounty.gov/government/county-services/online-services/" target="_blank" aria-label="Online Services">@Localizer["Online Services"]</a></li>
+                            <li><a href="http://www.lacounty.gov/publicalerts/" target="_blank" aria-label="Public Alerts"> @Localizer["Public Alerts"]</a></li>
+                            <li><a href="https://www.lacounty.gov/government/public-information-records/" target="_blank" aria-label="Public Information">@Localizer["Public Information"]</a></li>
 
                         </ul>
                     </div>
@@ -325,10 +325,10 @@
                     <div class="col-md-3 col-sm-6 ">
                         <ul>
                             <li>@Localizer["Public Info"]</li>
-                            <li><a href="http://portal.lacounty.gov/wps/portal/omd" target="_blank">@Localizer["Board Correspondence"]</a></li>
-                            <li><a href="http://bos.lacounty.gov/Board-Meeting/Board-Agendas" target="_blank">@Localizer["Board Agenda"]</a></li>
-                            <li><a href="https://library.municode.com/ca/los_angeles_county/codes/code_of_ordinances" target="_blank">@Localizer["County Code"]</a></li>
-                            <li><a href="https://www.lacounty.gov/contact/" target="_blank">@Localizer["LA County Contacts"]</a></li>
+                            <li><a href="http://portal.lacounty.gov/wps/portal/omd" target="_blank" aria-label="Board Correspondence">@Localizer["Board Correspondence"]</a></li>
+                            <li><a href="http://bos.lacounty.gov/Board-Meeting/Board-Agendas" target="_blank" aria-label="Board Agenda">@Localizer["Board Agenda"]</a></li>
+                            <li><a href="https://library.municode.com/ca/los_angeles_county/codes/code_of_ordinances" target="_blank" aria-label="County Code">@Localizer["County Code"]</a></li>
+                            <li><a href="https://www.lacounty.gov/contact/" target="_blank" aria-label="LA County Contacts">@Localizer["LA County Contacts"]</a></li>
 
                             <li><a asp-controller='Home' asp-action="GovernmentSites">@Localizer["Other Government Sites"]</a></li>
 
