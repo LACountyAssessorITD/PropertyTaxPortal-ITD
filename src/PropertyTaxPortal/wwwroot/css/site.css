@@ -34,7 +34,7 @@ body {
     /*height: 100%;*/
     position: relative;
     background-color: transparent;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Lato', "Segoe UI";
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
