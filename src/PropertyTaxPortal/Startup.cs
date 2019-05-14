@@ -88,9 +88,7 @@ namespace PropertyTaxPortal
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            //services.AddDbContext<PTPContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ptp_connect")));
-            
-            //services.AddDbContext<PTPContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("ptp_connect")));
+
 
 
             //---------------------------CONFIGURE LOCALIZATION-----------------------------//
@@ -137,13 +135,7 @@ namespace PropertyTaxPortal
             //---------------------------END CONFIGURE LOCALIZATION-----------------------------//
         }
 
-        //public class MvcDataAnnotationsLocalizationOptions
-        //{
-        //    /// <summary>
-        //    /// The delegate to invoke for creating <see cref="IStringLocalizer"/>.
-        //    /// </summary>
-        //    public Func<Type, IStringLocalizerFactory, IStringLocalizer> DataAnnotationLocalizerProvider;
-        //}
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

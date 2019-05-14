@@ -96,6 +96,9 @@
 .button-size {
     width: 30%;
 }
+.card p {
+    font-weight: 500;
+}
 
 /* Change background color of buttons on hover */
 /* .tab button:hover {
