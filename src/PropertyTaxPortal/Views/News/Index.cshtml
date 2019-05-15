@@ -28,16 +28,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.Title)
 
-            <th>
-                @Html.DisplayNameFor(model => model.StartOn)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EndOn)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UploadId)
-            </th>
-            <th></th>
+           
+            
         </tr>
     </thead>
     <tbody>
@@ -52,24 +44,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Body)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Caption)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NewsDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartOn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndOn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UploadId)
-            </td>
+            
+          
+          
             <td>
                 <a asp-action="Edit" asp-route-id="@item.NewsId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.NewsId">Details</a> |
