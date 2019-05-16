@@ -141,4 +141,31 @@
   <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
     <value>AREAS DE RESPONSABILIDAD</value>
   </data>
+  <data name="&quot;Subscribe&quot; to the 'Treasurer' and Tax Collector's Email Notification Service" xml:space="preserve">
+    <value>"Suscríbase" al 'Tesorero' y al servicio de notificación por correo electrónico del recaudador de impuestos</value>
+  </data>
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
+    <value>El recaudador de impuestos del condado de Los Ángeles presenta un sistema de administración de impuestos a la propiedad en línea.</value>
+  </data>
+  <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
+    <value>Información de seguridad del Hall of Administration (HOA)</value>
+  </data>
+  <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
+    <value>Declaración de envío de impuestos de años anteriores</value>
+  </data>
+  <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
+    <value>El asesor advierte a los propietarios de viviendas sobre el fraude inmobiliario y las solicitudes engañosas</value>
+  </data>
+  <data name="Santa Clarita Sand Fire" xml:space="preserve">
+    <value>Santa Clarita arena fuego</value>
+  </data>
+  <data name="Aliso Canyon Gas Leak" xml:space="preserve">
+    <value>Fuga de gas en el cañón de Aliso</value>
+  </data>
+  <data name="Save by Understanding the Property Tax System" xml:space="preserve">
+    <value>Ahorre entendiendo el sistema de impuesto a la propiedad</value>
+  </data>
+  <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
+    <value>Pagos en línea del impuesto a la propiedad en el condado de Los Ángeles</value>
+  </data>
 </root>

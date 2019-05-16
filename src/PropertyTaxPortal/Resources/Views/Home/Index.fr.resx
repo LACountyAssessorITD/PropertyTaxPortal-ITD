@@ -126,16 +126,46 @@
   <data name="Assessor, Auditor-Controller, Treasurer &amp; Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
     <value>L’évaluateur, le contrôleur des comptes, le trésorier et percepteur des impôts et la Commission d’appel de l'évaluation ont préparé ce site d'informations sur les taxes sur la propriété afin de fournir aux contribuables un aperçu et des détails spécifiques sur le processus de taxe sur les biens à Los Angeles</value>
   </data>
-  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
-    <value>LES DOMAINES DE RESPONSABILITÉ</value>
-  </data>
-  <data name="PAYMENT INFORMATION" xml:space="preserve">
-    <value>INFORMATIONS DE PAIEMENT</value>
+  <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
+    <value>Propriété payante &lt;/ br&gt; Taxes</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
     <value>SYSTÈME DE GESTION DE L'IMPÔT FONCIER</value>
   </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Changer l'adresse postale</value>
+  </data>
   <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
     <value>RECHERCHE D'ADRESSE DE PROPRIÉTÉ</value>
+  </data>
+  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
+    <value>LES DOMAINES DE RESPONSABILITÉ</value>
+  </data>
+  <data name="&quot;Subscribe&quot; to the 'Treasurer' and Tax Collector's Email Notification Service" xml:space="preserve">
+    <value>"S'abonner" au service de notification par courrier électronique du "trésorier" et du percepteur des impôts</value>
+  </data>
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
+    <value>Le collecteur d’impôts du comté de Los Angeles introduit un système de gestion de l’impôt foncier en ligne.</value>
+  </data>
+  <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
+    <value>Informations sur la sécurité dans le hall d'administration (HOA)</value>
+  </data>
+  <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
+    <value>Relevé des taxes de l'année précédente</value>
+  </data>
+  <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
+    <value>Un évaluateur met en garde les propriétaires de fraudes immobilières et de sollicitations trompeuses</value>
+  </data>
+  <data name="Santa Clarita Sand Fire" xml:space="preserve">
+    <value>Santa Clarita Sand Fire</value>
+  </data>
+  <data name="Aliso Canyon Gas Leak" xml:space="preserve">
+    <value>Fuite de gaz Aliso Canyon</value>
+  </data>
+  <data name="Save by Understanding the Property Tax System" xml:space="preserve">
+    <value>Économisez en comprenant le système d'impôt foncier</value>
+  </data>
+  <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
+    <value>Paiements en ligne de taxes foncières dans le comté de Los Angeles</value>
   </data>
 </root>
