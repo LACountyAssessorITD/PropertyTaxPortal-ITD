@@ -41,375 +41,374 @@
     </section>
     <!-- Assessor -->
     <div id="Assessor1" class="tabcontent active active-tab">
-    <!--<div id="Assessor" class="tabcontent" style="display:none">-->
-            @*<section class="contact-pto-header">
-                <div class="row text-center">
-                    <div class="col-md-6 p-0">
-                        <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
-                    </div>
-                    <div class="col-md-6 contact-pto-title">
-                        <h1 style="color:white; font-weight:500;">@Localizer["Assessor"]</h1>
-                    </div>
+        @*<section class="contact-pto-header">
+            <div class="row text-center">
+                <div class="col-md-6 p-0">
+                    <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
                 </div>
-                <div style="height:25px; background-color:#343a40"></div>
-            </section>*@
-            <section class="bg-subheader bg-display container-fluid">
-                <div class="row">
-                    <div class="col-md-6 sub-area">
+                <div class="col-md-6 contact-pto-title">
+                    <h1 style="color:white; font-weight:500;">@Localizer["Assessor"]</h1>
+                </div>
+            </div>
+            <div style="height:25px; background-color:#343a40"></div>
+        </section>*@
+        <section class="bg-subheader bg-display container-fluid">
+            <div class="row">
+                <div class="col-md-6 sub-area">
 
+                </div>
+                <div class="col-md-6 sub-area">
+                    <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Assessor"]</h4>
+                </div>
+            </div>
+        </section>
+        <section class="Section-Contact-Content container-fluid px-0">
+            <div class="row p-5">
+                <div class="col-md-6 px-4 border-right">
+                    <div class="contact-top">
+                        <p>
+                            @Localizer["The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State law. The assessed value of your property is placed on the \"Assessment Roll\". The Assessor also approves and applies all exemptions which are added to the Assessment Roll. The Roll is then presented to the Los Angeles County Auditor-Controller for further processing."]
+                        </p>
                     </div>
-                    <div class="col-md-6 sub-area">
-                        <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Assessor"]</h4>
+                    <div class="contact-bottom">
+                        <p>
+                            @Localizer["Click the button below to see the areas of jurisdiction for the Assessor and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessor's Website at"] <a class="dont-break-out" href='http://assessor.lacounty.gov/' target='_blank' title='@Localizer["Assessor"]'>assessor.lacounty.gov</a>.
+                        </p>
+                    </div>
+                    <div class="button-content text-center ">
+                        <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility1" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
                     </div>
                 </div>
-            </section>
-            <section class="Section-Contact-Content container-fluid px-0">
-                <div class="row p-5">
-                    <div class="col-md-6 px-4 border-right">
-                        <div class="contact-top">
-                            <p>
-                                @Localizer["The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State law. The assessed value of your property is placed on the \"Assessment Roll\". The Assessor also approves and applies all exemptions which are added to the Assessment Roll. The Roll is then presented to the Los Angeles County Auditor-Controller for further processing."]
-                            </p>
-                        </div>
-                        <div class="contact-bottom">
-                            <p>
-                                @Localizer["Click the button below to see the areas of jurisdiction for the Assessor and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessor's Website at"] <a class="dont-break-out" href='http://assessor.lacounty.gov/' target='_blank' title='@Localizer["Assessor"]'>assessor.lacounty.gov</a>.
-                            </p>
-                        </div>
-                        <div class="button-content text-center ">
-                            <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility1" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-4">
-                        <div class="contact-top">
-                            <p style="font-weight: 500">Los Angeles County Assessor's Public Service Section</p>
-                            <p style="font-weight: 500">500 West Temple Street, Room 225</p>
-                            <p style="font-weight: 500">Los Angeles, CA 90012</p>
-                            <div class="row my-3">
-                                <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p>(888) 807-2111 (@Localizer["Toll Free"])</p>
-                                    <p>(213) 974-3211</p>
-                                    <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
-                                    <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="mailto: helpdesk@assessor.lacounty.gov">helpdesk@assessor.lacounty.gov</a></p>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="http://assessor.lacounty.gov" target="_blank">http://assessor.lacounty.gov</a></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2"><p>@Localizer["Social"]:</p></div>
-                                <div class="col-sm-10">
-                                    <div>
-                                        <a href="https://facebook.com/LACAssessor" target="_blank" title="@Localizer["Facebook"]"><img src="~/images/facebook.png" alt="Facebook" height="40" width="40"></a>
-                                        <a href="https://www.linkedin.com/company/los-angeles-county-office-of-the-assessor" target="_blank" title="@Localizer["LinkedIn"]"><img src="~/images/linkedin.png" alt="Linkedin" height="40" width="40"></a>
-                                        <a href="https://www.twitter.com/LACASSESSOR" target="_blank" title="@Localizer["Twitter"]"><img src="~/images/twitter.png" alt="Tiwtter" height="40" width="40"></a>
-                                        <a href="https://youtube.com/user/lacountyassessor" target="_blank" title="@Localizer["YouTube"]"><img src="~/images/youtube.png" alt="YouTube" height="40" width="40"></a>
-                                        <a href="http://www.instagram.com/lacassessor" target="_blank" title="@Localizer["Instagram"]"><img src="~/images/thegram.png" alt="Thegram" height="40" width="40"></a>
-                                        <a href="https://www.flickr.com/photos/161642633@N02/albums" target="_blank" title="@Localizer["Flickr"]"><img src="~/images/flickr.png" alt="Flickr" height="40" width="40"></a>
-                                    </div>
-                                </div>
+                <div class="col-md-6 px-4">
+                    <div class="contact-top">
+                        <p style="font-weight: 500">Los Angeles County Assessor's Public Service Section</p>
+                        <p style="font-weight: 500">500 West Temple Street, Room 225</p>
+                        <p style="font-weight: 500">Los Angeles, CA 90012</p>
+                        <div class="row my-3">
+                            <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
+                            <div class="col-sm-10">
+                                <p>(888) 807-2111 (@Localizer["Toll Free"])</p>
+                                <p>(213) 974-3211</p>
+                                <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
+                                <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
                             </div>
                         </div>
-                        <div class="contact-bottom">
-                            <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
-                        </div>
-                        <div class="button-content text-center">
-                            <input type="button" class="btn btn-primary bg-3" id="PublicInquiry1" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Auditor-Controller -->
-        <div id="Auditor" class="tabcontent" style="display:none">
-            @*<section class="contact-pto-header">
-                <div class="row text-center">
-                    <div class="col-md-6 p-0">
-                        <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
-                    </div>
-                    <div class="col-md-6 contact-pto-title">
-                        <h1 style="color:white; font-weight:bold;">@Localizer["Auditor-Controller"]</h1>
-                    </div>
-                </div>
-                <div style="height:25px; background-color:#343a40"></div>
-            </section>*@
-            <section class="bg-subheader bg-display container-fluid">
-                <div class="row">
-                    <div class="col-md-6 sub-area">
-
-                    </div>
-                    <div class="col-md-6 sub-area">
-                        <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Auditor-Controller"]</h4>
-                    </div>
-                </div>
-            </section>
-            <section class="Section-Contact-Content container-fluid px-0">
-                <div class="row p-5">
-                    <div class="col-md-6 px-4 border-right">
-                        <div class="contact-top">
-                            <p>
-                                @Localizer["The Los Angeles County Auditor-Controller adds direct assessments to the Tax Roll then applies the General Tax Levy (1%) and Voted Indebtedness (voter & bonded) tax rates to the value on the Tax Roll. This function is called \"extending the Roll\". The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection."]
-                            </p>
-                        </div>
-                        <div class="contact-bottom">
-                            <p>
-                                @Localizer["Click the button below to see the areas of jurisdiction for the Auditor-Controller and related County departments. Questions regarding these areas should be directed to that office; or visit the Auditor's Website at"] <a href='http://auditor.lacounty.gov/' target='_blank' title='@Localizer["Auditor-Controller"]'>auditor.lacounty.gov</a>.
-                            </p>
-                        </div>
-                        <div class="button-content text-center ">
-                            <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility2" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-4">
-                        <div class="contact-top">
-                            <p style="font-weight: 500">Los Angeles County Auditor-Controller</p>
-                            <p style="font-weight: 500">Property Tax Services Division</p>
-                            <p style="font-weight: 500">500 West Temple Street, Room 153</p>
-                            <p style="font-weight: 500">Los Angeles, CA 90012</p>
-                            <div class="row my-3">
-                                <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p>(888) 807-2111 (@Localizer["Toll Free"])</p>
-                                    <p>(213) 974-8368</p>
-                                    <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
-                                    <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="mailto: propertytax@auditor.lacounty.gov">propertytax@auditor.lacounty.gov</a></p>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="http://auditor.lacounty.gov" target="_blank">http://auditor.lacounty.gov</a></p>
-                                </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="mailto: helpdesk@assessor.lacounty.gov">helpdesk@assessor.lacounty.gov</a></p>
                             </div>
                         </div>
-                        <div class="contact-bottom">
-                            <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
-                        </div>
-                        <div class="button-content text-center">
-                            <input type="button" class="btn btn-primary bg-3" id="PublicInquiry2" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Treasurer & Tax Collector -->
-        <div id="Treasurer" class="tabcontent" style="display:none">
-            @*<section class="contact-pto-header">
-                <div class="row text-center">
-                    <div class="col-md-6 p-0">
-                        <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
-                    </div>
-                    <div class="col-md-6 contact-pto-title">
-                        <h1 style="color:white; font-weight:bold;">@Localizer["Treasurer & Tax Collector"]</h1>
-                    </div>
-                </div>
-                <div style="height:25px; background-color:#343a40"></div>
-            </section>*@
-            <section class="bg-subheader bg-display container-fluid">
-                <div class="row">
-                    <div class="col-md-6 sub-area">
-
-                    </div>
-                    <div class="col-md-6 sub-area">
-                        <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Treasurer & Tax Collector"]</h4>
-                    </div>
-                </div>
-            </section>
-            <section class="Section-Contact-Content container-fluid px-0">
-                <div class="row p-5">
-                    <div class="col-md-6 px-4 border-right">
-                        <div class="contact-top">
-                            <p>
-                                @Localizer["The mission of the Los Angeles County Treasurer & Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services."]
-                            </p>
-                        </div>
-                        <div class="contact-bottom">
-                            <p>
-                                @Localizer["Click the button below to see the areas of jurisdiction for the Treasurer & Tax Collector and related County departments. Questions regarding these areas should be directed to that office; or visit the Treasurer's Website at"] <a href='http://ttc.lacounty.gov/' target='_blank' title='@Localizer["Treasurer & Tax Collector"]'>ttc.lacounty.gov</a>.
-
-                            </p>
-                        </div>
-                        <div class="button-content text-center ">
-                            <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility3" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-4">
-                        <div class="contact-top">
-                            <p style="font-weight: 500">Los Angeles County Treasurer and Tax Controller</p>
-                            <p style="font-weight: 500">225 N. Hill Street, First Floor Lobby</p>
-                            <p style="font-weight: 500">Los Angeles, CA 90012</p>
-                            <div class="row my-3">
-                                <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p>(888) 807-2111 (@Localizer["Toll Free"])</p>
-                                    <p>(213) 974-2111</p>
-                                    <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
-                                    <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
-                                </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="http://assessor.lacounty.gov" target="_blank">http://assessor.lacounty.gov</a></p>
                             </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="mailto: ttcmail@ttc.lacounty.gov">ttcmail@ttc.lacounty.gov</a></p>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="http://ttc.lacounty.gov" target="_blank">http://ttc.lacounty.gov</a></p>
-                                </div>
-                            </div>
-                            <!--<div class="row">
+                        </div>
+                        <div class="row">
                             <div class="col-sm-2"><p>@Localizer["Social"]:</p></div>
                             <div class="col-sm-10">
                                 <div>
-                                    <img src="~/images/facebook.png" alt="Facebook" height="40" width="40">
-                                    <img src="~/images/linkedin.png" alt="Linkedin" height="40" width="40">
-                                    <img src="~/images/twitter.png" alt="Tiwtter" height="40" width="40">
-                                    <img src="~/images/youtube.png" alt="YouTube" height="40" width="40">
-                                    <img src="~/images/thegram.png" alt="Thegram" height="40" width="40">
-                                    <img src="~/images/flickr.png" alt="Flickr" height="40" width="40">
-                                </div>
-                            </div>
-                        </div>-->
-                        </div>
-                        <div class="contact-bottom">
-                            <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
-                        </div>
-                        <div class="button-content text-center">
-                            <input type="button" class="btn btn-primary bg-3" id="PublicInquiry3" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Assessment Appeals Board -->
-        <div id="Assessment" class="tabcontent" style="display:none">
-            @*<section class="contact-pto-header" id="Assessment">
-                <div class="row text-center">
-                    <div class="col-md-6 p-0">
-                        <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
-                    </div>
-                    <div class="col-md-6 contact-pto-title">
-                        <h1 style="color:white; font-weight:bold;">@Localizer["Assessment Appeals Board"]</h1>
-                    </div>
-                </div>
-                <div style="height:25px; background-color:#343a40"></div>
-            </section>*@
-            <section class="bg-subheader bg-display container-fluid">
-                <div class="row">
-                    <div class="col-md-6 sub-area">
-
-                    </div>
-                    <div class="col-md-6 sub-area">
-                        <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Assessment Appeals Board"]</h4>
-                    </div>
-                </div>
-            </section>
-            <section class="Section-Contact-Content container-fluid px-0">
-                <div class="row p-5">
-                    <div class="col-md-6 px-4 border-right">
-                        <div class="contact-top">
-                            <p>
-                                @Localizer["The property taxes you pay are primarily based on your property's assessed value as determined by the County Assessor. If you disagree with the assessed value placed on your property, you can appeal that value to the Assessment Appeals Board during the filing periods stated below."]
-                            </p>
-                            <p class="my-3" style="font-weight: 500">
-                                @Localizer["The filing periods for equalization of assessments are:"]
-                            </p>
-                            <ul class="ml-4">
-                                <li>
-                                    @Localizer["Regular Assessments - filing date is July 2 to November 30."]
-                                </li>
-                                <li>
-                                    @Localizer["Supplemental / Adjusted / Escape / Roll Corrections - filing date is within 60 days after the mailing date on the Notice of Assessed Value Change or Supplemental / Adjusted / Escape Assessments Tax Bill."]
-                                </li>
-                                <li>
-                                    @Localizer["Misfortune & Calamity Reassessments - file within six months of the mailing date of the Assessor's Proposed Reassessment Notice due to Property Damaged by Misfortune & Calamity."]
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="contact-bottom">
-                            <p>
-                                @Localizer["Click the button below to see the areas of jurisdiction for the Assessment Appeals Board and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessment Appeals Website at"]
-                                <a class="dont-break-out" href='http://bos.lacounty.gov/Services/AssessmentAppeals' target='_blank' title='@Localizer["Assessment Appeals Board"]'>bos.lacounty.gov/Services/AssessmentAppeals</a>.
-                            </p>
-                        </div>
-                        <div class="button-content text-center ">
-                            <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility4" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-4">
-                        <div class="contact-top">
-                            <p style="font-weight: 500">Los Angeles County Assessment Appeals Board </p>
-                            <p style="font-weight: 500">500 West Temple Street, Room B4</p>
-                            <p style="font-weight: 500">Los Angeles, CA 90012</p>
-                            <div class="row my-3">
-                                <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p>(888) 807-2111 (@Localizer["Toll Free"]) @Localizer["and press number 5"]</p>
-                                    <p>(213) 974-1471</p>
-                                    <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
-                                    <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="mailto: aaboffice@bos.lacounty.gov">aaboffice@bos.lacounty.gov</a></p>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
-                                <div class="col-sm-10">
-                                    <p><a class="dont-break-out" href="http://bos.lacounty.gov/Services/AssessmentAppeals" target="_blank">http://bos.lacounty.gov/Services/AssessmentAppeals</a></p>
+                                    <a href="https://facebook.com/LACAssessor" target="_blank" title="@Localizer["Facebook"]"><img src="~/images/facebook.png" alt="Facebook" height="40" width="40"></a>
+                                    <a href="https://www.linkedin.com/company/los-angeles-county-office-of-the-assessor" target="_blank" title="@Localizer["LinkedIn"]"><img src="~/images/linkedin.png" alt="Linkedin" height="40" width="40"></a>
+                                    <a href="https://www.twitter.com/LACASSESSOR" target="_blank" title="@Localizer["Twitter"]"><img src="~/images/twitter.png" alt="Tiwtter" height="40" width="40"></a>
+                                    <a href="https://youtube.com/user/lacountyassessor" target="_blank" title="@Localizer["YouTube"]"><img src="~/images/youtube.png" alt="YouTube" height="40" width="40"></a>
+                                    <a href="http://www.instagram.com/lacassessor" target="_blank" title="@Localizer["Instagram"]"><img src="~/images/thegram.png" alt="Thegram" height="40" width="40"></a>
+                                    <a href="https://www.flickr.com/photos/161642633@N02/albums" target="_blank" title="@Localizer["Flickr"]"><img src="~/images/flickr.png" alt="Flickr" height="40" width="40"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-bottom">
-                            <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
-                        </div>
-                        <div class="button-content text-center">
-                            <input type="button" class="btn btn-primary bg-3" id="PublicInquiry4" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
-                        </div>
+                    </div>
+                    <div class="contact-bottom">
+                        <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
+                    </div>
+                    <div class="button-content text-center">
+                        <input type="button" class="btn btn-primary bg-3" id="PublicInquiry1" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
-        <script>
-            function openCity(evt, TabName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(TabName).style.display = "block";
-                evt.currentTarget.className += " active";
+    <!-- Auditor-Controller -->
+    <div id="Auditor" class="tabcontent" style="display:none">
+        @*<section class="contact-pto-header">
+            <div class="row text-center">
+                <div class="col-md-6 p-0">
+                    <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
+                </div>
+                <div class="col-md-6 contact-pto-title">
+                    <h1 style="color:white; font-weight:bold;">@Localizer["Auditor-Controller"]</h1>
+                </div>
+            </div>
+            <div style="height:25px; background-color:#343a40"></div>
+        </section>*@
+        <section class="bg-subheader bg-display container-fluid">
+            <div class="row">
+                <div class="col-md-6 sub-area">
 
+                </div>
+                <div class="col-md-6 sub-area">
+                    <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Auditor-Controller"]</h4>
+                </div>
+            </div>
+        </section>
+        <section class="Section-Contact-Content container-fluid px-0">
+            <div class="row p-5">
+                <div class="col-md-6 px-4 border-right">
+                    <div class="contact-top">
+                        <p>
+                            @Localizer["The Los Angeles County Auditor-Controller adds direct assessments to the Tax Roll then applies the General Tax Levy (1%) and Voted Indebtedness (voter & bonded) tax rates to the value on the Tax Roll. This function is called \"extending the Roll\". The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection."]
+                        </p>
+                    </div>
+                    <div class="contact-bottom">
+                        <p>
+                            @Localizer["Click the button below to see the areas of jurisdiction for the Auditor-Controller and related County departments. Questions regarding these areas should be directed to that office; or visit the Auditor's Website at"] <a href='http://auditor.lacounty.gov/' target='_blank' title='@Localizer["Auditor-Controller"]'>auditor.lacounty.gov</a>.
+                        </p>
+                    </div>
+                    <div class="button-content text-center ">
+                        <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility2" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
+                    </div>
+                </div>
+                <div class="col-md-6 px-4">
+                    <div class="contact-top">
+                        <p style="font-weight: 500">Los Angeles County Auditor-Controller</p>
+                        <p style="font-weight: 500">Property Tax Services Division</p>
+                        <p style="font-weight: 500">500 West Temple Street, Room 153</p>
+                        <p style="font-weight: 500">Los Angeles, CA 90012</p>
+                        <div class="row my-3">
+                            <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
+                            <div class="col-sm-10">
+                                <p>(888) 807-2111 (@Localizer["Toll Free"])</p>
+                                <p>(213) 974-8368</p>
+                                <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
+                                <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="mailto: propertytax@auditor.lacounty.gov">propertytax@auditor.lacounty.gov</a></p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="http://auditor.lacounty.gov" target="_blank">http://auditor.lacounty.gov</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-bottom">
+                        <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
+                    </div>
+                    <div class="button-content text-center">
+                        <input type="button" class="btn btn-primary bg-3" id="PublicInquiry2" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Treasurer & Tax Collector -->
+    <div id="Treasurer" class="tabcontent" style="display:none">
+        @*<section class="contact-pto-header">
+            <div class="row text-center">
+                <div class="col-md-6 p-0">
+                    <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
+                </div>
+                <div class="col-md-6 contact-pto-title">
+                    <h1 style="color:white; font-weight:bold;">@Localizer["Treasurer & Tax Collector"]</h1>
+                </div>
+            </div>
+            <div style="height:25px; background-color:#343a40"></div>
+        </section>*@
+        <section class="bg-subheader bg-display container-fluid">
+            <div class="row">
+                <div class="col-md-6 sub-area">
+
+                </div>
+                <div class="col-md-6 sub-area">
+                    <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Treasurer & Tax Collector"]</h4>
+                </div>
+            </div>
+        </section>
+        <section class="Section-Contact-Content container-fluid px-0">
+            <div class="row p-5">
+                <div class="col-md-6 px-4 border-right">
+                    <div class="contact-top">
+                        <p>
+                            @Localizer["The mission of the Los Angeles County Treasurer & Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services."]
+                        </p>
+                    </div>
+                    <div class="contact-bottom">
+                        <p>
+                            @Localizer["Click the button below to see the areas of jurisdiction for the Treasurer & Tax Collector and related County departments. Questions regarding these areas should be directed to that office; or visit the Treasurer's Website at"] <a href='http://ttc.lacounty.gov/' target='_blank' title='@Localizer["Treasurer & Tax Collector"]'>ttc.lacounty.gov</a>.
+
+                        </p>
+                    </div>
+                    <div class="button-content text-center ">
+                        <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility3" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
+                    </div>
+                </div>
+                <div class="col-md-6 px-4">
+                    <div class="contact-top">
+                        <p style="font-weight: 500">Los Angeles County Treasurer and Tax Controller</p>
+                        <p style="font-weight: 500">225 N. Hill Street, First Floor Lobby</p>
+                        <p style="font-weight: 500">Los Angeles, CA 90012</p>
+                        <div class="row my-3">
+                            <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
+                            <div class="col-sm-10">
+                                <p>(888) 807-2111 (@Localizer["Toll Free"])</p>
+                                <p>(213) 974-2111</p>
+                                <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
+                                <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="mailto: ttcmail@ttc.lacounty.gov">ttcmail@ttc.lacounty.gov</a></p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="http://ttc.lacounty.gov" target="_blank">http://ttc.lacounty.gov</a></p>
+                            </div>
+                        </div>
+                        <!--<div class="row">
+                        <div class="col-sm-2"><p>@Localizer["Social"]:</p></div>
+                        <div class="col-sm-10">
+                            <div>
+                                <img src="~/images/facebook.png" alt="Facebook" height="40" width="40">
+                                <img src="~/images/linkedin.png" alt="Linkedin" height="40" width="40">
+                                <img src="~/images/twitter.png" alt="Tiwtter" height="40" width="40">
+                                <img src="~/images/youtube.png" alt="YouTube" height="40" width="40">
+                                <img src="~/images/thegram.png" alt="Thegram" height="40" width="40">
+                                <img src="~/images/flickr.png" alt="Flickr" height="40" width="40">
+                            </div>
+                        </div>
+                    </div>-->
+                    </div>
+                    <div class="contact-bottom">
+                        <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
+                    </div>
+                    <div class="button-content text-center">
+                        <input type="button" class="btn btn-primary bg-3" id="PublicInquiry3" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Assessment Appeals Board -->
+    <div id="Assessment" class="tabcontent" style="display:none">
+        @*<section class="contact-pto-header" id="Assessment">
+            <div class="row text-center">
+                <div class="col-md-6 p-0">
+                    <img src="~/images/contact-phone.png" class="image-fluid center-block w-100" />
+                </div>
+                <div class="col-md-6 contact-pto-title">
+                    <h1 style="color:white; font-weight:bold;">@Localizer["Assessment Appeals Board"]</h1>
+                </div>
+            </div>
+            <div style="height:25px; background-color:#343a40"></div>
+        </section>*@
+        <section class="bg-subheader bg-display container-fluid">
+            <div class="row">
+                <div class="col-md-6 sub-area">
+
+                </div>
+                <div class="col-md-6 sub-area">
+                    <h4 class="display-4" role="heading" aria-level="2"> @Localizer["Assessment Appeals Board"]</h4>
+                </div>
+            </div>
+        </section>
+        <section class="Section-Contact-Content container-fluid px-0">
+            <div class="row p-5">
+                <div class="col-md-6 px-4 border-right">
+                    <div class="contact-top">
+                        <p>
+                            @Localizer["The property taxes you pay are primarily based on your property's assessed value as determined by the County Assessor. If you disagree with the assessed value placed on your property, you can appeal that value to the Assessment Appeals Board during the filing periods stated below."]
+                        </p>
+                        <p class="my-3" style="font-weight: 500">
+                            @Localizer["The filing periods for equalization of assessments are:"]
+                        </p>
+                        <ul class="ml-4">
+                            <li>
+                                @Localizer["Regular Assessments - filing date is July 2 to November 30."]
+                            </li>
+                            <li>
+                                @Localizer["Supplemental / Adjusted / Escape / Roll Corrections - filing date is within 60 days after the mailing date on the Notice of Assessed Value Change or Supplemental / Adjusted / Escape Assessments Tax Bill."]
+                            </li>
+                            <li>
+                                @Localizer["Misfortune & Calamity Reassessments - file within six months of the mailing date of the Assessor's Proposed Reassessment Notice due to Property Damaged by Misfortune & Calamity."]
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-bottom">
+                        <p>
+                            @Localizer["Click the button below to see the areas of jurisdiction for the Assessment Appeals Board and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessment Appeals Website at"]
+                            <a class="dont-break-out" href='http://bos.lacounty.gov/Services/AssessmentAppeals' target='_blank' title='@Localizer["Assessment Appeals Board"]'>bos.lacounty.gov/Services/AssessmentAppeals</a>.
+                        </p>
+                    </div>
+                    <div class="button-content text-center ">
+                        <input type="button" class="btn btn-primary bg-3" id="AreasofResponsibility4" value="@Localizer["Areas of Responsibility"]" onclick="location.href='@Url.Action("Overview", "Home", new {id = 2} )'" />
+                    </div>
+                </div>
+                <div class="col-md-6 px-4">
+                    <div class="contact-top">
+                        <p style="font-weight: 500">Los Angeles County Assessment Appeals Board </p>
+                        <p style="font-weight: 500">500 West Temple Street, Room B4</p>
+                        <p style="font-weight: 500">Los Angeles, CA 90012</p>
+                        <div class="row my-3">
+                            <div class="col-sm-2"><p>@Localizer["Phone"]:</p></div>
+                            <div class="col-sm-10">
+                                <p>(888) 807-2111 (@Localizer["Toll Free"]) @Localizer["and press number 5"]</p>
+                                <p>(213) 974-1471</p>
+                                <p>@Localizer["TDD/TTY"]: (213) 974-2196</p>
+                                <p>@Localizer["Alternate TDD/TTY"]: (800) 735-2929</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Email"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="mailto: aaboffice@bos.lacounty.gov">aaboffice@bos.lacounty.gov</a></p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2"><p>@Localizer["Website"]:</p></div>
+                            <div class="col-sm-10">
+                                <p><a class="dont-break-out" href="http://bos.lacounty.gov/Services/AssessmentAppeals" target="_blank">http://bos.lacounty.gov/Services/AssessmentAppeals</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-bottom">
+                        <p>@Localizer["Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department."]</p>
+                    </div>
+                    <div class="button-content text-center">
+                        <input type="button" class="btn btn-primary bg-3" id="PublicInquiry4" value="@Localizer["Public Inquiry Form"]" onclick="location.href='@Url.Action("PublicInquiry", "Home")'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function openCity(evt, TabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
-            document.getElementById("defaultOpen").click();
-        </script>
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tabcontent.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(TabName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
 </section>
