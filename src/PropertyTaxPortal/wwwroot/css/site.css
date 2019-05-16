@@ -895,3 +895,7 @@ img[usemap] {
 .search-hide {
     display: none;
 }
+
+.section-contesting {
+    height: 100vh;
+}

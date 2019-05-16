@@ -132,17 +132,20 @@
   <data name="Areas of Responsibliity" xml:space="preserve">
     <value>Áreas de Responsabilidad</value>
   </data>
-  <data name="Tax Tools" xml:space="preserve">
-    <value>Herramientas de impuestos</value>
-  </data>
-  <data name="Property Tax Management System" xml:space="preserve">
-    <value>Sistema de gestión de impuestos a la propiedad</value>
-  </data>
-  <data name="Multiple Parcel Inquires" xml:space="preserve">
-    <value>Consultas de paquetes múltiples</value>
+  <data name="Resources" xml:space="preserve">
+    <value>Recursos</value>
   </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>Evitar las sanciones por la comprensión de los matasellos</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Cambiar dirección de correo</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Nuevos dueños de negocios</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Propietarios de casas nuevas</value>
   </data>
   <data name="Penalty Cancellations" xml:space="preserve">
     <value>Cancelaciones de pena</value>
@@ -150,11 +153,17 @@
   <data name="Property Address Search" xml:space="preserve">
     <value>Búsqueda de la dirección de la propiedad</value>
   </data>
-  <data name="New Home Owners" xml:space="preserve">
-    <value>Propietarios de casas nuevas</value>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>Sistema de gestión de impuestos a la propiedad</value>
   </data>
-  <data name="New Business Owners" xml:space="preserve">
-    <value>Nuevos dueños de negocios</value>
+  <data name="Request a Secure Property Tax Bills" xml:space="preserve">
+    <value>Solicitar una factura de impuestos de propiedad segura</value>
+  </data>
+  <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
+    <value>Solicitud de información fiscal de propiedad asegurada (parcelas múltiples)</value>
+  </data>
+  <data name="View Payment History" xml:space="preserve">
+    <value>Ver historial de pagos</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>enlaces rápidos</value>
@@ -189,14 +198,17 @@
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>¿Cuánto debo?</value>
   </data>
-  <data name="Pay Online" xml:space="preserve">
-    <value>Paga en linea</value>
-  </data>
-  <data name="Other Payment Options" xml:space="preserve">
-    <value>Otras opciones de pago</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>Pagar impuestos a la propiedad</value>
   </data>
   <data name="Tax Bills" xml:space="preserve">
     <value>Facturas de impuestos</value>
+  </data>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Impuesto anual ajustado a la propiedad</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Impuesto de propiedad suplementario ajustado</value>
   </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Impuesto anual de propiedad garantizada</value>
@@ -205,22 +217,10 @@
     <value>Impuesto anual a la propiedad asegurada</value>
   </data>
   <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
-    <value>Declaración anual de información de impuestos garantizados</value>
+    <value>Declaración anual de información sobre impuestos a la propiedad asegurada</value>
   </data>
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Aviso de Delincuencia</value>
-  </data>
-  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
-    <value>Impuesto sobre la propiedad asegurada sustituto</value>
-  </data>
-  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
-    <value>Impuesto suplementario sobre la propiedad asegurada</value>
-  </data>
-  <data name="Unsecured Property Tax Bill" xml:space="preserve">
-    <value>Impuesto sobre la propiedad no garantizada</value>
-  </data>
-  <data name="Unsecured Prior Year Bill" xml:space="preserve">
-    <value>Factura del año anterior sin garantía</value>
   </data>
   <data name="Payment Activity Notice" xml:space="preserve">
     <value>Aviso de actividad de pago</value>
@@ -228,11 +228,17 @@
   <data name="Statement of Prior Year Taxes" xml:space="preserve">
     <value>Declaración de impuestos del año anterior</value>
   </data>
-  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
-    <value>Impuesto anual ajustado a la propiedad</value>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto sobre la propiedad asegurada sustituto</value>
   </data>
-  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
-    <value>Impuesto de propiedad suplementario ajustado</value>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto suplementario sobre la propiedad asegurada</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Factura del año anterior sin garantía</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Impuesto sobre la propiedad no garantizada</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>Preguntas más frecuentes</value>
