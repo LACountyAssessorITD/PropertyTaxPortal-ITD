@@ -899,3 +899,17 @@ img[usemap] {
 .section-contesting {
     height: 100vh;
 }
+
+.contesting-links {
+    color: #863c0b;
+    background-color: #f5f5f5;
+}
+    /*.contesting-links ul,li {
+        list-style: disc outside none !important;
+    }*/
+    .contesting-links a {
+        color: #863c0b;
+    }
+    .contesting-links a:hover {
+        color: #0D47A1;
+    }
