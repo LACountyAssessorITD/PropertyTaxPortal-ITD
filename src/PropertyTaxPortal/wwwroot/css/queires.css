@@ -163,7 +163,12 @@
 
     /* Coursel */
     .carousel-header .container {
-        margin: 0;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    .carousel-inner {
+        width: 100%;
     }
     
 
@@ -191,13 +196,13 @@
     .nav-icon-bar {
         display: block;
     }
-    .section-news {
+    /*.section-news {
         
         font-size: 90%;
-    }
+    }*/
     html,
     body {
-        font-size: 15px;
+        font-size: 18px;
     }
     .collapsing {
         position: absolute;
@@ -377,14 +382,15 @@
 }
 
 @media only screen and (max-width: 634px) {
-    
+    html,
+    body {
+        font-size: 15px;
+    }
 }
 
 
 @media only screen and (max-width: 523px) {
-    .name-text {
-        padding-top: 25px;
-    }
+    
 
     .img-carousel {
         padding-right: 20px;
@@ -409,11 +415,20 @@
     .index-wrap {
         padding-bottom: 451px;
     }
+    .name-text {
+        left: 40px;
+    }
+    #carouselExampleControls{
+        padding: 0;
+    }
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     /* CAROUSEL */
+    .name-text {
+        left: 30px;
+    }
     .img-carousel {
         height: 120px !important;
     }

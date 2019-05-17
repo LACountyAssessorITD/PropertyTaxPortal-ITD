@@ -28,19 +28,19 @@
                     {
                         @if (counter == 0)
                         {
-                    <div class="carousel-item active">
-                        @{ int test = item.NewsId;}
-                        <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Localizer[@Html.Raw(item.Title).ToString()]</p></a>
-                        
-                        @{counter++;}
-                    </div>
+                            <div class="carousel-item active">
+                                @{ int test = item.NewsId;}
+                                <a class="t-shadow" asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Localizer[@Html.Raw(item.Title).ToString()]</p></a>
+
+                                @{counter++;}
+                            </div>
                         }
                         else
                         {
                             <div class="carousel-item">
                                 @{ int test = item.NewsId;}
-                                <a asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Localizer[@Html.Raw(item.Title).ToString()]</p></a>
-                               
+                                <a class="t-shadow" asp-controller="Home" asp-route-id="@item.NewsId" asp-action="NewsLanding"><p>@Localizer[@Html.Raw(item.Title).ToString()]</p></a>
+
                             </div>
                         }
                     }
@@ -57,8 +57,8 @@
 <section class="container-fluid section-head">
     <div class="row section-columns">
         <div class="col-lg-5 welcome-header js--wp-8">
-            <h1 class="display-3">@Localizer["Welcome"]</h1>
-            <p>
+            <h1 class="display-3 t-shadow ">@Localizer["Welcome"]</h1>
+            <p class="t-shadow">
                 @Localizer["Assessor, Auditor-Controller, Treasurer & Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County"].
             </p>
         </div>
@@ -67,11 +67,16 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <a asp-controller="Home" asp-route-id="0" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Jeffery Prang</span></p>
+                                <p class="text-underline">Assessor</p>
+                            </div>
+                            
                             <div class="row">
 
                                 <div class="col-3 align-items-center">
-                                    <p class="name-text"><span>Jeffery Prang</span></p>
-                                    <p class="text-underline">Assessor</p>
+                                    @*<p class="name-text"><span>Jeffery Prang</span></p>
+                                    <p class="text-underline">Assessor</p>*@
                                 </div>
                                 <div class="col-9 img-carousel h-100">
 
@@ -87,10 +92,14 @@
                     </div>
                     <div class="carousel-item ">
                         <a asp-controller="Home" asp-route-id="1" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Arlene Barerra</span></p>
+                                <p class="text-underline">Acting Auditor-Controller</p>
+                            </div>
                             <div class="row">
                                 <div class="col-3">
-                                    <p class="name-text">Arlene Barerra</p>
-                                    <p class="text-underline">Auditor-Controller</p>
+                                    @*<p class="name-text">Arlene Barerra</p>
+                                    <p class="text-underline">Acting Auditor-Controller</p>*@
                                 </div>
                                 <div class="col-9 img-carousel">
 
@@ -105,10 +114,14 @@
                     </div>
                     <div class="carousel-item">
                         <a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Joseph Kelly</span></p>
+                                <p class="text-underline">Treasurer & Tax Collector</p>
+                            </div>
                             <div class="row">
                                 <div class="col-3">
-                                    <p class="name-text">Joseph Kelly</p>
-                                    <p class="text-underline">Treasurer & Tax Collector</p>
+                                    @*<p class="name-text">Joseph Kelly</p>
+                                    <p class="text-underline">Treasurer & Tax Collector</p>*@
                                 </div>
                                 <div class="col-9 img-carousel">
 
@@ -123,10 +136,15 @@
                     </div>
                     <div class="carousel-item ">
                         <a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Celia Zavala</span></p>
+                                <p class="text-underline">Executive Officer</p>
+                                <p class="text-underline">Assessment Appeals Board</p>
+                            </div>
                             <div class="row">
                                 <div class="col-3">
-                                    <p class="name-text">Celia Zavala</p>
-                                    <p class="text-underline">Assessment Appeals Board</p>
+                                    @*<p class="name-text">Celia Zavala</p>
+                                    <p class="text-underline">Executive Office Assessment Appeals Board</p>*@
                                 </div>
                                 <div class="col-9 img-carousel">
 
@@ -155,6 +173,7 @@
         </div>
     </div>
 </section>
+
 
 <!---------------------------------------------------------------------->
 <!----------------------------------Cards------------------------------->
@@ -187,7 +206,7 @@
             <a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank">
                 <div class="card-img bg-3">
                     @*<ion-icon class="c-4" name="business"></ion-icon>*@
-                    
+
                     <ion class="far fa-envelope-open c-4"></ion>
                 </div>
                 <p>@Localizer["Change Mailing Address"]</p>
@@ -205,12 +224,13 @@
 
 
         <div class="col-md-3 col-sm-6 text-card bg-temp js--wp-4">
-            <a asp-controller="Home" asp-route-id="2" asp-action="Overview">
+            @*<a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank">*@
+            <a asp-controller="Home" asp-action="Overview" asp-route-id="2">
                 <div class="card-img bg-temp">
                     @*<ion-icon class="c-1" name="people"></ion-icon>*@
                     <ion class="fas fa-user-friends c-1"></ion>
                 </div>
-                <p>@Localizer["AREAS OF RESPONSIBILITY"]</p>
+                <p>@Localizer["Areas of Responsibility"]</p>
 
             </a>
 
