@@ -3,20 +3,84 @@
 
 @inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = "SelfService";
+    ViewData["Title"] = "Self Service";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
 
-<div class="text-center my-4">
-    <p><a href="https://ttc.lacounty.gov/new-property-owner/ " target="_blank" aria-label="newpropertyowners">@Localizer["New Property Owner Information "]</a></p>
-    <p><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/ " target="_blank" aria-label="penalaltycancelreq2">@Localizer["Penalty Cancellation Requests "]</a></p>
-    <p><a href="https://ttc.lacounty.gov/property-tax-installment-plans/ " target="_blank" aria-label="propertytaxinstallment">@Localizer["Property Tax Installment Plans"]</a></p>
-    <p><a href="https://ttc.lacounty.gov/property-tax-payment-history/ " target="_blank" aria-label="propertytaxpaymenthistory">@Localizer["Property Tax Payment History "]</a></p>
-    <p><a href="https://ttc.lacounty.gov/request-duplicate-bill/ " target="_blank" aria-label="duplicatebill">@Localizer["Request Duplicate Bill "]</a></p>
-    <p><a href="https://ttc.lacounty.gov/senior-citizen-property-tax-assistance/ " target="_blank" aria-label="seniorcitizenpropertytax">@Localizer["Senior Citizen Property Tax Assistance "]</a></p>
-</div>
+<section class="container-fluid bg-header bg-paymentinfo">
+    <h2 class="display-4"> @Localizer["Self-Service Options"] </h2>
+</section>
 
+
+<section class="container-fluid self-service-section section-cards">
+    <div class="row">
+
+
+
+        <div class="col-6 text-card bg-1 js--wp-5">
+            <a href="https://ttc.lacounty.gov/new-property-owner/" target="_blank">
+                <div class="card-img bg-1">
+                    <ion class="fas fa-home c-2"></ion>
+                    @*<ion class="fas fa-dollar-sign c-2"></ion>*@
+                </div>
+                <p>@Localizer["New Property Owner Information "]</p>
+            </a>
+        </div>
+        <div class="col-6 text-card bg-2 js--wp-6">
+            <a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank">
+                <div class="card-img bg-2">
+                    <ion class="far fa-window-close c-3"></ion>
+                    @*<ion class="fas fa-tasks c-3"></ion>*@
+                </div>
+                <p>@Localizer["Penalty Cancellation Requests"]</p>
+            </a>
+        </div>
+        <div class="col-6 text-card bg-3 js--wp-7">
+            <a href="https://ttc.lacounty.gov/property-tax-installment-plans/" target="_blank">
+                <div class="card-img bg-3">
+
+
+                    <ion class="far fa-envelope-open c-4"></ion>
+                </div>
+                <p>@Localizer["Property Tax Installment Plans"]</p>
+            </a>
+        </div>
+        <div class=" col-6 text-card bg-4 js--wp-10">
+            <a href="https://ttc.lacounty.gov/property-tax-payment-history/" target="_blank">
+                <div class="card-img bg-4">
+                    <ion class="fas fa-history c-5"></ion>
+                    @*<ion class="fas fa-city c-5"></ion>*@
+                </div>
+                <p>@Localizer["Property Tax Payment History"]</p>
+            </a>
+        </div>
+
+
+        <div class=" col-6 text-card bg-temp js--wp-4">
+
+            <a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank">
+                <div class="card-img bg-temp">
+
+                    @*<ion class="fas fa-user-friends c-1"></ion>*@
+                    <ion class="far fa-copy c-1"></ion>
+                </div>
+                <p>@Localizer["Request Duplicate Bill"]</p>
+
+            </a>
+
+        </div>
+        <div class="col-6 text-card bg-4 js--wp-11" style="background-color: #a1c4cf">
+            <a href="https://ttc.lacounty.gov/senior-citizen-property-tax-assistance/" target="_blank">
+                <div class="card-img bg-4" style="background-color: #a1c4cf">
+
+                    <ion class="fas fa-city c-6"></ion>
+                </div>
+                <p>@Localizer["Senior Citizen Property Tax Assistance"]</p>
+            </a>
+        </div>
+    </div>
+</section>
 
 
