@@ -210,7 +210,7 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     border-radius: 45%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
     z-index: 4;
 }
