@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = "Self Service";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section class="container-fluid bg-header bg-contact mb-temp">
+    <h2 class="display-4"> @Localizer["Self-Service Options"] </h2>
+</section>
+
+
+<section class="container-fluid self-service-section section-cards">
+    <div class="row">
+
+         <div class="col-lg-6 col-12 text-card bg-15 js--wp-5">
+            <a href="https://ttc.lacounty.gov/new-property-owner/" target="_blank">
+                <div class="card-img bg-15">
+                    <ion class="fas fa-home c-2"></ion>
+                    @*<ion class="fas fa-dollar-sign c-2"></ion>*@
+                </div>
+                <p>@Localizer["New Property Owner Information "]</p>
+            </a>
+        </div>
+        <div class="col-6 col-12  text-card bg-15 js--wp-6">
+            <a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank">
+                <div class="card-img bg-15">
+                    <ion class="far fa-window-close c-3"></ion>
+                    @*<ion class="fas fa-tasks c-3"></ion>*@
+                </div>
+                <p>@Localizer["Penalty Cancellation Requests"]</p>
+            </a>
+        </div>
+        <div class="col-6 col-12  text-card bg-15 js--wp-7">
+            <a href="https://ttc.lacounty.gov/property-tax-installment-plans/" target="_blank">
+                <div class="card-img bg-15">
+
+
+                    <ion class="far fa-envelope-open c-4"></ion>
+                </div>
+                <p>@Localizer["Property Tax Installment Plans"]</p>
+            </a>
+        </div>
+        <div class=" col-6 col-12  text-card bg-15 js--wp-10">
+            <a href="https://ttc.lacounty.gov/property-tax-payment-history/" target="_blank">
+                <div class="card-img bg-15">
+                    <ion class="fas fa-history c-5"></ion>
+                    @*<ion class="fas fa-city c-5"></ion>*@
+                </div>
+                <p>@Localizer["Property Tax Payment History"]</p>
+            </a>
+        </div>
+
+
+        <div class=" col-6 col-12  text-card bg-15 js--wp-4">
+
+            <a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank">
+                <div class="card-img bg-15">
+
+                    @*<ion class="fas fa-user-friends c-1"></ion>*@
+                    <ion class="far fa-copy c-1"></ion>
+                </div>
+                <p>@Localizer["Request Duplicate Bill"]</p>
+
+            </a>
+
+        </div>
+        <div class="col-6 col-12  text-card bg-15 js--wp-11" >
+            <a href="https://ttc.lacounty.gov/senior-citizen-property-tax-assistance/" target="_blank">
+                <div class="card-img bg-15" >
+
+                    <ion class="fas fa-city c-6"></ion>
+                </div>
+                <p>@Localizer["Senior Citizen Property Tax Assistance"]</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    body {
+        background-color: #e1e1e1;
+    }
+</style>

@@ -224,7 +224,7 @@
         left: 0px;
     }
     .navbar-nav li a {
-        font-size: 120%;
+        font-size: 100%;
         padding-left: 10px !important;
         
     }
@@ -277,6 +277,10 @@
     nav .dropdown-menu {
         border: none;
         padding: 0;
+    }
+    .mini-menu {
+        min-width: 100% !important;
+        
     }
    
 

@@ -49,6 +49,11 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        public IActionResult SelfService()
+        {
+            return View();
+        }
+
         //Annual Secured Property Tax Information Statement
         public IActionResult AnnualSecuredPropertyTaxInformationStatement()
         {

@@ -19,8 +19,13 @@
     <div class="container news-area mt-4">
         <p>@Localizer[@Html.Raw(@Model.Body).ToString()]</p>
     </div>
-    
+    <div class="container mt-4 text-center " id="back-button">
+        <a asp-controller="Home" asp-action="News">
+            <input type="button" class="btn btn-dark" value="Back to News"/>
+        </a>
+    </div>
 </section>
+
 
 
 

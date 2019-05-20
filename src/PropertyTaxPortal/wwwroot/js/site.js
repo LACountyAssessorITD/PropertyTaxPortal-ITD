@@ -106,6 +106,14 @@
             $('.js--wp-10').removeClass('animated pulse')
             $('.c-5').removeClass('animated flip')
         });
+    $('.js--wp-11').hover(function () {
+        $('.js--wp-11').addClass('animated pulse')
+        $('.c-6').addClass('animated flip')
+    },
+        function () {
+            $('.js--wp-11').removeClass('animated pulse')
+            $('.c-6').removeClass('animated flip')
+        });
     $('.floatbox').click(function () {
         $('.floatbox').removeClass('display-block')
     });
