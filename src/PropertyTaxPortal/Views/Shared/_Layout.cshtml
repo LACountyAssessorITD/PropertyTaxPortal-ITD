@@ -71,6 +71,7 @@
 
 
         })();
+
     </script>
     <script>
         (function (w, d, s, g, js, fjs) {
@@ -79,6 +80,21 @@
             js.src = 'https://apis.google.com/js/platform.js';
             fjs.parentNode.insertBefore(js, fjs); js.onload = function () { g.load('analytics') };
         }(window, document, 'script'));
+    </script>
+    <script>
+        /**
+        * Function that captures a click on an outbound link in Analytics.
+        * This function takes a valid URL string as an argument, and uses that URL string
+        * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+        * using 'navigator.sendBeacon' in browser that support it.
+        */
+        var captureOutboundLink = function (url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function () { document.location = url;}
+                
+            });
+        }
     </script>
 
     <script src="~/js/ios-orientationchange-fix.min.js"></script>
@@ -98,7 +114,7 @@
             </header>
             <!------------------------------ NAVBAR ------------------------------>
             <nav class="navbar navbar-expand-lg bg-5 ">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="~/images/LACseal76.png" alt="Los Angeles County Property Tax Portal"></a>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="~/images/Office of the Assessor 2017-mini.png" alt="Los Angeles County Property Tax Portal"></a>
 
 
                 <div class="nav-icon-bar">
@@ -138,25 +154,44 @@
                                aria-haspopup="true" aria-expanded="false">
                                 @Localizer["Resources"]
                             </a>
-                            <div class="dropdown-menu small-drop bg-6" style="min-width:420px" aria-labelledby="tax-drop" id="tax-drop">
-                                <ul>
-                                    <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank" aria-label="AvoidPenaltiesByUnderstandingPostmarks">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
-                                    <li><a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank" aria-label="ChangeMailingAddress">@Localizer["Change Mailing Address"]</a></li>
-                                    <li><a href="https://assessor.lacounty.gov/personal-property-assessments-2/" target="_blank" aria-label="NewBusinessOwners">@Localizer["New Business Owners"]</a></li>
-                                    <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank" aria-label="NewHomeOwners">@Localizer["New Home Owners"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank" aria-label="PenaltyCancellations">@Localizer["Penalty Cancellations"]</a></li>
-                                    <li><a href="https://portal.assessor.lacounty.gov/" target="_blank" aria-label="PropertyAddressSearch">@Localizer["Property Address Search"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank" aria-label="PropertyTaxManagementSystem">@Localizer["Property Tax Management System"]</a></li>
-                                    <li><a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank" aria-label="RequestASecurePropertyTaxBills">@Localizer["Request a Secure Property Tax Bill"]</a></li>
-                                    <li>
-                                        <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/" target="_blank" aria-label="SecuredPropertyTaxInformationRequest">
-                                            @Localizer["Secured Property Tax Information Request (Multiple Parcels)"]
-                                        </a>
-                                    </li>
-                                    <li><a href="https://ttc.lacounty.gov/property-tax-payment-history/" target="_blank" aria-label="ViewPaymentHistory">@Localizer["View Payment History"]</a></li>
-                                </ul>
+                            <div class="dropdown-menu mini-menu container-fluid small-drop bg-6"  aria-labelledby="tax-drop" id="tax-drop">
+                               <div class="row">
+                                   <div class="col-lg-6 border-right">
+                                       <p>@Localizer["Self-Service"]</p>
+                                       <ul>
+                                           <li><a href="https://ttc.lacounty.gov/new-property-owner/ " target="_blank" aria-label="newpropertyowners">@Localizer["New Property Owner Information "]</a></li>
+                                           <li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/ " target="_blank" aria-label="penalaltycancelreq2">@Localizer["Penalty Cancellation Requests "]</a></li>
+                                           <li><a href="https://ttc.lacounty.gov/property-tax-installment-plans/ " target="_blank" aria-label="propertytaxinstallment">@Localizer["Property Tax Installment Plans"]</a></li>
+                                           <li><a href="https://ttc.lacounty.gov/property-tax-payment-history/ " target="_blank" aria-label="propertytaxpaymenthistory">@Localizer["Property Tax Payment History "]</a></li>
+                                           <li><a href="https://ttc.lacounty.gov/request-duplicate-bill/ " target="_blank" aria-label="duplicatebill">@Localizer["Request Duplicate Bill "]</a></li>
+                                           <li><a href="https://ttc.lacounty.gov/senior-citizen-property-tax-assistance/ " target="_blank" aria-label="seniorcitizenpropertytax">@Localizer["Senior Citizen Property Tax Assistance "]</a></li>
+                                       </ul>
+                                   </div>
+                                   <div class="col-lg-6">
+                                       <p>@Localizer["Tools"]</p>
+                                       <ul>
+                                           <li><a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/" target="_blank" aria-label="AvoidPenaltiesByUnderstandingPostmarks">@Localizer["Avoid Penalties by Understanding Postmarks"]</a></li>
+                                           <li><a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank" aria-label="ChangeMailingAddress">@Localizer["Change Mailing Address"]</a></li>
+                                           <li><a href="https://assessor.lacounty.gov/personal-property-assessments-2/" target="_blank" aria-label="NewBusinessOwners">@Localizer["New Business Owners"]</a></li>
+                                           <li><a href="https://assessor.lacounty.gov/message-to-homeowners/" target="_blank" aria-label="NewHomeOwners">@Localizer["New Home Owners"]</a></li>
+                                           @*<li><a href="https://ttc.lacounty.gov/penalty-cancellation-request-2/" target="_blank" aria-label="PenaltyCancellations">@Localizer["Penalty Cancellations"]</a></li>*@
+                                           <li><a href="https://portal.assessor.lacounty.gov/" target="_blank" aria-label="PropertyAddressSearch">@Localizer["Property Address Search"]</a></li>
+                                           <li><a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank" aria-label="PropertyTaxManagementSystem">@Localizer["Property Tax Management System"]</a></li>
+                                           @*<li><a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank" aria-label="RequestASecurePropertyTaxBills">@Localizer["Request a Secured Property Tax Bill"]</a></li>*@
+                                           <li>
+                                               <a href="https://ttc.lacounty.gov/secured-property-tax-information-request-multiple-parcels/" target="_blank" aria-label="SecuredPropertyTaxInformationRequest">
+                                                   @Localizer["Secured Property Tax Information Request (Multiple Parcels)"]
+                                               </a>
+                                           </li>
+                                           @*<li><a href="https://ttc.lacounty.gov/property-tax-payment-history/" target="_blank" aria-label="ViewPaymentHistory">@Localizer["View Payment History"]</a></li>*@
+                                           <li><a href="https://lao.ca.gov/Videos/Player?playlistId=96" target="_blank" aria-label="calculatingtax">@Localizer["Calculating Your 1% Tax"]</a></li>
+                                           <li><a href="https://lao.ca.gov/Videos/Player?playlistId=96&videoId=144" target="_blank" aria-label="Wheredoestaxgo?">@Localizer["The 1% Tax - Where Does Your Money Go"]</a></li>
+                                       </ul>
+                                   </div>
+                               </div>
                             </div>
                         </li>
+                        
                         <li class="nav-item dropdown-left">
                             <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
@@ -176,7 +211,7 @@
                                         <p>@Localizer["Property Valuation"]</p>
                                         <ul>
                                             <li><a asp-controller="Home" asp-action="ContestingValue" aria-labelledby="ContestingYourPropertyValue" id="ContestingYourPropertyValue">@Localizer["Contesting Your Property Value"]</a></li>
-                                            
+
                                             <li><a href="https://portal.assessor.lacounty.gov/" target="_blank" aria-labelledby="PropertyAddressSearch" id="PropertyAddressSearch">@Localizer["Property Address Search"]</a></li>
                                             <li><a href="http://maps.assessor.lacounty.gov/GVH_2_2/Index.html?configBase=http://maps.assessor.lacounty.gov/Geocortex/Essentials/REST/sites/PAIS/viewers/PAIS_hv/virtualdirectory/Resources/Config/Default" target="_blank" aria-labelledby="PropertyData&Maps" id="PropertyData&Maps">@Localizer["Property Data & Maps"]</a></li>
                                             <li><a href="https://assessor.lacounty.gov/supplemental-tax-estimator/" target="_blank" aria-labelledby="SupplementalTaxEstimator" id="SupplementalTaxEstimator">@Localizer["Supplemental Tax Estimator"]</a></li>
@@ -221,7 +256,7 @@
                                 <ul>
                                     <li><a asp-controller="Home" asp-route-id="0" asp-action="GeneralFAQ" aria-labelledby="TaxBills" id="TaxBills">@Localizer["Tax Bills"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="1" asp-action="GeneralFAQ" aria-labelledby="RefundsTaxSalesTaxLiens" id="RefundsTaxSalesTaxLiens">@Localizer["Refunds/Tax Sales/Tax Liens"]</a></li>
-                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="GeneralFAQ" aria-labelledby="PropertyValues"id="PropertyValues">@Localizer["Property Values"]</a></li>
+                                    <li><a asp-controller="Home" asp-route-id="2" asp-action="GeneralFAQ" aria-labelledby="PropertyValues" id="PropertyValues">@Localizer["Property Values"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="3" asp-action="GeneralFAQ" aria-labelledby="Ownership1" id="Ownership1">@Localizer["Ownership"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="4" asp-action="GeneralFAQ" aria-labelledby="TaxAgentRegistration" id="TaxAgentRegistration">@Localizer["Tax Agent Registration"]</a></li>
                                     <li><a asp-controller="Home" asp-route-id="5" asp-action="GeneralFAQ" aria-labelledby="AllFAQs" id="AllFAQs">@Localizer["All FAQs"]</a></li>

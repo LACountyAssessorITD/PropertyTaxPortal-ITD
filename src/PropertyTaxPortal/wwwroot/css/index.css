@@ -143,13 +143,13 @@
         margin-right: auto;
     }
 
-        .section-cards .row .text-card:first-child {
+        /*.section-cards .row .text-card:first-child {
             margin-left: 0;
         }
 
         .section-cards .row .text-card:last-child {
             margin-right: 0;
-        }
+        }*/
     .section-cards .col-md-3 {
         flex: 0 0 20%;
     }
@@ -161,6 +161,7 @@
     -webkit-box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
             box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
     max-width: 200px;
+    /*max-width: 180px;*/
     
     text-align: center;
     color: #fff;

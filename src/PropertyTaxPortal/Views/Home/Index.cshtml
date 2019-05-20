@@ -185,27 +185,27 @@
 
 
         <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-5">
-            <a href=" https://ttc.lacounty.gov/pay-your-property-taxes/" target="_blank">
+            <a href="https://ttc.lacounty.gov/pay-your-property-taxes/" onclick="captureOutboundLink('https://ttc.lacounty.gov/pay-your-property-taxes/');" target="_blank">
                 <div class="card-img bg-1">
-                    @*<ion-icon class="c-2" name="logo-usd"></ion-icon>*@
+                  
                     <ion class="fas fa-dollar-sign c-2"></ion>
                 </div>
                 <p>@Localizer["Pay Property </br> Taxes"]</p>
             </a>
         </div>
         <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-6">
-            <a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">
+            <a href="https://ttc.lacounty.gov/property-tax-management-system/" onclick="captureOutboundLink('https://ttc.lacounty.gov/property-tax-management-system/');" target="_blank">
                 <div class="card-img bg-2">
-                    @*<ion-icon class="c-3" name="filing"></ion-icon>*@
+                
                     <ion class="fas fa-tasks c-3"></ion>
                 </div>
                 <p>@Localizer["PROPERTY TAX MANAGEMENT SYSTEM"]</p>
             </a>
         </div>
         <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-7">
-            <a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank">
+            <a href="https://assessor.lacounty.gov/change-mailing-address/" onclick="captureOutboundLink('https://assessor.lacounty.gov/change-mailing-address/');" target="_blank">
                 <div class="card-img bg-3">
-                    @*<ion-icon class="c-4" name="business"></ion-icon>*@
+                  
 
                     <ion class="far fa-envelope-open c-4"></ion>
                 </div>
@@ -213,9 +213,9 @@
             </a>
         </div>
         <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-10">
-            <a href="https://portal.assessor.lacounty.gov/" target="_blank">
+            <a href="https://portal.assessor.lacounty.gov/" onclick="captureOutboundLink('https://portal.assessor.lacounty.gov/');" target="_blank">
                 <div class="card-img bg-4">
-                    @*<ion-icon class="c-4" name="business"></ion-icon>*@
+       
                     <ion class="fas fa-city c-5"></ion>
                 </div>
                 <p>@Localizer["PROPERTY ADDRESS SEARCH"]</p>
@@ -224,10 +224,10 @@
 
 
         <div class="col-md-3 col-sm-6 text-card bg-temp js--wp-4">
-            @*<a href="https://ttc.lacounty.gov/request-duplicate-bill/" target="_blank">*@
+           
             <a asp-controller="Home" asp-action="Overview" asp-route-id="2">
                 <div class="card-img bg-temp">
-                    @*<ion-icon class="c-1" name="people"></ion-icon>*@
+                  
                     <ion class="fas fa-user-friends c-1"></ion>
                 </div>
                 <p>@Localizer["Areas of Responsibility"]</p>
@@ -237,7 +237,76 @@
         </div>
     </div>
 </section>
+@*<section class="container-fluid section-cards">
+    <div class="row">
 
+
+
+        <div class="col-lg-2 col-md-6 text-card bg-1 js--wp-5">
+            <a href=" https://ttc.lacounty.gov/pay-your-property-taxes/" target="_blank">
+                <div class="card-img bg-1">
+                  
+                    <ion class="fas fa-dollar-sign c-2"></ion>
+                </div>
+                <p>@Localizer["Pay Property </br> Taxes"]</p>
+            </a>
+        </div>
+        <div class="col-lg-2 col-md-6 text-card bg-2 js--wp-6">
+            <a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">
+                <div class="card-img bg-2">
+                   
+                    <ion class="fas fa-tasks c-3"></ion>
+                </div>
+                <p>@Localizer["PROPERTY TAX MANAGEMENT SYSTEM"]</p>
+            </a>
+        </div>
+        <div class="col-lg-2 col-md-6 text-card bg-3 js--wp-7">
+            <a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank">
+                <div class="card-img bg-3">
+                   
+
+                    <ion class="far fa-envelope-open c-4"></ion>
+                </div>
+                <p>@Localizer["Change Mailing Address"]</p>
+            </a>
+        </div>
+        <div class="col-lg-2 col-md-6 text-card bg-4 js--wp-10">
+            <a href="https://portal.assessor.lacounty.gov/" target="_blank">
+                <div class="card-img bg-4">
+                   
+                    <ion class="fas fa-city c-5"></ion>
+                </div>
+                <p>@Localizer["PROPERTY ADDRESS SEARCH"]</p>
+            </a>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 text-card bg-temp js--wp-4">
+           
+            <a asp-controller="Home" asp-action="Overview" asp-route-id="2">
+                <div class="card-img bg-temp">
+                   
+                    <ion class="fas fa-user-friends c-1"></ion>
+                </div>
+                <p>@Localizer["Areas of Responsibility"]</p>
+
+            </a>
+
+        </div>
+        <div class="col-lg-2 col-md-6 text-card js--wp-11" style="background-color: #a1c4cf">
+           
+            <a asp-controller="Home" asp-action="Overview" asp-route-id="2">
+                <div class="card-img "style="background-color: #a1c4cf">
+              
+                    <ion class="fas fa-gas-pump c-6"></ion>
+                </div>
+                <p>@Localizer["Self-Service"]</p>
+
+            </a>
+
+        </div>
+    </div>
+</section>*@
 <style>
     body {
         background-image: linear-gradient(rgba(1, 21, 37, 0.6), rgba(1, 21, 37, 0.6)), url('../images/bg-8.jpg');

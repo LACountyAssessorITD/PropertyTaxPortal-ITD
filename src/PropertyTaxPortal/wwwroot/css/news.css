@@ -55,6 +55,12 @@
         white-space:pre-wrap;
         overflow: hidden;
     }*/
+#back-button input {
+    background-color: #494949;
+}
+#back-button input:hover {
+    background-color: #2a2929;
+}
 .newsbox a {
     position: absolute;
     bottom: 20px;

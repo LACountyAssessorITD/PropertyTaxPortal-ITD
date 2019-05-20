@@ -507,15 +507,28 @@ nav .dropdown-menu {
         border-right: 2px solid #000;
     }
 
-/* --------------------------- */
-/* --------Section-Footer------ */
-/* --------------------------- */
-
-.section-footer {
-    background: #2A2929;
-    
-    font-size: 70%;
+/* ----------------------- */
+/* ------MINI_MENU--- */
+/* ----------------------- */
+.mini-menu {
+    min-width: 700px !important;
+    left: -600px;
 }
+.mini-menu p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #57BDF6;
+}
+    .mini-menu .border-right {
+        border-right: 2px solid #000 !important;
+    }
+    /* --------------------------- */
+    /* --------Section-Footer------ */
+    /* --------------------------- */
+    .section-footer {
+        background: #2A2929;
+        font-size: 70%;
+    }
     .section-footer a {
         color: #808080;
         
