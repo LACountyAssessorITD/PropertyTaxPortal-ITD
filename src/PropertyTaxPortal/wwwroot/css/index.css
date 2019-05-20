@@ -153,23 +153,37 @@
     .section-cards .col-md-3 {
         flex: 0 0 20%;
     }
-
+.self-service-section {
+    /*background-color: #e0e0e0;*/
+    margin-top: 0;
+}
+.mb-temp {
+    margin-bottom: 100px;
+}
+.self-service-section .bg-15 {
+    background-color: #636363;
+}
 .self-service-section .text-card {
-    max-width: 500px !important;
+    max-width: 450px !important;
+    min-width: 200px;
+    min-height: 150px !important;
 }
-.text-card {
-    width: 100%;
-    min-height: 180px;
-    margin: auto;
-    -webkit-box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
-    box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
-    max-width: 200px;
-    /*max-width: 180px;*/
-    text-align: center;
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 80px;
-}
+    .self-service-section .text-card p {
+        transform: translateY(-90%);
+    }
+    .text-card {
+        width: 100%;
+        min-height: 180px;
+        margin: auto;
+        -webkit-box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
+        box-shadow: 0px 7px 30px rgba(43,98,169,0.5);
+        max-width: 200px;
+        /*max-width: 180px;*/
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
     .text-card a {
         color: #fff;
         text-decoration: none !important;
