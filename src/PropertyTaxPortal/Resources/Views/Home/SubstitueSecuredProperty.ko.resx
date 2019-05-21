@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>고정 재산세 법안 대체</value>
+  </data>
+  <data name="The Substitute Secured Property Tax Bill is in lieu of the Annual Secured or Supplemental Property Tax Bills. The bill" xml:space="preserve">
+    <value>대체 담보 재산세 법안은 연간 담보 또는 보충 재산세 법안 대신 사용됩니다. 청구서</value>
+  </data>
+  <data name="can be used to remit payment or serve as a record of payment activity as of the date the bill was printed." xml:space="preserve">
+    <value>청구서를 인쇄 한 날짜에 지불금을 송금하거나 지불 활동 기록으로 사용할 수 있습니다.</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>신원 확인 번호</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number – (1234-567-890). The Assessor’s Identification Number (AIN) is a " xml:space="preserve">
+    <value>이 영역은 신원 확인 번호 - (1234-567-890)를 나타냅니다. 신원 확인 번호 (AIN)는</value>
+  </data>
+  <data name="ten-digit number assigned by the Office of the Assessor to each piece of real property in Los Angeles County. This ten-digit AIN is made up of a four-digit Map " xml:space="preserve">
+    <value>로스 앤젤레스 카운티의 각 부동산에 Assessor의 사무실이 지정한 10 자리 숫자. 이 10 자리수의 AIN은 4 자리수의 Map으로 구성됩니다.</value>
+  </data>
+  <data name="Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>도서 번호 (1234), 세 자리 페이지 번호 (567) 및 세 자리 소포 번호 (890)로 구성됩니다.</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>전자 송금 (EFT) 번호</value>
+  </data>
+  <data name="The EFT number is used to make credit card/Visa Debit card payments over the telephone. To initiate a credit " xml:space="preserve">
+    <value>전자 송금 (EFT) 번호는 전화로 신용 카드 / Visa 직불 카드 결제를하는 데 사용됩니다. 크레딧을 시작하려면</value>
+  </data>
+  <data name="card/Visa Debit card payment, please call 1(888) 473-0835. However, there are processing fees when paying by credit card/Visa Debit card. Each transaction is " xml:space="preserve">
+    <value>카드 / Visa 직불 카드 결제는 1 (888) 473-0835로 전화하십시오. 그러나 신용 카드 / Visa 직불 카드로 결제 할 때 수수료가 부과됩니다. 각 거래는</value>
+  </data>
+  <data name="limited to $99,999.99." xml:space="preserve">
+    <value>99,999.99 달러로 제한됩니다.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>Assessee</value>
+  </data>
+  <data name="The owner of record and the mailing address on file with the Office of the Assessor" xml:space="preserve">
+    <value>공증인 사무실에 기록되어있는 기록 소유자와 우편 주소</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>속성 위치 및 / 또는 속성 설명</value>
+  </data>
+  <data name="The property address and/or legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>평가사 사무실에 기록 된 재산 주소 및 / 또는 법적 설명.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>신원 확인 번호</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number – (1234-567-890). The Assessor’s Identification Number (AIN) is " xml:space="preserve">
+    <value>이 영역은 신원 확인 번호 - (1234-567-890)를 나타냅니다. 신원 확인 번호 (AIN)</value>
+  </data>
+  <data name="a ten-digit number assigned by the Office of the Assessor to each piece of real property in Los Angeles County. This ten-digit AIN is made up of a four-digit Map " xml:space="preserve">
+    <value>로스 앤젤레스 카운티의 각 부동산에 Assessor of Office가 지정한 10 자리 숫자. 이 10 자리수의 AIN은 4 자리수의 Map으로 구성됩니다.</value>
+  </data>
+  <data name="Total Tax Due" xml:space="preserve">
+    <value>만기 납부 기한</value>
+  </data>
+  <data name="This is the total amount due for the bill. The Annual Secured Property Tax Bill has two payment stubs. The first installment is due November 1 " xml:space="preserve">
+    <value>청구서의 총 금액입니다. 연간 고정 재산세 법안에는 두 개의 지불 명세서가 있습니다. 첫 번째 할부는 11 월 1 일 마감 예정입니다.</value>
+  </data>
+  <data name="and is delinquent December 10. If the first installment is not received or United States Postal Service (USPS) postmarked by December 10, a penalty will apply. " xml:space="preserve">
+    <value>12 월 10 일에 체납입니다. 첫 번째 할부가 입금되지 않거나 12 월 10 일까지 소인이 찍힌 USPS (US Postal Service) 소인이 부과되는 경우 벌금이 부과됩니다.</value>
+  </data>
+  <data name="The second installment is due February 1 and is delinquent April 10. If the second installment is not received or USPS postmarked on or before April 10, a 10 " xml:space="preserve">
+    <value>두 번째 할부는 2 월 1 일 마감이며 4 월 10 일 연체입니다. 두 번째 할부가 접수되지 않았거나 4 월 10 일 또는 그 이전에 USPS 소인이 찍히면 10</value>
+  </data>
+  <data name="percent penalty and a $10.00 cost will be imposed. Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor's " xml:space="preserve">
+    <value>퍼센트 벌금 및 $ 10.00 비용이 부과됩니다. 납세자는 지불 유형을 포함한 지불 스텁을 포함하고 반드시 자신의 Assessor 's</value>
+  </data>
+  <data name="Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>수표에 연도 / 순서 번호가있는 식별 번호.</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>반품 된 수표</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>은행이 반환 한 수표에는 50 달러의 수수료가 부과됩니다.</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>현재 평가 된 값</value>
+  </data>
+  <data name="The Assessor’s valuation of the property after the adjustment." xml:space="preserve">
+    <value>부동산 평가사가 조정 후 평가.</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>사전 평가 된 가치</value>
+  </data>
+  <data name="This is the Assessor’s valuation of the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>이것은 최근 이전 / 신축 일 이전의 부동산에 대한 평가자의 평가입니다.</value>
+  </data>
+  <data name="Taxable Value" xml:space="preserve">
+    <value>과세 대상 가치</value>
+  </data>
+  <data name="The current assessed value less the prior assessed value, if any." xml:space="preserve">
+    <value>현재 평가 된 값보다 이전 평가 된 값을 뺀 값.</value>
+  </data>
+  <data name="Less Exemptions" xml:space="preserve">
+    <value>면제</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>면제는 평가 된 금액에서 공제됩니다.</value>
+  </data>
+  <data name="Net Taxable Value" xml:space="preserve">
+    <value>순세 과세액</value>
+  </data>
+  <data name="The difference between the current value and exemptions." xml:space="preserve">
+    <value>현재 가치와 면제의 차이.</value>
+  </data>
+  <data name="2nd Installment Delinquency Date" xml:space="preserve">
+    <value>2 차 연체 연체 일</value>
+  </data>
+  <data name="If paying the bill in installments, the second installment must be received or United States Postal Service postmarked by " xml:space="preserve">
+    <value>청구서를 분할하여 지불하는 경우, 두 번째 할부금을 수령해야합니다. 또는 미국 우체국 소인이</value>
+  </data>
+  <data name="this date, or a 10 percent penalty and a $10.00 cost will be imposed. " xml:space="preserve">
+    <value>이 날짜 또는 10 %의 벌금과 $ 10.00의 비용이 부과됩니다.</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>2 차 할부</value>
+  </data>
+  <data name="Amount of taxes due for the second installment. Taxpayers must be sure to include the payment stub with any type of payment and write " xml:space="preserve">
+    <value>두 번째 할부에 대한 세금 금액. 납세자는 반드시 지불 스텁에 지불 방법을 기입하고</value>
+  </data>
+  <data name="their Assessor’s Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>그들의 수표에 년 / 서열 번호가있는 그들의 신분증 번호.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>송금액</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the payment and write the " xml:space="preserve">
+    <value>연체 일로 지불하지 않으면 여기에 명시된 금액을 송금하십시오. 지불 스텁 (들)을 포함하고</value>
+  </data>
+  <data name="Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>평가자의 신원 확인 번호와 연도 / 순서 번호.</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>수표 발행</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s) with the payment " xml:space="preserve">
+    <value>수표를 로스 엔젤스 카운티 세금 징수 원에게 지불하고이 주소로 우송하십시오. 지불 스텁 (들)을 지불과 함께 포함 시키십시오.</value>
+  </data>
+  <data name="and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>수표에 신분증 번호와 연도 / 서열 번호를 기입하십시오.</value>
+  </data>
+  <data name="1st Installment Delinquency Date" xml:space="preserve">
+    <value>1 회 연체 일</value>
+  </data>
+  <data name="If paying the bill in full, payment must be received or United States Postal Service (USPS) postmarked by this date. If " xml:space="preserve">
+    <value>청구서를 전액 납부하면이 날짜까지 우편 요금을 수령하거나 USPS (US Postal Service) 소인을 찍어야합니다. 만약</value>
+  </data>
+  <data name="paying in installments, the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>첫 번째 할부금을 받거나이 날짜까지 USPS 소인이 찍히거나 10 %의 벌금이 부과됩니다.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>1 차 할부</value>
+  </data>
+  <data name="Amount of taxes due for the first installment. Taxpayers must be sure to include the payment stub with any type of payment and write " xml:space="preserve">
+    <value>첫 번째 할부 할 세금 금액. 납세자는 반드시 지불 스텁에 지불 방법을 기입하고</value>
+  </data>
+  <data name=" Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s) with the payment " xml:space="preserve">
+    <value> 수표를 로스 엔젤스 카운티 세금 징수 원에게 지불하고이 주소로 우송하십시오. 지불 스텁 (들)을 지불과 함께 포함 시키십시오.</value>
+  </data>
+</root>
