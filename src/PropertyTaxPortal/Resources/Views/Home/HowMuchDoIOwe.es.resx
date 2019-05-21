@@ -117,55 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="OTHER GOVERNMENT SITES" xml:space="preserve">
-    <value>OTROS SITIOS DE GOBIERNO</value>
+  <data name="How Much Do I Owe?" xml:space="preserve">
+    <value>¿Cuánto debo?</value>
   </data>
-  <data name="California State Board of Equalization" xml:space="preserve">
-    <value>Junta de Ecualización del Estado de California</value>
+  <data name="To locate the amount of your Secured Property Taxes, click the following link How much are my property taxes? and enter your Assessor's Identification Number. This website provides current year and delinquent secured tax information. Current year is available between October 1 and June 30 only. Delinquent Secured Tax information is available all year except during the month of July." xml:space="preserve">
+    <value>Para localizar el monto de sus impuestos a la propiedad asegurada, haga clic en el siguiente enlace ¿Cuánto cuestan mis impuestos a la propiedad? e ingrese su Número de Identificación del Asesor. Este sitio web proporciona información sobre el año fiscal vigente y la morosidad garantizada. El año en curso está disponible solo entre el 1 de octubre y el 30 de junio. La información sobre los impuestos garantizados morosos está disponible todo el año, excepto durante el mes de julio.</value>
   </data>
-  <data name="Child Support Services Department’s “Most Wanted” List" xml:space="preserve">
-    <value>Lista de "Más buscados" del Departamento de Servicios de Manutención de Menores</value>
+  <data name="Secured Property Taxes" xml:space="preserve">
+    <value>Impuestos a la propiedad asegurada</value>
   </data>
-  <data name="Declaration of Homestead" xml:space="preserve">
-    <value>Declaración de Homestead</value>
+  <data name="To locate the amount of your Current Year Unsecured Taxes, click the following link How much are my Unsecured taxes? and enter the year and bill number. This website provides current year unsecured tax information and is available between March 1 and June 30 only. Delinquent Unsecured Tax information is only available by telephone or in person. Please call (213)893-7935 or visit us at 225 N. Hill Street, Los Angeles, CA 90012. We are located on the first floor in Room 122." xml:space="preserve">
+    <value>Para localizar la cantidad de sus impuestos no garantizados del año actual, haga clic en el siguiente enlace ¿Cuánto cuestan mis impuestos no garantizados? e ingrese el año y número de factura. Este sitio web proporciona información sobre impuestos no garantizados del año en curso y está disponible solo entre el 1 de marzo y el 30 de junio. La información sobre impuestos no garantizados morosos solo está disponible por teléfono o en persona. Llame al (213) 893-7935 o visítenos en 225 N. Hill Street, Los Angeles, CA 90012. Estamos ubicados en el primer piso de la habitación 122.</value>
   </data>
-  <data name="Frequently Requested L.A.County Forms" xml:space="preserve">
-    <value>Formularios L.A.County Solicitados con frecuencia</value>
+  <data name="Unsecured Property Taxes" xml:space="preserve">
+    <value>Impuestos a la propiedad no garantizados</value>
   </data>
-  <data name="L.A.County Board of Supervisors" xml:space="preserve">
-    <value>L.A.County Junta de Supervisores</value>
-  </data>
-  <data name="L.A.County Chief Executive Office" xml:space="preserve">
-    <value>L.A.County Chief Executive Office</value>
-  </data>
-  <data name="L.A.County Department of Consumer &amp; Business Affairs" xml:space="preserve">
-    <value>L.A.County Department of Consumer &amp; Business Affairs</value>
-  </data>
-  <data name="L.A.County Department of Human Resources" xml:space="preserve">
-    <value>Departamento de Recursos Humanos de L.A.County</value>
-  </data>
-  <data name="L.A.County Directory of Services and Information" xml:space="preserve">
-    <value>L.A.County Directory of Services and Information</value>
-  </data>
-  <data name="L.A.County Quick Reference Guide" xml:space="preserve">
-    <value>Guía de referencia rápida de L.A.County</value>
-  </data>
-  <data name="L.A.County Registrar - Recorder / County Clerk" xml:space="preserve">
-    <value>L.A.County Registrar - Registrador / Secretario del Condado</value>
-  </data>
-  <data name="Property Document Recording" xml:space="preserve">
-    <value>Registro de documentos de propiedad</value>
-  </data>
-  <data name="Property Tax Postponement" xml:space="preserve">
-    <value>Aplazamiento del impuesto a la propiedad</value>
-  </data>
-  <data name="Real Estate Records - Copies" xml:space="preserve">
-    <value>Registros de Bienes Raíces - Copias</value>
-  </data>
-  <data name="State and Local Government on the Net" xml:space="preserve">
-    <value>Gobierno estatal y local en la red</value>
-  </data>
-  <data name="State of California Portal" xml:space="preserve">
-    <value>Portal del Estado de California</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>Pagar impuestos a la propiedad</value>
   </data>
 </root>

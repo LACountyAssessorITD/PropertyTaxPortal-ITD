@@ -117,55 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="OTHER GOVERNMENT SITES" xml:space="preserve">
-    <value>OTROS SITIOS DE GOBIERNO</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>Opciones de autoservicio</value>
   </data>
-  <data name="California State Board of Equalization" xml:space="preserve">
-    <value>Junta de Ecualización del Estado de California</value>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>Nueva información del propietario de la propiedad</value>
   </data>
-  <data name="Child Support Services Department’s “Most Wanted” List" xml:space="preserve">
-    <value>Lista de "Más buscados" del Departamento de Servicios de Manutención de Menores</value>
+  <data name="Penalty Cancellation Requests" xml:space="preserve">
+    <value>Solicitudes de Cancelación de Penas</value>
   </data>
-  <data name="Declaration of Homestead" xml:space="preserve">
-    <value>Declaración de Homestead</value>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>Planes de pago de impuestos de propiedad</value>
   </data>
-  <data name="Frequently Requested L.A.County Forms" xml:space="preserve">
-    <value>Formularios L.A.County Solicitados con frecuencia</value>
+  <data name="Property Tax Payment History" xml:space="preserve">
+    <value>Historial de pago de impuestos a la propiedad</value>
   </data>
-  <data name="L.A.County Board of Supervisors" xml:space="preserve">
-    <value>L.A.County Junta de Supervisores</value>
+  <data name="Request Duplicate Bill" xml:space="preserve">
+    <value>Solicitar factura duplicada</value>
   </data>
-  <data name="L.A.County Chief Executive Office" xml:space="preserve">
-    <value>L.A.County Chief Executive Office</value>
-  </data>
-  <data name="L.A.County Department of Consumer &amp; Business Affairs" xml:space="preserve">
-    <value>L.A.County Department of Consumer &amp; Business Affairs</value>
-  </data>
-  <data name="L.A.County Department of Human Resources" xml:space="preserve">
-    <value>Departamento de Recursos Humanos de L.A.County</value>
-  </data>
-  <data name="L.A.County Directory of Services and Information" xml:space="preserve">
-    <value>L.A.County Directory of Services and Information</value>
-  </data>
-  <data name="L.A.County Quick Reference Guide" xml:space="preserve">
-    <value>Guía de referencia rápida de L.A.County</value>
-  </data>
-  <data name="L.A.County Registrar - Recorder / County Clerk" xml:space="preserve">
-    <value>L.A.County Registrar - Registrador / Secretario del Condado</value>
-  </data>
-  <data name="Property Document Recording" xml:space="preserve">
-    <value>Registro de documentos de propiedad</value>
-  </data>
-  <data name="Property Tax Postponement" xml:space="preserve">
-    <value>Aplazamiento del impuesto a la propiedad</value>
-  </data>
-  <data name="Real Estate Records - Copies" xml:space="preserve">
-    <value>Registros de Bienes Raíces - Copias</value>
-  </data>
-  <data name="State and Local Government on the Net" xml:space="preserve">
-    <value>Gobierno estatal y local en la red</value>
-  </data>
-  <data name="State of California Portal" xml:space="preserve">
-    <value>Portal del Estado de California</value>
+  <data name="Senior Citizen Property Tax Assistance" xml:space="preserve">
+    <value>Asistencia de impuestos a la propiedad de personas mayores</value>
   </data>
 </root>

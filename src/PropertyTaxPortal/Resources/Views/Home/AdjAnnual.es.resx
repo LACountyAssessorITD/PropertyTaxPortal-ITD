@@ -127,7 +127,7 @@
     <value>La propiedad asegurada ajustada</value>
   </data>
   <data name="Tax Bill replaces the Annual Secured Property Tax Bill.  Annual property taxes may be adjusted" xml:space="preserve">
-    <value>La factura de impuestos reemplaza la factura anual de impuestos a la propiedad asegurada. Los impuestos anuales a la propiedad pueden ser ajustados</value>
+    <value>La factura de impuestos reemplaza la factura de impuestos anual de propiedad garantizada. Los impuestos anuales a la propiedad pueden ser ajustados</value>
   </data>
   <data name="during the fiscal year, July 1 through June 30.  Reasons may include one or more of the following:" xml:space="preserve">
     <value>durante el año fiscal, del 1 de julio al 30 de junio. Las razones pueden incluir uno o más de los siguientes:</value>
@@ -244,7 +244,7 @@
     <value>Estos son cargos adicionales colocados en el</value>
   </data>
   <data name="property tax bills.  These charges are not based on Assessor’s valuations.  Examples of" xml:space="preserve">
-    <value>facturas de impuestos a la propiedad. Estos cargos no se basan en las valoraciones del Asesor. Ejemplos de</value>
+    <value>facturas de impuestos de propiedad. Estos cargos no se basan en las valoraciones del Asesor. Ejemplos de</value>
   </data>
   <data name="direct assessments are charges for sewer maintenance, water, or fire districts.  For questions" xml:space="preserve">
     <value>Las evaluaciones directas son cargos por mantenimiento de alcantarillado, agua o distritos de bomberos. Para preguntas</value>
@@ -367,7 +367,7 @@
     <value>factura a plazos, el segundo pago debe ser recibido o el Servicio Postal de los Estados Unidos</value>
   </data>
   <data name="postmarked by this date, or a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
-    <value>matasellos para esta fecha, o se impondrá una multa del 10% y un costo de $ 10.00.</value>
+    <value>matasellos para esta fecha, o se impondrá una multa del 10 por ciento y un costo de $ 10.00.</value>
   </data>
   <data name="2nd Installment Due" xml:space="preserve">
     <value>2º pago debido</value>
@@ -409,7 +409,7 @@
     <value>Si paga la factura en su totalidad, pago.</value>
   </data>
   <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments," xml:space="preserve">
-    <value>debe ser recibido o el Servicio Postal de los Estados Unidos (USPS) con matasellos de esta fecha. Si se paga a plazos,</value>
+    <value>debe ser recibido o el Servicio Postal de los Estados Unidos (USPS) con sello postal de esta fecha Si se paga a plazos,</value>
   </data>
   <data name="the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
     <value>la primera cuota debe recibirse o USPS con sello postal para esta fecha, o se impondrá una multa del 10 por ciento.</value>

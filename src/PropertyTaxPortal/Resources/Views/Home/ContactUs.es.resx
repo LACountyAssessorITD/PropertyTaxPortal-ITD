@@ -192,8 +192,8 @@
   <data name="Click the button below to see the areas of jurisdiction for the Auditor-Controller and related County departments. Questions regarding these areas should be directed to that office; or visit the Auditor's Website at" xml:space="preserve">
     <value>Haga clic en el botón a continuación para ver las áreas de jurisdicción para el Auditor-Controlador y los departamentos relacionados del Condado. Las preguntas sobre estas áreas deben dirigirse a esa oficina; o visite el sitio web del auditor en</value>
   </data>
-  <data name="The Los Angeles County Treasurer and Tax Collector receives the Extended Roll, prints the property tax bills and mails them to the names and addresses on the Roll. When you send your remittance to pay your tax bill, the Treasurer and Tax Collector then posts that payment to your property." xml:space="preserve">
-    <value>El Tesorero y Recaudador de Impuestos del Condado de Los Ángeles recibe el Rollo extendido, imprime las facturas de impuestos a la propiedad y las envía por correo a los nombres y direcciones en el Rollo. Cuando envía su remesa para pagar su factura de impuestos, el Tesorero y el Recaudador de impuestos publican ese pago en su propiedad.</value>
+  <data name="The mission of the Los Angeles County Treasurer &amp; Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services." xml:space="preserve">
+    <value>La misión del Tesorero y Recaudador de Impuestos del Condado de Los Ángeles es facturar, cobrar, desembolsar, invertir, pedir prestado y salvaguardar el dinero y las propiedades. El Departamento también proporciona servicios de cumplimiento, auditoría, consultoría, educación, administración de sucesiones y información pública.</value>
   </data>
   <data name="Click the button below to see the areas of jurisdiction for the Treasurer &amp; Tax Collector and related County departments. Questions regarding these areas should be directed to that office; or visit the Treasurer's Website at" xml:space="preserve">
     <value>Haga clic en el botón a continuación para ver las áreas de jurisdicción para el Tesorero y el Recaudador de impuestos y los departamentos relacionados del Condado. Las preguntas sobre estas áreas deben dirigirse a esa oficina; o visite el sitio web del Tesorero en</value>
@@ -208,7 +208,7 @@
     <value>Evaluaciones regulares: la fecha de presentación es del 2 de julio al 30 de noviembre.</value>
   </data>
   <data name="Supplemental / Adjusted / Escape / Roll Corrections - filing date is within 60 days after the mailing date on the Notice of Assessed Value Change or Supplemental / Adjusted / Escape Assessments Tax Bill." xml:space="preserve">
-    <value>Correcciones suplementarias / ajustadas / de escape / registro: la fecha de presentación es dentro de los 60 días posteriores a la fecha de envío por correo en el Aviso de cambio del valor estimado o en la Factura de impuestos suplementaria / ajustada / de escape</value>
+    <value>Correcciones suplementarias / ajustadas / de escape / registro: la fecha de presentación es dentro de los 60 días posteriores a la fecha de envío por correo en el Aviso de cambio del valor estimado o en la factura tributaria de las evaluaciones suplementarias / ajustadas / de escape.</value>
   </data>
   <data name="Misfortune &amp; Calamity Reassessments - file within six months of the mailing date of the Assessor's Proposed Reassessment Notice due to Property Damaged by Misfortune &amp; Calamity." xml:space="preserve">
     <value>Reevaluaciones de la desgracia y la calamidad: se archiva dentro de los seis meses posteriores a la fecha de envío del Aviso de la nueva evaluación propuesta por el Asesor debido a la propiedad dañada por la desgracia y la calamidad.</value>

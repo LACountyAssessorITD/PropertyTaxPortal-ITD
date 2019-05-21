@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Facture fiscale annuelle ajustée</value>
+  </data>
+  <data name="Adjusted Secured Property Tax Bill" xml:space="preserve">
+    <value>Facture de taxe foncière garantie ajustée</value>
+  </data>
+  <data name="The Adjusted Secured Property" xml:space="preserve">
+    <value>La propriété sécurisée ajustée</value>
+  </data>
+  <data name="Tax Bill replaces the Annual Secured Property Tax Bill.  Annual property taxes may be adjusted" xml:space="preserve">
+    <value>La facture d'impôt remplace la facture annuelle d'impôt foncier garanti. Les taxes foncières annuelles peuvent être ajustées</value>
+  </data>
+  <data name="during the fiscal year, July 1 through June 30.  Reasons may include one or more of the following:" xml:space="preserve">
+    <value>au cours de l'exercice financier, du 1er juillet au 30 juin. Les motifs peuvent inclure un ou plusieurs des motifs suivants:</value>
+  </data>
+  <data name="1) a change or correction to the assessed value of the property, 2) the allowance of an exemption" xml:space="preserve">
+    <value>1) une modification ou une correction de la valeur imposable du bien, 2) l'indemnité d'une exemption</value>
+  </data>
+  <data name="that was previously omitted, 3) the correction of a direct assessment placed on the property from" xml:space="preserve">
+    <value>précédemment omis, 3) la correction d’une évaluation directe placée sur la propriété de</value>
+  </data>
+  <data name="a municipality or special district, or 4) the inclusion of a penalty for failure to comply with" xml:space="preserve">
+    <value>une municipalité ou un district spécial, ou 4) l’inclusion d’une pénalité pour non-respect de</value>
+  </data>
+  <data name="certain requirements of the Office of the Assessor, prescribed by law (this excludes a penalty" xml:space="preserve">
+    <value>certaines exigences du Bureau de l’évaluateur, prescrites par la loi (ceci exclut une peine</value>
+  </data>
+  <data name="resulting from a delinquent payment).  In addition, changes may occur to the Voted Indebtedness" xml:space="preserve">
+    <value>résultant d'un paiement en retard). En outre, des modifications peuvent être apportées à l’endettement voté.</value>
+  </data>
+  <data name="Tax Rate.  Voted Indebtedness is the result of voter approval of a bond measure initiative." xml:space="preserve">
+    <value>Taux d'imposition. L’endettement voté est le résultat de l’approbation par les électeurs d’une initiative de mesure des cautionnements.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Numéro d'identification de l'évaluateur</value>
+  </data>
+  <data name="This area identifies the Assessor’s" xml:space="preserve">
+    <value>Cette zone identifie le rôle de l’évaluateur</value>
+  </data>
+  <data name="Identification Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit" xml:space="preserve">
+    <value>Numéro d'identification - (1234-567-890). Le numéro d'identification de l'évaluateur (AIN) est un numéro à dix chiffres.</value>
+  </data>
+  <data name="number assigned by the Office of the Assessor to each piece of real property in Los Angeles County." xml:space="preserve">
+    <value>numéro attribué par le bureau de l'évaluateur à chaque bien immobilier du comté de Los Angeles.</value>
+  </data>
+  <data name="This ten-digit AIN is made up of a four-digit Map Book Number (1234), a three-digit Page Number (567)," xml:space="preserve">
+    <value>Cet AIN à dix chiffres est composé d'un numéro de carte (434) (1234), d'un numéro de page (3</value>
+  </data>
+  <data name="and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>et un numéro de colis à trois chiffres (890).</value>
+  </data>
+  <data name="Year and Sequence" xml:space="preserve">
+    <value>Année et séquence</value>
+  </data>
+  <data name="This area identifies the Year and Sequence – (16 000).  This five digit" xml:space="preserve">
+    <value>Cette zone identifie l'année et la séquence - (16 000). Ce cinq chiffres</value>
+  </data>
+  <data name="number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a" xml:space="preserve">
+    <value>Ce numéro est composé d’une année d’imposition à deux chiffres et d’une séquence ou d’un type de facture à trois chiffres. Par exemple, un</value>
+  </data>
+  <data name="2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010." xml:space="preserve">
+    <value>La facture annuelle 2016 est affichée comme 16 000 €, mais une facture supplémentaire pour 2016 peut être affichée comme 16 010</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Taxe générale</value>
+  </data>
+  <data name="This tax amount is the general one" xml:space="preserve">
+    <value>Ce montant de taxe est le montant général</value>
+  </data>
+  <data name="percent (1%) tax rate levied against every property in the County. The" xml:space="preserve">
+    <value>taux d’impôt (1%) appliqué à toutes les propriétés du comté. le</value>
+  </data>
+  <data name="calculation is 1 percent times the &quot;Net Taxable Value&quot;." xml:space="preserve">
+    <value>le calcul est égal à 1 pour cent de la "valeur imposable nette".</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>Assessee</value>
+  </data>
+  <data name="The owner of record and the mailing address on" xml:space="preserve">
+    <value>Le propriétaire du dossier et l'adresse postale sur</value>
+  </data>
+  <data name="file with the Office of the Assessor." xml:space="preserve">
+    <value>déposer auprès du bureau de l'évaluateur.</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Endettement voté</value>
+  </data>
+  <data name="Voter-approved taxes levied" xml:space="preserve">
+    <value>Taxes approuvées par les électeurs</value>
+  </data>
+  <data name="against property." xml:space="preserve">
+    <value>contre la propriété.</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>Numéro de transfert électronique de fonds (TEF)</value>
+  </data>
+  <
