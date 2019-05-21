@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Annual Secured Property Tax Bill" xml:space="preserve">
+    <value>Տարեկան ապահովված գույքի հարկի մասին օրինագիծ</value>
+  </data>
+  <data name="Annual Secured Property Tax Bills" xml:space="preserve">
+    <value>Տարեկան ապահովված գույքի հարկային դրույքներ</value>
+  </data>
+  <data name="The Annual Secured Property Tax Bill is mailed on or before November 1 of" xml:space="preserve">
+    <value>Տարեկան ապահովագրված գույքի հարկի մասին օրինագիծը ուղարկվում է նոյեմբերի 1-ից կամ մինչեւ նոյեմբերի 1-ը</value>
+  </data>
+  <data name="each year. The annual bill has two payment stubs. The first installment payment is due November 1. It becomes delinquent and will be" xml:space="preserve">
+    <value>ամեն տարի. Տարեկան օրինագծում ունի երկու վճարային նախագիծ: Առաջին վճարման վճարը կկայանա նոյեմբերի 1-ին: Այն դադարում է եւ լինելու է</value>
+  </data>
+  <data name="subject to a 10 percent penalty if payment is not received or postmarked by the United States Postal Service (USPS) on or before" xml:space="preserve">
+    <value>ենթակա է 10 տոկոսանոց տույժի, եթե վճարումը չի ստացվում կամ ուղարկվում է Միացյալ Նահանգների փոստային ծառայության կողմից</value>
+  </data>
+  <data name="December 10. The second installment payment is due February 1. It becomes delinquent and will be subject to a 10 percent penalty and" xml:space="preserve">
+    <value>Դեկտեմբերի 10-ին: Երկրորդ վճարման վճարը կախված է փետրվարի 1-ից: Այն դառնում է անճանաչ եւ ենթակա է տույժի 10 տոկոսի</value>
+  </data>
+  <data name="a $10 cost if payment is not received or USPS postmarked on or before April 10." xml:space="preserve">
+    <value>10 ԱՄՆ դոլարի արժեքը, եթե վճարումը չի ստացվել կամ USPS- ը թողարկվել է ապրիլի 10-ին կամ դրանից առաջ:</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Գնահատողի նույնականացման համարը</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number – (1234-567-890). The Assessor’s" xml:space="preserve">
+    <value>Այս տարածքը սահմանում է Գնահատողի նույնականացման համարը (1234-567-890): Գնահատողը</value>
+  </data>
+  <data name="Identification Number (AIN) is a ten-digit number assigned by the Office of the Assessor to each piece of real property in Los Angeles County." xml:space="preserve">
+    <value>Նույնականացման համարը (AIN) հանդիսանում է Լոս Անջելեսի շրջանի յուրաքանչյուր անշարժ գույքին գնահատողի գրասենյակի կողմից նշանակված տաս նիշանոց համարը:</value>
+  </data>
+  <data name="This ten-digit AIN is made up of a four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>Այս տասը թվանշանով AIN- ն բաղկացած է չորս թվանշանով քարտեզի գիրքից (1234), եռանիշ թվով էջի (567) եւ եռանիշ պարունակության համարի (890):</value>
+  </data>
+  <data name="Year and Sequence" xml:space="preserve">
+    <value>Տարին եւ հերթականությունը</value>
+  </data>
+  <data name="This area identifies the Year and Sequence – (16 000). This five digit number is made up of a two-digit tax" xml:space="preserve">
+    <value>Այս տարածքը որոշում է տարին եւ հաջորդականությունը (16 000): Այս հինգ նիշը բաղկացած է երկնիշ հարկից</value>
+  </data>
+  <data name="year and a three-digit sequence or bill type. For example, a 2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be" xml:space="preserve">
+    <value>տարին եւ երեք նիշ հաջորդականությունը կամ օրինագծի տեսակը: Օրինակ, 2016-ի տարեկան օրինագիծը ցուցադրվում է որպես 16 000, սակայն 2016-ի հավելյալ օրինագիծը կարող է լինել</value>
+  </data>
+  <data name="displayed as 16 010." xml:space="preserve">
+    <value>ցուցադրվում է 16 010:</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Ընդհանուր հարկ վճարող</value>
+  </data>
+  <data name="This tax amount is the general one percent (1%) tax rate levied against every property in the County. The" xml:space="preserve">
+    <value>Այս հարկի գումարը կազմում է ընդհանուր մեկ տոկոսը (1%) հարկային դրույքաչափը, որը գանձվում է Վարչական շրջանի յուրաքանչյուր գույքի նկատմամբ: The</value>
+  </data>
+  <data name="calculation is 1% multiplied by the &quot;Net Taxable Value." xml:space="preserve">
+    <value>հաշվարկը 1% է, բազմապատկած է «Հարկվող հարկի արժեքի»:</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>Գնահատող</value>
+  </data>
+  <data name="The owner of record and the mailing address on file with the Office of the Assessor" xml:space="preserve">
+    <value>Հաշվետու սեփականատերը եւ փոստի հասցեն հասցեագրված է Վերստուգողի գրասենյակի հետ</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Քվեարկված պարտքը</value>
+  </data>
+  <data name="Voter-approved taxes levied against property" xml:space="preserve">
+    <value>Ընտրողի կողմից հաստատված գույքից գանձված հարկերը</value>
+  </data>
+  <data name="Electronc Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>Electronc Fund Transfer (EFT) համարը</value>
+  </data>
+  <data name="The EFT number is used to make credit card/Visa Debit card payments over the telephone." xml:space="preserve">
+    <value>EFT համարը օգտագործվում է հեռախոսի միջոցով կրեդիտ քարտ / Visa Debit քարտեր կատարելու համար:</value>
+  </data>
+  <data name="To initiate a credit card/Visa Debit card payment, please call 1(888) 473-0835. However, there are processing fees when paying by credit card/Visa" xml:space="preserve">
+    <value>Վարկային քարտ / Visa Debit քարտ վճարման համար զանգահարեք 1 (888) 473-0835 հեռախոսահամարով: Այնուամենայնիվ, կան կրեդիտային քարտեր / վիզա վճարելու դեպքում վճարման վճարներ</value>
+  </data>
+  <data name="Debit card. Each transaction is limited to $99,999.99. The PIN number is used to make electronic check payment to protect your security and privacy" xml:space="preserve">
+    <value>Դեբետային քարտ. Յուրաքանչյուր գործարքը սահմանափակվում է 99.999.99 դոլարով: PIN- ն օգտագործվում է էլեկտրոնային վճարման վճար կատարելու համար, ձեր անվտանգության եւ գաղտնիության պաշտպանության համար</value>
+  </data>
+  <data name="and is used to pay your current year and defaulted taxes online. Effective with tax bills issued after August 2013, the PIN may contain all alpha," xml:space="preserve">
+    <value>եւ օգտագործվում է վճարել ձեր ընթացիկ տարին եւ կանխել առցանց հարկերը: 2013 թ.-ի օգոստոսից հետո թողարկված հարկային օրինագծերի շնորհիվ, PIN- ը կարող է պարունակել բոլոր ալֆա,</value>
+  </data>
+  <data name="all numeric, or alpha/numeric characters. The alpha letter 'O' is not used in the PIN. The '0' is always a number zero." xml:space="preserve">
+    <value>բոլոր թվային կամ ալֆա / թվային նիշերը: «O» ալֆա տառը չի օգտագործվում PIN- ում: '0' -ը միշտ զրոյական թիվ է:</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Ուղղակի գնահատումներ</value>
+  </data>
+  <data name="These are additional charges placed on the property tax bills. These charges are not based on Assessor’s" xml:space="preserve">
+    <value>Սրանք լրացուցիչ գանձումներ են գույքահարկի օրինագծերում: Այս մեղադրանքները չեն հիմնավորվում Վերահսկիչի կողմից</value>
+  </data>
+  <data name="valuations. Examples of direct assessments are charges for sewer maintenance, water, or fire districts. For questions regarding these assessments," xml:space="preserve">
+    <value>գնահատումներ: Ուղղակի գնահատման օրինակներ են կոյուղիների պահպանման, ջրի կամ հրդեհային տարածքի համար գանձումները: Այս գնահատականների վերաբերյալ հարցերի համար,</value>
+  </data>
+  <data name="please contact the agency. The telephone number for each agency is listed on the bill, or please visit the Department of Auditor-Controller’s" xml:space="preserve">
+    <value>խնդրում ենք դիմել գործակալությանը: Յուրաքանչյուր գործակալության հեռախոսահամարը նշված է օրինագծում, կամ այցելեք Աուդիտոր-վերահսկիչ բաժին</value>
+  </data>
+  <data name="website for a Direct Assessment Listing." xml:space="preserve">
+    <value>կայքը ուղղակի գնահատման ցանկի համար:</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>Հատուկ տեղեկություններ</value>
+  </data>
+  <data name="This section provides important information about the bill and states whether there are any delinquent taxes" xml:space="preserve">
+    <value>Այս բաժինը կարեւոր տեղեկություն է տալիս օրինագծի մասին եւ նշում է, թե արդյոք կան վճարված հարկեր</value>
+  </data>
+  <data name="owed." xml:space="preserve">
+    <value>պարտք:</value>
+  </data>
+  <data name="Total Taxes Due" xml:space="preserve">
+    <value>Ընդհանուր հարկերը պարտադիր են</value>
+  </data>
+  <data name="This is the total amount due for the bill. The Annual Secured Property Tax Bill has two payment stubs. The first" xml:space="preserve">
+    <value>Սա օրինագծի համար նախատեսված ընդհանուր գումարն է: Տարեկան ապահովված գույքի հարկի մասին օրենքը ունի երկու վճարային հոդված: Առաջինը</value>
+  </data>
+  <data name="installment is due November 1 and is delinquent December 10. If the first installment is not received or United States Postal Service (USPS)" xml:space="preserve">
+    <value>ապառիկ մարման ժամկետը նախատեսված է նոյեմբերի 1-ին եւ դադարեցվում է դեկտեմբերի 10-ին: Եթե առաջին վճարումը չի ստացվում կամ ԱՄՆ փոստային ծառայությունը (USPS)</value>
+  </data>
+  <data name="postmarked by December 10, a 10 percent penalty will be imposed. The second installment is due February 1 and is delinquent April 10. If the second" xml:space="preserve">
+    <value>դեկտեմբերի 10-ի դրությամբ ուղարկված 10 տոկոսանոց տուգանքը: Երկրորդ տեղը վճարվում է փետրվարի 1-ին եւ դադարեցվում է ապրիլի 10-ին: Եթե երկրորդը</value>
+  </data>
+  <data name="installment is not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost will be imposed. Taxpayers must be sure" xml:space="preserve">
+    <value>ապառիկ չի ստացվում կամ USPS- ը թողարկվել է ապրիլի 10-ին կամ դրանից առաջ, 10 տոկոսանոց տույժի եւ 10.00 ԱՄՆ դոլարի չափով: Հարկատուները պետք է վստահ լինեն</value>
+  </data>
+  <data name="to include the payment stub with any type of payment and write their Assessor's Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>ներառել վճարման կաղապարը ցանկացած տեսակի վճարով եւ ստուգել իրենց Վերստուգողի նույնականացման համարը տարին / հերթական համարով:</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>Գույքի գտնվելու վայրը եւ / կամ գույքային նկարագրությունը</value>
+  </data>
+  <data name="The property address and/or legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>Գույքի հասցեն եւ / կամ իրավաբանական նկարագրությունը Գնահատման Գրասենյակի հետ:</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>Ընթացիկ գնահատված արժեք</value>
+  </data>
+  <data name="The Assessor’s valuation of the property after the adjustment." xml:space="preserve">
+    <value>Վերագնահատումից հետո գույքի գնահատողը գնահատում է:</value>
+  </data>
+  <data name="Assessor's Regional Office" xml:space="preserve">
+    <value>Գնահատող տարածաշրջանային գրասենյակ</value>
+  </data>
+  <data name="This is the address and telephone number to contact for questions regarding the assessed value of the property." xml:space="preserve">
+    <value>Սա այն հասցեն է եւ հեռախոսահամարը, որը կապվելու է գույքի գնահատված արժեքի հետ կապված հարցերի հետ:</value>
+  </data>
+  <data name="Less Exemption" xml:space="preserve">
+    <value>Ազատությունից զրկելը</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>Բացառությունները, եթե առկա են, հանվում են գնահատված արժեքից:</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>Վերադարձի ստուգման լիցքավորում</value>
+  </data>
+  <data name="There is a $50.00 charge for any checks returned by the bank" xml:space="preserve">
+    <value>Բանկի կողմից վերադարձված ցանկացած չեկի համար գործում է $ 50.00 վճար</value>
+  </data>
+  <data name="Net Taxable Value" xml:space="preserve">
+    <value>Հստակ հարկվող արժեք</value>
+  </data>
+  <data name="The difference between the current value and exemptions." xml:space="preserve">
+    <value>Ընթացիկ արժեքի եւ բացառությունների միջեւ եղած տարբերությունը:</value>
+  </data>
+  <data name="2nd Installment Delinquency Date" xml:space="preserve">
+    <value>2-րդ տեղաբաշխման իրավախախտման ամսաթիվը</value>
+  </data>
+  <data name="If paying the bill in installments, the second installment must be received or United States Postal" xml:space="preserve">
+    <value>Եթե օրինագիծը վճարում է ապառիկ, ապա երկրորդ գումարը պետք է ստանա կամ ԱՄՆ փոստային հասցեով</value>
+  </data>
+  <data name="Service postmarked by this date, or a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>Այս ամսաթվից հետո ուղարկված ծառայությունը կամ 10 տոկոսանոց տույժ եւ 10.00 ԱՄՆ դոլարի արժեքը կկիրառվի:</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>2-րդ տեղադրման շնորհիվ</value>
+  </data>
+  <data name="Amount of taxes due for the second installment. Taxpayers must be sure to include the payment stub with any type" xml:space="preserve">
+    <value>Երկրորդ տեղաբաշխման համար վճարված հարկերի գումարը: Հարկատուները պետք է համոզված լինեն, որ վճարման կաղապարը ներառի ցանկացած տեսակի</value>
+  </data>
+  <data name="of payment and write their Assessor’s Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>վճարման եւ գնահատման համար իրենց Վերստուգողի նույնականացման համարը նշելով տարին / հերթական համարը:</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>Հաշվի գումարը</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the" xml:space="preserve">
+    <value>Եթե վճարումը կատարվել է հանցավորության ամսաթվով, փոխանցեք գումարի չափը: Ներառեք վճարման կաղապարը (ները) հետ</value>
+  </data>
+  <data name="payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>վճարման եւ ստուգման վրա գրեք գնահատողի նույնականացման համարը եւ տարին / հերթական համարը:</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>Կատարեք վճարումներ</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment" xml:space="preserve">
+    <value>Կատարեք վճարումներ Լոս Անջելեսի շրջանի հարկահավաքից եւ հասցեից այս հասցեով: Ներառեք վճարումը</value>
+  </data>
+  <data name="stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>վճարման հետ միասին կարդալ եւ գրել Վերստուգողի նույնականացման համարը եւ տարին / հերթին համարը:</value>
+  </data>
+  <data name="Mail Address Change" xml:space="preserve">
+    <value>Փոստի հասցեն փոխել</value>
+  </data>
+  <data name="To make a change in mailing address, please check the box in the front and complete the information on the" xml:space="preserve">
+    <value>Փոստային փոստի հասցեում փոփոխություն կատարելու համար խնդրում ենք ստուգել ճակատում գտնվող տուփը եւ լրացնել այն տեղեկատվությունը</value>
+  </data>
+  <data name="back of the payment stub." xml:space="preserve">
+    <value>վճարման կողքին:</value>
+  </data>
+  <data name="1st Installment Delinquency Date" xml:space="preserve">
+    <value>1-ին տեղաբաշխման իրավախախտման ամսաթիվը</value>
+  </data>
+  <data name="If paying the bill in full, payment must be received or United States Postal Service (USPS) postmarked by" xml:space="preserve">
+    <value>Եթե օրինագիծը ամբողջությամբ վճարելու դեպքում վճարումը պետք է ստանա կամ Միացյալ Նահանգների փոստային ծառայության (USPS) կողմից</value>
+  </data>
+  <data name="this date. If paying in installments, the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>այս ամսաթիվը: Եթե վճարում եք ապառիկ, ապա այդ ամսաթվին պետք է ստացվի առաջին վճարումը կամ USPS- ը թողարկվի, կամ կիրառվի 10 տոկոսանոց տույժ:</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>1-ին տեղաբաշխման ժամկետը</value>
+  </data>
+  <data name="Amount of taxes due for the first installment. Taxpayers must be sure to include the payment stub with any type of payment" xml:space="preserve">
+    <value>Առաջին վճարման համար վճարված հարկերի գումարը: Հարկատուները պետք է համոզված լինեն, որ վճարման կաղապարը ներառում է ցանկացած տեսակի վճարում</value>
+  </data>
+  <data name="and write their Assessor’s Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>եւ գրել իրենց գնահատողի նույնականացման համարը իրենց ստուգման տարին / հերթական համարով:</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the payment" xml:space="preserve">
+    <value>Եթե վճարումը կատարվել է հանցավորության ամսաթվով, փոխանցեք գումարի չափը: Ներառեք վճարման շտեմարանները վճարման հետ</value>
+  </data>
+  <data name="and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>եւ ստուգեք ստուգիչի նույնականացման համարը եւ տարին / հերթական համարը:</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)" xml:space="preserve">
+    <value>Կատարեք վճարումներ Լոս Անջելեսի շրջանի հարկահավաքից եւ հասցեից այս հասցեով: Ներառեք վճարման կաղապարը (ները)</value>
+  </data>
+  <data name="with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>վճարման հետ միասին եւ ստուգման համար գրեք գնահատողի նույնականացման համարը եւ տարին / հերթական համարը:</value>
+  </data>
+</root>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CONTACT INFORMATION" xml:space="preserve">
+    <value>ԿՈՆՏԱԿՏԱՅԻՆ ՏՎՅԱԼՆԵՐ</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Գնահատող</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Աուդիտոր-վերահսկիչ</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>Գանձապահ եւ հարկային հավաքիչ</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Գնահատման բողոքարկման խորհուրդ</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State law. The assessed value of your property is placed on the &quot;Assessment Roll&quot;. The Assessor also approves and applies all exemptions which are added to the Assessment Roll. The Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>Լոս Անջելեսի շրջանի գնահատողը սահմանում է ձեր գույքի գնահատված արժեքը `տվյալ պետության արժեքի գնահատման միջոցով: Ձեր գույքի գնահատված արժեքը տեղադրվում է «Գնահատման վահանակի» վրա: Գնահատողը նաեւ հաստատում եւ կիրառում է բոլոր այն բացառությունները, որոնք ավելացվում են Գնահատման վահանակին: The Roll- ն այնուհետեւ ներկայացվում է Լոս Անջելեսի շրջանի աուդիտոր-վերահսկիչին հետագա մշակման համար:</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Assessor and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessor's Website at" xml:space="preserve">
+    <value>Սեղմեք ստորեւ բերված կոճակը, որպեսզի տեսնեն իրավասության ոլորտները Գնահատողին եւ համապատասխան վարչական բաժիններին: Այդ ոլորտներին վերաբերող հարցերը պետք է ուղղվեն այդ գրասենյակին. կամ այցելեք Գնահատողի կայքէջը</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>Պատասխանատվության ոլորտները</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Հեռ</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Անվճար</value>
+  </data>
+  <data name="TDD/TTY" xml:space="preserve">
+    <value>TDD / TTY</value>
+  </data>
+  <data name="Alternate TDD/TTY" xml:space="preserve">
+    <value>Այլընտրանքային TDD / TTY</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Կայք</value>
+  </data>
+  <data name="Social" xml:space="preserve">
+    <value>Սոցիալական</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook- ը</value>
+  </data>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>LinkedIn- ը</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Twitter- ը</value>
+  </data>
+  <data name="YouTube" xml:space="preserve">
+    <value>YouTube- ը</value>
+  </data>
+  <data name="Instagram" xml:space="preserve">
+    <value>Instagram- ը</value>
+  </data>
+  <data name="Flickr" xml:space="preserve">
+    <value>Flickr</value>
+  </data>
+  <data name="Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department." xml:space="preserve">
+    <value>Սեղմեք ստորեւ բերված կոճակը, ներկայացնելով ձեր գույքահարկի հետ կապված հարցերը կամ մեկնաբանությունները, համապատասխան բաժնի հանրային ծառայության աշխատակիցներին:</value>
+  </data>
+  <data name="Public Inquiry Form" xml:space="preserve">
+    <value>Հանրային հարցման ձեւ</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Tax Roll then applies the General Tax Levy (1%) and Voted Indebtedness (voter &amp; bonded) tax rates to the value on the Tax Roll. This function is called &quot;extending the Roll&quot;. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>Լոս Անջելեսի շրջանի աուդիտոր-վերահսկիչը ուղղակիորեն գնահատում է հարկային ռոլլին, այնուհետեւ կիրառում է Ընդհանուր Հարկային Հաշվարկը (1%) եւ Քվեարկված պարտքը (ընտրողների եւ պարտատոմսերի) հարկային դրույքները Հարկային Ռոլլի արժեքի նկատմամբ: Այս գործառույթը կոչվում է «երկարաձգելու գլուխը»: Այնուհետեւ, Extended Roll- ը ուղարկվում է Լոս Անջելեսի գանձապետ եւ հարկային հավաքածու `առանձին հարկերի բաշխման եւ վճարումների հավաքագրման համար:</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Auditor-Controller and related County departments. Questions regarding these areas should be directed to that office; or visit the Auditor's Website at" xml:space="preserve">
+    <value>Սեղմեք ստորեւ բերված կոճակը, որպեսզի տեսնեք Աուդիտորի վերահսկիչի եւ հարակից վարչական բաժինների իրավասության ոլորտները: Այդ ոլորտներին վերաբերող հարցերը պետք է ուղղվեն այդ գրասենյակին. կամ այցելեք Աուդիտորի կայքէջը</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer &amp; Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services." xml:space="preserve">
+    <value>Լոս Անջելեսի գանձապետ եւ հարկային հավաքածուի առաքելությունն է հավաքել, ներդնել, ներդնել, ներդնել, վերցնել եւ պաշտպանել դրամական միջոցները եւ գույքը: Բաժինը նաեւ տրամադրում է հարկադիր կատարման, աուդիտի, խորհրդատվության, կրթության, գույքի կառավարման եւ հանրային տեղեկատվական ծառայություններ:</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Treasurer &amp; Tax Collector and related County departments. Questions regarding these areas should be directed to that office; or visit the Treasurer's Website at" xml:space="preserve">
+    <value>Սեղմեք ստորեւ բերված կոճակը, որպեսզի տեսնեք Գանձապետի եւ հարկահավաքի իրավասության ոլորտները եւ համապատասխան վարչական բաժինները: Այդ ոլորտներին վերաբերող հարցերը պետք է ուղղվեն այդ գրասենյակին. կամ այցելեք գանձապետի կայքէջը</value>
+  </data>
+  <data name="The property taxes you pay are primarily based on your property's assessed value as determined by the County Assessor. If you disagree with the assessed value placed on your property, you can appeal that value to the Assessment Appeals Board during the filing periods stated below." xml:space="preserve">
+    <value>Գույքի համար վճարվող հարկերը հիմնականում հիմնված են ձեր գույքային գնահատված արժեքի վրա, որը որոշվում է Վարչապետի կողմից: Եթե դուք համաձայն չեք ձեր գույքի վրա գնահատված արժեքի հետ, ապա այդ արժեքը կարող եք բողոքարկել Գնահատման բողոքարկման խորհուրդին, ստորեւ նշված ներկայացման ժամանակահատվածներում:</value>
+  </data>
+  <data name="The filing periods for equalization of assessments are:" xml:space="preserve">
+    <value>Գնահատման հավասարեցման ներկայացման ժամկետները հետեւյալն են.</value>
+  </data>
+  <data name="Regular Assessments - filing date is July 2 to November 30." xml:space="preserve">
+    <value>Հերթական գնահատումներ `հայտ ներկայացնելու ամսաթիվը հուլիսի 2-ից մինչեւ նոյեմբերի 30-ը:</value>
+  </data>
+  <data name="Supplemental / Adjusted / Escape / Roll Corrections - filing date is within 60 days after the mailing date on the Notice of Assessed Value Change or Supplemental / Adjusted / Escape Assessments Tax Bill." xml:space="preserve">
+    <value>Հավելյալ / ճշգրտված / փախուստը / փաթույթների ուղղում - ներկայացման ամսաթիվը գնահատված արժեքի փոփոխության ծանուցման կամ լրացուցիչ / ճշգրտված / փախուստի գնահատման հարկային օրինագծում փոստային ամսաթվից հետո 60 օրվա ընթացքում:</value>
+  </data>
+  <data name="Misfortune &amp; Calamity Reassessments - file within six months of the mailing date of the Assessor's Proposed Reassessment Notice due to Property Damaged by Misfortune &amp; Calamity." xml:space="preserve">
+    <value>Դժբախտություն եւ աղետի վերագնահատում - ֆայլը, Վնասների եւ աղետների հետեւանքով վնասված գույքի պատճառով, գնահատողի կողմից առաջարկված վերագնահատման ծանուցման փոստային ամսաթվից հետո վեց ամսվա ընթացքում:</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Assessment Appeals Board and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessment Appeals Website at" xml:space="preserve">
+    <value>Սեղմեք ստորեւ բերված կոճակը, տեսնելու գնահատման բողոքարկման խորհուրդը եւ համապատասխան վարչական բաժինների իրավասության ոլորտները: Այդ ոլորտներին վերաբերող հարցերը պետք է ուղղվեն այդ գրասենյակին. կամ այցելեք Գնահատման բողոքարկման կայք</value>
+  </data>
+  <data name="and press number 5" xml:space="preserve">
+    <value>եւ 5-րդ համարը</value>
+  </data>
+</root>

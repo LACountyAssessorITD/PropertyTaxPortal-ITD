@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Statement of Prior Year Taxes" xml:space="preserve">
+    <value>Նախորդ հարկերի հայտարարագիր</value>
+  </data>
+  <data name="The Statement of Prior Year Taxes is an accounting of" xml:space="preserve">
+    <value>Նախորդ տարիների հարկերի մասին հաշվետվությունը հաշվապահական հաշվառում է</value>
+  </data>
+  <data name="all charges and penalties for defaulted taxes incurred to date.  The statement itemizes the year(s) of defaulted" xml:space="preserve">
+    <value>բոլոր մեղադրանքները եւ տույժերը, որոնք կատարվել են մինչ օրս կատարված վճարման ենթակա հարկերը: Հայտը նշում է լռելյայն տարին (տարիները)</value>
+  </data>
+  <data name="taxes, a 10 percent penalty and $10 cost for each year of default, a 1.5 percent redemption penalty per month on" xml:space="preserve">
+    <value>հարկերը, տույժի 10 տոկոսը եւ կանխավճարը յուրաքանչյուր տարվա համար `10 դոլար, ամսական 1.5 տոկոսանոց փոխհատուցման տույժ</value>
+  </data>
+  <data name="the total unpaid tax amount due, and a $15 redemption fee." xml:space="preserve">
+    <value>վճարված ամբողջ վճարված հարկի գումարը եւ 15 դոլար փոխհատուցման վճարը:</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Գնահատողի նույնականացման համարը</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification" xml:space="preserve">
+    <value>Այս տարածքը բացահայտում է գնահատողի ինքնությունը</value>
+  </data>
+  <data name="Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the Office" xml:space="preserve">
+    <value>Միավորների - (1234-567-890): Գնահատողի նույնականացման համարը (AIN) հանդիսանում է Գրասենյակի կողմից նշանակված տաս նիշանոց համարը</value>
+  </data>
+  <data name="of the Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a four-digit" xml:space="preserve">
+    <value>Լոս Անջելեսի շրջանի անշարժ գույքի յուրաքանչյուր հատվածի համար: Այս տասնանիշանիշ AIN- ն բաղկացած է չորս թվից</value>
+  </data>
+  <data name="Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>Քարտեզագրքի համարը (1234), երեք նիշանոց Էջի համարը (567) եւ եռանիշ թվանշանների համարը (890):</value>
+  </data>
+  <data name="PIN" xml:space="preserve">
+    <value>PIN- ը</value>
+  </data>
+  <data name="The PIN number is used to make electronic check payment to protect your security and" xml:space="preserve">
+    <value>PIN- ն օգտագործվում է էլեկտրոնային վճարային վճար կատարելու համար `ձեր անվտանգությունը պաշտպանելու համար</value>
+  </data>
+  <data name="privacy and is used to pay your current year and defaulted taxes online.  Effective with tax bills issued after August 2013," xml:space="preserve">
+    <value>գաղտնիությունը եւ օգտագործվում է վճարել ձեր ընթացիկ տարին եւ կանխավճարները առցանց: 2013 թվականի օգոստոսից հետո թողարկված հարկային օրինագծերի շնորհիվ,</value>
+  </data>
+  <data name="the PIN may contain all alpha, all numeric, or alpha/numeric characters.  The alpha letter 'O' is not used in the PIN." xml:space="preserve">
+    <value>PIN- ը կարող է պարունակել բոլոր ալֆա, բոլոր թվային կամ ալֆա / թվային նիշերը: «O» ալֆա տառը չի օգտագործվում PIN- ում:</value>
+  </data>
+  <data name="The '0' is always a number zero." xml:space="preserve">
+    <value>'0' -ը միշտ զրոյական թիվ է:</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>Հատուկ տեղեկություններ</value>
+  </data>
+  <data name="This section provides important information about the bill" xml:space="preserve">
+    <value>Այս բաժինը կարեւոր տեղեկություններ է տրամադրում օրինագծի մասին</value>
+  </data>
+  <data name="and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>եւ հայտարարում, արդյոք պարտապանի հարկեր կան:</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>Գնահատող</value>
+  </data>
+  <data name="The owner of record and the mailing address on file with the Office" xml:space="preserve">
+    <value>Գրառման սեփականատերը եւ փոստի հասցեն գրասենյակի հետ ֆայլում</value>
+  </data>
+  <data name="of the Assessor." xml:space="preserve">
+    <value>Գնահատողը:</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>Գույքի գտնվելու վայրը եւ / կամ գույքային նկարագրությունը</value>
+  </data>
+  <data name="The property address and/or legal" xml:space="preserve">
+    <value>Գույքի հասցեն եւ / կամ օրինականությունը</value>
+  </data>
+  <data name="description on record with the Office of the Assessor." xml:space="preserve">
+    <value>հաշվետվության վերաբերյալ հաշվետվության ներկայացուցչի հետ:</value>
+  </data>
+  <data name="Breakdown of Delinquent Taxes Owed" xml:space="preserve">
+    <value>Հատկանշական հարկերից խուսափելը</value>
+  </data>
+  <data name="This section lists the Assessor’s Identification" xml:space="preserve">
+    <value>Այս բաժնում նշվում է Գնահատողի նույնականացումը</value>
+  </data>
+  <data name="Number and the Year and Sequence Number by the year the property first defaulted.  Current year taxes are rolled" xml:space="preserve">
+    <value>Թիվը եւ տարին եւ հաջորդականությունը համարը, ըստ նախնական լռելյայն տարվա: Ընթացիկ տարվա հարկերը գլորվում են</value>
+  </data>
+  <data name="or drawn off to the delinquent tax roll if they remain unpaid as of June 30 of each fiscal year (July 1 to June 30)." xml:space="preserve">
+    <value>կամ հափշտակված հարկ վճարողներին, եթե դրանք մնում են չվճարված յուրաքանչյուր ֆինանսական տարվա հունիսի 30-ից (հուլիսի 1-ից մինչեւ հունիսի 30-ը):</value>
+  </data>
+  <data name="D/O represents the drawn off date.  Taxes that are delinquent for five years become subject to the Tax Collector’s" xml:space="preserve">
+    <value>D / O- ը ներկայացնում է նկարահանված ամսաթիվը: Հինգ տարին չանցած հարկերը ենթակա են Հարկահավաքի</value>
+  </data>
+  <data name="power to sell, and the property may be sold at a public auction." xml:space="preserve">
+    <value>վաճառելու իրավունքը եւ գույքը կարող է վաճառվել հանրային աճուրդում:</value>
+  </data>
+  <data name="Total Taxes Due" xml:space="preserve">
+    <value>Ընդհանուր հարկերը պարտադիր են</value>
+  </data>
+  <data name="This is the total amount due for the bill.  The Annual Secured Property" xml:space="preserve">
+    <value>Սա օրինագծի համար նախատեսված ընդհանուր գումարն է: Տարեկան ապահովված գույքը</value>
+  </data>
+  <data name="Tax Bill has two payment stubs.  The first installment is due November 1 and is delinquent December 10.  If the" xml:space="preserve">
+    <value>Հարկային բյուջեն ունի երկու վճարային կետ: Առաջին տեղադրումը տեղի կունենա նոյեմբերի 1-ին եւ դեկտեմբերի 10-ն է</value>
+  </data>
+  <data name="first installment is not received or United States Postal Service (USPS) postmarked by December 10, a 10% penalty" xml:space="preserve">
+    <value>առաջին վճարումը չի ստացվում կամ ԱՄՆ փոստային ծառայությունը (USPS) դեկտեմբերի 10-ի դրությամբ, 10% տուգանք</value>
+  </data>
+  <data name="will apply.  The second installment is due February 1 and is delinquent April 10.  If the second installment is" xml:space="preserve">
+    <value>կկիրառվի: Երկրորդ տեղաբաշխումն իրականացվում է փետրվարի 1-ին եւ դադարեցվում է ապրիլի 10-ին: Եթե երկրորդ տեղաբաշխումն է</value>
+  </data>
+  <data name="not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>չընդունված կամ USPS- ը թողարկվել է ապրիլի 10-ին կամ դրանից առաջ, 10% տուգանք եւ 10.00 ԱՄՆ դոլարի չափով:</value>
+  </data>
+  <data name="Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor's Identification" xml:space="preserve">
+    <value>Հարկատուները պետք է վստահ լինեն, որ վճարման կաղապարը ներառի ցանկացած տեսակի վճարում եւ գրեք նրանց Գնահատողի նույնականացումը</value>
+  </data>
+  <data name="Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>Թիվը, տարին / հերթական համարը, դրանց ստուգման ժամանակ:</value>
+  </data>
+  <data name="Redemption Fee" xml:space="preserve">
+    <value>Կանխավճարը</value>
+  </data>
+  <data name="A $15.00 fee is charged whenever a bill remains unpaid as of June 30." xml:space="preserve">
+    <value>$ 15.00 վճարը գանձվում է այն բանից հետո, երբ օրինագիծը մնում է չվճարված հունիսի 30-ից:</value>
+  </data>
+  <data name="Amount to Pay" xml:space="preserve">
+    <value>Վճարման գումարը</value>
+  </data>
+  <data name="The amount due, if paid by date, indicated on the statement." xml:space="preserve">
+    <value>Հաշվետու ժամանակահատվածում վճարման ենթակա գումարը, եթե վճարված է ամսաթվի դրությամբ:</value>
+  </data>
+  <data name="Additional Penalty Amount" xml:space="preserve">
+    <value>Լրացուցիչ տուգանքի գումար</value>
+  </data>
+  <data name="The amount of penalty that is added monthly to the" xml:space="preserve">
+    <value>Ամսական կտրվածքով ավելացված տույժի գումարը</value>
+  </data>
+  <data name="amount due if payment is not received by the date of the statement." xml:space="preserve">
+    <value>եթե վճարման ժամկետը չի ստացվել հայտարարության ամսաթվով:</value>
+  </data>
+  <data name="Regular Payments" xml:space="preserve">
+    <value>Հերթական վճարումներ</value>
+  </data>
+  <data name="This section shows any payments that have been received and posted." xml:space="preserve">
+    <value>Այս բաժինը ցույց է տալիս, որ ստացված եւ փակցված բոլոր վճարումները:</value>
+  </data>
+  <data name="Additional Fees" xml:space="preserve">
+    <value>Լրացուցիչ վճարներ</value>
+  </data>
+  <data name="Any fees that must be collected because the property has been" xml:space="preserve">
+    <value>Յուրաքանչյուր վճար, որը պետք է հավաքագրվի, քանի որ գույքը եղել է</value>
+  </data>
+  <data name="deemed &quot;subject to the Tax Collector’s power to sell." xml:space="preserve">
+    <value>որը համարվում է հարկային եկամուտների վաճառքի իրավունքը:</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>Վերադարձի ստուգման լիցքավորում</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>Բանկի կողմից վերադարձված ցանկացած չեկի համար գործում է $ 50.00 վճար:</value>
+  </data>
+  <data name="Must be Received by" xml:space="preserve">
+    <value>Պետք է ստանան</value>
+  </data>
+  <data name="Payment must be received by the date indicated on the statement." xml:space="preserve">
+    <value>Վճարումը պետք է ստացվի հայտարարագրում նշված ամսաթվով:</value>
+  </data>
+  <data name="The postmark date for prior year taxes is not sufficient to stop accruing penalties." xml:space="preserve">
+    <value>Նախորդ տարվա հարկերի փոստային առաքման ժամկետը բավարար չէ դադարեցնելու համար պատժամիջոցները:</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>Կատարեք վճարումներ</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector" xml:space="preserve">
+    <value>Կատարեք վճարումներ, որոնք վճարվում են Լոս Անջելեսի շրջանի հարկահավաքից</value>
+  </data>
+  <data name="and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification" xml:space="preserve">
+    <value>եւ փոստի հասցեին: Ներառեք վճարման շտեմարանները վճարման հետ եւ գրեք Գնահատողի նույնականացումը</value>
+  </data>
+  <data name="Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>Չեկի համարը եւ տարին / հերթական համարը:</value>
+  </data>
+</root>
