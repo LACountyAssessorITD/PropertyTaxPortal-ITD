@@ -432,6 +432,9 @@
     .news-car {
         text-align: center !important;
     }
+    .news-feed p {
+        padding-top: 5px;
+    }
 }
 
 /* Small phones: from 0 to 480px */

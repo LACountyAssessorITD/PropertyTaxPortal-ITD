@@ -34,7 +34,7 @@
 }
 
 .news-car {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 45px;
 }
     .news-car p {
@@ -50,26 +50,31 @@
 /* --------------------------- */
 
 .welcome-header {
-    margin: 20px 0;
+    /*margin: 20px 0;*/
+    margin-bottom: 20px;
 }
 .t-shadow {
     text-shadow: 5px 5px 5px black;
-    font-weight: 300;
+    /*font-weight: 300;*/
 }
 
 .name-text {
     bottom: 30px;
     left: 55px;
-    font-size: 105%;
+    
     font-weight: 400;
     text-shadow: 2px 2px 2px #000;
     z-index: 200;
+    
 }
+    .name-text p {
+        margin-bottom: 0;
+        font-size: 90%;
+    }
 
-.carousel-item a {
-    color: #fff;
-
-}
+    .carousel-item a {
+        color: #fff;
+    }
 .carousel-item a:hover {
     color:#fff;
     font-size: 102%;
@@ -78,15 +83,19 @@
     padding-left: 80px;
 }
 
-.section-head p {
-    font-size: 80%;
+.welcome-header p {
+    font-size: 90%;
     margin-bottom: 0;
+    font-weight: 300;
+}
+.section-head h1 {
+    font-weight: 400;
 }
 
-.section-head {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-}
+    .section-head {
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+    }
 
 .section-columns {
     max-width: 1200px;
