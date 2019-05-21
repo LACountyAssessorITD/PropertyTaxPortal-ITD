@@ -425,6 +425,13 @@
     #carouselExampleControls{
         padding: 0;
     }
+    .news-car p {
+        padding-left: 0px;
+        
+    }
+    .news-car {
+        text-align: center !important;
+    }
 }
 
 /* Small phones: from 0 to 480px */
