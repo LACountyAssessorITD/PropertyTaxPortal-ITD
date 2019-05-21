@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accessibility" xml:space="preserve">
+    <value>無障礙</value>
+  </data>
+  <data name="The County of Los Angeles (County) is committed to the universal accessibility of information contained on its website (Website). The design of the Website is optimized to ensure broad readability and usability, which include accessibility criteria and features for people with disabilities, so they may be able to see, understand, navigate, interact, and contribute to the Website effectively." xml:space="preserve">
+    <value>洛杉磯郡（郡）致力於其網站（網站）中包含的信息的普遍可訪問性。網站的設計經過優化，以確保廣泛的可讀性和可用性，包括殘障人士的可訪問性標準和功能，以便他們能夠有效地查看，理解，導航，互動和貢獻網站。</value>
+  </data>
+  <data name="The Website is currently a combination of new and old technologies, and new and existing content. The Website Home Page and supporting web pages are compliant with Section 508 of the United States Rehabilitation Act of 1973, as amended, and the Americans with Disabilities Act (together, Guidelines). However, the Website contains links to departmental, agency and third-party websites and features that may not be in compliance with the Guidelines. Some existing content may meet only the minimum required compliance standards. This will be resolved as departments and others update their existing websites and continue efforts to monitor and maintain acceptable compliance levels. However, this may not include third party software/tools, search engines, widgets, Add Ins, APIs, etc. which the County does not maintain or control." xml:space="preserve">
+    <value>該網站目前是新舊技術以及新內容和現有內容的組合。網站主頁和支持網頁符合經修訂的1973年美國康復法案第508節和美國殘疾人法案（合併指南）。但是，本網站包含指向部門，代理機構和第三方網站的鏈接以及可能不符合本指南的功能。某些現有內容可能僅滿足最低要求的合規標準。這將在部門和其他人更新其現有網站時繼續解決，並繼續努力監控和維持可接受的合規級別。但是，這可能不包括郡不維護或控制的第三方軟件/工具，搜索引擎，小部件，Add Ins，API等。</value>
+  </data>
+  <data name="Cascading Style Sheets (CSS)" xml:space="preserve">
+    <value>層疊樣式表（CSS）</value>
+  </data>
+  <data name="The Website pages are designed with style sheets that allow a consistent, uniform appearance of headings and body text.This design feature also enables some browsers to override the Website style sheets with their own, thus providing content that is easier viewed by those who have visual impairments." xml:space="preserve">
+    <value>網站頁面設計有樣式表，允許標題和正文文本的一致，統一的外觀。此設計功能還使一些瀏覽器可以使用自己的網站樣式表覆蓋網站樣式表，從而提供有視覺的人更容易查看的內容損傷。</value>
+  </data>
+  <data name="Color Contrast" xml:space="preserve">
+    <value>顏色對比</value>
+  </data>
+  <data name="The background and foreground colors on the Website pages provide sufficient contrast to be viewable by someone having color deficits." xml:space="preserve">
+    <value>網站頁面上的背景和前景色提供了足夠的對比度，可供有色差的人觀看。</value>
+  </data>
+</root>

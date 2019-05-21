@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OVERVIEW" xml:space="preserve">
+    <value>概述</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>物業稅概述</value>
+  </data>
+  <data name="How The Property Tax System Works" xml:space="preserve">
+    <value>物業稅制如何運作</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>責任範圍</value>
+  </data>
+  <data name="PROPERTY TAX OVERVIEW" xml:space="preserve">
+    <value>物業稅概述</value>
+  </data>
+  <data name="The Assessor, Auditor-Controller, and Treasurer &amp; Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process." xml:space="preserve">
+    <value>評估員，審計員 - 財務主管，財務主管和稅務人員共同合作，為您的財產稅單和付款製作和計算。評估上訴委員會負責監督評估過程。</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>估稅員</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>審計長控制器</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>財務主管和稅務員</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>評估上訴委員會</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the &quot;Assessment Roll.&quot; The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>洛杉磯縣評估員通過根據適用的州法律評估該財產的價值來確定您的財產的評估價值。然後將評估值放在洛杉磯縣所有其他房產的列表中，該列表稱為“評估卷”。評估員還批准並應用所有豁免，這些豁免被添加到評估卷中。然後將評估卷提交給洛杉磯縣審計員 - 控制員進行進一步處理。</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter &amp; bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>洛杉磯縣審計員 - 財務主管向評估卷添加直接評估，然後應用稅率，其中包括一般（1％）徵稅和償債（選民和保稅）稅率，以創建擴展評估卷。然後將擴展名捲髮送給洛杉磯縣財務主管和稅務員，以進行個人稅單分配和付款收集。</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer &amp; Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
+    <value>洛杉磯縣財政和稅務員的任務是對賬單，財產進行收費，收取，支付，投資，借款和保護。該部還提供執法，審計，諮詢，教育，遺產管理和公共信息服務。財務主管和稅務員收集有擔保和無擔保的稅款。</value>
+  </data>
+  <data name="Secured Taxes" xml:space="preserve">
+    <value>有擔保的稅</value>
+  </data>
+  <data name=" are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc." xml:space="preserve">
+    <value> 不動產稅，如空地，土地上的結構，即商業/辦公樓，住宅，公寓等。</value>
+  </data>
+  <data name="Unsecured Taxes" xml:space="preserve">
+    <value>無抵押稅</value>
+  </data>
+  <data name=" are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
+    <value> 是辦公室家具，設備，飛機和船隻等評估稅，以及不屬於不動產的財產稅。</value>
+  </data>
+  <data name="The Los Angeles County Assessment Appeals Board is an independent agency, separate from the Assessor’s Office, who hears property assessment disputes between taxpayers and the Assessor, and based upon the evidence presented at the hearing, makes a fair, impartial decision on your property’s assessed value.  The Assessment Appeals Board’s decision can result in a decrease, increase, or no change in your property’s assessed value." xml:space="preserve">
+    <value>洛杉磯縣評估上訴委員會是一個獨立的機構，與評估員辦公室分開，他聽取納稅人和評估員之間的財產評估糾紛，並根據聽證會上提供的證據，對您的房產的評估價值做出公平，公正的決定。 。評估上訴委員會的決定可能導致您的財產評估價值減少，增加或沒有變化。</value>
+  </data>
+  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
+    <value>責任範圍</value>
+  </data>
+  <data name="The following lists may help you to determine which department can assist in answering your inquiry." xml:space="preserve">
+    <value>以下列表可幫助您確定哪個部門可以協助回答您的詢問。</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>評估價值觀</value>
+  </data>
+  <data name="Boats &amp; Aircraft" xml:space="preserve">
+    <value>船和飛機</value>
+  </data>
+  <data name="Business Property Taxes" xml:space="preserve">
+    <value>商業財產稅</value>
+  </data>
+  <data name="Change in Ownership" xml:space="preserve">
+    <value>所有權變更</value>
+  </data>
+  <data name="Decline in Value" xml:space="preserve">
+    <value>價值下降</value>
+  </data>
+  <data name="Exemptions - General" xml:space="preserve">
+    <value>豁免 - 一般</value>
+  </data>
+  <data name="Homeowner's Exemption" xml:space="preserve">
+    <value>房主的豁免</value>
+  </data>
+  <data name="Name/Address Change" xml:space="preserve">
+    <value>姓名/地址變更</value>
+  </data>
+  <data name="Parent/Child Transfers (Proposition 58)" xml:space="preserve">
+    <value>父母/子女轉移（命題58）</value>
+  </data>
+  <data name="Property Maps &amp; Data" xml:space="preserve">
+    <value>物業地圖和數據</value>
+  </data>
+  <data name="Senior Citizen Transfer (Proposition 60 and 90)" xml:space="preserve">
+    <value>老年人轉移（提案60和90）</value>
+  </data>
+  <data name="Supplemental Bills" xml:space="preserve">
+    <value>補充條例草案</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>直接評估</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>一般稅收徵收</value>
+  </data>
+  <data name="Refunds - Change in Taxes Due to an Assessor Value Change" xml:space="preserve">
+    <value>退款 - 由於評估師價值變動導致的稅收變更</value>
+  </data>
+  <data name="Special Districts" xml:space="preserve">
+    <value>特區</value>
+  </data>
+  <data name="Tax Rate Areas" xml:space="preserve">
+    <value>稅率領域</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>投票負債</value>
+  </data>
+  <data name="Assessment Appeals Rules" xml:space="preserve">
+    <value>評估申訴規則</value>
+  </data>
+  <data name="Current Seminar Schedule" xml:space="preserve">
+    <value>目前的研討會時間表</value>
+  </data>
+  <data name="How to Prepare For Your Hearing" xml:space="preserve">
+    <value>如何為聽力做準備</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>稅務代理登記</value>
+  </data>
+  <data name="File an Appeal Online" xml:space="preserve">
+    <value>在線提出申訴</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector - Secured Taxes" xml:space="preserve">
+    <value>財務主管和稅務員 - 安全稅</value>
+  </data>
+  <data name="Defaulted Property Taxes" xml:space="preserve">
+    <value>違約財產稅</value>
+  </data>
+  <data name="Due Dates" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Payment Amounts" xml:space="preserve">
+    <value>付款金額</value>
+  </data>
+  <data name="Payment Posting" xml:space="preserve">
+    <value>付款過帳</value>
+  </data>
+  <data name="Public Auction" xml:space="preserve">
+    <value>公開拍賣</value>
+  </data>
+  <data name="Refunds - Overpayment of Taxes Due (Non Value Related)" xml:space="preserve">
+    <value>退款 - 超額繳納的稅款（非價值相關）</value>
+  </data>
+  <data name="Senior Citizen, Blind &amp; Disabled Persons Tax Postponement &amp; Assistance Programs" xml:space="preserve">
+    <value>老年人，盲人和殘疾人稅收延期和援助計劃</value>
+  </data>
+  <data name="Tax Bills (Secured)" xml:space="preserve">
+    <value>稅務（有擔保）</value>
+  </data>
+  <data name="Properties Subject to the Tax Collector's Power to Sell" xml:space="preserve">
+    <value>屬於稅務人員出售權的財產</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector - Unsecured Taxes" xml:space="preserve">
+    <value>財務主管和稅務員 - 無抵押稅</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>留置權</value>
+  </data>
+  <data name="Mobile Home Tax Clearance" xml:space="preserve">
+    <value>移動房屋稅務清關</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>支付</value>
+  </data>
+  <data name="Tax Bills (Unsecured)" xml:space="preserve">
+    <value>稅務條例（無抵押）</value>
+  </data>
+  <data name="Unsecured Due Dates" xml:space="preserve">
+    <value>無擔保到期日</value>
+  </data>
+</root>
