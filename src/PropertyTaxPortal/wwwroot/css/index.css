@@ -19,7 +19,7 @@
     max-height: 25px;; /* fallback */
     -webkit-transform: translateY(35%);
     transform: translateY(35%);
-    padding-left: 10%;
+   
     /*height: 40px;*/
 }
 .news-feed {
@@ -37,6 +37,9 @@
     background-color: rgba(0, 0, 0, 0.5);
     height: 45px;
 }
+    .news-car p {
+        padding-left: 10%;
+    }
 
     .news-feed a {
         color: #fff;
@@ -172,7 +175,7 @@
     max-width: 450px !important;
     min-width: 200px;
     min-height: 150px !important;
-    box-shadow: 0px 7px 30px rgba(0,0,0,0.5) !important;
+    box-shadow: 0px 7px 30px rgba(54,83,93,0.5) !important;
 }
     .self-service-section .text-card p {
         transform: translateY(-100%);
