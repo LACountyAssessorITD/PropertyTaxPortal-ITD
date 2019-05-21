@@ -148,13 +148,13 @@
     <value>Commission d'appel en matière d'évaluation</value>
   </data>
   <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the &quot;Assessment Roll.&quot; The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
-    <value>L’évaluateur du comté de Los Angeles établit l’évaluation de votre propriété en évaluant celle-ci en vertu des lois applicables de l’État. La valeur évaluée est ensuite placée sur une liste avec toutes les autres propriétés dans le comté de Los Angeles et cette liste s'appelle le "Tableau d'évaluation". L'évaluateur approuve et applique également toutes les exemptions, qui sont ajoutées au rôle d'évaluation. Le rôle d'évaluation est ensuite présenté au vérificateur-contrôleur du comté de Los Angeles pour traitement ultérieur.</value>
+    <value>L’évaluateur du comté de Los Angeles établit l’évaluation de votre propriété en évaluant celle-ci en vertu des lois applicables de l’État. La valeur évaluée est ensuite placée sur une liste avec toutes les autres propriétés du comté de Los Angeles et cette liste est appelée "Tableau d'évaluation". L'évaluateur approuve et applique également toutes les exemptions, qui sont ajoutées au rôle d'évaluation. Le rôle d'évaluation est ensuite présenté au vérificateur-contrôleur du comté de Los Angeles pour traitement ultérieur.</value>
   </data>
   <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter &amp; bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
     <value>Le contrôleur-contrôleur du comté de Los Angeles ajoute des évaluations directes au rôle d'évaluation, puis applique les taux d'imposition, qui consistent en un prélèvement général (1%) et des taux d'imposition du service de la dette (votant et cautionné) à la valeur nécessaire pour créer un rôle d'évaluation élargie. Le rôle étendu est ensuite envoyé au trésorier et collecteur d’impôts du comté de Los Angeles pour la distribution des factures d’impôt et la collecte des paiements.</value>
   </data>
-  <data name="The Los Angeles County Treasurer and Tax Collector receives the Extended Roll, prints and mails the property tax bills to the name and address on the Extended Roll. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
-    <value>Le trésorier et collecteur d’impôts du comté de Los Angeles reçoit le rouleau élargi, imprime et poste les factures d’impôt foncier au nom et à l’adresse qui y figurent. Le trésorier et le collecteur d’impôts perçoivent les impôts garantis et non garantis.</value>
+  <data name="The mission of the Los Angeles County Treasurer &amp; Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
+    <value>La mission du trésorier et du collecteur d’impôts du comté de Los Angeles est de facturer, de percevoir, de débourser, d’investir, d’emprunter et de protéger des fonds et des propriétés. Le département fournit également des services d'exécution, d'audit, de conseil, d'éducation, d'administration de succession et d'information publique. Le trésorier et le collecteur d’impôts perçoivent les taxes garanties et non garanties</value>
   </data>
   <data name="Secured Taxes" xml:space="preserve">
     <value>Taxes Sécurisées</value>
@@ -167,6 +167,9 @@
   </data>
   <data name=" are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
     <value> Les taxes sur les évaluations telles que le mobilier de bureau, le matériel, les avions et les bateaux, ainsi que les taxes foncières qui ne sont pas des privilèges sur les biens immobiliers</value>
+  </data>
+  <data name="The Los Angeles County Assessment Appeals Board is an independent agency, separate from the Assessor’s Office, who hears property assessment disputes between taxpayers and the Assessor, and based upon the evidence presented at the hearing, makes a fair, impartial decision on your property’s assessed value.  The Assessment Appeals Board’s decision can result in a decrease, increase, or no change in your property’s assessed value." xml:space="preserve">
+    <value>La commission d'appel en matière d'évaluation du comté de Los Angeles est un organisme indépendant, distinct du bureau de l'évaluateur, qui entend les litiges en matière d'évaluation foncière entre les contribuables et l'évaluateur. Sur la base des preuves présentées à l'audience, elle rend une décision juste et impartiale sur la valeur évaluée de votre propriété . La décision de la Commission d’appel de l’évaluation peut entraîner une diminution, une augmentation ou une absence de modification de la valeur établie de votre propriété.</value>
   </data>
   <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
     <value>LES DOMAINES DE RESPONSABILITÉ</value>
@@ -217,7 +220,7 @@
     <value>Taxe générale</value>
   </data>
   <data name="Refunds - Change in Taxes Due to an Assessor Value Change" xml:space="preserve">
-    <value>Remboursements - Modification des taxes due à un changement de valeur pour l'évaluateur</value>
+    <value>Remboursements - Modification des taxes due à une modification de la valeur de l'évaluateur</value>
   </data>
   <data name="Special Districts" xml:space="preserve">
     <value>Districts spéciaux</value>

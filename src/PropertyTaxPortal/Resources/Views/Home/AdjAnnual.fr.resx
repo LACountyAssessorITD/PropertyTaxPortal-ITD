@@ -213,4 +213,223 @@
   <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
     <value>Numéro de transfert électronique de fonds (TEF)</value>
   </data>
-  <
+  <data name="The EFT number is used to make credit" xml:space="preserve">
+    <value>Le numéro EFT est utilisé pour faire crédit</value>
+  </data>
+  <data name="card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit" xml:space="preserve">
+    <value>paiement par carte Visa / Carte de débit Visa par téléphone. Pour initier une carte de crédit / Visa Débit</value>
+  </data>
+  <data name="card payment, please call 1(888) 473-0835.  However, there are processing fees when paying" xml:space="preserve">
+    <value>paiement par carte, s'il vous plaît appelez 1 (888) 473-0835. Cependant, des frais de traitement s’appliquent lors du paiement</value>
+  </data>
+  <data name="by credit card/Visa Debit card.  Each transaction is limited to $99,999.99.  The PIN number" xml:space="preserve">
+    <value>par carte de crédit / carte de débit Visa. Chaque transaction est limitée à 99 999,99 $. Le code PIN</value>
+  </data>
+  <data name="is used to make electronic check payment to protect your security and privacy and is used" xml:space="preserve">
+    <value>est utilisé pour effectuer le paiement par chèque électronique pour protéger votre sécurité et votre vie privée et est utilisé</value>
+  </data>
+  <data name="to pay your current year and defaulted taxes online.  Effective with tax bills issued after" xml:space="preserve">
+    <value>pour payer en ligne votre année en cours et vos taxes par défaut. Efficace avec les factures d’impôts émises après</value>
+  </data>
+  <data name="August 2013, the PIN may contain all alpha, all numeric, or alpha/numeric characters.  The" xml:space="preserve">
+    <value>Août 2013, le code PIN peut contenir tous les caractères alpha, numériques ou alpha / numériques. le</value>
+  </data>
+  <data name="alpha letter 'O' is not used in the PIN.  The '0' is always a number zero." xml:space="preserve">
+    <value>La lettre alpha «O» n'est pas utilisée dans le code PIN. Le '0' est toujours un nombre zéro.</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Évaluations directes</value>
+  </data>
+  <data name="These are additional charges placed on the" xml:space="preserve">
+    <value>Ce sont des frais supplémentaires placés sur le</value>
+  </data>
+  <data name="property tax bills.  These charges are not based on Assessor’s valuations.  Examples of" xml:space="preserve">
+    <value>factures d'impôts fonciers. Ces frais ne sont pas basés sur les évaluations de Assessor. Exemples de</value>
+  </data>
+  <data name="direct assessments are charges for sewer maintenance, water, or fire districts.  For questions" xml:space="preserve">
+    <value>Les évaluations directes sont des redevances pour l'entretien des égouts, de l'eau ou des zones d'incendie. Pour des questions</value>
+  </data>
+  <data name="regarding these assessments, please contact the agency.  The telephone number for each agency" xml:space="preserve">
+    <value>en ce qui concerne ces évaluations, veuillez contacter l'agence. Le numéro de téléphone de chaque agence</value>
+  </data>
+  <data name="is listed on the bill, or please visit the Department of Auditor-Controller’s website for a" xml:space="preserve">
+    <value>figure sur le projet de loi, ou visitez le site Web du Département du contrôleur des comptes</value>
+  </data>
+  <data name="Direct Assessment Listing." xml:space="preserve">
+    <value>Liste d'évaluation directe.</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>Informations spéciales</value>
+  </data>
+  <data name="This section provides important information" xml:space="preserve">
+    <value>Cette section fournit des informations importantes</value>
+  </data>
+  <data name="about the bill and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>à propos du projet de loi et indique s’il existe des taxes impayées.</value>
+  </data>
+  <data name="Total Taxes Due" xml:space="preserve">
+    <value>Total des taxes dues</value>
+  </data>
+  <data name="This is the total amount due for the bill. The Annual" xml:space="preserve">
+    <value>C'est le montant total dû pour la facture. L'annuaire</value>
+  </data>
+  <data name="Secured Property Tax Bill has two payment stubs. The first installment is due &lt;br&gt;November 1 and is" xml:space="preserve">
+    <value>La facture d'impôts fonciers sécurisés a deux talons de paiement. Le premier versement est dû pour le 1er novembre et est</value>
+  </data>
+  <data name="delinquent December 10.  If the first installment is not received or" xml:space="preserve">
+    <value>en retard le 10 décembre. Si le premier versement n’est pas reçu ou</value>
+  </data>
+  <data name="United States Postal Service (USPS) postmarked by December 10, a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>United States Postal Service (USPS) avant le 10 décembre, le cachet de la poste faisant foi, une pénalité de 10% sera infligée.</value>
+  </data>
+  <data name="The second installment is due February 1 and is delinquent April 10.  If the second installment" xml:space="preserve">
+    <value>Le deuxième versement est dû le 1 er février et est dû le 10 avril. Si le deuxième</value>
+  </data>
+  <data name="is not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost" xml:space="preserve">
+    <value>n'est pas reçu ou si USPS porte un cachet de la poste avant le 10 avril, une pénalité de 10% et un coût de 10,00</value>
+  </data>
+  <data name="will be imposed.  Taxpayers must be sure to include the payment stub with any type of payment" xml:space="preserve">
+    <value>sera imposé. Les contribuables doivent veiller à inclure le talon de paiement avec tout type de paiement.</value>
+  </data>
+  <data name="and write their Assessor's Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>et écrivez leur numéro d'identification d'évaluateur avec l'année / le numéro de séquence sur leur chèque.</value>
+  </data>
+  <data name="Property Location and / or Property Description" xml:space="preserve">
+    <value>Localisation de la propriété et / ou description de la propriété</value>
+  </data>
+  <data name="The" xml:space="preserve">
+    <value>le</value>
+  </data>
+  <data name="property address and/or legal description on record with the Assessor's office." xml:space="preserve">
+    <value>adresse de la propriété et / ou description légale enregistrée auprès du bureau de l'évaluateur.</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>Valeur évaluée antérieure</value>
+  </data>
+  <data name="This is the Assessor’s valuation of" xml:space="preserve">
+    <value>Il s’agit de la valorisation par l’évaluateur de</value>
+  </data>
+  <data name="the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>la propriété avant la date de transfert / construction récente.</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>Valeur évaluée actuelle</value>
+  </data>
+  <data name="The Assessor’s valuation of" xml:space="preserve">
+    <value>La valorisation de l’évaluateur</value>
+  </data>
+  <data name="the property after the adjustment." xml:space="preserve">
+    <value>la propriété après l'ajustement.</value>
+  </data>
+  <data name="Assessor’s Regional Office" xml:space="preserve">
+    <value>Bureau régional de l’évaluateur</value>
+  </data>
+  <data name="This is the address and" xml:space="preserve">
+    <value>C'est l'adresse et</value>
+  </data>
+  <data name="telephone number to contact for questions regarding the assessed value of the" xml:space="preserve">
+    <value>numéro de téléphone à contacter pour toute question concernant la valeur estimée de la</value>
+  </data>
+  <data name="property." xml:space="preserve">
+    <value>propriété.</value>
+  </data>
+  <data name="Less Exemption" xml:space="preserve">
+    <value>Moins d'exemption</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>Les exemptions éventuelles sont déduites de la valeur imposable.</value>
+  </data>
+  <data name="Net Taxable Value" xml:space="preserve">
+    <value>Valeur taxable nette</value>
+  </data>
+  <data name="The difference between the current" xml:space="preserve">
+    <value>La différence entre le courant</value>
+  </data>
+  <data name="value and exemptions." xml:space="preserve">
+    <value>valeur et exemptions.</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>Frais de chèque retourné</value>
+  </data>
+  <data name="There is a $50.00 charge for" xml:space="preserve">
+    <value>Des frais de 50,00 $ sont facturés pour</value>
+  </data>
+  <data name="any checks returned by the bank." xml:space="preserve">
+    <value>tous les chèques retournés par la banque.</value>
+  </data>
+  <data name="2nd Installment Delinquency  Date" xml:space="preserve">
+    <value>Date de retard du 2e versement</value>
+  </data>
+  <data name="If paying the" xml:space="preserve">
+    <value>Si vous payez le</value>
+  </data>
+  <data name="bill in installments, the second installment must be received or United States Postal Service" xml:space="preserve">
+    <value>facture échelonnée, le deuxième versement doit être reçu ou United States Postal Service</value>
+  </data>
+  <data name="postmarked by this date, or a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>le cachet de la poste faisant foi, ou une pénalité de 10% et un coût de 10,00 $ seront imposés.</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>2e versement dû</value>
+  </data>
+  <data name="Amount of taxes due for the second installment." xml:space="preserve">
+    <value>Montant des taxes dues pour le deuxième versement.</value>
+  </data>
+  <data name="Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>Numéro d'identification avec l'année / numéro de séquence sur leur chèque.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>Montant de la remise</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount" xml:space="preserve">
+    <value>Si le paiement n’est pas effectué à la date de retard, versez le montant</value>
+  </data>
+  <data name="stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number" xml:space="preserve">
+    <value>déclaré ici. Joignez le ou les talons de paiement au paiement et écrivez le numéro d’identification de l’évaluateur.</value>
+  </data>
+  <data name="and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>et l'année / le numéro de séquence sur le chèque.</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>Faire des chèques payables</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector" xml:space="preserve">
+    <value>Libellez vos chèques à l'ordre du percepteur des impôts du comté de Los Angeles.</value>
+  </data>
+  <data name="and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification" xml:space="preserve">
+    <value>et courrier à cette adresse. Joignez le ou les talons de paiement au paiement et écrivez le numéro d’identification de l’évaluateur.</value>
+  </data>
+  <data name="Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>Numéro et année / numéro de séquence sur le chèque.</value>
+  </data>
+  <data name="1st Installment Delinquency  Date" xml:space="preserve">
+    <value>Date de retard du 1er versement</value>
+  </data>
+  <data name="If paying the bill in full, payment" xml:space="preserve">
+    <value>Si vous payez la facture en entier, paiement</value>
+  </data>
+  <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments," xml:space="preserve">
+    <value>doit être reçu ou le service postal des États-Unis (USPS) avant cette date. Si vous payez en plusieurs fois,</value>
+  </data>
+  <data name="the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>le premier versement doit être reçu ou USPS doit porter le cachet de la poste avant cette date, sinon une pénalité de 10% sera infligée.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>1er versement dû</value>
+  </data>
+  <data name="Amount of taxes due for the first installment.  Taxpayers must" xml:space="preserve">
+    <value>Montant des taxes dues pour le premier versement. Les contribuables doivent</value>
+  </data>
+  <data name="be sure to include the payment stub with any type of payment and write their Assessor’s Identification Number with the" xml:space="preserve">
+    <value>assurez-vous d’inclure le talon de paiement avec tout type de paiement et écrivez leur numéro d’identification d’évaluateur avec</value>
+  </data>
+  <data name="Year/Sequence Number on their check." xml:space="preserve">
+    <value>Année / numéro de séquence sur leur chèque.</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the" xml:space="preserve">
+    <value>Si le paiement n’est pas effectué avant la date limite, remettre le</value>
+  </data>
+  <data name="amount stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification" xml:space="preserve">
+    <value>montant indiqué ici. Joignez le ou les talons de paiement au paiement et écrivez le numéro d’identification de l’évaluateur.</value>
+  </data>
+</root>
