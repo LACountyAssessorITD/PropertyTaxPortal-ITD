@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Factura del año anterior sin garantía</value>
+  </data>
+  <data name="Unsecured Property Tax Bil" xml:space="preserve">
+    <value>Impuesto de propiedad no garantizada Bil</value>
+  </data>
+  <data name="Unsecured bills that were not paid by" xml:space="preserve">
+    <value>Facturas no garantizadas que no fueron pagadas por</value>
+  </data>
+  <data name="the original due date." xml:space="preserve">
+    <value>La fecha de vencimiento original.</value>
+  </data>
+  <data name="Prior Year" xml:space="preserve">
+    <value>Año anterior</value>
+  </data>
+  <data name="The tax year the original bill was due." xml:space="preserve">
+    <value>El año fiscal que venció la factura original.</value>
+  </data>
+  <data name="Sale or Disposal" xml:space="preserve">
+    <value>Venta o disposición</value>
+  </data>
+  <data name="Sale or disposal of this property after January 1 does not" xml:space="preserve">
+    <value>La venta o disposición de esta propiedad después del 1 de enero no</value>
+  </data>
+  <data name="relieve the assessee of this tax." xml:space="preserve">
+    <value>Alivio de la tasada de este impuesto.</value>
+  </data>
+  <data name="Assesse" xml:space="preserve">
+    <value>Evaluar</value>
+  </data>
+  <data name="The person or entity that is responsible" xml:space="preserve">
+    <value>La persona o entidad responsable.</value>
+  </data>
+  <data name="for this bill." xml:space="preserve">
+    <value>para este proyecto de ley.</value>
+  </data>
+  <data name="Assessment Number" xml:space="preserve">
+    <value>Número de evaluación</value>
+  </data>
+  <data name="A number that the Assessor's" xml:space="preserve">
+    <value>Un número que el Asesor</value>
+  </data>
+  <data name="office uses to link to a specific assessment." xml:space="preserve">
+    <value>Usos de oficina para enlazar a una evaluación específica.</value>
+  </data>
+  <data name="Bill Number" xml:space="preserve">
+    <value>Número de factura</value>
+  </data>
+  <data name="The bill number for this year's bill." xml:space="preserve">
+    <value>El número de factura para la factura de este año.</value>
+  </data>
+  <data name="Please be careful as this number changes every year. When referencing it always" xml:space="preserve">
+    <value>Por favor tenga cuidado ya que este número cambia cada año. Cuando se hace referencia siempre</value>
+  </data>
+  <data name="include the year; for example, 2015 1234567." xml:space="preserve">
+    <value>incluir el año; por ejemplo, 2015 1234567.</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>Valores evaluados</value>
+  </data>
+  <data name="Values are determined by the" xml:space="preserve">
+    <value>Los valores están determinados por la</value>
+  </data>
+  <data name="Assessor's office. Please call the number listed here for any question" xml:space="preserve">
+    <value>La oficina del asesor. Por favor llame al número que aparece aquí para cualquier pregunta</value>
+  </data>
+  <data name="pertaining to the assessed value of the unsecured property." xml:space="preserve">
+    <value>Perteneciente al valor tasado de los bienes no garantizados.</value>
+  </data>
+  <data name="Property Description" xml:space="preserve">
+    <value>descripción de propiedad</value>
+  </data>
+  <data name="Important information pertaining to the" xml:space="preserve">
+    <value>Información importante relativa a la</value>
+  </data>
+  <data name="original billing is listed here." xml:space="preserve">
+    <value>la facturación original se encuentra aquí.</value>
+  </data>
+  <data name="Total Tax" xml:space="preserve">
+    <value>Total impuestos</value>
+  </data>
+  <data name="The total amount of tax due by the date" xml:space="preserve">
+    <value>El importe total del impuesto adeudado por la fecha.</value>
+  </data>
+  <data name="stated.  Penalties will continue to accrue at the rate of 1.5% per month on the base tax" xml:space="preserve">
+    <value>fijado. Las sanciones continuarán acumulándose a una tasa del 1.5% mensual sobre el impuesto base</value>
+  </data>
+  <data name="until the bill is paid in full.  Please include your payment stub with any payment and write" xml:space="preserve">
+    <value>Hasta que la factura se pague por completo. Por favor incluya su comprobante de pago con cualquier pago y escriba</value>
+  </data>
+  <data name="the tax year and bill number on your check.  The payment stub is located on the top portion" xml:space="preserve">
+    <value>El año fiscal y el número de factura en su cheque. El talón de pago se encuentra en la parte superior</value>
+  </data>
+  <data name="of the bill." xml:space="preserve">
+    <value>de la factura.</value>
+  </data>
+  <data name="If not paid by this date" xml:space="preserve">
+    <value>Si no se paga en esta fecha</value>
+  </data>
+  <data name="The last date that" xml:space="preserve">
+    <value>La última fecha que</value>
+  </data>
+  <data name="payment will be accepted without additional penalty.  Payments postmarked or received" xml:space="preserve">
+    <value>El pago será aceptado sin penalización adicional. Pagos sellados o recibidos</value>
+  </data>
+  <data name="after this date are subject to an additional 1.5% penalty per month on the base tax.  There" xml:space="preserve">
+    <value>después de esta fecha están sujetos a una multa adicional de 1.5% por mes sobre el impuesto base. Ahí</value>
+  </data>
+  <data name="is a $33.00 service charge for any check returned by the bank." xml:space="preserve">
+    <value>es un cargo por servicio de $ 33.00 por cualquier cheque devuelto por el banco.</value>
+  </data>
+  <data name="Payment by Check" xml:space="preserve">
+    <value>Pago con cheque</value>
+  </data>
+  <data name="Make check payable to the Los Angeles County Tax" xml:space="preserve">
+    <value>Haga el cheque a nombre de los impuestos del condado de Los Angeles</value>
+  </data>
+  <data name="Collector and mail to the address shown in the statement.  Your payment stub is located on the top" xml:space="preserve">
+    <value>Recolector y correo a la dirección indicada en el extracto. Su talón de pago se encuentra en la parte superior</value>
+  </data>
+  <data name="portion of your bill.  Please include this stub with any payment and write the tax year and bill number" xml:space="preserve">
+    <value>parte de su factura. Incluya este talón con cualquier pago y escriba el año fiscal y el número de factura</value>
+  </data>
+  <data name="on your check." xml:space="preserve">
+    <value>en su cheque</value>
+  </data>
+</root>
