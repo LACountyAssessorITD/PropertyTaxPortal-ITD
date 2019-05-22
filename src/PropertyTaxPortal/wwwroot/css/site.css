@@ -250,7 +250,12 @@ body {
     z-index: 500;
     width: 100%;
 }
-
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.6rem;
+        padding-left: 0.6rem;
+    }
+}
 
 .display-3 {
     font-size: 2rem;
@@ -875,24 +880,35 @@ img[usemap] {
     padding-right: 150px;
     min-height: 70px;
 }
+/*.cookie{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.7);
+}*/
 
 .alert-info {
     background-color: #808080;
     border-radius: 0;
     border: none;
     color: #fff;
-    font-weight:300;
+    min-height: 100px;
+    font-weight: 700;
+    padding-top: 30px;
 }
     .alert-info a {
-        color: #4e518b;
+        color: #0d47a1;
+         padding-top: 70px;
     }
-        .alert-info a:hover{
-            color: #0D47A1;
+        .alert-info a:hover {
+            color: #4e518b;
         }
         .alert-dismissible .close {
             color: #fff;
             text-shadow: none;
             font-weight: 400;
+            padding-top: 30px;
         }
 .alert-dismissible .close:hover{
     color: #3761A3;
