@@ -9,9 +9,10 @@
 
 @{
     var requestCulture = Context.Features.Get<IRequestCultureFeature>();
-    
+    //var test = requestCulture.RequestCulture.Culture;
     var cultureVal = new List<SelectListItem>()
     {
+
         new SelectListItem() {Text="English (United States)", Value="en-US"},
         new SelectListItem() {Text="Spanish", Value="es"},
         new SelectListItem() {Text="French", Value="fr"},

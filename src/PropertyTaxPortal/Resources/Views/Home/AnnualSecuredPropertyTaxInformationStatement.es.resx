@@ -307,7 +307,7 @@
     <value>Hacer cheques a pagar</value>
   </data>
   <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment" xml:space="preserve">
-    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Ángeles y envíelos a esta dirección. Incluir el pago</value>
+    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Angeles y envíelos por correo a esta dirección. Incluir el pago</value>
   </data>
   <data name="stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
     <value>apunte el pago y escriba el Número de Identificación del Evaluador y el Número de Año / Secuencia en el cheque.</value>
@@ -337,7 +337,7 @@
     <value>y escriba el número de identificación del asesor y el año / número de secuencia en el cheque.</value>
   </data>
   <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)" xml:space="preserve">
-    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Ángeles y envíelos a esta dirección. Incluir el talón de pago (s)</value>
+    <value>Haga los cheques a nombre del Recaudador de Impuestos del Condado de Los Angeles y envíelos por correo a esta dirección. Incluir el talón de pago (s)</value>
   </data>
   <data name="with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
     <value>con el pago y escriba el Número de Identificación del Evaluador y el Año / Número de Secuencia en el cheque.</value>

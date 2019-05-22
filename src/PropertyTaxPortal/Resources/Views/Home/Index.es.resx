@@ -138,8 +138,26 @@
   <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
     <value>BÚSQUEDA DE LA DIRECCIÓN DE LA PROPIEDAD</value>
   </data>
-  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
-    <value>AREAS DE RESPONSABILIDAD</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>Opciones de autoservicio</value>
+  </data>
+  <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
+    <value>Pagar propiedad &lt;/br&gt; Impuestos</value>
+  </data>
+  <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
+    <value>SISTEMA DE GESTIÓN DEL IMPUESTO A LA PROPIEDAD</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Cambiar dirección de correo</value>
+  </data>
+  <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
+    <value>BÚSQUEDA DE LA DIRECCIÓN DE LA PROPIEDAD</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>Areas de responsabilidad</value>
+  </data>
+  <data name="Self-Service" xml:space="preserve">
+    <value>Autoservicio</value>
   </data>
   <data name="&quot;Subscribe&quot; to the 'Treasurer' and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>"Suscríbase" al 'Tesorero' y al servicio de notificación por correo electrónico del recaudador de impuestos</value>
@@ -166,6 +184,6 @@
     <value>Ahorre entendiendo el sistema de impuesto a la propiedad</value>
   </data>
   <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
-    <value>Pagos en línea del impuesto a la propiedad en el condado de Los Ángeles</value>
+    <value>Impuestos a la propiedad en el condado de Los Angeles</value>
   </data>
 </root>

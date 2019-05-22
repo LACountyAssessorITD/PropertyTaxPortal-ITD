@@ -211,7 +211,7 @@
     <value>se impondrá La segunda cuota vence el 1 de febrero y está en mora el 10 de abril. Si la segunda cuota es</value>
   </data>
   <data name="not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
-    <value>no se recibió o USPS con sello postal el 10 de abril o antes, se impondrá una multa del 10% y un costo de $ 10.00.</value>
+    <value>no se recibió o USPS con sello postal el 10 de abril o antes, se impondrá una multa del 10 por ciento y un costo de $ 10.00.</value>
   </data>
   <data name="Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor's Identification" xml:space="preserve">
     <value>Los contribuyentes deben asegurarse de incluir el talón de pago con cualquier tipo de pago y escribir su Identificación del Asesor</value>
@@ -322,7 +322,7 @@
     <value>Si paga la factura en su totalidad, el pago debe</value>
   </data>
   <data name="be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments, the first" xml:space="preserve">
-    <value>ser recibido o el Servicio Postal de los Estados Unidos (USPS) con sello postal de esta fecha. Si se paga a plazos, la primera</value>
+    <value>ser recibido o el Servicio Postal de los Estados Unidos (USPS) con matasellos de esta fecha. Si se paga a plazos, la primera</value>
   </data>
   <data name="installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
     <value>la cuota debe recibirse o enviarse por correo postal a las USPS para esta fecha, o se impondrá una multa del 10 por ciento.</value>

@@ -135,8 +135,35 @@
   <data name="Resources" xml:space="preserve">
     <value>Recursos</value>
   </data>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>Opciones de autoservicio</value>
+  </data>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>Nueva información del propietario de la propiedad</value>
+  </data>
+  <data name="Penalty Cancellation Requests " xml:space="preserve">
+    <value>Solicitudes de Cancelación de Penas</value>
+  </data>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>Planes de pago de impuestos de propiedad</value>
+  </data>
+  <data name="Property Tax Payment History " xml:space="preserve">
+    <value>Historial de pago de impuestos a la propiedad</value>
+  </data>
+  <data name="Request Duplicate Bill " xml:space="preserve">
+    <value>Solicitar factura duplicada</value>
+  </data>
+  <data name="Senior Citizen Property Tax Assistance " xml:space="preserve">
+    <value>Asistencia de impuestos a la propiedad de personas mayores</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Herramientas</value>
+  </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>Evitar las sanciones por la comprensión de los matasellos</value>
+  </data>
+  <data name="Calculating Your 1% Tax" xml:space="preserve">
+    <value>Cálculo de su impuesto del 1%</value>
   </data>
   <data name="Change Mailing Address" xml:space="preserve">
     <value>Cambiar dirección de correo</value>
@@ -156,14 +183,17 @@
   <data name="Property Tax Management System" xml:space="preserve">
     <value>Sistema de gestión de impuestos a la propiedad</value>
   </data>
-  <data name="Request a Secure Property Tax Bills" xml:space="preserve">
-    <value>Solicitar una factura de impuestos de propiedad segura</value>
+  <data name="Request a Secured Property Tax Bill" xml:space="preserve">
+    <value>Solicitar una factura de impuestos de propiedad garantizada</value>
   </data>
   <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
     <value>Solicitud de información fiscal de propiedad asegurada (parcelas múltiples)</value>
   </data>
   <data name="View Payment History" xml:space="preserve">
     <value>Ver historial de pagos</value>
+  </data>
+  <data name="The 1% Tax - Where Does Your Money Go" xml:space="preserve">
+    <value>El impuesto del 1% - ¿A dónde va tu dinero?</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>enlaces rápidos</value>
@@ -217,7 +247,7 @@
     <value>Impuesto anual a la propiedad asegurada</value>
   </data>
   <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
-    <value>Declaración anual de información sobre impuestos a la propiedad asegurada</value>
+    <value>Declaración anual de información de impuestos garantizados</value>
   </data>
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Aviso de Delincuencia</value>

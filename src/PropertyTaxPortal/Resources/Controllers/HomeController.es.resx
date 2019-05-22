@@ -117,208 +117,193 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Assessment Appeals" xml:space="preserve">
-    <value>Apelaciones de Evaluación</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Change Mailing Address" xml:space="preserve">
-    <value>Cambiar dirección de correo</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Direct Assessments" xml:space="preserve">
-    <value>Evaluaciones directas</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Exemptions" xml:space="preserve">
-    <value>Las exenciones</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Incorrect Property Information" xml:space="preserve">
-    <value>Información incorrecta de la propiedad</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Liens" xml:space="preserve">
-    <value>Gravámenes</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Lost Tax Bill / Tax Bill Request" xml:space="preserve">
-    <value>Pérdida de impuestos / Solicitud de factura de impuestos</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Overpayment / Refund" xml:space="preserve">
-    <value>Pago en exceso / reembolso</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Ownership" xml:space="preserve">
-    <value>Propiedad</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Payment (all others)" xml:space="preserve">
-    <value>Pago (todos los demás)</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Payment (online credit card)" xml:space="preserve">
-    <value>Pago (tarjeta de crédito en línea)</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Payments (online eCheck)" xml:space="preserve">
-    <value>Pagos (eCheck en línea)</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="PIN Request" xml:space="preserve">
-    <value>Solicitud de PIN</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Property Tax Claim for Refunds" xml:space="preserve">
-    <value>Reclamación de impuestos de propiedad para reembolsos</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Reassessment Exclusions" xml:space="preserve">
-    <value>Exclusiones de reevaluación</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Refunds(value reductions)" xml:space="preserve">
-    <value>Reembolsos (reducciones de valor)</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Tax Adjustment" xml:space="preserve">
-    <value>Ajuste de impuestos</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Tax Auction" xml:space="preserve">
-    <value>Subasta de impuestos</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Tax Penalty Issue" xml:space="preserve">
-    <value>Emisión de penalidades impositivas</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Tax Rates" xml:space="preserve">
-    <value>Las tasas de impuestos</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Transfer Taxes to the Prior Owner" xml:space="preserve">
-    <value>Transferencia de impuestos al propietario anterior</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Unsecured Bills" xml:space="preserve">
-    <value>Facturas sin garantía</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Values / Decline in Value" xml:space="preserve">
-    <value>Valores / Disminución del valor</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
-  <data name="Website Related Inquiries" xml:space="preserve">
-    <value>Consultas relacionadas con el sitio web</value>
-    <comment>Subject dropdown in public inquiry page</comment>
-  </data>
   <data name="Phone" xml:space="preserve">
     <value>Teléfono</value>
-    <comment>Thank you page</comment>
   </data>
   <data name="Toll Free" xml:space="preserve">
     <value>Llamada gratuita</value>
-    <comment>Thank you page</comment>
   </data>
   <data name="Website" xml:space="preserve">
     <value>Sitio web</value>
-    <comment>Thank you page</comment>
   </data>
-  <data name="A staff member from the Assessment Appeals Board will respond to your request shortly." xml:space="preserve">
-    <value>Un miembro del personal de la Junta de Apelaciones de Evaluación responderá a su solicitud en breve.</value>
-    <comment>Thank you page / User email</comment>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
   </data>
-  <data name="A staff member from the Assessor's office will respond to your request shortly." xml:space="preserve">
-    <value>Un miembro del personal de la oficina del Asesor responderá su solicitud en breve.</value>
-    <comment>Thank you page / User email</comment>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Llamada gratuita</value>
   </data>
-  <data name="A staff member from the Auditor-Controller's office will respond to your request shortly." xml:space="preserve">
-    <value>Un miembro del personal de la oficina del Auditor-Controlador responderá a su solicitud en breve.</value>
-    <comment>Thank you page / User email</comment>
+  <data name="Website" xml:space="preserve">
+    <value>Sitio web</value>
   </data>
-  <data name="A staff member from the Treasurer &amp; Tax Collector's office will respond to your request shortly." xml:space="preserve">
-    <value>Un miembro del personal de la oficina del Tesorero y del Recaudador de impuestos responderá a su solicitud en breve.</value>
-    <comment>Thank you page</comment>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
   </data>
-  <data name="Please select" xml:space="preserve">
-    <value>Por favor seleccione</value>
-    <comment>Subject dropdown in public inquiry page</comment>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Llamada gratuita</value>
   </data>
-  <data name="Business Name" xml:space="preserve">
-    <value>Nombre del Negocio</value>
-    <comment>User email</comment>
+  <data name="Website" xml:space="preserve">
+    <value>Sitio web</value>
   </data>
-  <data name="Comments" xml:space="preserve">
-    <value>Comentarios</value>
-    <comment>User email</comment>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
   </data>
-  <data name="Company Number" xml:space="preserve">
-    <value>Numero de compañia</value>
-    <comment>User email</comment>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Llamada gratuita</value>
   </data>
-  <data name="Daytime Phone Number" xml:space="preserve">
-    <value>Número de teléfono durante el día</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Correo electrónico</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Fax Number" xml:space="preserve">
-    <value>Número de fax</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Mailing Address" xml:space="preserve">
-    <value>Dirección de envio</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Nombre</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Please do NOT reply to this email" xml:space="preserve">
-    <value>Por favor no responder a este email</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Property Address" xml:space="preserve">
-    <value>Dirección de Propiedad</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Public Inquiry Email" xml:space="preserve">
-    <value>Email de consulta pública</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Routing Index" xml:space="preserve">
-    <value>Índice de enrutamiento</value>
-    <comment>User email</comment>
-  </data>
-  <data name="The Reference number for your inquiry is" xml:space="preserve">
-    <value>El número de referencia para su consulta es</value>
-    <comment>User email</comment>
-  </data>
-  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
-    <value>Para enviar sus consultas, utilice nuestro Formulario de consulta pública en</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Assessor Identification Number" xml:space="preserve">
-    <value>Número de identificación del asesor</value>
-    <comment>User email</comment>
-  </data>
-  <data name="Property Tax Portal" xml:space="preserve">
-    <value>Portal de impuestos a la propiedad</value>
-    <comment>User email</comment>
+  <data name="Website" xml:space="preserve">
+    <value>Sitio web</value>
   </data>
   <data name="Reference" xml:space="preserve">
     <value>Referencia</value>
-    <comment>User email</comment>
+  </data>
+  <data name="Public Inquiry Email" xml:space="preserve">
+    <value>Email de consulta pública</value>
+  </data>
+  <data name="Please do NOT reply to this email" xml:space="preserve">
+    <value>Por favor no responder a este email</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>El número de referencia para su consulta es</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Business Name" xml:space="preserve">
+    <value>Nombre del Negocio</value>
+  </data>
+  <data name="Mailing Address" xml:space="preserve">
+    <value>Dirección de envio</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Daytime Phone Number" xml:space="preserve">
+    <value>Número de teléfono durante el día</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>Número de fax</value>
+  </data>
+  <data name="Property Address" xml:space="preserve">
+    <value>Dirección de Propiedad</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>Número de identificación del asesor</value>
+  </data>
+  <data name="Company Number" xml:space="preserve">
+    <value>Numero de compañia</value>
+  </data>
+  <data name="Routing Index" xml:space="preserve">
+    <value>Índice de enrutamiento</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>Para enviar sus consultas, utilice nuestro Formulario de consulta pública en</value>
+  </data>
+  <data name="Please select" xml:space="preserve">
+    <value>Por favor seleccione</value>
+  </data>
+  <data name="Assessment Appeals" xml:space="preserve">
+    <value>Apelaciones de Evaluación</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Cambiar dirección de correo</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Evaluaciones directas</value>
+  </data>
+  <data name="Exemptions" xml:space="preserve">
+    <value>Las exenciones</value>
+  </data>
+  <data name="Incorrect Property Information" xml:space="preserve">
+    <value>Información de propiedad incorrecta</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>Gravámenes</value>
+  </data>
+  <data name="Lost Tax Bill / Tax Bill Request" xml:space="preserve">
+    <value>Pérdida de impuestos / Solicitud de factura de impuestos</value>
+  </data>
+  <data name="Overpayment / Refund" xml:space="preserve">
+    <value>Pago en exceso / reembolso</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Propiedad</value>
+  </data>
+  <data name="Payment (all others)" xml:space="preserve">
+    <value>Pago (todos los demás)</value>
+  </data>
+  <data name="Payment (online credit card)" xml:space="preserve">
+    <value>Pago (tarjeta de crédito en línea)</value>
+  </data>
+  <data name="Payments (online eCheck)" xml:space="preserve">
+    <value>Pagos (eCheck en línea)</value>
+  </data>
+  <data name="PIN Request" xml:space="preserve">
+    <value>Solicitud de PIN</value>
+  </data>
+  <data name="Property Tax Claim for Refunds" xml:space="preserve">
+    <value>Reclamación de impuestos de propiedad para reembolsos</value>
+  </data>
+  <data name="Reassessment Exclusions" xml:space="preserve">
+    <value>Exclusiones de reevaluación</value>
+  </data>
+  <data name="Refunds(value reductions)" xml:space="preserve">
+    <value>Reembolsos (reducciones de valor)</value>
+  </data>
+  <data name="Tax Adjustment" xml:space="preserve">
+    <value>Ajuste de impuestos</value>
   </data>
   <data name="Tax Agent Registration" xml:space="preserve">
     <value>Registro de agente de impuestos</value>
-    <comment>Subject dropdown in public inquiry page</comment>
   </data>
-  <data name="Thank you for completing our Public Inquiry Form." xml:space="preserve">
-    <value>Gracias por completar nuestro formulario de consulta pública.</value>
-    <comment>Thank you page / User email</comment>
+  <data name="Tax Auction" xml:space="preserve">
+    <value>Subasta de impuestos</value>
+  </data>
+  <data name="Tax Penalty Issue" xml:space="preserve">
+    <value>Emisión de la multa fiscal</value>
+  </data>
+  <data name="Tax Rates" xml:space="preserve">
+    <value>Las tasas de impuestos</value>
+  </data>
+  <data name="Transfer Taxes to the Prior Owner" xml:space="preserve">
+    <value>Transferencia de impuestos al propietario anterior</value>
+  </data>
+  <data name="Unsecured Bills" xml:space="preserve">
+    <value>Facturas sin garantía</value>
+  </data>
+  <data name="Values / Decline in Value" xml:space="preserve">
+    <value>Valores / Disminución del valor</value>
+  </data>
+  <data name="Website Related Inquiries" xml:space="preserve">
+    <value>Consultas relacionadas con el sitio web</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessment Appeals Board respond to your request shortly." xml:space="preserve">
+    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal de la Junta de Apelaciones de Evaluación responderá a su solicitud en breve.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessor's department respond to your request shortly." xml:space="preserve">
+    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal del departamento del Asesor responde a su solicitud en breve.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Auditor-Controller's department respond to your request shortly." xml:space="preserve">
+    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal del departamento de Auditor-Controlador responderá a su solicitud en breve.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Treasurer &amp; Tax Collector's department respond to your request shortly." xml:space="preserve">
+    <value>Gracias por completar nuestro formulario de consulta pública. Un miembro del personal del departamento de Tesorero y Recaudador de impuestos responderá a su solicitud en breve.</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Llamada gratuita</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Sitio web</value>
+  </data>
+  <data name="Please select" xml:space="preserve">
+    <value>Por favor seleccione</value>
+  </data>
+  <data name="Property Tax Portal" xml:space="preserve">
+    <value>Portal de impuestos a la propiedad</value>
   </data>
 </root>
