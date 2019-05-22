@@ -231,8 +231,8 @@
   <data name="Pay Property Taxes" xml:space="preserve">
     <value>Pagar impuestos a la propiedad</value>
   </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>Facturas de impuestos</value>
+  <data name="How to Read Your Tax Bills" xml:space="preserve">
+    <value>Cómo leer sus facturas de impuestos</value>
   </data>
   <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
     <value>Impuesto anual ajustado a la propiedad</value>
@@ -272,6 +272,9 @@
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>Preguntas más frecuentes</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Facturas de impuestos</value>
   </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>Reembolsos / ventas de impuestos / gravámenes fiscales</value>
