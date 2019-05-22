@@ -892,6 +892,7 @@ img[usemap] {
     background-color: #808080;
     border-radius: 0;
     border: none;
+    font-size: 120%;
     color: #fff;
     min-height: 100px;
     font-weight: 700;
@@ -899,16 +900,17 @@ img[usemap] {
 }
     .alert-info a {
         color: #0d47a1;
-         padding-top: 70px;
+         /*padding-top: 65px;*/
     }
         .alert-info a:hover {
             color: #4e518b;
         }
         .alert-dismissible .close {
-            color: #fff;
+            color: #0d47a1;
             text-shadow: none;
             font-weight: 400;
-            padding-top: 30px;
+            padding-top: 25px;
+            opacity: 1 !important;
         }
 .alert-dismissible .close:hover{
     color: #3761A3;
@@ -948,3 +950,14 @@ img[usemap] {
     .contesting-links a:hover {
         color: #0D47A1;
     }
+
+.tab-pane p {
+    font-weight: 400;
+}
+
+.Section-Contact-Content p {
+    font-weight: 400;
+}
+.Section-Contact-Content ul {
+    font-weight: 400;
+}
