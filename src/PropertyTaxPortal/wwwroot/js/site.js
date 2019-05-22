@@ -7,11 +7,14 @@
     $('.search').click(function () {
         //$(this).toggleClass('icon-cross');
         
-
+        //$(window).scrollTop(0.4);
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
         $('.search-feature').toggleClass('down');
         $('.navbar-collapse').removeClass('show');
         $('.index-wrap').toggleClass('padding-down')
     });
+    
+
     $('.close').click(function () {
         //$(this).toggleClass('icon-cross');
        
