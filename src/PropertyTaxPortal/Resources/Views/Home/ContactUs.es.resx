@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CONTACT INFORMATION" xml:space="preserve">
+    <value>INFORMACIÓN DEL CONTACTO</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Asesor</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Auditor-controlador</value>
+  </data>
+  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+    <value>Tesorero y recaudador de impuestos</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Junta de Apelaciones de Evaluación</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State law. The assessed value of your property is placed on the &quot;Assessment Roll&quot;. The Assessor also approves and applies all exemptions which are added to the Assessment Roll. The Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>El Asesor del Condado de Los Ángeles establece el valor de tasación de su propiedad al evaluar el valor de esa propiedad según la ley estatal aplicable. El valor de tasación de su propiedad se coloca en la "Lista de evaluación". El Asesor también aprueba y aplica todas las exenciones que se agregan a la Lista de Evaluación. La lista se presenta luego al Auditor-Controlador del Condado de Los Ángeles para su posterior procesamiento.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Assessor and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessor's Website at" xml:space="preserve">
+    <value>Haga clic en el botón a continuación para ver las áreas de jurisdicción para el Asesor y los departamentos del Condado relacionados. Las preguntas sobre estas áreas deben dirigirse a esa oficina; o visite el sitio web del Asesor en</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>Areas de responsabilidad</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Llamada gratuita</value>
+  </data>
+  <data name="TDD/TTY" xml:space="preserve">
+    <value>TDD / TTY</value>
+  </data>
+  <data name="Alternate TDD/TTY" xml:space="preserve">
+    <value>TDD / TTY alternativos</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Sitio web</value>
+  </data>
+  <data name="Social" xml:space="preserve">
+    <value>Social</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Gorjeo</value>
+  </data>
+  <data name="YouTube" xml:space="preserve">
+    <value>Youtube</value>
+  </data>
+  <data name="Instagram" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="Flickr" xml:space="preserve">
+    <value>Flickr</value>
+  </data>
+  <data name="Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department." xml:space="preserve">
+    <value>Haga clic en el botón a continuación para enviar sus preguntas o comentarios relacionados con el impuesto a la propiedad al personal de servicio público del departamento correspondiente.</value>
+  </data>
+  <data name="Public Inquiry Form" xml:space="preserve">
+    <value>Formulario de consulta pública</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Tax Roll then applies the General Tax Levy (1%) and Voted Indebtedness (voter &amp; bonded) tax rates to the value on the Tax Roll. This function is called &quot;extending the Roll&quot;. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>El Auditor-Controlador del Condado de Los Ángeles agrega evaluaciones directas a la Tirada de Impuestos y luego aplica las tasas impositivas del Impuesto General de Impuestos (1%) y del Endeudamiento Votado (votante y en condiciones de servidumbre) al valor de la Rollo de Impuestos. Esta función se llama "extender el rollo". El rollo extendido se envía luego al Tesorero y Recaudador de Impuestos del Condado de Los Ángeles para la distribución de la factura de impuestos individuales y la recaudación de pagos.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Auditor-Controller and related County departments. Questions regarding these areas should be directed to that office; or visit the Auditor's Website at" xml:space="preserve">
+    <value>Haga clic en el botón a continuación para ver las áreas de jurisdicción para el Auditor-Controlador y los departamentos relacionados del Condado. Las preguntas sobre estas áreas deben dirigirse a esa oficina; o visite el sitio web del auditor en</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer &amp; Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services." xml:space="preserve">
+    <value>La misión del Tesorero y Recaudador de Impuestos del Condado de Los Ángeles es facturar, cobrar, desembolsar, invertir, pedir prestado y salvaguardar el dinero y las propiedades. El Departamento también proporciona servicios de cumplimiento, auditoría, consultoría, educación, administración de sucesiones y información pública.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Treasurer &amp; Tax Collector and related County departments. Questions regarding these areas should be directed to that office; or visit the Treasurer's Website at" xml:space="preserve">
+    <value>Haga clic en el botón a continuación para ver las áreas de jurisdicción para el Tesorero y el Recaudador de impuestos y los departamentos relacionados del Condado. Las preguntas sobre estas áreas deben dirigirse a esa oficina; o visite el sitio web del Tesorero en</value>
+  </data>
+  <data name="The property taxes you pay are primarily based on your property's assessed value as determined by the County Assessor. If you disagree with the assessed value placed on your property, you can appeal that value to the Assessment Appeals Board during the filing periods stated below." xml:space="preserve">
+    <value>Los impuestos a la propiedad que paga se basan principalmente en el valor tasado de su propiedad según lo determinado por el Asesor del Condado. Si no está de acuerdo con el valor tasado asignado a su propiedad, puede apelar ese valor a la Junta de Apelaciones de Evaluación durante los períodos de presentación que se detallan a continuación.</value>
+  </data>
+  <data name="The filing periods for equalization of assessments are:" xml:space="preserve">
+    <value>Los periodos de presentación para la igualación de evaluaciones son:</value>
+  </data>
+  <data name="Regular Assessments - filing date is July 2 to November 30." xml:space="preserve">
+    <value>Evaluaciones regulares: la fecha de presentación es del 2 de julio al 30 de noviembre.</value>
+  </data>
+  <data name="Supplemental / Adjusted / Escape / Roll Corrections - filing date is within 60 days after the mailing date on the Notice of Assessed Value Change or Supplemental / Adjusted / Escape Assessments Tax Bill." xml:space="preserve">
+    <value>Correcciones suplementarias / ajustadas / de escape / registro: la fecha de presentación es dentro de los 60 días posteriores a la fecha de envío por correo en el Aviso de cambio del valor estimado o en la factura tributaria de las evaluaciones suplementarias / ajustadas / de escape.</value>
+  </data>
+  <data name="Misfortune &amp; Calamity Reassessments - file within six months of the mailing date of the Assessor's Proposed Reassessment Notice due to Property Damaged by Misfortune &amp; Calamity." xml:space="preserve">
+    <value>Reevaluaciones de la desgracia y la calamidad: se archiva dentro de los seis meses posteriores a la fecha de envío del Aviso de la nueva evaluación propuesta por el Asesor debido a la propiedad dañada por la desgracia y la calamidad.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Assessment Appeals Board and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessment Appeals Website at" xml:space="preserve">
+    <value>Haga clic en el botón a continuación para ver las áreas de jurisdicción de la Junta de Apelaciones de Evaluación y los departamentos relacionados del Condado. Las preguntas sobre estas áreas deben dirigirse a esa oficina; o visite el sitio web de apelaciones de evaluación en</value>
+  </data>
+  <data name="and press number 5" xml:space="preserve">
+    <value>y presiona numero 5</value>
+  </data>
+</root>
