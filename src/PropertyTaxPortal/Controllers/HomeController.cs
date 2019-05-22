@@ -323,9 +323,9 @@ namespace PropertyTaxPortal.Controllers
                         break;
 
                     case EmailTreasurer:
-                        sThankYouWhole = sThankYouFront + "Treasurer & Tax Collector's department" + sThankYouEnd;
+                        sThankYouWhole = sThankYouFront + "Treasurer and Tax Collector's department" + sThankYouEnd;
                         model.responsibleDepartment = _localizer[sThankYouWhole];
-                        model.Department = "Treasurer & Tax Collector's office";
+                        model.Department = "Treasurer and Tax Collector's office";
                         model.addressPhoneWebsite = "Los Angeles County Treasurer and Tax Collector<br>" +
                             "225 N. Hill Street, First Floor Lobby<br>" +
                             "Los Angeles, CA 90012<br><br>" +
