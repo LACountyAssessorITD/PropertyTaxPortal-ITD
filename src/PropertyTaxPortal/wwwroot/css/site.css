@@ -89,6 +89,7 @@ body {
     -webkit-box-shadow: 0 0 10px #000;
             box-shadow: 0 0 10px #000;
     padding: 15px;
+    overflow: hidden;
     /*line-height: 75px;*/
 }
 
@@ -430,7 +431,7 @@ nav a img {
 }
 
 .bg-light {
-    background-color: rgba(255, 255, 255) !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .navbar-collapse {
