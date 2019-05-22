@@ -176,7 +176,9 @@
 
 @media only screen and (max-width: 1000px){
     .section-cards .col-md-3 {
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
     }
     .section-cards .row .text-card:first-child {
         margin-left: auto;
@@ -485,7 +487,9 @@
     }
 
     .section-cards .col-md-3 {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
 
    
