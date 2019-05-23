@@ -156,7 +156,12 @@ namespace PropertyTaxPortal
             // To configure external authentication, 
             // see: http://go.microsoft.com/fwlink/?LinkID=532715
             app.UseAuthentication();
-            
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
+                await next();
+            });
+
             app.UseHttpsRedirection();
             //-----------------LOCALIZATION MIDDLEWARE-----------------//
             var supportedCultures = new[]
