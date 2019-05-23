@@ -161,7 +161,7 @@ namespace PropertyTaxPortal
                 context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                 await next();
             });
-
+            
             app.UseHttpsRedirection();
             //-----------------LOCALIZATION MIDDLEWARE-----------------//
             var supportedCultures = new[]

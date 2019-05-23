@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Authentication;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -20,6 +21,13 @@ namespace PropertyTaxPortal
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseKestrel(c =>
+                {
+                    c.ConfigureHttpsDefaults(opt =>
+                    {
+                        opt.SslProtocols = SslProtocols.Tls12;
+                    });
+                });
     }
 }
