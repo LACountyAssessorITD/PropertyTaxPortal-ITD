@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>لایحه مالیاتی املاک تکمیل شده</value>
+  </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>برای مشاهده توضیحات جزء لایحه، لطفا بر روی هر شماره کلیک کنید. شما همچنین می توانید به پایین صفحه بروید تا لیست کامل لیست های زمینه نمایش داده شود.</value>
+  </data>
+  <data name="The Adjusted Supplemental Property" xml:space="preserve">
+    <value>خواص مکمل تعدیل شده</value>
+  </data>
+  <data name="Tax Bill replaces the Supplemental Property Tax Bill received for the same fiscal year." xml:space="preserve">
+    <value>لایحه مالیات جایگزین لایحه مالیات املاک تکمیلی برای همان سال مالی می شود.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>شناسه شناسایی</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number" xml:space="preserve">
+    <value>این منطقه شماره شناسایی ارزیاب را مشخص می کند</value>
+  </data>
+  <data name="– (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the Office of the" xml:space="preserve">
+    <value>- (1234-567-890). شماره شناسایی ارزیابی (AIN) یک شماره ده رقمی است که توسط دفتر اداره می شود</value>
+  </data>
+  <data name="Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a" xml:space="preserve">
+    <value>ارزیابی هر قطعه املاک در شهر لس آنجلس. این AIN ده رقمی ساخته شده از یک</value>
+  </data>
+  <data name="four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>شماره کارت نقشه چهار رقمی (1234)، شماره سه رقمی (567) و شماره سه رقمی شماره (890).</value>
+  </data>
+  <data name="Year and Sequence" xml:space="preserve">
+    <value>سال و دنباله</value>
+  </data>
+  <data name="This area identifies the Year and Sequence – (16 000).  This five digit" xml:space="preserve">
+    <value>این منطقه سال و دنباله را مشخص می کند - (16000). این پنج رقمی</value>
+  </data>
+  <data name="number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a" xml:space="preserve">
+    <value>شماره از یک سال مالی دو رقمی و یک توالی یا الگوی سه رقمی ساخته شده است. به عنوان مثال، a</value>
+  </data>
+  <data name="2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010." xml:space="preserve">
+    <value>لایحه سالانه 2016 به عنوان 16000 نمایش داده می شود، با این حال یک لایحه مکمل 2016 ممکن است به عنوان 16 010 نمایش داده شود.</value>
+  </data>
+  <data name="Transfer/New Construction Date" xml:space="preserve">
+    <value>انتقال / تاریخ ساخت جدید</value>
+  </data>
+  <data name="This date is used as the basis for the change in assessed" xml:space="preserve">
+    <value>این تاریخ به عنوان مبنایی برای تغییر در ارزیابی استفاده می شود</value>
+  </data>
+  <data name="value.  The term “Transfer Date” refers to the recording date of an ownership change.  &quot;New Construction Date&quot; refers" xml:space="preserve">
+    <value>ارزش. اصطلاح "تاریخ انتقال" به تاریخ ضبط یک تغییر مالکیت اشاره دارد. "تاریخ ساخت جدید" اشاره دارد</value>
+  </data>
+  <data name="to the date the new construction was completed." xml:space="preserve">
+    <value>تا تاریخ تکمیل ساخت و ساز جدید.</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>مالیات بر درآمد عمومی</value>
+  </data>
+  <data name="This tax amount is the general one percent (1%) tax rate levied against" xml:space="preserve">
+    <value>این مبلغ مالیات به طور کلی یک درصد (1٪) نرخ مالیات بر علیه است</value>
+  </data>
+  <data name="every property in the County.  The calculation is 1 percent multiplied by the &quot;Net Taxable Value." xml:space="preserve">
+    <value>هر ملک در شهرستان. محاسبه 1 درصد ضرب به ارزش "ارزش خالص خالص" است.</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>بدهی رأی داده است</value>
+  </data>
+  <data name="Voter-approved taxes levied against property." xml:space="preserve">
+    <value>مالیات مورد تأیید رأی دهنده علیه دارایی است.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>ارزیابی</value>
+  </data>
+  <data name="The owner of record and the mailing address on file with the Office of the Assessor." xml:space="preserve">
+    <value>صاحب رکورد و آدرس پستی در پرونده با دفتر ارزیابی.</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>شماره انتقال الکترونیکی صندوق (EFT)</value>
+  </data>
+  <data name="The EFT number is used to make credit" xml:space="preserve">
+    <value>شماره EFT برای اعتبار استفاده می شود</value>
+  </data>
+  <data name="card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit card payment," xml:space="preserve">
+    <value>پرداخت کارت کارت اعتباری / کارت اعتباری ویزا از طریق تلفن. برای شروع یک کارت اعتباری / پرداخت ویزا کارت نقدی</value>
+  </data>
+  <data name="please call 1(888) 473-0835.  However, there are processing fees when paying by credit card/Visa Debit card." xml:space="preserve">
+    <value>لطفا با شماره 1 (888) 473-0835 تماس بگیرید. با این وجود هزینه پرداخت در صورت پرداخت با کارت اعتباری / کارت اعتباری ویزا وجود دارد.</value>
+  </data>
+  <data name="Each transaction is limited to $99,999.99.  The PIN number is used to make electronic check payment to" xml:space="preserve">
+    <value>هر معامله به $ 99،999،99 محدود شده است. شماره پین برای پرداخت چک چک الکترونیکی استفاده می شود</value>
+  </data>
+  <data name="protect your security and privacy and is used to pay your current year and defaulted taxes online." xml:space="preserve">
+    <value>محافظت از امنیت و حریم خصوصی شما و استفاده از آن برای پرداخت هزینه سال جاری و پرداخت آنلاین از طریق پرداخت آنلاین.</value>
+  </data>
+  <data name="Effective with tax bills issued after August 2013, the PIN may contain all alpha, all numeric, or" xml:space="preserve">
+    <value>با حساب های مالیاتی که بعد از اوت 2013 صادر شده، موثر است، PIN ممکن است شامل تمام آلفا، تمام عددی یا</value>
+  </data>
+  <data name="alpha/numeric characters.  The alpha letter 'O' is not used in the PIN.  The '0' is always a number zero." xml:space="preserve">
+    <value>کاراکترهای آلفا / عددی نامه الف 'O' در پین استفاده نمی شود. '0' همیشه یک عدد صفر است.</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>ارزیابی مستقیم</value>
+  </data>
+  <data name="These are additional charges placed on the property tax bills." xml:space="preserve">
+    <value>این هزینه های اضافی را در حساب های دارایی ملک قرار می دهد.</value>
+  </data>
+  <data name="These charges are not based on Assessor’s valuations.  Examples of direct assessments are charges for sewer" xml:space="preserve">
+    <value>این اتهامات بر اساس ارزیابی اعضا نیست. نمونه هایی از ارزیابی مستقیم هزینه های فاضلاب است</value>
+  </data>
+  <data name="maintenance, water, or fire districts.  For questions regarding these assessments, please contact the agency." xml:space="preserve">
+    <value>تعمیر و نگهداری، آب، و یا آتش نشانی. برای سؤالات مربوط به این ارزیابی ها، لطفا با آژانس تماس بگیرید.</value>
+  </data>
+  <data name="The telephone number for each agency is listed on the bill, or please visit the Department of Auditor-Controller’s" xml:space="preserve">
+    <value>شماره تلفن برای هر آژانس در لایحه ذکر شده است، یا لطفا از اداره بازرس و کنترل کننده بازدید کنید</value>
+  </data>
+  <data name="website for a Direct Assessment Listing." xml:space="preserve">
+    <value>وب سایت برای فهرست ارزیابی مستقیم.</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>اطلاعات ویژه</value>
+  </data>
+  <data name="This section provides important information about the bill" xml:space="preserve">
+    <value>این بخش اطلاعات مهم در مورد این لایحه را فراهم می کند</value>
+  </data>
+  <data name="and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>و می گوید که آیا هیچ مالیات بزهکاری وجود دارد.</value>
+  </data>
+  <data name="Total Prorated Taxes Due" xml:space="preserve">
+    <value>مجموع مالیات برآورد شده با توجه به</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>موقعیت ملک و / یا توضیحات ملک</value>
+  </data>
+  <data name="The property address" xml:space="preserve">
+    <value>آدرس اموال</value>
+  </data>
+  <data name="and/or legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>و / یا توضیح قانونی در رکورد با دفتر ارزیابی.</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>ارزیابی کنونی</value>
+  </data>
+  <data name="The Assessor’s valuation of" xml:space="preserve">
+    <value>ارزیابی ارزیاب از</value>
+  </data>
+  <data name="the property after the adjustment." xml:space="preserve">
+    <value>ملک بعد از تنظیم.</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>ارزش پیشین ارزیابی شده</value>
+  </data>
+  <data name="This is the Assessor’s valuation" xml:space="preserve">
+    <value>این ارزیابی ارزیابی است</value>
+  </data>
+  <data name="of the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>از اموال قبل از انتقال اخیر / تاریخ ساخت جدید.</value>
+  </data>
+  <data name="Net Assessed Value" xml:space="preserve">
+    <value>ارزش ارزش خالص</value>
+  </data>
+  <data name="The current assessed value less the prior assessed value." xml:space="preserve">
+    <value>ارزش فعلی ارزیابی کمتر ارزش ارزیابی شده قبلی است.</value>
+  </data>
+  <data name="Assessor’s Regional Office" xml:space="preserve">
+    <value>اداره منطقه ای مستقل</value>
+  </data>
+  <data name="This is the address and telephone" xml:space="preserve">
+    <value>این آدرس و تلفن است</value>
+  </data>
+  <data name="number to contact for questions regarding the assessed value of the property." xml:space="preserve">
+    <value>شماره برای تماس با سوالات مربوط به ارزش ارزیابی اموال.</value>
+  </data>
+  <data name="Less Exemptions" xml:space="preserve">
+    <value>موارد کمتر</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>در صورت وجود هرگونه تخفیف از ارزش ارزیابی محاسبه می شود.</value>
+  </data>
+  <data name="Net Supplemental Value" xml:space="preserve">
+    <value>ارزش اضافی خالص</value>
+  </data>
+  <data name="This is the difference between the" xml:space="preserve">
+    <value>این تفاوت بین است</value>
+  </data>
+  <data name="current value and the prior value less exemptions." xml:space="preserve">
+    <value>ارزش فعلی و ارزش پیشین معافیت های کمتر.</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>بازپرداخت هزینه تحویل</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>هزینهای 50.00 دلار برای هر چک بازگشتی توسط بانک وجود دارد.</value>
+  </data>
+  <data name="2nd Delinquency Date" xml:space="preserve">
+    <value>تاریخ معکوس دوم</value>
+  </data>
+  <data name="If paying the bill in installments, the second installment" xml:space="preserve">
+    <value>اگر این لایحه را در اقساط پرداخت کنید، قسط دوم</value>
+  </data>
+  <data name="must be received or United States Postal Service postmarked by this date, or a 10 percent penalty and a $10.00 cost" xml:space="preserve">
+    <value>باید دریافت شود یا خدمات پست پستی ایالات متحده توسط این تاریخ، و یا 10 درصد مجازات و هزینه 10.00 دلار</value>
+  </data>
+  <data name="will be imposed." xml:space="preserve">
+    <value>تحمیل خواهد شد</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>پرداخت دوم</value>
+  </data>
+  <data name="Amount of taxes due for the second installment.  Taxpayers" xml:space="preserve">
+    <value>مقدار مالیات برای مرحله دوم مالیات دهندگان</value>
+  </data>
+  <data name="must be sure to include the payment stub with any type of payment and write their Assessor’s Identification Number" xml:space="preserve">
+    <value>باید اطمینان داشته باشید که شامل خرد پرداخت با هر گونه پرداخت و شماره شناسایی مستاجر خود را بنویسید</value>
+  </data>
+  <data name="with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>با سال / شماره سریال در چک خود را.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>میزان مصرف</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here." xml:space="preserve">
+    <value>اگر پرداخت توسط تاریخ معافیت صورت نگرفته باشد، مبلغی را که در اینجا ذکر شد، پرداخت کنید.</value>
+  </data>
+  <data name="Include the payment stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number" xml:space="preserve">
+    <value>شامل پرداخت خرد (ها) با پرداخت و نوشتن شماره شناسایی ارزیاب و شماره سال / شماره پیگیری</value>
+  </data>
+  <data name="on the check." xml:space="preserve">
+    <value>در چک</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>چک را پرداخت کنید</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment" xml:space="preserve">
+    <value>چک را قابل پرداخت به جمع آوری مالیات شهرستان لس آنجلس و ارسال نامه به این آدرس. شامل پرداخت</value>
+  </data>
+  <data name="stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>خرد (ها) با پرداخت و شماره شناسایی عدلی و شماره سال / شماره پیگیری در چک را بنویسید.</value>
+  </data>
+  <data name="1st Delinquency Date" xml:space="preserve">
+    <value>تاریخ اول زایمان</value>
+  </data>
+  <data name="If paying the bill in full, payment must be received or United States Postal Service (USPS) postmarked by" xml:space="preserve">
+    <value>در صورتی که پرداخت صورتحساب به طور کامل، پرداخت باید دریافت شود یا خدمات پست ایالات متحده (USPS) توسط پستی نوشته شده است</value>
+  </data>
+  <data name="this date. If paying in installments, the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>این تاریخ. در صورت پرداخت اقساط، اولین اقساط باید دریافت شود یا USPS تا تاریخ این علامت گذاری نشود یا مجازات 10 درصدی اعمال خواهد شد.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>پرداخت یارانه اول</value>
+  </data>
+  <data name="Amount of taxes due for the first installment. Taxpayers must be sure to include the payment stub with any type of payment" xml:space="preserve">
+    <value>مقدار مالیات مربوط به اولین اقساط مالیات دهندگان باید مطمئن باشند که شامل خرد پرداخت با هر نوع پرداخت می شود</value>
+  </data>
+  <data name="and write their Assessor’s Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>و شماره شناسایی ارزیابی خود را با شماره سال / شماره پیگیری در چک خود را بنویسید.</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the payment" xml:space="preserve">
+    <value>اگر پرداخت توسط تاریخ معافیت صورت نگرفته باشد، مبلغی را که در اینجا ذکر شد، پرداخت کنید. همراه با پرداخت شامل خرد (پرداخت)</value>
+  </data>
+  <data name="and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>و شماره شناسایی ارزیاب و شماره سال / شماره پیگیری را در چک بنویسید.</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)" xml:space="preserve">
+    <value>چک را قابل پرداخت به جمع آوری مالیات شهرستان لس آنجلس و ارسال نامه به این آدرس. شامل خریدهای پرداخت (ها)</value>
+  </data>
+  <data name="with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>با پرداخت و شماره شناسایی اسناد و شماره / Year / Sequence در چک را بنویسید.</value>
+  </data>
+</root>

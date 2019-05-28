@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>صورتحساب مالیات غیر قانونی</value>
+  </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>برای مشاهده توضیحات جزء لایحه، لطفا بر روی هر شماره کلیک کنید. شما همچنین می توانید به پایین صفحه بروید تا لیست کامل لیست های زمینه نمایش داده شود.</value>
+  </data>
+  <data name="Unsecured bills are" xml:space="preserve">
+    <value>صورت حساب های غیرقانونی</value>
+  </data>
+  <data name="mailed out every year no later than July 31st and are due no later" xml:space="preserve">
+    <value>هر سال بعد از 31 ژوئیه هر ساله ارسال می شود و به زودی به پایان نمی رسد</value>
+  </data>
+  <data name="than August 31st. Corrected bills are also mailed out using this" xml:space="preserve">
+    <value>از اوت 31. صورت حساب های اصلاح شده نیز با استفاده از این ایمیل ارسال می شود</value>
+  </data>
+  <data name="same form so make sure to check your due dates." xml:space="preserve">
+    <value>همان فرم، بنابراین مطمئن شوید که تاریخ های مربوط به آن را چک کنید.</value>
+  </data>
+  <data name="Sale or Disposal" xml:space="preserve">
+    <value>فروش یا دفع</value>
+  </data>
+  <data name="Sale or disposal of this property" xml:space="preserve">
+    <value>فروش یا دفع این اموال</value>
+  </data>
+  <data name="after January 1 does not relieve the assessee of this tax." xml:space="preserve">
+    <value>پس از 1 ژانویه ارزشیابی این مالیات را تسکین نمی دهد.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>ارزیابی</value>
+  </data>
+  <data name="The person or entity that is responsible" xml:space="preserve">
+    <value>شخص یا نهادی که مسئول است</value>
+  </data>
+  <data name="for this bill." xml:space="preserve">
+    <value>برای این لایحه.</value>
+  </data>
+  <data name="Bill Number" xml:space="preserve">
+    <value>شماره قبض</value>
+  </data>
+  <data name="The bill number for this year's bill." xml:space="preserve">
+    <value>شماره لایحه برای این لایحه سال جاری.</value>
+  </data>
+  <data name="Please be careful as this number changes every year. When referencing it always" xml:space="preserve">
+    <value>لطفا مراقب باشید زیرا این تعداد هر ساله تغییر می کند. همیشه آن را ارجاع دهید</value>
+  </data>
+  <data name="include the year; for example, 2016 12345678." xml:space="preserve">
+    <value>شامل سال برای مثال، 2016 12345678.</value>
+  </data>
+  <data name="Situs or Location" xml:space="preserve">
+    <value>محل سکونت یا محل سکونت</value>
+  </data>
+  <data name="The location of the property " xml:space="preserve">
+    <value>محل اموال</value>
+  </data>
+  <data name="being assessed." xml:space="preserve">
+    <value>ارزیابی می شود.</value>
+  </data>
+  <data name="Assessment Number" xml:space="preserve">
+    <value>شماره ارزیابی</value>
+  </data>
+  <data name="A number that the Assessor's" xml:space="preserve">
+    <value>یک عدد که اسمسور است</value>
+  </data>
+  <data name="office uses to link to a specific assessment." xml:space="preserve">
+    <value>دفتر برای پیوند به یک ارزیابی خاص استفاده می کند.</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>ارزشهای ارزیابی شده</value>
+  </data>
+  <data name="Values are determined by the" xml:space="preserve">
+    <value>ارزش ها توسط</value>
+  </data>
+  <data name="Assessor's office. Please call the number listed here for any question" xml:space="preserve">
+    <value>دفتر اسناد رسمی لطفا برای هر سوال شماره تماس بگیرید</value>
+  </data>
+  <data name="pertaining to the assessed value of the unsecured property." xml:space="preserve">
+    <value>مربوط به ارزش ارزیابی اموال غیرقانونی است.</value>
+  </data>
+  <data name="Full Value" xml:space="preserve">
+    <value>ارزش کامل</value>
+  </data>
+  <data name="Value as of January 1st as" xml:space="preserve">
+    <value>ارزش از 1 ژانویه به عنوان</value>
+  </data>
+  <data name="determined by the Assessor's office." xml:space="preserve">
+    <value>تعیین شده توسط دفتر اسناد رسمی.</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>بدهی رأی داده است</value>
+  </data>
+  <data name="Voter-approved taxes levied" xml:space="preserve">
+    <value>مالیات مورد تأیید رای دهندگان</value>
+  </data>
+  <data name="against property." xml:space="preserve">
+    <value>علیه اموال</value>
+  </data>
+  <data name="Total Tax" xml:space="preserve">
+    <value>مالیات کل</value>
+  </data>
+  <data name="The total amount of tax due by the date" xml:space="preserve">
+    <value>مبلغ کل مالیات مربوط به تاریخ</value>
+  </data>
+  <data name="stated. A 10% penalty and collection costs will accrue after the due date." xml:space="preserve">
+    <value>اظهار داشت. 10٪ مجازات و هزینه های جمع آوری پس از تاریخ به حساب می آیند.</value>
+  </data>
+  <data name="Please include your payment stub with any payment; write the tax year and bill" xml:space="preserve">
+    <value>لطفا با پرداخت هر کدام از موارد پرداخت خود را پرداخت کنید سال مالیات و لایحه را بنویسید</value>
+  </data>
+  <data name="number on your check." xml:space="preserve">
+    <value>شماره در چک شما</value>
+  </data>
+  <data name="If not paid by the delinquent date" xml:space="preserve">
+    <value>اگر تاریخ خرابکار را پرداخت نکنید</value>
+  </data>
+  <data name="The last date" xml:space="preserve">
+    <value>آخرین تاریخ</value>
+  </data>
+  <data name="that payment will be accepted without penalty. Payments postmarked or received" xml:space="preserve">
+    <value>این پرداخت بدون مجازات پذیرفته خواهد شد. پرداخت های پست شده یا دریافت شده</value>
+  </data>
+  <data name="after this date are subject to a 10% penalty and may be subject to additional" xml:space="preserve">
+    <value>پس از این تاریخ، مجازات 10٪ اعمال می شود و ممکن است به دلیل اضافی باشد</value>
+  </data>
+  <data name="collection costs of up to $49.00. Interest may also accrue at the rate" xml:space="preserve">
+    <value>هزینه های جمع آوری تا $ 49.00. علاقه نیز ممکن است به میزان افزایش یابد</value>
+  </data>
+  <data name="of 1.5% on the base tax beginning on the second month after the due date. There" xml:space="preserve">
+    <value>از 1.5٪ در مالیات بر اساس شروع در ماه دوم پس از تاریخ است. آنجا</value>
+  </data>
+  <data name="is a $33.00 service charge for any check returned by the bank." xml:space="preserve">
+    <value>یک سرویس هزینه 33 دلار برای هر چک بازگشتی توسط بانک است.</value>
+  </data>
+  <data name="10% Penalty After" xml:space="preserve">
+    <value>10٪ مجازات پس از</value>
+  </data>
+  <data name="The date by which payment must be" xml:space="preserve">
+    <value>تاریخی که پرداخت باید باشد</value>
+  </data>
+  <data name="postmarked or received. Please mail early to avoid penalties. Postage Meter" xml:space="preserve">
+    <value>علامت گذاری شده یا دریافت شده لطفا برای جلوگیری از جریمه در اوایل ایمیل. مترجم پستی</value>
+  </data>
+  <data name="Dates are not used to determine the postmark." xml:space="preserve">
+    <value>برای تعیین علامت پستی استفاده از تاریخ استفاده نمی شود.</value>
+  </data>
+  <data name="Year and Bill Number" xml:space="preserve">
+    <value>سال و شماره بیل</value>
+  </data>
+  <data name="Please include this on any" xml:space="preserve">
+    <value>لطفا این را در هر کدام</value>
+  </data>
+  <data name="correspondence or payment. Be careful as bill numbers change every year." xml:space="preserve">
+    <value>مکاتبات یا پرداخت. مراقب باشید زیرا تعداد لایحه هر ساله تغییر می کند.</value>
+  </data>
+  <data name="The number the Assessor uses to" xml:space="preserve">
+    <value>شماره ارزیابی کننده به استفاده از</value>
+  </data>
+  <data name="track assessed property." xml:space="preserve">
+    <value>ردیابی اموال ارزیابی شده</value>
+  </data>
+  <data name="Payment by Check" xml:space="preserve">
+    <value>پرداخت توسط چک</value>
+  </data>
+  <data name="Make check payable and mail to the" xml:space="preserve">
+    <value>چک را پرداخت و ایمیل به</value>
+  </data>
+  <data name="address shown in the statement. Please include your payment stub with any" xml:space="preserve">
+    <value>آدرس در این بیانیه نشان داده شده است. لطفا با هر کدام از موارد پرداخت خود را درج کنید</value>
+  </data>
+  <data name="payment and write the tax year and bill number on your check" xml:space="preserve">
+    <value>پرداخت و سال مالیات و شماره لایحه را در چک خود بنویسید</value>
+  </data>
+</root>

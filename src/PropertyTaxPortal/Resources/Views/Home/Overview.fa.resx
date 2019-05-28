@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OVERVIEW" xml:space="preserve">
+    <value>بررسی اجمالی</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>بررسی اجمالی مالیات بر املاک</value>
+  </data>
+  <data name="How The Property Tax System Works" xml:space="preserve">
+    <value>چگونه سیستم مالیات بر دارایی کار می کند</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>حوزه مسئولیت</value>
+  </data>
+  <data name="PROPERTY TAX OVERVIEW" xml:space="preserve">
+    <value>مفاهیم مالیاتی ملک</value>
+  </data>
+  <data name="The Assessor, Auditor-Controller, and Treasurer and Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process." xml:space="preserve">
+    <value>ارزیاب، حسابرس، کنترل کننده، و خزانه دار و مالیات گرد هم می آیند برای تولید و حساب وام و مالیات اموال خود و پرداخت. هیئت تجدید نظر ارزیابی فرایند ارزیابی را بر عهده دارد.</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>اسناد</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>حسابرس، کنترل کننده</value>
+  </data>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>خزانه دار و جمع آوری مالیاتی</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>ارزیابی هیأت بازپرداخت</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the &quot;Assessment Roll.&quot; The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>ارزیابی شهرداری لس آنجلس، ارزش ارزیابی اموال خود را با ارزیابی ارزش این اموال تحت قوانین دولتی قابل اجرا تعیین می کند. ارزش ارزیابی سپس به لیستی با سایر خواص دیگر در لس آنجلس وارد می شود و این لیست به عنوان «ارزیابی رول» نامیده می شود. ارزیاب نیز کلیه معافیت ها را که به رأی ارزیابی اضافه شده است، تصویب و اعمال می کند. سپس ارزیابی ارزیابی به حسابرسان و کنترل شهرستان لس آنجلس برای پردازش بیشتر ارائه می شود.</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter &amp; bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>حسابرسان و حسابرسان لس آنجلس ارزشیابی مستقیم را به ارزیابی ارزیابی اضافه می کنند و سپس نرخ های مالیاتی را اعمال می کنند که شامل نرخ مالیات عمومی (1٪) و مالیات بر ارزش افزوده (رأی دهنده و متعهد) به ارزش برای ایجاد یک رأی ارزیابی گسترده است. رول تمدید پس از آن برای توزیع و جمع آوری پرداخت صورتحساب مالیات مستقیم به خزانه دار و جمع آوری مالیات در لس آنجلس فرستاده می شود.</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer and Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
+    <value>مأموریت وزارت خزانه داری شهرستان لس آنجلس و جمع آوری مالیات این است که در صورت لزوم، جمع آوری، پرداخت، سرمایه گذاری، قرض گرفتن و حفاظت از پول و اموال. اداره همچنین اجرای، حسابرسی، مشاوره، آموزش، مدیریت املاک و خدمات اطلاعات عمومی را فراهم می کند. خزانه دار و مالیات جمع آوری مالیات های امن و غیرقانونی را جمع آوری می کند.</value>
+  </data>
+  <data name="Secured Taxes" xml:space="preserve">
+    <value>مالیات های امن</value>
+  </data>
+  <data name=" are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc." xml:space="preserve">
+    <value> مالیات بر املاک و مستغلات مانند زمین خالی، سازه های روی زمین، یعنی ساختمان کسب و کار / دفتر، خانه، آپارتمان و غیره</value>
+  </data>
+  <data name="Unsecured Taxes" xml:space="preserve">
+    <value>مالیات غیرقانونی</value>
+  </data>
+  <data name=" are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
+    <value> مالیات بر ارزیابی ها مانند مبلمان اداری، تجهیزات، هواپیماها و قایق ها، و همچنین مالیات بر دارایی هایی که در برابر املاک و مستغلات نیستند، هستند.</value>
+  </data>
+  <data name="The Los Angeles County Assessment Appeals Board is an independent agency, separate from the Assessor’s Office, who hears property assessment disputes between taxpayers and the Assessor, and based upon the evidence presented at the hearing, makes a fair, impartial decision on your property’s assessed value.  The Assessment Appeals Board’s decision can result in a decrease, increase, or no change in your property’s assessed value." xml:space="preserve">
+    <value>هیئت تحریریه ارزیابی شهرستان لس آنجلس یک آژانس مستقل است که جدا از دفتر اسناد رسمی است که از اختلافات ارزیابی اموال بین مالیات دهندگان و ارزیاب ارزیابی می کند و براساس شواهدی که در دادرسی ارائه شده است تصمیم گیری منصفانه و بیطرفانه در ارزش ارزیابی اموال شما را ارزیابی می کند . تصمیم هیأت بازنگری ارزیابی می تواند باعث کاهش، افزایش یا تغییر ارزش ارزیابی اموال شما شود.</value>
+  </data>
+  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
+    <value>محدوده مسئولیت</value>
+  </data>
+  <data name="The following lists may help you to determine which department can assist in answering your inquiry." xml:space="preserve">
+    <value>لیست های زیر ممکن است به شما کمک کنند تا تعیین کنید که کدام بخش می تواند در پاسخ به درخواست شما کمک کند.</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>ارزشهای ارزیابی شده</value>
+  </data>
+  <data name="Boats &amp; Aircraft" xml:space="preserve">
+    <value>قایق ها و هواپیما</value>
+  </data>
+  <data name="Business Property Taxes" xml:space="preserve">
+    <value>مالیات بر املاک تجاری</value>
+  </data>
+  <data name="Change in Ownership" xml:space="preserve">
+    <value>تغییر در مالکیت</value>
+  </data>
+  <data name="Decline in Value" xml:space="preserve">
+    <value>کاهش ارزش</value>
+  </data>
+  <data name="Exemptions - General" xml:space="preserve">
+    <value>ممنوعیت - عمومی</value>
+  </data>
+  <data name="Homeowner's Exemption" xml:space="preserve">
+    <value>معافیت مالک خانه</value>
+  </data>
+  <data name="Name/Address Change" xml:space="preserve">
+    <value>تغییر نام / آدرس</value>
+  </data>
+  <data name="Parent/Child Transfers (Propositions 58 and 193)" xml:space="preserve">
+    <value>انتقال والدین / کودک (پیشنهادات 58 و 193)</value>
+  </data>
+  <data name="Property Maps &amp; Data" xml:space="preserve">
+    <value>نقشه ها و داده های املاک</value>
+  </data>
+  <data name="Senior Citizen Transfer (Propositions 60 and 90)" xml:space="preserve">
+    <value>انتقال شهروند ارشد (پیشنهادات 60 و 90)</value>
+  </data>
+  <data name="Supplemental Bills" xml:space="preserve">
+    <value>صورت حساب های تکمیلی</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>ارزیابی مستقیم</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>مالیات بر درآمد عمومی</value>
+  </data>
+  <data name="Refunds - Change in Taxes Due to an Assessor Value Change" xml:space="preserve">
+    <value>بازپرداخت - تغییر در مالیات با توجه به تغییر ارزش سنجنده</value>
+  </data>
+  <data name="Special Districts" xml:space="preserve">
+    <value>ولسوالی های ویژه</value>
+  </data>
+  <data name="Tax Rate Areas" xml:space="preserve">
+    <value>مناطق مالیاتی</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>بدهی رأی داده است</value>
+  </data>
+  <data name="Assessment Appeals Rules" xml:space="preserve">
+    <value>قوانین تجدید نظر ارزیابی</value>
+  </data>
+  <data name="Current Seminar Schedule" xml:space="preserve">
+    <value>برنامه سمینار کنونی</value>
+  </data>
+  <data name="How to Prepare for Your Hearing" xml:space="preserve">
+    <value>چگونگی آماده شدن برای شنیدن</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>ثبت نام نمایندگی مالیاتی</value>
+  </data>
+  <data name="File an Appeal Online" xml:space="preserve">
+    <value>درخواست تجدید نظر آنلاین</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Secured Taxes" xml:space="preserve">
+    <value>خزانه دار و جمع آوری مالیات - مالیات های امن</value>
+  </data>
+  <data name="Defaulted Property Taxes" xml:space="preserve">
+    <value>مالیات بر املاک باقیمانده</value>
+  </data>
+  <data name="Due Dates" xml:space="preserve">
+    <value>طبق قرار ها</value>
+  </data>
+  <data name="Payment Amounts" xml:space="preserve">
+    <value>مبلغ پرداختی</value>
+  </data>
+  <data name="Payment Posting" xml:space="preserve">
+    <value>پست پرداخت</value>
+  </data>
+  <data name="Public Auction" xml:space="preserve">
+    <value>حراج عمومی</value>
+  </data>
+  <data name="Refunds - Overpayment of Taxes Due (Non-Value Related)" xml:space="preserve">
+    <value>بازپرداخت - پرداخت بیش از حد مالیات (غیر ارزش)</value>
+  </data>
+  <data name="Senior Citizen, Blind &amp; Disabled Persons Property Tax Postponement &amp; Assistance Programs" xml:space="preserve">
+    <value>شهروندان ارشد، افراد نابینا و افراد معلول برنامه های تخفیف مالیات و کمک مالی</value>
+  </data>
+  <data name="Tax Bills (Secured)" xml:space="preserve">
+    <value>صورتحساب های مالیاتی (Secured)</value>
+  </data>
+  <data name="Properties Subject to the Tax Collector's Power to Sell" xml:space="preserve">
+    <value>خواص به قدرت جمع آوری مالیات برای فروش</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Unsecured Taxes" xml:space="preserve">
+    <value>خزانه دار و جمع آوری مالیات - مالیات غیرقانونی</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>لنز</value>
+  </data>
+  <data name="Mobile Home Tax Clearance" xml:space="preserve">
+    <value>پاکسازی مالیات بر خانه خانه موبایل</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>مبلغ پرداختی</value>
+  </data>
+  <data name="Tax Bills (Unsecured)" xml:space="preserve">
+    <value>صورتحساب های مالیاتی (بدون اطمینان)</value>
+  </data>
+  <data name="Unsecured Due Dates" xml:space="preserve">
+    <value>تاریخ تحویل بی سابقه</value>
+  </data>
+</root>
