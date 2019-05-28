@@ -132,17 +132,47 @@
   <data name="Areas of Responsibliity" xml:space="preserve">
     <value>Области ответственности</value>
   </data>
-  <data name="Tax Tools" xml:space="preserve">
-    <value>Налоговые инструменты</value>
+  <data name="Resources" xml:space="preserve">
+    <value>Ресурсы</value>
   </data>
-  <data name="Property Tax Management System" xml:space="preserve">
-    <value>Система управления налогом на имущество</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>Варианты самообслуживания</value>
   </data>
-  <data name="Multiple Parcel Inquires" xml:space="preserve">
-    <value>Многократные Запросы Посылки</value>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>Новая информация о владельце недвижимости</value>
+  </data>
+  <data name="Penalty Cancellation Requests " xml:space="preserve">
+    <value>Запросы отмены штрафа</value>
+  </data>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>Планы рассрочки налога на имущество</value>
+  </data>
+  <data name="Property Tax Payment History " xml:space="preserve">
+    <value>История уплаты налога на имущество</value>
+  </data>
+  <data name="Request Duplicate Bill " xml:space="preserve">
+    <value>Запросить дубликат счета</value>
+  </data>
+  <data name="Senior Citizen Property Tax Assistance " xml:space="preserve">
+    <value>Помощь в уплате налога на имущество пожилых граждан</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>инструменты</value>
   </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>Избегайте штрафов, понимая почтовые штемпели</value>
+  </data>
+  <data name="Calculating Your 1 Percent Tax" xml:space="preserve">
+    <value>Расчет вашего 1-процентного налога</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Изменить почтовый адрес</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Новые владельцы бизнеса</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Новые владельцы дома</value>
   </data>
   <data name="Penalty Cancellations" xml:space="preserve">
     <value>Отмена штрафа</value>
@@ -150,11 +180,20 @@
   <data name="Property Address Search" xml:space="preserve">
     <value>Поиск адреса недвижимости</value>
   </data>
-  <data name="New Home Owners" xml:space="preserve">
-    <value>Новые владельцы дома</value>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>Система управления налогом на имущество</value>
   </data>
-  <data name="New Business Owners" xml:space="preserve">
-    <value>Новые владельцы бизнеса</value>
+  <data name="Request a Secured Property Tax Bill" xml:space="preserve">
+    <value>Запрос законопроекта о налоге на недвижимость</value>
+  </data>
+  <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
+    <value>Запрос информации об уплате налога на недвижимость</value>
+  </data>
+  <data name="View Payment History" xml:space="preserve">
+    <value>Просмотр истории платежей</value>
+  </data>
+  <data name="The 1 Percent Tax - Where Does Your Money Go?" xml:space="preserve">
+    <value>1-процентный налог - куда уходят ваши деньги?</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>Быстрые ссылки</value>
@@ -189,14 +228,17 @@
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>Сколько я должен?</value>
   </data>
-  <data name="Pay Online" xml:space="preserve">
-    <value>Оплатить онлайн</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>Платить налоги на недвижимость</value>
   </data>
-  <data name="Other Payment Options" xml:space="preserve">
-    <value>Другие способы оплаты</value>
+  <data name="How to Read Your Tax Bills" xml:space="preserve">
+    <value>Как читать ваши налоговые счета</value>
   </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>Налоговые счета</value>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Скорректированный годовой законопроект о налоге на имущество</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Скорректированный налог на добавленную стоимость имущества</value>
   </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Ежегодный законопроект о налоге на обеспеченное имущество</value>
@@ -210,32 +252,29 @@
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Уведомление о преступности</value>
   </data>
-  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
-    <value>Замещенный законопроект о налоге на обеспеченное имущество</value>
-  </data>
-  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
-    <value>Дополнительный законопроект о налоге на обеспеченное имущество</value>
-  </data>
-  <data name="Unsecured Property Tax Bill" xml:space="preserve">
-    <value>Необеспеченный законопроект о налоге на имущество</value>
-  </data>
-  <data name="Unsecured Prior Year Bill" xml:space="preserve">
-    <value>Необеспеченный счет за предыдущий год</value>
-  </data>
   <data name="Payment Activity Notice" xml:space="preserve">
     <value>Уведомление о платеже</value>
   </data>
   <data name="Statement of Prior Year Taxes" xml:space="preserve">
     <value>Отчет о налогах за предыдущий год</value>
   </data>
-  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
-    <value>Скорректированный годовой законопроект о налоге на имущество</value>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Замещенный законопроект о налоге на обеспеченное имущество</value>
   </data>
-  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
-    <value>Скорректированный налог на добавленную стоимость имущества</value>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Дополнительный законопроект о налоге на обеспеченное имущество</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Необеспеченный счет за предыдущий год</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Необеспеченный законопроект о налоге на имущество</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>Часто задаваемые вопросы</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Налоговые счета</value>
   </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>Возврат / Налог с продаж / Налог на имущество</value>
@@ -258,7 +297,7 @@
   <data name="Contact Us" xml:space="preserve">
     <value>Связаться с нами</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
     <value>Казначей и сборщик налогов</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">

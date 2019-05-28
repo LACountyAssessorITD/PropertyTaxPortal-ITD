@@ -132,17 +132,47 @@
   <data name="Areas of Responsibliity" xml:space="preserve">
     <value>Պատասխանատվության ոլորտները</value>
   </data>
-  <data name="Tax Tools" xml:space="preserve">
-    <value>Հարկային գործիքներ</value>
+  <data name="Resources" xml:space="preserve">
+    <value>Ռեսուրսներ</value>
   </data>
-  <data name="Property Tax Management System" xml:space="preserve">
-    <value>Գույքահարկի կառավարման համակարգ</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>Self-Service Options- ը</value>
   </data>
-  <data name="Multiple Parcel Inquires" xml:space="preserve">
-    <value>Բազմակի ծանրոցների հարցումներ</value>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>Նոր գույքի սեփականատիրոջ տեղեկություններ</value>
+  </data>
+  <data name="Penalty Cancellation Requests " xml:space="preserve">
+    <value>Տուգանքների չեղարկման հայտեր</value>
+  </data>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>Գույքահարկի տեղաբաշխման պլաններ</value>
+  </data>
+  <data name="Property Tax Payment History " xml:space="preserve">
+    <value>Գույքահարկի վճարման պատմություն</value>
+  </data>
+  <data name="Request Duplicate Bill " xml:space="preserve">
+    <value>Հայցում կրկնօրինակել Bill</value>
+  </data>
+  <data name="Senior Citizen Property Tax Assistance " xml:space="preserve">
+    <value>Քաղաքացիների մեծ քաղաքացու հարկային օժանդակություն</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Գործիքներ</value>
   </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>Խուսափեք տուգանքներից `փոխըմբռնման նշանաբանների միջոցով</value>
+  </data>
+  <data name="Calculating Your 1 Percent Tax" xml:space="preserve">
+    <value>Հաշվարկել ձեր 1 տոկոս հարկ</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Փոխել փոստի հասցեն</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Նոր բիզնեսի սեփականատերեր</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Նոր տան սեփականատերեր</value>
   </data>
   <data name="Penalty Cancellations" xml:space="preserve">
     <value>Տուգանքների չեղարկում</value>
@@ -150,11 +180,20 @@
   <data name="Property Address Search" xml:space="preserve">
     <value>Գույքի հասցեի որոնում</value>
   </data>
-  <data name="New Home Owners" xml:space="preserve">
-    <value>Նոր տան սեփականատերեր</value>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>Գույքահարկի կառավարման համակարգ</value>
   </data>
-  <data name="New Business Owners" xml:space="preserve">
-    <value>Նոր բիզնեսի սեփականատերեր</value>
+  <data name="Request a Secured Property Tax Bill" xml:space="preserve">
+    <value>Պահանջվում է ապահովված գույքի հարկի մասին օրինագիծ</value>
+  </data>
+  <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
+    <value>Ապահովված գույքի հարկային տեղեկատվության հայցը (բազմակի պարգեւներ)</value>
+  </data>
+  <data name="View Payment History" xml:space="preserve">
+    <value>Դիտեք վճարման պատմությունը</value>
+  </data>
+  <data name="The 1 Percent Tax - Where Does Your Money Go?" xml:space="preserve">
+    <value>1 տոկոս եկամտահարկ `որտեղ է ձեր գումարը:</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>Արագ հղումներ</value>
@@ -189,14 +228,17 @@
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>Որքան ես պարտական եմ:</value>
   </data>
-  <data name="Pay Online" xml:space="preserve">
-    <value>Վճարեք առցանց</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>Վճարեք գույքահարկը</value>
   </data>
-  <data name="Other Payment Options" xml:space="preserve">
-    <value>Այլ վճարման տարբերակներ</value>
+  <data name="How to Read Your Tax Bills" xml:space="preserve">
+    <value>Ինչպես կարդալ ձեր հարկային օրինագիծը</value>
   </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>Հարկային օրինագծերը</value>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Փոփոխված տարեկան գույքի հարկի մասին օրինագիծը</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Կատարված լրացուցիչ գույքի հարկի մասին օրինագիծ</value>
   </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Տարեկան ապահովված գույքի հարկի մասին օրինագիծ</value>
@@ -210,32 +252,29 @@
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Պարտավորության ծանուցում</value>
   </data>
-  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
-    <value>Ապահովված գույքի հարկի մասին օրենքի փոխարինում</value>
-  </data>
-  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
-    <value>Լրացուցիչ ապահովված գույքահարկի մասին օրինագիծ</value>
-  </data>
-  <data name="Unsecured Property Tax Bill" xml:space="preserve">
-    <value>Անշարժ գույքի հարկի մասին օրենքը</value>
-  </data>
-  <data name="Unsecured Prior Year Bill" xml:space="preserve">
-    <value>Ապահովված չլինելու նախորդ տարվա օրինագիծը</value>
-  </data>
   <data name="Payment Activity Notice" xml:space="preserve">
     <value>Վճարման գործողությունների ծանուցում</value>
   </data>
   <data name="Statement of Prior Year Taxes" xml:space="preserve">
     <value>Նախորդ հարկերի հայտարարագիր</value>
   </data>
-  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
-    <value>Փոփոխված տարեկան գույքի հարկի մասին օրինագիծը</value>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Ապահովված գույքի հարկի մասին օրենքի փոխարինում</value>
   </data>
-  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
-    <value>Կատարված լրացուցիչ գույքի հարկի մասին օրինագիծ</value>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Լրացուցիչ ապահովված գույքահարկի մասին օրինագիծ</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Ապահովված չլինելու նախորդ տարվա օրինագիծը</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Անշարժ գույքի հարկի մասին օրենքը</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>ՀՏՀ</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Հարկային օրինագծերը</value>
   </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>Փոխհատուցում / հարկերի վաճառք / հարկային պարտավորություններ</value>
@@ -258,7 +297,7 @@
   <data name="Contact Us" xml:space="preserve">
     <value>Կապ մեզ հետ</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
     <value>Գանձապահ եւ հարկային հավաքիչ</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">

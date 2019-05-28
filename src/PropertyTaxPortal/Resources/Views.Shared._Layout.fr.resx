@@ -132,17 +132,47 @@
   <data name="Areas of Responsibliity" xml:space="preserve">
     <value>Zones de responsabilité</value>
   </data>
-  <data name="Tax Tools" xml:space="preserve">
-    <value>Outils fiscaux</value>
+  <data name="Resources" xml:space="preserve">
+    <value>Ressources</value>
   </data>
-  <data name="Property Tax Management System" xml:space="preserve">
-    <value>Système de gestion des taxes foncières</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>Options de libre service</value>
   </data>
-  <data name="Multiple Parcel Inquires" xml:space="preserve">
-    <value>Demandes de colis multiples</value>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>Informations sur le nouveau propriétaire</value>
+  </data>
+  <data name="Penalty Cancellation Requests " xml:space="preserve">
+    <value>Demandes d'annulation de pénalité</value>
+  </data>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>Plans de versement d'impôt foncier</value>
+  </data>
+  <data name="Property Tax Payment History " xml:space="preserve">
+    <value>Historique des paiements de taxes foncières</value>
+  </data>
+  <data name="Request Duplicate Bill " xml:space="preserve">
+    <value>Demander un duplicata de facture</value>
+  </data>
+  <data name="Senior Citizen Property Tax Assistance " xml:space="preserve">
+    <value>Aide aux impôts fonciers pour personnes âgées</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Outils</value>
   </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>Évitez les pénalités en comprenant les cachets de la poste</value>
+  </data>
+  <data name="Calculating Your 1 Percent Tax" xml:space="preserve">
+    <value>Calcul de votre taxe de 1%</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Changer l'adresse postale</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Nouveaux propriétaires d'entreprise</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Nouveaux propriétaires</value>
   </data>
   <data name="Penalty Cancellations" xml:space="preserve">
     <value>Annulation de pénalité</value>
@@ -150,11 +180,20 @@
   <data name="Property Address Search" xml:space="preserve">
     <value>Recherche d'adresse de propriété</value>
   </data>
-  <data name="New Home Owners" xml:space="preserve">
-    <value>Nouveaux propriétaires</value>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>Système de gestion des taxes foncières</value>
   </data>
-  <data name="New Business Owners" xml:space="preserve">
-    <value>Nouveaux propriétaires d'entreprise</value>
+  <data name="Request a Secured Property Tax Bill" xml:space="preserve">
+    <value>Demander une facture de taxe foncière sécurisée</value>
+  </data>
+  <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
+    <value>Demande d'informations sur l'impôt foncier sécurisé (parcelles multiples)</value>
+  </data>
+  <data name="View Payment History" xml:space="preserve">
+    <value>Afficher l'historique des paiements</value>
+  </data>
+  <data name="The 1 Percent Tax - Where Does Your Money Go?" xml:space="preserve">
+    <value>La taxe de 1% - Où va votre argent?</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>Liens rapides</value>
@@ -189,14 +228,17 @@
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>Combien dois-je?</value>
   </data>
-  <data name="Pay Online" xml:space="preserve">
-    <value>Payez en ligne</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>Payer les taxes foncières</value>
   </data>
-  <data name="Other Payment Options" xml:space="preserve">
-    <value>Autres options de paiement</value>
+  <data name="How to Read Your Tax Bills" xml:space="preserve">
+    <value>Comment lire vos factures d'impôt</value>
   </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>Factures d'impôts</value>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Facture fiscale annuelle ajustée</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Facture foncière supplémentaire ajustée</value>
   </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Facture annuelle d'impôt foncier garanti</value>
@@ -210,32 +252,29 @@
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Avis de délinquance</value>
   </data>
-  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
-    <value>Substitut de taxe sur les biens garantis</value>
-  </data>
-  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
-    <value>Facture d'impôt foncier supplémentaire</value>
-  </data>
-  <data name="Unsecured Property Tax Bill" xml:space="preserve">
-    <value>Facture foncière non garantie</value>
-  </data>
-  <data name="Unsecured Prior Year Bill" xml:space="preserve">
-    <value>Facture de l'année précédente non garantie</value>
-  </data>
   <data name="Payment Activity Notice" xml:space="preserve">
     <value>Avis d'activité de paiement</value>
   </data>
   <data name="Statement of Prior Year Taxes" xml:space="preserve">
     <value>Relevé des taxes de l'année précédente</value>
   </data>
-  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
-    <value>Facture fiscale annuelle ajustée</value>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Substitut de taxe sur les biens garantis</value>
   </data>
-  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
-    <value>Facture foncière supplémentaire ajustée</value>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Facture d'impôt foncier supplémentaire</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Facture de l'année précédente non garantie</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Facture foncière non garantie</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>FAQ</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Factures d'impôts</value>
   </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>Remboursements / vente de taxe / privilèges de taxe</value>
@@ -258,7 +297,7 @@
   <data name="Contact Us" xml:space="preserve">
     <value>Contactez nous</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
     <value>Trésorier et percepteur des impôts</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">

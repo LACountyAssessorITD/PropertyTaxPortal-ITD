@@ -121,201 +121,240 @@
     <value>家</value>
   </data>
   <data name="Overview" xml:space="preserve">
-    <value>概觀</value>
+    <value>概观</value>
   </data>
   <data name="Property Tax Overview" xml:space="preserve">
-    <value>物業稅概述</value>
+    <value>物业税概述</value>
   </data>
   <data name="How the Property Tax System Works" xml:space="preserve">
-    <value>物業稅制如何運作</value>
+    <value>物业税制如何运作</value>
   </data>
   <data name="Areas of Responsibliity" xml:space="preserve">
-    <value>責任領域</value>
+    <value>责任领域</value>
   </data>
-  <data name="Tax Tools" xml:space="preserve">
-    <value>稅務工具</value>
+  <data name="Resources" xml:space="preserve">
+    <value>资源</value>
   </data>
-  <data name="Property Tax Management System" xml:space="preserve">
-    <value>物業稅管理系統</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>自助服务选项</value>
   </data>
-  <data name="Multiple Parcel Inquires" xml:space="preserve">
-    <value>多個包裹查詢</value>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>新业主信息</value>
+  </data>
+  <data name="Penalty Cancellation Requests " xml:space="preserve">
+    <value>罚款取消请求</value>
+  </data>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>物业税分期付款计划</value>
+  </data>
+  <data name="Property Tax Payment History " xml:space="preserve">
+    <value>物业税支付历史</value>
+  </data>
+  <data name="Request Duplicate Bill " xml:space="preserve">
+    <value>请求重复的账单</value>
+  </data>
+  <data name="Senior Citizen Property Tax Assistance " xml:space="preserve">
+    <value>老年人财产税援助</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>工具</value>
   </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
-    <value>通過了解郵戳避免處罰</value>
+    <value>通过了解邮戳避免处罚</value>
   </data>
-  <data name="Penalty Cancellations" xml:space="preserve">
-    <value>罰款取消</value>
+  <data name="Calculating Your 1 Percent Tax" xml:space="preserve">
+    <value>计算您的1％税</value>
   </data>
-  <data name="Property Address Search" xml:space="preserve">
-    <value>物業地址搜尋</value>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>更改邮寄地址</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>新企业主</value>
   </data>
   <data name="New Home Owners" xml:space="preserve">
     <value>新房主</value>
   </data>
-  <data name="New Business Owners" xml:space="preserve">
-    <value>新企業主</value>
+  <data name="Penalty Cancellations" xml:space="preserve">
+    <value>罚款取消</value>
+  </data>
+  <data name="Property Address Search" xml:space="preserve">
+    <value>物业地址搜寻</value>
+  </data>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>物业税管理系统</value>
+  </data>
+  <data name="Request a Secured Property Tax Bill" xml:space="preserve">
+    <value>申请担保物业税条例草案</value>
+  </data>
+  <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
+    <value>担保物业税信息请求（多个包裹）</value>
+  </data>
+  <data name="View Payment History" xml:space="preserve">
+    <value>查看付款记录</value>
+  </data>
+  <data name="The 1 Percent Tax - Where Does Your Money Go?" xml:space="preserve">
+    <value>1％的税 - 你的钱去哪儿了？</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
-    <value>快速鏈接</value>
+    <value>快速链接</value>
   </data>
   <data name="Forms" xml:space="preserve">
     <value>形式</value>
   </data>
   <data name="Assessor" xml:space="preserve">
-    <value>估稅員</value>
+    <value>估税员</value>
   </data>
   <data name="Assessment Appeals Board" xml:space="preserve">
-    <value>評估上訴委員會</value>
+    <value>评估上诉委员会</value>
   </data>
   <data name="Auditor-Controller" xml:space="preserve">
-    <value>審計長控制器</value>
+    <value>审计长控制器</value>
   </data>
   <data name="Property Valuation" xml:space="preserve">
-    <value>物業估值</value>
+    <value>物业估值</value>
   </data>
   <data name="Contesting Your Property Value" xml:space="preserve">
-    <value>爭奪您的財產價值</value>
+    <value>争夺您的财产价值</value>
   </data>
   <data name="Property Data &amp; Maps" xml:space="preserve">
-    <value>物業數據和地圖</value>
+    <value>物业数据和地图</value>
   </data>
   <data name="Supplemental Tax Estimator" xml:space="preserve">
-    <value>補充稅收估算</value>
+    <value>补充税收估算</value>
   </data>
   <data name="Payment Information" xml:space="preserve">
     <value>支付信息</value>
   </data>
   <data name="How Much Do I Owe?" xml:space="preserve">
-    <value>我得付多少錢？</value>
+    <value>我得付多少钱？</value>
   </data>
-  <data name="Pay Online" xml:space="preserve">
-    <value>在線支付</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>支付财产税</value>
   </data>
-  <data name="Other Payment Options" xml:space="preserve">
-    <value>其他付款方式</value>
-  </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>稅單</value>
-  </data>
-  <data name="Annual Secured Property Tax Bill" xml:space="preserve">
-    <value>年度安全財產稅法案</value>
-  </data>
-  <data name="Annual Secured Property Tax Bill Insert" xml:space="preserve">
-    <value>年度安全財產稅法案插入</value>
-  </data>
-  <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
-    <value>年度安全財產稅信息聲明</value>
-  </data>
-  <data name="Notice of Delinquency" xml:space="preserve">
-    <value>違法通知</value>
-  </data>
-  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
-    <value>替代安全財產稅法案</value>
-  </data>
-  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
-    <value>補充擔保財產稅法案</value>
-  </data>
-  <data name="Unsecured Property Tax Bill" xml:space="preserve">
-    <value>無抵押物業稅條例草案</value>
-  </data>
-  <data name="Unsecured Prior Year Bill" xml:space="preserve">
-    <value>無擔保的上年度法案</value>
-  </data>
-  <data name="Payment Activity Notice" xml:space="preserve">
-    <value>付款活動通知</value>
-  </data>
-  <data name="Statement of Prior Year Taxes" xml:space="preserve">
-    <value>上年稅收表</value>
+  <data name="How to Read Your Tax Bills" xml:space="preserve">
+    <value>如何阅读税单</value>
   </data>
   <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
-    <value>調整後的年度財產稅法案</value>
+    <value>调整后的年度财产税法案</value>
   </data>
   <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
-    <value>調整後的補充財產稅法案</value>
+    <value>调整后的补充财产税法案</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill" xml:space="preserve">
+    <value>年度安全财产税法案</value>
+  </data>
+  <data name="Annual Secured Property Tax Bill Insert" xml:space="preserve">
+    <value>年度安全财产税法案插入</value>
+  </data>
+  <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
+    <value>年度安全财产税信息声明</value>
+  </data>
+  <data name="Notice of Delinquency" xml:space="preserve">
+    <value>违法通知</value>
+  </data>
+  <data name="Payment Activity Notice" xml:space="preserve">
+    <value>付款活动通知</value>
+  </data>
+  <data name="Statement of Prior Year Taxes" xml:space="preserve">
+    <value>上年税收表</value>
+  </data>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>替代安全财产税法案</value>
+  </data>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>补充担保财产税法案</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>无担保的上年度法案</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>无抵押物业税条例草案</value>
   </data>
   <data name="FAQ" xml:space="preserve">
-    <value>常問問題</value>
+    <value>常问问题</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>税单</value>
   </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
-    <value>退款/稅收銷售/稅收優惠</value>
+    <value>退款/税收销售/税收优惠</value>
   </data>
   <data name="Property Values" xml:space="preserve">
-    <value>財產價值</value>
+    <value>财产价值</value>
   </data>
   <data name="Ownership" xml:space="preserve">
-    <value>所有權</value>
+    <value>所有权</value>
   </data>
   <data name="Tax Agent Registration" xml:space="preserve">
-    <value>稅務代理登記</value>
+    <value>税务代理登记</value>
   </data>
   <data name="All FAQs" xml:space="preserve">
-    <value>所有常見問題解答</value>
+    <value>所有常见问题解答</value>
   </data>
   <data name="News" xml:space="preserve">
-    <value>新聞</value>
+    <value>新闻</value>
   </data>
   <data name="Contact Us" xml:space="preserve">
-    <value>聯繫我們</value>
+    <value>联系我们</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
-    <value>財務主管和稅務員</value>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>财务主管和税务员</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">
-    <value>公眾諮詢</value>
+    <value>公众咨询</value>
   </data>
   <data name="Enriching Lives" xml:space="preserve">
-    <value>豐富生命</value>
+    <value>丰富生命</value>
   </data>
   <data name="Do You Need Help?" xml:space="preserve">
-    <value>你需要幫助嗎？</value>
+    <value>你需要帮助吗？</value>
   </data>
   <data name="211 LA County" xml:space="preserve">
-    <value>211洛杉磯縣</value>
+    <value>211洛杉矶县</value>
   </data>
   <data name="LA County Helps" xml:space="preserve">
-    <value>洛杉磯縣幫助</value>
+    <value>洛杉矶县帮助</value>
   </data>
   <data name="Online Services" xml:space="preserve">
-    <value>在線服務</value>
+    <value>在线服务</value>
   </data>
   <data name="Public Alerts" xml:space="preserve">
-    <value>公共警報</value>
+    <value>公共警报</value>
   </data>
   <data name="Public Information" xml:space="preserve">
     <value>公共信息</value>
   </data>
   <data name="Site Info" xml:space="preserve">
-    <value>網站信息</value>
+    <value>网站信息</value>
   </data>
   <data name="Disclaimer" xml:space="preserve">
-    <value>放棄</value>
+    <value>放弃</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
-    <value>隱私政策</value>
+    <value>隐私政策</value>
   </data>
   <data name="Accessibility" xml:space="preserve">
-    <value>無障礙</value>
+    <value>无障碍</value>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>語言</value>
+    <value>语言</value>
   </data>
   <data name="Public Info" xml:space="preserve">
     <value>公共信息</value>
   </data>
   <data name="Board Correspondence" xml:space="preserve">
-    <value>董事會通信</value>
+    <value>董事会通信</value>
   </data>
   <data name="Board Agenda" xml:space="preserve">
-    <value>董事會議程</value>
+    <value>董事会议程</value>
   </data>
   <data name="County Code" xml:space="preserve">
-    <value>縣代碼</value>
+    <value>县代码</value>
   </data>
   <data name="LA County Contacts" xml:space="preserve">
-    <value>洛杉磯縣聯繫</value>
+    <value>洛杉矶县联系</value>
   </data>
   <data name="Other Government Sites" xml:space="preserve">
-    <value>其他政府網站</value>
+    <value>其他政府网站</value>
   </data>
 </root>

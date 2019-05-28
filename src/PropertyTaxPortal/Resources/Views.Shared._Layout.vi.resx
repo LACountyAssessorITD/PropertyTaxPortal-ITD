@@ -132,17 +132,47 @@
   <data name="Areas of Responsibliity" xml:space="preserve">
     <value>Các lĩnh vực có trách nhiệm</value>
   </data>
-  <data name="Tax Tools" xml:space="preserve">
-    <value>Công cụ thuế</value>
+  <data name="Resources" xml:space="preserve">
+    <value>Tài nguyên</value>
   </data>
-  <data name="Property Tax Management System" xml:space="preserve">
-    <value>Hệ thống quản lý thuế tài sản</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>Tùy chọn tự phục vụ</value>
   </data>
-  <data name="Multiple Parcel Inquires" xml:space="preserve">
-    <value>Thắc mắc nhiều bưu kiện</value>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>Thông tin chủ sở hữu tài sản mới</value>
+  </data>
+  <data name="Penalty Cancellation Requests " xml:space="preserve">
+    <value>Yêu cầu hủy bỏ hình phạt</value>
+  </data>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>Kế hoạch trả thuế tài sản</value>
+  </data>
+  <data name="Property Tax Payment History " xml:space="preserve">
+    <value>Lịch sử thanh toán thuế tài sản</value>
+  </data>
+  <data name="Request Duplicate Bill " xml:space="preserve">
+    <value>Yêu cầu trùng lặp hóa đơn</value>
+  </data>
+  <data name="Senior Citizen Property Tax Assistance " xml:space="preserve">
+    <value>Hỗ trợ thuế tài sản công dân cao cấp</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Công cụ</value>
   </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>Tránh hình phạt bằng cách hiểu dấu ấn</value>
+  </data>
+  <data name="Calculating Your 1 Percent Tax" xml:space="preserve">
+    <value>Tính 1 phần trăm thuế của bạn</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Thay đổi địa chỉ gửi thư</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>Chủ doanh nghiệp mới</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>Chủ nhà mới</value>
   </data>
   <data name="Penalty Cancellations" xml:space="preserve">
     <value>Hủy bỏ hình phạt</value>
@@ -150,11 +180,20 @@
   <data name="Property Address Search" xml:space="preserve">
     <value>Tìm kiếm địa chỉ bất động sản</value>
   </data>
-  <data name="New Home Owners" xml:space="preserve">
-    <value>Chủ nhà mới</value>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>Hệ thống quản lý thuế tài sản</value>
   </data>
-  <data name="New Business Owners" xml:space="preserve">
-    <value>Chủ doanh nghiệp mới</value>
+  <data name="Request a Secured Property Tax Bill" xml:space="preserve">
+    <value>Yêu cầu hóa đơn thuế tài sản bảo đảm</value>
+  </data>
+  <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
+    <value>Yêu cầu thông tin thuế tài sản bảo đảm (Nhiều bưu kiện)</value>
+  </data>
+  <data name="View Payment History" xml:space="preserve">
+    <value>Xem lịch sử thanh toán</value>
+  </data>
+  <data name="The 1 Percent Tax - Where Does Your Money Go?" xml:space="preserve">
+    <value>Thuế 1 phần trăm - Tiền của bạn đi đâu?</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>đường dẫn nhanh</value>
@@ -189,14 +228,17 @@
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>Tôi nợ bao nhiêu?</value>
   </data>
-  <data name="Pay Online" xml:space="preserve">
-    <value>Trả tiền trực tuyến</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>Nộp thuế tài sản</value>
   </data>
-  <data name="Other Payment Options" xml:space="preserve">
-    <value>Tùy chọn thanh toán khác</value>
+  <data name="How to Read Your Tax Bills" xml:space="preserve">
+    <value>Cách đọc hóa đơn thuế của bạn</value>
   </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>Hóa đơn thuế</value>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế bất động sản hàng năm được điều chỉnh</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bổ sung điều chỉnh</value>
   </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Hóa đơn thuế tài sản bảo đảm hàng năm</value>
@@ -210,32 +252,29 @@
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Thông báo nợ quá hạn</value>
   </data>
-  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
-    <value>Hóa đơn thuế tài sản bảo đảm thay thế</value>
-  </data>
-  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
-    <value>Hóa đơn thuế tài sản bảo đảm bổ sung</value>
-  </data>
-  <data name="Unsecured Property Tax Bill" xml:space="preserve">
-    <value>Hóa đơn thuế tài sản không có bảo đảm</value>
-  </data>
-  <data name="Unsecured Prior Year Bill" xml:space="preserve">
-    <value>Hóa đơn năm trước không bảo đảm</value>
-  </data>
   <data name="Payment Activity Notice" xml:space="preserve">
     <value>Thông báo hoạt động thanh toán</value>
   </data>
   <data name="Statement of Prior Year Taxes" xml:space="preserve">
     <value>Báo cáo thuế năm trước</value>
   </data>
-  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
-    <value>Hóa đơn thuế bất động sản hàng năm được điều chỉnh</value>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bảo đảm thay thế</value>
   </data>
-  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
-    <value>Hóa đơn thuế tài sản bổ sung điều chỉnh</value>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản bảo đảm bổ sung</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>Hóa đơn năm trước không bảo đảm</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Hóa đơn thuế tài sản không có bảo đảm</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>Câu hỏi thường gặp</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>Hóa đơn thuế</value>
   </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>Hoàn tiền / Bán thuế / Tài sản thế chấp thuế</value>
@@ -258,7 +297,7 @@
   <data name="Contact Us" xml:space="preserve">
     <value>Liên hệ chúng tôi</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
     <value>Thủ quỹ và người thu thuế</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">

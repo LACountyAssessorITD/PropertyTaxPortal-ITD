@@ -132,17 +132,47 @@
   <data name="Areas of Responsibliity" xml:space="preserve">
     <value>مناطق مسئولیت پذیری</value>
   </data>
-  <data name="Tax Tools" xml:space="preserve">
-    <value>ابزارهای مالیاتی</value>
+  <data name="Resources" xml:space="preserve">
+    <value>منابع</value>
   </data>
-  <data name="Property Tax Management System" xml:space="preserve">
-    <value>سیستم مدیریت املاک دارایی</value>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>گزینه های خود خدمات</value>
   </data>
-  <data name="Multiple Parcel Inquires" xml:space="preserve">
-    <value>تقاضای چندگانه</value>
+  <data name="New Property Owner Information " xml:space="preserve">
+    <value>اطلاعات مالک مالک جدید</value>
+  </data>
+  <data name="Penalty Cancellation Requests " xml:space="preserve">
+    <value>درخواست لغو جریمه</value>
+  </data>
+  <data name="Property Tax Installment Plans" xml:space="preserve">
+    <value>طرح های مالیات اجاره ملک</value>
+  </data>
+  <data name="Property Tax Payment History " xml:space="preserve">
+    <value>تاریخ پرداخت مالیات بر املاک</value>
+  </data>
+  <data name="Request Duplicate Bill " xml:space="preserve">
+    <value>درخواست تکراری بیل</value>
+  </data>
+  <data name="Senior Citizen Property Tax Assistance " xml:space="preserve">
+    <value>کمک مالی شهروند ارشد شهروندی</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>ابزارها</value>
   </data>
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>اجتناب از مجازات با درک نشانه ها</value>
+  </data>
+  <data name="Calculating Your 1 Percent Tax" xml:space="preserve">
+    <value>محاسبه مالیات 1 درصد شما</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>تغییر آدرس پستی</value>
+  </data>
+  <data name="New Business Owners" xml:space="preserve">
+    <value>صاحبان کسب و کار جدید</value>
+  </data>
+  <data name="New Home Owners" xml:space="preserve">
+    <value>صاحبان خانه جدید</value>
   </data>
   <data name="Penalty Cancellations" xml:space="preserve">
     <value>لغو مجازات</value>
@@ -150,11 +180,20 @@
   <data name="Property Address Search" xml:space="preserve">
     <value>جستجوی آدرس املاک</value>
   </data>
-  <data name="New Home Owners" xml:space="preserve">
-    <value>صاحبان خانه جدید</value>
+  <data name="Property Tax Management System" xml:space="preserve">
+    <value>سیستم مدیریت املاک دارایی</value>
   </data>
-  <data name="New Business Owners" xml:space="preserve">
-    <value>صاحبان کسب و کار جدید</value>
+  <data name="Request a Secured Property Tax Bill" xml:space="preserve">
+    <value>درخواست وام مالیات اموال امن</value>
+  </data>
+  <data name="Secured Property Tax Information Request (Multiple Parcels)" xml:space="preserve">
+    <value>درخواست اطلاعات مربوط به مالیات بر اموال امن (چند قطعه)</value>
+  </data>
+  <data name="View Payment History" xml:space="preserve">
+    <value>مشاهده تاریخ پرداخت</value>
+  </data>
+  <data name="The 1 Percent Tax - Where Does Your Money Go?" xml:space="preserve">
+    <value>مالیات 1 درصد - از کجا پول می گیرید؟</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>لینک های سریع</value>
@@ -189,14 +228,17 @@
   <data name="How Much Do I Owe?" xml:space="preserve">
     <value>من چقدر بدهکارم؟</value>
   </data>
-  <data name="Pay Online" xml:space="preserve">
-    <value>پرداخت آنلاین</value>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>پرداخت مالیات املاک</value>
   </data>
-  <data name="Other Payment Options" xml:space="preserve">
-    <value>گزینه های دیگر پرداخت</value>
+  <data name="How to Read Your Tax Bills" xml:space="preserve">
+    <value>چگونگی خواندن صورتحساب های مالیاتی شما</value>
   </data>
-  <data name="Tax Bills" xml:space="preserve">
-    <value>صورت حساب های مالیاتی</value>
+  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
+    <value>لایحه مالیات بر املاک سالانه تنظیم شده</value>
+  </data>
+  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
+    <value>لایحه مالیاتی املاک تکمیل شده</value>
   </data>
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>لایحه مالیات بر املاک سالانه</value>
@@ -210,32 +252,29 @@
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>اطلاع از بزهکاری</value>
   </data>
-  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
-    <value>جایگزین لایحه مالیات بر اموال امن</value>
-  </data>
-  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
-    <value>لایحه مالیات بر املاک ثانویه</value>
-  </data>
-  <data name="Unsecured Property Tax Bill" xml:space="preserve">
-    <value>صورتحساب مالیات غیر قانونی</value>
-  </data>
-  <data name="Unsecured Prior Year Bill" xml:space="preserve">
-    <value>پیش نویس سال قبل اعلام نشده</value>
-  </data>
   <data name="Payment Activity Notice" xml:space="preserve">
     <value>اطلاعیه فعالیت پرداخت</value>
   </data>
   <data name="Statement of Prior Year Taxes" xml:space="preserve">
     <value>بیانیه مالیات سال قبل</value>
   </data>
-  <data name="Adjusted Annual Property Tax Bill" xml:space="preserve">
-    <value>لایحه مالیات بر املاک سالانه تنظیم شده</value>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>جایگزین لایحه مالیات بر اموال امن</value>
   </data>
-  <data name="Adjusted Supplemental Property Tax Bill" xml:space="preserve">
-    <value>لایحه مالیاتی املاک تکمیل شده</value>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>لایحه مالیات بر املاک ثانویه</value>
+  </data>
+  <data name="Unsecured Prior Year Bill" xml:space="preserve">
+    <value>سال قبل اعلام نشده</value>
+  </data>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>صورتحساب مالیات غیر قانونی</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>سوالات متداول</value>
+  </data>
+  <data name="Tax Bills" xml:space="preserve">
+    <value>صورت حساب های مالیاتی</value>
   </data>
   <data name="Refunds/Tax Sales/Tax Liens" xml:space="preserve">
     <value>بازپرداخت / فروش مالیات / مالیات</value>
@@ -258,8 +297,8 @@
   <data name="Contact Us" xml:space="preserve">
     <value>تماس با ما</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
-    <value>خزانه دار و جمع آوری مالیات</value>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>خزانه دار و جمع آوری مالیاتی</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">
     <value>تحقیقات عمومی</value>

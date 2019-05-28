@@ -162,8 +162,8 @@
   <data name="Avoid Penalties by Understanding Postmarks" xml:space="preserve">
     <value>Evitar las sanciones por la comprensión de los matasellos</value>
   </data>
-  <data name="Calculating Your 1% Tax" xml:space="preserve">
-    <value>Cálculo de su impuesto del 1%</value>
+  <data name="Calculating Your 1 Percent Tax" xml:space="preserve">
+    <value>Calcular su impuesto del 1 por ciento</value>
   </data>
   <data name="Change Mailing Address" xml:space="preserve">
     <value>Cambiar dirección de correo</value>
@@ -178,7 +178,7 @@
     <value>Cancelaciones de pena</value>
   </data>
   <data name="Property Address Search" xml:space="preserve">
-    <value>Búsqueda de la dirección de la propiedad</value>
+    <value>Búsqueda de dirección de propiedad</value>
   </data>
   <data name="Property Tax Management System" xml:space="preserve">
     <value>Sistema de gestión de impuestos a la propiedad</value>
@@ -192,8 +192,8 @@
   <data name="View Payment History" xml:space="preserve">
     <value>Ver historial de pagos</value>
   </data>
-  <data name="The 1% Tax - Where Does Your Money Go" xml:space="preserve">
-    <value>El impuesto del 1% - ¿A dónde va tu dinero?</value>
+  <data name="The 1 Percent Tax - Where Does Your Money Go?" xml:space="preserve">
+    <value>El impuesto del 1 por ciento: ¿a dónde va su dinero?</value>
   </data>
   <data name="Quick Links" xml:space="preserve">
     <value>enlaces rápidos</value>
@@ -247,7 +247,7 @@
     <value>Impuesto anual a la propiedad asegurada</value>
   </data>
   <data name="Annual Secured Property Tax Information Statement" xml:space="preserve">
-    <value>Declaración anual de información de impuestos garantizados</value>
+    <value>Declaración anual de información sobre impuestos a la propiedad asegurada</value>
   </data>
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Aviso de Delincuencia</value>
@@ -297,7 +297,7 @@
   <data name="Contact Us" xml:space="preserve">
     <value>Contáctenos</value>
   </data>
-  <data name="Treasurer &amp; Tax Collector" xml:space="preserve">
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
     <value>Tesorero y recaudador de impuestos</value>
   </data>
   <data name="Public Inquiry" xml:space="preserve">
