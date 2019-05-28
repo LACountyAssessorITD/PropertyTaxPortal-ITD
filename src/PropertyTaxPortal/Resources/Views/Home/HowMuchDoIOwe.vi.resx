@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="How Much Do I Owe?" xml:space="preserve">
+    <value>Tôi nợ bao nhiêu?</value>
+  </data>
+  <data name="To locate the amount of your Secured Property Taxes, click the following link How much are my property taxes? and enter your Assessor's Identification Number. This website provides current year and delinquent secured tax information. Current year is available between October 1 and June 30 only. Delinquent Secured Tax information is available all year except during the month of July." xml:space="preserve">
+    <value>Để xác định số tiền Thuế tài sản bảo đảm của bạn, nhấp vào liên kết sau đây Thuế tài sản của tôi là bao nhiêu? và nhập Số nhận dạng của Người giám định của bạn. Trang web này cung cấp năm hiện tại và thông tin thuế bảo đảm phạm pháp. Năm hiện tại chỉ có sẵn từ ngày 1 tháng 10 đến ngày 30 tháng 6. Thông tin về Thuế được bảo đảm có sẵn trong cả năm trừ tháng Bảy.</value>
+  </data>
+  <data name="Secured Property Taxes" xml:space="preserve">
+    <value>Thuế tài sản bảo đảm</value>
+  </data>
+  <data name="To locate the amount of your Current Year Unsecured Taxes, click the following link How much are my Unsecured taxes? and enter the year and bill number. This website provides current year unsecured tax information and is available between March 1 and June 30 only. Delinquent Unsecured Tax information is only available by telephone or in person. Please call (213)893-7935 or visit us at 225 N. Hill Street, Los Angeles, CA 90012. We are located on the first floor in Room 122." xml:space="preserve">
+    <value>Để xác định số tiền Thuế không có bảo đảm trong năm hiện tại của bạn, hãy nhấp vào liên kết sau Bao nhiêu thuế không bảo đảm của tôi? và nhập năm và số hóa đơn. Trang web này cung cấp thông tin thuế không bảo đảm trong năm hiện tại và chỉ có sẵn trong khoảng thời gian từ ngày 1 đến ngày 30 tháng 6. Thông tin thuế không bảo đảm không có bảo đảm chỉ có sẵn qua điện thoại hoặc gặp trực tiếp. Vui lòng gọi (213)893-7935 hoặc ghé thăm chúng tôi tại 225 N. Hill Street, Los Angeles, CA 90012. Chúng tôi nằm ở tầng một trong Phòng 122.</value>
+  </data>
+  <data name="Unsecured Property Taxes" xml:space="preserve">
+    <value>Thuế tài sản không có bảo đảm</value>
+  </data>
+  <data name="Pay Property Taxes" xml:space="preserve">
+    <value>Nộp thuế tài sản</value>
+  </data>
+</root>

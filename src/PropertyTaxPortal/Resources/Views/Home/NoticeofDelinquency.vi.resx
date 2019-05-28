@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NOTICE OF DELINQUENCY" xml:space="preserve">
+    <value>THÔNG BÁO GIAO DỊCH</value>
+  </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Vui lòng nhấp vào bất kỳ số nào để xem mô tả của thành phần hóa đơn. Bạn cũng có thể cuộn xuống cuối trang để xem danh sách đầy đủ các mô tả trường.</value>
+  </data>
+  <data name="Notice of Delinquency" xml:space="preserve">
+    <value>Thông báo nợ quá hạn</value>
+  </data>
+  <data name="The Notice of Delinquency, in accordance with California Revenue" xml:space="preserve">
+    <value>Thông báo về sự chậm trễ, phù hợp với Doanh thu California</value>
+  </data>
+  <data name="and Taxation Code, Section 2621, reminds taxpayers that their property taxes are delinquent and will default on" xml:space="preserve">
+    <value>và Mã số thuế, Mục 2621, nhắc nhở người nộp thuế rằng thuế tài sản của họ là quá hạn và sẽ mặc định</value>
+  </data>
+  <data name="July 1.  If payment is not received or United States Postal Service (USPS) postmarked by June 30, on July 1, a $15" xml:space="preserve">
+    <value>Ngày 1 tháng 7. Nếu thanh toán không được nhận hoặc Dịch vụ Bưu chính Hoa Kỳ (USPS) có dấu bưu điện trước ngày 30 tháng 6, vào ngày 1 tháng 7, $ 15</value>
+  </data>
+  <data name="redemption fee will be imposed and defaulted taxes will be subject to additional penalties of 1.5 percent per month." xml:space="preserve">
+    <value>phí chuộc lại sẽ được áp dụng và các loại thuế mặc định sẽ phải chịu hình phạt bổ sung là 1,5% mỗi tháng.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Số nhận dạng của giám khảo</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number (1234-567-890).  The Assessor’s" xml:space="preserve">
+    <value>Khu vực này xác định Số nhận dạng từ Assguard (1234-567-890). Người phán xử</value>
+  </data>
+  <data name="Identification Number (AIN) is a ten-digit number assigned by the Office of the Assessor to each piece of real" xml:space="preserve">
+    <value>Số nhận dạng (AIN) là một số có mười chữ số được chỉ định bởi Văn phòng Giám định viên cho mỗi phần thực</value>
+  </data>
+  <data name="property in Los Angeles County.  This ten-digit AIN is made up of a four-digit Map Book Number (1234), a three-digit" xml:space="preserve">
+    <value>tài sản ở Quận Los Angeles. AIN mười chữ số này được tạo thành từ Số Sách Bản đồ gồm bốn chữ số (1234), ba chữ số</value>
+  </data>
+  <data name="Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>Số trang (567) và Số bưu kiện ba chữ số (890).</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>Người nhận</value>
+  </data>
+  <data name="The owner of record and the mailing address on file with the Office of the" xml:space="preserve">
+    <value>Chủ sở hữu hồ sơ và địa chỉ gửi thư trong hồ sơ với Văn phòng</value>
+  </data>
+  <data name="Assessor." xml:space="preserve">
+    <value>Người phán xử.</value>
+  </data>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>Thủ quỹ và người thu thuế</value>
+  </data>
+  <data name="Name, address, telephone number, and website of the Los" xml:space="preserve">
+    <value>Tên, địa chỉ, số điện thoại và trang web của Los</value>
+  </data>
+  <data name="Angeles County Treasurer and Tax Collector." xml:space="preserve">
+    <value>Thủ quỹ và người thu thuế của quận Angeles.</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>Vị trí tài sản và / hoặc Mô tả tài sản</value>
+  </data>
+  <data name="The property address and/or legal" xml:space="preserve">
+    <value>Địa chỉ tài sản và / hoặc pháp lý</value>
+  </data>
+  <data name="description on record with the Office of the Assessor." xml:space="preserve">
+    <value>mô tả trong hồ sơ với Văn phòng Giám định.</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>Thông tin đặc biệt</value>
+  </data>
+  <data name="This section provides important information about the bill" xml:space="preserve">
+    <value>Phần này cung cấp thông tin quan trọng về hóa đơn</value>
+  </data>
+  <data name="and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>và cho biết liệu có bất kỳ khoản nợ quá hạn nào.</value>
+  </data>
+  <data name="Assessor’s Identification Number" xml:space="preserve">
+    <value>Số nhận dạng từ Assigator</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification" xml:space="preserve">
+    <value>Khu vực này xác định Nhận dạng từ Assigator</value>
+  </data>
+  <data name="Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the" xml:space="preserve">
+    <value>Số - (1234-567-890). Số nhận dạng từ Assguard từ (AIN) là một số mười chữ số được chỉ định bởi</value>
+  </data>
+  <data name="Office of the Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a" xml:space="preserve">
+    <value>Văn phòng của Người phán xử cho từng phần bất động sản tại Hạt Los Angeles. AIN mười chữ số này được tạo thành từ một</value>
+  </data>
+  <data name="four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>Số Sách Bản đồ gồm bốn chữ số (1234), Số Trang gồm ba chữ số (567) và Số Bưu kiện ba chữ số (890).</value>
+  </data>
+  <data name="Personal Identification Number (PIN)" xml:space="preserve">
+    <value>Mã số cá nhân (PIN)</value>
+  </data>
+  <data name="This number is required to make an online eCheck payment for" xml:space="preserve">
+    <value>Số này là bắt buộc để thực hiện thanh toán eCheck trực tuyến cho</value>
+  </data>
+  <data name="current year and defaulted property taxes.  Effective with tax bills issued after August 2013, the PIN may" xml:space="preserve">
+    <value>năm hiện tại và thuế tài sản mặc định. Có hiệu lực với hóa đơn thuế được phát hành sau tháng 8 năm 2013, mã PIN có thể</value>
+  </data>
+  <data name="contain all alpha, all numeric, or alpha/numeric characters.  The alpha letter 'O' is not used in the PIN.  The" xml:space="preserve">
+    <value>chứa tất cả các ký tự alpha, tất cả các số hoặc alpha / số. Chữ alpha 'O' không được sử dụng trong mã PIN. Các</value>
+  </data>
+  <data name="'0' is always a number zero." xml:space="preserve">
+    <value>'0' luôn là số không.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>Đợt 1</value>
+  </data>
+  <data name="Amount of taxes due for the first installment.  Taxpayers" xml:space="preserve">
+    <value>Số tiền thuế phải trả cho lần đầu tiên. Người nộp thuế</value>
+  </data>
+  <data name="must be sure to include the payment stub with any type of payment and write their Assessor’s Identification Number" xml:space="preserve">
+    <value>phải chắc chắn bao gồm cuống thanh toán với bất kỳ loại thanh toán nào và viết Số nhận dạng từ Assigator của họ</value>
+  </data>
+  <data name="with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>với số Năm / Số thứ tự trên séc của họ.</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>Đợt 2</value>
+  </data>
+  <data name="Amount of taxes due for the second installment.  Taxpayers" xml:space="preserve">
+    <value>Số tiền thuế do đợt thứ hai. Người nộp thuế</value>
+  </data>
+  <data name="Total Tax Due" xml:space="preserve">
+    <value>Tổng số thuế do</value>
+  </data>
+  <data name="This is the total amount due for the bill.  The Annual Secured Property" xml:space="preserve">
+    <value>Đây là tổng số tiền cho hóa đơn. Tài sản bảo đảm hàng năm</value>
+  </data>
+  <data name="Tax Bill has two payment stubs.  The first installment is due November 1 and is delinquent December 10.  If the" xml:space="preserve">
+    <value>Hóa đơn thuế có hai cuống thanh toán. Đợt đầu tiên đáo hạn vào ngày 1 tháng 11 và trễ hạn vào ngày 10 tháng 12.</value>
+  </data>
+  <data name="first installment is not received or United States Postal Service (USPS) postmarked by December 10, a 10 percent penalty " xml:space="preserve">
+    <value>đợt đầu tiên không được nhận hoặc Dịch vụ Bưu chính Hoa Kỳ (USPS) có dấu bưu điện trước ngày 10 tháng 12, mức phạt 10 phần trăm</value>
+  </data>
+  <data name="will be imposed.  The second installment is due February 1 and is delinquent April 10.  If the second installment is" xml:space="preserve">
+    <value>sẽ được áp đặt. Đợt thứ hai đáo hạn vào ngày 1 tháng 2 và trễ hạn vào ngày 10 tháng 4. Nếu phần thứ hai là</value>
+  </data>
+  <data name="not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>không nhận được hoặc USPS có dấu bưu điện vào hoặc trước ngày 10 tháng 4, một hình phạt 10 phần trăm và chi phí $ 10,00 sẽ được áp dụng.</value>
+  </data>
+  <data name="Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor's Identification" xml:space="preserve">
+    <value>Người nộp thuế phải chắc chắn bao gồm cuống thanh toán với bất kỳ loại thanh toán nào và viết Nhận dạng người xác nhận của họ</value>
+  </data>
+  <data name="Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>Số có Năm / Số thứ tự trên séc của họ.</value>
+  </data>
+  <data name="1st Installment Amount Delinquency Date" xml:space="preserve">
+    <value>Số tiền trả góp lần 1</value>
+  </data>
+  <data name="If paying the bill in full, payment" xml:space="preserve">
+    <value>Nếu thanh toán hóa đơn đầy đủ, thanh toán</value>
+  </data>
+  <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments, the" xml:space="preserve">
+    <value>phải được nhận hoặc Dịch vụ Bưu chính Hoa Kỳ (USPS) có dấu bưu điện trước ngày này. Nếu thanh toán theo đợt,</value>
+  </data>
+  <data name="first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>đợt đầu tiên phải được nhận hoặc USPS có dấu bưu điện trước ngày này, hoặc phạt 10% sẽ được áp dụng.</value>
+  </data>
+  <data name="2nd Installment Amount Delinquency Date" xml:space="preserve">
+    <value>Số tiền trả góp lần 2</value>
+  </data>
+  <data name="If paying the bill in installments, " xml:space="preserve">
+    <value>Nếu thanh toán hóa đơn theo từng đợt,</value>
+  </data>
+  <data name="the second installment must be received or United States Postal Service postmarked by this date, or a 10 percent" xml:space="preserve">
+    <value>phần thứ hai phải được nhận hoặc Dịch vụ Bưu chính Hoa Kỳ có dấu bưu điện trước ngày này, hoặc 10 phần trăm</value>
+  </data>
+  <data name="penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>hình phạt và chi phí $ 10 sẽ được áp dụng.</value>
+  </data>
+  <data name="Total Taxes Due" xml:space="preserve">
+    <value>Tổng số thuế do</value>
+  </data>
+  <data name="first installment is not received or United States Postal Service (USPS) postmarked by December 10, a 10 percent penalty" xml:space="preserve">
+    <value>đợt đầu tiên không được nhận hoặc Dịch vụ Bưu chính Hoa Kỳ (USPS) có dấu bưu điện trước ngày 10 tháng 12, mức phạt 10 phần trăm</value>
+  </data>
+  <data name="not received or USPS." xml:space="preserve">
+    <value>không nhận được hoặc USPS.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>Số tiền chuyển</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated" xml:space="preserve">
+    <value>Nếu thanh toán không được thực hiện trước ngày quá hạn, hãy chuyển số tiền đã nêu</value>
+  </data>
+  <data name="here.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number and the" xml:space="preserve">
+    <value>đây. Bao gồm các cuống thanh toán với khoản thanh toán và viết Số nhận dạng từ Assigator từ từ và</value>
+  </data>
+  <data name="Year/Sequence Number on the check." xml:space="preserve">
+    <value>Năm / Số thứ tự trên séc.</value>
+  </data>
+  <data name="Make Check(s) Payable" xml:space="preserve">
+    <value>Kiểm tra (s) phải trả</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and" xml:space="preserve">
+    <value>Làm séc thanh toán cho Người thu thuế Hạt Los Angeles và</value>
+  </data>
+  <data name="mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number" xml:space="preserve">
+    <value>gửi thư đến địa chỉ này. Bao gồm các cuống thanh toán với thanh toán và viết Số nhận dạng từ Assigator</value>
+  </data>
+  <data name="and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>và Năm / Số thứ tự trên séc.</value>
+  </data>
+</root>

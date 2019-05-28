@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OVERVIEW" xml:space="preserve">
+    <value>TỔNG QUAN</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>Tổng quan về thuế tài sản</value>
+  </data>
+  <data name="How The Property Tax System Works" xml:space="preserve">
+    <value>Hệ thống thuế tài sản hoạt động như thế nào</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>Khu vực chịu trách nhiệm</value>
+  </data>
+  <data name="PROPERTY TAX OVERVIEW" xml:space="preserve">
+    <value>TỔNG QUAN THUẾ TÀI SẢN</value>
+  </data>
+  <data name="The Assessor, Auditor-Controller, and Treasurer and Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process." xml:space="preserve">
+    <value>Người giám sát, Kiểm toán viên, Kiểm soát viên, Thủ quỹ và Người thu thuế làm việc cùng nhau để sản xuất và hạch toán hóa đơn thuế và thanh toán tài sản của bạn. Hội đồng thẩm định giám sát giám sát quá trình đánh giá.</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Giám định</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Kiểm toán viên</value>
+  </data>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>Thủ quỹ và người thu thuế</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Hội đồng thẩm định</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the &quot;Assessment Roll.&quot; The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>Thẩm phán quận Los Angeles thiết lập giá trị được đánh giá của tài sản của bạn bằng cách thẩm định giá trị của tài sản đó theo luật pháp hiện hành của Bang. Giá trị được đánh giá sau đó được đặt trong một danh sách với tất cả các tài sản khác trong Hạt Los Angeles và danh sách này được gọi là "Bảng đánh giá". Người giám định cũng chấp thuận và áp dụng tất cả các miễn trừ, được thêm vào Bảng đánh giá. Bảng đánh giá sau đó được trình bày cho Kiểm soát viên Kiểm toán viên quận Los Angeles để tiếp tục xử lý.</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter &amp; bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>Kiểm soát viên Kiểm toán viên Hạt Los Angeles bổ sung các đánh giá trực tiếp vào Bảng đánh giá sau đó áp dụng thuế suất, bao gồm thuế suất chung (1%) và dịch vụ nợ (cử tri &amp; ngoại quan) vào giá trị để tạo ra Bảng đánh giá mở rộng. Extended Roll sau đó được gửi đến Thủ quỹ và người thu thuế của Hạt Los Angeles để phân phối hóa đơn và thu thuế.</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer and Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
+    <value>Nhiệm vụ của Thủ quỹ và người thu thuế ở Los Angeles là lập hóa đơn, thu thập, giải ngân, đầu tư, vay và bảo vệ các khoản tiền và tài sản. Bộ cũng cung cấp thực thi, kiểm toán, tư vấn, giáo dục, quản lý bất động sản, và các dịch vụ thông tin công cộng. Thủ quỹ và người thu thuế thu thuế bảo đảm và không có bảo đảm.</value>
+  </data>
+  <data name="Secured Taxes" xml:space="preserve">
+    <value>Thuế bảo đảm</value>
+  </data>
+  <data name=" are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc." xml:space="preserve">
+    <value> là các loại thuế đánh vào bất động sản, chẳng hạn như đất trống, các công trình trên đất, tức là kinh doanh / tòa nhà văn phòng, nhà, căn hộ, v.v.</value>
+  </data>
+  <data name="Unsecured Taxes" xml:space="preserve">
+    <value>Thuế không bảo đảm</value>
+  </data>
+  <data name=" are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
+    <value> là các khoản thuế đánh giá như nội thất văn phòng, thiết bị, máy bay và thuyền, cũng như thuế tài sản không phải là tài sản thế chấp đối với tài sản thực.</value>
+  </data>
+  <data name="The Los Angeles County Assessment Appeals Board is an independent agency, separate from the Assessor’s Office, who hears property assessment disputes between taxpayers and the Assessor, and based upon the evidence presented at the hearing, makes a fair, impartial decision on your property’s assessed value.  The Assessment Appeals Board’s decision can result in a decrease, increase, or no change in your property’s assessed value." xml:space="preserve">
+    <value>Ủy ban Kháng cáo Đánh giá Hạt Los Angeles là một cơ quan độc lập, tách biệt với Văn phòng Người phán xử, người nghe các tranh chấp về đánh giá tài sản giữa người nộp thuế và Người phán xử, và dựa trên bằng chứng được đưa ra tại phiên điều trần, đưa ra quyết định công bằng, vô tư về giá trị tài sản của bạn . Quyết định Đánh giá của Hội đồng Kháng cáo có thể dẫn đến việc giảm, tăng hoặc không thay đổi giá trị tài sản của bạn.</value>
+  </data>
+  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
+    <value>KHU VỰC CHỊU TRÁCH NHIỆM</value>
+  </data>
+  <data name="The following lists may help you to determine which department can assist in answering your inquiry." xml:space="preserve">
+    <value>Các danh sách sau đây có thể giúp bạn xác định bộ phận nào có thể hỗ trợ trả lời câu hỏi của bạn.</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>Giá trị đánh giá</value>
+  </data>
+  <data name="Boats &amp; Aircraft" xml:space="preserve">
+    <value>Thuyền &amp; Máy bay</value>
+  </data>
+  <data name="Business Property Taxes" xml:space="preserve">
+    <value>Thuế tài sản kinh doanh</value>
+  </data>
+  <data name="Change in Ownership" xml:space="preserve">
+    <value>Thay đổi quyền sở hữu</value>
+  </data>
+  <data name="Decline in Value" xml:space="preserve">
+    <value>Giảm giá trị</value>
+  </data>
+  <data name="Exemptions - General" xml:space="preserve">
+    <value>Miễn trừ - Chung</value>
+  </data>
+  <data name="Homeowner's Exemption" xml:space="preserve">
+    <value>Miễn chủ nhà</value>
+  </data>
+  <data name="Name/Address Change" xml:space="preserve">
+    <value>Thay đổi tên / địa chỉ</value>
+  </data>
+  <data name="Parent/Child Transfers (Propositions 58 and 193)" xml:space="preserve">
+    <value>Chuyển phụ huynh / trẻ em (Dự luật 58 và 193)</value>
+  </data>
+  <data name="Property Maps &amp; Data" xml:space="preserve">
+    <value>Bản đồ &amp; dữ liệu tài sản</value>
+  </data>
+  <data name="Senior Citizen Transfer (Propositions 60 and 90)" xml:space="preserve">
+    <value>Chuyển công dân cao cấp (Dự luật 60 và 90)</value>
+  </data>
+  <data name="Supplemental Bills" xml:space="preserve">
+    <value>Hóa đơn bổ sung</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Đánh giá trực tiếp</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Thuế chung</value>
+  </data>
+  <data name="Refunds - Change in Taxes Due to an Assessor Value Change" xml:space="preserve">
+    <value>Hoàn lại tiền - Thay đổi về thuế do thay đổi giá trị của người giám định</value>
+  </data>
+  <data name="Special Districts" xml:space="preserve">
+    <value>Đặc khu</value>
+  </data>
+  <data name="Tax Rate Areas" xml:space="preserve">
+    <value>Khu vực thuế suất</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Bỏ phiếu nợ</value>
+  </data>
+  <data name="Assessment Appeals Rules" xml:space="preserve">
+    <value>Đánh giá quy tắc kháng cáo</value>
+  </data>
+  <data name="Current Seminar Schedule" xml:space="preserve">
+    <value>Lịch hội thảo hiện tại</value>
+  </data>
+  <data name="How to Prepare for Your Hearing" xml:space="preserve">
+    <value>Cách chuẩn bị cho buổi điều trần của bạn</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Đăng ký đại lý thuế</value>
+  </data>
+  <data name="File an Appeal Online" xml:space="preserve">
+    <value>Nộp đơn kháng cáo trực tuyến</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Secured Taxes" xml:space="preserve">
+    <value>Thủ quỹ và người thu thuế - Thuế bảo đảm</value>
+  </data>
+  <data name="Defaulted Property Taxes" xml:space="preserve">
+    <value>Thuế tài sản mặc định</value>
+  </data>
+  <data name="Due Dates" xml:space="preserve">
+    <value>Ngày đáo hạn</value>
+  </data>
+  <data name="Payment Amounts" xml:space="preserve">
+    <value>Số tiền thanh toán</value>
+  </data>
+  <data name="Payment Posting" xml:space="preserve">
+    <value>Đăng thanh toán</value>
+  </data>
+  <data name="Public Auction" xml:space="preserve">
+    <value>Đấu giá công khai</value>
+  </data>
+  <data name="Refunds - Overpayment of Taxes Due (Non-Value Related)" xml:space="preserve">
+    <value>Hoàn lại tiền - Trả quá nhiều thuế do (Không liên quan đến giá trị)</value>
+  </data>
+  <data name="Senior Citizen, Blind &amp; Disabled Persons Property Tax Postponement &amp; Assistance Programs" xml:space="preserve">
+    <value>Công dân cao cấp, người mù và người khuyết tật Chương trình hỗ trợ và hoãn thuế tài sản</value>
+  </data>
+  <data name="Tax Bills (Secured)" xml:space="preserve">
+    <value>Hóa đơn thuế (Bảo đảm)</value>
+  </data>
+  <data name="Properties Subject to the Tax Collector's Power to Sell" xml:space="preserve">
+    <value>Thuộc tính chịu quyền bán của người thu thuế</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Unsecured Taxes" xml:space="preserve">
+    <value>Thủ quỹ và người thu thuế - Thuế không bảo đảm</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>Tài sản thế chấp</value>
+  </data>
+  <data name="Mobile Home Tax Clearance" xml:space="preserve">
+    <value>Giải phóng mặt bằng thuế nhà di động</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="Tax Bills (Unsecured)" xml:space="preserve">
+    <value>Hóa đơn thuế (không bảo đảm)</value>
+  </data>
+  <data name="Unsecured Due Dates" xml:space="preserve">
+    <value>Ngày không có bảo đảm</value>
+  </data>
+</root>
