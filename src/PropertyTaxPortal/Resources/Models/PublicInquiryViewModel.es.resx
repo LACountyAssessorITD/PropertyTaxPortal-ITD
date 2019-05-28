@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CommentRequired" xml:space="preserve">
-    <value>Se requieren comentarios.</value>
+    <value>Comentario requerido</value>
   </data>
   <data name="DaytimePhoneNumberRequired" xml:space="preserve">
-    <value>Se requiere el número de teléfono durante el día.</value>
+    <value>Número de teléfono durante el día requerido</value>
   </data>
   <data name="EmailRequired" xml:space="preserve">
-    <value>Correo electronico es requerido.</value>
+    <value>Correo electronico (requerido</value>
   </data>
   <data name="FirstNameRequired" xml:space="preserve">
-    <value>Se requiere el primer nombre.</value>
+    <value>Primer nombre (requerido</value>
   </data>
   <data name="InvalidAIN" xml:space="preserve">
-    <value>AIN no válido.</value>
+    <value>AIN no válido</value>
   </data>
   <data name="InvalidDaytimePhoneNumber" xml:space="preserve">
-    <value>Número de teléfono diurno no válido.</value>
+    <value>Número de teléfono diurno no válido</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Email inválido.</value>
+    <value>Email inválido</value>
   </data>
   <data name="InvalidFaxNumber" xml:space="preserve">
-    <value>Número de fax no válido.</value>
+    <value>Número de fax no válido</value>
   </data>
   <data name="InvalidZipCode" xml:space="preserve">
-    <value>Código postal no válido.</value>
+    <value>Código postal no válido</value>
   </data>
   <data name="LastNameRequired" xml:space="preserve">
-    <value>El apellido es obligatorio.</value>
+    <value>Apellido Obligatorio</value>
   </data>
   <data name="SubjectRequired" xml:space="preserve">
-    <value>El sujeto es obligatorio.</value>
+    <value>Sujeto (requerido</value>
   </data>
 </root>

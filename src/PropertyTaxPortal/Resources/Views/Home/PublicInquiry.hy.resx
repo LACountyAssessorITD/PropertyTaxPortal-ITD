@@ -117,37 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CommentRequired" xml:space="preserve">
-    <value>Commentaire requis</value>
+  <data name="PUBLIC INQUIRY FORM" xml:space="preserve">
+    <value>ՀԱՆՐԱՅԻՆ ՏԵՂԵԿԱՏՈՒ ՁԵՎ</value>
   </data>
-  <data name="DaytimePhoneNumberRequired" xml:space="preserve">
-    <value>Numéro de téléphone de jour requis</value>
+  <data name="In order to most effectively serve you, please fill out the following form as completely as possible." xml:space="preserve">
+    <value>Որպեսզի առավել արդյունավետ ծառայեք ձեզ, խնդրում ենք լրացնել հետեւյալ ձեւը, որքան հնարավոր է:</value>
   </data>
-  <data name="EmailRequired" xml:space="preserve">
-    <value>Email (requis</value>
+  <data name="SUBJECT" xml:space="preserve">
+    <value>ԱՌԱՐԿԱ</value>
   </data>
-  <data name="FirstNameRequired" xml:space="preserve">
-    <value>Prénom (obligatoire</value>
+  <data name="Contact Information" xml:space="preserve">
+    <value>Կոնտակտային տվյալներ</value>
   </data>
-  <data name="InvalidAIN" xml:space="preserve">
-    <value>AIN invalide</value>
+  <data name="LAST NAME" xml:space="preserve">
+    <value>ԱԶԳԱՆՈՒՆ</value>
   </data>
-  <data name="InvalidDaytimePhoneNumber" xml:space="preserve">
-    <value>Numéro de téléphone de jour invalide</value>
+  <data name="FIRST NAME" xml:space="preserve">
+    <value>ԱՆՈՒՆ</value>
   </data>
-  <data name="InvalidEmail" xml:space="preserve">
-    <value>Email invalide</value>
+  <data name="BUSINESS NAME" xml:space="preserve">
+    <value>ԲԻԶՆԵՍԻ ԱՆՈՒՆ</value>
   </data>
-  <data name="InvalidFaxNumber" xml:space="preserve">
-    <value>Numéro de fax invalide</value>
+  <data name="MAILING ADDRESS" xml:space="preserve">
+    <value>ՓՈՍՏԱՅԻՆ ՀԱՍՑԵ</value>
   </data>
-  <data name="InvalidZipCode" xml:space="preserve">
-    <value>Code postal invalide</value>
+  <data name="CITY" xml:space="preserve">
+    <value>ՔԱՂԱՔ</value>
   </data>
-  <data name="LastNameRequired" xml:space="preserve">
-    <value>Nom requis</value>
+  <data name="STATE" xml:space="preserve">
+    <value>ՊԵՏՈՒԹՅՈՒՆ</value>
   </data>
-  <data name="SubjectRequired" xml:space="preserve">
-    <value>Sujet (obligatoire</value>
+  <data name="ZIP CODE" xml:space="preserve">
+    <value>ՓՈՍՏԱՅԻՆ ԻՆԴԵՔՍ</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>EMAIL</value>
+  </data>
+  <data name="DAYTIME PHONE NUMBER" xml:space="preserve">
+    <value>DAYTIME PHONE NUMBER- ը</value>
+  </data>
+  <data name="FAX NUMBER" xml:space="preserve">
+    <value>FAX NUMBER- ը</value>
+  </data>
+  <data name="Required for assessment questions about a specific bill or property" xml:space="preserve">
+    <value>Անհրաժեշտ է կոնկրետ օրինագծի կամ գույքի վերաբերյալ գնահատման հարցերի համար</value>
+  </data>
+  <data name="PROPERTY ADDRESS" xml:space="preserve">
+    <value>ԳՈՒՅՔԱՅԻՆ ՀԱՍՑԵՆ</value>
+  </data>
+  <data name="ASSESSOR IDENTIFICATION NUMBER" xml:space="preserve">
+    <value>ԳՆԱՀԱՏԱԿԱՆ ԴԻՎԱՆԱԳԻՏԱԿԱՆ ԹԻՎԸ</value>
+  </data>
+  <data name="Required for questions regarding personal perperty" xml:space="preserve">
+    <value>Անհրաժեշտ է անձնական անհարգալից վերաբերող հարցերի համար</value>
+  </data>
+  <data name="COMPANY NUMBER" xml:space="preserve">
+    <value>ԸՆԿԵՐՈՒԹՅԱՆ ՔԱՆԱԿԸ</value>
+  </data>
+  <data name="ROUTING INDEX" xml:space="preserve">
+    <value>ROUTING INDEX- ը</value>
+  </data>
+  <data name="Please explain your request for assistance" xml:space="preserve">
+    <value>Խնդրում ենք բացատրել ձեր օգնության խնդրանքը</value>
+  </data>
+  <data name="BE BRIEF, BUT SPECIFIC" xml:space="preserve">
+    <value>ԲԱՐԵԿԱՄԻՆ, ԲԱՅՑ ՀԱՏՈՒԿ</value>
+  </data>
+  <data name="SUBMIT INQUIRY" xml:space="preserve">
+    <value>Ներկայացնել ՏԵՂԵԿՈՒԹՅՈՒՆՆԵՐ</value>
   </data>
 </root>

@@ -3,7 +3,7 @@
 @inject IViewLocalizer Localizer
 
 @{
-    ViewData["Title"] = "PublicInquiry";
+    ViewData["Title"] = "News Landing";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @inject IViewLocalizer Localizer
@@ -21,7 +21,7 @@
     </div>
     <div class="container mt-4 text-center " id="back-button">
         <a asp-controller="Home" asp-action="News">
-            <input type="button" class="btn btn-dark" value="Back to News"/>
+            <input type="button" class="btn btn-dark" value="@Localizer["Back to News"]"/>
         </a>
     </div>
 </section>

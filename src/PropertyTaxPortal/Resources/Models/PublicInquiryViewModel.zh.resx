@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CommentRequired" xml:space="preserve">
-    <value>Commentaire requis</value>
+    <value>評論必填</value>
   </data>
   <data name="DaytimePhoneNumberRequired" xml:space="preserve">
-    <value>Numéro de téléphone de jour requis</value>
+    <value>需要日間電話號碼</value>
   </data>
   <data name="EmailRequired" xml:space="preserve">
-    <value>Email (requis</value>
+    <value>需要電子郵件</value>
   </data>
   <data name="FirstNameRequired" xml:space="preserve">
-    <value>Prénom (obligatoire</value>
+    <value>名字要求</value>
   </data>
   <data name="InvalidAIN" xml:space="preserve">
-    <value>AIN invalide</value>
+    <value>無效的AIN</value>
   </data>
   <data name="InvalidDaytimePhoneNumber" xml:space="preserve">
-    <value>Numéro de téléphone de jour invalide</value>
+    <value>無效的日間電話號碼</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Email invalide</value>
+    <value>不合規電郵</value>
   </data>
   <data name="InvalidFaxNumber" xml:space="preserve">
-    <value>Numéro de fax invalide</value>
+    <value>傳真號碼無效</value>
   </data>
   <data name="InvalidZipCode" xml:space="preserve">
-    <value>Code postal invalide</value>
+    <value>無效的郵政編碼</value>
   </data>
   <data name="LastNameRequired" xml:space="preserve">
-    <value>Nom requis</value>
+    <value>姓氏必填</value>
   </data>
   <data name="SubjectRequired" xml:space="preserve">
-    <value>Sujet (obligatoire</value>
+    <value>主題要求</value>
   </data>
 </root>

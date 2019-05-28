@@ -120,6 +120,9 @@
   <data name="NEWS &amp; ANNOUNCEMENTS" xml:space="preserve">
     <value>اخبار و اطلاعیه ها</value>
   </data>
+  <data name="Back to News" xml:space="preserve">
+    <value>بازگشت به اخبار</value>
+  </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>مشترک شدن در خبرنامه پست الکترونیک خزانه دار و مالیات گردآورنده</value>
   </data>

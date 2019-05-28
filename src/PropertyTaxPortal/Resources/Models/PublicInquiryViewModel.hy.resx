@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CommentRequired" xml:space="preserve">
-    <value>Commentaire requis</value>
+    <value>Մեկնաբանությունը պարտադիր է</value>
   </data>
   <data name="DaytimePhoneNumberRequired" xml:space="preserve">
-    <value>Numéro de téléphone de jour requis</value>
+    <value>Ցերեկային հեռախոսահամարը պարտադիր է</value>
   </data>
   <data name="EmailRequired" xml:space="preserve">
-    <value>Email (requis</value>
+    <value>Email հարկավոր է</value>
   </data>
   <data name="FirstNameRequired" xml:space="preserve">
-    <value>Prénom (obligatoire</value>
+    <value>Անունն անհրաժեշտ է</value>
   </data>
   <data name="InvalidAIN" xml:space="preserve">
-    <value>AIN invalide</value>
+    <value>Անվավեր AIN</value>
   </data>
   <data name="InvalidDaytimePhoneNumber" xml:space="preserve">
-    <value>Numéro de téléphone de jour invalide</value>
+    <value>Անվավեր օրվա հեռախոսահամարը</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Email invalide</value>
+    <value>Սխալ Էլեկտրոնային փոստի հասցե</value>
   </data>
   <data name="InvalidFaxNumber" xml:space="preserve">
-    <value>Numéro de fax invalide</value>
+    <value>Ֆաքսի համարը սխալ է</value>
   </data>
   <data name="InvalidZipCode" xml:space="preserve">
-    <value>Code postal invalide</value>
+    <value>Անվավեր ZIP կոդը</value>
   </data>
   <data name="LastNameRequired" xml:space="preserve">
-    <value>Nom requis</value>
+    <value>Անուն Անհրաժեշտ է</value>
   </data>
   <data name="SubjectRequired" xml:space="preserve">
-    <value>Sujet (obligatoire</value>
+    <value>Թեմա պարտադիր է</value>
   </data>
 </root>

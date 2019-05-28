@@ -120,6 +120,9 @@
   <data name="NEWS &amp; ANNOUNCEMENTS" xml:space="preserve">
     <value>NOTICIAS Y ANUNCIOS</value>
   </data>
+  <data name="Back to News" xml:space="preserve">
+    <value>Volver a las noticias</value>
+  </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>Suscríbase al Servicio de Notificación por Correo Electrónico del Tesorero y Recaudador de Impuestos</value>
   </data>

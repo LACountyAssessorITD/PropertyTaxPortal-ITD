@@ -117,37 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CommentRequired" xml:space="preserve">
-    <value>Commentaire requis</value>
+  <data name="PUBLIC INQUIRY FORM" xml:space="preserve">
+    <value>公開查詢表格</value>
   </data>
-  <data name="DaytimePhoneNumberRequired" xml:space="preserve">
-    <value>Numéro de téléphone de jour requis</value>
+  <data name="In order to most effectively serve you, please fill out the following form as completely as possible." xml:space="preserve">
+    <value>為了最有效地為您服務，請盡可能完整填寫以下表格。</value>
   </data>
-  <data name="EmailRequired" xml:space="preserve">
-    <value>Email (requis</value>
+  <data name="SUBJECT" xml:space="preserve">
+    <value>學科</value>
   </data>
-  <data name="FirstNameRequired" xml:space="preserve">
-    <value>Prénom (obligatoire</value>
+  <data name="Contact Information" xml:space="preserve">
+    <value>聯繫信息</value>
   </data>
-  <data name="InvalidAIN" xml:space="preserve">
-    <value>AIN invalide</value>
+  <data name="LAST NAME" xml:space="preserve">
+    <value>姓</value>
   </data>
-  <data name="InvalidDaytimePhoneNumber" xml:space="preserve">
-    <value>Numéro de téléphone de jour invalide</value>
+  <data name="FIRST NAME" xml:space="preserve">
+    <value>名字</value>
   </data>
-  <data name="InvalidEmail" xml:space="preserve">
-    <value>Email invalide</value>
+  <data name="BUSINESS NAME" xml:space="preserve">
+    <value>商業名稱</value>
   </data>
-  <data name="InvalidFaxNumber" xml:space="preserve">
-    <value>Numéro de fax invalide</value>
+  <data name="MAILING ADDRESS" xml:space="preserve">
+    <value>郵寄地址</value>
   </data>
-  <data name="InvalidZipCode" xml:space="preserve">
-    <value>Code postal invalide</value>
+  <data name="CITY" xml:space="preserve">
+    <value>市</value>
   </data>
-  <data name="LastNameRequired" xml:space="preserve">
-    <value>Nom requis</value>
+  <data name="STATE" xml:space="preserve">
+    <value>州</value>
   </data>
-  <data name="SubjectRequired" xml:space="preserve">
-    <value>Sujet (obligatoire</value>
+  <data name="ZIP CODE" xml:space="preserve">
+    <value>郵政編碼</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+  <data name="DAYTIME PHONE NUMBER" xml:space="preserve">
+    <value>日間電話號碼</value>
+  </data>
+  <data name="FAX NUMBER" xml:space="preserve">
+    <value>傳真號碼</value>
+  </data>
+  <data name="Required for assessment questions about a specific bill or property" xml:space="preserve">
+    <value>有關特定賬單或財產的評估問題需要</value>
+  </data>
+  <data name="PROPERTY ADDRESS" xml:space="preserve">
+    <value>財產地址</value>
+  </data>
+  <data name="ASSESSOR IDENTIFICATION NUMBER" xml:space="preserve">
+    <value>評估員識別號碼</value>
+  </data>
+  <data name="Required for questions regarding personal perperty" xml:space="preserve">
+    <value>有關個人財產的問題是必需的</value>
+  </data>
+  <data name="COMPANY NUMBER" xml:space="preserve">
+    <value>公司號碼</value>
+  </data>
+  <data name="ROUTING INDEX" xml:space="preserve">
+    <value>路由索引</value>
+  </data>
+  <data name="Please explain your request for assistance" xml:space="preserve">
+    <value>請解釋您的幫助請求</value>
+  </data>
+  <data name="BE BRIEF, BUT SPECIFIC" xml:space="preserve">
+    <value>簡單，但具體</value>
+  </data>
+  <data name="SUBMIT INQUIRY" xml:space="preserve">
+    <value>提交詢問</value>
   </data>
 </root>

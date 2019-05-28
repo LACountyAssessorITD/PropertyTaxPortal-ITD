@@ -120,6 +120,9 @@
   <data name="NEWS &amp; ANNOUNCEMENTS" xml:space="preserve">
     <value>新聞和公告</value>
   </data>
+  <data name="Back to News" xml:space="preserve">
+    <value>回到新聞</value>
+  </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>訂閱財務主管和稅務員的電子郵件通知服務</value>
   </data>

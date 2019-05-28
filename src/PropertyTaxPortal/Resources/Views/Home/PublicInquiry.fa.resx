@@ -117,37 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CommentRequired" xml:space="preserve">
-    <value>Commentaire requis</value>
+  <data name="PUBLIC INQUIRY FORM" xml:space="preserve">
+    <value>فرم درخواست پرسنل</value>
   </data>
-  <data name="DaytimePhoneNumberRequired" xml:space="preserve">
-    <value>Numéro de téléphone de jour requis</value>
+  <data name="In order to most effectively serve you, please fill out the following form as completely as possible." xml:space="preserve">
+    <value>برای به حداکثر رساندن به شما، لطفا فرم زیر را به طور کامل پر کنید</value>
   </data>
-  <data name="EmailRequired" xml:space="preserve">
-    <value>Email (requis</value>
+  <data name="SUBJECT" xml:space="preserve">
+    <value>موضوع</value>
   </data>
-  <data name="FirstNameRequired" xml:space="preserve">
-    <value>Prénom (obligatoire</value>
+  <data name="Contact Information" xml:space="preserve">
+    <value>اطلاعات تماس</value>
   </data>
-  <data name="InvalidAIN" xml:space="preserve">
-    <value>AIN invalide</value>
+  <data name="LAST NAME" xml:space="preserve">
+    <value>نام خانوادگی</value>
   </data>
-  <data name="InvalidDaytimePhoneNumber" xml:space="preserve">
-    <value>Numéro de téléphone de jour invalide</value>
+  <data name="FIRST NAME" xml:space="preserve">
+    <value>نام کوچک</value>
   </data>
-  <data name="InvalidEmail" xml:space="preserve">
-    <value>Email invalide</value>
+  <data name="BUSINESS NAME" xml:space="preserve">
+    <value>نام کسب و کار</value>
   </data>
-  <data name="InvalidFaxNumber" xml:space="preserve">
-    <value>Numéro de fax invalide</value>
+  <data name="MAILING ADDRESS" xml:space="preserve">
+    <value>آدرس پستی</value>
   </data>
-  <data name="InvalidZipCode" xml:space="preserve">
-    <value>Code postal invalide</value>
+  <data name="CITY" xml:space="preserve">
+    <value>CITY</value>
   </data>
-  <data name="LastNameRequired" xml:space="preserve">
-    <value>Nom requis</value>
+  <data name="STATE" xml:space="preserve">
+    <value>حالت</value>
   </data>
-  <data name="SubjectRequired" xml:space="preserve">
-    <value>Sujet (obligatoire</value>
+  <data name="ZIP CODE" xml:space="preserve">
+    <value>کد پستی</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>پست الکترونیک</value>
+  </data>
+  <data name="DAYTIME PHONE NUMBER" xml:space="preserve">
+    <value>شماره تلفن در طول روز</value>
+  </data>
+  <data name="FAX NUMBER" xml:space="preserve">
+    <value>شماره فکس</value>
+  </data>
+  <data name="Required for assessment questions about a specific bill or property" xml:space="preserve">
+    <value>مورد نیاز برای ارزیابی سوالات در مورد یک لایحه خاص یا ملک</value>
+  </data>
+  <data name="PROPERTY ADDRESS" xml:space="preserve">
+    <value>ادرس ملک</value>
+  </data>
+  <data name="ASSESSOR IDENTIFICATION NUMBER" xml:space="preserve">
+    <value>شماره شناسایی ارزیاب</value>
+  </data>
+  <data name="Required for questions regarding personal perperty" xml:space="preserve">
+    <value>مورد نیاز برای سوالات در مورد شخصیت شخصی</value>
+  </data>
+  <data name="COMPANY NUMBER" xml:space="preserve">
+    <value>شماره شرکت</value>
+  </data>
+  <data name="ROUTING INDEX" xml:space="preserve">
+    <value>ردیابی شاخص</value>
+  </data>
+  <data name="Please explain your request for assistance" xml:space="preserve">
+    <value>لطفا درخواست خود را برای کمک توضیح دهید</value>
+  </data>
+  <data name="BE BRIEF, BUT SPECIFIC" xml:space="preserve">
+    <value>به اختصار، اما مشخص است</value>
+  </data>
+  <data name="SUBMIT INQUIRY" xml:space="preserve">
+    <value>درخواست پرسیدن</value>
   </data>
 </root>

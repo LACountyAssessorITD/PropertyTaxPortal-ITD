@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CommentRequired" xml:space="preserve">
-    <value>Commentaire requis</value>
+    <value>Требуется комментарий</value>
   </data>
   <data name="DaytimePhoneNumberRequired" xml:space="preserve">
-    <value>Numéro de téléphone de jour requis</value>
+    <value>Требуется дневной номер телефона</value>
   </data>
   <data name="EmailRequired" xml:space="preserve">
-    <value>Email (requis</value>
+    <value>Требуется адрес электронной почты</value>
   </data>
   <data name="FirstNameRequired" xml:space="preserve">
-    <value>Prénom (obligatoire</value>
+    <value>Имя обязательно</value>
   </data>
   <data name="InvalidAIN" xml:space="preserve">
-    <value>AIN invalide</value>
+    <value>Неверный AIN</value>
   </data>
   <data name="InvalidDaytimePhoneNumber" xml:space="preserve">
-    <value>Numéro de téléphone de jour invalide</value>
+    <value>Неверный номер телефона в дневное время</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Email invalide</value>
+    <value>Неверный адрес электронной почты</value>
   </data>
   <data name="InvalidFaxNumber" xml:space="preserve">
-    <value>Numéro de fax invalide</value>
+    <value>Неверный номер факса</value>
   </data>
   <data name="InvalidZipCode" xml:space="preserve">
-    <value>Code postal invalide</value>
+    <value>Неверный почтовый индекс</value>
   </data>
   <data name="LastNameRequired" xml:space="preserve">
-    <value>Nom requis</value>
+    <value>Фамилия требуется</value>
   </data>
   <data name="SubjectRequired" xml:space="preserve">
-    <value>Sujet (obligatoire</value>
+    <value>Тема (обязательно</value>
   </data>
 </root>
