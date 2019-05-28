@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Phone" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>رایگان رایگان</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>سایت اینترنتی</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>رایگان رایگان</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>سایت اینترنتی</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>رایگان رایگان</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>سایت اینترنتی</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>رایگان رایگان</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>سایت اینترنتی</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>ارجاع</value>
+  </data>
+  <data name="Public Inquiry Email" xml:space="preserve">
+    <value>ایمیل تحقیق عمومی</value>
+  </data>
+  <data name="Please do NOT reply to this email" xml:space="preserve">
+    <value>لطفا به این ایمیل پاسخ ندهید</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>شماره مرجع برای پرس و جو شما</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="Business Name" xml:space="preserve">
+    <value>نام کسب و کار</value>
+  </data>
+  <data name="Mailing Address" xml:space="preserve">
+    <value>آدرس پستی</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>پست الکترونیک</value>
+  </data>
+  <data name="Daytime Phone Number" xml:space="preserve">
+    <value>شماره تلفن در طول روز</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>شماره فکس</value>
+  </data>
+  <data name="Property Address" xml:space="preserve">
+    <value>ادرس ملک</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>شماره شناسایی ارزیابی</value>
+  </data>
+  <data name="Company Number" xml:space="preserve">
+    <value>شماره شرکت</value>
+  </data>
+  <data name="Routing Index" xml:space="preserve">
+    <value>فهرست مسیریابی</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>نظرات</value>
+  </data>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>برای ارسال سوالات خود، لطفا از فرم درخواست عمومی ما در</value>
+  </data>
+  <data name="Please select" xml:space="preserve">
+    <value>لطفا انتخاب کنید</value>
+  </data>
+  <data name="Assessment Appeals" xml:space="preserve">
+    <value>تجدید نظر ارزیابی</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>تغییر آدرس پستی</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>ارزیابی مستقیم</value>
+  </data>
+  <data name="Exemptions" xml:space="preserve">
+    <value>استثنا</value>
+  </data>
+  <data name="Incorrect Property Information" xml:space="preserve">
+    <value>اطلاعات ملک غلط</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>لنز</value>
+  </data>
+  <data name="Lost Tax Bill / Tax Bill Request" xml:space="preserve">
+    <value>درخواست قبض مالیات / مالیات از دست رفته</value>
+  </data>
+  <data name="Overpayment / Refund" xml:space="preserve">
+    <value>پرداخت بیش از حد / بازپرداخت</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>مالکیت</value>
+  </data>
+  <data name="Payment (all others)" xml:space="preserve">
+    <value>پرداخت (همه موارد دیگر)</value>
+  </data>
+  <data name="Payment (online credit card)" xml:space="preserve">
+    <value>پرداخت (کارت اعتباری آنلاین)</value>
+  </data>
+  <data name="Payments (online eCheck)" xml:space="preserve">
+    <value>پرداخت (eCheck آنلاین)</value>
+  </data>
+  <data name="PIN Request" xml:space="preserve">
+    <value>درخواست PIN</value>
+  </data>
+  <data name="Property Tax Claim for Refunds" xml:space="preserve">
+    <value>ادعای مالیاتی ملک برای بازپرداخت</value>
+  </data>
+  <data name="Reassessment Exclusions" xml:space="preserve">
+    <value>محرومیت دوباره ارزیابی</value>
+  </data>
+  <data name="Refunds(value reductions)" xml:space="preserve">
+    <value>بازپرداخت (کاهش ارزش)</value>
+  </data>
+  <data name="Tax Adjustment" xml:space="preserve">
+    <value>تنظیم مالیات</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>ثبت نام نمایندگی مالیاتی</value>
+  </data>
+  <data name="Tax Auction" xml:space="preserve">
+    <value>حراج مالیاتی</value>
+  </data>
+  <data name="Tax Penalty Issue" xml:space="preserve">
+    <value>شماره مجازات مالیات</value>
+  </data>
+  <data name="Tax Rates" xml:space="preserve">
+    <value>نرخ مالیات</value>
+  </data>
+  <data name="Transfer Taxes to the Prior Owner" xml:space="preserve">
+    <value>انتقال مالیات به صاحب قبلی</value>
+  </data>
+  <data name="Unsecured Bills" xml:space="preserve">
+    <value>صورتحساب های غیرقانونی</value>
+  </data>
+  <data name="Values / Decline in Value" xml:space="preserve">
+    <value>ارزش / کاهش ارزش</value>
+  </data>
+  <data name="Website Related Inquiries" xml:space="preserve">
+    <value>سوالات مرتبط با وب سایت</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessment Appeals Board respond to your request shortly." xml:space="preserve">
+    <value>با تشکر از شما برای تکمیل فرم اطلاع رسانی عمومی ما. یک عضو هیات از هیئت تجدید نظر ارزیابی به زودی به درخواست شما پاسخ می دهد.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessor's department respond to your request shortly." xml:space="preserve">
+    <value>با تشکر از شما برای تکمیل فرم اطلاع رسانی عمومی ما. یکی از اعضای هیئت مدیره ارشد به زودی به درخواست شما پاسخ می دهد.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Auditor-Controller's department respond to your request shortly." xml:space="preserve">
+    <value>با تشکر از شما برای تکمیل فرم اطلاع رسانی عمومی ما. یک عضو هیئت مدیره بخش حسابرس-کنترل کننده به مدت کوتاهی به درخواست شما پاسخ می دهد.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Treasurer &amp; Tax Collector's department respond to your request shortly." xml:space="preserve">
+    <value>با تشکر از شما برای تکمیل فرم اطلاع رسانی عمومی ما. یک عضو کارمند بخش خزانهداری و مالیات گردآورنده به مدت کوتاهی به درخواست شما پاسخ می دهد.</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>رایگان رایگان</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>سایت اینترنتی</value>
+  </data>
+  <data name="Please select" xml:space="preserve">
+    <value>لطفا انتخاب کنید</value>
+  </data>
+  <data name="Property Tax Portal" xml:space="preserve">
+    <value>پورتال مالیات بر املاک</value>
+  </data>
+</root>

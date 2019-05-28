@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Phone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Toll miễn phí</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Trang mạng</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Toll miễn phí</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Trang mạng</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Toll miễn phí</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Trang mạng</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Toll miễn phí</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Trang mạng</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Tài liệu tham khảo</value>
+  </data>
+  <data name="Public Inquiry Email" xml:space="preserve">
+    <value>Email yêu cầu công khai</value>
+  </data>
+  <data name="Please do NOT reply to this email" xml:space="preserve">
+    <value>Xin đừng trả lơi thư này</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>Số tham chiếu cho yêu cầu của bạn là</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="Business Name" xml:space="preserve">
+    <value>Tên doanh nghiệp</value>
+  </data>
+  <data name="Mailing Address" xml:space="preserve">
+    <value>Địa chỉ gửi thư</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Daytime Phone Number" xml:space="preserve">
+    <value>Số điện thoại ban ngày</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>Số fax</value>
+  </data>
+  <data name="Property Address" xml:space="preserve">
+    <value>Địa chỉ tài sản</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>Số nhận dạng giám định</value>
+  </data>
+  <data name="Company Number" xml:space="preserve">
+    <value>Số công ty</value>
+  </data>
+  <data name="Routing Index" xml:space="preserve">
+    <value>Chỉ số định tuyến</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Bình luận</value>
+  </data>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>Để gửi yêu cầu của bạn, xin vui lòng sử dụng Mẫu yêu cầu công khai của chúng tôi tại</value>
+  </data>
+  <data name="Please select" xml:space="preserve">
+    <value>Xin hãy lựa chọn</value>
+  </data>
+  <data name="Assessment Appeals" xml:space="preserve">
+    <value>Đánh giá kháng cáo</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>Thay đổi địa chỉ gửi thư</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Đánh giá trực tiếp</value>
+  </data>
+  <data name="Exemptions" xml:space="preserve">
+    <value>Miễn giảm</value>
+  </data>
+  <data name="Incorrect Property Information" xml:space="preserve">
+    <value>Thông tin tài sản không chính xác</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>Tài sản thế chấp</value>
+  </data>
+  <data name="Lost Tax Bill / Tax Bill Request" xml:space="preserve">
+    <value>Hóa đơn thuế bị mất / Yêu cầu hóa đơn thuế</value>
+  </data>
+  <data name="Overpayment / Refund" xml:space="preserve">
+    <value>Thanh toán vượt mức / Hoàn tiền</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Quyền sở hữu</value>
+  </data>
+  <data name="Payment (all others)" xml:space="preserve">
+    <value>Thanh toán (tất cả những thứ khác)</value>
+  </data>
+  <data name="Payment (online credit card)" xml:space="preserve">
+    <value>Thanh toán (thẻ tín dụng trực tuyến)</value>
+  </data>
+  <data name="Payments (online eCheck)" xml:space="preserve">
+    <value>Thanh toán (eCheck trực tuyến)</value>
+  </data>
+  <data name="PIN Request" xml:space="preserve">
+    <value>Yêu cầu mã PIN</value>
+  </data>
+  <data name="Property Tax Claim for Refunds" xml:space="preserve">
+    <value>Yêu cầu hoàn thuế tài sản để hoàn tiền</value>
+  </data>
+  <data name="Reassessment Exclusions" xml:space="preserve">
+    <value>Đánh giá lại loại trừ</value>
+  </data>
+  <data name="Refunds(value reductions)" xml:space="preserve">
+    <value>Hoàn tiền (giảm giá trị)</value>
+  </data>
+  <data name="Tax Adjustment" xml:space="preserve">
+    <value>Điều chỉnh thuế</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Đăng ký đại lý thuế</value>
+  </data>
+  <data name="Tax Auction" xml:space="preserve">
+    <value>Đấu giá thuế</value>
+  </data>
+  <data name="Tax Penalty Issue" xml:space="preserve">
+    <value>Vấn đề phạt thuế</value>
+  </data>
+  <data name="Tax Rates" xml:space="preserve">
+    <value>Thuế suất</value>
+  </data>
+  <data name="Transfer Taxes to the Prior Owner" xml:space="preserve">
+    <value>Chuyển thuế cho chủ sở hữu trước</value>
+  </data>
+  <data name="Unsecured Bills" xml:space="preserve">
+    <value>Hóa đơn không bảo đảm</value>
+  </data>
+  <data name="Values / Decline in Value" xml:space="preserve">
+    <value>Giá trị / Giảm giá trị</value>
+  </data>
+  <data name="Website Related Inquiries" xml:space="preserve">
+    <value>Trang web yêu cầu liên quan</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessment Appeals Board respond to your request shortly." xml:space="preserve">
+    <value>Cảm ơn bạn đã hoàn thành mẫu Điều tra công khai của chúng tôi. Một nhân viên từ Hội đồng Kháng cáo Đánh giá sẽ sớm trả lời yêu cầu của bạn.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessor's department respond to your request shortly." xml:space="preserve">
+    <value>Cảm ơn bạn đã hoàn thành mẫu Điều tra công khai của chúng tôi. Một nhân viên từ bộ phận của Người phán xử sẽ sớm trả lời yêu cầu của bạn.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Auditor-Controller's department respond to your request shortly." xml:space="preserve">
+    <value>Cảm ơn bạn đã hoàn thành mẫu Điều tra công khai của chúng tôi. Một nhân viên từ bộ phận Kiểm toán viên của Kiểm toán viên sẽ sớm trả lời yêu cầu của bạn.</value>
+  </data>
+  <data name="Thank you for completing our Public Inquiry form. A staff member from the Treasurer &amp; Tax Collector's department respond to your request shortly." xml:space="preserve">
+    <value>Cảm ơn bạn đã hoàn thành mẫu Điều tra công khai của chúng tôi. Một nhân viên từ bộ phận Thủ quỹ và người thu thuế trả lời yêu cầu của bạn ngay.</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Toll miễn phí</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Trang mạng</value>
+  </data>
+  <data name="Please select" xml:space="preserve">
+    <value>Xin hãy lựa chọn</value>
+  </data>
+  <data name="Property Tax Portal" xml:space="preserve">
+    <value>Cổng thông tin thuế tài sản</value>
+  </data>
+</root>
