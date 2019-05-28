@@ -549,5 +549,10 @@ namespace PropertyTaxPortal.Controllers
 
             return LocalRedirect(returnUrl);
         }
+        [Route("{*url}", Order = 999)]
+        public IActionResult CatchAll()
+        {
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
