@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DISCLAIMER" xml:space="preserve">
+    <value>AVERTISSEMENT</value>
+  </data>
+  <data name="COUNTY WEBSITE ADVERTISING AND HOTLINK POLICY" xml:space="preserve">
+    <value>POLITIQUE SUR LA PUBLICITÉ SUR LE SITE WEB ET LES LIAISONS HOTLINK</value>
+  </data>
+  <data name="Los Angeles County is a chartered County and a subdivision of the State of California whose mission is to provide governmental and other public services to and for the benefit of the residents of the County. In accordance with this mission, the general policy of the Board of Supervisors is to exclude from the County Internet website and the website of each County Department, all commercial advertising and promotional material, including links which provide exclusive private or financial benefit to commercial, non-public enterprises and which do not promote or enhance a public benefit to the County, its departments, or the residents served by the County. As a governmental agency, the County neither endorses nor supports individual private commercial enterprises through display of their advertising on the County’s website or through providing links to the sites of such commercial enterprises." xml:space="preserve">
+    <value>Le comté de Los Angeles est un comté à charte et une subdivision de l'État de Californie dont la mission est de fournir des services gouvernementaux et autres services publics aux résidents du comté et à leur avantage. Conformément à cette mission, le conseil des autorités de surveillance a pour politique générale d’exclure du site Web Internet du comté et du site Web de chaque département, tout matériel publicitaire et promotionnel, y compris les liens procurant des avantages privés ou financiers exclusifs aux entreprises commerciales et non commerciales. - entreprises publiques et qui ne promeuvent ni n'augmentent un avantage public pour le comté, ses départements ou les résidents desservis par le comté. En tant qu’organisme gouvernemental, le comté n’approuve ni ne soutient les entreprises commerciales privées individuelles en affichant leurs publicités sur le site Web du comté ou en fournissant des liens vers les sites de ces entreprises commerciales.</value>
+  </data>
+  <data name="Notwithstanding the foregoing, the Board of Supervisors recognizes that, in consideration of the nature and function of the Internet, display of commercial or promotional material or links to commercial sites may, under certain circumstances, be appropriate for inclusion in the County’s website or in departmental websites where a public purpose is served. The following guidelines are hereby adopted for the guidance of County Department Directors in determining when such materials are appropriate for inclusion in County websites." xml:space="preserve">
+    <value>Nonobstant ce qui précède, le conseil des autorités de surveillance reconnaît que, compte tenu de la nature et du fonctionnement d'Internet, l'affichage de matériel commercial ou promotionnel ou de liens vers des sites commerciaux peut, dans certaines circonstances, être inclus dans le site Web du comté ou dans les documents des ministères sites Web où un but public est servi. Les directives suivantes sont par la présente adoptées pour guider les directeurs de département de comté dans la détermination du moment où de tels documents peuvent être inclus dans les sites Web du comté.</value>
+  </data>
+  <data name="Advertising/Promotional Materials Where County Has Public/Financial lnterest" xml:space="preserve">
+    <value>Matériel publicitaire / promotionnel lorsque le comté a un intérêt public / financier</value>
+  </data>
+  <data name="Public Benefit Facilities and Venues. The County has established and maintains certain facilities and venues which promote the arts, science, cultural studies, and other public purposes. Advertising and promotion of events, programs, and exhibits at such facilities and venues may be placed on the County Internet website and on departmental websites. This includes links to commercial enterprises who market tickets or other means of access to these facilities and venues or foster participation in their programs. (Examples: Ford Theater link to online ticket agency. Programs/Exhibits at Music Center, Hollywood Bowl, Art Museum, Natural History Museum)" xml:space="preserve">
+    <value>Installations et sites d'intérêt public. Le comté a mis en place et entretient des installations et des lieux destinés à promouvoir les arts, les sciences, les études culturelles et d’autres fins publiques. La publicité et la promotion d’événements, de programmes et d’expositions dans ces installations et lieux peuvent être placées sur le site Web du comté et sur les sites Web des départements. Cela inclut des liens vers des entreprises commerciales qui vendent des billets ou d’autres moyens d’accès à ces installations et lieux ou favorisent la participation à leurs programmes. (Exemples: lien entre le théâtre Ford et la billetterie en ligne. Programmes / expositions au centre musical, au Hollywood Bowl, au musée d'art, au musée d'histoire naturelle)</value>
+  </data>
+  <data name="Commercial Enterprises in which the county has a financial interest. The County possesses leasehold and other financial interests in certain commercial enterprises, and derives a financial benefit from their activities. This financial benefit to the County serves a public purpose. Accordingly, commercial advertising and other promotional materials concerning these enterprises may appear on County websites. Links to the websites of these enterprises may also be included on the County Internet website and on departmental websites at the discretion of Department Directors. Appropriate notice should be provided of the County’s financial interest in these enterprises. (Examples: Gladstone’s Restaurant, Marina Del Rey)" xml:space="preserve">
+    <value>Entreprises commerciales dans lesquelles le comté a un intérêt financier. Le comté possède des intérêts à bail et autres intérêts financiers dans certaines entreprises commerciales et tire un avantage financier de leurs activités. Cet avantage financier pour le comté sert un objectif public. En conséquence, des publicités commerciales et autres matériels promotionnels concernant ces entreprises peuvent apparaître sur les sites Web du comté. Des liens vers les sites Web de ces entreprises peuvent également être inclus sur le site Web Internet du comté et sur les sites Web des départements, à la discrétion des directeurs de département. Les intérêts financiers du comté dans ces entreprises doivent être notifiés de manière appropriée. (Exemples: restaurant Gladstone, Marina Del Rey)</value>
+  </data>
+  <data name="Where a link is provided in the County’s website and the user exits the County website and enters a commercial website, notice and a disclaimer must be displayed in accordance with Section 8 below." xml:space="preserve">
+    <value>Lorsqu'un lien est fourni sur le site Web du comté et que l'utilisateur quitte le site Web du comté et accède à un site Web commercial, un avis et un avertissement doivent être affichés conformément à la section 8 ci-dessous.</value>
+  </data>
+  <data name="Web-Based All-lnclusive Information about Private Enterprises which Provide a Service or Benefit to the Public where the Service or Benefit is Directly Related to a County Department’s Mission or Services" xml:space="preserve">
+    <value>Informations complètes sur le Web concernant les entreprises à capital fermé qui fournissent un service ou un avantage au public lorsque ce service ou cet avantage est directement lié à la mission ou aux services d’un département</value>
+  </data>
+  <data name="Certain commercial and public agencies maintain information about private persons, enterprises, and organizations which provide services to the public." xml:space="preserve">
+    <value>Certaines agences commerciales et publiques conservent des informations sur des personnes privées, des entreprises et des organisations fournissant des services au public.</value>
+  </data>
+  <data name="Public Agency. Where such information is directly maintained by public agencies, such as lists of licensed child care providers or lists of restaurants that are graded by the Department of Health Services. County websites may display such information or provide links to the public agency or directly to that information." xml:space="preserve">
+    <value>Agence publique. Lorsque ces informations sont directement gérées par des organismes publics, telles que des listes de fournisseurs de services de garde d'enfants agréés ou des listes de restaurants classés par le Département des services de santé. Les sites Web des comtés peuvent afficher ces informations ou fournir des liens vers l'agence publique ou directement vers ces informations.</value>
+  </data>
+  <data name="Private Agency. Where information is maintained by private commercial agencies but the persons or organizations listed provide services directly related to the mission of a County Department or to the services it provides to the public. A Department may display such information on its website or provide a link to the information or the commercial agency which maintains such information whether or not the site linked to also contains commercial advertising. In such cases, the Department Director must make a good faith determination that:" xml:space="preserve">
+    <value>Agence privée. Lorsque les informations sont gérées par des agences commerciales privées mais que les personnes ou organisations répertoriées fournissent des services directement liés à la mission d’un département ou aux services qu’il fournit au public. Un département peut afficher de telles informations sur son site Web ou fournir un lien vers les informations ou l'agence commerciale qui les gère, que le site en question contienne ou non une publicité commerciale. Dans de tels cas, le directeur de département doit déterminer de bonne foi que:</value>
+  </data>
+  <data name="The Department’s clients, service recipients, or interested County residents would benefit from the information;" xml:space="preserve">
+    <value>Les clients du Département, les destinataires de services ou les résidents du comté intéressés bénéficieraient de ces informations;</value>
+  </data>
+  <data name="It would be duplicative for the Department to independently create or maintain such information; and." xml:space="preserve">
+    <value>Il serait redondant pour le Département de créer ou de gérer de manière indépendante de telles informations; et.</value>
+  </data>
+  <data name="The commercial agency which maintains the information has represented that it includes all legitimate or licensed service providers within the County or within the geographical area served by the Department." xml:space="preserve">
+    <value>L'agence commerciale qui gère les informations a indiqué qu'elle incluait tous les fournisseurs de services légitimes ou agréés du comté ou de la zone géographique desservie par le département.</value>
+  </data>
+  <data name="No link may be provided directly on a County departmental website to any enterprise or organization included in that information." xml:space="preserve">
+    <value>Aucun lien ne peut être fourni directement sur un site Web départemental de comté avec une entreprise ou une organisation incluse dans ces informations.</value>
+  </data>
+  <data name="Where a link is provided in the County website to the agency which maintains the information or to the information, and the user exits the County website and enters a commercial site which may contain advertising or other promotional material, notice and a disclaimer must be displayed in accordance with Section 8 below." xml:space="preserve">
+    <value>Lorsqu'un lien est fourni sur le site Web du comté avec l'agence qui conserve les informations ou l'information, et que l'utilisateur quitte le site Web du comté et entre sur un site commercial susceptible de contenir de la publicité ou autre matériel promotionnel, un avis et une clause de non-responsabilité doivent être affichés. conformément à la section 8 ci-dessous.</value>
+  </data>
+  <data name="(Examples: A list maintained by a California State agency of licensed child care centers located in the County could be displayed on the website of a Department that serves the needs of children and families. A link to the State agency or to the list could be included even if the list maintained by the State agency contained centers both in the County and throughout the State." xml:space="preserve">
+    <value>(Exemples: une liste établie par un organisme de l'État de Californie de garderies agréées situées dans le comté pourrait être affichée sur le site Web d'un ministère qui répond aux besoins des enfants et des familles. Un lien vers cet organisme pourrait être affiché. inclus même si la liste établie par l’agence d’État contenait des centres situés à la fois dans le comté et dans l’ensemble de l’État.</value>
+  </data>
+  <data name="A commercially maintained list of newspapers in a particular category or geographic area could be displayed or linked to the Public Information Office website since its mission is directly related to fostering media relations. If displayed, however, no link to an individual newspaper is permitted. If a link is provided to a commercial agency maintaining the list or to the list, the site linked to may contain advertising, but a disclaimer must be displayed on the County’s website as the user exits in accordance with Section 8 below." xml:space="preserve">
+    <value>Une liste de journaux maintenus à des fins commerciales dans une catégorie ou une zone géographique particulière pourrait être affichée ou liée au site Web du Bureau d’information du public, dans la mesure où sa mission est directement liée à la promotion des relations avec les médias. Si affiché, toutefois, aucun lien vers un journal individuel n'est autorisé. Si un lien est fourni à une agence commerciale mettant à jour la liste ou à la liste, le site en lien peut contenir de la publicité, mais un avis de non-responsabilité doit être affiché sur le site Web du comté à la sortie de l'utilisateur conformément à la section 8 ci-dessous.</value>
+  </data>
+  <data name="The Department of Health Services could display a list of public health ratings of all restaurants in the County since public dissemination of such information is directly related to its mission. However, display or linking to a commercial list of popular ratings of restaurants or to an individual restaurant would not be permitted under these guidelines." xml:space="preserve">
+    <value>Le Département des services de santé pourrait afficher une liste des évaluations de santé publique de tous les restaurants du comté, car la diffusion publique de ces informations est directement liée à sa mission. Toutefois, l’affichage ou le lien vers une liste commerciale d’évaluations populaires de restaurants ou d’un restaurant en particulier ne serait pas autorisé en vertu de ces directives.</value>
+  </data>
+  <data name="Public Works could display a list of names and locations of licensed recyclers since its mission includes fostering recycling of waste, but could not link to those businesses)." xml:space="preserve">
+    <value>Travaux publics pourrait afficher une liste des noms et des emplacements des recycleurs agréés, dans la mesure où sa mission consiste à favoriser le recyclage des déchets, mais ne peut pas associer ces entreprises).</value>
+  </data>
+  <data name="Links to Commercial Sites with Information Critical to or Vitally Enhancing a County Department’s Mission or Services where Replication of Information by Department is Not Feasible" xml:space="preserve">
+    <value>Liens vers des sites commerciaux contenant des informations essentielles ou vitales pour améliorer la mission ou les services d’un département de comté lorsque la réplication des informations par département n’est pas possible</value>
+  </data>
+  <data name="Certain private commercial sites maintain and display information which provides a public or community service or other ancillary static or interactive information to aid the public which is not generally available through a governmental agency due to the cost of compiling, maintaining, and/or displaying such information. In order to support the cost of compilation and maintenance of this information, these private commercial sites may include advertising or promotional material in the information display." xml:space="preserve">
+    <value>Certains sites commerciaux privés conservent et affichent des informations fournissant un service public ou à la communauté ou d'autres informations auxiliaires statiques ou interactives pour aider le public qui ne sont généralement pas disponibles via un organisme gouvernemental en raison du coût de la compilation, de la maintenance et / ou de l'affichage de ces informations. . Afin de supporter les coûts de compilation et de maintenance de ces informations, ces sites commerciaux privés peuvent inclure du matériel publicitaire ou promotionnel dans l'affichage des informations.</value>
+  </data>
+  <data name="Although the County neither supports nor endorses entities advertised or promoted on such sites, it recognizes that a public benefit is served by providing the underlying information to assist County residents. Accordingly, links to such sites which contain this information but also display commercial advertising or promotional material may be included on departmental websites when the Department Director has made a good faith determination that:" xml:space="preserve">
+    <value>Bien que le comté n'approuve ni ne soutienne les entités annoncées ou promues sur de tels sites, il reconnaît toutefois que la fourniture des informations sous-jacentes aux résidents du comté sert un intérêt public. En conséquence, des liens vers des sites contenant ces informations, mais également des publicités commerciales ou du matériel promotionnel, peuvent être inclus sur les sites Web des départements lorsque le directeur de département a déterminé de bonne foi que:</value>
+  </data>
+  <data name="The department’s independent replication of the information targeted for linkage is infeasible due to financial or other considerations; and," xml:space="preserve">
+    <value>La réplication indépendante par le ministère de l’information visée par le couplage est irréalisable pour des raisons financières ou autres; et,</value>
+  </data>
+  <data name="No, non-commercial site provides the information targeted to linkage; and," xml:space="preserve">
+    <value>Non, le site non commercial fournit les informations ciblées pour le couplage; et,</value>
+  </data>
+  <data name="The information targeted for linkage is critical to a service provided by the Department, or" xml:space="preserve">
+    <value>Les informations ciblées pour le couplage sont essentielles à un service fourni par le ministère</value>
+  </data>
+  <data name="The information targeted for linkage is a vital enhancement to the Department’s mission. (Examples: The Chief Executive Office and Board offices could link to a private website that provides information about community activities in unincorporated areas. The Department of Parks and Recreation could link to a site that provides sports league management services.)" xml:space="preserve">
+    <value>L’information à cibler est une amélioration essentielle de la mission du Département. (Exemples: le directeur général et les bureaux du conseil pourraient créer un lien vers un site Web privé contenant des informations sur les activités communautaires dans les zones non constituées. Le ministère des Parcs et des Loisirs pourrait créer un lien vers un site proposant des services de gestion de ligues sportives.)</value>
+  </data>
+  <data name="A disclaimer must be displayed on the County’s website as the user exits in accordance with Section 8 below." xml:space="preserve">
+    <value>Un avis de non-responsabilité doit être affiché sur le site Web du comté à la sortie de l'utilisateur, conformément à la section 8 ci-dessous.</value>
+  </data>
+  <data name="County Program Sponsors and Donors" xml:space="preserve">
+    <value>Commanditaires et donateurs du programme de comté</value>
+  </data>
+  <data name="County program sponsors and cash or services donors may be acknowledged through a display of their names, logos, or other information, but no link is permitted to their websites. The listing of such sponsors or donors is limited to secondary pages of websites, but may be accessed from the primary page. Departments are responsible for informing the Board of such donations through the current established process for donations." xml:space="preserve">
+    <value>Les sponsors de programme de comté et les donateurs en espèces ou en services peuvent être reconnus via l'affichage de leurs noms, logos ou autres informations, mais aucun lien n'est autorisé vers leurs sites Web. La liste de ces sponsors ou donateurs se limite aux pages secondaires des sites Web, mais est accessible à partir de la page principale. Les ministères sont tenus d'informer le conseil d'administration de ces dons par le biais du processus en vigueur pour les dons.</value>
+  </data>
+  <data name="(Examples: Public Works could list sponsors of environmental programs, but could not link to their sites. Beaches and Harbors and Parks and Recreation could name their official sponsors. Private designers of websites who have donated their services may be acknowledged, but no link is permitted to their websites)." xml:space="preserve">
+    <value>(Exemples: Travaux publics peut répertorier les sponsors des programmes environnementaux, mais ne peut pas accéder à leurs sites. Beaches and Harbards et Parks and Recreation peuvent nommer leurs sponsors officiels. Les concepteurs privés de sites Web qui ont fait don de leurs services peuvent être reconnus, mais aucun lien autorisés sur leurs sites Web).</value>
+  </data>
+  <data name="Government Agencies; Academic Institutions; Public-Private Partnerships; Professional, Cultural, Community-Based and Non-Profit Organizations" xml:space="preserve">
+    <value>Organismes gouvernementaux; Institutions académique; Partenariats public-privé; Organisations professionnelles, culturelles, communautaires et à but non lucratif</value>
+  </data>
+  <data name="Links to Search Engines" xml:space="preserve">
+    <value>Liens vers les moteurs de recherche</value>
+  </data>
+  <data name="Links to search engines are permitted where a Department’s core mission would be advanced by presenting information from a variety of sources external to the Department." xml:space="preserve">
+    <value>Les liens vers les moteurs de recherche sont autorisés là où la mission principale du Département serait avancée en présentant des informations provenant de diverses sources externes au Département.</value>
+  </data>
+  <data name="No Links to Sites Containing Inappropriate Material" xml:space="preserve">
+    <value>Pas de liens vers des sites contenant du matériel inapproprié</value>
+  </data>
+  <data name="Links to sites containing inappropriate material are expressly prohibited." xml:space="preserve">
+    <value>Les liens vers des sites contenant du matériel inapproprié sont expressément interdits.</value>
+  </data>
+  <data name="Notice of Leaving County Website and a Disclaimer" xml:space="preserve">
+    <value>Avis de départ du site Web du comté et renonciation</value>
+  </data>
+  <data name="When providing links to non-County sites, Departments must include a disclaimer on their home page disavowing endorsement or responsibility for the material on sites being linked. Departments must also use a standardized alert or redirect script page that warns users they are leaving the County site and allows them to proceed or cancel. This alert would read: “You are now leaving the Los Angeles County website and linking to a website that may contain commercial advertising. Los Angeles County does not endorse or support any of the advertising that may be contained on this site." xml:space="preserve">
+    <value>Lorsqu'ils fournissent des liens vers des sites autres que des comtés, les départements doivent inclure une clause de non-responsabilité sur leur page d'accueil renonçant à toute approbation ou responsabilité relative au contenu des sites liés. Les départements doivent également utiliser une page de script d'alerte ou de redirection normalisée qui avertit les utilisateurs qu'ils quittent le site du comté et leur permet de poursuivre ou d'annuler. Cette alerte se lirait comme suit: «Vous quittez maintenant le site Web du comté de Los Angeles et accédez à un site Web susceptible de contenir des publicités. Le comté de Los Angeles n'approuve ni ne soutient aucune des publicités pouvant figurer sur ce site.</value>
+  </data>
+  <data name="Contractors that Create Websites for County Departments" xml:space="preserve">
+    <value>Entrepreneurs qui créent des sites Web pour les départements de comté</value>
+  </data>
+  <data name="Departments shall provide website contractors with a copy of this policy and website design guidelines, which contractors shall observe in creating webpages for Departments. The requirement to follow these guidelines shall be set forth in the contract for website design. The Internal Services Department, in creating webpages for Departments. shall enforce the adopted guidelines." xml:space="preserve">
+    <value>Les départements doivent fournir aux contractants de sites Web une copie de la présente politique et des directives de conception de site Web, qu'ils doivent prendre en compte lors de la création de pages Web pour les départements. L'obligation de suivre ces directives doit être stipulée dans le contrat de conception de site Web. Le département des services internes, dans la création de pages Web pour les départements. doit appliquer les directives adoptées.</value>
+  </data>
+  <data name="Authority of Chief Executive Officer" xml:space="preserve">
+    <value>Autorité du chef de la direction</value>
+  </data>
+  <data name="The CEO is authorized to order removal of material from Department websites which is noncompliant with these adopted guidelines." xml:space="preserve">
+    <value>Le directeur général est autorisé à ordonner le retrait du contenu des sites Web du département qui n'est pas conforme aux directives adoptées.</value>
+  </data>
+  <data name="Link Maintenance" xml:space="preserve">
+    <value>Maintenance de lien</value>
+  </data>
+  <data name="Departments shall routinely check links on their websites to ensure they are functional and contain no material which violates this policy." xml:space="preserve">
+    <value>Les ministères doivent vérifier régulièrement les liens sur leurs sites Web pour s'assurer qu'ils sont fonctionnels et qu'ils ne contiennent aucun matériel enfreignant cette politique.</value>
+  </data>
+  <data name="Language Translation" xml:space="preserve">
+    <value>La traduction de la langue</value>
+  </data>
+  <data name="The website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of this website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version." xml:space="preserve">
+    <value>Le site Web a déployé des efforts raisonnables pour fournir une traduction exacte. Cependant, aucune traduction automatique ou informatisée n'est parfaite et ne vise pas à remplacer les méthodes de traduction humaines ou traditionnelles. Le texte officiel est la version anglaise de ce site. Si vous avez des questions concernant l'exactitude des informations fournies par la version traduite du site Web, veuillez vous reporter à l'édition anglaise du site Web, qui est la version officielle.</value>
+  </data>
+</root>

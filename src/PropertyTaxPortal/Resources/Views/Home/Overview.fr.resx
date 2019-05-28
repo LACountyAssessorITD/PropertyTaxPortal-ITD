@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OVERVIEW" xml:space="preserve">
+    <value>Vue d'ensemble</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>Aperçu de l'impôt foncier</value>
+  </data>
+  <data name="How The Property Tax System Works" xml:space="preserve">
+    <value>Comment fonctionne le système d'imposition foncière</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>Les domaines de responsabilité</value>
+  </data>
+  <data name="PROPERTY TAX OVERVIEW" xml:space="preserve">
+    <value>APERÇU DE L'IMPÔT FONCIER</value>
+  </data>
+  <data name="The Assessor, Auditor-Controller, and Treasurer and Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process." xml:space="preserve">
+    <value>L’évaluateur, le contrôleur des comptes, le trésorier et le collecteur d’impôts collaborent pour établir et comptabiliser votre facture et votre paiement d’impôts fonciers. La Commission d’appel de l’évaluation supervise le processus d’évaluation.</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Assesseur</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Auditeur Contrôleur</value>
+  </data>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>Trésorier et percepteur des impôts</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Commission d'appel en matière d'évaluation</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the &quot;Assessment Roll.&quot; The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>L’évaluateur du comté de Los Angeles établit l’évaluation de votre propriété en évaluant celle-ci en vertu des lois applicables de l’État. La valeur évaluée est ensuite placée sur une liste avec toutes les autres propriétés dans le comté de Los Angeles et cette liste s'appelle le "Tableau d'évaluation". L'évaluateur approuve et applique également toutes les exemptions, qui sont ajoutées au rôle d'évaluation. Le rôle d'évaluation est ensuite présenté au vérificateur-contrôleur du comté de Los Angeles pour traitement ultérieur.</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter &amp; bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>Le contrôleur-contrôleur du comté de Los Angeles ajoute des évaluations directes au rôle d'évaluation, puis applique les taux d'imposition, qui consistent en un prélèvement général (1%) et des taux d'imposition du service de la dette (votant et cautionné) à la valeur nécessaire pour créer un rôle d'évaluation élargie. Le rôle étendu est ensuite envoyé au trésorier et collecteur d’impôts du comté de Los Angeles pour la distribution des factures d’impôt et la collecte des paiements.</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer and Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
+    <value>La mission du trésorier et percepteur des impôts du comté de Los Angeles est de facturer, de percevoir, de débourser, d’investir, d’emprunter et de protéger des fonds et des biens. Le département fournit également des services d'exécution, d'audit, de conseil, d'éducation, d'administration de succession et d'information publique. Le trésorier et le collecteur d’impôts perçoivent les taxes garanties et non garanties</value>
+  </data>
+  <data name="Secured Taxes" xml:space="preserve">
+    <value>Taxes Sécurisées</value>
+  </data>
+  <data name=" are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc." xml:space="preserve">
+    <value> sont des taxes sur des biens immobiliers, tels que des terrains vacants, des constructions sur des terrains, c’est-à-dire des immeubles de commerce / bureaux, des maisons, des appartements, etc.</value>
+  </data>
+  <data name="Unsecured Taxes" xml:space="preserve">
+    <value>Taxes non garanties</value>
+  </data>
+  <data name=" are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
+    <value> Les taxes sur les évaluations telles que le mobilier de bureau, le matériel, les avions et les bateaux, ainsi que les taxes foncières qui ne sont pas des privilèges sur les biens immobiliers.</value>
+  </data>
+  <data name="The Los Angeles County Assessment Appeals Board is an independent agency, separate from the Assessor’s Office, who hears property assessment disputes between taxpayers and the Assessor, and based upon the evidence presented at the hearing, makes a fair, impartial decision on your property’s assessed value.  The Assessment Appeals Board’s decision can result in a decrease, increase, or no change in your property’s assessed value." xml:space="preserve">
+    <value>La commission d'appel en matière d'évaluation du comté de Los Angeles est un organisme indépendant, distinct du bureau de l'évaluateur, qui entend les litiges en matière d'évaluation foncière entre les contribuables et l'évaluateur. Sur la base des preuves présentées à l'audience, elle rend une décision juste et impartiale sur la valeur évaluée de votre propriété. . La décision de la Commission d’appel de l’évaluation peut entraîner une diminution, une augmentation ou une absence de modification de la valeur établie de votre propriété.</value>
+  </data>
+  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
+    <value>LES DOMAINES DE RESPONSABILITÉ</value>
+  </data>
+  <data name="The following lists may help you to determine which department can assist in answering your inquiry." xml:space="preserve">
+    <value>Les listes suivantes peuvent vous aider à déterminer quel service peut vous aider à répondre à votre demande.</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>Valeurs évaluées</value>
+  </data>
+  <data name="Boats &amp; Aircraft" xml:space="preserve">
+    <value>Bateaux et avions</value>
+  </data>
+  <data name="Business Property Taxes" xml:space="preserve">
+    <value>Taxes foncières commerciales</value>
+  </data>
+  <data name="Change in Ownership" xml:space="preserve">
+    <value>Changement de propriétaire</value>
+  </data>
+  <data name="Decline in Value" xml:space="preserve">
+    <value>Déclin de la valeur</value>
+  </data>
+  <data name="Exemptions - General" xml:space="preserve">
+    <value>Exemptions - Général</value>
+  </data>
+  <data name="Homeowner's Exemption" xml:space="preserve">
+    <value>Exemption du propriétaire</value>
+  </data>
+  <data name="Name/Address Change" xml:space="preserve">
+    <value>Changement de nom / adresse</value>
+  </data>
+  <data name="Parent/Child Transfers (Propositions 58 and 193)" xml:space="preserve">
+    <value>Transferts parent / enfant (propositions 58 et 193)</value>
+  </data>
+  <data name="Property Maps &amp; Data" xml:space="preserve">
+    <value>Cartes et données de propriété</value>
+  </data>
+  <data name="Senior Citizen Transfer (Propositions 60 and 90)" xml:space="preserve">
+    <value>Transfert de personnes âgées (propositions 60 et 90)</value>
+  </data>
+  <data name="Supplemental Bills" xml:space="preserve">
+    <value>Factures supplémentaires</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Évaluations directes</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Taxe générale</value>
+  </data>
+  <data name="Refunds - Change in Taxes Due to an Assessor Value Change" xml:space="preserve">
+    <value>Remboursements - Modification des taxes due à une modification de la valeur de l'évaluateur</value>
+  </data>
+  <data name="Special Districts" xml:space="preserve">
+    <value>Districts spéciaux</value>
+  </data>
+  <data name="Tax Rate Areas" xml:space="preserve">
+    <value>Zones de taux d'imposition</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Endettement voté</value>
+  </data>
+  <data name="Assessment Appeals Rules" xml:space="preserve">
+    <value>Règles d'appel en matière d'évaluation</value>
+  </data>
+  <data name="Current Seminar Schedule" xml:space="preserve">
+    <value>Calendrier actuel du séminaire</value>
+  </data>
+  <data name="How to Prepare for Your Hearing" xml:space="preserve">
+    <value>Comment se préparer à votre audience</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Enregistrement d'agent fiscal</value>
+  </data>
+  <data name="File an Appeal Online" xml:space="preserve">
+    <value>Déposer un appel en ligne</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Secured Taxes" xml:space="preserve">
+    <value>Trésorier et percepteur des impôts - Impôts garantis</value>
+  </data>
+  <data name="Defaulted Property Taxes" xml:space="preserve">
+    <value>Impôts fonciers en défaut</value>
+  </data>
+  <data name="Due Dates" xml:space="preserve">
+    <value>Les dates d'échéance</value>
+  </data>
+  <data name="Payment Amounts" xml:space="preserve">
+    <value>Montants du paiement</value>
+  </data>
+  <data name="Payment Posting" xml:space="preserve">
+    <value>Enregistrement de paiement</value>
+  </data>
+  <data name="Public Auction" xml:space="preserve">
+    <value>Enchères publiques</value>
+  </data>
+  <data name="Refunds - Overpayment of Taxes Due (Non-Value Related)" xml:space="preserve">
+    <value>Remboursements - Paiement en trop d'impôts dus (non liés à la valeur)</value>
+  </data>
+  <data name="Senior Citizen, Blind &amp; Disabled Persons Property Tax Postponement &amp; Assistance Programs" xml:space="preserve">
+    <value>Programmes d'aide et de report de l'impôt foncier pour personnes âgées, aveugles et handicapés</value>
+  </data>
+  <data name="Tax Bills (Secured)" xml:space="preserve">
+    <value>Factures d'impôt (sécurisé)</value>
+  </data>
+  <data name="Properties Subject to the Tax Collector's Power to Sell" xml:space="preserve">
+    <value>Propriétés soumises au pouvoir de vente du percepteur</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Unsecured Taxes" xml:space="preserve">
+    <value>Trésorier et percepteur d'impôts - Taxes non garanties</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>Liens</value>
+  </data>
+  <data name="Mobile Home Tax Clearance" xml:space="preserve">
+    <value>Dédouanement pour habitations mobiles</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>Paiements</value>
+  </data>
+  <data name="Tax Bills (Unsecured)" xml:space="preserve">
+    <value>Factures fiscales (non garanties)</value>
+  </data>
+  <data name="Unsecured Due Dates" xml:space="preserve">
+    <value>Dates d'échéance non garanties</value>
+  </data>
+</root>
