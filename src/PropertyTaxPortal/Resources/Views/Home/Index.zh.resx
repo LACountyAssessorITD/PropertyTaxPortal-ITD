@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Latest News" xml:space="preserve">
+    <value>最新消息</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>歡迎</value>
+  </data>
+  <data name="Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
+    <value>評估員，審計員 - 財務主管，財務主管和稅務員以及評估上訴委員會已準備好此物業稅信息網站，為納稅人提供有關洛杉磯縣財產稅流程的概述和一些具體細節。</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>估稅員</value>
+  </data>
+  <data name="Acting Auditor-Controller" xml:space="preserve">
+    <value>代理審計員 - 財務主任</value>
+  </data>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>財務主管和稅務員</value>
+  </data>
+  <data name="Executive Officer" xml:space="preserve">
+    <value>主管人員</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>評估上訴委員會</value>
+  </data>
+  <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
+    <value>支付財產&lt;/ br&gt;稅</value>
+  </data>
+  <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
+    <value>物業稅管理系統</value>
+  </data>
+  <data name="Change Mailing Address" xml:space="preserve">
+    <value>更改郵寄地址</value>
+  </data>
+  <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
+    <value>物業地址搜索</value>
+  </data>
+  <data name="Self-Service Options" xml:space="preserve">
+    <value>自助服務選項</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>責任範圍</value>
+  </data>
+  <data name="Self-Service" xml:space="preserve">
+    <value>自助服務</value>
+  </data>
+  <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
+    <value>訂閱財務主管和稅務員的電子郵件通知服務</value>
+  </data>
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
+    <value>洛杉磯縣稅務員介紹在線物業稅管理系統。</value>
+  </data>
+  <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
+    <value>行政廳（HOA）安全信息</value>
+  </data>
+  <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
+    <value>上年度稅收郵寄聲明</value>
+  </data>
+  <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
+    <value>評估員警告房主的房地產欺詐和誤導性的請求</value>
+  </data>
+  <data name="Santa Clarita Sand Fire" xml:space="preserve">
+    <value>聖克拉麗塔沙火</value>
+  </data>
+  <data name="Aliso Canyon Gas Leak" xml:space="preserve">
+    <value>Aliso Canyon Gas Leak</value>
+  </data>
+  <data name="Save by Understanding the Property Tax System" xml:space="preserve">
+    <value>通過了解物業稅系統節省</value>
+  </data>
+  <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
+    <value>洛杉磯縣物業稅在線支付</value>
+  </data>
+</root>
