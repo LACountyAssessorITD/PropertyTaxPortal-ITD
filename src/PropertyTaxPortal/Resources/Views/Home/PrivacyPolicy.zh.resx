@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PRIVACY POLICY" xml:space="preserve">
+    <value>隱私政策</value>
+  </data>
+  <data name="The Board of Supervisors of Los Angeles County recognizes the public’s concern about privacy on the Internet. This privacy statement establishes how information gathered about you from your visit to our website will be used by this website’s operators. As a visitor, however, you should be aware that much information submitted to Los Angeles County is public information under the laws of the State of California. Under some circumstances, we may be required to disclose such information in accordance with the California Public Records Act or other legal requirements." xml:space="preserve">
+    <value>洛杉磯縣監事會認識到公眾對互聯網隱私的關注。本隱私聲明確定了本網站運營商將如何使用您訪問我們網站時收集的有關您的信息。但是，作為訪問者，您應該知道提交給洛杉磯縣的大量信息是根據加利福尼亞州法律提供的公共信息。在某些情況下，我們可能會被要求根據“加州公共記錄法”或其他法律要求披露此類信息。</value>
+  </data>
+  <data name="The following describes how information may be collected depending on your activities at this website:" xml:space="preserve">
+    <value>以下介紹瞭如何根據您在本網站的活動收集信息：</value>
+  </data>
+  <data name="If you read or download information:" xml:space="preserve">
+    <value>如果您閱讀或下載信息：</value>
+  </data>
+  <data name="We may collect and store information for statistical purposes. For example, we may count the number of visitors to the different sections of our site to help us make them more useful. The information collected may include such items as the name and domain of the host from which you access the Internet, the Internet Protocol (IP) address of the computer you are using or your browser software and operating system. This information does not identify you personally." xml:space="preserve">
+    <value>我們可能出於統計目的收集和存儲信息。例如，我們可能會計算訪問我們網站不同部分的訪問者人數，以幫助我們提高他們的實用性。收集的信息可能包括您訪問Internet的主機的名稱和域，您正在使用的計算機的Internet協議（IP）地址或瀏覽器軟件和操作系統等項目。此信息無法識別您的個人身份。</value>
+  </data>
+  <data name="If you send E-mail to this website:" xml:space="preserve">
+    <value>如果您發送電子郵件到這個網站：</value>
+  </data>
+  <data name="By sending us an electronic mail message, you may be sending us personal information (i.e., your name, address, e-mail address, etc.). We may store the name and address of the requester in order to respond to the request or otherwise resolve the subject matter of your e-mail." xml:space="preserve">
+    <value>通過向我們發送電子郵件，您可能會向我們發送個人信息（即您的姓名，地址，電子郵件地址等）。我們可能會存儲請求者的姓名和地址，以便回復請求或以其他方式解決您的電子郵件主題。</value>
+  </data>
+  <data name="If you register with a County Department or agency or request other specific information:" xml:space="preserve">
+    <value>如果您在縣部門或機構註冊或要求其他特定信息：</value>
+  </data>
+  <data name="Some County department or agency websites may ask visitors who request specific information to fill out a registration form. For example, vendors requesting access to Requests for Bids, Requests for Proposals or homeowners or businesses requesting Permits, may be asked to provide their names, addresses, e-mail addresses and other pertinent information to ensure we can process and deliver the information requested. Other information may be collected at these sites through questionnaires, feedback forms, or other means, to enable us to determine a visitor’s interests, with the goal of providing better service." xml:space="preserve">
+    <value>某些縣部門或代理機構網站可能會要求請求特定信息的訪問者填寫註冊表。例如，要求訪問投標請求，建議請求或房主或要求許可的企業的供應商可能會被要求提供他們的姓名，地址，電子郵件地址和其他相關信息，以確保我們能夠處理和提供所要求的信息。可以通過問卷，反饋表或其他方式在這些站點收集其他信息，以使我們能夠確定訪客的興趣，目的是提供更好的服務。</value>
+  </data>
+  <data name="Links to Non-Los Angeles County (Third Party) Websites" xml:space="preserve">
+    <value>鏈接到非洛杉磯縣（第三方）網站</value>
+  </data>
+  <data name="Our website also contains links to information located on websites maintained by other public agencies and private organizations. Once you access an individual document that links you to another website, you are subject to the privacy policy of the website containing that document." xml:space="preserve">
+    <value>我們的網站還包含位於由其他公共機構和私人組織維護的網站上的信息的鏈接。一旦您訪問將您鏈接到另一個網站的單個文檔，您將受到包含該文檔的網站的隱私政策的約束。</value>
+  </data>
+  <data name="About Cookies" xml:space="preserve">
+    <value>關於Cookies</value>
+  </data>
+  <data name="A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server." xml:space="preserve">
+    <value>Cookie是包含由Web服務器發送到Web瀏覽器並由瀏覽器存儲的標識符（字母和數字字符串）的文件。每當瀏覽器從服務器請求頁面時，標識符就被發送回服務器。</value>
+  </data>
+  <data name="Cookies may be either &quot;persistent&quot; cookies or &quot;session&quot; cookies. A persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed." xml:space="preserve">
+    <value>Cookie可以是“持久性”Cookie或“會話”Cookie。持久性cookie將由Web瀏覽器存儲，並且在其設置的到期日期之前保持有效，除非用戶在到期日之前刪除;另一方面，會話cookie將在用戶會話結束時（Web瀏覽器關閉時）到期。</value>
+  </data>
+  <data name="Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies." xml:space="preserve">
+    <value>Cookie通常不包含任何個人識別用戶的信息，但我們存儲的有關您的個人信息可能與存儲在Cookie中並從Cookie中獲取的信息相關聯。</value>
+  </data>
+  <data name="Cookies We Use" xml:space="preserve">
+    <value>我們使用的Cookies</value>
+  </data>
+  <data name="When your browser or device allows it, we use both session cookies and persistent cookies to better understand how you interact with our services, to monitor aggregate usage patterns, and to personalize and otherwise operate our services." xml:space="preserve">
+    <value>當您的瀏覽器或設備允許時，我們使用會話cookie和持久性cookie來更好地了解您與我們的服務的交互方式，監控聚合使用模式，以及個性化和操作我們的服務。</value>
+  </data>
+  <data name="We also use cookies for the following purposes:" xml:space="preserve">
+    <value>我們還將cookie用於以下目的：</value>
+  </data>
+  <data name="a. authentication - to identify you when you visit our website and as you navigate our website" xml:space="preserve">
+    <value>一個。身份驗證 - 在您訪問我們的網站時以及瀏覽我們的網站時識別您的身份</value>
+  </data>
+  <data name="b. status - to help us to determine if you are logged into our website" xml:space="preserve">
+    <value>灣狀態 - 幫助我們確定您是否登錄我們的網站</value>
+  </data>
+  <data name="c. personalization - to store information about your preferences and to personalize our website for you" xml:space="preserve">
+    <value>C。個性化 - 存儲有關您的偏好的信息並為您個性化我們的網站</value>
+  </data>
+  <data name="d. security - as an element of the security measures used to protect user accounts, including preventing fraudulent use of login credentials and to protect our website and services generally" xml:space="preserve">
+    <value>d。安全性 - 作為用於保護用戶帳戶的安全措施的一個要素，包括防止欺詐性地使用登錄憑據以及保護我們的網站和服務</value>
+  </data>
+  <data name="e. advertising - to help us display advertisements that will be relevant to you;" xml:space="preserve">
+    <value>即廣告 - 幫助我們展示與您相關的廣告;</value>
+  </data>
+  <data name="f. analysis - to help us analyze the use and performance of our website and services." xml:space="preserve">
+    <value>F。分析 - 幫助我們分析我們網站和服務的使用和表現。</value>
+  </data>
+  <data name="Cookies Used by Our Third-Party Providers" xml:space="preserve">
+    <value>我們的第三方供應商使用的Cookie</value>
+  </data>
+  <data name="Our service providers use cookies and those cookies may be stored on your computer when you visit our Service." xml:space="preserve">
+    <value>我們的服務提供商使用cookie，當您訪問我們的服務時，這些cookie可能會存儲在您的計算機上。</value>
+  </data>
+  <data name="We use Google Analytics to analyze the use of our website. Google Analytics gathers information about website use by means of cookies. The information gathered relating to our website is used to create reports about the use of our website." xml:space="preserve">
+    <value>我們使用Google Analytics來分析我們網站的使用情況。 Google Analytics（分析）通過Cookie收集有關網站使用的信息。收集的與我們網站相關的信息用於創建有關我們網站使用情況的報告。</value>
+  </data>
+  <data name="We, and other third parties we work with, place cookies when you visit the Services and when you open emails that we send you in order to provide you more specific content about services we or our third-party providers offer. For instance, we publish Google AdSense advertisements on our website. To determine your interests, Google will track your behavior on our website and on other websites across the web using cookies." xml:space="preserve">
+    <value>我們和我們合作的其他第三方在您訪問服務時以及當您打開我們發送給您的電子郵件時放置Cookie，以便為您提供有關我們或我們的第三方提供商提供的服務的更具體內容。例如，我們會在我們的網站上發布Google AdSense廣告。為了確定您的興趣，Google將使用Cookie跟踪您在我們網站和其他網站上的行為。</value>
+  </data>
+  <data name="Managing Cookies" xml:space="preserve">
+    <value>管理Cookie</value>
+  </data>
+  <data name="Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser and from version to version. Please refer to your browser documentation on how to manage your cookies." xml:space="preserve">
+    <value>大多數瀏覽器允許您拒絕接受cookie並刪除cookie。這樣做的方法因瀏覽器和版本而異。有關如何管理cookie，請參閱瀏覽器文檔。</value>
+  </data>
+  <data name="Blocking all or some cookies may have a negative impact upon the usability of the Services." xml:space="preserve">
+    <value>阻止所有或部分cookie可能會對服務的可用性產生負面影響。</value>
+  </data>
+</root>
