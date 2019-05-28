@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accessibility" xml:space="preserve">
+    <value>접근성</value>
+  </data>
+  <data name="The County of Los Angeles (County) is committed to the universal accessibility of information contained on its website (Website). The design of the Website is optimized to ensure broad readability and usability, which include accessibility criteria and features for people with disabilities, so they may be able to see, understand, navigate, interact, and contribute to the Website effectively." xml:space="preserve">
+    <value>LA 카운티 (카운티)는 웹 사이트 (웹 사이트)에 포함 된 정보의 보편적 인 접근 가능성에 전념합니다. 웹 사이트의 디자인은 장애인을위한 접근성 기준 및 기능을 포함하여 광범위한 가독성 및 유용성을 보장하도록 최적화되어 있으므로 웹 사이트를보고, 이해하고, 탐색하고, 상호 작용하고, 효과적으로 기여할 수 있습니다.</value>
+  </data>
+  <data name="The Website is currently a combination of new and old technologies, and new and existing content. The Website Home Page and supporting web pages are compliant with Section 508 of the United States Rehabilitation Act of 1973, as amended, and the Americans with Disabilities Act (together, Guidelines). However, the Website contains links to departmental, agency and third-party websites and features that may not be in compliance with the Guidelines. Some existing content may meet only the minimum required compliance standards. This will be resolved as departments and others update their existing websites and continue efforts to monitor and maintain acceptable compliance levels. However, this may not include third party software/tools, search engines, widgets, Add Ins, APIs, etc. which the County does not maintain or control." xml:space="preserve">
+    <value>이 웹 사이트는 현재 신구약과 신규 및 기존 콘텐츠의 조합입니다. 웹 사이트 홈 페이지 및 지원 웹 페이지는 1973 년 미국 재활법 섹션 508, 수정 된 미국 장애인 법 (함께, 지침)을 준수합니다. 그러나 웹 사이트에는 지침을 준수하지 않을 수도있는 부서, 대행사 및 제 3 자 웹 사이트 및 기능에 대한 링크가 포함되어 있습니다. 기존의 일부 컨텐츠는 최소 필수 준수 표준 만 충족시킬 수 있습니다. 이는 부서 및 다른 사람들이 기존 웹 사이트를 업데이트하고 수용 가능한 준수 수준을 모니터링하고 유지하기위한 노력을 계속하면서 해결 될 것입니다. 그러나 카운티에서 유지 관리하지 않는 제 3 자 소프트웨어 / 도구, 검색 엔진, 위젯, 애드 인, API 등은 여기에 포함될 수 없습니다.</value>
+  </data>
+  <data name="Cascading Style Sheets (CSS)" xml:space="preserve">
+    <value>계단식 스타일 시트 (CSS)</value>
+  </data>
+  <data name="The Website pages are designed with style sheets that allow a consistent, uniform appearance of headings and body text.This design feature also enables some browsers to override the Website style sheets with their own, thus providing content that is easier viewed by those who have visual impairments." xml:space="preserve">
+    <value>웹 사이트 페이지는 머리글과 본문 텍스트의 일관되고 균일 한 모양을 허용하는 스타일 시트로 설계되었습니다.이 디자인 기능을 통해 일부 브라우저는 웹 사이트 스타일 시트를 자체 스타일로 덮어 쓸 수 있으므로 시각적 인 사람들이 쉽게 볼 수있는 내용을 제공합니다 장애.</value>
+  </data>
+  <data name="Color Contrast" xml:space="preserve">
+    <value>색 대비</value>
+  </data>
+  <data name="The background and foreground colors on the Website pages provide sufficient contrast to be viewable by someone having color deficits." xml:space="preserve">
+    <value>웹 사이트 페이지의 배경색과 전경색은 색약자가 볼 수있는 충분한 대비를 제공합니다.</value>
+  </data>
+</root>
