@@ -118,63 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="NEWS &amp; ANNOUNCEMENTS" xml:space="preserve">
-    <value>NOTICIAS Y ANUNCIOS</value>
+    <value>뉴스 및 발표</value>
   </data>
   <data name="Featured Articles" xml:space="preserve">
-    <value>Artículos relacionados</value>
+    <value>특집 기사</value>
   </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
-    <value>Suscríbase al Servicio de Notificación por Correo Electrónico del Tesorero y Recaudador de Impuestos</value>
+    <value>재무 및 세수 수집 전자 메일 알림 서비스 가입</value>
   </data>
   <data name="The Treasurer and Tax Collector now offers a courtesy Email Notification Service. By subscribing property owners in the County can receive Email blasts about property tax payment deadlines and other important property tax related information. " xml:space="preserve">
-    <value>El Tesorero y el Recaudador de impuestos ahora ofrecen un servicio de notificación por correo electrónico de cortesía. Al suscribirse, los dueños de propiedades en el Condado pueden recibir correos electrónicos masivos sobre los plazos de pago de impuestos a la propiedad y otra información importante relacionada con el impuesto a la propiedad.</value>
+    <value>재무 및 세무 담당자는 이제 예의 이메일 알림 서비스를 제공합니다. 카운티의 부동산 소유자를 구독하면 재산세 납부 기한 및 기타 중요한 재산세 관련 정보에 대한 이메일을받을 수 있습니다.</value>
   </data>
   <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
-    <value>El recaudador de impuestos del condado de Los Ángeles presenta un sistema de administración de impuestos a la propiedad en línea.</value>
+    <value>로스 앤젤레스 군 세금 징수 원은 온라인 재산세 관리 시스템을 도입했습니다.</value>
   </data>
   <data name="The Tax Collector has developed a new Property Tax Management System to address the particular needs of owners of multiple properties. We encourage you to evaluate the Property Tax Management System to realize efficiencies in the management of the property or properties you own, and payments of related tax obligations." xml:space="preserve">
-    <value>El Recaudador de Impuestos ha desarrollado un nuevo Sistema de Gestión de Impuestos a la Propiedad para atender las necesidades particulares de los propietarios de múltiples propiedades. Lo alentamos a que evalúe el Sistema de administración de impuestos a la propiedad para lograr eficiencias en la administración de la propiedad o propiedades que posee y los pagos de las obligaciones fiscales relacionadas.</value>
+    <value>Tax Collector는 여러 부동산 소유주의 특정 요구를 해결하기 위해 새로운 부동산 세금 관리 시스템을 개발했습니다. 재산세 관리 시스템을 평가하여 소유 한 재산이나 재산의 관리 효율성을 높이고 관련 세금 의무를 이행하는 것이 좋습니다.</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
-    <value>Información de seguridad del Hall of Administration (HOA)</value>
+    <value>관리 홀 (HOA) 보안 정보</value>
   </data>
   <data name="Additional security measures implemented at the Hall of Administration." xml:space="preserve">
-    <value>Medidas de seguridad adicionales implementadas en la sala de administración.</value>
+    <value>추가 보안 조치는 행정 장관에서 시행됩니다.</value>
   </data>
   <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
-    <value>Declaración de envío de impuestos de años anteriores</value>
+    <value>전년도 세금 신고서 발송</value>
   </data>
   <data name="The Los Angeles County Treasurer and Tax Collector is in the process of mailing approximately 69,000 Statements of Prior Year Taxes notifying taxpayers of prior year defaulted property taxes." xml:space="preserve">
-    <value>El Tesorero y Recaudador de Impuestos del Condado de Los Ángeles está enviando por correo aproximadamente 69,000 Declaraciones de Impuestos del año anterior que notifican a los contribuyentes los impuestos de propiedad en mora del año anterior.</value>
+    <value>로스 앤젤레스 카운티 재무 및 세무 담당자는 납세자들에게 이전에 부과 된 재산세에 대해 약 69,000 건의 전년도 세금 계산서를 우편으로 보내고 있습니다.</value>
   </data>
   <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
-    <value>El asesor advierte a los propietarios de viviendas sobre el fraude inmobiliario y las solicitudes engañosas</value>
+    <value>Assessor, 주택 사기로 부동산 사기 및 오해 의혹 제기</value>
   </data>
   <data name="Assessor Prang is alerting all property owners of increasing reports of deed scam solicitations and misleading mailings being sent across Los Angeles County" xml:space="preserve">
-    <value>El Asesor Prang está alertando a todos los dueños de propiedades de los crecientes informes de solicitudes de estafa de escrituras y correos engañosos que se envían a través del Condado de Los Ángeles</value>
+    <value>Assessor Prang은 로스 앤젤레스 카운티 전역에 발송 된 증서 사기 요청 및 오도 된 우편물에 대한 증언을 모든 부동산 소유자에게 알리고 있습니다.</value>
   </data>
   <data name="Santa Clarita Sand Fire" xml:space="preserve">
-    <value>Santa Clarita arena fuego</value>
+    <value>산타 클라리 타 모래 불</value>
   </data>
   <data name="The Office of the Assessor is currently reviewing applications for tax relief for property owners affected by the Sand Fire." xml:space="preserve">
-    <value>La Oficina del Asesor actualmente está revisando las solicitudes de desgravación fiscal para los propietarios afectados por Sand Fire.</value>
+    <value>Assessor의 Office는 현재 Sand Fire의 영향을받은 재산 소유자에 대한 세금 감면 신청서를 검토 중입니다.</value>
   </data>
   <data name="Aliso Canyon Gas Leak" xml:space="preserve">
-    <value>Fuga de gas en el cañón de Aliso</value>
+    <value>알리소 캐년 가스 누출</value>
   </data>
   <data name="Residents Affected by the Aliso Canyon Gas Leak" xml:space="preserve">
-    <value>Residentes afectados por la fuga de gas de Aliso Canyon</value>
+    <value>알리소 캐년 가스 누출의 영향을받은 주민들</value>
   </data>
   <data name="Save by Understanding the Property Tax System" xml:space="preserve">
-    <value>Ahorre entendiendo el sistema de impuesto a la propiedad</value>
+    <value>재산세 시스템 이해를 통한 절약</value>
   </data>
   <data name="Second Installment Property Taxes Delinquent if Not Paid by April 10" xml:space="preserve">
-    <value>Impuestos a la propiedad en la segunda cuota atrasados si no se pagan antes del 10 de abril</value>
+    <value>4 월 10 일까지 납부하지 않으면 연체 된 2 번째 할부 재산세</value>
   </data>
   <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
-    <value>Pagos en línea del impuesto a la propiedad en el condado de Los Ángeles</value>
+    <value>카운티 Los Angeles 부동산 세 온라인 지불</value>
   </data>
   <data name="Important Information Regarding Making Property Tax Payments by Electronic Check (eCheck). Please read if your bank account has a debit block to prevent unauthorized organizations from debiting your account." xml:space="preserve">
-    <value>Información importante sobre la realización de pagos de impuestos a la propiedad mediante cheque electrónico (eCheck). Lea si su cuenta bancaria tiene un bloqueo de débito para evitar que las organizaciones no autorizadas debiten de su cuenta.</value>
+    <value>전자 수표로 재산세 납부에 관한 중요한 정보 (eCheck). 승인되지 않은 조직이 귀하의 계좌에서 출금을 거부하는 것을 방지하기 위해 은행 계좌에 직불 블록이 있는지 확인하십시오.</value>
   </data>
 </root>
