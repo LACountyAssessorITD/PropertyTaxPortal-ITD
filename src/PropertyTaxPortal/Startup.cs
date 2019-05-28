@@ -11,11 +11,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PropertyTaxPortal.Models;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
-
+using NWebsec.AspNetCore.Middleware;
 using PropertyTaxPortal.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -59,7 +59,7 @@ namespace PropertyTaxPortal
             });
             services.ConfigureApplicationCookie(options => {
 
-                options.Events = new Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents
+                options.Events = new CookieAuthenticationEvents
                 {
                     OnRedirectToLogin = ctx =>
                     {
@@ -163,6 +163,10 @@ namespace PropertyTaxPortal
             });
             
             app.UseHttpsRedirection();
+            app.UseRewriter(new RewriteOptions()
+                .AddRedirectToWww()
+                
+            );
             //-----------------LOCALIZATION MIDDLEWARE-----------------//
             var supportedCultures = new[]
             {
@@ -187,11 +191,41 @@ namespace PropertyTaxPortal
                 SupportedUICultures = supportedCultures
             });
 
+            
+
 
             //-----------------END LOCALIZATION MIDDLEWARE-----------------//
-            
-            
-           
+
+
+            //app.UseCsp(opts => opts
+                
+            //    .FontSources(s => s.Self()
+            //    .CustomSources("https://ajax.aspnetcdn.com")
+            //    .CustomSources("https://www.googletagmanager.com")
+            //    .CustomSources("https://use.fontawesome.com")
+            //    .CustomSources("https://cse.google.com")
+            //    .CustomSources("https://apis.google.com")
+            //    .CustomSources("https://www.googletagmanager.com"))
+
+            //    .FormActions(s => s.Self())
+            //    .FrameAncestors(s => s.Self())
+            //    .ImageSources(s => s.Self())
+            //    .StyleSources(s => s.Self()
+            //    .CustomSources("https://ajax.aspnetcdn.com")
+            //    .CustomSources("https://www.googletagmanager.com")
+            //    .CustomSources("https://use.fontawesome.com")
+            //    .CustomSources("https://cse.google.com")
+            //    .CustomSources("https://apis.google.com")
+            //    .CustomSources("https://www.googletagmanager.com"))
+            //    .ScriptSources(s => s.Self()
+            //    .UnsafeInline()
+            //    .CustomSources("https://ajax.aspnetcdn.com")
+            //    .CustomSources("https://fonts.googleapis.com")
+            //    .CustomSources("https://use.fontawesome.com")
+            //    .CustomSources("https://cse.google.com")
+            //    .CustomSources("https://apis.google.com")
+            //    .CustomSources("https://www.googletagmanager.com"))
+            //);
 
             app.UseMvc(routes =>
             {
