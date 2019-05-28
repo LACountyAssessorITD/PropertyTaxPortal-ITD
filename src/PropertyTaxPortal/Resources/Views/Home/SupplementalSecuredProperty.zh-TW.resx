@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>补充担保财产税法案</value>
+  </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>请单击任何数字以查看帐单组件的说明。您也可以向下滚动到页面底部以查看完整的字段说明列表。</value>
+  </data>
+  <data name="Supplemental Property Bill" xml:space="preserve">
+    <value>补充财产法案</value>
+  </data>
+  <data name="to the Annual Secured Property Tax Bill and both must be paid by the date shown on the bill.  California State" xml:space="preserve">
+    <value>年度安全财产税法案，必须在法案上显示的日期支付。加州州</value>
+  </data>
+  <data name="law requires the reassessment of property as of the first day of the month following an ownership change or the" xml:space="preserve">
+    <value>法律要求在所有权变更后的一个月的第一天重新评估财产</value>
+  </data>
+  <data name="completion of new construction.  A change in ownership or a completion of new construction that occurs between" xml:space="preserve">
+    <value>完成新建筑。所有权的变更或之间发生的新建筑的完成</value>
+  </data>
+  <data name="January 1 and May 31 results in two supplemental assessments and triggers two Supplemental Property Tax Bills." xml:space="preserve">
+    <value>1月1日和5月31日进行两次补充评估，并触发两份补充财产税单。</value>
+  </data>
+  <data name="The first Supplemental Bill is for the remainder of the fiscal year in which the event occurred.  The second" xml:space="preserve">
+    <value>第一份补充法案是针对事件发生的财政年度的剩余时间。第二</value>
+  </data>
+  <data name="Supplemental Bill is for the subsequent fiscal year." xml:space="preserve">
+    <value>补充法案适用于下一个财政年度。</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>评估员的身份证号码</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification" xml:space="preserve">
+    <value>该区域标识了评估员的身份</value>
+  </data>
+  <data name="Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the" xml:space="preserve">
+    <value>号码 - （1234-567-890）。评估员的身份证号码（AIN）是一个十位数的号码</value>
+  </data>
+  <data name="Office of the Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a" xml:space="preserve">
+    <value>评估办公室对洛杉矶县的每一块不动产。这个十位数的AIN由a组成</value>
+  </data>
+  <data name="four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>四位数地图册号码（1234），一个三位数的页码（567）和一个三位数的地块编号（890）。</value>
+  </data>
+  <data name="Year and Sequence" xml:space="preserve">
+    <value>年份和顺序</value>
+  </data>
+  <data name="This area identifies the Year and Sequence – (16 000).  This five digit" xml:space="preserve">
+    <value>该区域标识年份和序列 - （16 000）。这五位数</value>
+  </data>
+  <data name="number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a" xml:space="preserve">
+    <value>号码由两位数的纳税年度和三位数的序列或帐单类型组成。例如，a</value>
+  </data>
+  <data name="2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010." xml:space="preserve">
+    <value>2016年度账单显示为16 000，但2016年补充账单可能显示为16 010。</value>
+  </data>
+  <data name="Transfer/New Construction Date" xml:space="preserve">
+    <value>转让/新建工程日期</value>
+  </data>
+  <data name="This date is used as the basis for the change in" xml:space="preserve">
+    <value>此日期用作更改的基础</value>
+  </data>
+  <data name="assessed value.  The term &quot;Transfer Date&quot; refers to the recording date of an ownership change.  &quot;New Construction" xml:space="preserve">
+    <value>评估价值。 “转移日期”一词是指所有权变更的记录日期。 “新建筑</value>
+  </data>
+  <data name="Date&quot; refers to the date the new construction was completed." xml:space="preserve">
+    <value>日期“是指新建筑完工的日期。</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>一般税收征收</value>
+  </data>
+  <data name="This tax amount is the general one percent (1%) tax rate levied" xml:space="preserve">
+    <value>此税额是征收的一般百分之一（1％）税率</value>
+  </data>
+  <data name="against every property in the County.  The calculation is 1 percent multiplied by the &quot;Net Taxable Value." xml:space="preserve">
+    <value>针对县内的每一处房产。计算结果为1％乘以“净应税价值”。</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>投票负债</value>
+  </data>
+  <data name="Voter-approved taxes levied against property." xml:space="preserve">
+    <value>选民批准的税收对财产征收。</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>测评</value>
+  </data>
+  <data name="The owner of record and the mailing address on" xml:space="preserve">
+    <value>记录的所有者和邮寄地址</value>
+  </data>
+  <data name="file with the Office of the Assessor." xml:space="preserve">
+    <value>向评估办公室提交文件。</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>电子资金转账（EFT）号码</value>
+  </data>
+  <data name="The EFT number is used to make" xml:space="preserve">
+    <value>EFT号码用于制作</value>
+  </data>
+  <data name="credit card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit card payment," xml:space="preserve">
+    <value>信用卡/ Visa借记卡通过电话付款。要发起信用卡/ Visa借记卡付款，</value>
+  </data>
+  <data name="please call 1(888) 473-0835.  However, there are processing fees when paying by credit card/Visa Debit card." xml:space="preserve">
+    <value>请致电1（888）473-0835。但是，使用信用卡/ Visa借记卡付款时需要支付手续费。</value>
+  </data>
+  <data name="Each transaction is limited to $99,999.99.  The PIN number is used to make electronic check payment to protect" xml:space="preserve">
+    <value>每笔交易限额为99,999.99美元。 PIN码用于进行电子支票付款以保护</value>
+  </data>
+  <data name="your security and privacy and is used to pay your current year and defaulted taxes online.  Effective with tax" xml:space="preserve">
+    <value>您的安全和隐私，用于在线支付当前年度和违约税。有效的税收</value>
+  </data>
+  <data name="bills issued after August 2013, the PIN may contain all alpha, all numeric, or alpha/numeric characters." xml:space="preserve">
+    <value>在2013年8月之后发行的账单，PIN可能包含所有字母，所有数字或字母/数字字符。</value>
+  </data>
+  <data name="The alpha letter 'O' is not used in the PIN.  The '0' is always a number zero." xml:space="preserve">
+    <value>PIN中未使用字母“O”字母。 '0'始终为数字零。</value>
+  </data>
+  <data name="Full Year Supplemental Taxes Due" xml:space="preserve">
+    <value>到期的全年补充税</value>
+  </data>
+  <data name="The amount of taxes calculated for the entire" xml:space="preserve">
+    <value>计算整个税额</value>
+  </data>
+  <data name="fiscal year.  See Prorated Supplemental Taxes for the actual amount due." xml:space="preserve">
+    <value>财政年度。有关实际应付金额，请参阅按比例分配的补充税。</value>
+  </data>
+  <data name="Prorated Supplemental Taxes" xml:space="preserve">
+    <value>按比例分配补充税</value>
+  </data>
+  <data name="The amount of total taxes due and payable for this" xml:space="preserve">
+    <value>应付和应付的总税额</value>
+  </data>
+  <data name="bill.  See Field Number 12 for installment amounts and due dates." xml:space="preserve">
+    <value>法案。有关分期付款金额和到期日，请参见第12号字段。</value>
+  </data>
+  <data name="Proration Factor" xml:space="preserve">
+    <value>比例因子</value>
+  </data>
+  <data name="The mathematical factor used to prorate the amount of taxes" xml:space="preserve">
+    <value>用于按比例分摊税额的数学因素</value>
+  </data>
+  <data name="due.  For more information, refer to the back of the bill." xml:space="preserve">
+    <value>因。有关更多信息，请参阅该法案的背面。</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>特别信息</value>
+  </data>
+  <data name="This section provides important information about the" xml:space="preserve">
+    <value>本节提供有关的重要信息</value>
+  </data>
+  <data name="bill and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>账单并说明是否有拖欠的税款。</value>
+  </data>
+  <data name="Total Taxes Due" xml:space="preserve">
+    <value>应缴税额总计</value>
+  </data>
+  <data name="This is the total amount due for the bill.  The Annual Secured" xml:space="preserve">
+    <value>这是账单的总金额。年度担保</value>
+  </data>
+  <data name="Property Tax Bill has two payment stubs.  The first installment is due" xml:space="preserve">
+    <value>物业税条例草案有两个付款存根。第一期到期</value>
+  </data>
+  <data name="November 1 and is delinquent December 10.  If the first installment is not received or United States Postal Service" xml:space="preserve">
+    <value>11月1日是12月10日欠款。如果没有收到第一期或美国邮政局</value>
+  </data>
+  <data name="(USPS) postmarked by December 10, a 10 percent penalty will be imposed.  The second installment is due February 1" xml:space="preserve">
+    <value>（美国邮政）于12月10日邮戳，将征收10％的罚款。第二期将于2月1日到期</value>
+  </data>
+  <data name="and is delinquent April 10.  If the second installment is not received or USPS postmarked on or before April 10," xml:space="preserve">
+    <value>如果未在4月10日或之前收到第二期或USPS邮戳，则拖欠</value>
+  </data>
+  <data name="a 10 percent penalty and a $10.00 cost will be imposed.  Taxpayers must be sure to include the payment stub with" xml:space="preserve">
+    <value>将征收10％的罚款和10.00美元的费用。纳税人必须确保包含付款存根</value>
+  </data>
+  <data name="any type of payment and write their Assessor's Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>任何类型的付款，并在支票上写下他们的评估员身份证号码和年份/序列号。</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>物业位置和/或物业描述</value>
+  </data>
+  <data name="The property address and/or" xml:space="preserve">
+    <value>物业地址和/或</value>
+  </data>
+  <data name="legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>与评估办公室备案的法律说明。</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>当前评估价值</value>
+  </data>
+  <data name="The Assessor’s valuation of the property after" xml:space="preserve">
+    <value>评估员对房产的估价</value>
+  </data>
+  <data name="the adjustment." xml:space="preserve">
+    <value>调整。</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>先前的评估价值</value>
+  </data>
+  <data name="This is the Assessor’s valuation of" xml:space="preserve">
+    <value>这是评估员的估值</value>
+  </data>
+  <data name="the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>最近转让/新建工程日期之前的财产。</value>
+  </data>
+  <data name="Net Assessed Value" xml:space="preserve">
+    <value>净评估价值</value>
+  </data>
+  <data name="The current assessed value less the prior assessed value." xml:space="preserve">
+    <value>当前评估值减去先前评估值。</value>
+  </data>
+  <data name="Attention Statement" xml:space="preserve">
+    <value>注意声明</value>
+  </data>
+  <data name="This statement is meant to notify taxpayers that" xml:space="preserve">
+    <value>本声明旨在通知纳税人</value>
+  </data>
+  <data name="there may be other taxes owed." xml:space="preserve">
+    <value>可能还有其他欠税。</value>
+  </data>
+  <data name="Assessor's Regional Office" xml:space="preserve">
+    <value>评估员的区域办事处</value>
+  </data>
+  <data name="This is the address and telephone number" xml:space="preserve">
+    <value>这是地址和电话号码</value>
+  </data>
+  <data name="to contact for questions regarding the assessed value of the property." xml:space="preserve">
+    <value>联系以获取有关房产评估价值的问题。</value>
+  </data>
+  <data name="Less Exemptions" xml:space="preserve">
+    <value>减少豁免</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>豁免（如有）将从评估价值中扣除。</value>
+  </data>
+  <data name="Net Supplemental Value" xml:space="preserve">
+    <value>净补充价值</value>
+  </data>
+  <data name="This is the difference between the current value and" xml:space="preserve">
+    <value>这是当前值与之间的差异</value>
+  </data>
+  <data name="the prior value less exemptions." xml:space="preserve">
+    <value>先前的价值减去豁免。</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>退回支票费用</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>银行退回的支票收取50美元的费用。</value>
+  </data>
+  <data name="2nd Installment Delinquency Date" xml:space="preserve">
+    <value>第二期分期付款日期</value>
+  </data>
+  <data name="If paying the bill in installments," xml:space="preserve">
+    <value>如果分期付款，</value>
+  </data>
+  <data name="the second installment must be received or United States Postal Service postmarked by this date, or a 10 percent" xml:space="preserve">
+    <value>必须收到第二期或美国邮政服务在此日期邮戳，或10％</value>
+  </data>
+  <data name="penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>罚款和罚款10.00美元。</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>第二期到期</value>
+  </data>
+  <data name="Amount of taxes due for the second installment." xml:space="preserve">
+    <value>第二期应缴税额。</value>
+  </data>
+  <data name="Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor’s" xml:space="preserve">
+    <value>纳税人必须确保将付款存根包含在任何类型的付款中并写下他们的评估员</value>
+  </data>
+  <data name="Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>带有年份/序号的识别号码。</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>汇款金额</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount" xml:space="preserve">
+    <value>如果未在拖欠日期付款，请汇款</value>
+  </data>
+  <data name="stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number" xml:space="preserve">
+    <value>这里说。包括付款存根和付款并写下评估员的识别号码</value>
+  </data>
+  <data name="and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>和支票上的年份/序号。</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>支票付款</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector" xml:space="preserve">
+    <value>支票支付给洛杉矶县税务员</value>
+  </data>
+  <data name="and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification" xml:space="preserve">
+    <value>并邮寄到这个地址。包括付款存根和付款并写下评估员的身份证明</value>
+  </data>
+  <data name="Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>支票上的编号和年份/序号。</value>
+  </data>
+  <data name="1st Installment Delinquency Date" xml:space="preserve">
+    <value>第一期分期付款日期</value>
+  </data>
+  <data name="If paying the bill in full, payment" xml:space="preserve">
+    <value>如果全额支付账单，付款</value>
+  </data>
+  <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments," xml:space="preserve">
+    <value>必须收到或美国邮政服务（USPS）在此日期前邮戳。如果分期付款，</value>
+  </data>
+  <data name="the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>必须在此日期之前收到第一期或USPS邮戳，否则将被处以10％的罚款。</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>第一期到期</value>
+  </data>
+  <data name="Amount of taxes due for the first installment." xml:space="preserve">
+    <value>第一期应付的税额。</value>
+  </data>
+</root>
