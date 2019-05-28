@@ -120,6 +120,9 @@
   <data name="Annual Secured Property Tax Bill" xml:space="preserve">
     <value>Impuesto anual de propiedad garantizada</value>
   </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Haga clic en cualquier número para ver la descripción del componente de la factura. También puede desplazarse hacia la parte inferior de la página para ver una lista completa de las descripciones de los campos.</value>
+  </data>
   <data name="Annual Secured Property Tax Bills" xml:space="preserve">
     <value>Facturas anuales de impuestos garantizados de propiedad</value>
   </data>

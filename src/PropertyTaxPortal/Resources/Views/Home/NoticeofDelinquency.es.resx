@@ -120,6 +120,9 @@
   <data name="NOTICE OF DELINQUENCY" xml:space="preserve">
     <value>AVISO DE ENTREGA</value>
   </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Haga clic en cualquier número para ver la descripción del componente de la factura. También puede desplazarse hacia la parte inferior de la página para ver una lista completa de las descripciones de los campos.</value>
+  </data>
   <data name="Notice of Delinquency" xml:space="preserve">
     <value>Aviso de Delincuencia</value>
   </data>
@@ -250,7 +253,7 @@
     <value>se impondrá La segunda cuota vence el 1 de febrero y está en mora el 10 de abril. Si la segunda cuota es</value>
   </data>
   <data name="not received or USPS postmarked on or before April 10, a 10 percent penalty and a $10.00 cost will be imposed." xml:space="preserve">
-    <value>no se recibió o USPS con sello postal el 10 de abril o antes, se impondrá una multa del 10 por ciento y un costo de $ 10.00.</value>
+    <value>no se recibió o USPS con sello postal el 10 de abril o antes, se impondrá una multa del 10% y un costo de $ 10.00.</value>
   </data>
   <data name="Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor's Identification" xml:space="preserve">
     <value>Los contribuyentes deben asegurarse de incluir el talón de pago con cualquier tipo de pago y escribir su Identificación del Asesor</value>
@@ -265,7 +268,7 @@
     <value>Si paga la factura en su totalidad, pago.</value>
   </data>
   <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments, the" xml:space="preserve">
-    <value>debe ser recibido o el Servicio Postal de los Estados Unidos (USPS) con sello postal de esta fecha Si se paga a plazos, el</value>
+    <value>debe ser recibido o el Servicio Postal de los Estados Unidos (USPS) con matasellos de esta fecha. Si se paga a plazos, el</value>
   </data>
   <data name="first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
     <value>la primera cuota debe recibirse o USPS con sello postal para esta fecha, o se impondrá una multa del 10 por ciento.</value>

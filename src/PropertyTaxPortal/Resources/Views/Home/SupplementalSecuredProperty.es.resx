@@ -120,6 +120,9 @@
   <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
     <value>Impuesto suplementario sobre la propiedad asegurada</value>
   </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Haga clic en cualquier número para ver la descripción del componente de la factura. También puede desplazarse hacia la parte inferior de la página para ver una lista completa de las descripciones de los campos.</value>
+  </data>
   <data name="Supplemental Property Bill" xml:space="preserve">
     <value>Ley de propiedad suplementaria</value>
   </data>
@@ -133,7 +136,7 @@
     <value>finalización de nueva construcción. Un cambio en la propiedad o la finalización de una nueva construcción que se produce entre</value>
   </data>
   <data name="January 1 and May 31 results in two supplemental assessments and triggers two Supplemental Property Tax Bills." xml:space="preserve">
-    <value>El 1 de enero y el 31 de mayo dan como resultado dos evaluaciones suplementarias y activan dos Facturas de Impuesto a la Propiedad Suplementarias.</value>
+    <value>El 1 de enero y el 31 de mayo dan como resultado dos evaluaciones suplementarias y activan dos Facturas de Impuesto de Propiedad Suplementarias.</value>
   </data>
   <data name="The first Supplemental Bill is for the remainder of the fiscal year in which the event occurred.  The second" xml:space="preserve">
     <value>El primer proyecto de ley complementario es para el resto del año fiscal en el que ocurrió el evento. El segundo</value>
@@ -244,7 +247,7 @@
     <value>El monto del total de impuestos adeudados y pagaderos por este</value>
   </data>
   <data name="bill.  See Field Number 12 for installment amounts and due dates." xml:space="preserve">
-    <value>cuenta. Ver el número de campo 12 para conocer los montos de las cuotas y las fechas de vencimiento</value>
+    <value>cuenta. Consulte el Número de campo 12 para conocer los montos de las cuotas y las fechas de vencimiento.</value>
   </data>
   <data name="Proration Factor" xml:space="preserve">
     <value>Factor de prorrateo</value>
@@ -415,7 +418,7 @@
     <value>Si paga la factura en su totalidad, pago.</value>
   </data>
   <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments," xml:space="preserve">
-    <value>debe ser recibido o el Servicio Postal de los Estados Unidos (USPS) con sello postal de esta fecha Si se paga a plazos,</value>
+    <value>debe ser recibido o el Servicio Postal de los Estados Unidos (USPS) con matasellos de esta fecha. Si se paga a plazos,</value>
   </data>
   <data name="the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
     <value>la primera cuota debe recibirse o USPS con sello postal para esta fecha, o se impondrá una multa del 10 por ciento.</value>

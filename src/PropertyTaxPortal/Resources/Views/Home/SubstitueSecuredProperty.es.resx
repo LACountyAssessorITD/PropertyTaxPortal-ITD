@@ -120,6 +120,9 @@
   <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
     <value>Impuesto sobre la propiedad asegurada sustituto</value>
   </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Haga clic en cualquier número para ver la descripción del componente de la factura. También puede desplazarse hacia la parte inferior de la página para ver una lista completa de las descripciones de los campos.</value>
+  </data>
   <data name="The Substitute Secured Property Tax Bill is in lieu of the Annual Secured or Supplemental Property Tax Bills. The bill" xml:space="preserve">
     <value>La Factura de Impuesto a la Propiedad Garantizada de Sustituto sustituye a las Facturas Anuales de Impuestos a la Propiedad Garantizadas o Suplementarias. La factura</value>
   </data>
