@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OVERVIEW" xml:space="preserve">
+    <value>ОБЗОР</value>
+  </data>
+  <data name="Property Tax Overview" xml:space="preserve">
+    <value>Обзор налога на недвижимость</value>
+  </data>
+  <data name="How The Property Tax System Works" xml:space="preserve">
+    <value>Как работает система налога на имущество</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>Области ответственности</value>
+  </data>
+  <data name="PROPERTY TAX OVERVIEW" xml:space="preserve">
+    <value>ОБЗОР НАЛОГА НА ИМУЩЕСТВО</value>
+  </data>
+  <data name="The Assessor, Auditor-Controller, and Treasurer and Tax Collector work together to produce and account for your property tax bill and payment. The Assessment Appeals Board oversees the assessment process." xml:space="preserve">
+    <value>Оценщик, аудитор-контролер, казначей и сборщик налогов работают вместе, чтобы составить и учесть ваш счет и платеж по налогу на имущество. Апелляционный совет по оценке контролирует процесс оценки.</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>асессор</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Аудитор-контроллер</value>
+  </data>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>Казначей и сборщик налогов</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Апелляционная комиссия по оценке</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State laws. The assessed value is then placed on a list with all other properties in Los Angeles County and this list is called the &quot;Assessment Roll.&quot; The Assessor also approves and applies all exemptions, which are added to the Assessment Roll. The Assessment Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>Оценщик округа Лос-Анджелес устанавливает оценочную стоимость вашего имущества путем оценки стоимости этого имущества в соответствии с действующим законодательством штата. Оценочная стоимость затем помещается в список со всеми другими свойствами в округе Лос-Анджелес, и этот список называется «Оценочный список». Оценщик также утверждает и применяет все исключения, которые добавляются в Оценочную ведомость. Затем оценочный лист представляется контролеру-контролеру округа Лос-Анджелес для дальнейшей обработки.</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Assessment Roll then applies the tax rates, which consists of general (1%) levy and debt service (voter &amp; bonded) tax rates to the value to create an Extended Assessment Roll. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>Контролер-аудитор округа Лос-Анджелес добавляет прямые оценки к списку оценки, а затем применяет налоговые ставки, которые состоят из общих (1%) налоговых сборов и налогов на обслуживание долга (избиратель и связанный), к значению для создания расширенного списка оценки. Затем расширенный список отправляется казначею и сборщику налогов округа Лос-Анджелес для распределения индивидуальных налоговых накладных и сбора платежей.</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer and Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services. The Treasurer and Tax Collector collects secured and unsecured taxes." xml:space="preserve">
+    <value>Задача казначея и сборщика налогов округа Лос-Анджелес состоит в том, чтобы выставлять счета, собирать, выплачивать, инвестировать, заимствовать и защищать денежные средства и имущество. Департамент также предоставляет правоохранительные, аудиторские, консалтинговые, образовательные, административные и имущественные услуги. Казначей и сборщик налогов собирает обеспеченные и необеспеченные налоги.</value>
+  </data>
+  <data name="Secured Taxes" xml:space="preserve">
+    <value>Обеспеченные налоги</value>
+  </data>
+  <data name=" are taxes on real property, such as vacant land, structures on land, i.e. business/office building, home, apartments, etc." xml:space="preserve">
+    <value> это налоги на недвижимость, такую как пустующая земля, строения на земле, то есть бизнес / офисное здание, дом, квартиры и т. д.</value>
+  </data>
+  <data name="Unsecured Taxes" xml:space="preserve">
+    <value>Необеспеченные налоги</value>
+  </data>
+  <data name=" are taxes on assessments such as office furniture, equipment, airplanes and boats, as well as property taxes that are not liens against the real property." xml:space="preserve">
+    <value> Это налоги на оценки, такие как офисная мебель, оборудование, самолеты и лодки, а также налоги на имущество, которые не являются залоговым удержанием в отношении недвижимости.</value>
+  </data>
+  <data name="The Los Angeles County Assessment Appeals Board is an independent agency, separate from the Assessor’s Office, who hears property assessment disputes between taxpayers and the Assessor, and based upon the evidence presented at the hearing, makes a fair, impartial decision on your property’s assessed value.  The Assessment Appeals Board’s decision can result in a decrease, increase, or no change in your property’s assessed value." xml:space="preserve">
+    <value>Апелляционный совет по оценке округа Лос-Анджелес является независимым агентством, независимым от офиса оценщика, который рассматривает споры об оценке имущества между налогоплательщиками и оценщиком и на основании представленных на слушании доказательств принимает справедливое и беспристрастное решение относительно оценочной стоимости вашего имущества. , Решение Апелляционного совета по оценке может привести к уменьшению, увеличению или отсутствию изменений в оценочной стоимости вашего имущества.</value>
+  </data>
+  <data name="AREAS OF RESPONSIBILITY" xml:space="preserve">
+    <value>ОБЛАСТИ ОТВЕТСТВЕННОСТИ</value>
+  </data>
+  <data name="The following lists may help you to determine which department can assist in answering your inquiry." xml:space="preserve">
+    <value>Следующие списки могут помочь вам определить, какой отдел может помочь ответить на ваш запрос.</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>Оцененные ценности</value>
+  </data>
+  <data name="Boats &amp; Aircraft" xml:space="preserve">
+    <value>Лодки и самолеты</value>
+  </data>
+  <data name="Business Property Taxes" xml:space="preserve">
+    <value>Налоги на коммерческую недвижимость</value>
+  </data>
+  <data name="Change in Ownership" xml:space="preserve">
+    <value>Смена собственника</value>
+  </data>
+  <data name="Decline in Value" xml:space="preserve">
+    <value>Снижение стоимости</value>
+  </data>
+  <data name="Exemptions - General" xml:space="preserve">
+    <value>Исключения - Общее</value>
+  </data>
+  <data name="Homeowner's Exemption" xml:space="preserve">
+    <value>Освобождение домовладельца</value>
+  </data>
+  <data name="Name/Address Change" xml:space="preserve">
+    <value>Изменение имени / адреса</value>
+  </data>
+  <data name="Parent/Child Transfers (Propositions 58 and 193)" xml:space="preserve">
+    <value>Переводы между родителями и детьми (предложения 58 и 193)</value>
+  </data>
+  <data name="Property Maps &amp; Data" xml:space="preserve">
+    <value>Карты недвижимости и данные</value>
+  </data>
+  <data name="Senior Citizen Transfer (Propositions 60 and 90)" xml:space="preserve">
+    <value>Передача пожилого гражданина (предложения 60 и 90)</value>
+  </data>
+  <data name="Supplemental Bills" xml:space="preserve">
+    <value>Дополнительные счета</value>
+  </data>
+  <data name="Direct Assessments" xml:space="preserve">
+    <value>Прямые оценки</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Общий налог</value>
+  </data>
+  <data name="Refunds - Change in Taxes Due to an Assessor Value Change" xml:space="preserve">
+    <value>Возвраты - изменение налогов из-за изменения стоимости оценщика</value>
+  </data>
+  <data name="Special Districts" xml:space="preserve">
+    <value>Особые районы</value>
+  </data>
+  <data name="Tax Rate Areas" xml:space="preserve">
+    <value>Области налоговых ставок</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Проголосовавшая задолженность</value>
+  </data>
+  <data name="Assessment Appeals Rules" xml:space="preserve">
+    <value>Правила апелляционной оценки</value>
+  </data>
+  <data name="Current Seminar Schedule" xml:space="preserve">
+    <value>Текущее расписание семинаров</value>
+  </data>
+  <data name="How to Prepare for Your Hearing" xml:space="preserve">
+    <value>Как подготовиться к слушанию</value>
+  </data>
+  <data name="Tax Agent Registration" xml:space="preserve">
+    <value>Регистрация налогового агента</value>
+  </data>
+  <data name="File an Appeal Online" xml:space="preserve">
+    <value>Подать апелляцию онлайн</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Secured Taxes" xml:space="preserve">
+    <value>Казначей и сборщик налогов - обеспеченные налоги</value>
+  </data>
+  <data name="Defaulted Property Taxes" xml:space="preserve">
+    <value>Налоги на имущество по умолчанию</value>
+  </data>
+  <data name="Due Dates" xml:space="preserve">
+    <value>Сроки выполнения</value>
+  </data>
+  <data name="Payment Amounts" xml:space="preserve">
+    <value>Суммы оплаты</value>
+  </data>
+  <data name="Payment Posting" xml:space="preserve">
+    <value>Проводка платежа</value>
+  </data>
+  <data name="Public Auction" xml:space="preserve">
+    <value>Публичный аукцион</value>
+  </data>
+  <data name="Refunds - Overpayment of Taxes Due (Non-Value Related)" xml:space="preserve">
+    <value>Возвраты - переплата налогов, подлежащих уплате (не связанных с ценностью)</value>
+  </data>
+  <data name="Senior Citizen, Blind &amp; Disabled Persons Property Tax Postponement &amp; Assistance Programs" xml:space="preserve">
+    <value>Программы отсрочки и помощи по налогу на имущество пожилых граждан, слепых и инвалидов</value>
+  </data>
+  <data name="Tax Bills (Secured)" xml:space="preserve">
+    <value>Налоговые накладные (обеспеченные)</value>
+  </data>
+  <data name="Properties Subject to the Tax Collector's Power to Sell" xml:space="preserve">
+    <value>Недвижимость, подлежащая продаже налоговой инкассатором</value>
+  </data>
+  <data name="Treasurer and Tax Collector - Unsecured Taxes" xml:space="preserve">
+    <value>Казначей и сборщик налогов - Необеспеченные налоги</value>
+  </data>
+  <data name="Liens" xml:space="preserve">
+    <value>Залоги</value>
+  </data>
+  <data name="Mobile Home Tax Clearance" xml:space="preserve">
+    <value>Передвижная налоговая декларация</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>платежи</value>
+  </data>
+  <data name="Tax Bills (Unsecured)" xml:space="preserve">
+    <value>Налоговые счета (необеспеченные)</value>
+  </data>
+  <data name="Unsecured Due Dates" xml:space="preserve">
+    <value>Необеспеченные сроки</value>
+  </data>
+</root>

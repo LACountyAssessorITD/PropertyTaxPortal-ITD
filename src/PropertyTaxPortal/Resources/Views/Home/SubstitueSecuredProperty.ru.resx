@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Substitute Secured Property Tax Bill" xml:space="preserve">
+    <value>Замещенный законопроект о налоге на обеспеченное имущество</value>
+  </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Пожалуйста, нажмите на любой номер, чтобы просмотреть описание компонента счета. Вы также можете прокрутить вниз страницы, чтобы просмотреть полный список описаний полей.</value>
+  </data>
+  <data name="The Substitute Secured Property Tax Bill is in lieu of the Annual Secured or Supplemental Property Tax Bills. The bill" xml:space="preserve">
+    <value>Законопроект о замене налога на обеспеченное имущество заменяет ежегодные счета на налог с обеспеченного или дополнительного имущества. Счет</value>
+  </data>
+  <data name="can be used to remit payment or serve as a record of payment activity as of the date the bill was printed." xml:space="preserve">
+    <value>может использоваться для перевода платежа или служить отчетом о платежной активности на дату распечатки счета.</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>Идентификационный номер оценщика</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number – (1234-567-890). The Assessor’s Identification Number (AIN) is a " xml:space="preserve">
+    <value>В этой области указан идентификационный номер оценщика - (1234-567-890). Идентификационный номер оценщика (AIN) является</value>
+  </data>
+  <data name="ten-digit number assigned by the Office of the Assessor to each piece of real property in Los Angeles County. This ten-digit AIN is made up of a four-digit Map " xml:space="preserve">
+    <value>десятизначный номер, присваиваемый Управлением оценщика каждому объекту недвижимости в округе Лос-Анджелес Этот десятизначный код AIN состоит из четырехзначной карты.</value>
+  </data>
+  <data name="Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>Номер книги (1234), трехзначный номер страницы (567) и трехзначный номер посылки (890).</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>Номер электронного перевода средств (EFT)</value>
+  </data>
+  <data name="The EFT number is used to make credit card/Visa Debit card payments over the telephone. To initiate a credit " xml:space="preserve">
+    <value>Номер EFT используется для осуществления платежей по кредитной карте / дебетовой карте Visa по телефону. Инициировать кредит</value>
+  </data>
+  <data name="card/Visa Debit card payment, please call 1(888) 473-0835. However, there are processing fees when paying by credit card/Visa Debit card. Each transaction is " xml:space="preserve">
+    <value>карта / Visa Оплата дебетовой картой, пожалуйста, позвоните 1 (888) 473-0835. Однако при оплате кредитной картой / дебетовой картой Visa взимаются сборы за обработку. Каждая транзакция</value>
+  </data>
+  <data name="limited to $99,999.99." xml:space="preserve">
+    <value>ограничено до 99 999,99 долларов.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>налогоплательщик</value>
+  </data>
+  <data name="The owner of record and the mailing address on file with the Office of the Assessor" xml:space="preserve">
+    <value>Владелец записи и почтовый адрес в архиве с канцелярией оценщика</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>Местоположение недвижимости и / или описание недвижимости</value>
+  </data>
+  <data name="The property address and/or legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>Адрес имущества и / или юридическое описание записываются в канцелярию оценщика.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Идентификационный номер оценщика</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification Number – (1234-567-890). The Assessor’s Identification Number (AIN) is " xml:space="preserve">
+    <value>В этой области указан идентификационный номер оценщика - (1234-567-890). Идентификационный номер оценщика (AIN)</value>
+  </data>
+  <data name="a ten-digit number assigned by the Office of the Assessor to each piece of real property in Los Angeles County. This ten-digit AIN is made up of a four-digit Map " xml:space="preserve">
+    <value>десятизначный номер, присваиваемый Управлением оценщика каждому объекту недвижимости в округе Лос-Анджелес. Этот десятизначный код AIN состоит из четырехзначной карты.</value>
+  </data>
+  <data name="Total Tax Due" xml:space="preserve">
+    <value>Общая сумма налога</value>
+  </data>
+  <data name="This is the total amount due for the bill. The Annual Secured Property Tax Bill has two payment stubs. The first installment is due November 1 " xml:space="preserve">
+    <value>Это общая сумма к оплате. Ежегодный законопроект о налоге на обеспеченное имущество имеет два платежных квитанции. Первый взнос до 1 ноября</value>
+  </data>
+  <data name="and is delinquent December 10. If the first installment is not received or United States Postal Service (USPS) postmarked by December 10, a penalty will apply. " xml:space="preserve">
+    <value>и является просроченным 10 декабря. Если первый взнос не получен или почтовая служба США (USPS) почтовым штемпелем к 10 декабря, будет применен штраф.</value>
+  </data>
+  <data name="The second installment is due February 1 and is delinquent April 10. If the second installment is not received or USPS postmarked on or before April 10, a 10 " xml:space="preserve">
+    <value>Второй взнос подлежит оплате 1 февраля и является просроченным 10 апреля. Если второй взнос не получен или почтовый штемпель USPS 10 апреля или ранее, 10</value>
+  </data>
+  <data name="percent penalty and a $10.00 cost will be imposed. Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor's " xml:space="preserve">
+    <value>Будет наложен штраф в размере процентов и 10,00 долларов США. Налогоплательщики должны обязательно включить платежную квитанцию с любым типом платежа и написать свой оценщик</value>
+  </data>
+  <data name="Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>Идентификационный номер с указанием года / порядкового номера на чеке.</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>Возвращенный чек</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>За каждый чек, возвращенный банком, взимается плата в размере 50 долларов США.</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>Текущая оценочная стоимость</value>
+  </data>
+  <data name="The Assessor’s valuation of the property after the adjustment." xml:space="preserve">
+    <value>Оценка имущества оценщиком после корректировки.</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>Предварительно оцененная стоимость</value>
+  </data>
+  <data name="This is the Assessor’s valuation of the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>Это оценка имущества оценщиком до даты недавней передачи / нового строительства.</value>
+  </data>
+  <data name="Taxable Value" xml:space="preserve">
+    <value>Налогооблагаемая стоимость</value>
+  </data>
+  <data name="The current assessed value less the prior assessed value, if any." xml:space="preserve">
+    <value>Текущая оценочная стоимость за вычетом предыдущей оценочной стоимости, если таковая имеется.</value>
+  </data>
+  <data name="Less Exemptions" xml:space="preserve">
+    <value>Меньше освобождений</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>Исключения, если таковые имеются, вычитаются из оценочной стоимости.</value>
+  </data>
+  <data name="Net Taxable Value" xml:space="preserve">
+    <value>Чистая налогооблагаемая стоимость</value>
+  </data>
+  <data name="The difference between the current value and exemptions." xml:space="preserve">
+    <value>Разница между текущей стоимостью и льготами.</value>
+  </data>
+  <data name="2nd Installment Delinquency Date" xml:space="preserve">
+    <value>Дата просрочки второго платежа</value>
+  </data>
+  <data name="If paying the bill in installments, the second installment must be received or United States Postal Service postmarked by " xml:space="preserve">
+    <value>При оплате счета в рассрочку, второй взнос должен быть получен, или Почтовая служба Соединенных Штатов почтовым штемпелем</value>
+  </data>
+  <data name="this date, or a 10 percent penalty and a $10.00 cost will be imposed. " xml:space="preserve">
+    <value>эта дата, или 10-процентный штраф и 10,00 $ будут наложены.</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>2-й взнос</value>
+  </data>
+  <data name="Amount of taxes due for the second installment. Taxpayers must be sure to include the payment stub with any type of payment and write " xml:space="preserve">
+    <value>Сумма налогов, причитающихся за второй взнос. Налогоплательщики должны обязательно включить платежную квитанцию с любым типом платежа и написать</value>
+  </data>
+  <data name="their Assessor’s Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>идентификационный номер их оценщика с указанием года / порядкового номера на чеке.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>Сумма перевода</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the payment and write the " xml:space="preserve">
+    <value>Если оплата не произведена до даты просрочки, перечислите указанную здесь сумму. Включите платежную квитанцию (ы) с оплатой и напишите</value>
+  </data>
+  <data name="Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>Идентификационный номер оценщика и год / порядковый номер на чеке.</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>Сделать чеки к оплате</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s) with the payment " xml:space="preserve">
+    <value>Сделайте чеки подлежащими оплате сборщику налогов округа Лос-Анджелес и отправьте их по почте. Включите платежную квитанцию (ы) с оплатой</value>
+  </data>
+  <data name="and write the Assessor’s Identification Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>и запишите идентификационный номер оценщика и год / порядковый номер на чеке.</value>
+  </data>
+  <data name="1st Installment Delinquency Date" xml:space="preserve">
+    <value>Дата просрочки первого взноса</value>
+  </data>
+  <data name="If paying the bill in full, payment must be received or United States Postal Service (USPS) postmarked by this date. If " xml:space="preserve">
+    <value>Если вы оплачиваете счет в полном объеме, оплата должна быть получена или почтовый штемпель США (USPS) должен быть маркирован этой датой. Если</value>
+  </data>
+  <data name="paying in installments, the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>Оплата в рассрочку, первый взнос должен быть получен или почтовый штемпель USPS к этой дате, или будет наложен штраф в размере 10 процентов.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>1-й взнос</value>
+  </data>
+  <data name="Amount of taxes due for the first installment. Taxpayers must be sure to include the payment stub with any type of payment and write " xml:space="preserve">
+    <value>Сумма налогов, причитающихся за первый взнос. Налогоплательщики должны обязательно включить платежную квитанцию с любым типом платежа и написать</value>
+  </data>
+  <data name=" Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s) with the payment " xml:space="preserve">
+    <value> Сделайте чеки подлежащими оплате сборщику налогов округа Лос-Анджелес и отправьте их по почте. Включите платежную квитанцию (ы) с оплатой</value>
+  </data>
+</root>

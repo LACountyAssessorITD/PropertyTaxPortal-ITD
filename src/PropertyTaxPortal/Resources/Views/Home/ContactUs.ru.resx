@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CONTACT INFORMATION" xml:space="preserve">
+    <value>КОНТАКТЫ</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>асессор</value>
+  </data>
+  <data name="Auditor-Controller" xml:space="preserve">
+    <value>Аудитор-контроллер</value>
+  </data>
+  <data name="Treasurer and Tax Collector" xml:space="preserve">
+    <value>Казначей и сборщик налогов</value>
+  </data>
+  <data name="Assessment Appeals Board" xml:space="preserve">
+    <value>Апелляционная комиссия по оценке</value>
+  </data>
+  <data name="The Los Angeles County Assessor establishes the assessed value of your property by appraising the value of that property under applicable State law. The assessed value of your property is placed on the &quot;Assessment Roll&quot;. The Assessor also approves and applies all exemptions which are added to the Assessment Roll. The Roll is then presented to the Los Angeles County Auditor-Controller for further processing." xml:space="preserve">
+    <value>Оценщик округа Лос-Анджелес устанавливает оценочную стоимость вашего имущества путем оценки стоимости этого имущества в соответствии с действующим законодательством штата. Оценочная стоимость вашей собственности помещается в «Оценочный список». Оценщик также утверждает и применяет все исключения, которые добавляются в список оценки. Затем рулон представляется контролеру-контролеру округа Лос-Анджелес для дальнейшей обработки.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Assessor and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessor's Website at" xml:space="preserve">
+    <value>Нажмите кнопку ниже, чтобы увидеть области юрисдикции для Ассессора и соответствующих отделов округа. Вопросы, касающиеся этих областей, следует направлять в этот офис; или посетите веб-сайт оценщика по адресу</value>
+  </data>
+  <data name="Areas of Responsibility" xml:space="preserve">
+    <value>Области ответственности</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Toll Free" xml:space="preserve">
+    <value>Бесплатный</value>
+  </data>
+  <data name="TDD/TTY" xml:space="preserve">
+    <value>TDD / TTY</value>
+  </data>
+  <data name="Alternate TDD/TTY" xml:space="preserve">
+    <value>Альтернативный TDD / TTY</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Эл. адрес</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Веб-сайт</value>
+  </data>
+  <data name="Social" xml:space="preserve">
+    <value>Социальное</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>facebook</value>
+  </data>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>щебет</value>
+  </data>
+  <data name="YouTube" xml:space="preserve">
+    <value>YouTube</value>
+  </data>
+  <data name="Instagram" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="Flickr" xml:space="preserve">
+    <value>Flickr</value>
+  </data>
+  <data name="Click the button below to submit your property tax related questions or comments to the public service staff of the appropriate department." xml:space="preserve">
+    <value>Нажмите кнопку ниже, чтобы отправить вопросы или комментарии по налогу на имущество сотрудникам государственных служб соответствующего отдела.</value>
+  </data>
+  <data name="Public Inquiry Form" xml:space="preserve">
+    <value>Форма общественного запроса</value>
+  </data>
+  <data name="The Los Angeles County Auditor-Controller adds direct assessments to the Tax Roll then applies the General Tax Levy (1%) and Voted Indebtedness (voter &amp; bonded) tax rates to the value on the Tax Roll. This function is called &quot;extending the Roll&quot;. The Extended Roll is then sent to the Los Angeles County Treasurer and Tax Collector for individual tax bill distribution and payment collection." xml:space="preserve">
+    <value>Контролер-аудитор округа Лос-Анджелес добавляет прямые оценки в налоговую ведомость, а затем применяет налоговые ставки общего налогового сбора (1%) и голосовую задолженность (избирателей и облигаций) к значению налоговой ведомости. Эта функция называется «расширение ролла». Затем расширенный список отправляется казначею и сборщику налогов округа Лос-Анджелес для распределения индивидуальных налоговых накладных и сбора платежей.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Auditor-Controller and related County departments. Questions regarding these areas should be directed to that office; or visit the Auditor's Website at" xml:space="preserve">
+    <value>Нажмите кнопку ниже, чтобы увидеть области юрисдикции для аудитора-контролера и соответствующих отделов округа Вопросы, касающиеся этих областей, следует направлять в этот офис; или посетите веб-сайт аудитора по адресу</value>
+  </data>
+  <data name="The mission of the Los Angeles County Treasurer and Tax Collector is to bill, collect, disburse, invest, borrow, and safeguard monies and properties. The Department also provides enforcement, auditing, consulting, education, estate administration, and public information services." xml:space="preserve">
+    <value>Задача казначея и сборщика налогов округа Лос-Анджелес состоит в том, чтобы выставлять счета, собирать, выплачивать, инвестировать, заимствовать и защищать денежные средства и имущество. Департамент также предоставляет правоохранительные, аудиторские, консалтинговые, образовательные, административные и имущественные услуги.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Treasurer and Tax Collector and related County departments. Questions regarding these areas should be directed to that office; or visit the Treasurer's Website at" xml:space="preserve">
+    <value>Нажмите кнопку ниже, чтобы увидеть области юрисдикции для казначея и сборщика налогов и связанных с ним отделов округа. Вопросы, касающиеся этих областей, следует направлять в этот офис; или посетите сайт Казначея по адресу</value>
+  </data>
+  <data name="The property taxes you pay are primarily based on your property's assessed value as determined by the County Assessor. If you disagree with the assessed value placed on your property, you can appeal that value to the Assessment Appeals Board during the filing periods stated below." xml:space="preserve">
+    <value>Налоги на недвижимость, которые вы платите, в основном основаны на оценочной стоимости вашей собственности, определенной оценщиком округа. Если вы не согласны с оценочной стоимостью вашей собственности, вы можете подать апелляцию в Апелляционную комиссию по оценке в течение периодов подачи заявок, указанных ниже.</value>
+  </data>
+  <data name="The filing periods for equalization of assessments are:" xml:space="preserve">
+    <value>Периоды подачи для выравнивания оценок:</value>
+  </data>
+  <data name="Regular Assessments - filing date is July 2 to November 30." xml:space="preserve">
+    <value>Регулярные оценки - дата подачи - 2 июля по 30 ноября.</value>
+  </data>
+  <data name="Supplemental / Adjusted / Escape / Roll Corrections - filing date is within 60 days after the mailing date on the Notice of Assessed Value Change or Supplemental / Adjusted / Escape Assessments Tax Bill." xml:space="preserve">
+    <value>Дополнительные / Скорректированные / Escape / Roll - исправления - дата подачи в течение 60 дней после даты отправки по почте в Уведомлении об изменении оценочной стоимости или Налоговой накладной Дополнительного / Скорректированного / Escape Оценок</value>
+  </data>
+  <data name="Misfortune &amp; Calamity Reassessments - file within six months of the mailing date of the Assessor's Proposed Reassessment Notice due to Property Damaged by Misfortune &amp; Calamity." xml:space="preserve">
+    <value>Переоценка несчастий и бедствий - подайте в течение шести месяцев с даты отправки уведомления о предложенной оценке оценщика в связи с имуществом, поврежденным несчастьями и бедствиями.</value>
+  </data>
+  <data name="Click the button below to see the areas of jurisdiction for the Assessment Appeals Board and related County departments. Questions regarding these areas should be directed to that office; or visit the Assessment Appeals Website at" xml:space="preserve">
+    <value>Нажмите кнопку ниже, чтобы увидеть области юрисдикции для Апелляционного совета по оценке и соответствующих департаментов округа. Вопросы, касающиеся этих областей, следует направлять в этот офис; или посетите веб-сайт апелляций по оценке по адресу</value>
+  </data>
+  <data name="and press number 5" xml:space="preserve">
+    <value>и нажмите номер 5</value>
+  </data>
+</root>

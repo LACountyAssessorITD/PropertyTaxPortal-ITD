@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Unsecured Property Tax Bill" xml:space="preserve">
+    <value>Необеспеченный законопроект о налоге на имущество</value>
+  </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Пожалуйста, нажмите на любой номер, чтобы просмотреть описание компонента счета. Вы также можете прокрутить вниз страницы, чтобы просмотреть полный список описаний полей.</value>
+  </data>
+  <data name="Unsecured bills are" xml:space="preserve">
+    <value>Необеспеченные счета</value>
+  </data>
+  <data name="mailed out every year no later than July 31st and are due no later" xml:space="preserve">
+    <value>отправляется каждый год не позднее 31 июля и не позднее</value>
+  </data>
+  <data name="than August 31st. Corrected bills are also mailed out using this" xml:space="preserve">
+    <value>чем 31 августа. Исправленные счета также отправляются по почте с использованием этого</value>
+  </data>
+  <data name="same form so make sure to check your due dates." xml:space="preserve">
+    <value>та же форма, поэтому не забудьте проверить ваши сроки.</value>
+  </data>
+  <data name="Sale or Disposal" xml:space="preserve">
+    <value>Продажа или избавление</value>
+  </data>
+  <data name="Sale or disposal of this property" xml:space="preserve">
+    <value>Продажа или распоряжение этой собственностью</value>
+  </data>
+  <data name="after January 1 does not relieve the assessee of this tax." xml:space="preserve">
+    <value>после 1 января не освобождает налогоплательщика от этого налога.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>налогоплательщик</value>
+  </data>
+  <data name="The person or entity that is responsible" xml:space="preserve">
+    <value>Физическое или юридическое лицо, которое несет ответственность</value>
+  </data>
+  <data name="for this bill." xml:space="preserve">
+    <value>за этот счет.</value>
+  </data>
+  <data name="Bill Number" xml:space="preserve">
+    <value>Номер счета</value>
+  </data>
+  <data name="The bill number for this year's bill." xml:space="preserve">
+    <value>Номер счета для счета этого года.</value>
+  </data>
+  <data name="Please be careful as this number changes every year. When referencing it always" xml:space="preserve">
+    <value>Пожалуйста, будьте осторожны, так как это число меняется каждый год. При ссылке на это всегда</value>
+  </data>
+  <data name="include the year; for example, 2016 12345678." xml:space="preserve">
+    <value>включить год; например, 2016 12345678.</value>
+  </data>
+  <data name="Situs or Location" xml:space="preserve">
+    <value>Ситус или место</value>
+  </data>
+  <data name="The location of the property " xml:space="preserve">
+    <value>Расположение недвижимости</value>
+  </data>
+  <data name="being assessed." xml:space="preserve">
+    <value>оценивается.</value>
+  </data>
+  <data name="Assessment Number" xml:space="preserve">
+    <value>Оценочный номер</value>
+  </data>
+  <data name="A number that the Assessor's" xml:space="preserve">
+    <value>Число, которое оценщик</value>
+  </data>
+  <data name="office uses to link to a specific assessment." xml:space="preserve">
+    <value>офис использует для ссылки на конкретную оценку.</value>
+  </data>
+  <data name="Assessed Values" xml:space="preserve">
+    <value>Оцененные ценности</value>
+  </data>
+  <data name="Values are determined by the" xml:space="preserve">
+    <value>Значения определяются</value>
+  </data>
+  <data name="Assessor's office. Please call the number listed here for any question" xml:space="preserve">
+    <value>Офис оценщика. Пожалуйста, позвоните по номеру, указанному здесь для любого вопроса</value>
+  </data>
+  <data name="pertaining to the assessed value of the unsecured property." xml:space="preserve">
+    <value>Относительно оценочной стоимости необеспеченного имущества.</value>
+  </data>
+  <data name="Full Value" xml:space="preserve">
+    <value>Полная стоимость</value>
+  </data>
+  <data name="Value as of January 1st as" xml:space="preserve">
+    <value>Значение по состоянию на 1 января как</value>
+  </data>
+  <data name="determined by the Assessor's office." xml:space="preserve">
+    <value>определяется офисом оценщика.</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Проголосовавшая задолженность</value>
+  </data>
+  <data name="Voter-approved taxes levied" xml:space="preserve">
+    <value>Налоги, утвержденные избирателем</value>
+  </data>
+  <data name="against property." xml:space="preserve">
+    <value>против собственности.</value>
+  </data>
+  <data name="Total Tax" xml:space="preserve">
+    <value>Общая сумма налога</value>
+  </data>
+  <data name="The total amount of tax due by the date" xml:space="preserve">
+    <value>Общая сумма налога к дате</value>
+  </data>
+  <data name="stated. A 10% penalty and collection costs will accrue after the due date." xml:space="preserve">
+    <value>заявил. 10% штрафа и расходы на сбор начисляются после даты оплаты.</value>
+  </data>
+  <data name="Please include your payment stub with any payment; write the tax year and bill" xml:space="preserve">
+    <value>Пожалуйста, включите платежную квитанцию с любым платежом; написать налоговый год и счет</value>
+  </data>
+  <data name="number on your check." xml:space="preserve">
+    <value>номер на вашем чеке.</value>
+  </data>
+  <data name="If not paid by the delinquent date" xml:space="preserve">
+    <value>Если не оплачен в срок</value>
+  </data>
+  <data name="The last date" xml:space="preserve">
+    <value>Последнее свидание</value>
+  </data>
+  <data name="that payment will be accepted without penalty. Payments postmarked or received" xml:space="preserve">
+    <value>этот платеж будет принят без штрафа. Платежи помечены или получены</value>
+  </data>
+  <data name="after this date are subject to a 10% penalty and may be subject to additional" xml:space="preserve">
+    <value>после этой даты налагается штраф в размере 10% и может быть предметом дополнительных</value>
+  </data>
+  <data name="collection costs of up to $49.00. Interest may also accrue at the rate" xml:space="preserve">
+    <value>расходы на сбор до $ 49,00. Проценты могут также начисляться по ставке</value>
+  </data>
+  <data name="of 1.5% on the base tax beginning on the second month after the due date. There" xml:space="preserve">
+    <value>1,5% от базового налога, начиная со второго месяца после установленной даты. Там</value>
+  </data>
+  <data name="is a $33.00 service charge for any check returned by the bank." xml:space="preserve">
+    <value>плата за обслуживание, возвращаемая банком, составляет 33 доллара США.</value>
+  </data>
+  <data name="10% Penalty After" xml:space="preserve">
+    <value>10% штраф после</value>
+  </data>
+  <data name="The date by which payment must be" xml:space="preserve">
+    <value>Дата, к которой платеж должен быть</value>
+  </data>
+  <data name="postmarked or received. Please mail early to avoid penalties. Postage Meter" xml:space="preserve">
+    <value>Почтовый штемпель или получил. Пожалуйста, пишите заранее, чтобы избежать штрафов. Почтовый метр</value>
+  </data>
+  <data name="Dates are not used to determine the postmark." xml:space="preserve">
+    <value>Даты не используются для определения почтового штемпеля.</value>
+  </data>
+  <data name="Year and Bill Number" xml:space="preserve">
+    <value>Год и номер счета</value>
+  </data>
+  <data name="Please include this on any" xml:space="preserve">
+    <value>Пожалуйста, включите это в любой</value>
+  </data>
+  <data name="correspondence or payment. Be careful as bill numbers change every year." xml:space="preserve">
+    <value>переписка или оплата. Будьте осторожны, так как номера счетов меняются каждый год.</value>
+  </data>
+  <data name="The number the Assessor uses to" xml:space="preserve">
+    <value>Число, которое использует оценщик</value>
+  </data>
+  <data name="track assessed property." xml:space="preserve">
+    <value>отслеживать оцениваемое имущество.</value>
+  </data>
+  <data name="Payment by Check" xml:space="preserve">
+    <value>Оплата чеком</value>
+  </data>
+  <data name="Make check payable and mail to the" xml:space="preserve">
+    <value>Сделать чек к оплате и отправить по почте</value>
+  </data>
+  <data name="address shown in the statement. Please include your payment stub with any" xml:space="preserve">
+    <value>адрес указан в заявлении. Пожалуйста, включите платежную квитанцию с любым</value>
+  </data>
+  <data name="payment and write the tax year and bill number on your check" xml:space="preserve">
+    <value>оплатите и укажите налоговый год и номер счета на своем чеке</value>
+  </data>
+</root>

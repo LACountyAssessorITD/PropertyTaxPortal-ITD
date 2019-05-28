@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PRIVACY POLICY" xml:space="preserve">
+    <value>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</value>
+  </data>
+  <data name="The Board of Supervisors of Los Angeles County recognizes the public’s concern about privacy on the Internet. This privacy statement establishes how information gathered about you from your visit to our website will be used by this website’s operators. As a visitor, however, you should be aware that much information submitted to Los Angeles County is public information under the laws of the State of California. Under some circumstances, we may be required to disclose such information in accordance with the California Public Records Act or other legal requirements." xml:space="preserve">
+    <value>Наблюдательный совет округа Лос-Анджелес признает обеспокоенность общественности в отношении конфиденциальности в Интернете. Это заявление о конфиденциальности устанавливает, как информация, собранная о вас во время вашего посещения нашего сайта, будет использоваться операторами этого сайта. Однако, как посетитель, вы должны знать, что большая часть информации, представляемой в округ Лос-Анджелес, является публичной информацией в соответствии с законодательством штата Калифорния. При некоторых обстоятельствах нам может потребоваться раскрыть такую информацию в соответствии с Законом штата Калифорния о государственных архивах или другими правовыми требованиями.</value>
+  </data>
+  <data name="The following describes how information may be collected depending on your activities at this website:" xml:space="preserve">
+    <value>Ниже описывается, как информация может быть собрана в зависимости от вашей деятельности на этом сайте:</value>
+  </data>
+  <data name="If you read or download information:" xml:space="preserve">
+    <value>Если вы читаете или загружаете информацию:</value>
+  </data>
+  <data name="We may collect and store information for statistical purposes. For example, we may count the number of visitors to the different sections of our site to help us make them more useful. The information collected may include such items as the name and domain of the host from which you access the Internet, the Internet Protocol (IP) address of the computer you are using or your browser software and operating system. This information does not identify you personally." xml:space="preserve">
+    <value>Мы можем собирать и хранить информацию в статистических целях. Например, мы можем подсчитать количество посетителей различных разделов нашего сайта, чтобы помочь нам сделать их более полезными. Собранная информация может включать такие элементы, как имя и домен хоста, с которого вы выходите в Интернет, IP-адрес используемого вами компьютера или программное обеспечение браузера и операционная система. Эта информация не идентифицирует вас лично.</value>
+  </data>
+  <data name="If you send E-mail to this website:" xml:space="preserve">
+    <value>Если вы отправите письмо на этот сайт:</value>
+  </data>
+  <data name="By sending us an electronic mail message, you may be sending us personal information (i.e., your name, address, e-mail address, etc.). We may store the name and address of the requester in order to respond to the request or otherwise resolve the subject matter of your e-mail." xml:space="preserve">
+    <value>Отправляя нам сообщение электронной почты, вы можете отправлять нам личную информацию (т. Е. Ваше имя, адрес, адрес электронной почты и т. Д.). Мы можем сохранить имя и адрес запрашивающей стороны, чтобы ответить на запрос или иным образом решить вопрос, связанный с вашей электронной почтой.</value>
+  </data>
+  <data name="If you register with a County Department or agency or request other specific information:" xml:space="preserve">
+    <value>Если вы регистрируетесь в окружном департаменте или агентстве или запрашиваете другую конкретную информацию:</value>
+  </data>
+  <data name="Some County department or agency websites may ask visitors who request specific information to fill out a registration form. For example, vendors requesting access to Requests for Bids, Requests for Proposals or homeowners or businesses requesting Permits, may be asked to provide their names, addresses, e-mail addresses and other pertinent information to ensure we can process and deliver the information requested. Other information may be collected at these sites through questionnaires, feedback forms, or other means, to enable us to determine a visitor’s interests, with the goal of providing better service." xml:space="preserve">
+    <value>Некоторые веб-сайты округа или агентства могут попросить посетителей, которые запрашивают конкретную информацию, заполнить регистрационную форму. Например, поставщики, запрашивающие доступ к запросам предложений, запросам предложений или домовладельцам или компаниям, запрашивающим разрешения, могут попросить предоставить свои имена, адреса, адреса электронной почты и другую соответствующую информацию, чтобы мы могли обрабатывать и доставлять запрашиваемую информацию. Другая информация может быть собрана на этих сайтах с помощью анкет, форм обратной связи или другими способами, чтобы мы могли определить интересы посетителя с целью предоставления лучшего обслуживания.</value>
+  </data>
+  <data name="Links to Non-Los Angeles County (Third Party) Websites" xml:space="preserve">
+    <value>Ссылки на веб-сайты округа не в Лос-Анджелесе</value>
+  </data>
+  <data name="Our website also contains links to information located on websites maintained by other public agencies and private organizations. Once you access an individual document that links you to another website, you are subject to the privacy policy of the website containing that document." xml:space="preserve">
+    <value>Наш веб-сайт также содержит ссылки на информацию, размещенную на веб-сайтах других государственных учреждений и частных организаций. Получив доступ к отдельному документу, который связывает вас с другим веб-сайтом, вы подчиняетесь политике конфиденциальности веб-сайта, содержащего этот документ.</value>
+  </data>
+  <data name="About Cookies" xml:space="preserve">
+    <value>О печенье</value>
+  </data>
+  <data name="A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server." xml:space="preserve">
+    <value>Файл cookie - это файл, содержащий идентификатор (строку букв и цифр), который отправляется веб-сервером в веб-браузер и сохраняется браузером. Затем идентификатор отправляется обратно на сервер каждый раз, когда браузер запрашивает страницу с сервера.</value>
+  </data>
+  <data name="Cookies may be either &quot;persistent&quot; cookies or &quot;session&quot; cookies. A persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed." xml:space="preserve">
+    <value>Файлы cookie могут быть «постоянными» или «сессионными». Постоянный файл cookie будет храниться в веб-браузере и будет действовать до истечения срока его действия, если пользователь не удалит его до даты окончания срока действия; Сеансовый cookie, с другой стороны, истекает в конце пользовательского сеанса, когда веб-браузер закрыт.</value>
+  </data>
+  <data name="Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies." xml:space="preserve">
+    <value>Куки-файлы обычно не содержат никакой информации, которая идентифицирует пользователя, но личная информация, которую мы храним о вас, может быть связана с информацией, хранящейся и получаемой из куки-файлов.</value>
+  </data>
+  <data name="Cookies We Use" xml:space="preserve">
+    <value>Мы используем куки</value>
+  </data>
+  <data name="When your browser or device allows it, we use both session cookies and persistent cookies to better understand how you interact with our services, to monitor aggregate usage patterns, and to personalize and otherwise operate our services." xml:space="preserve">
+    <value>Когда ваш браузер или устройство позволяет это сделать, мы используем как сеансовые, так и постоянные cookie-файлы, чтобы лучше понять, как вы взаимодействуете с нашими службами, отслеживать совокупные схемы использования, а также персонализировать и иным образом управлять нашими службами.</value>
+  </data>
+  <data name="We also use cookies for the following purposes:" xml:space="preserve">
+    <value>Мы также используем куки для следующих целей:</value>
+  </data>
+  <data name="a. authentication - to identify you when you visit our website and as you navigate our website" xml:space="preserve">
+    <value>а. аутентификация - чтобы идентифицировать вас, когда вы посещаете наш сайт и во время навигации по нашему сайту</value>
+  </data>
+  <data name="b. status - to help us to determine if you are logged into our website" xml:space="preserve">
+    <value>б. статус - чтобы помочь нам определить, если вы вошли на наш сайт</value>
+  </data>
+  <data name="c. personalization - to store information about your preferences and to personalize our website for you" xml:space="preserve">
+    <value>с. персонализация - хранить информацию о ваших предпочтениях и персонализировать наш сайт для вас</value>
+  </data>
+  <data name="d. security - as an element of the security measures used to protect user accounts, including preventing fraudulent use of login credentials and to protect our website and services generally" xml:space="preserve">
+    <value>д. безопасность - как элемент мер безопасности, используемых для защиты учетных записей пользователей, включая предотвращение мошеннического использования учетных данных для входа в систему и для защиты нашего веб-сайта и услуг в целом</value>
+  </data>
+  <data name="e. advertising - to help us display advertisements that will be relevant to you;" xml:space="preserve">
+    <value>е. реклама - чтобы помочь нам показать рекламу, которая будет иметь отношение к вам;</value>
+  </data>
+  <data name="f. analysis - to help us analyze the use and performance of our website and services." xml:space="preserve">
+    <value>е. анализ - чтобы помочь нам проанализировать использование и производительность нашего веб-сайта и услуг.</value>
+  </data>
+  <data name="Cookies Used by Our Third-Party Providers" xml:space="preserve">
+    <value>Файлы cookie, используемые нашими сторонними поставщиками</value>
+  </data>
+  <data name="Our service providers use cookies and those cookies may be stored on your computer when you visit our Service." xml:space="preserve">
+    <value>Наши поставщики услуг используют файлы cookie, и эти файлы cookie могут храниться на вашем компьютере, когда вы посещаете наш Сервис.</value>
+  </data>
+  <data name="We use Google Analytics to analyze the use of our website. Google Analytics gathers information about website use by means of cookies. The information gathered relating to our website is used to create reports about the use of our website." xml:space="preserve">
+    <value>Мы используем Google Analytics для анализа использования нашего веб-сайта. Google Analytics собирает информацию об использовании веб-сайта с помощью файлов cookie. Собранная информация, относящаяся к нашему веб-сайту, используется для создания отчетов об использовании нашего веб-сайта.</value>
+  </data>
+  <data name="We, and other third parties we work with, place cookies when you visit the Services and when you open emails that we send you in order to provide you more specific content about services we or our third-party providers offer. For instance, we publish Google AdSense advertisements on our website. To determine your interests, Google will track your behavior on our website and on other websites across the web using cookies." xml:space="preserve">
+    <value>Мы и другие третьи стороны, с которыми мы работаем, размещаем файлы cookie при посещении вами Сервисов и при открытии электронных писем, которые мы отправляем вам, чтобы предоставить вам более конкретный контент об услугах, которые мы или наши сторонние поставщики предлагаем. Например, мы публикуем рекламные объявления Google AdSense на нашем веб-сайте. Чтобы определить ваши интересы, Google будет отслеживать ваше поведение на нашем веб-сайте и на других веб-сайтах в Интернете с помощью файлов cookie.</value>
+  </data>
+  <data name="Managing Cookies" xml:space="preserve">
+    <value>Управление Cookies</value>
+  </data>
+  <data name="Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser and from version to version. Please refer to your browser documentation on how to manage your cookies." xml:space="preserve">
+    <value>Большинство браузеров позволяют вам отказаться принимать куки и удалять куки. Способы для этого варьируются от браузера к браузеру и от версии к версии. Пожалуйста, обратитесь к документации вашего браузера о том, как управлять вашими куки.</value>
+  </data>
+  <data name="Blocking all or some cookies may have a negative impact upon the usability of the Services." xml:space="preserve">
+    <value>Блокировка всех или некоторых файлов cookie может негативно повлиять на удобство использования Услуг.</value>
+  </data>
+</root>

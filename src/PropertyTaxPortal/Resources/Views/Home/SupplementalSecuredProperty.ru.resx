@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Supplemental Secured Property Tax Bill" xml:space="preserve">
+    <value>Дополнительный законопроект о налоге на обеспеченное имущество</value>
+  </data>
+  <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
+    <value>Пожалуйста, нажмите на любой номер, чтобы просмотреть описание компонента счета. Вы также можете прокрутить вниз страницы, чтобы просмотреть полный список описаний полей.</value>
+  </data>
+  <data name="Supplemental Property Bill" xml:space="preserve">
+    <value>Закон о дополнительном имуществе</value>
+  </data>
+  <data name="to the Annual Secured Property Tax Bill and both must be paid by the date shown on the bill.  California State" xml:space="preserve">
+    <value>в годовой счет по налогу на обеспеченное имущество, и оба должны быть оплачены до даты, указанной в счете. Штата Калифорния</value>
+  </data>
+  <data name="law requires the reassessment of property as of the first day of the month following an ownership change or the" xml:space="preserve">
+    <value>Закон требует переоценки имущества с первого дня месяца, следующего за сменой владельца или</value>
+  </data>
+  <data name="completion of new construction.  A change in ownership or a completion of new construction that occurs between" xml:space="preserve">
+    <value>завершение нового строительства. Смена владельца или завершение нового строительства, которое происходит между</value>
+  </data>
+  <data name="January 1 and May 31 results in two supplemental assessments and triggers two Supplemental Property Tax Bills." xml:space="preserve">
+    <value>1 января и 31 мая приводят к двум дополнительным оценкам и запускают два дополнительных налога на имущество.</value>
+  </data>
+  <data name="The first Supplemental Bill is for the remainder of the fiscal year in which the event occurred.  The second" xml:space="preserve">
+    <value>Первый дополнительный законопроект предназначен для оставшейся части финансового года, в котором произошло событие. Второй</value>
+  </data>
+  <data name="Supplemental Bill is for the subsequent fiscal year." xml:space="preserve">
+    <value>Дополнительный законопроект на следующий финансовый год.</value>
+  </data>
+  <data name="Assessor's Identification Number" xml:space="preserve">
+    <value>Идентификационный номер оценщика</value>
+  </data>
+  <data name="This area identifies the Assessor’s Identification" xml:space="preserve">
+    <value>Эта область идентифицирует идентификацию оценщика</value>
+  </data>
+  <data name="Number – (1234-567-890).  The Assessor’s Identification Number (AIN) is a ten-digit number assigned by the" xml:space="preserve">
+    <value>Номер - (1234-567-890). Идентификационный номер оценщика (AIN) представляет собой десятизначный номер, назначенный</value>
+  </data>
+  <data name="Office of the Assessor to each piece of real property in Los Angeles County.  This ten-digit AIN is made up of a" xml:space="preserve">
+    <value>Офис асессора для каждого объекта недвижимости в округе Лос-Анджелес. Этот десятизначный AIN состоит из</value>
+  </data>
+  <data name="four-digit Map Book Number (1234), a three-digit Page Number (567), and a three-digit Parcel Number (890)." xml:space="preserve">
+    <value>четырехзначный номер книги карт (1234), трехзначный номер страницы (567) и трехзначный номер участка (890).</value>
+  </data>
+  <data name="Year and Sequence" xml:space="preserve">
+    <value>Год и последовательность</value>
+  </data>
+  <data name="This area identifies the Year and Sequence – (16 000).  This five digit" xml:space="preserve">
+    <value>Эта область идентифицирует Год и Последовательность - (16 000). Это пять цифр</value>
+  </data>
+  <data name="number is made up of a two-digit tax year and a three-digit sequence or bill type.  For example, a" xml:space="preserve">
+    <value>Номер состоит из двухзначного налогового года и трехзначной последовательности или типа счета. Например,</value>
+  </data>
+  <data name="2016 annual bill is displayed as 16 000, however a 2016 supplemental bill may be displayed as 16 010." xml:space="preserve">
+    <value>Годовой счет за 2016 год отображается как 16 000, однако дополнительный счет за 2016 год может отображаться как 16 010.</value>
+  </data>
+  <data name="Transfer/New Construction Date" xml:space="preserve">
+    <value>Дата переноса / нового строительства</value>
+  </data>
+  <data name="This date is used as the basis for the change in" xml:space="preserve">
+    <value>Эта дата используется в качестве основы для изменения</value>
+  </data>
+  <data name="assessed value.  The term &quot;Transfer Date&quot; refers to the recording date of an ownership change.  &quot;New Construction" xml:space="preserve">
+    <value>оценочная стоимость. Термин «Дата передачи» относится к дате регистрации смены владельца. "Новое строительство</value>
+  </data>
+  <data name="Date&quot; refers to the date the new construction was completed." xml:space="preserve">
+    <value>Дата »относится к дате завершения нового строительства.</value>
+  </data>
+  <data name="General Tax Levy" xml:space="preserve">
+    <value>Общий налог</value>
+  </data>
+  <data name="This tax amount is the general one percent (1%) tax rate levied" xml:space="preserve">
+    <value>Эта сумма налога является общей ставкой налога в один процент (1%)</value>
+  </data>
+  <data name="against every property in the County.  The calculation is 1 percent multiplied by the &quot;Net Taxable Value." xml:space="preserve">
+    <value>против каждой собственности в округе. Расчет составляет 1 процент, умноженный на «Чистую налогооблагаемую стоимость».</value>
+  </data>
+  <data name="Voted Indebtedness" xml:space="preserve">
+    <value>Проголосовавшая задолженность</value>
+  </data>
+  <data name="Voter-approved taxes levied against property." xml:space="preserve">
+    <value>Утвержденные избирателем налоги, взимаемые с собственности.</value>
+  </data>
+  <data name="Assessee" xml:space="preserve">
+    <value>налогоплательщик</value>
+  </data>
+  <data name="The owner of record and the mailing address on" xml:space="preserve">
+    <value>Владелец записи и почтовый адрес на</value>
+  </data>
+  <data name="file with the Office of the Assessor." xml:space="preserve">
+    <value>файл с офисом ассессора.</value>
+  </data>
+  <data name="Electronic Fund Transfer (EFT) Number" xml:space="preserve">
+    <value>Номер электронного перевода средств (EFT)</value>
+  </data>
+  <data name="The EFT number is used to make" xml:space="preserve">
+    <value>Номер EFT используется для</value>
+  </data>
+  <data name="credit card/Visa Debit card payments over the telephone.  To initiate a credit card/Visa Debit card payment," xml:space="preserve">
+    <value>оплата кредитной картой / дебетовой картой Visa по телефону. Чтобы инициировать оплату кредитной картой / дебетовой картой Visa,</value>
+  </data>
+  <data name="please call 1(888) 473-0835.  However, there are processing fees when paying by credit card/Visa Debit card." xml:space="preserve">
+    <value>пожалуйста, звоните 1 (888) 473-0835. Однако при оплате кредитной картой / дебетовой картой Visa взимаются сборы за обработку.</value>
+  </data>
+  <data name="Each transaction is limited to $99,999.99.  The PIN number is used to make electronic check payment to protect" xml:space="preserve">
+    <value>Каждая транзакция ограничена до 99 999,99 долларов США. ПИН-код используется для совершения электронного чека оплаты для защиты</value>
+  </data>
+  <data name="your security and privacy and is used to pay your current year and defaulted taxes online.  Effective with tax" xml:space="preserve">
+    <value>ваша безопасность и конфиденциальность и используется для оплаты вашего текущего года и дефолтных налогов онлайн. Действует с налогом</value>
+  </data>
+  <data name="bills issued after August 2013, the PIN may contain all alpha, all numeric, or alpha/numeric characters." xml:space="preserve">
+    <value>В счетах, выпущенных после августа 2013 года, ПИН-код может содержать все буквенные, цифровые или буквенно-цифровые символы.</value>
+  </data>
+  <data name="The alpha letter 'O' is not used in the PIN.  The '0' is always a number zero." xml:space="preserve">
+    <value>Буква O не используется в ПИН-коде. «0» - это всегда число ноль.</value>
+  </data>
+  <data name="Full Year Supplemental Taxes Due" xml:space="preserve">
+    <value>Дополнительные налоговые сборы за весь год</value>
+  </data>
+  <data name="The amount of taxes calculated for the entire" xml:space="preserve">
+    <value>Сумма налогов рассчитана на весь</value>
+  </data>
+  <data name="fiscal year.  See Prorated Supplemental Taxes for the actual amount due." xml:space="preserve">
+    <value>Отчетный год. См. Пропорциональные дополнительные налоги, чтобы узнать фактическую сумму задолженности.</value>
+  </data>
+  <data name="Prorated Supplemental Taxes" xml:space="preserve">
+    <value>Пропорциональные дополнительные налоги</value>
+  </data>
+  <data name="The amount of total taxes due and payable for this" xml:space="preserve">
+    <value>Сумма общих налогов, причитающихся и подлежащих уплате за это</value>
+  </data>
+  <data name="bill.  See Field Number 12 for installment amounts and due dates." xml:space="preserve">
+    <value>законопроект. В поле № 12 указаны суммы взносов и сроки оплаты.</value>
+  </data>
+  <data name="Proration Factor" xml:space="preserve">
+    <value>Коэффициент пропорциональности</value>
+  </data>
+  <data name="The mathematical factor used to prorate the amount of taxes" xml:space="preserve">
+    <value>Математический коэффициент, используемый для пропорциональной суммы налогов</value>
+  </data>
+  <data name="due.  For more information, refer to the back of the bill." xml:space="preserve">
+    <value>в связи. Для получения дополнительной информации обратитесь к задней части счета.</value>
+  </data>
+  <data name="Special Information" xml:space="preserve">
+    <value>Специальная информация</value>
+  </data>
+  <data name="This section provides important information about the" xml:space="preserve">
+    <value>Этот раздел содержит важную информацию о</value>
+  </data>
+  <data name="bill and states whether there are any delinquent taxes owed." xml:space="preserve">
+    <value>счет и указывает, есть ли какие-либо просроченные налоги.</value>
+  </data>
+  <data name="Total Taxes Due" xml:space="preserve">
+    <value>Общая сумма налогов</value>
+  </data>
+  <data name="This is the total amount due for the bill.  The Annual Secured" xml:space="preserve">
+    <value>Это общая сумма к оплате. Ежегодный Обеспеченный</value>
+  </data>
+  <data name="Property Tax Bill has two payment stubs.  The first installment is due" xml:space="preserve">
+    <value>У Налога на имущество есть два платежных квитанции. Первый взнос</value>
+  </data>
+  <data name="November 1 and is delinquent December 10.  If the first installment is not received or United States Postal Service" xml:space="preserve">
+    <value>1 ноября и является просроченным 10 декабря. Если первый взнос не получен или Почтовая служба США</value>
+  </data>
+  <data name="(USPS) postmarked by December 10, a 10 percent penalty will be imposed.  The second installment is due February 1" xml:space="preserve">
+    <value>(USPS) штемпелем до 10 декабря, будет наложен штраф 10 процентов. Второй взнос - до 1 февраля</value>
+  </data>
+  <data name="and is delinquent April 10.  If the second installment is not received or USPS postmarked on or before April 10," xml:space="preserve">
+    <value>и является просроченным 10 апреля. Если второй взнос не получен или почтовый штемпель USPS не позднее 10 апреля,</value>
+  </data>
+  <data name="a 10 percent penalty and a $10.00 cost will be imposed.  Taxpayers must be sure to include the payment stub with" xml:space="preserve">
+    <value>будет наложен штраф в размере 10 процентов и 10 долларов. Налогоплательщики должны обязательно включить платежную квитанцию с</value>
+  </data>
+  <data name="any type of payment and write their Assessor's Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>любой тип оплаты и запишите идентификационный номер своего оценщика с указанием года / порядкового номера на чеке.</value>
+  </data>
+  <data name="Property Location and/or Property Description" xml:space="preserve">
+    <value>Местоположение недвижимости и / или описание недвижимости</value>
+  </data>
+  <data name="The property address and/or" xml:space="preserve">
+    <value>Адрес недвижимости и / или</value>
+  </data>
+  <data name="legal description on record with the Office of the Assessor." xml:space="preserve">
+    <value>юридическое описание на учете в канцелярии оценщика.</value>
+  </data>
+  <data name="Current Assessed Value" xml:space="preserve">
+    <value>Текущая оценочная стоимость</value>
+  </data>
+  <data name="The Assessor’s valuation of the property after" xml:space="preserve">
+    <value>Оценка имущества оценщиком после</value>
+  </data>
+  <data name="the adjustment." xml:space="preserve">
+    <value>регулировка.</value>
+  </data>
+  <data name="Prior Assessed Value" xml:space="preserve">
+    <value>Предварительно оцененная стоимость</value>
+  </data>
+  <data name="This is the Assessor’s valuation of" xml:space="preserve">
+    <value>Это оценка оценщика</value>
+  </data>
+  <data name="the property prior to the recent transfer/new construction date." xml:space="preserve">
+    <value>собственность до недавней передачи / новой даты строительства.</value>
+  </data>
+  <data name="Net Assessed Value" xml:space="preserve">
+    <value>Чистая оценочная стоимость</value>
+  </data>
+  <data name="The current assessed value less the prior assessed value." xml:space="preserve">
+    <value>Текущая оценочная стоимость за вычетом предыдущей оценочной стоимости.</value>
+  </data>
+  <data name="Attention Statement" xml:space="preserve">
+    <value>Заявление о внимании</value>
+  </data>
+  <data name="This statement is meant to notify taxpayers that" xml:space="preserve">
+    <value>Это заявление предназначено для уведомления налогоплательщиков о том, что</value>
+  </data>
+  <data name="there may be other taxes owed." xml:space="preserve">
+    <value>могут быть другие причитающиеся налоги.</value>
+  </data>
+  <data name="Assessor's Regional Office" xml:space="preserve">
+    <value>Региональный офис оценщика</value>
+  </data>
+  <data name="This is the address and telephone number" xml:space="preserve">
+    <value>Это адрес и номер телефона</value>
+  </data>
+  <data name="to contact for questions regarding the assessed value of the property." xml:space="preserve">
+    <value>связаться по вопросам, касающимся оценочной стоимости имущества.</value>
+  </data>
+  <data name="Less Exemptions" xml:space="preserve">
+    <value>Меньше освобождений</value>
+  </data>
+  <data name="Exemptions, if any, are deducted from the assessed value." xml:space="preserve">
+    <value>Исключения, если таковые имеются, вычитаются из оценочной стоимости.</value>
+  </data>
+  <data name="Net Supplemental Value" xml:space="preserve">
+    <value>Чистая дополнительная стоимость</value>
+  </data>
+  <data name="This is the difference between the current value and" xml:space="preserve">
+    <value>Это разница между текущим значением и</value>
+  </data>
+  <data name="the prior value less exemptions." xml:space="preserve">
+    <value>предыдущее значение за вычетом исключений.</value>
+  </data>
+  <data name="Returned Check Charge" xml:space="preserve">
+    <value>Возвращенный чек</value>
+  </data>
+  <data name="There is a $50.00 charge for any check returned by the bank." xml:space="preserve">
+    <value>За каждый чек, возвращенный банком, взимается плата в размере 50 долларов США.</value>
+  </data>
+  <data name="2nd Installment Delinquency Date" xml:space="preserve">
+    <value>Дата просрочки второго платежа</value>
+  </data>
+  <data name="If paying the bill in installments," xml:space="preserve">
+    <value>При оплате счета в рассрочку,</value>
+  </data>
+  <data name="the second installment must be received or United States Postal Service postmarked by this date, or a 10 percent" xml:space="preserve">
+    <value>второй взнос должен быть получен или почтовый штемпель Соединенных Штатов к этой дате или 10%</value>
+  </data>
+  <data name="penalty and a $10.00 cost will be imposed." xml:space="preserve">
+    <value>будет наложен штраф и 10 долларов.</value>
+  </data>
+  <data name="2nd Installment Due" xml:space="preserve">
+    <value>2-й взнос</value>
+  </data>
+  <data name="Amount of taxes due for the second installment." xml:space="preserve">
+    <value>Сумма налогов, причитающихся за второй взнос.</value>
+  </data>
+  <data name="Taxpayers must be sure to include the payment stub with any type of payment and write their Assessor’s" xml:space="preserve">
+    <value>Налогоплательщики должны обязательно включать платежную квитанцию с любым типом платежа и писать свои оценщики</value>
+  </data>
+  <data name="Identification Number with the Year/Sequence Number on their check." xml:space="preserve">
+    <value>Идентификационный номер с указанием года / порядкового номера на чеке.</value>
+  </data>
+  <data name="Remit Amount" xml:space="preserve">
+    <value>Сумма перевода</value>
+  </data>
+  <data name="If payment is not made by the delinquency date, remit the amount" xml:space="preserve">
+    <value>Если оплата не произведена к дате просрочки, перечислите сумму</value>
+  </data>
+  <data name="stated here.  Include the payment stub(s) with the payment and write the Assessor’s Identification Number" xml:space="preserve">
+    <value>заявлено здесь. Включите платежную квитанцию с платежом и напишите идентификационный номер оценщика</value>
+  </data>
+  <data name="and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>и год / порядковый номер на чеке.</value>
+  </data>
+  <data name="Make Checks Payable" xml:space="preserve">
+    <value>Сделать чеки к оплате</value>
+  </data>
+  <data name="Make checks payable to the Los Angeles County Tax Collector" xml:space="preserve">
+    <value>Сделайте чеки, подлежащие оплате Сборщику налогов округа Лос-Анджелес</value>
+  </data>
+  <data name="and mail to this address.  Include the payment stub(s) with the payment and write the Assessor’s Identification" xml:space="preserve">
+    <value>и почта на этот адрес. Включите платежную квитанцию (ы) с платежом и напишите идентификационные данные оценщика</value>
+  </data>
+  <data name="Number and the Year/Sequence Number on the check." xml:space="preserve">
+    <value>Номер и год / порядковый номер на чеке.</value>
+  </data>
+  <data name="1st Installment Delinquency Date" xml:space="preserve">
+    <value>Дата просрочки первого взноса</value>
+  </data>
+  <data name="If paying the bill in full, payment" xml:space="preserve">
+    <value>При оплате счета полностью, оплата</value>
+  </data>
+  <data name="must be received or United States Postal Service (USPS) postmarked by this date.  If paying in installments," xml:space="preserve">
+    <value>должны быть получены или Почтовой службы Соединенных Штатов (USPS) почтовый штемпель к этой дате. При оплате в рассрочку,</value>
+  </data>
+  <data name="the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed." xml:space="preserve">
+    <value>первый взнос должен быть получен или почтовый штемпель USPS к этой дате, или будет наложен штраф в размере 10 процентов.</value>
+  </data>
+  <data name="1st Installment Due" xml:space="preserve">
+    <value>1-й взнос</value>
+  </data>
+  <data name="Amount of taxes due for the first installment." xml:space="preserve">
+    <value>Сумма налогов, причитающихся за первый взнос.</value>
+  </data>
+</root>
