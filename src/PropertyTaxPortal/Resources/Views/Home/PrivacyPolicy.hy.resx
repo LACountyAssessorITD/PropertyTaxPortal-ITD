@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PRIVACY POLICY" xml:space="preserve">
+    <value>ԳԱՂՏՆԻՈՒԹՅԱՆ ՔԱՂԱՔԱԿԱՆՈՒԹՅՈՒՆ</value>
+  </data>
+  <data name="The Board of Supervisors of Los Angeles County recognizes the public’s concern about privacy on the Internet. This privacy statement establishes how information gathered about you from your visit to our website will be used by this website’s operators. As a visitor, however, you should be aware that much information submitted to Los Angeles County is public information under the laws of the State of California. Under some circumstances, we may be required to disclose such information in accordance with the California Public Records Act or other legal requirements." xml:space="preserve">
+    <value>Լոս Անջելեսի շրջանի ավագանու խորհուրդը ճանաչում է հանրության անհանգստությունը Ինտերնետում գաղտնիության վերաբերյալ: Այս գաղտնիության հայտարարությունը սահմանում է, թե ինչպես է Ձեր կայքի այցի մասին տեղեկություններ հավաքվել այս կայքի օպերատորների կողմից: Որպես այցելու, դուք պետք է տեղյակ լինեք, որ Լոս Անջելեսի շրջանի ներկայացված շատ տեղեկությունները հանրային տեղեկատվություն են Կալիֆոռնիայի պետության օրենքներով: Որոշ հանգամանքներում մենք կարող ենք պահանջել այդ տեղեկությունները հրապարակել Կալիֆորնիայի Հանրային ռեկորդների ակտին կամ այլ իրավական պահանջներին համապատասխան:</value>
+  </data>
+  <data name="The following describes how information may be collected depending on your activities at this website:" xml:space="preserve">
+    <value>Ստորեւ նկարագրվում է, թե ինչպես կարող է տեղեկատվություն հավաքվել, կախված ձեր կայքէջում գործողություններից:</value>
+  </data>
+  <data name="If you read or download information:" xml:space="preserve">
+    <value>Եթե դուք կարդաք կամ բեռնել տեղեկություններ,</value>
+  </data>
+  <data name="We may collect and store information for statistical purposes. For example, we may count the number of visitors to the different sections of our site to help us make them more useful. The information collected may include such items as the name and domain of the host from which you access the Internet, the Internet Protocol (IP) address of the computer you are using or your browser software and operating system. This information does not identify you personally." xml:space="preserve">
+    <value>Մենք կարող ենք տեղեկատվություն հավաքել եւ պահել վիճակագրական նպատակներով: Օրինակ, մենք կարող ենք հաշվել մեր կայքի տարբեր հատվածների այցելուների քանակը, օգնելու նրանց մեզ ավելի օգտակար դարձնել: Հավաքած տեղեկատվությունը կարող է պարունակել այնպիսի տարրեր, ինչպիսիք են հոսքի անունը եւ տիրույթը, որից օգտվում եք ինտերնետից, օգտվում եք համակարգիչի Ինտերնետ պրոտոկոլի (IP) հասցեն կամ ձեր բրաուզերի ծրագրակազմը եւ օպերացիոն համակարգը: Այս տեղեկատվությունը անձամբ չի ճանաչում ձեզ:</value>
+  </data>
+  <data name="If you send E-mail to this website:" xml:space="preserve">
+    <value>Եթե դուք էլեկտրոնային նամակ ուղարկեք այս կայքում:</value>
+  </data>
+  <data name="By sending us an electronic mail message, you may be sending us personal information (i.e., your name, address, e-mail address, etc.). We may store the name and address of the requester in order to respond to the request or otherwise resolve the subject matter of your e-mail." xml:space="preserve">
+    <value>Ուղարկելով մեզ էլեկտրոնային փոստով հաղորդագրություն, կարող եք մեզ ուղարկել անձնական տեղեկատվություն (այսինքն `ձեր անունը, հասցեն, էլեկտրոնային փոստի հասցեն եւ այլն): Մենք կարող ենք պահպանել հայտատուի անունը եւ հասցեն `խնդրագրին արձագանքելու կամ այլ կերպ լուծելու Ձեր էլ.փոստի առարկան:</value>
+  </data>
+  <data name="If you register with a County Department or agency or request other specific information:" xml:space="preserve">
+    <value>Եթե դուք գրանցվեք Վարչաշրջանի վարչության կամ գործակալության հետ կամ խնդրեք այլ կոնկրետ տեղեկություններ,</value>
+  </data>
+  <data name="Some County department or agency websites may ask visitors who request specific information to fill out a registration form. For example, vendors requesting access to Requests for Bids, Requests for Proposals or homeowners or businesses requesting Permits, may be asked to provide their names, addresses, e-mail addresses and other pertinent information to ensure we can process and deliver the information requested. Other information may be collected at these sites through questionnaires, feedback forms, or other means, to enable us to determine a visitor’s interests, with the goal of providing better service." xml:space="preserve">
+    <value>Որոշ վարչական դեպարտամենտ կամ գործակալության կայքէջեր կարող են խնդրել այցելուներին, ովքեր պահանջում են կոնկրետ տեղեկություններ `գրանցման ձեւը լրացնելու համար: Օրինակ, առաջարկների, առաջարկների ներկայացման պահանջների կամ տնային սեփականատերերի կամ թույլտվություն ստանալու պահանջող ընկերություններին թույլտվություն ստանալու պահանջող մատակարարները կարող են խնդրել նրանց անունները, հասցեները, էլեկտրոնային փոստի հասցեները եւ այլ համապատասխան տեղեկություններ տրամադրել, որպեսզի մենք կարողանանք հարցումներ մշակել եւ տրամադրել: Այլ տեղեկությունները կարող են հավաքվել այս կայքերում հարցաթերթիկների, արձագանքների ձեւերի կամ այլ միջոցներով `հնարավորություն ընձեռելով մեզ որոշելու այցելուի շահերը` նպատակ ունենալով ավելի լավ ծառայություն մատուցել:</value>
+  </data>
+  <data name="Links to Non-Los Angeles County (Third Party) Websites" xml:space="preserve">
+    <value>Ոչ-Լոս Անջելեսի շրջանի (երրորդ կողմ) կայքերի հղումներ</value>
+  </data>
+  <data name="Our website also contains links to information located on websites maintained by other public agencies and private organizations. Once you access an individual document that links you to another website, you are subject to the privacy policy of the website containing that document." xml:space="preserve">
+    <value>Մեր կայքը նաեւ պարունակում է հղումներ այլ պետական գործակալությունների եւ մասնավոր կազմակերպությունների կողմից պահպանվող կայքերում գտնվող տեղեկությունների համար: Երբ դուք մուտք եք գործել անձնական փաստաթուղթ, որը կապում է ձեզ այլ կայք, դուք ենթակա եք այդ փաստաթուղթը պարունակող կայքի գաղտնիության քաղաքականությանը:</value>
+  </data>
+  <data name="About Cookies" xml:space="preserve">
+    <value>Cookies մասին</value>
+  </data>
+  <data name="A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server." xml:space="preserve">
+    <value>Cookie- ը ֆայլ է, որը պարունակում է նույնացուցիչ (տառերի եւ թվերի տող), որը վեբ սերվերի կողմից վեբ բրաուզերի կողմից ուղարկվում է եւ պահվում է բրաուզերի կողմից: Այնուհետեւ նույնականացնողն ուղարկվում է սերվերին ամեն անգամ, երբ զննարկիչը պահանջում է էջը սերվերի կողմից:</value>
+  </data>
+  <data name="Cookies may be either &quot;persistent&quot; cookies or &quot;session&quot; cookies. A persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed." xml:space="preserve">
+    <value>Տեղեկանիշները կարող են լինել «համառ» բլիթներ կամ «նիստ» բլիթներ: Կայուն cookie- ն պահվում է վեբ զննարկիչի կողմից եւ կգործի մինչեւ սահմանված ժամկետի ավարտը, եթե օգտագործողի կողմից ջնջված ժամկետի ավարտից առաջ ջնջված չէ: մի նիստի cookie, մյուս կողմից, կավարտվի օգտվողի նստաշրջանի վերջում, երբ զննարկիչը փակ է:</value>
+  </data>
+  <data name="Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies." xml:space="preserve">
+    <value>Cookie- ները սովորաբար պարունակում են որեւէ տեղեկատվություն, որը անձամբ ճանաչում է օգտագործողին, բայց անձնական տվյալները, որ մենք պահում ենք ձեզ, կարող են կապված լինել բլիթներից պահվող եւ ստացված տեղեկությունների հետ:</value>
+  </data>
+  <data name="Cookies We Use" xml:space="preserve">
+    <value>Մենք օգտագործում ենք թխվածքաբլիթներ</value>
+  </data>
+  <data name="When your browser or device allows it, we use both session cookies and persistent cookies to better understand how you interact with our services, to monitor aggregate usage patterns, and to personalize and otherwise operate our services." xml:space="preserve">
+    <value>Երբ ձեր զննարկիչը կամ սարքը թույլ է տալիս, մենք օգտագործում ենք երկու նիստի բլիթները եւ կայուն բլիթները, ավելի լավ հասկանալու համար, թե ինչպես եք համագործակցել մեր ծառայությունների հետ, վերահսկել համախառն օգտագործման օրինակները եւ անհատականացնել եւ այլ կերպ աշխատել մեր ծառայություններից:</value>
+  </data>
+  <data name="We also use cookies for the following purposes:" xml:space="preserve">
+    <value>Մենք նաեւ օգտագործում ենք թխուկներ հետեւյալ նպատակներով.</value>
+  </data>
+  <data name="a. authentication - to identify you when you visit our website and as you navigate our website" xml:space="preserve">
+    <value>ա. նույնականացման համար `Ձեզ ճանաչելու համար, երբ այցելում եք մեր կայքը եւ այն ժամանակ, երբ դուք նավարկեք մեր կայքը</value>
+  </data>
+  <data name="b. status - to help us to determine if you are logged into our website" xml:space="preserve">
+    <value>բ. կարգավիճակը `օգնել մեզ որոշել, թե արդյոք դուք մուտք եք գործել մեր կայք</value>
+  </data>
+  <data name="c. personalization - to store information about your preferences and to personalize our website for you" xml:space="preserve">
+    <value>գ. անհատականացում, ձեր նախասիրությունների մասին տեղեկություններ պահելու եւ մեր կայքը ձեզ համար անհատականացնելու համար</value>
+  </data>
+  <data name="d. security - as an element of the security measures used to protect user accounts, including preventing fraudulent use of login credentials and to protect our website and services generally" xml:space="preserve">
+    <value>դ. անվտանգության, որպես օգտագործողի հաշիվների պաշտպանման համար օգտագործվող անվտանգության միջոցների տարր, ներառյալ մուտքի հավաստագրերի խարդախ օգտագործումը կանխելու եւ մեր կայքը եւ ծառայությունների պաշտպանությունը</value>
+  </data>
+  <data name="e. advertising - to help us display advertisements that will be relevant to you;" xml:space="preserve">
+    <value>ե. գովազդ - օգնել մեզ ցույց տալ գովազդներ, որոնք համապատասխանում են ձեզ;</value>
+  </data>
+  <data name="f. analysis - to help us analyze the use and performance of our website and services." xml:space="preserve">
+    <value>f. վերլուծություն `օգնելու մեզ վերլուծել մեր կայքի եւ ծառայությունների օգտագործումը եւ կատարումը:</value>
+  </data>
+  <data name="Cookies Used by Our Third-Party Providers" xml:space="preserve">
+    <value>Երրորդ կողմի մատակարարների կողմից օգտագործվող թխվածքաբլիթները</value>
+  </data>
+  <data name="Our service providers use cookies and those cookies may be stored on your computer when you visit our Service." xml:space="preserve">
+    <value>Մեր ծառայություն մատուցողները օգտագործում են թխուկներ եւ այդ թխուկները կարող են պահվել ձեր համակարգչի վրա, երբ այցելում եք մեր ծառայությունը:</value>
+  </data>
+  <data name="We use Google Analytics to analyze the use of our website. Google Analytics gathers information about website use by means of cookies. The information gathered relating to our website is used to create reports about the use of our website." xml:space="preserve">
+    <value>Մենք օգտագործում ենք Google Analytics- ը `վերլուծելու մեր կայքի օգտագործումը: Google Analytics- ը տեղեկատվություն է հավաքում կայքի օգտագործման մասին cookie ֆայլերի միջոցով: Մեր կայքում տեղադրված տեղեկատվությունը օգտագործվում է մեր կայքէջի օգտագործման վերաբերյալ հաշվետվություններ կազմելու համար:</value>
+  </data>
+  <data name="We, and other third parties we work with, place cookies when you visit the Services and when you open emails that we send you in order to provide you more specific content about services we or our third-party providers offer. For instance, we publish Google AdSense advertisements on our website. To determine your interests, Google will track your behavior on our website and on other websites across the web using cookies." xml:space="preserve">
+    <value>Մենք, եւ մյուս երրորդ կողմերը, մենք աշխատում ենք, տեղադրեք Cookies- ն, երբ այցելում եք Ծառայություններ եւ երբ մենք բացում եք նամակներ, որոնք մենք ձեզ ուղարկում ենք ձեզ, մեզ կամ մեր երրորդ կողմի ծառայություններ մատուցող ծառայությունների մասին ավելի կոնկրետ բովանդակություն տրամադրելու համար: Օրինակ, մենք հայտարարում ենք Google AdSense գովազդի մասին մեր կայքում: Ձեր շահերը որոշելու համար Google- ը կհետեւի Ձեր վարքագծին մեր կայքում եւ վեբ-ի այլ կայքերում `cookies- ի միջոցով:</value>
+  </data>
+  <data name="Managing Cookies" xml:space="preserve">
+    <value>Կատուների կառավարում</value>
+  </data>
+  <data name="Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser and from version to version. Please refer to your browser documentation on how to manage your cookies." xml:space="preserve">
+    <value>Բրաուզերների մեծ մասը թույլ է տալիս հրաժարվել բլիթների ընդունումից եւ ջնջել թխուկները: Այդպես վարվելու եղանակները տարբերվում են բրաուզերից բրաուզերից եւ տարբերակից մինչեւ տարբերակ: Խնդրում ենք հղում անել ձեր զննարկիչի փաստաթղթերին `ձեր բլիթները կառավարելու վերաբերյալ:</value>
+  </data>
+  <data name="Blocking all or some cookies may have a negative impact upon the usability of the Services." xml:space="preserve">
+    <value>Բոլոր կամ որոշ թխուկների արգելափակումը կարող է բացասական ազդեցություն ունենալ Ծառայությունների մատչելիության վրա:</value>
+  </data>
+</root>
