@@ -158,6 +158,15 @@ namespace PropertyTaxPortal
             app.UseAuthentication();
             app.Use(async (context, next) =>
             {
+                // For external redirect
+                /////////////////////////////////////////////////////////////////////////////////////////////
+                string sHost = context.Request.Host.HasValue == true ? context.Request.Host.Value : "";
+                sHost = sHost.ToLower();
+
+                if (sHost.Contains("lacountypropertytax.com"))
+                    context.Response.Redirect("https://www.propertytax.lacounty.gov");
+                /////////////////////////////////////////////////////////////////////////////////////////////
+
                 context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                 await next();
             });
