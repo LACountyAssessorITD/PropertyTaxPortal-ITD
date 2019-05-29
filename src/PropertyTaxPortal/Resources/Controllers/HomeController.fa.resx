@@ -306,4 +306,49 @@
   <data name="Property Tax Portal" xml:space="preserve">
     <value>پورتال مالیات بر املاک</value>
   </data>
+  <data name="Public Inquiry Email" xml:space="preserve">
+    <value>ایمیل تحقیق عمومی</value>
+  </data>
+  <data name="Please do NOT reply to this email" xml:space="preserve">
+    <value>لطفا به این ایمیل پاسخ ندهید</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>شماره مرجع برای پرس و جو شما</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="Business Name" xml:space="preserve">
+    <value>نام کسب و کار</value>
+  </data>
+  <data name="Mailing Address" xml:space="preserve">
+    <value>آدرس پستی</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>پست الکترونیک</value>
+  </data>
+  <data name="Daytime Phone Number" xml:space="preserve">
+    <value>شماره تلفن در طول روز</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>شماره فکس</value>
+  </data>
+  <data name="Property Address" xml:space="preserve">
+    <value>ادرس ملک</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>شماره شناسایی ارزیابی</value>
+  </data>
+  <data name="Company Number" xml:space="preserve">
+    <value>شماره شرکت</value>
+  </data>
+  <data name="Routing Index" xml:space="preserve">
+    <value>فهرست مسیریابی</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>نظرات</value>
+  </data>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>برای ارسال سوالات خود، لطفا از فرم درخواست عمومی ما در</value>
+  </data>
 </root>

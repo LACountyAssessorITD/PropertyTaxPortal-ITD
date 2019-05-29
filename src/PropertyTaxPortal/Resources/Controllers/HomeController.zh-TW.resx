@@ -306,4 +306,49 @@
   <data name="Property Tax Portal" xml:space="preserve">
     <value>物业税门户网站</value>
   </data>
+  <data name="Public Inquiry Email" xml:space="preserve">
+    <value>公众查询电邮</value>
+  </data>
+  <data name="Please do NOT reply to this email" xml:space="preserve">
+    <value>请不要回复这封邮件</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>您询问的参考编号是</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Business Name" xml:space="preserve">
+    <value>商家名称</value>
+  </data>
+  <data name="Mailing Address" xml:space="preserve">
+    <value>邮寄地址</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="Daytime Phone Number" xml:space="preserve">
+    <value>日间电话号码</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>传真号码</value>
+  </data>
+  <data name="Property Address" xml:space="preserve">
+    <value>物业地址</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>评估员识别号码</value>
+  </data>
+  <data name="Company Number" xml:space="preserve">
+    <value>公司编号</value>
+  </data>
+  <data name="Routing Index" xml:space="preserve">
+    <value>路由索引</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>如有任何疑问，请使用我们的公开查询表格</value>
+  </data>
 </root>

@@ -306,4 +306,49 @@
   <data name="Property Tax Portal" xml:space="preserve">
     <value>Portal de impuestos a la propiedad</value>
   </data>
+  <data name="Public Inquiry Email" xml:space="preserve">
+    <value>Email de consulta pública</value>
+  </data>
+  <data name="Please do NOT reply to this email" xml:space="preserve">
+    <value>Por favor no responder a este email</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>El número de referencia para su consulta es</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Business Name" xml:space="preserve">
+    <value>Nombre del Negocio</value>
+  </data>
+  <data name="Mailing Address" xml:space="preserve">
+    <value>Dirección de envio</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Daytime Phone Number" xml:space="preserve">
+    <value>Número de teléfono durante el día</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>Número de fax</value>
+  </data>
+  <data name="Property Address" xml:space="preserve">
+    <value>Dirección de Propiedad</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>Número de identificación del asesor</value>
+  </data>
+  <data name="Company Number" xml:space="preserve">
+    <value>Numero de compañia</value>
+  </data>
+  <data name="Routing Index" xml:space="preserve">
+    <value>Índice de enrutamiento</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>Para enviar sus consultas, utilice nuestro Formulario de consulta pública en</value>
+  </data>
 </root>

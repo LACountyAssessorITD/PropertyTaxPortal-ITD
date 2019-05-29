@@ -306,4 +306,49 @@
   <data name="Property Tax Portal" xml:space="preserve">
     <value>Портал по налогу на имущество</value>
   </data>
+  <data name="Public Inquiry Email" xml:space="preserve">
+    <value>Публичный запрос по электронной почте</value>
+  </data>
+  <data name="Please do NOT reply to this email" xml:space="preserve">
+    <value>Пожалуйста, не отвечайте на это письмо</value>
+  </data>
+  <data name="The Reference number for your inquiry is" xml:space="preserve">
+    <value>Ссылочный номер для вашего запроса</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>название</value>
+  </data>
+  <data name="Business Name" xml:space="preserve">
+    <value>Наименование фирмы</value>
+  </data>
+  <data name="Mailing Address" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Эл. адрес</value>
+  </data>
+  <data name="Daytime Phone Number" xml:space="preserve">
+    <value>Номер для звонков в дневное время</value>
+  </data>
+  <data name="Fax Number" xml:space="preserve">
+    <value>Номер факса</value>
+  </data>
+  <data name="Property Address" xml:space="preserve">
+    <value>Адрес недвижимости</value>
+  </data>
+  <data name="Assessor Identification Number" xml:space="preserve">
+    <value>Идентификационный номер оценщика</value>
+  </data>
+  <data name="Company Number" xml:space="preserve">
+    <value>Номер компании</value>
+  </data>
+  <data name="Routing Index" xml:space="preserve">
+    <value>Индекс маршрутизации</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Комментарии</value>
+  </data>
+  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
+    <value>Чтобы отправить ваши запросы, пожалуйста, используйте нашу форму общественного запроса по адресу</value>
+  </data>
 </root>
