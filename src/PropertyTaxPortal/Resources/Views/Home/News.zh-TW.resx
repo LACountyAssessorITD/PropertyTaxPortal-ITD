@@ -123,8 +123,14 @@
   <data name="Featured Articles" xml:space="preserve">
     <value>精选文章</value>
   </data>
+  <data name="Read More" xml:space="preserve">
+    <value>阅读更多</value>
+  </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>订阅财务主管和税务员的电子邮件通知服务</value>
+  </data>
+  <data name=" &lt;p&gt;The Treasurer and Tax Collector now offers a courtesy Email Notification Service. By subscribing property owners in the County can receive Email blasts about property tax payment deadlines and other important property tax related information. &lt;/p&gt;     &lt;a href=&quot;https://public.govdelivery.com/accounts/CALACOUNTY/subscriber/new?qsp=CALACOUNTY_7&quot; target=&quot;_blank&quot;&gt;Subscribe Here&lt;/a&gt;" xml:space="preserve">
+    <value> &lt;p&gt;财务主管和税务员现在提供礼貌的电子邮件通知服务。通过订阅县的财产所有者可以收到有关财产税支付截止日期和其他重要财产税相关信息的电子邮件爆炸。 &lt;/ p&gt; &lt;a href="https://public.govdelivery.com/accounts/CALACOUNTY/subscriber/new?qsp=CALACOUNTY_7" target="_blank"&gt;在此订阅&lt;/a&gt;</value>
   </data>
   <data name="The Treasurer and Tax Collector now offers a courtesy Email Notification Service. By subscribing property owners in the County can receive Email blasts about property tax payment deadlines and other important property tax related information. " xml:space="preserve">
     <value>财务主管和税务员现在提供礼貌的电子邮件通知服务。通过订阅县的财产所有者可以收到有关财产税支付截止日期和其他重要财产税相关信息的电子邮件爆炸。</value>
@@ -132,11 +138,17 @@
   <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
     <value>洛杉矶县税务员介绍在线物业税管理系统。</value>
   </data>
+  <data name="The Tax Collector has developed a new Property Tax Management System to address the particular needs of owners of multiple properties. We encourage you to evaluate the Property Tax Management System to realize efficiencies in the management of the property or properties you own, and payments of related tax obligations.  The Property Tax Management System also stores the information associated with each of your properties, including the Assessor's Identification Number (AIN) and Personal Identification Number (PIN).  Through the Property Tax Management System, you have the ability to: Create a personalized account Create and customize lists to sort and track your properties Enter as many as 100 properties per list Update existing lists and create additional list(s) of properties Initiate online payments from your lists with ease Verify payment status  To create a Property Tax Management System account, visit our homepage at lacountypropertytax.com and follow these four simple steps: Scroll down to select &quot;Property Tax Management System&quot; under &quot;Quick Links&quot; at the bottom of the page Read and agree to the Terms of Use by entering the security word Select Property Tax Management System Account Login on the left Set up your account " xml:space="preserve">
+    <value>税务员已开发出新的物业税管理系统，以满足多个物业业主的特殊需求。我们鼓励您评估财产税管理系统，以实现您拥有的财产或财产的管理效率，以及相关纳税义务的支付。物业税管理系统还存储与您的每个物业相关的信息，包括评估员的识别号码（AIN）和个人识别码（PIN）。通过财产税管理系统，您可以：创建个性化帐户创建和自定义列表以排序和跟踪您的属性每个列表输入多达100个属性更新现有列表并创建其他属性列表启动在线支付从您的清单轻松验证付款状态要创建物业税管理系统帐户，请访问我们的主页lacountypropertytax.com并按照以下四个简单步骤：向下滚动以选择底部“快速链接”下的“物业税管理系统”页面阅读并同意使用条款输入安全词选择属性税务管理系统帐户登录左侧设置您的帐户</value>
+  </data>
   <data name="The Tax Collector has developed a new Property Tax Management System to address the particular needs of owners of multiple properties. We encourage you to evaluate the Property Tax Management System to realize efficiencies in the management of the property or properties you own, and payments of related tax obligations." xml:space="preserve">
     <value>税务员已开发出新的物业税管理系统，以满足多个物业业主的特殊需求。我们鼓励您评估财产税管理系统，以实现您拥有的财产或财产的管理效率，以及相关纳税义务的支付。</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
     <value>行政厅（HOA）安全信息</value>
+  </data>
+  <data name="Please be advised that to help ensure the safety of the public and County employees, there are now walk-through metal detectors in place at all entrances to the Kenneth Hahn Hall of Administration (500 West Temple Street, Los Angeles, CA and 225 North Hill Street, Los Angeles, CA).  The Los Angeles County Sheriff's staff may inspect bags, cell phones, tablets, computers and any large metal items that you may have.  If you plan on visiting the Tax Collector's offices in the Kenneth Hahn Hall of Administration during busy periods (December 2017 and April 2018) be prepared and give yourself ample time to pass through the metal detectors and inspection." xml:space="preserve">
+    <value>请注意，为了确保公众和县员工的安全，现在在Kenneth Hahn行政大厅（500 West Temple Street，Los Angeles，CA和225 North Hill）的所有入口处都设有步入式金属探测器。街道，洛杉矶，加州）。洛杉矶县警长的工作人员可能会检查您可能拥有的行李，手机，平板电脑，电脑和任何大型金属物品。如果您计划在繁忙期间（2017年12月和2018年4月）访问Kenneth Hahn行政管理厅的税务员办公室，请准备好并给自己足够的时间通过金属探测器和检查。</value>
   </data>
   <data name="Additional security measures implemented at the Hall of Administration." xml:space="preserve">
     <value>在行政大厅实施的其他安全措施。</value>
@@ -144,11 +156,17 @@
   <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
     <value>上年度税收邮寄声明</value>
   </data>
+  <data name="Please &lt;a href=&quot;/portal/pdf/PriorYrTaxMail2018.pdf&quot;&gt;click here&lt;/a&gt; to view the Press Release and associated information." xml:space="preserve">
+    <value>请&lt;a href="/portal/pdf/PriorYrTaxMail2018.pdf"&gt;点击此处&lt;/a&gt;查看新闻稿和相关信息。</value>
+  </data>
   <data name="The Los Angeles County Treasurer and Tax Collector is in the process of mailing approximately 69,000 Statements of Prior Year Taxes notifying taxpayers of prior year defaulted property taxes." xml:space="preserve">
     <value>洛杉矶县财政部长和税务员正在邮寄约69,000份上年度税收报表，通知纳税人上一年的违约财产税。</value>
   </data>
   <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
     <value>评估员警告房主的房地产欺诈和误导性的请求</value>
+  </data>
+  <data name="Please see the &lt;a href=&quot;../pdf/RealEstateFraud.pdf&quot; target=&quot;_blank&quot;&gt;Press Release&lt;/a&gt; regarding real estate fraud and misleading solicitations. To report suspicious solicitations, contact the fraud prevention and information line at 800-973-3370 or email &lt;a href=&quot;mailto:helpdesk@assessor.lacounty.gov&quot;&gt;helpdesk@assessor.lacounty.gov&lt;/a&gt;." xml:space="preserve">
+    <value>请参阅有关房地产欺诈和误导性招揽的&lt;a href="../pdf/RealEstateFraud.pdf" target="_blank"&gt;新闻稿&lt;/a&gt;。要报告可疑请求，请致电800-973-3370联系预防欺诈和信息热线，或发送电子邮件至&lt;a href="mailto:helpdesk@assessor.lacounty.gov"&gt; helpdesk@assessor.lacounty.gov &lt;/a&gt;。</value>
   </data>
   <data name="Assessor Prang is alerting all property owners of increasing reports of deed scam solicitations and misleading mailings being sent across Los Angeles County" xml:space="preserve">
     <value>评估员Prang警告所有业主越来越多的报告称，骗局骗局和洛杉矶县发送的误导性邮件</value>
@@ -156,11 +174,17 @@
   <data name="Santa Clarita Sand Fire" xml:space="preserve">
     <value>圣克拉丽塔沙火</value>
   </data>
+  <data name="For more information on disaster relief and to file for an Application for Reassessment: Property Damaged or Destroyed by Misfortune or Calamity, please visit &lt;a href=&quot;http://assessor.lacounty.gov/disaster-relief/&quot;&gt;http://assessor.lacounty.gov/disaster-relief/&lt;/a&gt;.&lt;p&gt;For more information on Property Tax Installment Deferral , please visit &lt;a href=&quot;http://assessor.lacounty.gov/wp-content/uploads/2016/07/tax-deferral-form.pdf&quot;&gt;http://assessor.lacounty.gov/wp-content/uploads/2016/07/tax-deferral-form.pdf&lt;/a&gt;. You may contact Assessor staff at the North District Office by calling (818) 833-6000, Monday through Friday between the hours of 7:30 a.m. and 5:00 p.m. PT or by email at northdist@assessor.lacounty.gov.&lt;/p&gt;" xml:space="preserve">
+    <value>有关救灾的更多信息以及申请重新评估：不幸或灾难造成的财产损坏或毁坏，请访问&lt;a href="http://assessor.lacounty.gov/disaster-relief/"&gt; http：/ /assessor.lacounty.gov/disaster-relief/ &lt;/a&gt;。&lt;p&gt;有关物业税分期付款延期的更多信息，请访问&lt;a href =“http://assessor.lacounty.gov/wp-content/uploads /2016/07/tax-deferral-form.pdf"&gt;http://assessor.lacounty.gov/wp-content/uploads/2016/07/tax-deferral-form.pdf &lt;/A&gt;。您可以在周一至周五上午7:30至下午5:00之间致电(818)833-6000联系北区办事处的Assessor工作人员。 PT或发送电子邮件至northdist@assessor.lacounty.gov。&lt;/ p&gt;</value>
+  </data>
   <data name="The Office of the Assessor is currently reviewing applications for tax relief for property owners affected by the Sand Fire." xml:space="preserve">
     <value>评估办公室目前正在审查受沙火影响的业主减税申请。</value>
   </data>
   <data name="Aliso Canyon Gas Leak" xml:space="preserve">
     <value>Aliso Canyon Gas Leak</value>
+  </data>
+  <data name="The Los Angeles County Treasurer and Tax Collector, in conjunction with the Department of Public Health, and the Office of the Assessor, are reaching out to property owners who have been impacted by the Aliso Canyon Gas Leak.  Our respective offices are committed to providing assistance to you and have put together information that will address questions residents may have regarding their health, safety, and property.&lt;br/&gt;&lt;br/&gt;For information on health, safety, and frequently asked questions regarding  &#x1C;Returning Home After the Aliso Canyon Gas Leak, &#x1D; please visit &lt;a href=&quot;http://publichealth.lacounty.gov/&quot;&gt;publichealth.lacounty.gov&lt;/a&gt; or call the Department of Public Health, Environmental Health Call Center at (888) 700-9995, Monday through Friday between the hours of &lt;span&gt;8:00 a.m.&lt;/span&gt; and 5:00 p.m. PT.&lt;br/&gt;&lt;br/&gt;Please visit &lt;a href=&quot;http://assessor.lacounty.gov/&quot;&gt;assessor.lacounty.gov&lt;/a&gt; to find information and applications to request relief for Property Damaged or Destroyed by Misfortune or Calamity, or Property Tax Installment Deferral.  You may contact Assessor staff at the North District Office by calling (818) 833-6000, Monday through Friday between the hours of 7:30 a.m. and 5:00 p.m. PT or by email at &lt;a href=&quot;mailto:northdist@assessor.lacounty.gov&quot;&gt;northdist@assessor.lacounty.gov&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Aliso Canyon residents who chose to relocate temporarily may not have ready access to their 2015-2016 Annual Property Tax Bill.  You can request a Substitute Secured Property Tax Bill, which you can use to remit your payment for any remaining unpaid balance on the current year property taxes, which are delinquent if not paid by April 10, 2016.  Since April 10 falls on a Sunday, the delinquency date is extended to Monday, April 11, 2016.  To request a bill, call (213) 893-1103.  If you have questions regarding any remaining unpaid balance, please call the Treasurer and Tax Collector at (213) 974-2111 or (877) 807-2111, Monday through Friday between the hours of 8:00 a.m. and 5:00 p.m. PT.  You may also email at &lt;a href=&quot;mailto:AlisoCanyon@ttc.lacounty.gov&quot;&gt;AlisoCanyon@ttc.lacounty.gov&lt;/a&gt;" xml:space="preserve">
+    <value>洛杉矶县财政和税务人员与公共卫生部和评估办公室一起，正在接触受Aliso Canyon Gas Leak影响的业主。我们各自的办事处致力于为您提供帮助，并汇总了有关居民可能对其健康，安全和财产的疑问的信息。&lt;br/&gt; &lt;br/&gt;有关健康，安全和常见问题的信息关于返回家园在Aliso Canyon Gas Leak之后，请访问&lt;a href="http://publichealth.lacounty.gov/"&gt; publichealth.lacounty.gov &lt;/a&gt;或致电公共卫生部，环境卫生部呼叫中心（888）700-9995，周一至周五&lt;上午8:00 &lt;/ span&gt;和下午5:00之间PT。&lt;br/&gt; &lt;br/&gt;请访问&lt;a href="http://assessor.lacounty.gov/"&gt; assessor.lacounty.gov &lt;/a&gt;查找要求减免财产损失的信息和申请或被不幸或灾难或物业税分期延期摧毁。您可以在周一至周五上午7:30至下午5:00之间致电(818)833-6000联系北区办事处的Assessor工作人员。 PT或发送电子邮件至&lt;a href="mailto:northdist@assessor.lacounty.gov"&gt; northdist@assessor.lacounty.gov &lt;/a&gt; &lt;br/&gt; &lt;br/&gt;选择临时搬迁的Aliso Canyon居民不得准备好获得他们2015  -  2016年度财产税法案。您可以申请替代担保物业税法案，您可以使用该法案来支付当前年度财产税的任何剩余未付余额，如果在2016年4月10日之前未支付则拖欠。自4月10日起，周日，拖欠日期延长至2016年4月11日（星期一）。要申请账单，请致电（213）893-1103。如果您对任何剩余的未付余额有疑问，请致电财务主管和税务员，电话：（213）974-2111或（877）807-2111，周一至周五上午8:00至下午5:00。 PT。您也可以发送电子邮件至&lt;a href="mailto:AlisoCanyon@ttc.lacounty.gov"&gt; AlisoCanyon@ttc.lacounty.gov &lt;/a&gt;</value>
   </data>
   <data name="Residents Affected by the Aliso Canyon Gas Leak" xml:space="preserve">
     <value>受Aliso Canyon气体泄漏影响的居民</value>
@@ -168,13 +192,28 @@
   <data name="Save by Understanding the Property Tax System" xml:space="preserve">
     <value>通过了解物业税系统节省</value>
   </data>
+  <data name="Click &lt;a href=&quot;/images/pdf/PR 04.09.2019 Prop Tax Due April 10.pdf&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; to learn about the property tax system." xml:space="preserve">
+    <value>点击&lt;a href="/images/pdf/PR 04.09.2019 Prop Tax Due April October 10.pdf" target="_blank"&gt;此处&lt;/a&gt;，了解房产税制。</value>
+  </data>
   <data name="Second Installment Property Taxes Delinquent if Not Paid by April 10" xml:space="preserve">
     <value>如果未在4月10日之前支付，则第二期物业税将拖欠</value>
   </data>
   <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
     <value>洛杉矶县物业税在线支付</value>
   </data>
+  <data name="&lt;p class=&quot;my-3&quot;&gt;         If your bank account has a debit block to prevent unauthorized organizations from debiting your account via Automated Clearing House (ACH) Network, you must notify your bank to authorized         ACH debits from Los Angeles County with a debit filter with the Company Identification Number of:     &lt;/p&gt;     &lt;div class=&quot;d-flex d-inline&quot;&gt;         &lt;div class=&quot;border border-dark  p-1&quot;&gt;0&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;0&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;0&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;0&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;0&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;7&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;9&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;1&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;6&lt;/div&gt;         &lt;div class=&quot;border border-dark p-1&quot;&gt;1&lt;/div&gt;     &lt;/div&gt;     &lt;p class=&quot;my-3&quot;&gt;Los Angeles County updated its Company Identification Number on September 17, 2018, so you must update this Company Identification Number if you previously had a debit filter on your bank account.&lt;/p&gt;" xml:space="preserve">
+    <value>&lt;p class =“my-3”&gt;如果您的银行帐户有借记卡块以防止未经授权的组织通过自动清算所（ACH）网络从您的帐户中扣款，您必须通知您的银行从洛杉矶县获得授权的ACH借记使用公司标识号的借方过滤器：&lt;/ p&gt; &lt;div class =“d-flex d-inline”&gt; &lt;div class =“border border-dark p-1”&gt; 0 &lt;/ div&gt; &lt;div class =“ border border-dark p-1“&gt; 0 &lt;/ div&gt; &lt;div class =”border border-dark p-1“&gt; 0 &lt;/ div&gt; &lt;div class =”border border-dark p-1“&gt; 0 &lt;/ div&gt; &lt;div class =“border border-dark p-1”&gt; 0 &lt;/ div&gt; &lt;div class =“border border-dark p-1”&gt; 7 &lt;/ div&gt; &lt;div class =“border border-dark p -1“&gt; 9 &lt;/ div&gt; &lt;div class =”border border-dark p-1“&gt; 1 &lt;/ div&gt; &lt;div class =”border border-dark p-1“&gt; 6 &lt;/ div&gt; &lt;div class =“border border-dark p-1”&gt; 1 &lt;/ div&gt; &lt;/ div&gt; &lt;p class =“my-3”&gt;洛杉矶县于2018年9月17日更新了公司识别号码，所以如果您之前在银行帐户中设置了借记过滤器，则必须更新此公司标识号。&lt;/ p&gt;</value>
+  </data>
   <data name="Important Information Regarding Making Property Tax Payments by Electronic Check (eCheck). Please read if your bank account has a debit block to prevent unauthorized organizations from debiting your account." xml:space="preserve">
     <value>关于通过电子支票（eCheck）进行财产纳税的重要信息。请阅读您的银行帐户是否有借记卡块，以防止未经授权的组织从您的帐户中扣款。</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
+    <value>洛杉矶县财政部长和税务员收集邮件</value>
+  </data>
+  <data name="Click &lt;a href=&quot;/images/pdf/PressReleasePayment.pdf&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; for information about the Notices of Delinquency mailed by the Treasurer and Tax Collector." xml:space="preserve">
+    <value>点击&lt;a href="/images/pdf/PressReleasePayment.pdf" target="_blank"&gt;此处&lt;/a&gt;，了解由财务主管和税务员收集的邮寄通知书。</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Mails Final Notices of Current Year Payments(s) Due" xml:space="preserve">
+    <value>洛杉矶县财政部长和税务员收到邮寄当年支付的最终通知</value>
   </data>
 </root>

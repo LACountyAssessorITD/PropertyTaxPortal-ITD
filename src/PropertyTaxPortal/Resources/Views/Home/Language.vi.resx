@@ -120,4 +120,7 @@
   <data name="LANGUAGE" xml:space="preserve">
     <value>NGÔN NGỮ</value>
   </data>
+  <data name="This website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of the website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version." xml:space="preserve">
+    <value>Trang web này đã có những nỗ lực hợp lý để cung cấp một bản dịch chính xác. Tuy nhiên, không có bản dịch tự động hoặc máy tính nào là hoàn hảo và không nhằm thay thế phương pháp dịch thuật của con người hoặc truyền thống. Văn bản chính thức là phiên bản tiếng Anh của trang web. Nếu có bất kỳ câu hỏi nào liên quan đến tính chính xác của thông tin do phiên bản dịch của trang web trình bày, vui lòng tham khảo phiên bản tiếng Anh của trang web, đây là phiên bản chính thức.</value>
+  </data>
 </root>

@@ -120,4 +120,7 @@
   <data name="LANGUAGE" xml:space="preserve">
     <value>ԼԵԶՈՒ</value>
   </data>
+  <data name="This website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of the website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version." xml:space="preserve">
+    <value>Այս կայքը ճիշտ ջանքեր է գործադրել ճշգրիտ թարգմանությունը ապահովելու համար: Այնուամենայնիվ, ոչ մի ավտոմատացված կամ համակարգչային թարգմանություն կատարյալ չէ եւ չի նախատեսվում թարգմանել մարդկային կամ ավանդական թարգմանության մեթոդները: Պաշտոնական տեքստը կայքի անգլերեն տարբերակն է: Եթե կայքէջի թարգմանված տարբերակով ներկայացված տեղեկատվության ճշգրտության վերաբերյալ որեւէ հարց է առաջանում, խնդրում ենք հղում կատարել կայքի անգլերեն տարբերակին, որը պաշտոնական տարբերակն է:</value>
+  </data>
 </root>

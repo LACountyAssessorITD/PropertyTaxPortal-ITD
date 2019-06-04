@@ -120,4 +120,7 @@
   <data name="LANGUAGE" xml:space="preserve">
     <value>LA LANGUE</value>
   </data>
+  <data name="This website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of the website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version." xml:space="preserve">
+    <value>Ce site Web a fait des efforts raisonnables pour fournir une traduction exacte. Cependant, aucune traduction automatique ou informatisée n'est parfaite et ne vise pas à remplacer les méthodes de traduction humaines ou traditionnelles. Le texte officiel est la version anglaise du site. Si vous avez des questions concernant l'exactitude des informations fournies par la version traduite du site Web, veuillez vous reporter à l'édition anglaise du site Web, qui est la version officielle.</value>
+  </data>
 </root>

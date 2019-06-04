@@ -120,4 +120,7 @@
   <data name="LANGUAGE" xml:space="preserve">
     <value>언어</value>
   </data>
+  <data name="This website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of the website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version." xml:space="preserve">
+    <value>이 웹 사이트는 정확한 번역을 제공하기 위해 합당한 노력을 기울였습니다. 그러나 자동 또는 컴퓨터 번역은 완벽하지 않으며 사람 또는 전통 번역 방법을 대체하기위한 것이 아닙니다. 공식 텍스트는 웹 사이트의 영어 버전입니다. 번역 된 웹 사이트 버전의 정보 정확성과 관련하여 의문 사항이 있으면 공식 버전 인 웹 사이트의 영문 버전을 참조하십시오.</value>
+  </data>
 </root>

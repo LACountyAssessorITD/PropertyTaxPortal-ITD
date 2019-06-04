@@ -120,4 +120,7 @@
   <data name="LANGUAGE" xml:space="preserve">
     <value>IDIOMA</value>
   </data>
+  <data name="This website has made reasonable efforts to provide an accurate translation. However, no automated or computerized translation is perfect and is not intended to replace human or traditional translation methods. The official text is the English version of the website. If any questions arise concerning the accuracy of the information presented by the translated version of the website, please refer to the English edition of the website, which is the official version." xml:space="preserve">
+    <value>Este sitio web ha realizado esfuerzos razonables para proporcionar una traducción precisa. Sin embargo, ninguna traducción automatizada o computarizada es perfecta y no pretende reemplazar los métodos de traducción humanos o tradicionales. El texto oficial es la versión en inglés del sitio web. Si surge alguna pregunta sobre la exactitud de la información presentada por la versión traducida del sitio web, consulte la edición en inglés del sitio web, que es la versión oficial.</value>
+  </data>
 </root>
