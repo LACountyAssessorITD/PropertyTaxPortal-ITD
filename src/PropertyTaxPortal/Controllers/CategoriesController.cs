@@ -64,20 +64,20 @@ namespace PropertyTaxPortal.Controllers
             }
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateorEdit([Bind("CategoryID,Descr,categoryType,WebsectionID,sOrder,UploadID")] Category category)
-        {
-            if (category.CategoryID == 0)
-            {
-                int newsResults = _context.Database.ExecuteSqlCommand("PTP_createCategories @p0,@p1,@p2,@p3,@p4", category.Descr, category.categoryType, category.WebsectionID, category.sOrder, category.UploadID);
-            }
-            else
-            {
-                int newsResults = _context.Database.ExecuteSqlCommand("PTP_updateCategories @p0,@p1,@p2", category.CategoryID, category.Descr, category.categoryType);
-            }
-            return RedirectToAction(nameof(Index));
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> CreateorEdit([Bind("CategoryID,Descr,categoryType,WebsectionID,sOrder,UploadID")] Category category)
+        //{
+        //    if (category.CategoryID == 0)
+        //    {
+        //        int newsResults = _context.Database.ExecuteSqlCommand("PTP_createCategories @p0,@p1,@p2,@p3,@p4", category.Descr, category.categoryType, category.WebsectionID, category.sOrder, category.UploadID);
+        //    }
+        //    else
+        //    {
+        //        int newsResults = _context.Database.ExecuteSqlCommand("PTP_updateCategories @p0,@p1,@p2", category.CategoryID, category.Descr, category.categoryType);
+        //    }
+        //    return  RedirectToAction(nameof(Index));
+        //}
 
         public ActionResult DownArrow(int? id, int? pagenum)
         {
