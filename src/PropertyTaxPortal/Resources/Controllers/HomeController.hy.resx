@@ -126,33 +126,6 @@
   <data name="Website" xml:space="preserve">
     <value>Կայք</value>
   </data>
-  <data name="Phone" xml:space="preserve">
-    <value>Հեռ</value>
-  </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>Անվճար</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>Կայք</value>
-  </data>
-  <data name="Phone" xml:space="preserve">
-    <value>Հեռ</value>
-  </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>Անվճար</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>Կայք</value>
-  </data>
-  <data name="Phone" xml:space="preserve">
-    <value>Հեռ</value>
-  </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>Անվճար</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>Կայք</value>
-  </data>
   <data name="Reference" xml:space="preserve">
     <value>Տեղեկանք</value>
   </data>
@@ -279,9 +252,6 @@
   <data name="Website Related Inquiries" xml:space="preserve">
     <value>Վեբկայքի հետ կապված հարցումներ</value>
   </data>
-  <data name="Phone" xml:space="preserve">
-    <value>Հեռ</value>
-  </data>
   <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessment Appeals Board respond to your request shortly." xml:space="preserve">
     <value>Շնորհակալություն ձեր Հանրային հարցման ձեւը լրացնելու համար: Գնահատման բողոքարկման խորհուրդի աշխատակիցը կարճ պատասխանեց ձեր խնդրանքին:</value>
   </data>
@@ -289,66 +259,12 @@
     <value>Շնորհակալություն ձեր Հանրային հարցման ձեւը լրացնելու համար: Դերեսորի բաժնի աշխատակիցը կարճ պատասխան է տալիս ձեր խնդրանքին:</value>
   </data>
   <data name="Thank you for completing our Public Inquiry form. A staff member from the Auditor-Controller's department respond to your request shortly." xml:space="preserve">
-    <value>Շնորհակալություն ձեր Հանրային հարցման ձեւը լրացնելու համար: Աուդիտորի վերահսկիչի բաժնի աշխատակիցը կարճ ժամանակում արձագանքում է ձեր խնդրանքին:</value>
+    <value>Շնորհակալություն ձեր Հանրային հարցման ձեւը լրացնելու համար: Աուդիտորի վերահսկիչի բաժնի աշխատակիցը կարճ պատասխան է տալիս ձեր խնդրանքին:</value>
   </data>
   <data name="Thank you for completing our Public Inquiry form. A staff member from the Treasurer &amp; Tax Collector's department respond to your request shortly." xml:space="preserve">
     <value>Շնորհակալություն ձեր Հանրային հարցման ձեւը լրացնելու համար: Հաճախորդի եւ հարկահավաքի բաժնի աշխատակիցը կարճ ժամանակում արձագանքում է ձեր խնդրանքին:</value>
   </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>Անվճար</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>Կայք</value>
-  </data>
-  <data name="Please select" xml:space="preserve">
-    <value>Խնդրում ենք ընտրել</value>
-  </data>
   <data name="Property Tax Portal" xml:space="preserve">
     <value>Գույքի հարկային պորտալ</value>
-  </data>
-  <data name="Public Inquiry Email" xml:space="preserve">
-    <value>Հանրային հարցման էլ</value>
-  </data>
-  <data name="Please do NOT reply to this email" xml:space="preserve">
-    <value>Խնդրում ենք պատասխանել այս նամակին</value>
-  </data>
-  <data name="The Reference number for your inquiry is" xml:space="preserve">
-    <value>Ձեր հարցման համար հղման համարը</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Անուն</value>
-  </data>
-  <data name="Business Name" xml:space="preserve">
-    <value>Բիզնեսի անվանումը</value>
-  </data>
-  <data name="Mailing Address" xml:space="preserve">
-    <value>Փոստային ՀԱՍՑԵ</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="Daytime Phone Number" xml:space="preserve">
-    <value>Օրվա հեռախոսահամարը</value>
-  </data>
-  <data name="Fax Number" xml:space="preserve">
-    <value>Ֆաքսի համարը</value>
-  </data>
-  <data name="Property Address" xml:space="preserve">
-    <value>Գույքի հասցե</value>
-  </data>
-  <data name="Assessor Identification Number" xml:space="preserve">
-    <value>Գնահատողների նույնականացման համարը</value>
-  </data>
-  <data name="Company Number" xml:space="preserve">
-    <value>Ընկերության համարը</value>
-  </data>
-  <data name="Routing Index" xml:space="preserve">
-    <value>Ուղղորդող ինդեքս</value>
-  </data>
-  <data name="Comments" xml:space="preserve">
-    <value>Մեկնաբանությունները</value>
-  </data>
-  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
-    <value>Ձեր հարցումները ներկայացնելու համար խնդրում ենք օգտագործել մեր Հանրային հարցման ձեւը</value>
   </data>
 </root>

@@ -126,33 +126,6 @@
   <data name="Website" xml:space="preserve">
     <value>웹 사이트</value>
   </data>
-  <data name="Phone" xml:space="preserve">
-    <value>전화</value>
-  </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>무료 전화</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>웹 사이트</value>
-  </data>
-  <data name="Phone" xml:space="preserve">
-    <value>전화</value>
-  </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>무료 전화</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>웹 사이트</value>
-  </data>
-  <data name="Phone" xml:space="preserve">
-    <value>전화</value>
-  </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>무료 전화</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>웹 사이트</value>
-  </data>
   <data name="Reference" xml:space="preserve">
     <value>참고</value>
   </data>
@@ -279,9 +252,6 @@
   <data name="Website Related Inquiries" xml:space="preserve">
     <value>웹 사이트 관련 문의</value>
   </data>
-  <data name="Phone" xml:space="preserve">
-    <value>전화</value>
-  </data>
   <data name="Thank you for completing our Public Inquiry form. A staff member from the Assessment Appeals Board respond to your request shortly." xml:space="preserve">
     <value>공개 문의 양식을 작성해 주셔서 감사합니다. 평가 항소위원회의 직원이 귀하의 요청에 곧 답변합니다.</value>
   </data>
@@ -294,61 +264,7 @@
   <data name="Thank you for completing our Public Inquiry form. A staff member from the Treasurer &amp; Tax Collector's department respond to your request shortly." xml:space="preserve">
     <value>공개 문의 양식을 작성해 주셔서 감사합니다. 조세형 평국 재무 및 세무 담당 부서의 직원이 귀하의 요청에 곧 답변합니다.</value>
   </data>
-  <data name="Toll Free" xml:space="preserve">
-    <value>무료 전화</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>웹 사이트</value>
-  </data>
-  <data name="Please select" xml:space="preserve">
-    <value>선택 해주세요</value>
-  </data>
   <data name="Property Tax Portal" xml:space="preserve">
     <value>재산세 포털</value>
-  </data>
-  <data name="Public Inquiry Email" xml:space="preserve">
-    <value>공개 문의 전자 메일</value>
-  </data>
-  <data name="Please do NOT reply to this email" xml:space="preserve">
-    <value>이 메일에 답장하지 마십시오</value>
-  </data>
-  <data name="The Reference number for your inquiry is" xml:space="preserve">
-    <value>문의 참조 번호는 다음과 같습니다.</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>이름</value>
-  </data>
-  <data name="Business Name" xml:space="preserve">
-    <value>비즈니스 이름</value>
-  </data>
-  <data name="Mailing Address" xml:space="preserve">
-    <value>우편 주소</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>이메일</value>
-  </data>
-  <data name="Daytime Phone Number" xml:space="preserve">
-    <value>주간 전화 번호</value>
-  </data>
-  <data name="Fax Number" xml:space="preserve">
-    <value>팩스 번호</value>
-  </data>
-  <data name="Property Address" xml:space="preserve">
-    <value>부동산 주소</value>
-  </data>
-  <data name="Assessor Identification Number" xml:space="preserve">
-    <value>신원 확인 번호</value>
-  </data>
-  <data name="Company Number" xml:space="preserve">
-    <value>회사 번호</value>
-  </data>
-  <data name="Routing Index" xml:space="preserve">
-    <value>라우팅 색인</value>
-  </data>
-  <data name="Comments" xml:space="preserve">
-    <value>코멘트</value>
-  </data>
-  <data name="To submit your inquiries, please use our Public Inquiry Form at" xml:space="preserve">
-    <value>문의 사항을 제출 하시려면 아래의 공개 문의 양식을 이용하십시오.</value>
   </data>
 </root>
