@@ -70,24 +70,24 @@ namespace PropertyTaxPortal.Controllers
             }
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> CreateorEdit([Bind("FAQID,webSectionID,CategoryID,question,answer,sOrder,updatedOn,featuredCode")] FAQ fAQ)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        if (fAQ.FAQID == 0)
-        //        {
-        //            int faqResults = _context.Database.ExecuteSqlCommand("PTP_createFAQ @p0,@p1,@p2,@p3,@p4,@p5,@p6", fAQ.webSectionID, fAQ.CategoryID, fAQ.question, fAQ.answer, fAQ.sOrder, DateTime.Now, fAQ.featuredCode);
-        //        }
-        //        else
-        //        {
-        //            int faqResults = _context.Database.ExecuteSqlCommand("PTP_updateFAQ @p0,@p1,@p2,@p3,@p4,@p5,@p6", fAQ.FAQID, fAQ.webSectionID, fAQ.CategoryID, fAQ.question, fAQ.answer, fAQ.updatedOn, fAQ.featuredCode);
-        //        }
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(fAQ);
-        //}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult CreateorEdit([Bind("FAQID,webSectionID,CategoryID,question,answer,sOrder,updatedOn,featuredCode")] FAQ fAQ)
+        {
+            if (ModelState.IsValid)
+            {
+                if (fAQ.FAQID == 0)
+                {
+                    int faqResults = _context.Database.ExecuteSqlCommand("PTP_createFAQ @p0,@p1,@p2,@p3,@p4,@p5,@p6", fAQ.webSectionID, fAQ.CategoryID, fAQ.question, fAQ.answer, fAQ.sOrder, DateTime.Now, fAQ.featuredCode);
+                }
+                else
+                {
+                    int faqResults = _context.Database.ExecuteSqlCommand("PTP_updateFAQ @p0,@p1,@p2,@p3,@p4,@p5,@p6", fAQ.FAQID, fAQ.webSectionID, fAQ.CategoryID, fAQ.question, fAQ.answer, fAQ.updatedOn, fAQ.featuredCode);
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(fAQ);
+        }
 
         public ActionResult UpArrow(int? id, int? pagenum)
         {
