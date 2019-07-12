@@ -60,6 +60,14 @@ body {
     font-size: 200%;
 
 }
+.sample-text-area {
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+    color: #57BDF6 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    transform: none !important;
+}
 
 
 .search {
