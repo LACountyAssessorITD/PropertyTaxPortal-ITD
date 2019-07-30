@@ -37,9 +37,9 @@ namespace PropertyTaxPortal.Controllers
         }
 
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var context = _context.News.Where(b => (b.Active.Equals("Featured") && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToList();
+            var context = await _context.News.Where(b => (b.Active.Equals("Featured") && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToListAsync();
             return View(context);
         }
 
@@ -195,9 +195,9 @@ namespace PropertyTaxPortal.Controllers
 
             return View(news);
         }
-        public IActionResult News()
+        public async Task<IActionResult> News()
         {
-            var context = _context.News.Where(b => ((b.Active.Equals("Featured") || b.Active.Equals("Current")) && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToList();
+            var context = await _context.News.Where(b => ((b.Active.Equals("Featured") || b.Active.Equals("Current")) && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToListAsync();
             return View(context);
         }
 
@@ -215,19 +215,20 @@ namespace PropertyTaxPortal.Controllers
         }
 
         
-        public IActionResult GeneralFAQ(int?id)
+        public async Task<IActionResult> GeneralFAQ(int?id)
         {           
             dynamic FaqFinalModel = new System.Dynamic.ExpandoObject();
-            var modelTaxBillFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 1).OrderBy(f => f.sOrder);
-            var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
-            var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
-            var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
-            var modelTaxAgentFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 5).OrderBy(f => f.sOrder);
-            FaqFinalModel.TaxBill = modelTaxBillFAQs;
-            FaqFinalModel.Refund = modelRefundFAQs;
-            FaqFinalModel.Property = modelPropertyFAQs;
-            FaqFinalModel.Ownership = modelOwnershipFAQs;
-            FaqFinalModel.TaxAgent = modelTaxAgentFAQs;
+            var modelTaxBillFAQs =  await _context.faq.FromSql("PTP_getAllFAQs").ToListAsync();
+         
+            //var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
+            //var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
+            //var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
+            //var modelTaxAgentFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 5).OrderBy(f => f.sOrder);
+            FaqFinalModel.TaxBill = modelTaxBillFAQs.Where(f => f.CategoryID == 1).OrderBy(f => f.sOrder);
+            FaqFinalModel.Refund = modelTaxBillFAQs.Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
+            FaqFinalModel.Property = modelTaxBillFAQs.Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
+            FaqFinalModel.Ownership = modelTaxBillFAQs.Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
+            FaqFinalModel.TaxAgent = modelTaxBillFAQs.Where(f => f.CategoryID == 5).OrderBy(f => f.sOrder);
             FaqFinalModel.tabid = id;            
             return View(FaqFinalModel);
         }
@@ -263,11 +264,11 @@ namespace PropertyTaxPortal.Controllers
         /// Public Inquiry Form
         /// </summary>
         /// <returns></returns>
-        public IActionResult PublicInquiry()
+        public async Task<IActionResult> PublicInquiry()
         {
             var model = new PublicInquiryViewModel();
-            model.Subjects = GetAllSubjects();
-            model.States = GetAllStates();
+            model.Subjects = await GetAllSubjects();
+            model.States = await GetAllStates();
             model.propertyAddrState = "CA";
 
             return View(model);
@@ -284,10 +285,10 @@ namespace PropertyTaxPortal.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult PublicInquiry(PublicInquiryViewModel model)
+        public async Task<IActionResult> PublicInquiry(PublicInquiryViewModel model)
         {
-            model.Subjects = GetAllSubjects();
-            model.States = GetAllStates();
+            model.Subjects = await GetAllSubjects();
+            model.States = await GetAllStates();
 
             if (ModelState.IsValid)
             {
@@ -301,7 +302,7 @@ namespace PropertyTaxPortal.Controllers
                 string sThankYouEnd = " will respond to your request shortly.";
                 string sThankYouWhole = "";
 
-                lEmailTracking = _context.emailTrackingCount.FromSql("PTP_emailTrackingIncrement").ToList();
+                lEmailTracking = await _context.emailTrackingCount.FromSql("PTP_emailTrackingIncrement").ToListAsync();
                 sEmailTrackingCount = lEmailTracking.First().emailTrackingCount.ToString();
                 model.emailTrackingCount = sEmailTrackingCount;
                 sSubjectEnglish = model.subjectValue.Substring(0, model.subjectValue.IndexOf("|")); // Assessment Appeals
@@ -503,10 +504,10 @@ namespace PropertyTaxPortal.Controllers
         /// Pull the subject data for the public inquiry form subject dropdown
         /// </summary>
         /// <returns></returns>
-        private IEnumerable<SelectListItem> GetAllSubjects()
+        private async Task<IEnumerable<SelectListItem>> GetAllSubjects()
         {
             List<Subjects> lSubjects = new List<Subjects>();
-            lSubjects = _context.subjects.FromSql("PTP_getAllSubjects").ToList();
+            lSubjects = await _context.subjects.FromSql("PTP_getAllSubjects").ToListAsync();
             List<SelectListItem> li = new List<SelectListItem>();
             li.Add(new SelectListItem { Text = _localizer["Please select"], Value = "" });
             foreach (var oneSubject in lSubjects)
@@ -522,10 +523,10 @@ namespace PropertyTaxPortal.Controllers
         /// Pull the States data for the public inquiry form States dropdown
         /// </summary>
         /// <returns></returns>
-        private IEnumerable<SelectListItem> GetAllStates()
+        private async Task<IEnumerable<SelectListItem>> GetAllStates()
         {
             List<States> lStates = new List<States>();
-            lStates = _context.states.FromSql("PTP_getAllStates").ToList();
+            lStates = await _context.states.FromSql("PTP_getAllStates").ToListAsync();
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var oneState in lStates)
             {

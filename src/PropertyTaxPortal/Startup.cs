@@ -46,6 +46,7 @@ namespace PropertyTaxPortal
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             var email = Configuration.GetSection("Email");
             services.Configure<Email>(email);
             services.AddDbContext<PTPContext>(options => {
@@ -87,7 +88,7 @@ namespace PropertyTaxPortal
 
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            
 
 
 
