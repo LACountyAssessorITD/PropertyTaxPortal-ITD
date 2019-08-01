@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Security.Authentication;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -22,6 +23,6 @@ namespace PropertyTaxPortal
                     {
                         opt.SslProtocols = SslProtocols.Tls12;
                     });
-                });
+                }).UseKestrel(k => k.Limits.KeepAliveTimeout = TimeSpan.FromSeconds(10));
     }
 }
