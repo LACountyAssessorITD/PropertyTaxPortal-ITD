@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NOTICE OF DELINQUENCY" xml:space="preserve">
-    <value>延迟通知</value>
-  </data>
   <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
     <value>请单击任何数字以查看帐单组件的说明。您也可以向下滚动到页面底部以查看完整的字段说明列表。</value>
   </data>

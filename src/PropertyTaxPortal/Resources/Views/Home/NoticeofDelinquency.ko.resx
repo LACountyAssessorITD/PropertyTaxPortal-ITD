@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NOTICE OF DELINQUENCY" xml:space="preserve">
-    <value>비리의 통지</value>
-  </data>
   <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
     <value>청구서 구성 요소에 대한 설명을 보려면 아무 숫자 나 클릭하십시오. 또한 페이지 하단까지 아래로 스크롤하여 전체 필드 설명 목록을 볼 수도 있습니다.</value>
   </data>

@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NOTICE OF DELINQUENCY" xml:space="preserve">
-    <value>AVIS DE DÉLINQUANCE</value>
-  </data>
   <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
     <value>Veuillez cliquer sur n’importe quel numéro pour voir la description de la facture. Vous pouvez également faire défiler l'écran jusqu'en bas pour afficher une liste complète des descriptions de champs.</value>
   </data>

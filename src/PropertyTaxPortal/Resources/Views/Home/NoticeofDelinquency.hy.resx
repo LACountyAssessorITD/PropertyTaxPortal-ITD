@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NOTICE OF DELINQUENCY" xml:space="preserve">
-    <value>ԶԳՈՒՇԱՑՈՒՄ</value>
-  </data>
   <data name="Please click on any number to view the description of the bill component. You may also scroll down to the bottom of the page to view a complete list of field descriptions." xml:space="preserve">
     <value>Խնդրում ենք սեղմել ցանկացած օրվա համար `օրինագծի բաղադրիչի նկարագրությունը դիտելու համար: Դուք կարող եք նաեւ էջի ներքեւի ներքեւ ներքեւ իջնել դաշտի նկարագրությունների ամբողջական ցանկը դիտելու համար:</value>
   </data>
