@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PropertyTaxPortal.Models;
-using System.Net;
 using System.Net.Mail;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -149,7 +148,7 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        public IActionResult PrivacyPolicy(int? id)
+        public IActionResult PrivacyPolicy()
         {
             ViewBag.Title = "PRIVACY POLICY";
             return View();

@@ -15,7 +15,6 @@ using Microsoft.AspNetCore.Rewrite;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
-using NWebsec.AspNetCore.Middleware;
 using PropertyTaxPortal.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -24,10 +23,7 @@ namespace PropertyTaxPortal
 {
     public class Startup
     {
-        //public Startup(IConfiguration configuration)
-        //{
-        //    Configuration = configuration;
-        //}
+
 
         public Startup(IHostingEnvironment env)
         {
@@ -122,16 +118,16 @@ namespace PropertyTaxPortal
             
             services.AddSingleton<IUserService>(new AdminUserService());
 
-            services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            })
-                .AddCookie(options =>
-                {
-                    options.LoginPath = "/auth/signin";
-                });
+            //services.AddAuthentication(options =>
+            //{
+            //    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            //    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            //    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            //})
+            //    .AddCookie(options =>
+            //    {
+            //        options.LoginPath = "/auth/signin";
+            //    });
 
             //---------------------------END CONFIGURE LOCALIZATION-----------------------------//
         }
@@ -156,7 +152,7 @@ namespace PropertyTaxPortal
             app.UseStaticFiles();
             // To configure external authentication, 
             // see: http://go.microsoft.com/fwlink/?LinkID=532715
-            app.UseAuthentication();
+            //app.UseAuthentication();
 
 
             app.Use(async (context, next) =>
@@ -209,35 +205,6 @@ namespace PropertyTaxPortal
             //-----------------END LOCALIZATION MIDDLEWARE-----------------//
 
 
-            //app.UseCsp(opts => opts
-                
-            //    .FontSources(s => s.Self()
-            //    .CustomSources("https://ajax.aspnetcdn.com")
-            //    .CustomSources("https://www.googletagmanager.com")
-            //    .CustomSources("https://use.fontawesome.com")
-            //    .CustomSources("https://cse.google.com")
-            //    .CustomSources("https://apis.google.com")
-            //    .CustomSources("https://www.googletagmanager.com"))
-
-            //    .FormActions(s => s.Self())
-            //    .FrameAncestors(s => s.Self())
-            //    .ImageSources(s => s.Self())
-            //    .StyleSources(s => s.Self()
-            //    .CustomSources("https://ajax.aspnetcdn.com")
-            //    .CustomSources("https://www.googletagmanager.com")
-            //    .CustomSources("https://use.fontawesome.com")
-            //    .CustomSources("https://cse.google.com")
-            //    .CustomSources("https://apis.google.com")
-            //    .CustomSources("https://www.googletagmanager.com"))
-            //    .ScriptSources(s => s.Self()
-            //    .UnsafeInline()
-            //    .CustomSources("https://ajax.aspnetcdn.com")
-            //    .CustomSources("https://fonts.googleapis.com")
-            //    .CustomSources("https://use.fontawesome.com")
-            //    .CustomSources("https://cse.google.com")
-            //    .CustomSources("https://apis.google.com")
-            //    .CustomSources("https://www.googletagmanager.com"))
-            //);
 
             app.UseMvc(routes =>
             {
