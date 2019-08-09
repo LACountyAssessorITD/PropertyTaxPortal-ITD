@@ -168,8 +168,8 @@
   <data name="ASSESSOR IDENTIFICATION NUMBER" xml:space="preserve">
     <value>NÚMERO DE IDENTIFICACIÓN DEL ASESOR</value>
   </data>
-  <data name="Required for questions regarding personal perperty" xml:space="preserve">
-    <value>Requerido para preguntas sobre perperty personal</value>
+  <data name="Required for questions regarding personal property" xml:space="preserve">
+    <value>Requerido para preguntas sobre property personal</value>
   </data>
   <data name="COMPANY NUMBER" xml:space="preserve">
     <value>NUMERO DE COMPAÑIA</value>
