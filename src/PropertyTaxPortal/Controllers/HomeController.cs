@@ -38,8 +38,11 @@ namespace PropertyTaxPortal.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var context = await _context.News.Where(b => (b.Active.Equals("Featured") && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToListAsync();
-            return View(context);
+            var context = await _context.News.Where(b => b.Active.Equals("Featured")).ToListAsync();
+
+            context = context.Where(c => DateTime.Compare(c.EndOn, DateTime.Now) > 0).ToList();
+
+            return View(context.OrderBy(b => b.SOrder));
         }
 
         //Annual Secured Property Tax Bill
@@ -196,8 +199,15 @@ namespace PropertyTaxPortal.Controllers
         }
         public async Task<IActionResult> News()
         {
-            var context = await _context.News.Where(b => ((b.Active.Equals("Featured") || b.Active.Equals("Current")) && DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToListAsync();
-            return View(context);
+
+            //var context = await _context.News
+            //    .Where(b => ((b.Active.Equals("Featured") || b.Active.Equals("Current")) &&
+            //                 DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToListAsync();
+            var context = await _context.News
+                .Where(b => b.Active.Equals("Featured") || b.Active.Equals("Current")).ToListAsync(); ;
+            context = context.Where(b => DateTime.Compare(b.EndOn, DateTime.Now) > 0).ToList();
+                
+            return View(context.OrderBy(b => b.SOrder));
         }
 
 
