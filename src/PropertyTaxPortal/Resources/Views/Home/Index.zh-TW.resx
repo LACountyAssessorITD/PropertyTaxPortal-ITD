@@ -142,7 +142,7 @@
     <value>评估上诉委员会</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>支付财产&lt;/ br&gt;税</value>
+    <value>支付财产&lt;/br&gt;税</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
     <value>物业税管理系统</value>
@@ -165,7 +165,7 @@
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>订阅财务主管和税务员的电子邮件通知服务</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
     <value>洛杉矶县税务员介绍在线物业税管理系统。</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
@@ -191,5 +191,8 @@
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
     <value>洛杉矶县财政部长和税务员收集邮件</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>洛杉矶县财政部长和税务人员通知财产所有者违反上一年度税款</value>
   </data>
 </root>

@@ -124,28 +124,28 @@
     <value>환영</value>
   </data>
   <data name="Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
-    <value>Assessor, 감사관, 재무 및 세무 담당관 및 Assessment Appeals Board는이 재산세 정보 사이트를 준비하여 납세자에게 로스 앤젤레스 카운티의 재산세 절차에 대한 개요 및 일부 세부 사항을 제공합니다</value>
+    <value>Assessor, Auditor-Controller, Treasurer and Tax Collector, Assessment Appeals Board는이 재산세 정보 사이트를 준비하여 납세자에게 로스 앤젤레스 카운티의 재산세 프로세스에 대한 개요 및 세부 사항을 제공합니다.</value>
   </data>
   <data name="Assessor" xml:space="preserve">
     <value>배석 판사</value>
   </data>
   <data name="Acting Auditor-Controller" xml:space="preserve">
-    <value>연기 감사관</value>
+    <value>행동 감사-컨트롤러</value>
   </data>
   <data name="Acting Treasurer and Tax Collector" xml:space="preserve">
-    <value>연기 재무 및 세무 담당자</value>
+    <value>재무 및 세금 징수 원</value>
   </data>
   <data name="Executive Officer" xml:space="preserve">
-    <value>집행 임원</value>
+    <value>임원</value>
   </data>
   <data name="Assessment Appeals Board" xml:space="preserve">
     <value>평가 항소위원회</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>유료 속성 &lt;/ br&gt; 세금</value>
+    <value>재산 지불 &lt;/br&gt; 세금</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
-    <value>재산 관리 시스템</value>
+    <value>재산세 관리 시스템</value>
   </data>
   <data name="Change Mailing Address" xml:space="preserve">
     <value>우편 주소 변경</value>
@@ -157,39 +157,42 @@
     <value>셀프 서비스 옵션</value>
   </data>
   <data name="Areas of Responsibility" xml:space="preserve">
-    <value>책임 분야</value>
+    <value>책임 영역</value>
   </data>
   <data name="Self-Service" xml:space="preserve">
     <value>셀프 서비스</value>
   </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
-    <value>재무 및 세수 수집 전자 메일 알림 서비스 가입</value>
+    <value>재무 및 세금 징수 원의 이메일 알림 서비스에 가입</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
-    <value>로스 앤젤레스 군 세금 징수 원은 온라인 재산세 관리 시스템을 도입했습니다.</value>
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
+    <value>로스 앤젤레스 카운티 세금 징수 원은 온라인 재산세 관리 시스템을 도입합니다.</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
-    <value>관리 홀 (HOA) 보안 정보</value>
+    <value>행정관 (HOA) 보안 정보</value>
   </data>
   <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
-    <value>전년도 세금 신고서 발송</value>
+    <value>전년도 세금 신고서</value>
   </data>
   <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
-    <value>Assessor, 주택 사기로 부동산 사기 및 불법 모집 경고</value>
+    <value>평가자는 부동산 사기 및 오해의 소지가있는 주택 소유자에게 경고</value>
   </data>
   <data name="Santa Clarita Sand Fire" xml:space="preserve">
-    <value>산타 클라리 타 모래 불</value>
+    <value>산타 클라리 타 샌드 파이어</value>
   </data>
   <data name="Aliso Canyon Gas Leak" xml:space="preserve">
-    <value>알리소 캐년 가스 누출</value>
+    <value>알리 소 캐년 가스 누출</value>
   </data>
   <data name="Save by Understanding the Property Tax System" xml:space="preserve">
-    <value>재산세 시스템 이해를 통한 절약</value>
+    <value>재산세 시스템을 이해함으로써 절약</value>
   </data>
   <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
-    <value>카운티 Los Angeles 부동산 세 온라인 지불</value>
+    <value>로스 앤젤레스 카운티 재산세 온라인 지불</value>
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
-    <value>로스 앤젤레스 카운티 재무 및 세수 수집가 우편</value>
+    <value>로스 앤젤레스 카운티 재무 및 세금 징수 자 우편</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>로스 앤젤레스 카운티 재무 및 세금 징수 원은 재산 소유자에게 기본 전년도 세금을 통지합니다</value>
   </data>
 </root>

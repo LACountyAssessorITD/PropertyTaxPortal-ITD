@@ -142,7 +142,7 @@
     <value>Commission d'appel en matière d'évaluation</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>Propriété payante &lt;/ br&gt; Taxes</value>
+    <value>Payer les biens &lt;/br&gt; Impôts</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
     <value>SYSTÈME DE GESTION DE L'IMPÔT FONCIER</value>
@@ -165,7 +165,7 @@
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>Abonnez-vous au service de notification par courrier électronique du trésorier et percepteur</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
     <value>Le collecteur d’impôts du comté de Los Angeles introduit un système de gestion de l’impôt foncier en ligne.</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
@@ -175,7 +175,7 @@
     <value>Relevé des taxes de l'année précédente</value>
   </data>
   <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
-    <value>Un évaluateur met en garde les propriétaires de fraude immobilière et de sollicitations trompeuses</value>
+    <value>Un évaluateur met en garde les propriétaires de fraudes immobilières et de sollicitations trompeuses</value>
   </data>
   <data name="Santa Clarita Sand Fire" xml:space="preserve">
     <value>Santa Clarita Sand Fire</value>
@@ -191,5 +191,8 @@
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
     <value>Message du trésorier et du percepteur du comté de Los Angeles</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>Le trésorier et percepteur des impôts du comté de Los Angeles avise les propriétaires de leurs impôts et taxes impayés d'exercices antérieurs</value>
   </data>
 </root>

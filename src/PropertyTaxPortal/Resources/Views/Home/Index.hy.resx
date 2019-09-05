@@ -124,72 +124,75 @@
     <value>Բարի գալուստ</value>
   </data>
   <data name="Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
-    <value>Գնահատող, աուդիտոր-վերահսկիչ, գանձապահ եւ հարկային հավաքիչ եւ գնահատման բողոքարկման խորհուրդը պատրաստել են այդ գույքահարկի տեղեկատվական կայքը `հարկ վճարողներին համապարփակ տրամադրելու եւ որոշակի մանրամասներ անշարժ գույքի հարկի գործընթացի մասին` Լոս Անջելեսի շրջանի</value>
+    <value>Գնահատող, աուդիտոր-վերահսկող, գանձապահ և հարկահավաք և գնահատող բողոքարկման խորհուրդը պատրաստել են գույքի հարկի մասին տեղեկատվական այս կայքը, որպեսզի հարկ վճարողներին տրամադրեն ակնարկ և որոշ հատուկ մանրամասներ Լոս Անջելեսի կոմսությունում գտնվող գույքի հարկման գործընթացի վերաբերյալ:</value>
   </data>
   <data name="Assessor" xml:space="preserve">
     <value>Գնահատող</value>
   </data>
   <data name="Acting Auditor-Controller" xml:space="preserve">
-    <value>Աուդիտոր-վերահսկիչի պաշտոնակատար</value>
+    <value>Գործող աուդիտոր-վերահսկիչ</value>
   </data>
   <data name="Acting Treasurer and Tax Collector" xml:space="preserve">
-    <value>Հաշվապահի եւ հարկահավաքի գործադիր տնօրենի պաշտոնակատար</value>
+    <value>Գործող գանձապահ և հարկահավաք</value>
   </data>
   <data name="Executive Officer" xml:space="preserve">
     <value>Գործադիր տնօրեն</value>
   </data>
   <data name="Assessment Appeals Board" xml:space="preserve">
-    <value>Գնահատման բողոքարկման խորհուրդ</value>
+    <value>Գնահատման բողոքարկման խորհուրդը</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>Վճարեք գույքը &lt;/ br&gt; Հարկեր</value>
+    <value>Վճարեք գույք &lt;/br&gt; հարկերը</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
     <value>ԳՈՒՅՔԻ ՀԱՐԿԱՅԻՆ ԿԱՌԱՎԱՐՄԱՆ ՀԱՄԱԿԱՐԳ</value>
   </data>
   <data name="Change Mailing Address" xml:space="preserve">
-    <value>Փոխել փոստի հասցեն</value>
+    <value>Փոխեք փոստի հասցեն</value>
   </data>
   <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
-    <value>ԳՈՒՅՔԻ ՀԵՏԱԴԱՐՁ ԿԱՊ</value>
+    <value>ԳՆԱՀԱՏՄԱՆ ԳՏՆՈՒՄ</value>
   </data>
   <data name="Self-Service Options" xml:space="preserve">
-    <value>Self-Service Options- ը</value>
+    <value>Ինքնասպասարկման ընտրանքներ</value>
   </data>
   <data name="Areas of Responsibility" xml:space="preserve">
     <value>Պատասխանատվության ոլորտները</value>
   </data>
   <data name="Self-Service" xml:space="preserve">
-    <value>Self-Service- ը</value>
+    <value>Ինքնասպասարկում</value>
   </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
-    <value>Բաժանորդին եւ հարկահավաքի էլեկտրոնային ծանուցման ծառայությանը</value>
+    <value>Բաժանորդագրվել գանձապահի և հարկահավաքի էլփոստի ծանուցման ծառայությանը</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
-    <value>Լոս Անջելեսի շրջանի հարկահավաքը ներառում է առցանց գույքահարկի կառավարման համակարգ:</value>
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
+    <value>Լոս Անջելեսի շրջանային հարկահավաքը ներկայացնում է գույքի հարկերի կառավարման առցանց համակարգ:</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
-    <value>Ադմինիստրացիայի դահլիճ (ԱԱ) անվտանգության մասին տեղեկություն</value>
+    <value>Կառավարման սրահ (ՀՕԱ) Անվտանգության տեղեկատվություն</value>
   </data>
   <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
-    <value>Նախորդ տարվա հարկերի հայտարարագրումը փոստով</value>
+    <value>Նախորդ տարվա հարկերի փոստային առաքման մասին հայտարարություն</value>
   </data>
   <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
-    <value>Գնահատողը զգուշացնում է անշարժ գույքի կեղծիքների եւ ապակողմնորոշիչ խնդրանքների տան սեփականատերերին</value>
+    <value>Գնահատողը նախազգուշացնում է անշարժ գույքի խարդախության և ապակողմնորոշման խնդրանքների տները</value>
   </data>
   <data name="Santa Clarita Sand Fire" xml:space="preserve">
-    <value>Ձմեռային Clarita Sand Fire</value>
+    <value>Santa Clarita ավազ կրակ</value>
   </data>
   <data name="Aliso Canyon Gas Leak" xml:space="preserve">
     <value>Aliso Canyon գազի արտահոսք</value>
   </data>
   <data name="Save by Understanding the Property Tax System" xml:space="preserve">
-    <value>Պահպանելով գույքահարկի համակարգը հասկանալով</value>
+    <value>Խնայեք ՝ հասկանալով գույքի հարկի համակարգը</value>
   </data>
   <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
-    <value>Լոս Անջելեսի գույքահարկի առցանց վճարումներ</value>
+    <value>Լոս Անջելեսի շրջանային գույքի հարկի առցանց վճարումներ</value>
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
-    <value>Լոս Անջելեսի գանձապետ եւ հարկահավաք գրողներ</value>
+    <value>Լոս Անջելեսի շրջանի գանձապահի և հարկահավաքի նամակներ</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>Լոս Անջելեսի շրջանային գանձապահը և հարկահավաքը տեղեկացնում են նախորդ տարվա կանխադրված հարկերի գույքի տերերին</value>
   </data>
 </root>

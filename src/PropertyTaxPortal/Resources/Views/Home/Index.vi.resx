@@ -124,7 +124,7 @@
     <value>Chào mừng bạn</value>
   </data>
   <data name="Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
-    <value>Người giám định, Kiểm toán viên, Kiểm soát viên, Thủ quỹ và Người thu thuế và Hội đồng Khiếu nại Đánh giá đã chuẩn bị trang web thông tin thuế bất động sản này để cung cấp cho người nộp thuế một cái nhìn tổng quan và một số chi tiết cụ thể về quy trình thuế bất động sản tại Hạt Los Angeles</value>
+    <value>Người giám định, Kiểm toán viên, Kiểm soát viên, Thủ quỹ và Người thu thuế, và Hội đồng Khiếu nại Đánh giá đã chuẩn bị trang web thông tin thuế bất động sản này để cung cấp cho người nộp thuế một cái nhìn tổng quan và một số chi tiết cụ thể về quy trình thuế bất động sản tại Hạt Los Angeles</value>
   </data>
   <data name="Assessor" xml:space="preserve">
     <value>Giám định</value>
@@ -142,7 +142,7 @@
     <value>Hội đồng thẩm định</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>Trả tài sản &lt;/ br&gt; Thuế</value>
+    <value>Trả tài sản &lt;/br&gt; Thuế</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
     <value>HỆ THỐNG QUẢN LÝ THUẾ TÀI SẢN</value>
@@ -163,9 +163,9 @@
     <value>Tự phục vụ</value>
   </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
-    <value>Đăng ký Dịch vụ Thông báo Email của Thủ quỹ và Người thu thuế</value>
+    <value>Theo dõi Dịch vụ Thông báo Email của Thủ quỹ và Người thu thuế</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
     <value>Người thu thuế hạt Los Angeles giới thiệu một hệ thống quản lý thuế tài sản trực tuyến.</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
@@ -191,5 +191,8 @@
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
     <value>Thủ quỹ và người thu thuế quận Los Angeles</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>Thủ quỹ và người thu thuế của Hạt Los Angeles Thông báo cho chủ sở hữu tài sản của các khoản thuế năm trước mặc định</value>
   </data>
 </root>

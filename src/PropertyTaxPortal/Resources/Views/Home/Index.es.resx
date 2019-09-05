@@ -124,13 +124,13 @@
     <value>Bienvenido</value>
   </data>
   <data name="Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
-    <value>El Asesor, Auditor-Controlador, Tesorero y Recaudador de Impuestos, y la Junta de Apelaciones de Evaluación han preparado este sitio de información de impuestos a la propiedad para proporcionar a los contribuyentes una descripción general y algunos detalles específicos sobre el proceso de impuestos a la propiedad en el Condado de Los Angeles</value>
+    <value>El Asesor, Auditor-Controlador, Tesorero y Recaudador de Impuestos, y la Junta de Apelaciones de Evaluación han preparado este sitio de información de impuestos sobre la propiedad para proporcionar a los contribuyentes una visión general y algunos detalles específicos sobre el proceso del impuesto sobre la propiedad en el Condado de Los Ángeles</value>
   </data>
   <data name="Assessor" xml:space="preserve">
     <value>Asesor</value>
   </data>
   <data name="Acting Auditor-Controller" xml:space="preserve">
-    <value>Auditor-controlador interino</value>
+    <value>Auditor-Controlador interino</value>
   </data>
   <data name="Acting Treasurer and Tax Collector" xml:space="preserve">
     <value>Tesorero interino y recaudador de impuestos</value>
@@ -142,16 +142,16 @@
     <value>Junta de Apelaciones de Evaluación</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>Pagar propiedad &lt;/br&gt; Impuestos</value>
+    <value>Pagar impuestos de propiedad &lt;/br&gt;</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
-    <value>SISTEMA DE GESTIÓN DEL IMPUESTO A LA PROPIEDAD</value>
+    <value>SISTEMA DE GESTIÓN DE IMPUESTOS A LA PROPIEDAD</value>
   </data>
   <data name="Change Mailing Address" xml:space="preserve">
-    <value>Cambiar dirección de correo</value>
+    <value>Cambiar dirección postal</value>
   </data>
   <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
-    <value>BÚSQUEDA DE LA DIRECCIÓN DE LA PROPIEDAD</value>
+    <value>BÚSQUEDA DE DIRECCIÓN DE PROPIEDAD</value>
   </data>
   <data name="Self-Service Options" xml:space="preserve">
     <value>Opciones de autoservicio</value>
@@ -163,33 +163,36 @@
     <value>Autoservicio</value>
   </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
-    <value>Suscríbase al Servicio de Notificación por Correo Electrónico del Tesorero y Recaudador de Impuestos</value>
+    <value>Suscríbase al servicio de notificación por correo electrónico del tesorero y recaudador de impuestos</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
-    <value>El recaudador de impuestos del condado de Los Ángeles presenta un sistema de administración de impuestos a la propiedad en línea.</value>
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
+    <value>El recaudador de impuestos del condado de Los Ángeles presenta un sistema de administración de impuestos sobre la propiedad en línea.</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
-    <value>Información de seguridad del Hall of Administration (HOA)</value>
+    <value>Información de seguridad del Salón de Administración (HOA)</value>
   </data>
   <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
-    <value>Declaración de envío de impuestos de años anteriores</value>
+    <value>Declaración de envío de impuestos del año anterior</value>
   </data>
   <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
-    <value>El asesor advierte a los propietarios de viviendas sobre el fraude inmobiliario y las solicitudes engañosas</value>
+    <value>Asesor advierte a propietarios de fraude inmobiliario y solicitudes engañosas</value>
   </data>
   <data name="Santa Clarita Sand Fire" xml:space="preserve">
-    <value>Santa Clarita arena fuego</value>
+    <value>Santa Clarita Arena Fuego</value>
   </data>
   <data name="Aliso Canyon Gas Leak" xml:space="preserve">
-    <value>Fuga de gas en el cañón de Aliso</value>
+    <value>Aliso Canyon Fuga de gas</value>
   </data>
   <data name="Save by Understanding the Property Tax System" xml:space="preserve">
-    <value>Ahorre entendiendo el sistema de impuesto a la propiedad</value>
+    <value>Ahorre entendiendo el sistema de impuestos a la propiedad</value>
   </data>
   <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
-    <value>Pagos en línea del impuesto a la propiedad en el condado de Los Ángeles</value>
+    <value>Pagos en línea del impuesto a la propiedad del condado de Los Ángeles</value>
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
-    <value>Tesorero del condado de Los Angeles y correos del recaudador de impuestos</value>
+    <value>Tesorero del condado de Los Ángeles y correos recaudadores de impuestos</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>El tesorero y recaudador de impuestos del condado de Los Ángeles notifica a los propietarios de los impuestos impagos del año anterior</value>
   </data>
 </root>

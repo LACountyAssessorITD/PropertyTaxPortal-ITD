@@ -142,10 +142,10 @@
     <value>Апелляционная комиссия по оценке</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>Оплата собственности &lt;/ br&gt; налоги</value>
+    <value>Оплатить недвижимость &lt;/br&gt; Налоги</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
-    <value>СИСТЕМА УПРАВЛЕНИЯ НАЛОГАМИ НЕДВИЖИМОСТИ</value>
+    <value>СИСТЕМА УПРАВЛЕНИЯ НАЛОГОМ НА ИМУЩЕСТВО</value>
   </data>
   <data name="Change Mailing Address" xml:space="preserve">
     <value>Изменить почтовый адрес</value>
@@ -165,7 +165,7 @@
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
     <value>Подпишитесь на электронную рассылку казначея и сборщика налогов</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
     <value>Сборщик налогов округа Лос-Анджелес вводит онлайн-систему управления налогом на имущество.</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
@@ -191,5 +191,8 @@
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
     <value>Почта казначея и сборщика налогов округа Лос-Анджелес</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>Казначей и сборщик налогов округа Лос-Анджелес уведомляют владельцев недвижимости о неуплаченных налогах за предыдущий год</value>
   </data>
 </root>

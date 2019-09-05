@@ -124,72 +124,75 @@
     <value>خوش آمدی</value>
   </data>
   <data name="Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County" xml:space="preserve">
-    <value>اسناد، حسابرس، کنترل کننده، خزانه دار و جمع آوری مالیات، و هیئت ارزیابی هیئت مدیره این سایت اطلاعات مالیات بر دارایی را برای ارائه مالیات دهندگان با مرور و برخی از جزئیات خاص در مورد روند مالیات بر دارایی در لس آنجلس</value>
+    <value>ارزیاب ، حسابرس کنترل ، خزانه دار و جمع آورنده مالیات ، و هیئت تجدیدنظر ارزیابی ، این سایت را برای اطلاع از مالیات بر دارایی تهیه کرده اند تا نمایندگان کلیه و جزئیات خاصی در مورد روند مالیات بر دارایی در لس آنجلس در اختیار مالیات دهندگان قرار دهند.</value>
   </data>
   <data name="Assessor" xml:space="preserve">
-    <value>اسناد</value>
+    <value>ارزیابی</value>
   </data>
   <data name="Acting Auditor-Controller" xml:space="preserve">
-    <value>بازرس حسابرس</value>
+    <value>کنشگر حسابرس</value>
   </data>
   <data name="Acting Treasurer and Tax Collector" xml:space="preserve">
-    <value>کارمند خزانه دار و جمع آوری مالیاتی</value>
+    <value>بازیگر خزانه دار و جمع کننده مالیات</value>
   </data>
   <data name="Executive Officer" xml:space="preserve">
     <value>مدیر اجرایی</value>
   </data>
   <data name="Assessment Appeals Board" xml:space="preserve">
-    <value>ارزیابی هیأت بازپرداخت</value>
+    <value>هیئت تجدیدنظر ارزیابی</value>
   </data>
   <data name="Pay Property &lt;/br&gt; Taxes" xml:space="preserve">
-    <value>املاک پرداخت &lt;/ br&gt; مالیات</value>
+    <value>مالیات پرداخت کنید</value>
   </data>
   <data name="PROPERTY TAX MANAGEMENT SYSTEM" xml:space="preserve">
-    <value>سیستم مدیریت مالیات بر ارزش افزوده</value>
+    <value>سیستم مدیریت مالیات بر خصوصی</value>
   </data>
   <data name="Change Mailing Address" xml:space="preserve">
-    <value>تغییر آدرس پستی</value>
+    <value>آدرس پستی را تغییر دهید</value>
   </data>
   <data name="PROPERTY ADDRESS SEARCH" xml:space="preserve">
-    <value>جستجوی ADPERTY املاک</value>
+    <value>جستجوی آدرس خصوصی</value>
   </data>
   <data name="Self-Service Options" xml:space="preserve">
-    <value>گزینه های خود خدمات</value>
+    <value>گزینه های سلف سرویس</value>
   </data>
   <data name="Areas of Responsibility" xml:space="preserve">
-    <value>حوزه مسئولیت</value>
+    <value>زمینه های مسئولیت پذیری</value>
   </data>
   <data name="Self-Service" xml:space="preserve">
     <value>سلف سرویس</value>
   </data>
   <data name="Subscribe to the Treasurer and Tax Collector's Email Notification Service" xml:space="preserve">
-    <value>مشترک شدن در خبرنامه پست الکترونیک خزانه دار و مالیات گردآورنده</value>
+    <value>در خدمات اطلاع رسانی ایمیل خزانه دار و جمع کننده مالیات مشترک شوید</value>
   </data>
-  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System. " xml:space="preserve">
-    <value>مجموعه مالیاتی شهرستان لس آنجلس یک سیستم مدیریت مالیات آنلاین را معرفی می کند.</value>
+  <data name="Los Angeles County Tax Collector Introduces an Online Property Tax Management System." xml:space="preserve">
+    <value>گردآورنده مالیات شهرستان لس آنجلس سیستم مدیریت مالیات بر دارایی آنلاین را ارائه می دهد.</value>
   </data>
   <data name="Hall of Administration (HOA) Security Information" xml:space="preserve">
-    <value>اطلاعات مربوط به حوزه مدیریت (HOA)</value>
+    <value>اطلاعات امنیتی تالار مدیریت (HOA)</value>
   </data>
   <data name="Statement of Prior Year Taxes Mailing" xml:space="preserve">
-    <value>بیانیه مالیات سال قبل از ارسال نامه</value>
+    <value>بیانیه ارسال نامه مالیات سال قبل</value>
   </data>
   <data name="Assessor Warns Homeowners of Real Estate Fraud and Misleading Solicitations" xml:space="preserve">
-    <value>ارزیابی کننده املاک و مستغلات از تقلب و سوءاستفاده از املاک و مستغلات را هشدار می دهد</value>
+    <value>Assessor هشدار می دهد صاحبان خانه تقلب در املاک و مستغلات</value>
   </data>
   <data name="Santa Clarita Sand Fire" xml:space="preserve">
-    <value>سانتا کلاریتا شن و ماسه آتش</value>
+    <value>سانتا کلاریتا آتش شنی</value>
   </data>
   <data name="Aliso Canyon Gas Leak" xml:space="preserve">
-    <value>نشت گاز Aliso Canyon</value>
+    <value>نشت گاز آلیسو کانیون</value>
   </data>
   <data name="Save by Understanding the Property Tax System" xml:space="preserve">
-    <value>صرفه جویی در درک سیستم مالیات بر دارایی</value>
+    <value>با درک سیستم مالیات بر دارایی ، پس انداز کنید</value>
   </data>
   <data name="County of Los Angeles Property Tax Online Payments" xml:space="preserve">
-    <value>پرداخت مالیات املاک مالی در لس آنجلس</value>
+    <value>پرداخت آنلاین مالیات بر املاک در ایالت لس آنجلس</value>
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Mails" xml:space="preserve">
-    <value>وزارت خزانه داری شهرستان لس آنجلس و نامه های جمع آوری مالیاتی</value>
+    <value>نامه های خزانه دار و جمع آورنده مالیات در لس آنجلس</value>
+  </data>
+  <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">
+    <value>خزانه دار و مأمور جمع آوری مالیات در لس آنجلس از مالکان دارایی های مالیات های پیش فرض سال قبل مطلع می کند</value>
   </data>
 </root>
