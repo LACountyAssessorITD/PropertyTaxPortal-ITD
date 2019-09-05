@@ -57,37 +57,38 @@ namespace PropertyTaxPortal
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            //services.ConfigureApplicationCookie(options => {
+            services.ConfigureApplicationCookie(options =>
+            {
 
-            //    options.Events = new CookieAuthenticationEvents
-            //    {
-            //        OnRedirectToLogin = ctx =>
-            //        {
-            //            var requestPath = ctx.Request.Path;
-            //            if (requestPath.Value == "/admin")
-            //            {
-            //                ctx.Response.Redirect("/auth/signin");
-            //            }
-            //            else if (requestPath.Value == "/FAQs")
-            //            {
-            //                ctx.Response.Redirect("/auth/signin");
-            //            }
-            //            else if (requestPath.Value == "/News")
-            //            {
-            //                ctx.Response.Redirect("/auth/signin");
-            //            }
-            //            else if (requestPath.Value == "/Categories")
-            //            {
-            //                ctx.Response.Redirect("/auth/signin");
-            //            }
+                options.Events = new CookieAuthenticationEvents
+                {
+                    OnRedirectToLogin = ctx =>
+                    {
+                        var requestPath = ctx.Request.Path;
+                        if (requestPath.Value == "/admin")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
+                        else if (requestPath.Value == "/FAQs")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
+                        else if (requestPath.Value == "/News")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
+                        else if (requestPath.Value == "/Categories")
+                        {
+                            ctx.Response.Redirect("/auth/signin");
+                        }
 
-            //            return Task.CompletedTask;
-            //        }
-            //    };
+                        return Task.CompletedTask;
+                    }
+                };
 
-            //});
+            });
 
-            
+
 
 
 
@@ -121,16 +122,16 @@ namespace PropertyTaxPortal
             
             services.AddSingleton<IUserService>(new AdminUserService());
 
-            //services.AddAuthentication(options =>
-            //{
-            //    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            //    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            //    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            //})
-            //    .AddCookie(options =>
-            //    {
-            //        options.LoginPath = "/auth/signin";
-            //    });
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/auth/signin";
+                });
 
             //---------------------------END CONFIGURE LOCALIZATION-----------------------------//
         }
@@ -155,7 +156,7 @@ namespace PropertyTaxPortal
             app.UseStaticFiles();
             // To configure external authentication, 
             // see: http://go.microsoft.com/fwlink/?LinkID=532715
-            //app.UseAuthentication();
+            app.UseAuthentication();
 
 
             app.Use(async (context, next) =>
