@@ -38,9 +38,9 @@ namespace PropertyTaxPortal.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var context = await _context.News.Where(b => b.Active.Equals("Featured")).ToListAsync();
+            var context = await _context.News.Where(b => b.Active.Equals("Featured") && b.EndOn > DateTime.Now).ToListAsync();
 
-            context = context.Where(c => DateTime.Compare(c.EndOn, DateTime.Now) > 0).ToList();
+            //context = context.Where(c => DateTime.Compare(c.EndOn, DateTime.Now) > 0).ToList();
 
             return View(context.OrderBy(b => b.SOrder));
         }
@@ -204,9 +204,10 @@ namespace PropertyTaxPortal.Controllers
             //    .Where(b => ((b.Active.Equals("Featured") || b.Active.Equals("Current")) &&
             //                 DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToListAsync();
             var context = await _context.News
-                .Where(b => b.Active.Equals("Featured") || b.Active.Equals("Current")).ToListAsync(); ;
-            context = context.Where(b => DateTime.Compare(b.EndOn, DateTime.Now) > 0).ToList();
-                
+                .Where(b => (b.Active.Equals("Featured") || b.Active.Equals("Current")) && b.EndOn > DateTime.Now).ToListAsync();
+            
+            //context = context.Where(b => DateTime.Compare(b.EndOn, DateTime.Now) > 0).ToList();
+
             return View(context.OrderBy(b => b.SOrder));
         }
 
