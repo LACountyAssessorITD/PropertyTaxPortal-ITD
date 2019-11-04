@@ -1,22 +1,17 @@
 ﻿
 using System.Collections.Generic;
-
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PropertyTaxPortal.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Rewrite;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
-using PropertyTaxPortal.Services;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Rewrite;
 
 
 namespace PropertyTaxPortal
@@ -120,7 +115,7 @@ namespace PropertyTaxPortal
                 options.SupportedUICultures = supportedCultures;
             });
             
-            services.AddSingleton<IUserService>(new AdminUserService());
+            //services.AddSingleton<IUserService>(new AdminUserService());
 
             //services.AddAuthentication(options =>
             //{
@@ -154,10 +149,7 @@ namespace PropertyTaxPortal
             }
             app.UseCookiePolicy();
             app.UseStaticFiles();
-            // To configure external authentication, 
-            // see: http://go.microsoft.com/fwlink/?LinkID=532715
-            //app.UseAuthentication();
-
+            
 
             app.Use(async (context, next) =>
             {
@@ -177,8 +169,8 @@ namespace PropertyTaxPortal
             app.UseHttpsRedirection();
             app.UseRewriter(new RewriteOptions()
                 .AddRedirectToWww()
-                
-            );
+                //.AddRedirectToHttps()
+                );
             //-----------------LOCALIZATION MIDDLEWARE-----------------//
             var supportedCultures = new[]
             {
@@ -209,35 +201,6 @@ namespace PropertyTaxPortal
             //-----------------END LOCALIZATION MIDDLEWARE-----------------//
 
 
-            //app.UseCsp(opts => opts
-                
-            //    .FontSources(s => s.Self()
-            //    .CustomSources("https://ajax.aspnetcdn.com")
-            //    .CustomSources("https://www.googletagmanager.com")
-            //    .CustomSources("https://use.fontawesome.com")
-            //    .CustomSources("https://cse.google.com")
-            //    .CustomSources("https://apis.google.com")
-            //    .CustomSources("https://www.googletagmanager.com"))
-
-            //    .FormActions(s => s.Self())
-            //    .FrameAncestors(s => s.Self())
-            //    .ImageSources(s => s.Self())
-            //    .StyleSources(s => s.Self()
-            //    .CustomSources("https://ajax.aspnetcdn.com")
-            //    .CustomSources("https://www.googletagmanager.com")
-            //    .CustomSources("https://use.fontawesome.com")
-            //    .CustomSources("https://cse.google.com")
-            //    .CustomSources("https://apis.google.com")
-            //    .CustomSources("https://www.googletagmanager.com"))
-            //    .ScriptSources(s => s.Self()
-            //    .UnsafeInline()
-            //    .CustomSources("https://ajax.aspnetcdn.com")
-            //    .CustomSources("https://fonts.googleapis.com")
-            //    .CustomSources("https://use.fontawesome.com")
-            //    .CustomSources("https://cse.google.com")
-            //    .CustomSources("https://apis.google.com")
-            //    .CustomSources("https://www.googletagmanager.com"))
-            //);
 
             app.UseMvc(routes =>
             {
