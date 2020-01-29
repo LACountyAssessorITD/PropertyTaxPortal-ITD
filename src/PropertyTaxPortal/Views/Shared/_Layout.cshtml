@@ -312,9 +312,88 @@
             <main role="main" class="">
                 @RenderBody()
             </main>
-           
-            <!----------------------------- /END BODY ------------------------->
 
+            <style>
+                .chatbox {
+                    display: none !important;
+
+                }
+                .chatFrame {
+                   
+                    margin-bottom: 50px;
+                    /*position: fixed;*/
+                    float: right;
+                }
+                .chatDisplay {
+                    display: block !important;
+                }
+
+                .chatFrame{/*dent around button*/
+                    display: inline-block;
+                    position: relative;
+                    text-decoration: none;
+                    color: rgba(3, 169, 244, 0.54);
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    text-align: center;
+                    background: #f7f7f7;
+                    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.08);
+                }
+                .chatFrame .fa {/*Button itself*/
+                    position: absolute;
+                    content: '';
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    vertical-align: middle; 
+                    left: 10px;
+                    top: 9px;
+                    border-radius: 50%;
+                    font-size: 30px;
+                    background-image: -webkit-linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+                    background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+                    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+                    box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+                    border-bottom: solid 2px #b5b5b5;
+                }
+                .chatFrame .far {/*Button itself*/
+                    position: absolute;
+                    content: '';
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    vertical-align: middle; 
+                    left: 10px;
+                    top: 9px;
+                    border-radius: 50%;
+                    font-size: 30px;
+                    background-image: -webkit-linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+                    background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+                    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+                    box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+                    border-bottom: solid 2px #b5b5b5;
+                }
+  
+                .chatFrame .fa:active{
+                    background-image: -webkit-linear-gradient(#efefef 0%, #d6d6d6 100%);
+                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+                    border-bottom: solid 2px #d8d8d8;
+                }
+                .fa-times {
+                    display: none;
+                }
+            </style>
+            
+            <!----------------------------- /END BODY ------------------------->
+            <div  style="position: fixed; bottom: 0px; right: 10px; z-index: 250;">
+                <iframe class="chatbox" style="height: 600px; width: 400px; border: none" src="https://chatbotdev-v.azurewebsites.net/messenger/2"></iframe>
+                <div class="chatFrame">
+                    <i class="far fa-comment-alt"></i>
+                    <i class="fa fa-times"></i>
+
+                </div>
+            </div>
 
             </div>
         
@@ -406,13 +485,20 @@
     <script>
         $(document).ready(function (e) {
             $('img[usemap]').rwdImageMaps();
-
+            $('.chatFrame').click(function () {
+                        
+                $('.chatbox').toggleClass('chatDisplay');
+                $('.fa-comment-alt').toggleClass('chatbox');
+                $('.fa-times').toggleClass('chatDisplay');
+                //$('.navbar-collapse').removeClass('show');
+                //$('.index-wrap').toggleClass('padding-down')
+            });
 
         });
     </script>
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60050118-10"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
