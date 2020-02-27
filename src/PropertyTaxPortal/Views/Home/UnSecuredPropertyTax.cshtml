@@ -24,23 +24,25 @@
 
 <section class="tax-content container my-4">
 
-    <img src="~/images/Tax-Bills/unsecuredbill.gif" alt="Unsecured Property Tax" usemap="#UnsecuredBill_Map">
+    <img src="~/images/Tax-Bills/unsecuredbill_2020.gif" alt="Unsecured Property Tax" usemap="#UnsecuredBill_Map">
     <map name="UnsecuredBill_Map">
-        <area shape="circle" coords="651,980,10" href="javascript:void(0)" alt="circle" onclick="displayDescription(15)">
-        <area shape="circle" coords="345,845,11" href="javascript:void(0)" alt="circle" onclick="displayDescription(14)">
-        <area shape="circle" coords="45,857,11" href="javascript:void(0)" alt="circle" onclick="displayDescription(13)">
-        <area shape="circle" coords="664,682,11" href="javascript:void(0)" alt="circle" onclick="displayDescription(12)">
-        <area shape="circle" coords="142,791,8" href="javascript:void(0)" alt="circle" onclick="displayDescription(11)">
-        <area shape="circle" coords="460,656,9" href="javascript:void(0)" alt="circle" onclick="displayDescription(10)">
-        <area shape="circle" coords="364,462,8" href="javascript:void(0)" alt="circle" onclick="displayDescription(9)">
-        <area shape="circle" coords="583,363,8" href="javascript:void(0)" alt="circle" onclick="displayDescription(8)">
-        <area shape="circle" coords="711,299,10" href="javascript:void(0)" alt="circle" onclick="displayDescription(7)">
-        <area shape="circle" coords="41,312,7" href="javascript:void(0)" alt="circle" onclick="displayDescription(6)">
-        <area shape="circle" coords="546,221,10" href="javascript:void(0)" alt="circle" onclick="displayDescription(5)">
-        <area shape="circle" coords="522,177,8" href="javascript:void(0)" alt="circle" onclick="displayDescription(4)">
-        <area shape="circle" coords="95,196,9" href="javascript:void(0)" alt="circle" onclick="displayDescription(3)">
-        <area shape="circle" coords="91,132,10" href="javascript:void(0)" alt="circle" onclick="displayDescription(2)">
-        <area shape="circle" coords="263,46,10" href="javascript:void(0)" alt="circle" onclick="displayDescription(1)">
+        <area shape="circle" coords="158,38,15" href="javascript:void(0)" alt="circle" onclick="displayDescription(1)">
+        <area shape="circle" coords="585,79,13" href="javascript:void(0)" alt="circle" onclick="displayDescription(2)">
+        <area shape="circle" coords="35,130,14" href="javascript:void(0)" alt="circle" onclick="displayDescription(3)">
+        <area shape="circle" coords="35,205,15" href="javascript:void(0)" alt="circle" onclick="displayDescription(4)">
+        <area shape="circle" coords="418,164,15" href="javascript:void(0)" alt="circle" onclick="displayDescription(5)">
+        <area shape="circle" coords="437,213,16" href="javascript:void(0)" alt="circle" onclick="displayDescription(6)">
+        <area shape="circle" coords="28,277,12" href="javascript:void(0)" alt="circle" onclick="displayDescription(7)">
+        <area shape="circle" coords="389,275,14" href="javascript:void(0)" alt="circle" onclick="displayDescription(8)">
+        <area shape="circle" coords="607,262,13" href="javascript:void(0)" alt="circle" onclick="displayDescription(9)">
+        <area shape="circle" coords="531,335,16" href="javascript:void(0)" alt="circle" onclick="displayDescription(10)">
+        <area shape="circle" coords="354,401,15" href="javascript:void(0)" alt="circle" onclick="displayDescription(11)">
+        <area shape="circle" coords="395,522,14" href="javascript:void(0)" alt="circle" onclick="displayDescription(12)">
+        <area shape="circle" coords="126,631,12" href="javascript:void(0)" alt="circle" onclick="displayDescription(13)">
+        <area shape="circle" coords="567,570,15" href="javascript:void(0)" alt="circle" onclick="displayDescription(14)">
+        <area shape="circle" coords="25,695,14" href="javascript:void(0)" alt="circle" onclick="displayDescription(15)">
+        <area shape="circle" coords="277,679,14" href="javascript:void(0)" alt="circle" onclick="displayDescription(16)">
+        <area shape="circle" coords="305,796,12" href="javascript:void(0)" alt="circle" onclick="displayDescription(17)">
     </map>
 
     <div class=" text-left">
@@ -56,41 +58,57 @@
         <div class="bill-step">
             <div>2</div>
             <p>
+                <strong>@Localizer["Website"]</strong> - @Localizer["propertytax.lacounty.gov"]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>3</div>
+            <p>
                 <strong>@Localizer["Sale or Disposal"]</strong> - @Localizer["Sale or disposal of this property"]
                 @Localizer["after January 1 does not relieve the assessee of this tax."]
             </p>
         </div>
         <div class="bill-step">
-            <div>3</div>
+            <div>4</div>
             <p>
                 <strong>@Localizer["Assessee"]</strong> - @Localizer["The person or entity that is responsible"]
                 @Localizer["for this bill."]
             </p>
         </div>
         <div class="bill-step">
-            <div>4</div>
+            <div>5</div>
             <p>
                 <strong>@Localizer["Bill Number"]</strong> - @Localizer["The bill number for this year's bill."]
                 @Localizer["Please be careful as this number changes every year. When referencing it always"]
-                @Localizer["include the year; for example, 2016 12345678."]
+                @Localizer["include the roll year; for example, 2016 12345678."]
             </p>
         </div>
         <div class="bill-step">
-            <div>5</div>
+            <div>6</div>
             <p>
                 <strong>@Localizer["Situs or Location"]</strong> - @Localizer["The location of the property "]
                 @Localizer["being assessed."]
             </p>
         </div>
         <div class="bill-step">
-            <div>6</div>
+            <div>7</div>
             <p>
                 <strong>@Localizer["Assessment Number"]</strong> - @Localizer["A number that the Assessor's"]
                 @Localizer["office uses to link to a specific assessment."]
             </p>
         </div>
         <div class="bill-step">
-            <div>7</div>
+            <div>8</div>
+            <p>
+                <strong>@Localizer["Personal Identification Number (PIN)"]</strong> - @Localizer["The PIN is required to make electronic check and credit/debit card"]
+                @Localizer["payments online."]
+                @Localizer["Please note that the PIN changes every year."]
+                @Localizer["Each PIN is unique to each roll year and"]
+                @Localizer["bill number; ensure you use the PIN that corresponds to each tax bill."]
+            </p>
+        </div>
+        <div class="bill-step">
+            <div>9</div>
             <p>
                 <strong>@Localizer["Assessed Values"]</strong> - @Localizer["Values are determined by the"]
                 @Localizer["Assessor's office. Please call the number listed here for any question"]
@@ -98,30 +116,30 @@
             </p>
         </div>
         <div class="bill-step">
-            <div>8</div>
+            <div>10</div>
             <p>
                 <strong>@Localizer["Full Value"]</strong> – @Localizer["Value as of January 1st as"]
                 @Localizer["determined by the Assessor's office."]
             </p>
         </div>
         <div class="bill-step">
-            <div>9</div>
+            <div>11</div>
             <p>
                 <strong>@Localizer["Voted Indebtedness"]</strong> - @Localizer["Voter-approved taxes levied"]
                 @Localizer["against property."]
             </p>
         </div>
         <div class="bill-step">
-            <div>10</div>
+            <div>12</div>
             <p>
                 <strong>@Localizer["Total Tax"]</strong> - @Localizer["The total amount of tax due by the date"]
                 @Localizer["stated. A 10% penalty and collection costs will accrue after the due date."]
-                @Localizer["Please include your payment stub with any payment; write the tax year and bill"]
+                @Localizer["Please include your payment stub with any payment; write the roll year and bill"]
                 @Localizer["number on your check."]
             </p>
         </div>
         <div class="bill-step">
-            <div>11</div>
+            <div>13</div>
             <p>
                 <strong>@Localizer["If not paid by the delinquent date"]</strong> - @Localizer["The last date"]
                 @Localizer["that payment will be accepted without penalty. Payments postmarked or received"]
@@ -132,7 +150,7 @@
             </p>
         </div>
         <div class="bill-step">
-            <div>12</div>
+            <div>14</div>
             <p>
                 <strong>@Localizer["10% Penalty After"]</strong> - @Localizer["The date by which payment must be"]
                 @Localizer["postmarked or received. Please mail early to avoid penalties. Postage Meter"]
@@ -140,20 +158,21 @@
             </p>
         </div>
         <div class="bill-step">
-            <div>13</div>
+            <div>15</div>
             <p>
-                <strong>@Localizer["Year and Bill Number"]</strong> - @Localizer["Please include this on any"]
+                <strong>@Localizer["Roll Year and Bill Number"]</strong> - @Localizer["Please include this on any"]
                 @Localizer["correspondence or payment. Be careful as bill numbers change every year."]
             </p>
         </div>
         <div class="bill-step">
-            <div>14</div>
-            <p><strong>@Localizer["Assessment Number"]</strong> - @Localizer["The number the Assessor uses to"]
+            <div>16</div>
+            <p>
+                <strong>@Localizer["Assessment Number"]</strong> - @Localizer["The number the Assessor uses to"]
                 @Localizer["track assessed property."]
             </p>
         </div>
         <div class="bill-step">
-            <div>15</div>
+            <div>17</div>
             <p>
                 <strong>@Localizer["Payment by Check"]</strong> - @Localizer["Make check payable and mail to the"]
                 @Localizer["address shown in the statement. Please include your payment stub with any"]
@@ -176,12 +195,19 @@
 <div class="floatbox" id="div2">
     <div class="float-content">
         <p>
+            <strong>@Localizer["Website"]</strong> - @Localizer["propertytax.lacounty.gov"]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div3">
+    <div class="float-content">
+        <p>
             <strong>@Localizer["Sale or Disposal"]</strong> - @Localizer["Sale or disposal of this property"]
             @Localizer["after January 1 does not relieve the assessee of this tax."]
         </p>
     </div>
 </div>
-<div class="floatbox" id="div3">
+<div class="floatbox" id="div4">
     <div class="float-content">
         <p>
             <strong>@Localizer["Assessee"]</strong> - @Localizer["The person or entity that is responsible"]
@@ -189,16 +215,16 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div4">
+<div class="floatbox" id="div5">
     <div class="float-content">
         <p>
             <strong>@Localizer["Bill Number"]</strong> - @Localizer["The bill number for this year's bill."]
             @Localizer["Please be careful as this number changes every year. When referencing it always"]
-            @Localizer["include the year; for example, 2016 12345678."]
+            @Localizer["include the roll year; for example, 2016 12345678."]
         </p>
     </div>
 </div>
-<div class="floatbox" id="div5">
+<div class="floatbox" id="div6">
     <div class="float-content">
         <p>
             <strong>@Localizer["Situs or Location"]</strong> - @Localizer["The location of the property "]
@@ -206,7 +232,7 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div6">
+<div class="floatbox" id="div7">
     <div class="float-content">
         <p>
             <strong>@Localizer["Assessment Number"]</strong> - @Localizer["A number that the Assessor's"]
@@ -214,7 +240,18 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div7">
+<div class="floatbox" id="div8">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Personal Identification Number (PIN)"]</strong> - @Localizer["The PIN is required to make electronic check and credit/debit card"]
+            @Localizer["payments online."]
+            @Localizer["Please note that the PIN changes every year."]
+            @Localizer["Each PIN is unique to each roll year and"]
+            @Localizer["bill number; ensure you use the PIN that corresponds to each tax bill."]
+        </p>
+    </div>
+</div>
+<div class="floatbox" id="div9">
     <div class="float-content">
         <p>
             <strong>@Localizer["Assessed Values"]</strong> - @Localizer["Values are determined by the"]
@@ -223,7 +260,7 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div8">
+<div class="floatbox" id="div10">
     <div class="float-content">
         <p>
             <strong>@Localizer["Full Value"]</strong> – @Localizer["Value as of January 1st as"]
@@ -231,7 +268,7 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div9">
+<div class="floatbox" id="div11">
     <div class="float-content">
         <p>
             <strong>@Localizer["Voted Indebtedness"]</strong> - @Localizer["Voter-approved taxes levied"]
@@ -239,17 +276,17 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div10">
+<div class="floatbox" id="div12">
     <div class="float-content">
         <p>
             <strong>@Localizer["Total Tax"]</strong> - @Localizer["The total amount of tax due by the date"]
             @Localizer["stated. A 10% penalty and collection costs will accrue after the due date."]
-            @Localizer["Please include your payment stub with any payment; write the tax year and bill"]
+            @Localizer["Please include your payment stub with any payment; write the roll year and bill"]
             @Localizer["number on your check."]
         </p>
     </div>
 </div>
-<div class="floatbox" id="div11">
+<div class="floatbox" id="div13">
     <div class="float-content">
         <p>
             <strong>@Localizer["If not paid by the delinquent date"]</strong> - @Localizer["The last date"]
@@ -261,7 +298,7 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div12">
+<div class="floatbox" id="div14">
     <div class="float-content">
         <p>
             <strong>@Localizer["10% Penalty After"]</strong> - @Localizer["The date by which payment must be"]
@@ -270,15 +307,15 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div13">
+<div class="floatbox" id="div15">
     <div class="float-content">
         <p>
-            <strong>@Localizer["Year and Bill Number"]</strong> - @Localizer["Please include this on any"]
+            <strong>@Localizer["Roll Year and Bill Number"]</strong> - @Localizer["Please include this on any"]
             @Localizer["correspondence or payment. Be careful as bill numbers change every year."]
         </p>
     </div>
 </div>
-<div class="floatbox" id="div14">
+<div class="floatbox" id="div16">
     <div class="float-content">
         <p>
             <strong>@Localizer["Assessment Number"]</strong> - @Localizer["The number the Assessor uses to"]
@@ -286,7 +323,7 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div15">
+<div class="floatbox" id="div17">
     <div class="float-content">
         <p>
             <strong>@Localizer["Payment by Check"]</strong> - @Localizer["Make check payable and mail to the"]
@@ -295,3 +332,4 @@
         </p>
     </div>
 </div>
+
