@@ -3,12 +3,16 @@
 /* --------------------------- */
 
 .section-news {
-    height: 100px;
+    height: 75px;
     max-width: 1200px;
     font-size: 90%;
     font-weight: 500;
 }
-
+@media only screen and (max-width: 600px) {
+    .section-news {
+        height: 100px;
+    }
+}
 .news-feed p {
     overflow: hidden;
     text-overflow: ellipsis;
