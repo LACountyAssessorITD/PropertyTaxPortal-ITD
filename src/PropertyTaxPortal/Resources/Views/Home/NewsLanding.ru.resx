@@ -231,4 +231,7 @@
   <data name="TTC Mails Annual Statement of Prior Year Taxes for Defaulted Prior Year Secured Property Taxes" xml:space="preserve">
     <value>TTC Mails Ежегодный отчет о налогах за предыдущий год по дефолтным налогам на обеспеченное имущество за предыдущий год</value>
   </data>
+  <data name="Click &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt;here&lt;/a&gt; for information about the Notices of Delinquency mailed by the Treasurer and Tax Collector." xml:space="preserve">
+    <value>Нажмите &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt; здесь &lt;/a&gt; для получения информации о Уведомления о преступности, отправленные казначеем и сборщиком налогов.</value>
+  </data>
 </root>

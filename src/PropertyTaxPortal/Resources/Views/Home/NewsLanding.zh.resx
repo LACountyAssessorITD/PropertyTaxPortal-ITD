@@ -231,4 +231,7 @@
   <data name="TTC Mails Annual Statement of Prior Year Taxes for Defaulted Prior Year Secured Property Taxes" xml:space="preserve">
     <value>TTC郵寄違約財產稅的違約前年度稅收年度報表</value>
   </data>
+  <data name="Click &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt;here&lt;/a&gt; for information about the Notices of Delinquency mailed by the Treasurer and Tax Collector." xml:space="preserve">
+    <value>点击&lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt;此处&lt;/a&gt;以获取有关司库和收税员邮寄的违约通知。</value>
+  </data>
 </root>

@@ -228,4 +228,7 @@
   <data name="TTC Mails Annual Statement of Prior Year Taxes for Defaulted Prior Year Secured Property Taxes" xml:space="preserve">
     <value>TTC نامه سالانه مالیاتهای سال قبل را برای مالیاتهای اموال پیش فرض سال قبل پیش بینی شده ارسال می کند</value>
   </data>
+  <data name="Click &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt;here&lt;/a&gt; for information about the Notices of Delinquency mailed by the Treasurer and Tax Collector." xml:space="preserve">
+    <value>برای اطلاعات در مورد &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt; اینجا کلیک کنید &lt;/a&gt; اطلاعیه های بزهکاری ارسال شده توسط خزانه دار و جمع کننده مالیات.</value>
+  </data>
 </root>

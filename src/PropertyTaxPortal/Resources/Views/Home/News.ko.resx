@@ -213,7 +213,7 @@
   <data name="Click &lt;a href=&quot;/images/pdf/PressReleasePayment.pdf&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; for information about the Notices of Delinquency mailed by the Treasurer and Tax Collector." xml:space="preserve">
     <value>재무 및 세금 징수 원이 발송 한 연체 통지서에 대한 정보를 보려면 &lt;a href="/images/pdf/PressReleasePayment.pdf" target="_blank"&gt; 여기 &lt;/a&gt;를 클릭하십시오.</value>
   </data>
-  <data name="Los Angeles County Treasurer and Tax Collector Mails Final Notices of Current Year Payments(s) Due" xml:space="preserve">
+  <data name="Los Angeles County Treasurer and Tax Collector Mails Notices of Delinquent Current Year Payment(s) Due" xml:space="preserve">
     <value>로스 앤젤레스 카운티 재무 및 세금 징수 원에게 납부해야 할 연도의 최종 통지</value>
   </data>
   <data name="Los Angeles County Treasurer and Tax Collector Notifies Property Owners of Defaulted Prior Year Taxes" xml:space="preserve">

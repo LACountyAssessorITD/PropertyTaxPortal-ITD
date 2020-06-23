@@ -231,4 +231,7 @@
   <data name="TTC Mails Annual Statement of Prior Year Taxes for Defaulted Prior Year Secured Property Taxes" xml:space="preserve">
     <value>TTC, 채무 불이행 전년도 담보 재산세에 대한 연간 전년도 세금 명세서</value>
   </data>
+  <data name="Click &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt;here&lt;/a&gt; for information about the Notices of Delinquency mailed by the Treasurer and Tax Collector." xml:space="preserve">
+    <value>에 대한 정보를 보려면 &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt; 여기 &lt;/a&gt;를 클릭하십시오. 연체 통지는 재무 및 세금 징수 원이 우편으로 발송합니다.</value>
+  </data>
 </root>

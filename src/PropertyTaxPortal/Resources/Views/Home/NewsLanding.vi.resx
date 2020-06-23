@@ -231,4 +231,7 @@ tùy chọn thanh toán, và các địa điểm văn phòng Cục và giờ là
   <data name="TTC Mails Annual Statement of Prior Year Taxes for Defaulted Prior Year Secured Property Taxes" xml:space="preserve">
     <value>TTC Mails Báo cáo thuế hàng năm của năm trước đối với thuế tài sản được bảo đảm trong năm trước</value>
   </data>
+  <data name="Click &lt;a href='https://assessor.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt;here&lt;/a&gt; for information about the Notices of Delinquency mailed by the Treasurer and Tax Collector." xml:space="preserve">
+    <value>Nhấp vào &lt;a href='https://assigator.lacounty.gov/wp-content/uploads/2020/06/2020-06-02_TTC-Press-Release-1.pdf'&gt; tại đây &lt;/a&gt; để biết thông tin về Thông báo về khoản nợ quá hạn được gửi bởi Thủ quỹ và người thu thuế.</value>
+  </data>
 </root>
