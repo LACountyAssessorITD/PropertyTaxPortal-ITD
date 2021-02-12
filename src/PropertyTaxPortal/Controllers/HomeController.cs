@@ -15,20 +15,23 @@ using NLog;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Localization;
+using System.Data.SqlClient;
 
 namespace PropertyTaxPortal.Controllers
 {
     public class HomeController : Controller
-    {     
+    {
         private readonly Email _email;
         private readonly IHostingEnvironment _host;
         private static Logger fileLogger = LogManager.GetLogger("fileLogger");
         private static Logger databaseLogger = LogManager.GetLogger("databaseLogger");
         private readonly PTPContext _context;
         private readonly IStringLocalizer<HomeController> _localizer;
+        private readonly PortalContext _portalContext;
 
-        public HomeController(IOptions<Email> email, IHostingEnvironment host, PTPContext context, IStringLocalizer<HomeController> localizer)
+        public HomeController(IOptions<Email> email, IHostingEnvironment host, PTPContext context, IStringLocalizer<HomeController> localizer, PortalContext portalContext)
         {
+            this._portalContext = portalContext;
             _email = email.Value;
             _host = host;
             _context = context;
@@ -60,6 +63,21 @@ namespace PropertyTaxPortal.Controllers
         public IActionResult AnnualSecuredPropertyTaxInformationStatement()
         {
             return View();
+        }
+
+        public async Task<IActionResult> Prop19Calculator()
+        {
+            var context = await _portalContext.AddressList.FromSql("AP_GetAddress '3291%Spring%'").ToListAsync();
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> Prop19Calculator(string Address) {
+            string test = "AP_GetAddress " + "'" + Address + "'"; 
+             var context = await _portalContext.AddressList.FromSql(test).ToListAsync();
+            
+            return Json(context.Take(10));
         }
 
         //Notice of Delinquency
@@ -119,8 +137,8 @@ namespace PropertyTaxPortal.Controllers
         public IActionResult Accessibility(string id)
         {
             Dictionary<string, string> titles = new Dictionary<string, string>();
-            titles.Add("disclaimer","DISCLAIMER");
-            titles.Add("privacy-policy","PRIVACY POLICY");
+            titles.Add("disclaimer", "DISCLAIMER");
+            titles.Add("privacy-policy", "PRIVACY POLICY");
             titles.Add("accessibility", "ACCESSIBILITY");
             titles.Add("language", "LANGUAGE");
             titles.Add("browser-compatibility", "BROWSER COMPATIBILITY");
@@ -132,9 +150,9 @@ namespace PropertyTaxPortal.Controllers
             }
             else
             {
-                
+
                 ViewBag.Title = titles[id.ToLower()];
-                
+
                 return View();
             }
         }
@@ -180,7 +198,7 @@ namespace PropertyTaxPortal.Controllers
             ViewBag.Title = "OTHER GOVERNMENT SITES";
             return View();
         }
-   
+
         public async Task<IActionResult> NewsLanding(int? id)
         {
             if (id == null)
@@ -205,31 +223,34 @@ namespace PropertyTaxPortal.Controllers
             //                 DateTime.Compare(b.EndOn, DateTime.Now) > 0)).OrderBy(b => b.SOrder).ToListAsync();
             var context = await _context.News
                 .Where(b => (b.Active.Equals("Featured") || b.Active.Equals("Current")) && b.EndOn > DateTime.Now).ToListAsync();
-            
+
             //context = context.Where(b => DateTime.Compare(b.EndOn, DateTime.Now) > 0).ToList();
 
             return View(context.OrderBy(b => b.SOrder));
         }
 
 
-        public IActionResult Overview(int?id)
+        public IActionResult Overview(int? id)
         {
-            if (id == null) {
-                return View();
-            } else {
-                ViewBag.id = id;
-                
+            if (id == null)
+            {
                 return View();
             }
-            
+            else
+            {
+                ViewBag.id = id;
+
+                return View();
+            }
+
         }
 
-        
-        public async Task<IActionResult> GeneralFAQ(int?id)
-        {           
+
+        public async Task<IActionResult> GeneralFAQ(int? id)
+        {
             dynamic FaqFinalModel = new System.Dynamic.ExpandoObject();
-            var modelTaxBillFAQs =  await _context.faq.FromSql("PTP_getAllFAQs").ToListAsync();
-         
+            var modelTaxBillFAQs = await _context.faq.FromSql("PTP_getAllFAQs").ToListAsync();
+
             //var modelRefundFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 2).OrderBy(f => f.sOrder);
             //var modelPropertyFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
             //var modelOwnershipFAQs = _context.faq.FromSql("PTP_getAllFAQs").Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
@@ -239,7 +260,7 @@ namespace PropertyTaxPortal.Controllers
             FaqFinalModel.Property = modelTaxBillFAQs.Where(f => f.CategoryID == 3).OrderBy(f => f.sOrder);
             FaqFinalModel.Ownership = modelTaxBillFAQs.Where(f => f.CategoryID == 4).OrderBy(f => f.sOrder);
             FaqFinalModel.TaxAgent = modelTaxBillFAQs.Where(f => f.CategoryID == 5).OrderBy(f => f.sOrder);
-            FaqFinalModel.tabid = id;            
+            FaqFinalModel.tabid = id;
             return View(FaqFinalModel);
         }
 
@@ -247,7 +268,7 @@ namespace PropertyTaxPortal.Controllers
         /// Contact Us
         /// </summary>
         /// <returns></returns>
-        public IActionResult ContactUs(int?id)
+        public IActionResult ContactUs(int? id)
         {
             //dynamic ContactUsModel = new System.Dynamic.ExpandoObject();
             //ContactUsModel.tabid = id;
@@ -263,7 +284,7 @@ namespace PropertyTaxPortal.Controllers
                 return View();
             }
         }
-       
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -317,7 +338,7 @@ namespace PropertyTaxPortal.Controllers
                 model.emailTrackingCount = sEmailTrackingCount;
                 sSubjectEnglish = model.subjectValue.Substring(0, model.subjectValue.IndexOf("|")); // Assessment Appeals
                 model.subjectEnglish = sSubjectEnglish; // Assessment Appeals
-                sEmail = model.subjectValue.Substring(model.subjectValue.IndexOf("|")+1, model.subjectValue.Length - model.subjectValue.IndexOf("|")-1); // aaboffice@bos.lacounty.gov
+                sEmail = model.subjectValue.Substring(model.subjectValue.IndexOf("|") + 1, model.subjectValue.Length - model.subjectValue.IndexOf("|") - 1); // aaboffice@bos.lacounty.gov
                 sEmailDept = model.subjectValue.Substring(model.subjectValue.IndexOf("@"), model.subjectValue.Length - model.subjectValue.IndexOf("@")); // "@bos.lacounty.gov
                 switch (sEmailDept)
                 {
@@ -407,7 +428,7 @@ namespace PropertyTaxPortal.Controllers
                     smtp.EnableSsl = _email.enableSsl;
                     smtp.Send(mail); //email to responsible department and bcc emailsbk@assessor.lacounty.gov
                     if (model.emailAddr.Trim() != "")
-                    {   
+                    {
                         from = new MailAddress(_email.from);
                         to = new MailAddress(model.emailAddr.Trim());
                         mail = new MailMessage(from, to);
@@ -442,7 +463,7 @@ namespace PropertyTaxPortal.Controllers
         /// <param name="model"></param>
         /// <param name="iUserEmail"></param>
         /// <returns></returns>
-        public string BuildMailBody (string path, PublicInquiryViewModel model, int iUserEmail)
+        public string BuildMailBody(string path, PublicInquiryViewModel model, int iUserEmail)
         {
             var wwwRoot = _host.WebRootPath;
             string sOriginalBody = "";
@@ -475,7 +496,7 @@ namespace PropertyTaxPortal.Controllers
                     sOriginalBody = sOriginalBody.Replace("{Subject}", model.subjectEnglish);
                     sOriginalBody = sOriginalBody.Replace("{Department}", string.IsNullOrEmpty(model.Department) ? "" : model.Department);
                 }
-  
+
                 sOriginalBody = sOriginalBody.Replace("{LastName}", model.lastName);
                 sOriginalBody = sOriginalBody.Replace("{FirstName}", model.firstName);
                 sOriginalBody = sOriginalBody.Replace("{BusinessName}", string.IsNullOrEmpty(model.businessName) ? "" : model.businessName);

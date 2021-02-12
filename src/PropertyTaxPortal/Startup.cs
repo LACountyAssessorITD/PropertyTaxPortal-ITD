@@ -46,6 +46,9 @@ namespace PropertyTaxPortal
             services.AddDbContext<PTPContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("ptp_connect"));
             });
+            services.AddDbContext<PortalContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("portal_connect"));
+            });
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
