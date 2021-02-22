@@ -5,3 +5,111 @@
 }
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Tax Portal</title>
+
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .form-group {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    
+
+    
+    <div class="container">
+        <div class="row">
+            <p>Taxpayers may benefit from a reassessment exclusion when transferring a principal residence between family members. 
+                In order to estimate the new base year value of the principal residence after an exclusion claim is approved, please
+                provide the information below:
+            </p>
+        </div>
+        <div class="row" style="margin-top: 5px">    
+            <div class="form-group col-md-3 pl-0"> <input type="text" id="select" class="form-control" placeholder="Assessor ID Number (AIN)"/> </div>  
+            <div class="col-md-2 text-center"><p style="line-height: 2em;">or</p></div>  
+            <div class="form-group col-md-3"> <input type="number" id="update" class="form-control" placeholder="Address" /> </div><span style="color: red; line-height: 2em; margin-left: 1em; display: none">Please enter AIN or Address</span>    
+        </div>  
+        <div class="row">
+            <div class="form-group col-md-8">
+                <input type="text" class="form-control" id="fmv" placeholder="Fair Market Value of Principal at Time of Transfer">
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary">Calculate</button>
+
+        </div>
+    </div>
+    
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></scrip>
+
+    <script src="~/lib/jquery/dist/min.popper.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+  
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.js"></script>
+     <script>
+        
+
+          
+
+    $("#select").typeahead({
+    delay: 600,
+    minLength: 3,
+    source: function (request, response) {    
+                    
+                    @* console.log(request.charAt(request.length - 1)); *@
+                    var length = request.charAt(request.length - 1);
+                    if(length !== ' '){
+                        $.ajax({    
+                        url: "/Home/Prop19CalculatorAddress/",    
+                        data: {    
+                            "address": request    
+                        },    
+                        type: "GET",    
+                        contentType: "json",    
+                        success: function (data) {  
+                             
+                            @* console.log(data); *@
+                            map = {};
+                            response($.map(data, function(item){
+
+                                var id = item.ain;
+                                var address = item.situsAddress;
+                                map[address] = {    
+                                    id: id,    
+                                    address: address    
+                                }; 
+                                @* console.log(map); *@
+                                
+                                return item.situsAddress;
+                            }));
+                        }
+                            
+                    });    
+                    } else {
+                        console.log('not ok')
+                    }
+                    
+                },
+                updater: function (item) { //If simultaneously want to update value somewhere else 
+                    $("#update").val(map[item].id); return item; 
+                    
+                } 
+        
+    });
+
+
+    </script>
+</body>
+</html>

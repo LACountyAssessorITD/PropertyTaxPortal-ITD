@@ -65,19 +65,19 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Prop19Calculator()
+        public IActionResult Prop19Calculator()
         {
-            var context = await _portalContext.AddressList.FromSql("AP_GetAddress '3291%Spring%'").ToListAsync();
-
             return View();
         }
 
-        [HttpPost]
-        public async Task<JsonResult> Prop19Calculator(string Address) {
-            string test = "AP_GetAddress " + "'" + Address + "'"; 
+        [HttpGet]
+        public async Task<JsonResult> Prop19CalculatorAddress(string Address) {
+            // Address = '%'+ Address+ '%';
+            // Address = Address.Replace(' ', '%');
+            string test = "AP_GetAddress " + "'" + Address + "%'"; 
              var context = await _portalContext.AddressList.FromSql(test).ToListAsync();
             
-            return Json(context.Take(10));
+            return Json(context);
         }
 
         //Notice of Delinquency
