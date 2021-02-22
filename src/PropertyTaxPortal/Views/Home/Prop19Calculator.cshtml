@@ -13,10 +13,24 @@
     <title>Property Tax Portal</title>
 
      <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" type="text/css" href="~/lib/fonts/css/all.css" />
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
+<style>
         .form-group {
             padding: 0;
+        }
+        #share__property {
+            display: none;
+        }
+        .less_than {
+            display: none;
+        }
+        .greater_than {
+            display: none;
+        }
+        #error, #error_fmv{
+            display: none;
         }
     </style>
 </head>
@@ -31,18 +45,77 @@
                 provide the information below:
             </p>
         </div>
-        <div class="row" style="margin-top: 5px">    
-            <div class="form-group col-md-3 pl-0"> <input type="text" id="select" class="form-control" placeholder="Assessor ID Number (AIN)"/> </div>  
-            <div class="col-md-2 text-center"><p style="line-height: 2em;">or</p></div>  
-            <div class="form-group col-md-3"> <input type="number" id="update" class="form-control" placeholder="Address" /> </div><span style="color: red; line-height: 2em; margin-left: 1em; display: none">Please enter AIN or Address</span>    
+        <div class="row" style="margin-top: 5px">  
+            <div class="form-group col-md-3"> <input type="number" id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
+            <div class="col-md-1 text-center"><p style="line-height: 2em;">or</p></div>  
+            <div class="form-group col-md-3 pl-0"> <input type="text" id="select" class="form-control" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter AIN or Address</span>  
+           
         </div>  
         <div class="row">
-            <div class="form-group col-md-8">
-                <input type="text" class="form-control" id="fmv" placeholder="Fair Market Value of Principal at Time of Transfer">
+            <div class="form-group col-md-7">
+                <input type="text" class="form-control" id="fmv" placeholder="Fair Market Value of Principal at Time of Transfer"> </div> <span id="error_fmv" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
+            
+        </div>
+        <div id="share__property">
+            <div class="row prop__question">
+                <p>1. Calculate the sum of the taxable value plus $1,000,000</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="tv" class="form-control" disabled/> <p>TAXABLE VALUE</p></div>  
+                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="eaa" class="form-control" disabled value="$1,000,000"/> <p>EXCLUSTION ADJUSTED ANNUALLY</p></div>  
+                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="sum" class="form-control" disabled/> <p>SUM</p></div>  
+                
+            </div>
+            <div class="row prop__question">
+                <p>2. Is the fair market value greater than the sum of the taxable value plus $1,000,000</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="fmv2" class="form-control" disabled/></div>  
+                <div class="col-md-1 text-center greater_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-greater-than"></i></p></div>  
+                <div class="col-md-1 text-center less_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-less-than-equal"></i></i></p></div>  
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="sum2" class="form-control"/> </div>  
+                 
+                
             </div>
         </div>
+        <div class="greater_than">
+            <div class="row prop__question">
+                <p>3. Calculate the difference</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="fmv3" class="form-control" disabled/> <p>FAIR MARKET VALUE</p></div>  
+                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-minus"></i></p></div>  
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="sum3" class="form-control" disabled/> <p>SUM</p></div>  
+                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="difference" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
+                
+            </div> 
+            <div class="row prop__question">
+                <p>4. Add the difference to the taxable value to arrive at the new combined base year value (partial benefit)</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="difference2" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
+                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="tv2" class="form-control" disabled/> <p>TAXABLE VALUE</p></div>  
+                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="finalVal" class="form-control" disabled/> <p></p></div>  
+                
+            </div>
+        </div>
+        <div class="less_than">
+            <div class="row prop__question">
+                <p>3. Taxable value transfers with the full benifit retained</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="FBR" class="form-control" disabled/></div>  
+                
+            </div>
+        </div>
+
         <div class="row">
-            <button type="button" class="btn btn-primary">Calculate</button>
+            <button type="button" id="inputBtn" class="btn btn-primary">Calculate</button>
 
         </div>
     </div>
@@ -108,7 +181,55 @@
                 } 
         
     });
+    $( "#inputBtn" ).click(function() {
+        var fbv = "";
+        var fbvsum = "";
+        var fairMarketValue = $("#fmv").val();
+        var ain = $("#update").val();
+    
+        if(ain === "") {
+            console.log("emtly");
+            $("#error").show();
+        }
+        else if ($("#fmv").val() === "") {
+            $("#error_fmv").show();
+        }
+        else {
 
+        $.ajax({    
+                        url: "/Home/Prop19CaluclatorFactoredBase/",    
+                        data: {    
+                            "ain": ain
+                        },    
+                        type: "GET",    
+                        contentType: "json",    
+                        success: function (data) {  
+                            fbv = data.baseValue;
+                            fbvsum = fbv + 1000000;
+
+                             $("#tv").val("$" + fbv);
+                             $("#sum").val("$" + fbvsum);
+                            $("#share__property").show();
+                             
+                            console.log(fbvsum);
+                            if(fairMarketValue > fbvsum) {
+                                $("#fmv2").val("$" + fairMarketValue);
+                                $("#sum2").val("$" + fbvsum);
+                                $("#fmv3").val("$" + fairMarketValue);
+                                $('#sum3').val("$" + fbvsum);
+                                var diffence = fairMarketValue - fbvsum;
+                                $('#difference').val("$" + diffence);
+                                $('#difference2').val("$" + diffence);
+                                $('#tv2').val("$" + fbv);
+                                diffence += fbv;
+                                $('#finalVal').val("$" + diffence);
+                                $(".greater_than").show();
+                            }
+                        }
+                            
+                    }); 
+        }
+    });
 
     </script>
 </body>

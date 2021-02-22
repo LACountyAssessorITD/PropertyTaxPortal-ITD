@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +17,7 @@ namespace PropertyTaxPortal.Models
         }
 
         public DbSet<Address> AddressList { get; set; }
+        public DbSet<FactoredBaseValue> FactoredBaseValue { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

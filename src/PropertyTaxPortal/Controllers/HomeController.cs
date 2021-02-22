@@ -67,6 +67,7 @@ namespace PropertyTaxPortal.Controllers
 
         public IActionResult Prop19Calculator()
         {
+            
             return View();
         }
 
@@ -77,6 +78,12 @@ namespace PropertyTaxPortal.Controllers
             string test = "AP_GetAddress " + "'" + Address + "%'"; 
              var context = await _portalContext.AddressList.FromSql(test).ToListAsync();
             
+            return Json(context);
+        }
+        [HttpGet]
+        public async Task<JsonResult> Prop19CaluclatorFactoredBase(string Ain) {
+            string test = "AP_GetFactoredBaseValue " + "'" + Ain + "'"; 
+            var context = await _portalContext.FactoredBaseValue.FromSql(test).FirstOrDefaultAsync();
             return Json(context);
         }
 
