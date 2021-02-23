@@ -32,12 +32,24 @@
         #error, #error_fmv{
             display: none;
         }
+        .prop__question p {
+            text-transform: uppercase;
+        }
+        .notes {
+            padding-top: 2em;
+        }
+        .notes p, .notes h4 {
+            padding: 6px 0;
+        }
+        #backBtn {
+            display: none;
+        }
     </style>
 </head>
 <body>
     
 
-    
+    <form autocomplete="off" onsubmit="myFunction(); return false;">
     <div class="container">
         <div class="row">
             <p>Taxpayers may benefit from a reassessment exclusion when transferring a principal residence between family members. 
@@ -45,15 +57,15 @@
                 provide the information below:
             </p>
         </div>
-        <div class="row" style="margin-top: 5px">  
+        <div class="row init_question" style="margin-top: 5px">  
             <div class="form-group col-md-3"> <input type="number" id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
             <div class="col-md-1 text-center"><p style="line-height: 2em;">or</p></div>  
-            <div class="form-group col-md-3 pl-0"> <input type="text" id="select" class="form-control" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter AIN or Address</span>  
+            <div class="form-group col-md-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
            
         </div>  
-        <div class="row">
+        <div class="row init_question">
             <div class="form-group col-md-7">
-                <input type="text" class="form-control" id="fmv" placeholder="Fair Market Value of Principal at Time of Transfer"> </div> <span id="error_fmv" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
+                <input type="number" class="form-control" id="fmv" minlength="10" placeholder="Fair Market Value of Principal at Time of Transfer"> </div> <span id="error_fmv" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
             
         </div>
         <div id="share__property">
@@ -106,7 +118,7 @@
         </div>
         <div class="less_than">
             <div class="row prop__question">
-                <p>3. Taxable value transfers with the full benifit retained</p>
+                <p>3. Taxable value transfers with the full benefit retained</p>
             </div>
             <div class="row">
                 <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="FBR" class="form-control" disabled/></div>  
@@ -115,11 +127,27 @@
         </div>
 
         <div class="row">
-            <button type="button" id="inputBtn" class="btn btn-primary">Calculate</button>
+            <button type="submit" id="inputBtn" class="btn btn-primary">Calculate</button>
 
         </div>
     </div>
-    
+    </form>
+    <div class="container">
+        <div class="row notes">
+            <h4 style="text-decoration: underline;">DEFINITIONS AND DISCLOSERS</h3>
+            <p>A <strong>Principal Residence</strong> is a residence that is eligible for either the homeowners’ or disabled veterans’ exemption. The transferred property for Prop. 19 must be the principal residence of both the transferor and transferee.</p>
+            <p>The <strong>Taxable Value</strong> of the primary transfer residence, is the original base year value, adjusted by the annual inflation factor for each taxable year under the current ownership.</p>
+            <p style="font-style: italic;"><strong>NOTE:</strong> “Taxable Value” and “Factored Base Year Value” are used interchangeably.</p>
+            <p>A <strong>Fair Market Value</strong> is what the principal residence would sell for if exposed on the open market at the time of transfer. Your estimate of Fair Market Value could vary from the Fair Market Value estimate of the Assessor.</p>
+            <p style="font-style: italic;"><strong>NOTE:</strong> This calculator is based on the transfer of principal residence occuring in the current tax year. The calculator is available only as a tool and all results are only an estimate.</p>
+        </div>
+        <div class="row">
+            <button type="button" id="backBtn" class="btn btn-primary">Back</button>
+
+        </div>
+        
+    </div>
+    <hr>
     
 
     <script src="~/lib/jquery/dist/jquery.min.js"></scrip>
@@ -134,7 +162,10 @@
      <script>
         
 
-          
+    
+    $( "#backBtn" ).click(function() {
+        location.reload();
+    });  
 
     $("#select").typeahead({
     delay: 600,
@@ -181,7 +212,7 @@
                 } 
         
     });
-    $( "#inputBtn" ).click(function() {
+    function myFunction() {
         var fbv = "";
         var fbvsum = "";
         var fairMarketValue = $("#fmv").val();
@@ -194,9 +225,13 @@
         else if ($("#fmv").val() === "") {
             $("#error_fmv").show();
         }
+        else if (ain.length != 10) {
+            $("#error").show();
+            return;
+        }
         else {
-
-        $.ajax({    
+            $("#inputBtn").text("Calculating..");
+            $.ajax({    
                         url: "/Home/Prop19CaluclatorFactoredBase/",    
                         data: {    
                             "ain": ain
@@ -204,17 +239,25 @@
                         type: "GET",    
                         contentType: "json",    
                         success: function (data) {  
+                            $("#inputBtn").text("Calculate");
+                            if(data === null) {
+                                $("#error").show();
+                                return;
+                            }
+                            $("#inputBtn").hide();
+                            $("#backBtn").show();
+                            $(".init_question").hide();
                             fbv = data.baseValue;
                             fbvsum = fbv + 1000000;
 
                              $("#tv").val("$" + fbv);
                              $("#sum").val("$" + fbvsum);
                             $("#share__property").show();
-                             
+                             $("#fmv2").val("$" + fairMarketValue);
+                                $("#sum2").val("$" + fbvsum);
                             console.log(fbvsum);
                             if(fairMarketValue > fbvsum) {
-                                $("#fmv2").val("$" + fairMarketValue);
-                                $("#sum2").val("$" + fbvsum);
+                                
                                 $("#fmv3").val("$" + fairMarketValue);
                                 $('#sum3').val("$" + fbvsum);
                                 var diffence = fairMarketValue - fbvsum;
@@ -225,11 +268,16 @@
                                 $('#finalVal').val("$" + diffence);
                                 $(".greater_than").show();
                             }
+                            else {
+                                
+                                $("#FBR").val("$" + fbv);
+                                $(".less_than").show();
+                            }
                         }
                             
                     }); 
         }
-    });
+    };
 
     </script>
 </body>
