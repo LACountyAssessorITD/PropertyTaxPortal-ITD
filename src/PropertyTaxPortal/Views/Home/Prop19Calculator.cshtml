@@ -17,6 +17,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
+        body {
+            background-color: transparent !important;
+        }
         .form-group {
             padding: 0;
         }
@@ -44,13 +47,15 @@
         #backBtn {
             display: none;
         }
+        
+        
     </style>
 </head>
 <body>
     
 
     <form autocomplete="off" onsubmit="myFunction(); return false;">
-    <div class="container">
+    <div class="container" style="max-width: 1200px; width: 100%">
         <div class="row">
             <p>Taxpayers may benefit from a reassessment exclusion when transferring a principal residence between family members. 
                 In order to estimate the new base year value of the principal residence after an exclusion claim is approved, please
@@ -58,13 +63,13 @@
             </p>
         </div>
         <div class="row init_question" style="margin-top: 5px">  
-            <div class="form-group col-md-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
-            <div class="col-md-1 text-center"><p style="line-height: 2em;">or</p></div>  
-            <div class="form-group col-md-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
+            <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
+            <div class="col-sm-1 text-center"><p style="line-height: 2em;">or</p></div>  
+            <div class="form-group col-sm-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
            
         </div>  
         <div class="row init_question">
-            <div class="form-group col-md-7">
+            <div class="form-group col-sm-7">
                 <input type="number" class="form-control" id="fmv"  placeholder="Fair Market Value of Principal at Time of Transfer"> </div> <span id="error_fmv" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
             
         </div>
@@ -73,21 +78,21 @@
                 <p>1. Calculate the sum of the taxable value plus $1,000,000</p>
             </div>
             <div class="row">
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="tv" class="form-control" disabled/> <p>TAXABLE VALUE</p></div>  
-                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="eaa" class="form-control" disabled value="$1,000,000"/> <p>EXCLUSION ADJUSTED ANNUALLY</p></div>  
-                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="sum" class="form-control" disabled/> <p>SUM</p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="tv" class="form-control" disabled/> <p>TAXABLE VALUE</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="eaa" class="form-control" disabled value="$1,000,000"/> <p>EXCLUSION ADJUSTED ANNUALLY</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="sum" class="form-control" disabled/> <p>SUM</p></div>  
                 
             </div>
             <div class="row prop__question">
                 <p>2. Is the fair market value greater than the sum of the taxable value plus $1,000,000</p>
             </div>
             <div class="row">
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="fmv2" class="form-control" disabled/></div>  
-                <div class="col-md-1 text-center greater_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-greater-than"></i></p></div>  
-                <div class="col-md-1 text-center less_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-less-than-equal"></i></i></p></div>  
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="sum2" class="form-control" disabled/> </div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv2" class="form-control" disabled/></div>  
+                <div class="col-sm-1 text-center greater_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-greater-than"></i></p></div>  
+                <div class="col-sm-1 text-center less_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-less-than-equal"></i></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="sum2" class="form-control" disabled/> </div>  
                  
                 
             </div>
@@ -97,22 +102,22 @@
                 <p>3. Calculate the difference</p>
             </div>
             <div class="row">
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="fmv3" class="form-control" disabled/> <p>FAIR MARKET VALUE</p></div>  
-                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-minus"></i></p></div>  
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="sum3" class="form-control" disabled/> <p>SUM</p></div>  
-                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="difference" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv3" class="form-control" disabled/> <p>FAIR MARKET VALUE</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-minus"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="sum3" class="form-control" disabled/> <p>SUM</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="difference" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
                 
             </div> 
             <div class="row prop__question">
                 <p>4. Add the difference to the taxable value to arrive at the new combined base year value (partial benefit)</p>
             </div>
             <div class="row">
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="difference2" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
-                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="tv2" class="form-control" disabled/> <p>TAXABLE VALUE</p></div>  
-                <div class="col-md-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="finalVal" class="form-control" disabled/> <p></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="difference2" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="tv2" class="form-control" disabled/> <p>TAXABLE VALUE</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="finalVal" class="form-control" disabled/> <p></p></div>  
                 
             </div>
         </div>
@@ -121,7 +126,7 @@
                 <p>3. Taxable value transfers with the full benefit retained</p>
             </div>
             <div class="row">
-                <div class="form-group col-md-3 pl-0 text-center"> <input type="text" id="FBR" class="form-control" disabled/></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="FBR" class="form-control" disabled/></div>  
                 
             </div>
         </div>
