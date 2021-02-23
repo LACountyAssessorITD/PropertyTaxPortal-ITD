@@ -58,14 +58,14 @@
             </p>
         </div>
         <div class="row init_question" style="margin-top: 5px">  
-            <div class="form-group col-md-3"> <input type="number" id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
+            <div class="form-group col-md-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
             <div class="col-md-1 text-center"><p style="line-height: 2em;">or</p></div>  
             <div class="form-group col-md-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
            
         </div>  
         <div class="row init_question">
             <div class="form-group col-md-7">
-                <input type="number" class="form-control" id="fmv" minlength="10" placeholder="Fair Market Value of Principal at Time of Transfer"> </div> <span id="error_fmv" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
+                <input type="number" class="form-control" id="fmv"  placeholder="Fair Market Value of Principal at Time of Transfer"> </div> <span id="error_fmv" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
             
         </div>
         <div id="share__property">
