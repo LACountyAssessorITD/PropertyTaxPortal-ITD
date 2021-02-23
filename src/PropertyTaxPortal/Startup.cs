@@ -165,7 +165,7 @@ namespace PropertyTaxPortal
                     context.Response.Redirect("https://www.propertytax.lacounty.gov");
                 /////////////////////////////////////////////////////////////////////////////////////////////
 
-                context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
+                // context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                 await next();
             });
             
