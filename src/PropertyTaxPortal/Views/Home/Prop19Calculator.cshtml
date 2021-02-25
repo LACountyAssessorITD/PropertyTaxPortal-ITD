@@ -133,6 +133,7 @@
 
         <div class="row">
             <button type="submit" id="inputBtn" class="btn btn-primary">Calculate</button>
+            <button type="button" id="refreshBtn" class="btn btn-primary">Refresh</button>
 
         </div>
     </div>
@@ -171,10 +172,13 @@
     $( "#backBtn" ).click(function() {
         location.reload();
     });  
+    $( "#refreshBtn" ).click(function() {
+        location.reload();
+    });  
+
 
     $("#select").typeahead({
-    delay: 600,
-    minLength: 3,
+ 
     source: function (request, response) {    
                     
                     @* console.log(request.charAt(request.length - 1)); *@
@@ -251,6 +255,7 @@
                                 $("#error").show();
                                 return;
                             }
+                            $( "#refreshBtn" ).hide();
                             $("#inputBtn").hide();
                             $("#backBtn").show();
                             $(".init_question").hide();
