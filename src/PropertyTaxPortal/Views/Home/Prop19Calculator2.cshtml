@@ -1,0 +1,370 @@
+
+@{
+    ViewData["Title"] = "Calculator";
+    Layout = "";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Tax Portal</title>
+
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" type="text/css" href="~/lib/fonts/css/all.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap-3.3.7/css/bootstrap.min.css" />
+
+<style>
+        body {
+            background-color: transparent !important;
+        }
+        .form-group {
+            padding: 0;
+        }
+        #share__property {
+            display: none;
+        }
+        .less_than {
+            display: none;
+        }
+        .greater_than {
+            display: none;
+        }
+        #error, #error_fmv{
+            display: none;
+        }
+        .prop__question p {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .notes {
+            padding-top: 2em;
+        }
+        .notes p, .notes h4 {
+            padding: 6px 0;
+        }
+        #backBtn {
+            display: none;
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+            }
+        .border__green input {
+            border: 4px solid rgb(59,180,70);
+            border-radius: 0;
+            background-color: rgba(59, 180, 70, .2);
+        }
+        #error__value,#error_fmv__replacement {
+            display: none;
+            color: red;
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <form autocomplete="off" onsubmit="myFunction(); return false;">
+    <div class="container" style="max-width: 1200px; width: 100%">
+        <div class="row">
+            <p>Taxpayers may benefit from a reassessment exclusion when transferring a principal residence between family members. 
+                In order to estimate the new base year value of the principal residence after an exclusion claim is approved, please
+                provide the information below:
+            </p>
+        </div>
+        <div id="error__value" class="row">
+            <p>The Prop. 19 Calculator is unable to calculate an estimate for your property. Please email <a href="mailto:sinvestigation@assessor.lacounty.gov">sinvestigation@assessor.lacounty.gov</a> with your name, 
+                address, contact phone number,  and the Assessor Identification Number (AIN) if available for the property in question. Indicate in the text of 
+                your email that you need assistance calculating an estimate for Prop. 19 relief. You will need to provide an estimate of the current market value of your property in the email. </p>
+        </div>
+        <div class="row init_question" style="margin-top: 5px">  
+            <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
+            <div class="col-sm-1 text-center"><p style="line-height: 2em;">or</p></div>  
+            <div class="form-group col-sm-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
+           
+        </div>  
+        <div class="row init_question">
+            <div class="form-group col-sm-7">
+                <input type="number" class="form-control" id="fmv"  placeholder="Fair Market Value of Original Principal Residence"> </div> <span id="error_fmv" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
+            
+        </div>
+         <div class="row init_question">
+            <div class="form-group col-sm-7">
+                <input type="number" class="form-control" id="fmv__replacement"  placeholder="Fair Market Value of Replacement Principal Residence"> </div> <span id="error_fmv__replacement" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
+            
+        </div>
+        <div id="share__property">
+            @* <div class="row prop__question">
+                <p>1. Calculate the sum of the taxable value plus $1,000,000</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="tv" class="form-control" disabled/> <p>TAXABLE VALUE</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="eaa" class="form-control" disabled value="$1,000,000"/> <p>EXCLUSION ADJUSTED ANNUALLY</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="sum" class="form-control" disabled/> <p>SUM</p></div>  
+                
+            </div>
+            <div class="row prop__question">
+                <p>2. Is the fair market value greater than the sum of the taxable value plus $1,000,000?</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv2" class="form-control" disabled/></div>  
+                <div class="col-sm-1 text-center greater_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-greater-than"></i></p></div>  
+                <div class="col-sm-1 text-center less_than"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-less-than-equal"></i></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="sum2" class="form-control" disabled/> </div>  
+            </div>
+            <div class="row" style="margin-bottom: 15px;">
+                <p class="greater_than mb-2 ml-2" style="text-transform: uppercase; color: blue; font-weight: 700;">Yes, the fair market value is <span style="text-decoration: underline;">Greater than the sum</span></p>
+                <p class="less_than mb-2 ml-2" style="text-transform: uppercase; color: blue; font-weight: 700;">No, the fair market value is <span style="text-decoration: underline;">less than or equal to the sum</span></p>
+            </div>*@
+          
+        </div> 
+        <div class="greater_than">
+            <div class="row prop__question">
+                <p>1. Calculate the positive difference between the full market value (FMV) of the replacement principal residence and the full market value of the original principal residence</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv3" class="form-control" disabled/> <p>FMV Replacement Property</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-minus"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv3_replacement" class="form-control" disabled/> <p>FMV Original Property</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="difference" class="form-control" disabled/> <p>Positive DIFFERENCE</p></div>  
+                
+            </div> 
+            <div class="row prop__question">
+                <p>4. Add the difference to the taxable value to arrive at the new combined base year value (partial benefit)</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="difference2" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="tv2" class="form-control" disabled/> <p>TAXABLE VALUE of Original Principal Residence</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center border__green"> <input type="text" id="finalVal" class="form-control" disabled/> <p></p></div>  
+                
+            </div>
+        </div>
+        <div class="less_than">
+            <div class="row prop__question">
+                <p>1. When there is no positive difference FMV of replacement = or is less than FMV of original residence.</p>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="FBR" class="form-control" disabled/><p>TAXABLE VALUE of Original Principal Residence</p></div>  
+                <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center border__green"> <input type="text" id="FBR_final" class="form-control" disabled/><p>NEW BASE YEAR VALUE FOR REPLACEMENT RESIDENCE (full benefit)</p></div> 
+            </div>
+        </div>
+
+        <div class="row">
+            <button type="submit" id="inputBtn" class="btn btn-primary">Calculate</button>
+            <button type="button" id="refreshBtn" class="btn btn-primary">Refresh</button>
+
+        </div>
+    </div>
+    </form>
+    <div class="container" style="max-width: 1200px; width: 100%">
+        <div class="row notes">
+            <h4 style="text-decoration: underline;">Disclosures</h3>
+            <p>A <strong>Principal Residence</strong> is a residence that is eligible for either the homeowner's or disabled veteran's exemption. The transferred property for Porp.19 must be the principal residence of both the transferor and transferee.</p>
+            <p>The <strong>Taxable Value</strong> of the principal residence transferred or to be transferred, is the original base year value, adjusted by the annual inflation factor for each taxable year under the current ownership.</p>
+            <p style="font-style: italic;"><strong>NOTE:</strong> “Taxable Value” and “Factored Base Year Value” are used interchangeably.</p>
+            <p>A <strong>Fair Market Value</strong> is what the principal residence would sell for if exposed on the open market at the time of transfer. Your estimate of Fair Market Value could vary from the Fair Market Value estimate of the Assessor.</p>
+            <p style="font-style: italic;"><strong>NOTE:</strong> This calculator is based on the transfer of a principal residence occurring in the current tax year. The calculator is available only as a tool and all results are only an estimate.</p>
+        </div>
+        <div class="row">
+            <button type="button" id="backBtn" class="btn btn-primary">Back</button>
+
+        </div>
+        
+    </div>
+    <hr>
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/jquery/dist/min.popper.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+  
+
+    <script src="~/lib/bootstrap-3.3.7/css/bootstrap.css"></script>
+
+    <script src="~/lib/bootstrap-3.3.7/css/lookahead.js"></script>
+     <script>
+        
+
+    
+    $( "#backBtn" ).click(function() {
+        location.reload();
+    });  
+    $( "#refreshBtn" ).click(function() {
+        location.reload();
+    });  
+
+
+    $("#select").typeahead({
+ 
+    source: function (request, response) {    
+                    
+                    @* console.log(request.charAt(request.length - 1)); *@
+                    var length = request.charAt(request.length - 1);
+                    if(length !== ' '){
+                        $.ajax({    
+                        url: "/Home/Prop19CalculatorAddress/",    
+                        data: {    
+                            "address": request    
+                        },    
+                        type: "GET",    
+                        contentType: "json",    
+                        success: function (data) {  
+                             
+                            @* console.log(data); *@
+                            map = {};
+                            response($.map(data, function(item){
+
+                                var id = item.ain;
+                                var address = item.situsAddress;
+                                map[address] = {    
+                                    id: id,    
+                                    address: address    
+                                }; 
+                                @* console.log(map); *@
+                                
+                                return item.situsAddress;
+                            }));
+                        }
+                            
+                    });    
+                    } else {
+                        console.log('not ok')
+                    }
+                    
+                },
+                updater: function (item) { //If simultaneously want to update value somewhere else 
+                    $("#update").attr( "disabled", "true" );
+                    $("#update").val(map[item].id); 
+                    return item; 
+                    
+                } 
+        
+    });
+
+     $('#select')
+          .on('typeahead:select', function(ev, suggestion) {
+              $(ev.target).attr('data-value', suggestion);
+          })
+          .on('blur', function(ev) {
+            var target = $(ev.target);
+            target.val(target.attr('data-value'));
+          })
+          .on('typeahead:change', function(ev) {
+
+            var target = $(ev.target),
+                id = '.tt-dataset-' + ev.target.id + ' .tt-suggestion'; // visible suggestions div
+
+            var suggestions = $(id).map(function() {return $(this).text();} ).get();
+            var i = $.inArray(target.val(), suggestions);
+
+            if(i >= 0) {
+                target.attr('data-value', suggestions[i]);
+            } else {
+                target.attr('data-value', '');
+            }
+
+        })
+    function myFunction() {
+        var fbv = "";
+        var fbvsum = "";
+        var fairMarketValue = $("#fmv").val();
+         var fairMarketValueRelacement = $("#fmv__replacement").val();
+
+         var diffence = fairMarketValueRelacement - fairMarketValue;
+        var ain = $("#update").val();
+    
+        if(ain === "") {
+            console.log("emtly");
+            $("#error").show();
+        }
+        else if ($("#fmv").val() === "") {
+            $("#error_fmv").show();
+        }
+        else if ($("#fmv__replacement").val() === "") {
+            $("#error_fmv__replacement").show();
+        }
+        else if (ain.length != 10) {
+            $("#error").show();
+            return;
+        }
+        else {
+            $("#inputBtn").text("Calculating..");
+            $.ajax({    
+                        url: "/Home/Prop19CaluclatorFactoredBase/",    
+                        data: {    
+                            "ain": ain
+                        },    
+                        type: "GET",    
+                        contentType: "json",    
+                        success: function (data) {  
+                            $("#inputBtn").text("Calculate");
+                            if(data === null) {
+                                $("#error").show();
+                                return;
+                            }
+                            if(data.impValueReasonCode === '6' || data.impValueReasonCode === '8') {
+                                console.log("ERROR 1");
+                                console.log(data);
+                                $( "#error__value" ).show();
+                                return;
+                            }
+                            if(data.landValueReasonCode === '6' || data.landValueReasonCode === '8') {
+                                console.log("ERROR 2");
+                                console.log(data);
+                                $( "#error__value" ).show();
+                                return;
+                            }
+                            console.log(data);
+                            $( "#refreshBtn" ).hide();
+                            $("#inputBtn").hide();
+                            $("#backBtn").show();
+                            $(".init_question").hide();
+                            fbv = data.baseValue;
+                            fbvsum = fbv + 1000000;
+
+                             $("#tv").val("$" + fbv);
+                             $("#sum").val("$" + fbvsum);
+                            $("#share__property").show();
+                             $("#fmv2").val("$" + fairMarketValue);
+                                $("#sum2").val("$" + fbvsum);
+                            console.log(fbvsum);
+                            if(diffence > 0) {
+                                
+                                $("#fmv3").val("$" + fairMarketValue);
+                                $('#fmv3_replacement').val("$" + fairMarketValueRelacement);
+                                
+                                $('#difference').val("$" + diffence);
+                                $('#difference2').val("$" + diffence);
+                                $('#tv2').val("$" + fbv);
+                                diffence += fbv;
+                                $('#finalVal').val("$" + diffence);
+                                $(".greater_than").show();
+                            }
+                            else {
+                                
+                                $("#FBR").val("$" + fbv);
+                                $("#FBR_final").val("$" + fbv);
+                                $(".less_than").show();
+                            }
+                        }
+                            
+                    }); 
+        }
+    };
+
+    </script>
+</body>
+</html>
