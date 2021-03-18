@@ -16,6 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Localization;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace PropertyTaxPortal.Controllers
 {
@@ -71,10 +72,16 @@ namespace PropertyTaxPortal.Controllers
             return View();
         }
 
+        public IActionResult Prop19Calculator2() 
+        {
+            return View();
+        }
+
         [HttpGet]
         public async Task<JsonResult> Prop19CalculatorAddress(string Address) {
             // Address = '%'+ Address+ '%';
             // Address = Address.Replace(' ', '%');
+            
             string test = "AP_GetAddress " + "'" + Address + "%'"; 
              var context = await _portalContext.AddressList.FromSql(test).ToListAsync();
             
@@ -82,6 +89,7 @@ namespace PropertyTaxPortal.Controllers
         }
         [HttpGet]
         public async Task<JsonResult> Prop19CaluclatorFactoredBase(string Ain) {
+            Ain = Regex.Replace(Ain, "[^0-9]", "");
             string test = "AP_GetFactoredBaseValue " + "'" + Ain + "'"; 
             var context = await _portalContext.FactoredBaseValue.FromSql(test).FirstOrDefaultAsync();
             return Json(context);
