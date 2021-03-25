@@ -85,7 +85,7 @@
             <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" onchange="this.value.replace('/[^0-9\.]+/g','')"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
             <div class="col-sm-1 text-center"><p style="line-height: 2em;">or</p></div>  
             <div class="form-group class_hide col-sm-3 pl-0"> <input type="text"   class="form-control select turnoff" autocomplete="off" placeholder="Address"/> </div>  
-            <div class="form-group final_address col-sm-3 pl-0"> <p style="margin-top: 5px; margin-bottom: 0;" id="#replacement_address"></p>  </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
+            <div class="form-group final_address col-sm-4 pl-0"> <p style="margin-top: 5px; margin-bottom: 0;" id="#replacement_address"></p>  </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
 
         </div>  
         <div class="row init_question">
@@ -145,7 +145,7 @@
                 <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-plus"></i></p></div>  
                 <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="tv2" class="form-control" disabled/> <p>TAXABLE VALUE of Original Principal Residence</p></div>  
                 <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
-                <div class="form-group col-sm-3 pl-0 text-center border__green"> <input type="text" id="finalVal" class="form-control" disabled/> <p></p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center border__green"> <input type="text" id="finalVal" class="form-control" disabled/> <p>NEW COMBINED BASE YEAR VALUE(Partial Benefit)</p></div>  
                 
             </div>
         </div>
