@@ -253,6 +253,7 @@
                     $('.typeahead').typeahead('close');
                     $('.typeahead-input').typeahead('close');
                      $('.dropdown-menu').attr('style','display:none !important');
+                     $('.typeahead').removeClass('dropdown-menu');
                      $('.typeahead-input').on('typeahead:beforeopen', function() {
                     return false;
                     });

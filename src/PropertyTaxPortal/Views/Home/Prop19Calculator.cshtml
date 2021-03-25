@@ -242,6 +242,7 @@
                 updater: function (item) { //If simultaneously want to update value somewhere else 
                     $("#update").attr( "disabled", "true" );
                     $("#update").val(map[item].id); 
+                    $('.typeahead').removeClass('dropdown-menu');
                     return item; 
                     
                 } 
