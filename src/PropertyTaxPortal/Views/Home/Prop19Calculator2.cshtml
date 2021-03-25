@@ -64,9 +64,7 @@
             color: red;
             font-weight: 600;
         }
-        #replacement_address {
-            display: none;
-        }
+       
         
     </style>
 </head>
@@ -86,8 +84,9 @@
         <div class="row init_question" style="margin-top: 5px">  
             <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" onchange="this.value.replace('/[^0-9\.]+/g','')"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
             <div class="col-sm-1 text-center"><p style="line-height: 2em;">or</p></div>  
-            <div class="form-group col-sm-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> <p style="margin-top: 5px; margin-bottom: 0;" id="#replacement_address"></p> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
-           
+            <div class="form-group class_hide col-sm-3 pl-0"> <input type="text"   class="form-control select turnoff" autocomplete="off" placeholder="Address"/> </div>  
+            <div class="form-group final_address col-sm-3 pl-0"> <p style="margin-top: 5px; margin-bottom: 0;" id="#replacement_address"></p>  </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
+
         </div>  
         <div class="row init_question">
             <div class="form-group col-sm-7">
@@ -207,7 +206,7 @@
     });  
 
 
-    $("#select").typeahead({
+    $(".select").typeahead({
  
     source: function (request, response) {    
                     
@@ -248,20 +247,10 @@
                 updater: function (item) { //If simultaneously want to update value somewhere else 
                     $("#update").attr( "disabled", "true" );
                     $("#update").val(map[item].id); 
-                    $("#select").hide();
-                    $(".typeahead").hide();
-                    $('.typeahead').typeahead('close');
-                    $('.typeahead-input').typeahead('close');
-                     $('.dropdown-menu').attr('style','display:none !important');
-                     $('.typeahead').removeClass('dropdown-menu');
-                     $('.typeahead-input').on('typeahead:beforeopen', function() {
-                    return false;
-                    });
+                   $('.turnoff').removeClass('select');
+                   $('.class_hide').hide();
+                    $('.typeahead').typeahead('destroy');
                     document.getElementById("#replacement_address").innerHTML = map[item].address;
-                
-                    $("#replacement_address").show();
-                    
-
                     return item; 
                     
                 } 
@@ -298,7 +287,7 @@ $("[type='number']").bind("cut copy paste",function(evt) {
     evt.preventDefault();
 });
 
-     $('#select')
+     $('.select')
           .on('typeahead:select', function(ev, suggestion) {
               $(ev.target).attr('data-value', suggestion);
           })
