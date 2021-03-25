@@ -84,7 +84,7 @@
                 your email that you need assistance calculating an estimate for Prop. 19 relief. You will need to provide an estimate of the current market value of your property in the email. </p>
         </div>
         <div class="row init_question" style="margin-top: 5px">  
-            <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
+            <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" nchange="this.value.replace('/[^0-9\.]+/g','')"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
             <div class="col-sm-1 text-center"><p style="line-height: 2em;">or</p></div>  
             <div class="form-group col-sm-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
            
@@ -247,6 +247,30 @@
                 } 
         
     });
+
+     $('#select')
+          .on('typeahead:select', function(ev, suggestion) {
+              $(ev.target).attr('data-value', suggestion);
+          })
+          .on('blur', function(ev) {
+            var target = $(ev.target);
+            target.val(target.attr('data-value'));
+          })
+          .on('typeahead:change', function(ev) {
+
+            var target = $(ev.target),
+                id = '.tt-dataset-' + ev.target.id + ' .tt-suggestion'; // visible suggestions div
+
+            var suggestions = $(id).map(function() {return $(this).text();} ).get();
+            var i = $.inArray(target.val(), suggestions);
+
+            if(i >= 0) {
+                target.attr('data-value', suggestions[i]);
+            } else {
+                target.attr('data-value', '');
+            }
+
+        })
     function myFunction() {
         var fbv = "";
         var fbvsum = "";
@@ -279,8 +303,15 @@
                                 $("#error").show();
                                 return;
                             }
-                            if(data.impValueReasonCode === '6' || data.impValueReasonCode === '8' || data.landValueReasonCode === '6' || data.landValueReasonCode === '8') {
-                                console.log("ERROR");
+                            if(data.impValueReasonCode === '6' || data.impValueReasonCode === '8') {
+                                console.log("ERROR 1");
+                                console.log(data);
+                                $( "#error__value" ).show();
+                                return;
+                            }
+                            if(data.landValueReasonCode === '6' || data.landValueReasonCode === '8') {
+                                console.log("ERROR 2");
+                                console.log(data);
                                 $( "#error__value" ).show();
                                 return;
                             }
@@ -320,6 +351,37 @@
                     }); 
         }
     };
+   var ctrlDown = false;
+var ctrlKey = 17, vKey = 86;
+
+$("[type='number']").on("keydown", function(evt) {
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+
+    if (charCode == ctrlKey) ctrlDown = true;
+
+    if(ctrlDown == true && charCode == vKey) {
+        return true;
+    }
+
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+
+}).keyup(function(evt)
+{
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode == ctrlKey) ctrlDown = false;
+});
+
+$("[type='number']").bind("cut copy paste",function(evt) {
+    var number = (evt.originalEvent || evt).clipboardData.getData('text/plain');
+    x = parseInt(number.replace(/\D/g,''),10);
+    console.log(number);
+    $(this).val(x);
+    evt.preventDefault();
+});
+
 
     </script>
 </body>
