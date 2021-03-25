@@ -64,6 +64,9 @@
             color: red;
             font-weight: 600;
         }
+        #replacement_address {
+            display: none;
+        }
         
     </style>
 </head>
@@ -84,9 +87,9 @@
                 your email that you need assistance calculating an estimate for Prop. 19 relief. You will need to provide an estimate of the current market value of your property in the email. </p>
         </div>
         <div class="row init_question" style="margin-top: 5px">  
-            <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
+            <div class="form-group col-sm-3"> <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" onchange="this.value.replace('/[^0-9\.]+/g','')"  id="update" class="form-control" placeholder="Assessor ID Number (AIN)" /> </div>  
             <div class="col-sm-1 text-center"><p style="line-height: 2em;">or</p></div>  
-            <div class="form-group col-sm-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
+            <div class="form-group col-sm-3 pl-0"> <input type="text" id="select" class="form-control" autocomplete="off" placeholder="Address"/> <p style="margin-top: 5px; margin-bottom: 0;" id="#replacement_address"></p> </div>  <span id="error" style="color: red; line-height: 2em; margin-left: 1em;">Please enter valid AIN or Address</span>  
            
         </div>  
         <div class="row init_question">
@@ -97,7 +100,7 @@
          <div class="row init_question">
             <div class="form-group col-sm-7">
                 <input type="number" class="form-control" id="fmv__replacement"  placeholder="Fair Market Value of Replacement Principal Residence"> </div> <span id="error_fmv__replacement" style="color: red; line-height: 2em; margin-left: 1em;">Please enter Fair Market Value</span>
-            
+                
         </div>
         <div id="share__property">
             @* <div class="row prop__question">
@@ -131,15 +134,15 @@
                 <p>1. Calculate the positive difference between the full market value (FMV) of the replacement principal residence and the full market value of the original principal residence</p>
             </div>
             <div class="row">
-                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv3" class="form-control" disabled/> <p>FMV Replacement Property</p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv3_replacement" class="form-control" disabled/> <p>FMV Replacement Property</p></div>  
                 <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-minus"></i></p></div>  
-                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv3_replacement" class="form-control" disabled/> <p>FMV Original Property</p></div>  
+                <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="fmv3" class="form-control" disabled/> <p>FMV Original Property</p></div>  
                 <div class="col-sm-1 text-center"><p style="line-height: 1.4em; font-size: 2em"><i class="fas fa-equals"></i></p></div>  
                 <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="difference" class="form-control" disabled/> <p>Positive DIFFERENCE</p></div>  
                 
             </div> 
             <div class="row prop__question">
-                <p>4. Add the difference to the taxable value to arrive at the new combined base year value (partial benefit)</p>
+                <p>2. Add the difference to the taxable value to arrive at the new combined base year value (partial benefit)</p>
             </div>
             <div class="row">
                 <div class="form-group col-sm-3 pl-0 text-center"> <input type="text" id="difference2" class="form-control" disabled/> <p>DIFFERENCE</p></div>  
@@ -171,7 +174,7 @@
     <div class="container" style="max-width: 1200px; width: 100%">
         <div class="row notes">
             <h4 style="text-decoration: underline;">Disclosures</h3>
-            <p>A <strong>Principal Residence</strong> is a residence that is eligible for either the homeowner's or disabled veteran's exemption. The transferred property for Porp.19 must be the principal residence of both the transferor and transferee.</p>
+            <p>A <strong>Principal Residence</strong> is a residence that is eligible for either the homeowner's or disabled veteran's exemption.</p>
             <p>The <strong>Taxable Value</strong> of the principal residence transferred or to be transferred, is the original base year value, adjusted by the annual inflation factor for each taxable year under the current ownership.</p>
             <p style="font-style: italic;"><strong>NOTE:</strong> “Taxable Value” and “Factored Base Year Value” are used interchangeably.</p>
             <p>A <strong>Fair Market Value</strong> is what the principal residence would sell for if exposed on the open market at the time of transfer. Your estimate of Fair Market Value could vary from the Fair Market Value estimate of the Assessor.</p>
@@ -248,11 +251,54 @@
                 updater: function (item) { //If simultaneously want to update value somewhere else 
                     $("#update").attr( "disabled", "true" );
                     $("#update").val(map[item].id); 
+                    $("#select").hide();
+                    $(".typeahead").hide();
+                    $('.typeahead').typeahead('close');
+                    $('.typeahead-input').typeahead('close');
+                     $('.dropdown-menu').attr('style','display:none !important');
+                     $('.typeahead-input').on('typeahead:beforeopen', function() {
+                    return false;
+                    });
+                    document.getElementById("#replacement_address").innerHTML = map[item].address;
+                
+                    $("#replacement_address").show();
+                    
+
                     return item; 
                     
                 } 
         
     });
+var ctrlDown = false;
+var ctrlKey = 17, vKey = 86;
+
+$("[type='number']").on("keydown", function(evt) {
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+
+    if (charCode == ctrlKey) ctrlDown = true;
+
+    if(ctrlDown == true && charCode == vKey) {
+        return true;
+    }
+
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+
+}).keyup(function(evt)
+{
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode == ctrlKey) ctrlDown = false;
+});
+
+$("[type='number']").bind("cut copy paste",function(evt) {
+    var number = (evt.originalEvent || evt).clipboardData.getData('text/plain');
+    x = parseInt(number.replace(/\D/g,''),10);
+    console.log(number);
+    $(this).val(x);
+    evt.preventDefault();
+});
 
      $('#select')
           .on('typeahead:select', function(ev, suggestion) {
