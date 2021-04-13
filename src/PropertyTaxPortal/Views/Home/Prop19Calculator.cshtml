@@ -64,6 +64,9 @@
             color: red;
             font-weight: 600;
         }
+        .final_address {
+            display: none;
+        }
         
     </style>
 </head>
@@ -246,6 +249,7 @@
                    $('.turnoff').removeClass('select');
                    $('.class_hide').hide();
                     $('.typeahead').typeahead('destroy');
+                    $('.final_address').show();
                     document.getElementById("#replacement_address").innerHTML = map[item].address;
                     return item; 
                     
