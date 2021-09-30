@@ -50,66 +50,92 @@
     </div>
 
 </section>
+<section class="container-fluid section-cards">
+    <div class="row">
 
+
+
+        <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-5">
+
+            <a href="https://ttc.lacounty.gov/pay-secured-property-taxes-online/" target="_blank">
+                <div class="card-img bg-1">
+
+                    <ion class="fas fa-dollar-sign c-2"></ion>
+                </div>
+                <p>@Localizer["Pay Property </br> Taxes </br> Online"]</p>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-6">
+            <a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">
+                <div class="card-img bg-2">
+
+                    <ion class="fas fa-tasks c-3"></ion>
+                </div>
+                <p>@Localizer["PROPERTY TAX MANAGEMENT SYSTEM"]</p>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-7">
+            <a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank">
+                <div class="card-img bg-3">
+
+
+                    <ion class="far fa-envelope-open c-4"></ion>
+                </div>
+                <p>@Localizer["Change Mailing Address"]</p>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-10">
+            <a href="https://portal.assessor.lacounty.gov/" target="_blank">
+                <div class="card-img bg-4">
+
+                    <ion class="fas fa-city c-5"></ion>
+                </div>
+                <p>@Localizer["PROPERTY ADDRESS SEARCH"]</p>
+            </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 text-card bg-temp js--wp-4">
+
+            <a asp-controller="Home" asp-action="SelfService">
+                <div class="card-img bg-temp">
+
+                    <ion class="far fa-user c-1"></ion>
+                    @*<ion class="far fa-edit c-1"></ion>*@
+                    @*<ion class="far fa-user c-1"></ion>*@
+                    @*<ion class="fas fa-user-check c-1"></ion>*@
+                    @*<ion class="fas fa-hand-point-down c-1"></ion>*@
+                </div>
+                <p>@Localizer["Self-Service Options"]</p>
+
+            </a>
+
+        </div>
+    </div>
+</section>
 <section class=" mb-3" style="color: black; background-color: #e8e8e8;
                                       padding: 8px !important;
                                       border-radius: 1px; font-size: 80%; opacity: 88%; font-weight: 700; margin-left: 10%; margin-right: 10%">
-    <p class="" style="color: red"><b>@Localizer["LATEST NEWS: All County Office Buildings are closed, effective Monday, March 16, 2020 until further notice."]</b></p>
-    <p>
 
-        <b style="color: red">
-
-                @Localizer["IMPORTANT - Property Tax Payments"]
- 
-        </b>
-    </p>
     <p>
-        @Localizer["We are not accepting in-person property tax payments at this time. We encourage everyone to use other payment methods, such as online eCheck and credit/debit card payments, telephone credit/debit card payments, or mail in your payment."]
-        @Localizer["As a reminder, there is no cost for e-Check payments online. For online credit/debit card transaction, our card payment processor charges a 2.22 percent service fee. The minimum service fee is $1.49."]
+        <stropng>
+            <spa style="color: red" n>LATEST NEWS:</span> Effective October 1, 2021, we are resuming limited in-person services at the Kenneth Hahn Hall of Administration, Monday through Friday, between 8:00 a.m. and 5:00 p.m. excluding Los Angeles County holidays. We are accepting in-person, online, and mail-in property tax payments at this time.
+        </stropng>
     </p>
 
     <p>
-        @Localizer["In addition, you can use our website to look up taxes due, request a duplicate bill, and look up payment history.Please"] <a href="https://ttc.lacounty.gov/pay-your-property-taxes/"> @Localizer["CLICK HERE"] </a>
-        @Localizer["for more information on all payment options.We also created a"] <a href="https://ttc.lacounty.gov/wp-content/uploads/2019/10/TOPFIVEDOSANDDONTSINSERT201920(LATI0029-02).pdf">
-            @Localizer["TOP 5 DOs AND DONT'S"]
-        </a>
-        @Localizer["with helpful information on property tax payments, including"]  <a href="https://ttc.lacounty.gov/avoid-penalties-by-understanding-postmarks/"> @Localizer["How To Avoid Penalties."] </a>
-
+        The County is committed to the health and well-being of the public and our employees, and you may see fewer windows open to allow for physical distancing. 
     </p>
 
-    <p>
-        @Localizer["This portal has additional information about the four County departments involved in the property tax process,  providing answers for your property tax questions."]
-    </p>
-    <p style="margin-bottom:0.005rem">
-        @Localizer["Do you have questions about:"]
-        <ul style="padding-left: 40px; list-style:circle;">
-            <li>
-                @Localizer["Assessed value of your property? Visit Assessor website: "] <a href="https://assessor.lacounty.gov/">@Localizer["https://assessor.lacounty.gov"]</a>@Localizer[" (213) 974-3211"]
-            </li>
-            <li>
-                @Localizer["Your actual tax rates?  Visit Auditor-Controller website: "] <a href="http://auditor.lacounty.gov/">@Localizer["http://auditor.lacounty.gov "]</a>@Localizer[" (213) 974-8368"]
-            </li>
-            <li>
-                @Localizer["Your tax payment?  Visit Treasurer and Tax Collector website :  "] <a href="https://ttc.lacounty.gov/">@Localizer["https://ttc.lacounty.gov"]</a>@Localizer[" (213) 974-2111"]
-            </li>
-            <li>
-                @Localizer["Appealing decisions on your assessed value and subsequent tax bill? Visit the Assessment Appeals Board website:  "] <a href="https://lacaab.lacounty.gov/">@Localizer["https://lacaab.lacounty.gov"]</a>@Localizer[" (213) 974-1471"]
-            </li>
-        </ul>
-    </p>
-    <p>
-        @Localizer["We recognize this is a challenging time, and we remain deeply committed to the safety of the public and our employees.We will continue to monitor developments, adjust where necessary, and inform you when we are open to the public again."]
+    <p style="text-decoration: underline">
+        Avoid the lines by using the self-service options above, over-the-phone, or mail services.
     </p>
 
     <p>
-        @Localizer["For the latest, accurate information about the coronavirus, please visit the"] <a href="http://publichealth.lacounty.gov/">
-            @Localizer["Department of Public Health"]
-        </a> @Localizer[" website."]
+        For the latest, accurate information about the coronavirus, please visit the <a href="http://publichealth.lacounty.gov/" target="_blank"> Department of Public Health</a> website.
     </p>
 
-    <p>
-        @Localizer["Thank you for your patience and cooperation."]
-    </p>
+
 
 </section>
 <!---------------------------------------------------------------------->
@@ -117,7 +143,7 @@
 <!---------------------------------------------------------------------->
 <section class="container-fluid section-head">
     <div class="row section-columns">
-        <div class="col-lg-5 welcome-header js--wp-8">
+        <div class="col-lg-5 welcome-header ">
             <h1 class="display-3 t-shadow ">@Localizer["Welcome"]</h1>
             <p class="t-shadow">
                 @Localizer["Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County"].
@@ -236,70 +262,6 @@
 <!---------------------------------------------------------------------->
 <!----------------------------------Cards------------------------------->
 <!---------------------------------------------------------------------->
-
-<section class="container-fluid section-cards">
-    <div class="row">
-
-
-
-        <div class="col-md-3 col-sm-6 text-card bg-1 js--wp-5">
-
-            <a href="https://ttc.lacounty.gov/pay-secured-property-taxes-online/"  target="_blank">
-                <div class="card-img bg-1">
-
-                    <ion class="fas fa-dollar-sign c-2"></ion>
-                </div>
-                <p>@Localizer["Pay Property </br> Taxes </br> Online"]</p>
-            </a>
-        </div>
-        <div class="col-md-3 col-sm-6 text-card bg-2 js--wp-6">
-            <a href="https://ttc.lacounty.gov/property-tax-management-system/" target="_blank">
-                <div class="card-img bg-2">
-
-                    <ion class="fas fa-tasks c-3"></ion>
-                </div>
-                <p>@Localizer["PROPERTY TAX MANAGEMENT SYSTEM"]</p>
-            </a>
-        </div>
-        <div class="col-md-3 col-sm-6 text-card bg-3 js--wp-7">
-            <a href="https://assessor.lacounty.gov/change-mailing-address/" target="_blank">
-                <div class="card-img bg-3">
-
-
-                    <ion class="far fa-envelope-open c-4"></ion>
-                </div>
-                <p>@Localizer["Change Mailing Address"]</p>
-            </a>
-        </div>
-        <div class="col-md-3 col-sm-6 text-card bg-4 js--wp-10">
-            <a href="https://portal.assessor.lacounty.gov/" target="_blank">
-                <div class="card-img bg-4">
-
-                    <ion class="fas fa-city c-5"></ion>
-                </div>
-                <p>@Localizer["PROPERTY ADDRESS SEARCH"]</p>
-            </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 text-card bg-temp js--wp-4">
-
-            <a asp-controller="Home" asp-action="SelfService">
-                <div class="card-img bg-temp">
-
-                    <ion class="far fa-user c-1"></ion>
-                    @*<ion class="far fa-edit c-1"></ion>*@
-                    @*<ion class="far fa-user c-1"></ion>*@
-                    @*<ion class="fas fa-user-check c-1"></ion>*@
-                    @*<ion class="fas fa-hand-point-down c-1"></ion>*@
-                </div>
-                <p>@Localizer["Self-Service Options"]</p>
-
-            </a>
-
-        </div>
-    </div>
-</section>
 @*<section class="container-fluid section-cards">
         <div class="row">
 

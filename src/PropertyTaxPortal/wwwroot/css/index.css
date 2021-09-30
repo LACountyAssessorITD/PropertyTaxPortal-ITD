@@ -88,6 +88,9 @@
     margin-bottom: 0;
     font-weight: 300;
 }
+.section-head {
+    margin-bottom: 75px;
+}
 .section-head h1 {
     font-weight: 400;
 }
@@ -139,7 +142,7 @@
 
 
 .section-cards {
-    margin-top: 150px;
+    margin-top: 75px;
     padding: 0 50px;
 }
 
