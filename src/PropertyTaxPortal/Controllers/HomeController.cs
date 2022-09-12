@@ -418,7 +418,15 @@ namespace PropertyTaxPortal.Controllers
                 MailAddress to;
                 if (_host.IsProduction())
                 {
-                    to = new MailAddress(sEmail);
+                    
+                    if(await _context.subjects.AnyAsync(e => e.Email == sEmail))
+                    {
+                        to = new MailAddress(sEmail);
+                    }
+                    else
+                    {
+                        return BadRequest("Invalid Email");
+                    }
                 }
                 else
                 {
