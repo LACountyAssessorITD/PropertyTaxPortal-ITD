@@ -170,11 +170,11 @@
         </div>
         <div class="bill-step">
             <div>14</div>
-            <p><strong>@Localizer["Returned Check Charge"]</strong> - @Localizer["There is a $50.00 charge for any checks returned by the bank"]</p>
+            <p><strong>@Localizer["Net Taxable Value"]</strong> - @Localizer["The difference between the current value and exemptions."]</p>
         </div>
         <div class="bill-step">
             <div>15</div>
-            <p><strong>@Localizer["Net Taxable Value"]</strong> - @Localizer["The difference between the current value and exemptions."]</p>
+            <p><strong>@Localizer["Returned Check Charge"]</strong> - @Localizer["There is a $50.00 charge for any checks returned by the bank"]</p>
         </div>
         <div class="bill-step">
             <div>16</div>
@@ -193,39 +193,39 @@
         <div class="bill-step">
             <div>18</div>
             <p>
-                <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the"]
-                @Localizer["payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
-            </p>
-        </div>
-        <div class="bill-step">
-            <div>19</div>
-            <p>
                 <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment"]
                 @Localizer["stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
             </p>
         </div>
         <div class="bill-step">
-            <div>20</div>
+            <div>19</div>
             <p>
                 <strong>@Localizer["Mail Address Change"]</strong> - @Localizer["To make a change in mailing address, please check the box in the front and complete the information on the"]
                 @Localizer["back of the payment stub."]
             </p>
         </div>
         <div class="bill-step">
-            <div>21</div>
+            <div>20</div>
             <p>
                 <strong>@Localizer["1st Installment Delinquency Date"]</strong> - @Localizer["If paying the bill in full, payment must be received or United States Postal Service (USPS) postmarked by"]
                 @Localizer["this date. If paying in installments, the first installment must be received or USPS postmarked by this date, or a 10 percent penalty will be imposed."]
             </p>
         </div>
         <div class="bill-step">
-            <div>22</div>
+            <div>21</div>
             <p>
                 <strong>@Localizer["1st Installment Due"]</strong> - @Localizer["Amount of taxes due for the first installment. Taxpayers must be sure to include the payment stub with any type of payment"]
                 @Localizer["and write their Assessor’s Identification Number with the Year/Sequence Number on their check."]
             </p>
         </div>
         <div class="bill-step">
+            <div>22</div>
+            <p>
+                <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)"]
+                @Localizer["with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
+            </p>
+        </div>
+        @*<div class="bill-step">
             <div>23</div>
             <p>
                 <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the payment"]
@@ -238,7 +238,7 @@
                 <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)"]
                 @Localizer["with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
             </p>
-        </div>
+        </div>*@
     </div>
 </section>
 
@@ -347,12 +347,13 @@
 </div>
 <div class="floatbox" id="div14">
     <div class="float-content">
-        <p><strong>@Localizer["Returned Check Charge"]</strong> - @Localizer["There is a $50.00 charge for any checks returned by the bank"]</p>
+        <p><strong>@Localizer["Net Taxable Value"]</strong> - @Localizer["The difference between the current value and exemptions."]</p>
     </div>
+    
 </div>
 <div class="floatbox" id="div15">
     <div class="float-content">
-        <p><strong>@Localizer["Net Taxable Value"]</strong> - @Localizer["The difference between the current value and exemptions."]</p>
+        <p><strong>@Localizer["Returned Check Charge"]</strong> - @Localizer["There is a $50.00 charge for any checks returned by the bank"]</p>
     </div>
 </div>
 <div class="floatbox" id="div16">
@@ -374,20 +375,12 @@
 <div class="floatbox" id="div18">
     <div class="float-content">
         <p>
-            <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the"]
-            @Localizer["payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
-        </p>
-    </div>
-</div>
-<div class="floatbox" id="div19">
-    <div class="float-content">
-        <p>
             <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment"]
             @Localizer["stub(s) with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
         </p>
     </div>
 </div>
-<div class="floatbox" id="div20">
+<div class="floatbox" id="div19">
     <div class="float-content">
         <p>
             <strong>@Localizer["Mail Address Change"]</strong> - @Localizer["To make a change in mailing address, please check the box in the front and complete the information on the"]
@@ -395,7 +388,7 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div21">
+<div class="floatbox" id="div20">
     <div class="float-content">
         <p>
             <strong>@Localizer["1st Installment Delinquency Date"]</strong> - @Localizer["If paying the bill in full, payment must be received or United States Postal Service (USPS) postmarked by"]
@@ -403,7 +396,7 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div22">
+<div class="floatbox" id="div21">
     <div class="float-content">
         <p>
             <strong>@Localizer["1st Installment Due"]</strong> - @Localizer["Amount of taxes due for the first installment. Taxpayers must be sure to include the payment stub with any type of payment"]
@@ -411,7 +404,15 @@
         </p>
     </div>
 </div>
-<div class="floatbox" id="div23">
+<div class="floatbox" id="div22">
+    <div class="float-content">
+        <p>
+            <strong>@Localizer["Make Checks Payable"]</strong> - @Localizer["Make checks payable to the Los Angeles County Tax Collector and mail to this address. Include the payment stub(s)"]
+            @Localizer["with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
+        </p>
+    </div>
+</div>
+@*<div class="floatbox" id="div23">
     <div class="float-content">
         <p>
             <strong>@Localizer["Remit Amount"]</strong> - @Localizer["If payment is not made by the delinquency date, remit the amount stated here. Include the payment stub(s) with the payment"]
@@ -426,5 +427,5 @@
             @Localizer["with the payment and write the Assessor’s Identification Number and the Year/Sequence Number on the check."]
         </p>
     </div>
-</div>
+</div>*@
 
