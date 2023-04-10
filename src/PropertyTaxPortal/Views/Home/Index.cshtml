@@ -50,6 +50,119 @@
     </div>
 
 </section>
+<section class="container-fluid section-head">
+    <div class="row section-columns">
+        <div class="col-lg-5 welcome-header ">
+            <h1 class="display-3 t-shadow ">@Localizer["Welcome"]</h1>
+            <p class="t-shadow">
+                @Localizer["Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County"].
+            </p>
+        </div>
+        <div class="col-lg-7 carousel-header">
+            <div id="carouselExampleControls" class="carousel slide container h-100 " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a asp-controller="Home" asp-route-id="0" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Jeffrey Prang</span></p>
+                                <p class="text-underline">@Localizer["Assessor"]</p>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-3 align-items-center">
+                                </div>
+                                <div class="col-9 img-carousel h-100">
+
+                                    <div class="img-seal">
+                                        <img src="~/images/assessor-official.png" class="w-100 js--wp-2 img-seal" alt="...">
+
+                                    </div>
+
+                                    <img class="js--wp-9 img-person" src="~/images/jprang_taxportal.png" alt="Jprang slider">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item ">
+                        <a asp-controller="Home" asp-route-id="1" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Interim Oscar Valdez</span></p>
+                                <p class="text-underline">@Localizer["Auditor-Controller"]</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                </div>
+                                <div class="col-9 img-carousel">
+
+                                    <div class="img-seal">
+                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
+                                    </div>
+                                    @*<img class="js--wp-9 img-person i-4" src="~/images/ArleneBarerra-ptp-crop2.png" alt="Jnaimo slider">*@
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Keith Knox</span></p>
+                                <p class="text-underline">@Localizer["Treasurer and Tax Collector"]</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                </div>
+                                <div class="col-9 img-carousel">
+
+                                    <div class="img-seal">
+                                        <img src="~/images/TTC-Seal-logo.png" class="w-100 js--wp-2 img-seal" alt="la county seal">
+                                    </div>
+                                    <img class="js--wp-9 img-person" src="~/images/KeithKnox.png" alt="Jkelly slider">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item ">
+                        <a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">
+                            <div class="name-text position-absolute">
+                                <p class=""><span>Celia Zavala</span></p>
+                                <p class="text-underline">@Localizer["Executive Officer"]</p>
+                                <p class="text-underline">@Localizer["Assessment Appeals Board"]</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                </div>
+                                <div class="col-9 img-carousel">
+
+                                    <div class="img-seal">
+                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
+                                    </div>
+                                    <img class="js--wp-9 img-person i-3" src="~/images/new_czavala.png" alt="Czavala slider">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="container-fluid section-cards">
     <div class="row">
 
@@ -113,7 +226,7 @@
         </div>
     </div>
 </section>
-<section class=" mb-3" style="color: black; background-color: #e8e8e8;
+@*<section class=" mb-3" style="color: black; background-color: #e8e8e8;
                                       padding: 8px !important;
                                       border-radius: 1px; font-size: 80%; opacity: 88%; font-weight: 500; margin-left: 10%; margin-right: 10%">
 
@@ -137,126 +250,10 @@
 
 
 
-</section>
+</section>*@
 <!---------------------------------------------------------------------->
 <!----------------------------------Carousel---------------------------->
 <!---------------------------------------------------------------------->
-<section class="container-fluid section-head">
-    <div class="row section-columns">
-        <div class="col-lg-5 welcome-header ">
-            <h1 class="display-3 t-shadow ">@Localizer["Welcome"]</h1>
-            <p class="t-shadow">
-                @Localizer["Assessor, Auditor-Controller, Treasurer and Tax Collector, and Assessment Appeals Board have prepared this property tax information site to provide taxpayers with an overview and some specific detail about the property tax process in Los Angeles County"].
-            </p>
-        </div>
-        <div class="col-lg-7 carousel-header">
-            <div id="carouselExampleControls" class="carousel slide container h-100 " data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a asp-controller="Home" asp-route-id="0" asp-action="ContactUs">
-                            <div class="name-text position-absolute">
-                                <p class=""><span>Jeffrey Prang</span></p>
-                                <p class="text-underline">@Localizer["Assessor"]</p>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-3 align-items-center">
-
-                                </div>
-                                <div class="col-9 img-carousel h-100">
-
-                                    <div class="img-seal">
-                                        <img src="~/images/assessor-official.png" class="w-100 js--wp-2 img-seal" alt="...">
-
-                                    </div>
-
-                                    <img class="js--wp-9 img-person" src="~/images/jprang_taxportal.png" alt="Jprang slider">
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item ">
-                        <a asp-controller="Home" asp-route-id="1" asp-action="ContactUs">
-                            <div class="name-text position-absolute">
-                                <p class=""><span>Interim Oscar Valdez</span></p>
-                                <p class="text-underline">@Localizer["Auditor-Controller"]</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-
-                                </div>
-                                <div class="col-9 img-carousel">
-
-                                    <div class="img-seal">
-                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
-                                    </div>
-                                    @*<img class="js--wp-9 img-person i-4" src="~/images/ArleneBarerra-ptp-crop2.png" alt="Jnaimo slider">*@
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a asp-controller="Home" asp-route-id="2" asp-action="ContactUs">
-                            <div class="name-text position-absolute">
-                                <p class=""><span>Keith Knox</span></p>
-                                <p class="text-underline">@Localizer["Treasurer and Tax Collector"]</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-
-                                </div>
-                                <div class="col-9 img-carousel">
-
-                                    <div class="img-seal">
-                                        <img src="~/images/TTC-Seal-logo.png" class="w-100 js--wp-2 img-seal" alt="la county seal">
-                                    </div>
-                                    <img class="js--wp-9 img-person" src="~/images/KeithKnox.png" alt="Jkelly slider">
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item ">
-                        <a asp-controller="Home" asp-route-id="3" asp-action="ContactUs">
-                            <div class="name-text position-absolute">
-                                <p class=""><span>Celia Zavala</span></p>
-                                <p class="text-underline">@Localizer["Executive Officer"]</p>
-                                <p class="text-underline">@Localizer["Assessment Appeals Board"]</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-
-                                </div>
-                                <div class="col-9 img-carousel">
-
-                                    <div class="img-seal">
-                                        <img src="~/images/LASEAL-tint.png" class="w-100 js--wp-2 img-seal" alt="...">
-                                    </div>
-                                    <img class="js--wp-9 img-person i-3" src="~/images/new_czavala.png" alt="Czavala slider">
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <!---------------------------------------------------------------------->
