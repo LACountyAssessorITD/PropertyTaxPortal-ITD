@@ -357,4 +357,7 @@
   <data name="Other Government Sites" xml:space="preserve">
     <value>기타 정부 기관</value>
   </data>
+  <data name="View Property Tax Bill" xml:space="preserve">
+    <value>재산세 고지서 보기</value>
+  </data>
 </root>

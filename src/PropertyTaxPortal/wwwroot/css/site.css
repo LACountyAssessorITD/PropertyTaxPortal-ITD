@@ -312,7 +312,7 @@ header {
 /* ----------------------- */
 
 .bg-1 {
-    background-color: #000063;
+    background-color: #130b5e;
 }
 
 .bg-temp {
@@ -320,16 +320,23 @@ header {
 }
 
 .bg-2 {
-    background-color: #311B92;
+    background-color: #2e1c8b;
 }
 
 .bg-3 {
-    background-color: #3761A3;
+    background-color: #453aaa;
 }
 
 .bg-4 {
-    background-color: #438AA0;
+    background-color: #2e6f89;
 }
+.bg-7 {
+    background-color: #56879e;
+}
+.bg-8 {
+    background-color: #7598a6;
+}
+
 .bg-5 {
     background-color: #fff;
     

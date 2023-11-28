@@ -357,4 +357,7 @@
   <data name="Other Government Sites" xml:space="preserve">
     <value>Otros sitios del gobierno</value>
   </data>
+  <data name="View Property Tax BIll" xml:space="preserve">
+    <value>Ver factura de impuestos a la propiedad</value>
+  </data>
 </root>

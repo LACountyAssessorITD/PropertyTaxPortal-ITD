@@ -357,4 +357,7 @@
   <data name="Other Government Sites" xml:space="preserve">
     <value>سایر سایت های دولتی</value>
   </data>
+  <data name="View Property Tax Bill" xml:space="preserve">
+    <value>مشاهده لایحه مالیات بر املاک</value>
+  </data>
 </root>

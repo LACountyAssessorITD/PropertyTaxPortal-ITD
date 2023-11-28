@@ -357,4 +357,7 @@
   <data name="Other Government Sites" xml:space="preserve">
     <value>Այլ Կառավարության կայքեր</value>
   </data>
+  <data name="View Property Tax Bill" xml:space="preserve">
+    <value>դիտել գույքահարկի հարկման անդորրագիրը</value>
+  </data>
 </root>

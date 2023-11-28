@@ -246,4 +246,7 @@
   <data name="We encourage everyone to use other payment methods, such as online eCheck and credit/debit card payments, telephone credit/debit card payments, or mail in your payment. As a reminder, there is" xml:space="preserve">
     <value>Alentamos a todos a usar otros métodos de pago, como eCheck en línea y pagos con tarjeta de crédito / débito, pagos telefónicos con tarjeta de crédito / débito, o enviar su pago por correo. Como recordatorio, hay</value>
   </data>
+  <data name="View Property Tax Bill" xml:space="preserve">
+    <value>Ver factura de impuestos a la propiedad</value>
+  </data>
 </root>
